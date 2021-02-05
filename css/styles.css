@@ -1,3 +1,79 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height:100%;
+}
+
+div.body {
+	padding: 0px;
+	padding-top: 60px;
+	width: 100%;
+}
+
+div.card {
+	overflow: hidden;
+	padding: 25px;
+	margin-top: 20px; 
+	width: 70%;
+	height: auto;
+	left: 50%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	border-radius: 5px;
+	box-shadow: 5px 5px 8px 1px rgba(0, 0, 255, .2);
+	display: inline-block;
+	background-color: #FFFFFFCC;
+}
+
+div.banner {
+	overflow: hidden;
+	padding: 25px;
+	margin-top: 20px; 
+	width: 100%;
+	height: auto;
+	box-shadow: 5px 0px 8px 1px rgba(0, 0, 255, .2);
+	display: inline-block;
+	background-color: #FFFFFF;
+}
+
+canvas {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+div.header {
+	position: fixed;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	box-shadow: 5px 5px 8px 1px rgba(0, 0, 255, .2);
+	background-color: #24305E;
+	height: 60px;
+	width: 100%;
+	z-index: 1;
+}
+
+div.footer {
+	position: absolute;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: 0xC5C6C7;
+	height: 160px;
+	width: 100%;
+	z-index: 1;
+}
+
 p {
-	color : red;
+
 }
