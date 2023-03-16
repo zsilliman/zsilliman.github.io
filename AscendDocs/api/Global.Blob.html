@@ -1,0 +1,1316 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Blob
+ | Ascend documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Blob
+ | Ascend documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Global.Blob">
+
+
+  <h1 id="Global_Blob" data-uid="Global.Blob" class="text-break">Class Blob
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><a class="xref" href="Global.IntObject.html">IntObject</a></div>
+    <div class="level6"><a class="xref" href="Global.IntActor.html">IntActor</a></div>
+    <div class="level7"><a class="xref" href="Global.IntCompositeActor.html">IntCompositeActor</a></div>
+    <div class="level8"><span class="xref">Blob</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Global.ISavableObject-1.html">ISavableObject</a>&lt;<a class="xref" href="Global.IntObjectSaveData.html">IntObjectSaveData</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Global.IntCompositeActor.html#Global_IntCompositeActor_composite">IntCompositeActor.composite</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_HurtBySpike">IntActor.HurtBySpike</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_aabb">IntActor.aabb</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_Left">IntActor.Left</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_Right">IntActor.Right</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_Top">IntActor.Top</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_Bottom">IntActor.Bottom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_Size">IntActor.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_WindInfluence">IntActor.WindInfluence</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_RidingSolid">IntActor.RidingSolid</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_RidingTangent">IntActor.RidingTangent</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_RidingNormal">IntActor.RidingNormal</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_IsRidingFlatSurface">IntActor.IsRidingFlatSurface</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_Awake">IntActor.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ManualInit">IntActor.ManualInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetAABBIntCollider">IntActor.GetAABBIntCollider()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_IsRiding_IntSolid_">IntActor.IsRiding(IntSolid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_IsWalkingFlatOrUphill_UnityEngine_Vector2_">IntActor.IsWalkingFlatOrUphill(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetEffectiveVelocity_UnityEngine_Vector2_">IntActor.GetEffectiveVelocity(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_IsTouchingWall_IntSolid_">IntActor.IsTouchingWall(IntSolid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_SolidContainsPoint_UnityEngine_Vector2Int_">IntActor.SolidContainsPoint(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTakeDamage_System_Int32_">IntActor.OnTakeDamage(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_TakeDamage_System_Int32_System_Boolean_System_Boolean_">IntActor.TakeDamage(int, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ResetAuraCollisionMap">IntActor.ResetAuraCollisionMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ResetActorCollisionMap">IntActor.ResetActorCollisionMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ResetCollisionMap">IntActor.ResetCollisionMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ResetCollisionsAfterTime_IntObject_System_Single_">IntActor.ResetCollisionsAfterTime(IntObject, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_SetCollisionMapValue_IntObject_System_Boolean_">IntActor.SetCollisionMapValue(IntObject, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetCollisionMapValue_IntObject_">IntActor.GetCollisionMapValue(IntObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_Squish_IntSolid_">IntActor.Squish(IntSolid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTriggerStart_IntTrigger_">IntActor.OnTriggerStart(IntTrigger)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTriggerEnd_IntTrigger_">IntActor.OnTriggerEnd(IntTrigger)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnActor_IntActor_">IntActor.OnActor(IntActor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetVelocity">IntActor.GetVelocity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_CheckGrounded">IntActor.CheckGrounded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GroundActor">IntActor.GroundActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_CheckOnWall">IntActor.CheckOnWall()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_DropDownOneWay">IntActor.DropDownOneWay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ApplyWind_UnityEngine_Vector2_">IntActor.ApplyWind(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_RemoveWind">IntActor.RemoveWind()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ResolvePosition_UnityEngine_Vector2_System_Single_System_Int32_System_Boolean_System_Boolean_IntObject_ActorAction_IntObject_TriggerAction_">IntActor.ResolvePosition(Vector2, float, int, bool, bool, IntObject.ActorAction, IntObject.TriggerAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ResolvePositionNoSlide_UnityEngine_Vector2Int_">IntActor.ResolvePositionNoSlide(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_EfficientMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_">IntActor.EfficientMove(Vector2, IntObject.SolidAction, IntObject.SolidAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_MoveX_System_Single_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_">IntActor.MoveX(float, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_MoveY_System_Single_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_">IntActor.MoveY(float, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_getIntersectParameters_System_Int32_System_Single_System_Single_System_Single_">IntActor.getIntersectParameters(int, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_NotifyObjectKilled_IntObject_">IntActor.NotifyObjectKilled(IntObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnSpike_IntSolid_">IntActor.OnSpike(IntSolid)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_SlantMove_UnityEngine_Vector2_IntObject_ActorAction_IntObject_TriggerAction_">IntActor.SlantMove(Vector2, IntObject.ActorAction, IntObject.TriggerAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_CheckActorTriggerCollisions_IntObject_ActorAction_IntObject_TriggerAction_">IntActor.CheckActorTriggerCollisions(IntObject.ActorAction, IntObject.TriggerAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_CheckActorInteractableCollisions">IntActor.CheckActorInteractableCollisions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_SimpleMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_">IntActor.SimpleMove(Vector2, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_ComplexMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_System_Int32_">IntActor.ComplexMove(Vector2, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_section">IntObject.section</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_state">IntObject.state</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_int_collider">IntObject.int_collider</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_remainder">IntObject.remainder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_StartPosition">IntObject.StartPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_AttachedToPlayer">IntObject.AttachedToPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IgnoredObjectsMap">IntObject.IgnoredObjectsMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_KilledCallback">IntObject.KilledCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Position">IntObject.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_GetStartWorldPosition">IntObject.GetStartWorldPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_collider_type">IntObject.collider_type</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_MarkedForKill">IntObject.MarkedForKill</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_ObjectID">IntObject.ObjectID</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_DestroyOnKill">IntObject.DestroyOnKill</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_RespawnBehavior">IntObject.RespawnBehavior</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Status">IntObject.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_InitialStatus">IntObject.InitialStatus</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_SaveObject">IntObject.SaveObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Init">IntObject.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_FindIntColliderState_System_Int32_">IntObject.FindIntColliderState(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_GetLocalGameStates">IntObject.GetLocalGameStates()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_RegisterSelf">IntObject.RegisterSelf()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_UnregisterSelf">IntObject.UnregisterSelf()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_RegisterKilledCallback_IntObject_Action_">IntObject.RegisterKilledCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_UnregisterKilledCallback_IntObject_Action_">IntObject.UnregisterKilledCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Update">IntObject.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_SetStatus_ObjectStatus_">IntObject.SetStatus(ObjectStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_OnKill_System_Boolean_">IntObject.OnKill(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Kill">IntObject.Kill()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Kill_System_Boolean_">IntObject.Kill(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Kill_System_Single_">IntObject.Kill(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Kill_System_Boolean_System_Single_">IntObject.Kill(bool, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IgnoreObjectCollisions_IntObject_System_Single_">IntObject.IgnoreObjectCollisions(IntObject, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_SleepObject">IntObject.SleepObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_WakeObject">IntObject.WakeObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_EnableObject">IntObject.EnableObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_DisableObject">IntObject.DisableObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_RespawnObject">IntObject.RespawnObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_ResetObject">IntObject.ResetObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_RecursiveSetCollidable_System_Boolean_">IntObject.RecursiveSetCollidable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_SetColliderState_IntColliderState_">IntObject.SetColliderState(IntColliderState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Translate_UnityEngine_Vector2Int_">IntObject.Translate(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Translate_UnityEngine_Vector2_">IntObject.Translate(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_SetPosition_UnityEngine_Vector2Int_">IntObject.SetPosition(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_SetCollidable_System_Boolean_">IntObject.SetCollidable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_GetCollidable">IntObject.GetCollidable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_GetCollider">IntObject.GetCollider()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_GetColliderState">IntObject.GetColliderState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Overlaps_IntObject_">IntObject.Overlaps(IntObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_Overlaps_IntObject_UnityEngine_Vector2Int_">IntObject.Overlaps(IntObject, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_RayCast_IntRay_">IntObject.RayCast(IntRay)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_CollideAt_System_Collections_Generic_List_IntSolid__UnityEngine_Vector2Int_">IntObject.CollideAt(List&lt;IntSolid&gt;, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_CollideAt_System_Collections_Generic_List_IntActor__UnityEngine_Vector2Int_">IntObject.CollideAt(List&lt;IntActor&gt;, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_CollideAt_System_Collections_Generic_List_IntTrigger__UnityEngine_Vector2Int_">IntObject.CollideAt(List&lt;IntTrigger&gt;, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_OnDrawGizmos">IntObject.OnDrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_LoadObjectSaveData_IntObjectSaveData_">IntObject.LoadObjectSaveData(IntObjectSaveData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_GetObjectSaveData">IntObject.GetObjectSaveData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_OnPostLoadSaveFile">IntObject.OnPostLoadSaveFile()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Global.html">Global</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Global_Blob_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Blob : IntCompositeActor, ISavableObject&lt;IntObjectSaveData&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_body.md&amp;value=---%0Auid%3A%20Global.Blob.body%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Global_Blob_body" data-uid="Global.Blob.body">body</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AABBIntCollider body</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_bodyColliderGroup.md&amp;value=---%0Auid%3A%20Global.Blob.bodyColliderGroup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L18">View Source</a>
+  </span>
+  <h4 id="Global_Blob_bodyColliderGroup" data-uid="Global.Blob.bodyColliderGroup">bodyColliderGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] bodyColliderGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_close.md&amp;value=---%0Auid%3A%20Global.Blob.close%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Global_Blob_close" data-uid="Global.Blob.close">close</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MeshAnimation close</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.MeshAnimation.html">MeshAnimation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_CLOSE.md&amp;value=---%0Auid%3A%20Global.Blob.CLOSE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L27">View Source</a>
+  </span>
+  <h4 id="Global_Blob_CLOSE" data-uid="Global.Blob.CLOSE">CLOSE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string CLOSE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_CloseTime.md&amp;value=---%0Auid%3A%20Global.Blob.CloseTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Global_Blob_CloseTime" data-uid="Global.Blob.CloseTime">CloseTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CloseTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_lowerJaw.md&amp;value=---%0Auid%3A%20Global.Blob.lowerJaw%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Global_Blob_lowerJaw" data-uid="Global.Blob.lowerJaw">lowerJaw</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AABBIntCollider lowerJaw</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_lowerJawColliderGroup.md&amp;value=---%0Auid%3A%20Global.Blob.lowerJawColliderGroup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L18">View Source</a>
+  </span>
+  <h4 id="Global_Blob_lowerJawColliderGroup" data-uid="Global.Blob.lowerJawColliderGroup">lowerJawColliderGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] lowerJawColliderGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_meshFilter.md&amp;value=---%0Auid%3A%20Global.Blob.meshFilter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L9">View Source</a>
+  </span>
+  <h4 id="Global_Blob_meshFilter" data-uid="Global.Blob.meshFilter">meshFilter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshFilter meshFilter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/MeshFilter.html">MeshFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_MouthOffsetAmount.md&amp;value=---%0Auid%3A%20Global.Blob.MouthOffsetAmount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L10">View Source</a>
+  </span>
+  <h4 id="Global_Blob_MouthOffsetAmount" data-uid="Global.Blob.MouthOffsetAmount">MouthOffsetAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 MouthOffsetAmount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_MouthOpenTime.md&amp;value=---%0Auid%3A%20Global.Blob.MouthOpenTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L13">View Source</a>
+  </span>
+  <h4 id="Global_Blob_MouthOpenTime" data-uid="Global.Blob.MouthOpenTime">MouthOpenTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MouthOpenTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_nose.md&amp;value=---%0Auid%3A%20Global.Blob.nose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Global_Blob_nose" data-uid="Global.Blob.nose">nose</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AABBIntCollider nose</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_noseColliderGroup.md&amp;value=---%0Auid%3A%20Global.Blob.noseColliderGroup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L18">View Source</a>
+  </span>
+  <h4 id="Global_Blob_noseColliderGroup" data-uid="Global.Blob.noseColliderGroup">noseColliderGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] noseColliderGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_noseGroup.md&amp;value=---%0Auid%3A%20Global.Blob.noseGroup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Global_Blob_noseGroup" data-uid="Global.Blob.noseGroup">noseGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] noseGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_open.md&amp;value=---%0Auid%3A%20Global.Blob.open%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L25">View Source</a>
+  </span>
+  <h4 id="Global_Blob_open" data-uid="Global.Blob.open">open</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MeshAnimation open</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.MeshAnimation.html">MeshAnimation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_OPEN.md&amp;value=---%0Auid%3A%20Global.Blob.OPEN%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L27">View Source</a>
+  </span>
+  <h4 id="Global_Blob_OPEN" data-uid="Global.Blob.OPEN">OPEN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string OPEN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_OpenTime.md&amp;value=---%0Auid%3A%20Global.Blob.OpenTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L11">View Source</a>
+  </span>
+  <h4 id="Global_Blob_OpenTime" data-uid="Global.Blob.OpenTime">OpenTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OpenTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_TriggerMax.md&amp;value=---%0Auid%3A%20Global.Blob.TriggerMax%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L15">View Source</a>
+  </span>
+  <h4 id="Global_Blob_TriggerMax" data-uid="Global.Blob.TriggerMax">TriggerMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DraggablePoint(DraggablePointSpace.World)]
+public Vector2Int TriggerMax</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_TriggerMin.md&amp;value=---%0Auid%3A%20Global.Blob.TriggerMin%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L14">View Source</a>
+  </span>
+  <h4 id="Global_Blob_TriggerMin" data-uid="Global.Blob.TriggerMin">TriggerMin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DraggablePoint(DraggablePointSpace.World)]
+public Vector2Int TriggerMin</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_upperJaw.md&amp;value=---%0Auid%3A%20Global.Blob.upperJaw%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Global_Blob_upperJaw" data-uid="Global.Blob.upperJaw">upperJaw</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AABBIntCollider upperJaw</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_upperJawColliderGroup.md&amp;value=---%0Auid%3A%20Global.Blob.upperJawColliderGroup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L18">View Source</a>
+  </span>
+  <h4 id="Global_Blob_upperJawColliderGroup" data-uid="Global.Blob.upperJawColliderGroup">upperJawColliderGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] upperJawColliderGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_upperJawGroup.md&amp;value=---%0Auid%3A%20Global.Blob.upperJawGroup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Global_Blob_upperJawGroup" data-uid="Global.Blob.upperJawGroup">upperJawGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] upperJawGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_vertices.md&amp;value=---%0Auid%3A%20Global.Blob.vertices%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Global_Blob_vertices" data-uid="Global.Blob.vertices">vertices</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Vector3&gt; vertices</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_AddOffsetToGroup_System_Collections_Generic_List_UnityEngine_Vector3__System_Int32___UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20Global.Blob.AddOffsetToGroup(System.Collections.Generic.List%7BUnityEngine.Vector3%7D%2CSystem.Int32%5B%5D%2CUnityEngine.Vector3)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L60">View Source</a>
+  </span>
+  <a id="Global_Blob_AddOffsetToGroup_" data-uid="Global.Blob.AddOffsetToGroup*"></a>
+  <h4 id="Global_Blob_AddOffsetToGroup_System_Collections_Generic_List_UnityEngine_Vector3__System_Int32___UnityEngine_Vector3_" data-uid="Global.Blob.AddOffsetToGroup(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32[],UnityEngine.Vector3)">AddOffsetToGroup(List&lt;Vector3&gt;, int[], Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddOffsetToGroup(List&lt;Vector3&gt; vertices, int[] indices, Vector3 offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">indices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_GetCloseAnimation.md&amp;value=---%0Auid%3A%20Global.Blob.GetCloseAnimation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L158">View Source</a>
+  </span>
+  <a id="Global_Blob_GetCloseAnimation_" data-uid="Global.Blob.GetCloseAnimation*"></a>
+  <h4 id="Global_Blob_GetCloseAnimation" data-uid="Global.Blob.GetCloseAnimation">GetCloseAnimation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAnimation GetCloseAnimation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.MeshAnimation.html">MeshAnimation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_GetOpenAnimation.md&amp;value=---%0Auid%3A%20Global.Blob.GetOpenAnimation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L153">View Source</a>
+  </span>
+  <a id="Global_Blob_GetOpenAnimation_" data-uid="Global.Blob.GetOpenAnimation*"></a>
+  <h4 id="Global_Blob_GetOpenAnimation" data-uid="Global.Blob.GetOpenAnimation">GetOpenAnimation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAnimation GetOpenAnimation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.MeshAnimation.html">MeshAnimation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_SetupAnimation.md&amp;value=---%0Auid%3A%20Global.Blob.SetupAnimation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L68">View Source</a>
+  </span>
+  <a id="Global_Blob_SetupAnimation_" data-uid="Global.Blob.SetupAnimation*"></a>
+  <h4 id="Global_Blob_SetupAnimation" data-uid="Global.Blob.SetupAnimation">SetupAnimation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupAnimation()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_SetupColliders.md&amp;value=---%0Auid%3A%20Global.Blob.SetupColliders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L89">View Source</a>
+  </span>
+  <a id="Global_Blob_SetupColliders_" data-uid="Global.Blob.SetupColliders*"></a>
+  <h4 id="Global_Blob_SetupColliders" data-uid="Global.Blob.SetupColliders">SetupColliders()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupColliders()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_SetupTrigger.md&amp;value=---%0Auid%3A%20Global.Blob.SetupTrigger%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L118">View Source</a>
+  </span>
+  <a id="Global_Blob_SetupTrigger_" data-uid="Global.Blob.SetupTrigger*"></a>
+  <h4 id="Global_Blob_SetupTrigger" data-uid="Global.Blob.SetupTrigger">SetupTrigger()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupTrigger()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_Start.md&amp;value=---%0Auid%3A%20Global.Blob.Start%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L30">View Source</a>
+  </span>
+  <a id="Global_Blob_Start_" data-uid="Global.Blob.Start*"></a>
+  <h4 id="Global_Blob_Start" data-uid="Global.Blob.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Start()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob_UpdateColliders.md&amp;value=---%0Auid%3A%20Global.Blob.UpdateColliders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L129">View Source</a>
+  </span>
+  <a id="Global_Blob_UpdateColliders_" data-uid="Global.Blob.UpdateColliders*"></a>
+  <h4 id="Global_Blob_UpdateColliders" data-uid="Global.Blob.UpdateColliders">UpdateColliders()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateColliders()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Global.ISavableObject-1.html">ISavableObject&lt;T&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Global.ReflectionExtensions.html#Global_ReflectionExtensions_ToStringWithQuotes_System_Object_">ReflectionExtensions.ToStringWithQuotes(object)</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Blob.md&amp;value=---%0Auid%3A%20Global.Blob%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Pit Enemies/Baby Blob/Blob.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Ascend documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1608 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AABBIntCollider
+ | Ascend documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AABBIntCollider
+ | Ascend documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Global.AABBIntCollider">
+
+
+  <h1 id="Global_AABBIntCollider" data-uid="Global.AABBIntCollider" class="text-break">Class AABBIntCollider
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><a class="xref" href="Global.IntCollider.html">IntCollider</a></div>
+    <div class="level6"><span class="xref">AABBIntCollider</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_DisableGizmos">IntCollider.DisableGizmos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_AlwaysDrawGizmos">IntCollider.AlwaysDrawGizmos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_OneWayInteraction">IntCollider.OneWayInteraction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_Position">IntCollider.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_GetPosition">IntCollider.GetPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_SetPosition_UnityEngine_Vector2Int_">IntCollider.SetPosition(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_IsCollidable">IntCollider.IsCollidable</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_Overlaps_IntCollider_">IntCollider.Overlaps(IntCollider)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_Overlaps_IntCollider_UnityEngine_Vector2Int_">IntCollider.Overlaps(IntCollider, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_OverlapsDummyCollider_DummyIntCollider_UnityEngine_Vector2Int_">IntCollider.OverlapsDummyCollider(DummyIntCollider, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_OverlapsBounds_UnityEngine_BoundsInt_">IntCollider.OverlapsBounds(BoundsInt)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_OverlapsComposite_CompositeIntCollider_UnityEngine_Vector2Int_">IntCollider.OverlapsComposite(CompositeIntCollider, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntCollider.html#Global_IntCollider_Intersects_IntRay_">IntCollider.Intersects(IntRay)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Global.html">Global</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Global_AABBIntCollider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AABBIntCollider : IntCollider</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_max.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.max%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L10">View Source</a>
+  </span>
+  <h4 id="Global_AABBIntCollider_max" data-uid="Global.AABBIntCollider.max">max</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int max</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_min.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.min%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L9">View Source</a>
+  </span>
+  <h4 id="Global_AABBIntCollider_min" data-uid="Global.AABBIntCollider.min">min</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int min</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_Bottom.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.Bottom%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L17">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_Bottom_" data-uid="Global.AABBIntCollider.Bottom*"></a>
+  <h4 id="Global_AABBIntCollider_Bottom" data-uid="Global.AABBIntCollider.Bottom">Bottom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Bottom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_Left.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.Left%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L19">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_Left_" data-uid="Global.AABBIntCollider.Left*"></a>
+  <h4 id="Global_AABBIntCollider_Left" data-uid="Global.AABBIntCollider.Left">Left</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Left { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_LocalCenter.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.LocalCenter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L23">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_LocalCenter_" data-uid="Global.AABBIntCollider.LocalCenter*"></a>
+  <h4 id="Global_AABBIntCollider_LocalCenter" data-uid="Global.AABBIntCollider.LocalCenter">LocalCenter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 LocalCenter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_Right.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.Right%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L21">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_Right_" data-uid="Global.AABBIntCollider.Right*"></a>
+  <h4 id="Global_AABBIntCollider_Right" data-uid="Global.AABBIntCollider.Right">Right</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Right { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_Size.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.Size%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L27">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_Size_" data-uid="Global.AABBIntCollider.Size*"></a>
+  <h4 id="Global_AABBIntCollider_Size" data-uid="Global.AABBIntCollider.Size">Size</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_Top.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.Top%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L15">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_Top_" data-uid="Global.AABBIntCollider.Top*"></a>
+  <h4 id="Global_AABBIntCollider_Top" data-uid="Global.AABBIntCollider.Top">Top</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Top { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_WorldCenter.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.WorldCenter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L25">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_WorldCenter_" data-uid="Global.AABBIntCollider.WorldCenter*"></a>
+  <h4 id="Global_AABBIntCollider_WorldCenter" data-uid="Global.AABBIntCollider.WorldCenter">WorldCenter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 WorldCenter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_WorldMax.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.WorldMax%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L13">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_WorldMax_" data-uid="Global.AABBIntCollider.WorldMax*"></a>
+  <h4 id="Global_AABBIntCollider_WorldMax" data-uid="Global.AABBIntCollider.WorldMax">WorldMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int WorldMax { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_WorldMin.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.WorldMin%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L12">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_WorldMin_" data-uid="Global.AABBIntCollider.WorldMin*"></a>
+  <h4 id="Global_AABBIntCollider_WorldMin" data-uid="Global.AABBIntCollider.WorldMin">WorldMin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int WorldMin { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_ContainsAABB_AABBIntCollider_UnityEngine_Vector2Int_System_Boolean_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.ContainsAABB(AABBIntCollider%2CUnityEngine.Vector2Int%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L102">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_ContainsAABB_" data-uid="Global.AABBIntCollider.ContainsAABB*"></a>
+  <h4 id="Global_AABBIntCollider_ContainsAABB_AABBIntCollider_UnityEngine_Vector2Int_System_Boolean_" data-uid="Global.AABBIntCollider.ContainsAABB(AABBIntCollider,UnityEngine.Vector2Int,System.Boolean)">ContainsAABB(AABBIntCollider, Vector2Int, bool)</h4>
+  <div class="markdown level1 summary"><p>Determine whether an AABB in entirely contained within this AABB collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsAABB(AABBIntCollider collider, Vector2Int dPos, bool inclusive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td><span class="parametername">collider</span></td>
+        <td><p>AABB collider</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td><p>Change in position of this current class's object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">inclusive</span></td>
+        <td><p>If inclusive, colliders that share the same line are considered contained. Defaults to exclusive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the collider is contained</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_ContainsBoundsInt_UnityEngine_BoundsInt_UnityEngine_Vector2Int_System_Boolean_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.ContainsBoundsInt(UnityEngine.BoundsInt%2CUnityEngine.Vector2Int%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L116">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_ContainsBoundsInt_" data-uid="Global.AABBIntCollider.ContainsBoundsInt*"></a>
+  <h4 id="Global_AABBIntCollider_ContainsBoundsInt_UnityEngine_BoundsInt_UnityEngine_Vector2Int_System_Boolean_" data-uid="Global.AABBIntCollider.ContainsBoundsInt(UnityEngine.BoundsInt,UnityEngine.Vector2Int,System.Boolean)">ContainsBoundsInt(BoundsInt, Vector2Int, bool)</h4>
+  <div class="markdown level1 summary"><p>Determine whether an AABB in entirely contained within this AABB collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsBoundsInt(BoundsInt bounds, Vector2Int dPos, bool inclusive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/BoundsInt.html">BoundsInt</a></td>
+        <td><span class="parametername">bounds</span></td>
+        <td><p>BoundsInt of the rectangle</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td><p>Change in position of this current class's object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">inclusive</span></td>
+        <td><p>If inclusive, colliders that share the same line are considered contained. Defaults to exclusive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the collider is contained</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_ContainsPoint_UnityEngine_Vector2Int_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.ContainsPoint(UnityEngine.Vector2Int%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L129">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_ContainsPoint_" data-uid="Global.AABBIntCollider.ContainsPoint*"></a>
+  <h4 id="Global_AABBIntCollider_ContainsPoint_UnityEngine_Vector2Int_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.ContainsPoint(UnityEngine.Vector2Int,UnityEngine.Vector2Int)">ContainsPoint(Vector2Int, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsPoint(Vector2Int point, Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_ContainsPoint_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.ContainsPoint(UnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L123">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_ContainsPoint_" data-uid="Global.AABBIntCollider.ContainsPoint*"></a>
+  <h4 id="Global_AABBIntCollider_ContainsPoint_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.ContainsPoint(UnityEngine.Vector2Int)">ContainsPoint(Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ContainsPoint(Vector2Int point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_ContainsPoint_UnityEngine_Vector2Int_">IntCollider.ContainsPoint(Vector2Int)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_DrawGizmos_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.DrawGizmos(UnityEngine.Color)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L180">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_DrawGizmos_" data-uid="Global.AABBIntCollider.DrawGizmos*"></a>
+  <h4 id="Global_AABBIntCollider_DrawGizmos_UnityEngine_Color_" data-uid="Global.AABBIntCollider.DrawGizmos(UnityEngine.Color)">DrawGizmos(Color)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawGizmos(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_DrawGizmos_UnityEngine_Color_">IntCollider.DrawGizmos(Color)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_GetBounds.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.GetBounds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L271">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_GetBounds_" data-uid="Global.AABBIntCollider.GetBounds*"></a>
+  <h4 id="Global_AABBIntCollider_GetBounds" data-uid="Global.AABBIntCollider.GetBounds">GetBounds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override BoundsInt GetBounds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/BoundsInt.html">BoundsInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_GetBounds">IntCollider.GetBounds()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_GetOutlineRays.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.GetOutlineRays%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L40">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_GetOutlineRays_" data-uid="Global.AABBIntCollider.GetOutlineRays*"></a>
+  <h4 id="Global_AABBIntCollider_GetOutlineRays" data-uid="Global.AABBIntCollider.GetOutlineRays">GetOutlineRays()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IntRay&gt; GetOutlineRays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Global.IntRay.html">IntRay</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_GetOutlineRays_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.GetOutlineRays(UnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L45">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_GetOutlineRays_" data-uid="Global.AABBIntCollider.GetOutlineRays*"></a>
+  <h4 id="Global_AABBIntCollider_GetOutlineRays_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.GetOutlineRays(UnityEngine.Vector2Int)">GetOutlineRays(Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IntRay&gt; GetOutlineRays(Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Global.IntRay.html">IntRay</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_GetOverlappingRegion_AABBIntCollider_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.GetOverlappingRegion(AABBIntCollider%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L136">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_GetOverlappingRegion_" data-uid="Global.AABBIntCollider.GetOverlappingRegion*"></a>
+  <h4 id="Global_AABBIntCollider_GetOverlappingRegion_AABBIntCollider_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.GetOverlappingRegion(AABBIntCollider,UnityEngine.Vector2Int)">GetOverlappingRegion(AABBIntCollider, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBIntCollider.RectOverlap GetOverlappingRegion(AABBIntCollider collider, Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td><span class="parametername">collider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a>.<a class="xref" href="Global.AABBIntCollider.RectOverlap.html">RectOverlap</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_GetOverlappingRegion_UnityEngine_RectInt_UnityEngine_RectInt_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.GetOverlappingRegion(UnityEngine.RectInt%2CUnityEngine.RectInt)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L152">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_GetOverlappingRegion_" data-uid="Global.AABBIntCollider.GetOverlappingRegion*"></a>
+  <h4 id="Global_AABBIntCollider_GetOverlappingRegion_UnityEngine_RectInt_UnityEngine_RectInt_" data-uid="Global.AABBIntCollider.GetOverlappingRegion(UnityEngine.RectInt,UnityEngine.RectInt)">GetOverlappingRegion(RectInt, RectInt)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBIntCollider.RectOverlap GetOverlappingRegion(RectInt rect0, RectInt rect1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectInt.html">RectInt</a></td>
+        <td><span class="parametername">rect0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/RectInt.html">RectInt</a></td>
+        <td><span class="parametername">rect1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a>.<a class="xref" href="Global.AABBIntCollider.RectOverlap.html">RectOverlap</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_GetRayIntersection_IntRay_UnityEngine_Vector2Int_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.GetRayIntersection(IntRay%2CUnityEngine.Vector2Int%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L221">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_GetRayIntersection_" data-uid="Global.AABBIntCollider.GetRayIntersection*"></a>
+  <h4 id="Global_AABBIntCollider_GetRayIntersection_IntRay_UnityEngine_Vector2Int_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.GetRayIntersection(IntRay,UnityEngine.Vector2Int,UnityEngine.Vector2Int)">GetRayIntersection(IntRay, Vector2Int, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Intersection GetRayIntersection(IntRay ray, Vector2Int ray_dPos, Vector2Int aabb_dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.IntRay.html">IntRay</a></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">ray_dPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">aabb_dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.Intersection.html">Intersection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_GetRayIntersection_IntRay_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.GetRayIntersection(IntRay)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L216">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_GetRayIntersection_" data-uid="Global.AABBIntCollider.GetRayIntersection*"></a>
+  <h4 id="Global_AABBIntCollider_GetRayIntersection_IntRay_" data-uid="Global.AABBIntCollider.GetRayIntersection(IntRay)">GetRayIntersection(IntRay)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Intersection GetRayIntersection(IntRay ray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.IntRay.html">IntRay</a></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.Intersection.html">Intersection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_GetRayIntersection_IntRay_">IntCollider.GetRayIntersection(IntRay)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_GetRidingTangent_AABBIntCollider_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.GetRidingTangent(AABBIntCollider%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L276">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_GetRidingTangent_" data-uid="Global.AABBIntCollider.GetRidingTangent*"></a>
+  <h4 id="Global_AABBIntCollider_GetRidingTangent_AABBIntCollider_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)">GetRidingTangent(AABBIntCollider, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 GetRidingTangent(AABBIntCollider aabb, Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td><span class="parametername">aabb</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_GetRidingTangent_AABBIntCollider_UnityEngine_Vector2Int_">IntCollider.GetRidingTangent(AABBIntCollider, Vector2Int)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_OverlapsAABB_AABBIntCollider_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.OverlapsAABB(AABBIntCollider%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L191">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_OverlapsAABB_" data-uid="Global.AABBIntCollider.OverlapsAABB*"></a>
+  <h4 id="Global_AABBIntCollider_OverlapsAABB_AABBIntCollider_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)">OverlapsAABB(AABBIntCollider, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OverlapsAABB(AABBIntCollider other, Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_OverlapsAABB_AABBIntCollider_UnityEngine_Vector2Int_">IntCollider.OverlapsAABB(AABBIntCollider, Vector2Int)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_OverlapsBounds_UnityEngine_BoundsInt_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.OverlapsBounds(UnityEngine.BoundsInt%2CUnityEngine.Vector2)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L32">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_OverlapsBounds_" data-uid="Global.AABBIntCollider.OverlapsBounds*"></a>
+  <h4 id="Global_AABBIntCollider_OverlapsBounds_UnityEngine_BoundsInt_UnityEngine_Vector2_" data-uid="Global.AABBIntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2)">OverlapsBounds(BoundsInt, Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OverlapsBounds(BoundsInt other, Vector2 dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/BoundsInt.html">BoundsInt</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_OverlapsBounds_UnityEngine_BoundsInt_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.OverlapsBounds(UnityEngine.BoundsInt%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L211">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_OverlapsBounds_" data-uid="Global.AABBIntCollider.OverlapsBounds*"></a>
+  <h4 id="Global_AABBIntCollider_OverlapsBounds_UnityEngine_BoundsInt_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)">OverlapsBounds(BoundsInt, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool OverlapsBounds(BoundsInt collider, Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/BoundsInt.html">BoundsInt</a></td>
+        <td><span class="parametername">collider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_OverlapsBounds_UnityEngine_BoundsInt_UnityEngine_Vector2Int_">IntCollider.OverlapsBounds(BoundsInt, Vector2Int)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_OverlapsCircle_CircleIntCollider_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.OverlapsCircle(CircleIntCollider%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L206">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_OverlapsCircle_" data-uid="Global.AABBIntCollider.OverlapsCircle*"></a>
+  <h4 id="Global_AABBIntCollider_OverlapsCircle_CircleIntCollider_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)">OverlapsCircle(CircleIntCollider, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OverlapsCircle(CircleIntCollider collider, Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.CircleIntCollider.html">CircleIntCollider</a></td>
+        <td><span class="parametername">collider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_OverlapsCircle_CircleIntCollider_UnityEngine_Vector2Int_">IntCollider.OverlapsCircle(CircleIntCollider, Vector2Int)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_OverlapsEdge_EdgeIntCollider_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.OverlapsEdge(EdgeIntCollider%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L201">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_OverlapsEdge_" data-uid="Global.AABBIntCollider.OverlapsEdge*"></a>
+  <h4 id="Global_AABBIntCollider_OverlapsEdge_EdgeIntCollider_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)">OverlapsEdge(EdgeIntCollider, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OverlapsEdge(EdgeIntCollider other, Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.EdgeIntCollider.html">EdgeIntCollider</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_OverlapsEdge_EdgeIntCollider_UnityEngine_Vector2Int_">IntCollider.OverlapsEdge(EdgeIntCollider, Vector2Int)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_OverlapsTile_UnityEngine_Tilemaps_Tilemap_UnityEngine_Vector3Int_UnityEngine_Vector2Int_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.OverlapsTile(UnityEngine.Tilemaps.Tilemap%2CUnityEngine.Vector3Int%2CUnityEngine.Vector2Int%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L86">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_OverlapsTile_" data-uid="Global.AABBIntCollider.OverlapsTile*"></a>
+  <h4 id="Global_AABBIntCollider_OverlapsTile_UnityEngine_Tilemaps_Tilemap_UnityEngine_Vector3Int_UnityEngine_Vector2Int_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.OverlapsTile(UnityEngine.Tilemaps.Tilemap,UnityEngine.Vector3Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)">OverlapsTile(Tilemap, Vector3Int, Vector2Int, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OverlapsTile(Tilemap map, Vector3Int index, Vector2Int dPos0, Vector2Int dPos1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Tilemaps.Tilemap.html">Tilemap</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3Int.html">Vector3Int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_OverlapsTile_UnityEngine_Tilemaps_Tilemap_UnityEngine_Vector3Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.OverlapsTile(UnityEngine.Tilemaps.Tilemap%2CUnityEngine.Vector3Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L79">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_OverlapsTile_" data-uid="Global.AABBIntCollider.OverlapsTile*"></a>
+  <h4 id="Global_AABBIntCollider_OverlapsTile_UnityEngine_Tilemaps_Tilemap_UnityEngine_Vector3Int_" data-uid="Global.AABBIntCollider.OverlapsTile(UnityEngine.Tilemaps.Tilemap,UnityEngine.Vector3Int)">OverlapsTile(Tilemap, Vector3Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OverlapsTile(Tilemap map, Vector3Int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Tilemaps.Tilemap.html">Tilemap</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3Int.html">Vector3Int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_OverlapsTilemap_TilemapIntCollider_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.OverlapsTilemap(TilemapIntCollider%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L196">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_OverlapsTilemap_" data-uid="Global.AABBIntCollider.OverlapsTilemap*"></a>
+  <h4 id="Global_AABBIntCollider_OverlapsTilemap_TilemapIntCollider_UnityEngine_Vector2Int_" data-uid="Global.AABBIntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)">OverlapsTilemap(TilemapIntCollider, Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OverlapsTilemap(TilemapIntCollider other, Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.TilemapIntCollider.html">TilemapIntCollider</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.IntCollider.html#Global_IntCollider_OverlapsTilemap_TilemapIntCollider_UnityEngine_Vector2Int_">IntCollider.OverlapsTilemap(TilemapIntCollider, Vector2Int)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider_RepairMinMax.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider.RepairMinMax%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L255">View Source</a>
+  </span>
+  <a id="Global_AABBIntCollider_RepairMinMax_" data-uid="Global.AABBIntCollider.RepairMinMax*"></a>
+  <h4 id="Global_AABBIntCollider_RepairMinMax" data-uid="Global.AABBIntCollider.RepairMinMax">RepairMinMax()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RepairMinMax()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Global.ReflectionExtensions.html#Global_ReflectionExtensions_ToStringWithQuotes_System_Object_">ReflectionExtensions.ToStringWithQuotes(object)</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AABBIntCollider.md&amp;value=---%0Auid%3A%20Global.AABBIntCollider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Colliders/AABBIntCollider.cs/#L5" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Ascend documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

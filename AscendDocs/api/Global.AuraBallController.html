@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AuraBallController
+ | Ascend documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AuraBallController
+ | Ascend documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Global.AuraBallController">
+
+
+  <h1 id="Global_AuraBallController" data-uid="Global.AuraBallController" class="text-break">Class AuraBallController
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><a class="xref" href="Global.AuraShapeController.html">AuraShapeController</a></div>
+    <div class="level6"><span class="xref">AuraBallController</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_Properties">AuraShapeController.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_automerge">AuraShapeController.automerge</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_Position">AuraShapeController.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_AuraSegmentSpacing">AuraShapeController.AuraSegmentSpacing</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_Awake">AuraShapeController.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_GetAutoMergeAura">AuraShapeController.GetAutoMergeAura()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_SetAuraScale_UnityEngine_Vector2_">AuraShapeController.SetAuraScale(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_ApplyShapeProperties">AuraShapeController.ApplyShapeProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_ApplyShapeProperties_System_Single_">AuraShapeController.ApplyShapeProperties(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_SpawnCircle">AuraShapeController.SpawnCircle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_SpawnArc_System_Single_">AuraShapeController.SpawnArc(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_SpawnLine_System_Single_">AuraShapeController.SpawnLine(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_SpawnSquare">AuraShapeController.SpawnSquare()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_SpawnTriangle">AuraShapeController.SpawnTriangle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_SpawnSemiLobe">AuraShapeController.SpawnSemiLobe()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Global.html">Global</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Global_AuraBallController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AuraBallController : AuraShapeController</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_Accelleration.md&amp;value=---%0Auid%3A%20Global.AuraBallController.Accelleration%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L11">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_Accelleration" data-uid="Global.AuraBallController.Accelleration">Accelleration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Accelleration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_AuraDeadlyDelay.md&amp;value=---%0Auid%3A%20Global.AuraBallController.AuraDeadlyDelay%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_AuraDeadlyDelay" data-uid="Global.AuraBallController.AuraDeadlyDelay">AuraDeadlyDelay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AuraDeadlyDelay</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_BlinkCloseSpeed.md&amp;value=---%0Auid%3A%20Global.AuraBallController.BlinkCloseSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L15">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_BlinkCloseSpeed" data-uid="Global.AuraBallController.BlinkCloseSpeed">BlinkCloseSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BlinkCloseSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_BlinkEaseClose.md&amp;value=---%0Auid%3A%20Global.AuraBallController.BlinkEaseClose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_BlinkEaseClose" data-uid="Global.AuraBallController.BlinkEaseClose">BlinkEaseClose</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EasingFunction.Ease BlinkEaseClose</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.EasingFunction.html">EasingFunction</a>.<a class="xref" href="Global.EasingFunction.Ease.html">Ease</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_BlinkEaseOpen.md&amp;value=---%0Auid%3A%20Global.AuraBallController.BlinkEaseOpen%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L20">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_BlinkEaseOpen" data-uid="Global.AuraBallController.BlinkEaseOpen">BlinkEaseOpen</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EasingFunction.Ease BlinkEaseOpen</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.EasingFunction.html">EasingFunction</a>.<a class="xref" href="Global.EasingFunction.Ease.html">Ease</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_BlinkOpenSpeed.md&amp;value=---%0Auid%3A%20Global.AuraBallController.BlinkOpenSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L16">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_BlinkOpenSpeed" data-uid="Global.AuraBallController.BlinkOpenSpeed">BlinkOpenSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BlinkOpenSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_ClippingDistance.md&amp;value=---%0Auid%3A%20Global.AuraBallController.ClippingDistance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L13">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_ClippingDistance" data-uid="Global.AuraBallController.ClippingDistance">ClippingDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ClippingDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_EyeClosedTime.md&amp;value=---%0Auid%3A%20Global.AuraBallController.EyeClosedTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L18">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_EyeClosedTime" data-uid="Global.AuraBallController.EyeClosedTime">EyeClosedTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EyeClosedTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_NotVisibleApproachRatio.md&amp;value=---%0Auid%3A%20Global.AuraBallController.NotVisibleApproachRatio%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_NotVisibleApproachRatio" data-uid="Global.AuraBallController.NotVisibleApproachRatio">NotVisibleApproachRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NotVisibleApproachRatio</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_NotVisibleSpeedBounds.md&amp;value=---%0Auid%3A%20Global.AuraBallController.NotVisibleSpeedBounds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L10">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_NotVisibleSpeedBounds" data-uid="Global.AuraBallController.NotVisibleSpeedBounds">NotVisibleSpeedBounds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 NotVisibleSpeedBounds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_SightTarget.md&amp;value=---%0Auid%3A%20Global.AuraBallController.SightTarget%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L8">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_SightTarget" data-uid="Global.AuraBallController.SightTarget">SightTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SightTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_VisibleApproachRatio.md&amp;value=---%0Auid%3A%20Global.AuraBallController.VisibleApproachRatio%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_VisibleApproachRatio" data-uid="Global.AuraBallController.VisibleApproachRatio">VisibleApproachRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VisibleApproachRatio</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_VisibleSpeedBounds.md&amp;value=---%0Auid%3A%20Global.AuraBallController.VisibleSpeedBounds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L9">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_VisibleSpeedBounds" data-uid="Global.AuraBallController.VisibleSpeedBounds">VisibleSpeedBounds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 VisibleSpeedBounds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_WarningBlinkAmount.md&amp;value=---%0Auid%3A%20Global.AuraBallController.WarningBlinkAmount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_WarningBlinkAmount" data-uid="Global.AuraBallController.WarningBlinkAmount">WarningBlinkAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WarningBlinkAmount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_WarningBlinkSpeed.md&amp;value=---%0Auid%3A%20Global.AuraBallController.WarningBlinkSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Global_AuraBallController_WarningBlinkSpeed" data-uid="Global.AuraBallController.WarningBlinkSpeed">WarningBlinkSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WarningBlinkSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_SeesTarget.md&amp;value=---%0Auid%3A%20Global.AuraBallController.SeesTarget%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L14">View Source</a>
+  </span>
+  <a id="Global_AuraBallController_SeesTarget_" data-uid="Global.AuraBallController.SeesTarget*"></a>
+  <h4 id="Global_AuraBallController_SeesTarget" data-uid="Global.AuraBallController.SeesTarget">SeesTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SeesTarget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_Blink.md&amp;value=---%0Auid%3A%20Global.AuraBallController.Blink%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L42">View Source</a>
+  </span>
+  <a id="Global_AuraBallController_Blink_" data-uid="Global.AuraBallController.Blink*"></a>
+  <h4 id="Global_AuraBallController_Blink" data-uid="Global.AuraBallController.Blink">Blink()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Blink()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_CanSeeTarget.md&amp;value=---%0Auid%3A%20Global.AuraBallController.CanSeeTarget%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L56">View Source</a>
+  </span>
+  <a id="Global_AuraBallController_CanSeeTarget_" data-uid="Global.AuraBallController.CanSeeTarget*"></a>
+  <h4 id="Global_AuraBallController_CanSeeTarget" data-uid="Global.AuraBallController.CanSeeTarget">CanSeeTarget()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSeeTarget()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_IsBlinking.md&amp;value=---%0Auid%3A%20Global.AuraBallController.IsBlinking%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L51">View Source</a>
+  </span>
+  <a id="Global_AuraBallController_IsBlinking_" data-uid="Global.AuraBallController.IsBlinking*"></a>
+  <h4 id="Global_AuraBallController_IsBlinking" data-uid="Global.AuraBallController.IsBlinking">IsBlinking()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBlinking()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_ResetObject.md&amp;value=---%0Auid%3A%20Global.AuraBallController.ResetObject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L66">View Source</a>
+  </span>
+  <a id="Global_AuraBallController_ResetObject_" data-uid="Global.AuraBallController.ResetObject*"></a>
+  <h4 id="Global_AuraBallController_ResetObject" data-uid="Global.AuraBallController.ResetObject">ResetObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ResetObject()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.AuraShapeController.html#Global_AuraShapeController_ResetObject">AuraShapeController.ResetObject()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController_Start.md&amp;value=---%0Auid%3A%20Global.AuraBallController.Start%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L34">View Source</a>
+  </span>
+  <a id="Global_AuraBallController_Start_" data-uid="Global.AuraBallController.Start*"></a>
+  <h4 id="Global_AuraBallController_Start" data-uid="Global.AuraBallController.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Start()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Global.ReflectionExtensions.html#Global_ReflectionExtensions_ToStringWithQuotes_System_Object_">ReflectionExtensions.ToStringWithQuotes(object)</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_AuraBallController.md&amp;value=---%0Auid%3A%20Global.AuraBallController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Controller/Eyeball/projectile/AuraBallController.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Ascend documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

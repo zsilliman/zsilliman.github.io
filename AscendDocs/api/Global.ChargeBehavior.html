@@ -1,0 +1,770 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ChargeBehavior
+ | Ascend documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ChargeBehavior
+ | Ascend documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Global.ChargeBehavior">
+
+
+  <h1 id="Global_ChargeBehavior" data-uid="Global.ChargeBehavior" class="text-break">Class ChargeBehavior
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Global.ModularEnemy.html">ModularEnemy</a>.<a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html">EnemyBehaviorInterface</a></div>
+    <div class="level2"><span class="xref">ChargeBehavior</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_ShowGizmos">ModularEnemy.EnemyBehaviorInterface.ShowGizmos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_self">ModularEnemy.EnemyBehaviorInterface.self</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_Started">ModularEnemy.EnemyBehaviorInterface.Started</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_OnKill_ModularEnemy_System_Boolean_">ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_OnResetObject_ModularEnemy_">ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Global.html">Global</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Global_ChargeBehavior_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ChargeBehavior : ModularEnemy.EnemyBehaviorInterface</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_AccelPoint.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.AccelPoint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L39">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_AccelPoint" data-uid="Global.ChargeBehavior.AccelPoint">AccelPoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0, 1)]
+[ConditionalShow(&quot;type&quot;, new int[] { 3, 0 })]
+public float AccelPoint</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_CanChargeBounce.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.CanChargeBounce%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_CanChargeBounce" data-uid="Global.ChargeBehavior.CanChargeBounce">CanChargeBounce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ConditionalShow(&quot;type&quot;, 0)]
+public bool CanChargeBounce</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_ChargeDestinationOffset.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.ChargeDestinationOffset%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L33">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_ChargeDestinationOffset" data-uid="Global.ChargeBehavior.ChargeDestinationOffset">ChargeDestinationOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ConditionalShow(&quot;type&quot;, 3)]
+public Vector2Int ChargeDestinationOffset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_ChargeDistance.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.ChargeDistance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L16">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_ChargeDistance" data-uid="Global.ChargeBehavior.ChargeDistance">ChargeDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ConditionalShow(&quot;type&quot;, new int[] { 0, 2 })]
+public float ChargeDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_ChargeSpeed.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.ChargeSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_ChargeSpeed" data-uid="Global.ChargeBehavior.ChargeSpeed">ChargeSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ChargeSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_ChargeTowardsPlayer.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.ChargeTowardsPlayer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L35">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_ChargeTowardsPlayer" data-uid="Global.ChargeBehavior.ChargeTowardsPlayer">ChargeTowardsPlayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ConditionalShow(&quot;type&quot;, 3)]
+public bool ChargeTowardsPlayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_Deceleration.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.Deceleration%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L25">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_Deceleration" data-uid="Global.ChargeBehavior.Deceleration">Deceleration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ConditionalShow(&quot;type&quot;, 1)]
+public float Deceleration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_DecelPoint.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.DecelPoint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L41">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_DecelPoint" data-uid="Global.ChargeBehavior.DecelPoint">DecelPoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0, 1)]
+[ConditionalShow(&quot;type&quot;, new int[] { 3, 0 })]
+public float DecelPoint</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_JumpHeight.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.JumpHeight%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L29">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_JumpHeight" data-uid="Global.ChargeBehavior.JumpHeight">JumpHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ConditionalShow(&quot;type&quot;, 2)]
+public float JumpHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_type.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.type%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L14">View Source</a>
+  </span>
+  <h4 id="Global_ChargeBehavior_type" data-uid="Global.ChargeBehavior.type">type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChargeBehavior.ChargeType type</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.ChargeBehavior.html">ChargeBehavior</a>.<a class="xref" href="Global.ChargeBehavior.ChargeType.html">ChargeType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_Charge_System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.Charge(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L149">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_Charge_" data-uid="Global.ChargeBehavior.Charge*"></a>
+  <h4 id="Global_ChargeBehavior_Charge_System_Single_System_Single_System_Single_System_Single_" data-uid="Global.ChargeBehavior.Charge(System.Single,System.Single,System.Single,System.Single)">Charge(float, float, float, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Charge(float distance, float speed, float accelTime = 0.1, float decelTime = 0.8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">speed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">accelTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">decelTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_ChargeLeap_System_Single_System_Single_System_Single_System_Int32_.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.ChargeLeap(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L213">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_ChargeLeap_" data-uid="Global.ChargeBehavior.ChargeLeap*"></a>
+  <h4 id="Global_ChargeBehavior_ChargeLeap_System_Single_System_Single_System_Single_System_Int32_" data-uid="Global.ChargeBehavior.ChargeLeap(System.Single,System.Single,System.Single,System.Int32)">ChargeLeap(float, float, float, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ChargeLeap(float distance, float speed, float jumpHeight, int direction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">speed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">jumpHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_DrawGizmos_ModularEnemy_.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.DrawGizmos(ModularEnemy)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L57">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_DrawGizmos_" data-uid="Global.ChargeBehavior.DrawGizmos*"></a>
+  <h4 id="Global_ChargeBehavior_DrawGizmos_ModularEnemy_" data-uid="Global.ChargeBehavior.DrawGizmos(ModularEnemy)">DrawGizmos(ModularEnemy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawGizmos(ModularEnemy enemy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.ModularEnemy.html">ModularEnemy</a></td>
+        <td><span class="parametername">enemy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_DrawGizmos_ModularEnemy_">ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_OnCollideX_IntSolid_.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.OnCollideX(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L237">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_OnCollideX_" data-uid="Global.ChargeBehavior.OnCollideX*"></a>
+  <h4 id="Global_ChargeBehavior_OnCollideX_IntSolid_" data-uid="Global.ChargeBehavior.OnCollideX(IntSolid)">OnCollideX(IntSolid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnCollideX(IntSolid solid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.IntSolid.html">IntSolid</a></td>
+        <td><span class="parametername">solid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_OnCollideY_IntSolid_.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.OnCollideY(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L245">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_OnCollideY_" data-uid="Global.ChargeBehavior.OnCollideY*"></a>
+  <h4 id="Global_ChargeBehavior_OnCollideY_IntSolid_" data-uid="Global.ChargeBehavior.OnCollideY(IntSolid)">OnCollideY(IntSolid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnCollideY(IntSolid solid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.IntSolid.html">IntSolid</a></td>
+        <td><span class="parametername">solid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_OnRestart.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.OnRestart%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L80">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_OnRestart_" data-uid="Global.ChargeBehavior.OnRestart*"></a>
+  <h4 id="Global_ChargeBehavior_OnRestart" data-uid="Global.ChargeBehavior.OnRestart">OnRestart()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnRestart()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_OnRestart">ModularEnemy.EnemyBehaviorInterface.OnRestart()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_Start_ModularEnemy_.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.Start(ModularEnemy)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L49">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_Start_" data-uid="Global.ChargeBehavior.Start*"></a>
+  <h4 id="Global_ChargeBehavior_Start_ModularEnemy_" data-uid="Global.ChargeBehavior.Start(ModularEnemy)">Start(ModularEnemy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Start(ModularEnemy enemy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.ModularEnemy.html">ModularEnemy</a></td>
+        <td><span class="parametername">enemy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_Start_ModularEnemy_">ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_Swoop_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.Swoop(UnityEngine.Vector2%2CUnityEngine.Vector2%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L168">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_Swoop_" data-uid="Global.ChargeBehavior.Swoop*"></a>
+  <h4 id="Global_ChargeBehavior_Swoop_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_" data-uid="Global.ChargeBehavior.Swoop(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)">Swoop(Vector2, Vector2, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Swoop(Vector2 swoop_start, Vector2 swoop_end, float speed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">swoop_start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">swoop_end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">speed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior_Update.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior.Update%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L88">View Source</a>
+  </span>
+  <a id="Global_ChargeBehavior_Update_" data-uid="Global.ChargeBehavior.Update*"></a>
+  <h4 id="Global_ChargeBehavior_Update" data-uid="Global.ChargeBehavior.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Global.ModularEnemy.EnemyBehaviorInterface.html#Global_ModularEnemy_EnemyBehaviorInterface_Update">ModularEnemy.EnemyBehaviorInterface.Update()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Global.ReflectionExtensions.html#Global_ReflectionExtensions_ToStringWithQuotes_System_Object_">ReflectionExtensions.ToStringWithQuotes(object)</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_ChargeBehavior.md&amp;value=---%0Auid%3A%20Global.ChargeBehavior%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Behaviors/Attack/ChargeBehavior.cs/#L5" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Ascend documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
