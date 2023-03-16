@@ -1,457 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: AscendAPI
-  name: AscendAPI
-  href: api/AscendAPI.html
-  commentId: N:AscendAPI
-  fullName: AscendAPI
-  nameWithType: AscendAPI
-- uid: AscendAPI.AuraUtility
-  name: AuraUtility
-  href: api/AscendAPI.AuraUtility.html
-  commentId: T:AscendAPI.AuraUtility
-  fullName: AscendAPI.AuraUtility
-  nameWithType: AuraUtility
-- uid: AscendAPI.AuraUtility.AuraSpawnManager
-  name: AuraUtility.AuraSpawnManager
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html
-  commentId: T:AscendAPI.AuraUtility.AuraSpawnManager
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager
-  nameWithType: AuraUtility.AuraSpawnManager
-- uid: AscendAPI.AuraUtility.AuraSpawnManager.#ctor(IntObject,System.UInt32)
-  name: AuraSpawnManager(IntObject, uint)
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html#AscendAPI_AuraUtility_AuraSpawnManager__ctor_IntObject_System_UInt32_
-  commentId: M:AscendAPI.AuraUtility.AuraSpawnManager.#ctor(IntObject,System.UInt32)
-  name.vb: New(IntObject, UInteger)
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager.AuraSpawnManager(IntObject, uint)
-  fullName.vb: AscendAPI.AuraUtility.AuraSpawnManager.New(IntObject, UInteger)
-  nameWithType: AuraUtility.AuraSpawnManager.AuraSpawnManager(IntObject, uint)
-  nameWithType.vb: AuraUtility.AuraSpawnManager.New(IntObject, UInteger)
-- uid: AscendAPI.AuraUtility.AuraSpawnManager.#ctor*
-  name: AuraSpawnManager
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html#AscendAPI_AuraUtility_AuraSpawnManager__ctor_
-  commentId: Overload:AscendAPI.AuraUtility.AuraSpawnManager.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager.AuraSpawnManager
-  fullName.vb: AscendAPI.AuraUtility.AuraSpawnManager.New
-  nameWithType: AuraUtility.AuraSpawnManager.AuraSpawnManager
-  nameWithType.vb: AuraUtility.AuraSpawnManager.New
-- uid: AscendAPI.AuraUtility.AuraSpawnManager.AddAura(AutoMergeAura)
-  name: AddAura(AutoMergeAura)
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html#AscendAPI_AuraUtility_AuraSpawnManager_AddAura_AutoMergeAura_
-  commentId: M:AscendAPI.AuraUtility.AuraSpawnManager.AddAura(AutoMergeAura)
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager.AddAura(AutoMergeAura)
-  nameWithType: AuraUtility.AuraSpawnManager.AddAura(AutoMergeAura)
-- uid: AscendAPI.AuraUtility.AuraSpawnManager.AddAura*
-  name: AddAura
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html#AscendAPI_AuraUtility_AuraSpawnManager_AddAura_
-  commentId: Overload:AscendAPI.AuraUtility.AuraSpawnManager.AddAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager.AddAura
-  nameWithType: AuraUtility.AuraSpawnManager.AddAura
-- uid: AscendAPI.AuraUtility.AuraSpawnManager.CanSpawnAura
-  name: CanSpawnAura()
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html#AscendAPI_AuraUtility_AuraSpawnManager_CanSpawnAura
-  commentId: M:AscendAPI.AuraUtility.AuraSpawnManager.CanSpawnAura
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager.CanSpawnAura()
-  nameWithType: AuraUtility.AuraSpawnManager.CanSpawnAura()
-- uid: AscendAPI.AuraUtility.AuraSpawnManager.CanSpawnAura*
-  name: CanSpawnAura
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html#AscendAPI_AuraUtility_AuraSpawnManager_CanSpawnAura_
-  commentId: Overload:AscendAPI.AuraUtility.AuraSpawnManager.CanSpawnAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager.CanSpawnAura
-  nameWithType: AuraUtility.AuraSpawnManager.CanSpawnAura
-- uid: AscendAPI.AuraUtility.AuraSpawnManager.KillAllAuras
-  name: KillAllAuras()
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html#AscendAPI_AuraUtility_AuraSpawnManager_KillAllAuras
-  commentId: M:AscendAPI.AuraUtility.AuraSpawnManager.KillAllAuras
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager.KillAllAuras()
-  nameWithType: AuraUtility.AuraSpawnManager.KillAllAuras()
-- uid: AscendAPI.AuraUtility.AuraSpawnManager.KillAllAuras*
-  name: KillAllAuras
-  href: api/AscendAPI.AuraUtility.AuraSpawnManager.html#AscendAPI_AuraUtility_AuraSpawnManager_KillAllAuras_
-  commentId: Overload:AscendAPI.AuraUtility.AuraSpawnManager.KillAllAuras
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.AuraSpawnManager.KillAllAuras
-  nameWithType: AuraUtility.AuraSpawnManager.KillAllAuras
-- uid: AscendAPI.AuraUtility.BaseAuraProperties
-  name: AuraUtility.BaseAuraProperties
-  href: api/AscendAPI.AuraUtility.BaseAuraProperties.html
-  commentId: T:AscendAPI.AuraUtility.BaseAuraProperties
-  fullName: AscendAPI.AuraUtility.BaseAuraProperties
-  nameWithType: AuraUtility.BaseAuraProperties
-- uid: AscendAPI.AuraUtility.BaseAuraProperties.AutoMergeEnabled
-  name: AutoMergeEnabled
-  href: api/AscendAPI.AuraUtility.BaseAuraProperties.html#AscendAPI_AuraUtility_BaseAuraProperties_AutoMergeEnabled
-  commentId: F:AscendAPI.AuraUtility.BaseAuraProperties.AutoMergeEnabled
-  fullName: AscendAPI.AuraUtility.BaseAuraProperties.AutoMergeEnabled
-  nameWithType: AuraUtility.BaseAuraProperties.AutoMergeEnabled
-- uid: AscendAPI.AuraUtility.BaseAuraProperties.DestroyOnKill
-  name: DestroyOnKill
-  href: api/AscendAPI.AuraUtility.BaseAuraProperties.html#AscendAPI_AuraUtility_BaseAuraProperties_DestroyOnKill
-  commentId: F:AscendAPI.AuraUtility.BaseAuraProperties.DestroyOnKill
-  fullName: AscendAPI.AuraUtility.BaseAuraProperties.DestroyOnKill
-  nameWithType: AuraUtility.BaseAuraProperties.DestroyOnKill
-- uid: AscendAPI.AuraUtility.BaseAuraProperties.DischargeOption
-  name: DischargeOption
-  href: api/AscendAPI.AuraUtility.BaseAuraProperties.html#AscendAPI_AuraUtility_BaseAuraProperties_DischargeOption
-  commentId: F:AscendAPI.AuraUtility.BaseAuraProperties.DischargeOption
-  fullName: AscendAPI.AuraUtility.BaseAuraProperties.DischargeOption
-  nameWithType: AuraUtility.BaseAuraProperties.DischargeOption
-- uid: AscendAPI.AuraUtility.BaseAuraProperties.IndicatorDuration
-  name: IndicatorDuration
-  href: api/AscendAPI.AuraUtility.BaseAuraProperties.html#AscendAPI_AuraUtility_BaseAuraProperties_IndicatorDuration
-  commentId: F:AscendAPI.AuraUtility.BaseAuraProperties.IndicatorDuration
-  fullName: AscendAPI.AuraUtility.BaseAuraProperties.IndicatorDuration
-  nameWithType: AuraUtility.BaseAuraProperties.IndicatorDuration
-- uid: AscendAPI.AuraUtility.BaseAuraProperties.IsBlackAura
-  name: IsBlackAura
-  href: api/AscendAPI.AuraUtility.BaseAuraProperties.html#AscendAPI_AuraUtility_BaseAuraProperties_IsBlackAura
-  commentId: F:AscendAPI.AuraUtility.BaseAuraProperties.IsBlackAura
-  fullName: AscendAPI.AuraUtility.BaseAuraProperties.IsBlackAura
-  nameWithType: AuraUtility.BaseAuraProperties.IsBlackAura
-- uid: AscendAPI.AuraUtility.DefaultAuraProperties
-  name: DefaultAuraProperties
-  href: api/AscendAPI.AuraUtility.html#AscendAPI_AuraUtility_DefaultAuraProperties
-  commentId: P:AscendAPI.AuraUtility.DefaultAuraProperties
-  fullName: AscendAPI.AuraUtility.DefaultAuraProperties
-  nameWithType: AuraUtility.DefaultAuraProperties
-- uid: AscendAPI.AuraUtility.DefaultAuraProperties*
-  name: DefaultAuraProperties
-  href: api/AscendAPI.AuraUtility.html#AscendAPI_AuraUtility_DefaultAuraProperties_
-  commentId: Overload:AscendAPI.AuraUtility.DefaultAuraProperties
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.DefaultAuraProperties
-  nameWithType: AuraUtility.DefaultAuraProperties
-- uid: AscendAPI.AuraUtility.GizmoDrawer
-  name: AuraUtility.GizmoDrawer
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html
-  commentId: T:AscendAPI.AuraUtility.GizmoDrawer
-  fullName: AscendAPI.AuraUtility.GizmoDrawer
-  nameWithType: AuraUtility.GizmoDrawer
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawArcGizmos(System.Single,System.Single,System.Int32,UnityEngine.Vector2Int)
-  name: DrawArcGizmos(float, float, int, Vector2Int)
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawArcGizmos_System_Single_System_Single_System_Int32_UnityEngine_Vector2Int_
-  commentId: M:AscendAPI.AuraUtility.GizmoDrawer.DrawArcGizmos(System.Single,System.Single,System.Int32,UnityEngine.Vector2Int)
-  name.vb: DrawArcGizmos(Single, Single, Integer, Vector2Int)
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawArcGizmos(float, float, int, UnityEngine.Vector2Int)
-  fullName.vb: AscendAPI.AuraUtility.GizmoDrawer.DrawArcGizmos(Single, Single, Integer, UnityEngine.Vector2Int)
-  nameWithType: AuraUtility.GizmoDrawer.DrawArcGizmos(float, float, int, Vector2Int)
-  nameWithType.vb: AuraUtility.GizmoDrawer.DrawArcGizmos(Single, Single, Integer, Vector2Int)
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawArcGizmos*
-  name: DrawArcGizmos
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawArcGizmos_
-  commentId: Overload:AscendAPI.AuraUtility.GizmoDrawer.DrawArcGizmos
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawArcGizmos
-  nameWithType: AuraUtility.GizmoDrawer.DrawArcGizmos
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawCircleGizmo(System.Int32,UnityEngine.Vector2Int)
-  name: DrawCircleGizmo(int, Vector2Int)
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawCircleGizmo_System_Int32_UnityEngine_Vector2Int_
-  commentId: M:AscendAPI.AuraUtility.GizmoDrawer.DrawCircleGizmo(System.Int32,UnityEngine.Vector2Int)
-  name.vb: DrawCircleGizmo(Integer, Vector2Int)
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawCircleGizmo(int, UnityEngine.Vector2Int)
-  fullName.vb: AscendAPI.AuraUtility.GizmoDrawer.DrawCircleGizmo(Integer, UnityEngine.Vector2Int)
-  nameWithType: AuraUtility.GizmoDrawer.DrawCircleGizmo(int, Vector2Int)
-  nameWithType.vb: AuraUtility.GizmoDrawer.DrawCircleGizmo(Integer, Vector2Int)
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawCircleGizmo*
-  name: DrawCircleGizmo
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawCircleGizmo_
-  commentId: Overload:AscendAPI.AuraUtility.GizmoDrawer.DrawCircleGizmo
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawCircleGizmo
-  nameWithType: AuraUtility.GizmoDrawer.DrawCircleGizmo
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction,System.Int32,System.Boolean)
-  name: DrawCustomParametricGizmos(ShapeFunction, int, bool)
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawCustomParametricGizmos_ShapeMaker_ShapeFunction_System_Int32_System_Boolean_
-  commentId: M:AscendAPI.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction,System.Int32,System.Boolean)
-  name.vb: DrawCustomParametricGizmos(ShapeFunction, Integer, Boolean)
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction, int, bool)
-  fullName.vb: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction, Integer, Boolean)
-  nameWithType: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction, int, bool)
-  nameWithType.vb: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction, Integer, Boolean)
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos*
-  name: DrawCustomParametricGizmos
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawCustomParametricGizmos_
-  commentId: Overload:AscendAPI.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos
-  nameWithType: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction,UnityEngine.Vector2,System.Int32,System.Boolean)
-  name: DrawCustomPolarGizmos(PolarFunction, Vector2, int, bool)
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawCustomPolarGizmos_ShapeMaker_PolarFunction_UnityEngine_Vector2_System_Int32_System_Boolean_
-  commentId: M:AscendAPI.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction,UnityEngine.Vector2,System.Int32,System.Boolean)
-  name.vb: DrawCustomPolarGizmos(PolarFunction, Vector2, Integer, Boolean)
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction, UnityEngine.Vector2, int, bool)
-  fullName.vb: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction, UnityEngine.Vector2, Integer, Boolean)
-  nameWithType: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction, Vector2, int, bool)
-  nameWithType.vb: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction, Vector2, Integer, Boolean)
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos*
-  name: DrawCustomPolarGizmos
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawCustomPolarGizmos_
-  commentId: Overload:AscendAPI.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos
-  nameWithType: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawLineGizmo(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
-  name: DrawLineGizmo(Vector2Int, Vector2Int, Vector2Int)
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawLineGizmo_UnityEngine_Vector2Int_UnityEngine_Vector2Int_UnityEngine_Vector2Int_
-  commentId: M:AscendAPI.AuraUtility.GizmoDrawer.DrawLineGizmo(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawLineGizmo(UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int)
-  nameWithType: AuraUtility.GizmoDrawer.DrawLineGizmo(Vector2Int, Vector2Int, Vector2Int)
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawLineGizmo*
-  name: DrawLineGizmo
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawLineGizmo_
-  commentId: Overload:AscendAPI.AuraUtility.GizmoDrawer.DrawLineGizmo
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawLineGizmo
-  nameWithType: AuraUtility.GizmoDrawer.DrawLineGizmo
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(System.Int32,System.Single,UnityEngine.Vector2Int)
-  name: DrawSemiLobeGizmos(int, float, Vector2Int)
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawSemiLobeGizmos_System_Int32_System_Single_UnityEngine_Vector2Int_
-  commentId: M:AscendAPI.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(System.Int32,System.Single,UnityEngine.Vector2Int)
-  name.vb: DrawSemiLobeGizmos(Integer, Single, Vector2Int)
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(int, float, UnityEngine.Vector2Int)
-  fullName.vb: AscendAPI.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(Integer, Single, UnityEngine.Vector2Int)
-  nameWithType: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(int, float, Vector2Int)
-  nameWithType.vb: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(Integer, Single, Vector2Int)
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos*
-  name: DrawSemiLobeGizmos
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawSemiLobeGizmos_
-  commentId: Overload:AscendAPI.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos
-  nameWithType: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawSquareGizmos(System.Int32,UnityEngine.Vector2Int)
-  name: DrawSquareGizmos(int, Vector2Int)
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawSquareGizmos_System_Int32_UnityEngine_Vector2Int_
-  commentId: M:AscendAPI.AuraUtility.GizmoDrawer.DrawSquareGizmos(System.Int32,UnityEngine.Vector2Int)
-  name.vb: DrawSquareGizmos(Integer, Vector2Int)
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawSquareGizmos(int, UnityEngine.Vector2Int)
-  fullName.vb: AscendAPI.AuraUtility.GizmoDrawer.DrawSquareGizmos(Integer, UnityEngine.Vector2Int)
-  nameWithType: AuraUtility.GizmoDrawer.DrawSquareGizmos(int, Vector2Int)
-  nameWithType.vb: AuraUtility.GizmoDrawer.DrawSquareGizmos(Integer, Vector2Int)
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawSquareGizmos*
-  name: DrawSquareGizmos
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawSquareGizmos_
-  commentId: Overload:AscendAPI.AuraUtility.GizmoDrawer.DrawSquareGizmos
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawSquareGizmos
-  nameWithType: AuraUtility.GizmoDrawer.DrawSquareGizmos
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawTriangleGizmos(System.Int32,UnityEngine.Vector2Int)
-  name: DrawTriangleGizmos(int, Vector2Int)
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawTriangleGizmos_System_Int32_UnityEngine_Vector2Int_
-  commentId: M:AscendAPI.AuraUtility.GizmoDrawer.DrawTriangleGizmos(System.Int32,UnityEngine.Vector2Int)
-  name.vb: DrawTriangleGizmos(Integer, Vector2Int)
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawTriangleGizmos(int, UnityEngine.Vector2Int)
-  fullName.vb: AscendAPI.AuraUtility.GizmoDrawer.DrawTriangleGizmos(Integer, UnityEngine.Vector2Int)
-  nameWithType: AuraUtility.GizmoDrawer.DrawTriangleGizmos(int, Vector2Int)
-  nameWithType.vb: AuraUtility.GizmoDrawer.DrawTriangleGizmos(Integer, Vector2Int)
-- uid: AscendAPI.AuraUtility.GizmoDrawer.DrawTriangleGizmos*
-  name: DrawTriangleGizmos
-  href: api/AscendAPI.AuraUtility.GizmoDrawer.html#AscendAPI_AuraUtility_GizmoDrawer_DrawTriangleGizmos_
-  commentId: Overload:AscendAPI.AuraUtility.GizmoDrawer.DrawTriangleGizmos
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.GizmoDrawer.DrawTriangleGizmos
-  nameWithType: AuraUtility.GizmoDrawer.DrawTriangleGizmos
-- uid: AscendAPI.AuraUtility.Movement
-  name: AuraUtility.Movement
-  href: api/AscendAPI.AuraUtility.Movement.html
-  commentId: T:AscendAPI.AuraUtility.Movement
-  fullName: AscendAPI.AuraUtility.Movement
-  nameWithType: AuraUtility.Movement
-- uid: AscendAPI.AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura,MultiEaseMovement.MultiEaseProperties,UnityEngine.GameObject)
-  name: AddMultiEaseMovement(AutoMergeAura, MultiEaseProperties, GameObject)
-  href: api/AscendAPI.AuraUtility.Movement.html#AscendAPI_AuraUtility_Movement_AddMultiEaseMovement_AutoMergeAura_MultiEaseMovement_MultiEaseProperties_UnityEngine_GameObject_
-  commentId: M:AscendAPI.AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura,MultiEaseMovement.MultiEaseProperties,UnityEngine.GameObject)
-  fullName: AscendAPI.AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura, MultiEaseMovement.MultiEaseProperties, UnityEngine.GameObject)
-  nameWithType: AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura, MultiEaseMovement.MultiEaseProperties, GameObject)
-- uid: AscendAPI.AuraUtility.Movement.AddMultiEaseMovement*
-  name: AddMultiEaseMovement
-  href: api/AscendAPI.AuraUtility.Movement.html#AscendAPI_AuraUtility_Movement_AddMultiEaseMovement_
-  commentId: Overload:AscendAPI.AuraUtility.Movement.AddMultiEaseMovement
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Movement.AddMultiEaseMovement
-  nameWithType: AuraUtility.Movement.AddMultiEaseMovement
-- uid: AscendAPI.AuraUtility.Movement.AddOrbitMovement(AutoMergeAura,OrbitMovementController.OrbitMovementProperties,UnityEngine.GameObject)
-  name: AddOrbitMovement(AutoMergeAura, OrbitMovementProperties, GameObject)
-  href: api/AscendAPI.AuraUtility.Movement.html#AscendAPI_AuraUtility_Movement_AddOrbitMovement_AutoMergeAura_OrbitMovementController_OrbitMovementProperties_UnityEngine_GameObject_
-  commentId: M:AscendAPI.AuraUtility.Movement.AddOrbitMovement(AutoMergeAura,OrbitMovementController.OrbitMovementProperties,UnityEngine.GameObject)
-  fullName: AscendAPI.AuraUtility.Movement.AddOrbitMovement(AutoMergeAura, OrbitMovementController.OrbitMovementProperties, UnityEngine.GameObject)
-  nameWithType: AuraUtility.Movement.AddOrbitMovement(AutoMergeAura, OrbitMovementController.OrbitMovementProperties, GameObject)
-- uid: AscendAPI.AuraUtility.Movement.AddOrbitMovement*
-  name: AddOrbitMovement
-  href: api/AscendAPI.AuraUtility.Movement.html#AscendAPI_AuraUtility_Movement_AddOrbitMovement_
-  commentId: Overload:AscendAPI.AuraUtility.Movement.AddOrbitMovement
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Movement.AddOrbitMovement
-  nameWithType: AuraUtility.Movement.AddOrbitMovement
-- uid: AscendAPI.AuraUtility.Presets
-  name: AuraUtility.Presets
-  href: api/AscendAPI.AuraUtility.Presets.html
-  commentId: T:AscendAPI.AuraUtility.Presets
-  fullName: AscendAPI.AuraUtility.Presets
-  nameWithType: AuraUtility.Presets
-- uid: AscendAPI.AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnBeaconAura(EasingProperties, GameObject, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Presets.html#AscendAPI_AuraUtility_Presets_SpawnBeaconAura_EasingAutoAuraController_EasingProperties_UnityEngine_GameObject_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties, UnityEngine.GameObject, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties, GameObject, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Presets.SpawnBeaconAura*
-  name: SpawnBeaconAura
-  href: api/AscendAPI.AuraUtility.Presets.html#AscendAPI_AuraUtility_Presets_SpawnBeaconAura_
-  commentId: Overload:AscendAPI.AuraUtility.Presets.SpawnBeaconAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Presets.SpawnBeaconAura
-  nameWithType: AuraUtility.Presets.SpawnBeaconAura
-- uid: AscendAPI.AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnBeamAura(BeamProperties, GameObject, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Presets.html#AscendAPI_AuraUtility_Presets_SpawnBeamAura_BeamMovementController_BeamProperties_UnityEngine_GameObject_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties, UnityEngine.GameObject, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties, GameObject, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Presets.SpawnBeamAura*
-  name: SpawnBeamAura
-  href: api/AscendAPI.AuraUtility.Presets.html#AscendAPI_AuraUtility_Presets_SpawnBeamAura_
-  commentId: Overload:AscendAPI.AuraUtility.Presets.SpawnBeamAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Presets.SpawnBeamAura
-  nameWithType: AuraUtility.Presets.SpawnBeamAura
-- uid: AscendAPI.AuraUtility.Shape
-  name: AuraUtility.Shape
-  href: api/AscendAPI.AuraUtility.Shape.html
-  commentId: T:AscendAPI.AuraUtility.Shape
-  fullName: AscendAPI.AuraUtility.Shape
-  nameWithType: AuraUtility.Shape
-- uid: AscendAPI.AuraUtility.Shape.SpawnArcAura(System.Single,System.Single,System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnArcAura(float, float, int, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnArcAura_System_Single_System_Single_System_Int32_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Shape.SpawnArcAura(System.Single,System.Single,System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name.vb: SpawnArcAura(Single, Single, Integer, Vector2Int, Transform, BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Shape.SpawnArcAura(float, float, int, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName.vb: AscendAPI.AuraUtility.Shape.SpawnArcAura(Single, Single, Integer, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Shape.SpawnArcAura(float, float, int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-  nameWithType.vb: AuraUtility.Shape.SpawnArcAura(Single, Single, Integer, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Shape.SpawnArcAura*
-  name: SpawnArcAura
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnArcAura_
-  commentId: Overload:AscendAPI.AuraUtility.Shape.SpawnArcAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Shape.SpawnArcAura
-  nameWithType: AuraUtility.Shape.SpawnArcAura
-- uid: AscendAPI.AuraUtility.Shape.SpawnCircleAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnCircleAura(int, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnCircleAura_System_Int32_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Shape.SpawnCircleAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name.vb: SpawnCircleAura(Integer, Vector2Int, Transform, BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Shape.SpawnCircleAura(int, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName.vb: AscendAPI.AuraUtility.Shape.SpawnCircleAura(Integer, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Shape.SpawnCircleAura(int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-  nameWithType.vb: AuraUtility.Shape.SpawnCircleAura(Integer, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Shape.SpawnCircleAura*
-  name: SpawnCircleAura
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnCircleAura_
-  commentId: Overload:AscendAPI.AuraUtility.Shape.SpawnCircleAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Shape.SpawnCircleAura
-  nameWithType: AuraUtility.Shape.SpawnCircleAura
-- uid: AscendAPI.AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction,System.Int32,System.Boolean,System.Boolean,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnCustomParametricAura(ShapeFunction, int, bool, bool, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnCustomParametricAura_ShapeMaker_ShapeFunction_System_Int32_System_Boolean_System_Boolean_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction,System.Int32,System.Boolean,System.Boolean,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name.vb: SpawnCustomParametricAura(ShapeFunction, Integer, Boolean, Boolean, Vector2Int, Transform, BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction, int, bool, bool, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName.vb: AscendAPI.AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction, Integer, Boolean, Boolean, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction, int, bool, bool, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-  nameWithType.vb: AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction, Integer, Boolean, Boolean, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Shape.SpawnCustomParametricAura*
-  name: SpawnCustomParametricAura
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnCustomParametricAura_
-  commentId: Overload:AscendAPI.AuraUtility.Shape.SpawnCustomParametricAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Shape.SpawnCustomParametricAura
-  nameWithType: AuraUtility.Shape.SpawnCustomParametricAura
-- uid: AscendAPI.AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction,UnityEngine.Vector2,System.Int32,System.Boolean,System.Boolean,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnCustomPolarAura(PolarFunction, Vector2, int, bool, bool, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnCustomPolarAura_ShapeMaker_PolarFunction_UnityEngine_Vector2_System_Int32_System_Boolean_System_Boolean_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction,UnityEngine.Vector2,System.Int32,System.Boolean,System.Boolean,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name.vb: SpawnCustomPolarAura(PolarFunction, Vector2, Integer, Boolean, Boolean, Vector2Int, Transform, BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction, UnityEngine.Vector2, int, bool, bool, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName.vb: AscendAPI.AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction, UnityEngine.Vector2, Integer, Boolean, Boolean, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction, Vector2, int, bool, bool, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-  nameWithType.vb: AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction, Vector2, Integer, Boolean, Boolean, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Shape.SpawnCustomPolarAura*
-  name: SpawnCustomPolarAura
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnCustomPolarAura_
-  commentId: Overload:AscendAPI.AuraUtility.Shape.SpawnCustomPolarAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Shape.SpawnCustomPolarAura
-  nameWithType: AuraUtility.Shape.SpawnCustomPolarAura
-- uid: AscendAPI.AuraUtility.Shape.SpawnLineAura(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnLineAura(Vector2Int, Vector2Int, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnLineAura_UnityEngine_Vector2Int_UnityEngine_Vector2Int_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Shape.SpawnLineAura(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Shape.SpawnLineAura(UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Shape.SpawnLineAura(Vector2Int, Vector2Int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Shape.SpawnLineAura*
-  name: SpawnLineAura
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnLineAura_
-  commentId: Overload:AscendAPI.AuraUtility.Shape.SpawnLineAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Shape.SpawnLineAura
-  nameWithType: AuraUtility.Shape.SpawnLineAura
-- uid: AscendAPI.AuraUtility.Shape.SpawnSemiLobeAura(System.Int32,System.Single,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnSemiLobeAura(int, float, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnSemiLobeAura_System_Int32_System_Single_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Shape.SpawnSemiLobeAura(System.Int32,System.Single,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name.vb: SpawnSemiLobeAura(Integer, Single, Vector2Int, Transform, BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Shape.SpawnSemiLobeAura(int, float, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName.vb: AscendAPI.AuraUtility.Shape.SpawnSemiLobeAura(Integer, Single, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Shape.SpawnSemiLobeAura(int, float, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-  nameWithType.vb: AuraUtility.Shape.SpawnSemiLobeAura(Integer, Single, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Shape.SpawnSemiLobeAura*
-  name: SpawnSemiLobeAura
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnSemiLobeAura_
-  commentId: Overload:AscendAPI.AuraUtility.Shape.SpawnSemiLobeAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Shape.SpawnSemiLobeAura
-  nameWithType: AuraUtility.Shape.SpawnSemiLobeAura
-- uid: AscendAPI.AuraUtility.Shape.SpawnSquareAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnSquareAura(int, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnSquareAura_System_Int32_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Shape.SpawnSquareAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name.vb: SpawnSquareAura(Integer, Vector2Int, Transform, BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Shape.SpawnSquareAura(int, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName.vb: AscendAPI.AuraUtility.Shape.SpawnSquareAura(Integer, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Shape.SpawnSquareAura(int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-  nameWithType.vb: AuraUtility.Shape.SpawnSquareAura(Integer, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Shape.SpawnSquareAura*
-  name: SpawnSquareAura
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnSquareAura_
-  commentId: Overload:AscendAPI.AuraUtility.Shape.SpawnSquareAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Shape.SpawnSquareAura
-  nameWithType: AuraUtility.Shape.SpawnSquareAura
-- uid: AscendAPI.AuraUtility.Shape.SpawnTriangleAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name: SpawnTriangleAura(int, Vector2Int, Transform, BaseAuraProperties)
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnTriangleAura_System_Int32_UnityEngine_Vector2Int_UnityEngine_Transform_AscendAPI_AuraUtility_BaseAuraProperties_
-  commentId: M:AscendAPI.AuraUtility.Shape.SpawnTriangleAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AscendAPI.AuraUtility.BaseAuraProperties)
-  name.vb: SpawnTriangleAura(Integer, Vector2Int, Transform, BaseAuraProperties)
-  fullName: AscendAPI.AuraUtility.Shape.SpawnTriangleAura(int, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  fullName.vb: AscendAPI.AuraUtility.Shape.SpawnTriangleAura(Integer, UnityEngine.Vector2Int, UnityEngine.Transform, AscendAPI.AuraUtility.BaseAuraProperties)
-  nameWithType: AuraUtility.Shape.SpawnTriangleAura(int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-  nameWithType.vb: AuraUtility.Shape.SpawnTriangleAura(Integer, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
-- uid: AscendAPI.AuraUtility.Shape.SpawnTriangleAura*
-  name: SpawnTriangleAura
-  href: api/AscendAPI.AuraUtility.Shape.html#AscendAPI_AuraUtility_Shape_SpawnTriangleAura_
-  commentId: Overload:AscendAPI.AuraUtility.Shape.SpawnTriangleAura
-  isSpec: "True"
-  fullName: AscendAPI.AuraUtility.Shape.SpawnTriangleAura
-  nameWithType: AuraUtility.Shape.SpawnTriangleAura
 - uid: Global
   name: ''
   href: api/Global.html
@@ -5131,6 +4680,451 @@ references:
   commentId: F:Global.AuraTraceEffect.traceParticleSystem
   fullName: AuraTraceEffect.traceParticleSystem
   nameWithType: AuraTraceEffect.traceParticleSystem
+- uid: Global.AuraUtility
+  name: AuraUtility
+  href: api/Global.AuraUtility.html
+  commentId: T:Global.AuraUtility
+  fullName: AuraUtility
+  nameWithType: AuraUtility
+- uid: Global.AuraUtility.AuraSpawnManager
+  name: AuraUtility.AuraSpawnManager
+  href: api/Global.AuraUtility.AuraSpawnManager.html
+  commentId: T:Global.AuraUtility.AuraSpawnManager
+  fullName: AuraUtility.AuraSpawnManager
+  nameWithType: AuraUtility.AuraSpawnManager
+- uid: Global.AuraUtility.AuraSpawnManager.#ctor(IntObject,System.UInt32)
+  name: AuraSpawnManager(IntObject, uint)
+  href: api/Global.AuraUtility.AuraSpawnManager.html#Global_AuraUtility_AuraSpawnManager__ctor_IntObject_System_UInt32_
+  commentId: M:Global.AuraUtility.AuraSpawnManager.#ctor(IntObject,System.UInt32)
+  name.vb: New(IntObject, UInteger)
+  fullName: AuraUtility.AuraSpawnManager.AuraSpawnManager(IntObject, uint)
+  fullName.vb: AuraUtility.AuraSpawnManager.New(IntObject, UInteger)
+  nameWithType: AuraUtility.AuraSpawnManager.AuraSpawnManager(IntObject, uint)
+  nameWithType.vb: AuraUtility.AuraSpawnManager.New(IntObject, UInteger)
+- uid: Global.AuraUtility.AuraSpawnManager.#ctor*
+  name: AuraSpawnManager
+  href: api/Global.AuraUtility.AuraSpawnManager.html#Global_AuraUtility_AuraSpawnManager__ctor_
+  commentId: Overload:Global.AuraUtility.AuraSpawnManager.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AuraUtility.AuraSpawnManager.AuraSpawnManager
+  fullName.vb: AuraUtility.AuraSpawnManager.New
+  nameWithType: AuraUtility.AuraSpawnManager.AuraSpawnManager
+  nameWithType.vb: AuraUtility.AuraSpawnManager.New
+- uid: Global.AuraUtility.AuraSpawnManager.AddAura(AutoMergeAura)
+  name: AddAura(AutoMergeAura)
+  href: api/Global.AuraUtility.AuraSpawnManager.html#Global_AuraUtility_AuraSpawnManager_AddAura_AutoMergeAura_
+  commentId: M:Global.AuraUtility.AuraSpawnManager.AddAura(AutoMergeAura)
+  fullName: AuraUtility.AuraSpawnManager.AddAura(AutoMergeAura)
+  nameWithType: AuraUtility.AuraSpawnManager.AddAura(AutoMergeAura)
+- uid: Global.AuraUtility.AuraSpawnManager.AddAura*
+  name: AddAura
+  href: api/Global.AuraUtility.AuraSpawnManager.html#Global_AuraUtility_AuraSpawnManager_AddAura_
+  commentId: Overload:Global.AuraUtility.AuraSpawnManager.AddAura
+  isSpec: "True"
+  fullName: AuraUtility.AuraSpawnManager.AddAura
+  nameWithType: AuraUtility.AuraSpawnManager.AddAura
+- uid: Global.AuraUtility.AuraSpawnManager.CanSpawnAura
+  name: CanSpawnAura()
+  href: api/Global.AuraUtility.AuraSpawnManager.html#Global_AuraUtility_AuraSpawnManager_CanSpawnAura
+  commentId: M:Global.AuraUtility.AuraSpawnManager.CanSpawnAura
+  fullName: AuraUtility.AuraSpawnManager.CanSpawnAura()
+  nameWithType: AuraUtility.AuraSpawnManager.CanSpawnAura()
+- uid: Global.AuraUtility.AuraSpawnManager.CanSpawnAura*
+  name: CanSpawnAura
+  href: api/Global.AuraUtility.AuraSpawnManager.html#Global_AuraUtility_AuraSpawnManager_CanSpawnAura_
+  commentId: Overload:Global.AuraUtility.AuraSpawnManager.CanSpawnAura
+  isSpec: "True"
+  fullName: AuraUtility.AuraSpawnManager.CanSpawnAura
+  nameWithType: AuraUtility.AuraSpawnManager.CanSpawnAura
+- uid: Global.AuraUtility.AuraSpawnManager.KillAllAuras
+  name: KillAllAuras()
+  href: api/Global.AuraUtility.AuraSpawnManager.html#Global_AuraUtility_AuraSpawnManager_KillAllAuras
+  commentId: M:Global.AuraUtility.AuraSpawnManager.KillAllAuras
+  fullName: AuraUtility.AuraSpawnManager.KillAllAuras()
+  nameWithType: AuraUtility.AuraSpawnManager.KillAllAuras()
+- uid: Global.AuraUtility.AuraSpawnManager.KillAllAuras*
+  name: KillAllAuras
+  href: api/Global.AuraUtility.AuraSpawnManager.html#Global_AuraUtility_AuraSpawnManager_KillAllAuras_
+  commentId: Overload:Global.AuraUtility.AuraSpawnManager.KillAllAuras
+  isSpec: "True"
+  fullName: AuraUtility.AuraSpawnManager.KillAllAuras
+  nameWithType: AuraUtility.AuraSpawnManager.KillAllAuras
+- uid: Global.AuraUtility.BaseAuraProperties
+  name: AuraUtility.BaseAuraProperties
+  href: api/Global.AuraUtility.BaseAuraProperties.html
+  commentId: T:Global.AuraUtility.BaseAuraProperties
+  fullName: AuraUtility.BaseAuraProperties
+  nameWithType: AuraUtility.BaseAuraProperties
+- uid: Global.AuraUtility.BaseAuraProperties.AutoMergeEnabled
+  name: AutoMergeEnabled
+  href: api/Global.AuraUtility.BaseAuraProperties.html#Global_AuraUtility_BaseAuraProperties_AutoMergeEnabled
+  commentId: F:Global.AuraUtility.BaseAuraProperties.AutoMergeEnabled
+  fullName: AuraUtility.BaseAuraProperties.AutoMergeEnabled
+  nameWithType: AuraUtility.BaseAuraProperties.AutoMergeEnabled
+- uid: Global.AuraUtility.BaseAuraProperties.DestroyOnKill
+  name: DestroyOnKill
+  href: api/Global.AuraUtility.BaseAuraProperties.html#Global_AuraUtility_BaseAuraProperties_DestroyOnKill
+  commentId: F:Global.AuraUtility.BaseAuraProperties.DestroyOnKill
+  fullName: AuraUtility.BaseAuraProperties.DestroyOnKill
+  nameWithType: AuraUtility.BaseAuraProperties.DestroyOnKill
+- uid: Global.AuraUtility.BaseAuraProperties.DischargeOption
+  name: DischargeOption
+  href: api/Global.AuraUtility.BaseAuraProperties.html#Global_AuraUtility_BaseAuraProperties_DischargeOption
+  commentId: F:Global.AuraUtility.BaseAuraProperties.DischargeOption
+  fullName: AuraUtility.BaseAuraProperties.DischargeOption
+  nameWithType: AuraUtility.BaseAuraProperties.DischargeOption
+- uid: Global.AuraUtility.BaseAuraProperties.IndicatorDuration
+  name: IndicatorDuration
+  href: api/Global.AuraUtility.BaseAuraProperties.html#Global_AuraUtility_BaseAuraProperties_IndicatorDuration
+  commentId: F:Global.AuraUtility.BaseAuraProperties.IndicatorDuration
+  fullName: AuraUtility.BaseAuraProperties.IndicatorDuration
+  nameWithType: AuraUtility.BaseAuraProperties.IndicatorDuration
+- uid: Global.AuraUtility.BaseAuraProperties.IsBlackAura
+  name: IsBlackAura
+  href: api/Global.AuraUtility.BaseAuraProperties.html#Global_AuraUtility_BaseAuraProperties_IsBlackAura
+  commentId: F:Global.AuraUtility.BaseAuraProperties.IsBlackAura
+  fullName: AuraUtility.BaseAuraProperties.IsBlackAura
+  nameWithType: AuraUtility.BaseAuraProperties.IsBlackAura
+- uid: Global.AuraUtility.DefaultAuraProperties
+  name: DefaultAuraProperties
+  href: api/Global.AuraUtility.html#Global_AuraUtility_DefaultAuraProperties
+  commentId: P:Global.AuraUtility.DefaultAuraProperties
+  fullName: AuraUtility.DefaultAuraProperties
+  nameWithType: AuraUtility.DefaultAuraProperties
+- uid: Global.AuraUtility.DefaultAuraProperties*
+  name: DefaultAuraProperties
+  href: api/Global.AuraUtility.html#Global_AuraUtility_DefaultAuraProperties_
+  commentId: Overload:Global.AuraUtility.DefaultAuraProperties
+  isSpec: "True"
+  fullName: AuraUtility.DefaultAuraProperties
+  nameWithType: AuraUtility.DefaultAuraProperties
+- uid: Global.AuraUtility.GizmoDrawer
+  name: AuraUtility.GizmoDrawer
+  href: api/Global.AuraUtility.GizmoDrawer.html
+  commentId: T:Global.AuraUtility.GizmoDrawer
+  fullName: AuraUtility.GizmoDrawer
+  nameWithType: AuraUtility.GizmoDrawer
+- uid: Global.AuraUtility.GizmoDrawer.DrawArcGizmos(System.Single,System.Single,System.Int32,UnityEngine.Vector2Int)
+  name: DrawArcGizmos(float, float, int, Vector2Int)
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawArcGizmos_System_Single_System_Single_System_Int32_UnityEngine_Vector2Int_
+  commentId: M:Global.AuraUtility.GizmoDrawer.DrawArcGizmos(System.Single,System.Single,System.Int32,UnityEngine.Vector2Int)
+  name.vb: DrawArcGizmos(Single, Single, Integer, Vector2Int)
+  fullName: AuraUtility.GizmoDrawer.DrawArcGizmos(float, float, int, UnityEngine.Vector2Int)
+  fullName.vb: AuraUtility.GizmoDrawer.DrawArcGizmos(Single, Single, Integer, UnityEngine.Vector2Int)
+  nameWithType: AuraUtility.GizmoDrawer.DrawArcGizmos(float, float, int, Vector2Int)
+  nameWithType.vb: AuraUtility.GizmoDrawer.DrawArcGizmos(Single, Single, Integer, Vector2Int)
+- uid: Global.AuraUtility.GizmoDrawer.DrawArcGizmos*
+  name: DrawArcGizmos
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawArcGizmos_
+  commentId: Overload:Global.AuraUtility.GizmoDrawer.DrawArcGizmos
+  isSpec: "True"
+  fullName: AuraUtility.GizmoDrawer.DrawArcGizmos
+  nameWithType: AuraUtility.GizmoDrawer.DrawArcGizmos
+- uid: Global.AuraUtility.GizmoDrawer.DrawCircleGizmo(System.Int32,UnityEngine.Vector2Int)
+  name: DrawCircleGizmo(int, Vector2Int)
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawCircleGizmo_System_Int32_UnityEngine_Vector2Int_
+  commentId: M:Global.AuraUtility.GizmoDrawer.DrawCircleGizmo(System.Int32,UnityEngine.Vector2Int)
+  name.vb: DrawCircleGizmo(Integer, Vector2Int)
+  fullName: AuraUtility.GizmoDrawer.DrawCircleGizmo(int, UnityEngine.Vector2Int)
+  fullName.vb: AuraUtility.GizmoDrawer.DrawCircleGizmo(Integer, UnityEngine.Vector2Int)
+  nameWithType: AuraUtility.GizmoDrawer.DrawCircleGizmo(int, Vector2Int)
+  nameWithType.vb: AuraUtility.GizmoDrawer.DrawCircleGizmo(Integer, Vector2Int)
+- uid: Global.AuraUtility.GizmoDrawer.DrawCircleGizmo*
+  name: DrawCircleGizmo
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawCircleGizmo_
+  commentId: Overload:Global.AuraUtility.GizmoDrawer.DrawCircleGizmo
+  isSpec: "True"
+  fullName: AuraUtility.GizmoDrawer.DrawCircleGizmo
+  nameWithType: AuraUtility.GizmoDrawer.DrawCircleGizmo
+- uid: Global.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction,System.Int32,System.Boolean)
+  name: DrawCustomParametricGizmos(ShapeFunction, int, bool)
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawCustomParametricGizmos_ShapeMaker_ShapeFunction_System_Int32_System_Boolean_
+  commentId: M:Global.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction,System.Int32,System.Boolean)
+  name.vb: DrawCustomParametricGizmos(ShapeFunction, Integer, Boolean)
+  fullName: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction, int, bool)
+  fullName.vb: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction, Integer, Boolean)
+  nameWithType: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction, int, bool)
+  nameWithType.vb: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos(ShapeMaker.ShapeFunction, Integer, Boolean)
+- uid: Global.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos*
+  name: DrawCustomParametricGizmos
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawCustomParametricGizmos_
+  commentId: Overload:Global.AuraUtility.GizmoDrawer.DrawCustomParametricGizmos
+  isSpec: "True"
+  fullName: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos
+  nameWithType: AuraUtility.GizmoDrawer.DrawCustomParametricGizmos
+- uid: Global.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction,UnityEngine.Vector2,System.Int32,System.Boolean)
+  name: DrawCustomPolarGizmos(PolarFunction, Vector2, int, bool)
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawCustomPolarGizmos_ShapeMaker_PolarFunction_UnityEngine_Vector2_System_Int32_System_Boolean_
+  commentId: M:Global.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction,UnityEngine.Vector2,System.Int32,System.Boolean)
+  name.vb: DrawCustomPolarGizmos(PolarFunction, Vector2, Integer, Boolean)
+  fullName: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction, UnityEngine.Vector2, int, bool)
+  fullName.vb: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction, UnityEngine.Vector2, Integer, Boolean)
+  nameWithType: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction, Vector2, int, bool)
+  nameWithType.vb: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos(ShapeMaker.PolarFunction, Vector2, Integer, Boolean)
+- uid: Global.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos*
+  name: DrawCustomPolarGizmos
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawCustomPolarGizmos_
+  commentId: Overload:Global.AuraUtility.GizmoDrawer.DrawCustomPolarGizmos
+  isSpec: "True"
+  fullName: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos
+  nameWithType: AuraUtility.GizmoDrawer.DrawCustomPolarGizmos
+- uid: Global.AuraUtility.GizmoDrawer.DrawLineGizmo(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  name: DrawLineGizmo(Vector2Int, Vector2Int, Vector2Int)
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawLineGizmo_UnityEngine_Vector2Int_UnityEngine_Vector2Int_UnityEngine_Vector2Int_
+  commentId: M:Global.AuraUtility.GizmoDrawer.DrawLineGizmo(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  fullName: AuraUtility.GizmoDrawer.DrawLineGizmo(UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  nameWithType: AuraUtility.GizmoDrawer.DrawLineGizmo(Vector2Int, Vector2Int, Vector2Int)
+- uid: Global.AuraUtility.GizmoDrawer.DrawLineGizmo*
+  name: DrawLineGizmo
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawLineGizmo_
+  commentId: Overload:Global.AuraUtility.GizmoDrawer.DrawLineGizmo
+  isSpec: "True"
+  fullName: AuraUtility.GizmoDrawer.DrawLineGizmo
+  nameWithType: AuraUtility.GizmoDrawer.DrawLineGizmo
+- uid: Global.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(System.Int32,System.Single,UnityEngine.Vector2Int)
+  name: DrawSemiLobeGizmos(int, float, Vector2Int)
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawSemiLobeGizmos_System_Int32_System_Single_UnityEngine_Vector2Int_
+  commentId: M:Global.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(System.Int32,System.Single,UnityEngine.Vector2Int)
+  name.vb: DrawSemiLobeGizmos(Integer, Single, Vector2Int)
+  fullName: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(int, float, UnityEngine.Vector2Int)
+  fullName.vb: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(Integer, Single, UnityEngine.Vector2Int)
+  nameWithType: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(int, float, Vector2Int)
+  nameWithType.vb: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos(Integer, Single, Vector2Int)
+- uid: Global.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos*
+  name: DrawSemiLobeGizmos
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawSemiLobeGizmos_
+  commentId: Overload:Global.AuraUtility.GizmoDrawer.DrawSemiLobeGizmos
+  isSpec: "True"
+  fullName: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos
+  nameWithType: AuraUtility.GizmoDrawer.DrawSemiLobeGizmos
+- uid: Global.AuraUtility.GizmoDrawer.DrawSquareGizmos(System.Int32,UnityEngine.Vector2Int)
+  name: DrawSquareGizmos(int, Vector2Int)
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawSquareGizmos_System_Int32_UnityEngine_Vector2Int_
+  commentId: M:Global.AuraUtility.GizmoDrawer.DrawSquareGizmos(System.Int32,UnityEngine.Vector2Int)
+  name.vb: DrawSquareGizmos(Integer, Vector2Int)
+  fullName: AuraUtility.GizmoDrawer.DrawSquareGizmos(int, UnityEngine.Vector2Int)
+  fullName.vb: AuraUtility.GizmoDrawer.DrawSquareGizmos(Integer, UnityEngine.Vector2Int)
+  nameWithType: AuraUtility.GizmoDrawer.DrawSquareGizmos(int, Vector2Int)
+  nameWithType.vb: AuraUtility.GizmoDrawer.DrawSquareGizmos(Integer, Vector2Int)
+- uid: Global.AuraUtility.GizmoDrawer.DrawSquareGizmos*
+  name: DrawSquareGizmos
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawSquareGizmos_
+  commentId: Overload:Global.AuraUtility.GizmoDrawer.DrawSquareGizmos
+  isSpec: "True"
+  fullName: AuraUtility.GizmoDrawer.DrawSquareGizmos
+  nameWithType: AuraUtility.GizmoDrawer.DrawSquareGizmos
+- uid: Global.AuraUtility.GizmoDrawer.DrawTriangleGizmos(System.Int32,UnityEngine.Vector2Int)
+  name: DrawTriangleGizmos(int, Vector2Int)
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawTriangleGizmos_System_Int32_UnityEngine_Vector2Int_
+  commentId: M:Global.AuraUtility.GizmoDrawer.DrawTriangleGizmos(System.Int32,UnityEngine.Vector2Int)
+  name.vb: DrawTriangleGizmos(Integer, Vector2Int)
+  fullName: AuraUtility.GizmoDrawer.DrawTriangleGizmos(int, UnityEngine.Vector2Int)
+  fullName.vb: AuraUtility.GizmoDrawer.DrawTriangleGizmos(Integer, UnityEngine.Vector2Int)
+  nameWithType: AuraUtility.GizmoDrawer.DrawTriangleGizmos(int, Vector2Int)
+  nameWithType.vb: AuraUtility.GizmoDrawer.DrawTriangleGizmos(Integer, Vector2Int)
+- uid: Global.AuraUtility.GizmoDrawer.DrawTriangleGizmos*
+  name: DrawTriangleGizmos
+  href: api/Global.AuraUtility.GizmoDrawer.html#Global_AuraUtility_GizmoDrawer_DrawTriangleGizmos_
+  commentId: Overload:Global.AuraUtility.GizmoDrawer.DrawTriangleGizmos
+  isSpec: "True"
+  fullName: AuraUtility.GizmoDrawer.DrawTriangleGizmos
+  nameWithType: AuraUtility.GizmoDrawer.DrawTriangleGizmos
+- uid: Global.AuraUtility.Movement
+  name: AuraUtility.Movement
+  href: api/Global.AuraUtility.Movement.html
+  commentId: T:Global.AuraUtility.Movement
+  fullName: AuraUtility.Movement
+  nameWithType: AuraUtility.Movement
+- uid: Global.AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura,MultiEaseMovement.MultiEaseProperties,UnityEngine.GameObject)
+  name: AddMultiEaseMovement(AutoMergeAura, MultiEaseProperties, GameObject)
+  href: api/Global.AuraUtility.Movement.html#Global_AuraUtility_Movement_AddMultiEaseMovement_AutoMergeAura_MultiEaseMovement_MultiEaseProperties_UnityEngine_GameObject_
+  commentId: M:Global.AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura,MultiEaseMovement.MultiEaseProperties,UnityEngine.GameObject)
+  fullName: AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura, MultiEaseMovement.MultiEaseProperties, UnityEngine.GameObject)
+  nameWithType: AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura, MultiEaseMovement.MultiEaseProperties, GameObject)
+- uid: Global.AuraUtility.Movement.AddMultiEaseMovement*
+  name: AddMultiEaseMovement
+  href: api/Global.AuraUtility.Movement.html#Global_AuraUtility_Movement_AddMultiEaseMovement_
+  commentId: Overload:Global.AuraUtility.Movement.AddMultiEaseMovement
+  isSpec: "True"
+  fullName: AuraUtility.Movement.AddMultiEaseMovement
+  nameWithType: AuraUtility.Movement.AddMultiEaseMovement
+- uid: Global.AuraUtility.Movement.AddOrbitMovement(AutoMergeAura,OrbitMovementController.OrbitMovementProperties,UnityEngine.GameObject)
+  name: AddOrbitMovement(AutoMergeAura, OrbitMovementProperties, GameObject)
+  href: api/Global.AuraUtility.Movement.html#Global_AuraUtility_Movement_AddOrbitMovement_AutoMergeAura_OrbitMovementController_OrbitMovementProperties_UnityEngine_GameObject_
+  commentId: M:Global.AuraUtility.Movement.AddOrbitMovement(AutoMergeAura,OrbitMovementController.OrbitMovementProperties,UnityEngine.GameObject)
+  fullName: AuraUtility.Movement.AddOrbitMovement(AutoMergeAura, OrbitMovementController.OrbitMovementProperties, UnityEngine.GameObject)
+  nameWithType: AuraUtility.Movement.AddOrbitMovement(AutoMergeAura, OrbitMovementController.OrbitMovementProperties, GameObject)
+- uid: Global.AuraUtility.Movement.AddOrbitMovement*
+  name: AddOrbitMovement
+  href: api/Global.AuraUtility.Movement.html#Global_AuraUtility_Movement_AddOrbitMovement_
+  commentId: Overload:Global.AuraUtility.Movement.AddOrbitMovement
+  isSpec: "True"
+  fullName: AuraUtility.Movement.AddOrbitMovement
+  nameWithType: AuraUtility.Movement.AddOrbitMovement
+- uid: Global.AuraUtility.Presets
+  name: AuraUtility.Presets
+  href: api/Global.AuraUtility.Presets.html
+  commentId: T:Global.AuraUtility.Presets
+  fullName: AuraUtility.Presets
+  nameWithType: AuraUtility.Presets
+- uid: Global.AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnBeaconAura(EasingProperties, GameObject, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Presets.html#Global_AuraUtility_Presets_SpawnBeaconAura_EasingAutoAuraController_EasingProperties_UnityEngine_GameObject_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  fullName: AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties, UnityEngine.GameObject, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties, GameObject, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Presets.SpawnBeaconAura*
+  name: SpawnBeaconAura
+  href: api/Global.AuraUtility.Presets.html#Global_AuraUtility_Presets_SpawnBeaconAura_
+  commentId: Overload:Global.AuraUtility.Presets.SpawnBeaconAura
+  isSpec: "True"
+  fullName: AuraUtility.Presets.SpawnBeaconAura
+  nameWithType: AuraUtility.Presets.SpawnBeaconAura
+- uid: Global.AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnBeamAura(BeamProperties, GameObject, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Presets.html#Global_AuraUtility_Presets_SpawnBeamAura_BeamMovementController_BeamProperties_UnityEngine_GameObject_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  fullName: AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties, UnityEngine.GameObject, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties, GameObject, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Presets.SpawnBeamAura*
+  name: SpawnBeamAura
+  href: api/Global.AuraUtility.Presets.html#Global_AuraUtility_Presets_SpawnBeamAura_
+  commentId: Overload:Global.AuraUtility.Presets.SpawnBeamAura
+  isSpec: "True"
+  fullName: AuraUtility.Presets.SpawnBeamAura
+  nameWithType: AuraUtility.Presets.SpawnBeamAura
+- uid: Global.AuraUtility.Shape
+  name: AuraUtility.Shape
+  href: api/Global.AuraUtility.Shape.html
+  commentId: T:Global.AuraUtility.Shape
+  fullName: AuraUtility.Shape
+  nameWithType: AuraUtility.Shape
+- uid: Global.AuraUtility.Shape.SpawnArcAura(System.Single,System.Single,System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnArcAura(float, float, int, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnArcAura_System_Single_System_Single_System_Int32_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Shape.SpawnArcAura(System.Single,System.Single,System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name.vb: SpawnArcAura(Single, Single, Integer, Vector2Int, Transform, BaseAuraProperties)
+  fullName: AuraUtility.Shape.SpawnArcAura(float, float, int, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  fullName.vb: AuraUtility.Shape.SpawnArcAura(Single, Single, Integer, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Shape.SpawnArcAura(float, float, int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  nameWithType.vb: AuraUtility.Shape.SpawnArcAura(Single, Single, Integer, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Shape.SpawnArcAura*
+  name: SpawnArcAura
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnArcAura_
+  commentId: Overload:Global.AuraUtility.Shape.SpawnArcAura
+  isSpec: "True"
+  fullName: AuraUtility.Shape.SpawnArcAura
+  nameWithType: AuraUtility.Shape.SpawnArcAura
+- uid: Global.AuraUtility.Shape.SpawnCircleAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnCircleAura(int, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnCircleAura_System_Int32_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Shape.SpawnCircleAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name.vb: SpawnCircleAura(Integer, Vector2Int, Transform, BaseAuraProperties)
+  fullName: AuraUtility.Shape.SpawnCircleAura(int, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  fullName.vb: AuraUtility.Shape.SpawnCircleAura(Integer, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Shape.SpawnCircleAura(int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  nameWithType.vb: AuraUtility.Shape.SpawnCircleAura(Integer, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Shape.SpawnCircleAura*
+  name: SpawnCircleAura
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnCircleAura_
+  commentId: Overload:Global.AuraUtility.Shape.SpawnCircleAura
+  isSpec: "True"
+  fullName: AuraUtility.Shape.SpawnCircleAura
+  nameWithType: AuraUtility.Shape.SpawnCircleAura
+- uid: Global.AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction,System.Int32,System.Boolean,System.Boolean,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnCustomParametricAura(ShapeFunction, int, bool, bool, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnCustomParametricAura_ShapeMaker_ShapeFunction_System_Int32_System_Boolean_System_Boolean_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction,System.Int32,System.Boolean,System.Boolean,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name.vb: SpawnCustomParametricAura(ShapeFunction, Integer, Boolean, Boolean, Vector2Int, Transform, BaseAuraProperties)
+  fullName: AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction, int, bool, bool, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  fullName.vb: AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction, Integer, Boolean, Boolean, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction, int, bool, bool, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  nameWithType.vb: AuraUtility.Shape.SpawnCustomParametricAura(ShapeMaker.ShapeFunction, Integer, Boolean, Boolean, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Shape.SpawnCustomParametricAura*
+  name: SpawnCustomParametricAura
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnCustomParametricAura_
+  commentId: Overload:Global.AuraUtility.Shape.SpawnCustomParametricAura
+  isSpec: "True"
+  fullName: AuraUtility.Shape.SpawnCustomParametricAura
+  nameWithType: AuraUtility.Shape.SpawnCustomParametricAura
+- uid: Global.AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction,UnityEngine.Vector2,System.Int32,System.Boolean,System.Boolean,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnCustomPolarAura(PolarFunction, Vector2, int, bool, bool, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnCustomPolarAura_ShapeMaker_PolarFunction_UnityEngine_Vector2_System_Int32_System_Boolean_System_Boolean_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction,UnityEngine.Vector2,System.Int32,System.Boolean,System.Boolean,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name.vb: SpawnCustomPolarAura(PolarFunction, Vector2, Integer, Boolean, Boolean, Vector2Int, Transform, BaseAuraProperties)
+  fullName: AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction, UnityEngine.Vector2, int, bool, bool, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  fullName.vb: AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction, UnityEngine.Vector2, Integer, Boolean, Boolean, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction, Vector2, int, bool, bool, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  nameWithType.vb: AuraUtility.Shape.SpawnCustomPolarAura(ShapeMaker.PolarFunction, Vector2, Integer, Boolean, Boolean, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Shape.SpawnCustomPolarAura*
+  name: SpawnCustomPolarAura
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnCustomPolarAura_
+  commentId: Overload:Global.AuraUtility.Shape.SpawnCustomPolarAura
+  isSpec: "True"
+  fullName: AuraUtility.Shape.SpawnCustomPolarAura
+  nameWithType: AuraUtility.Shape.SpawnCustomPolarAura
+- uid: Global.AuraUtility.Shape.SpawnLineAura(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnLineAura(Vector2Int, Vector2Int, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnLineAura_UnityEngine_Vector2Int_UnityEngine_Vector2Int_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Shape.SpawnLineAura(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  fullName: AuraUtility.Shape.SpawnLineAura(UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Shape.SpawnLineAura(Vector2Int, Vector2Int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Shape.SpawnLineAura*
+  name: SpawnLineAura
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnLineAura_
+  commentId: Overload:Global.AuraUtility.Shape.SpawnLineAura
+  isSpec: "True"
+  fullName: AuraUtility.Shape.SpawnLineAura
+  nameWithType: AuraUtility.Shape.SpawnLineAura
+- uid: Global.AuraUtility.Shape.SpawnSemiLobeAura(System.Int32,System.Single,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnSemiLobeAura(int, float, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnSemiLobeAura_System_Int32_System_Single_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Shape.SpawnSemiLobeAura(System.Int32,System.Single,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name.vb: SpawnSemiLobeAura(Integer, Single, Vector2Int, Transform, BaseAuraProperties)
+  fullName: AuraUtility.Shape.SpawnSemiLobeAura(int, float, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  fullName.vb: AuraUtility.Shape.SpawnSemiLobeAura(Integer, Single, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Shape.SpawnSemiLobeAura(int, float, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  nameWithType.vb: AuraUtility.Shape.SpawnSemiLobeAura(Integer, Single, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Shape.SpawnSemiLobeAura*
+  name: SpawnSemiLobeAura
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnSemiLobeAura_
+  commentId: Overload:Global.AuraUtility.Shape.SpawnSemiLobeAura
+  isSpec: "True"
+  fullName: AuraUtility.Shape.SpawnSemiLobeAura
+  nameWithType: AuraUtility.Shape.SpawnSemiLobeAura
+- uid: Global.AuraUtility.Shape.SpawnSquareAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnSquareAura(int, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnSquareAura_System_Int32_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Shape.SpawnSquareAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name.vb: SpawnSquareAura(Integer, Vector2Int, Transform, BaseAuraProperties)
+  fullName: AuraUtility.Shape.SpawnSquareAura(int, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  fullName.vb: AuraUtility.Shape.SpawnSquareAura(Integer, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Shape.SpawnSquareAura(int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  nameWithType.vb: AuraUtility.Shape.SpawnSquareAura(Integer, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Shape.SpawnSquareAura*
+  name: SpawnSquareAura
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnSquareAura_
+  commentId: Overload:Global.AuraUtility.Shape.SpawnSquareAura
+  isSpec: "True"
+  fullName: AuraUtility.Shape.SpawnSquareAura
+  nameWithType: AuraUtility.Shape.SpawnSquareAura
+- uid: Global.AuraUtility.Shape.SpawnTriangleAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name: SpawnTriangleAura(int, Vector2Int, Transform, BaseAuraProperties)
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnTriangleAura_System_Int32_UnityEngine_Vector2Int_UnityEngine_Transform_AuraUtility_BaseAuraProperties_
+  commentId: M:Global.AuraUtility.Shape.SpawnTriangleAura(System.Int32,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  name.vb: SpawnTriangleAura(Integer, Vector2Int, Transform, BaseAuraProperties)
+  fullName: AuraUtility.Shape.SpawnTriangleAura(int, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  fullName.vb: AuraUtility.Shape.SpawnTriangleAura(Integer, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  nameWithType: AuraUtility.Shape.SpawnTriangleAura(int, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  nameWithType.vb: AuraUtility.Shape.SpawnTriangleAura(Integer, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+- uid: Global.AuraUtility.Shape.SpawnTriangleAura*
+  name: SpawnTriangleAura
+  href: api/Global.AuraUtility.Shape.html#Global_AuraUtility_Shape_SpawnTriangleAura_
+  commentId: Overload:Global.AuraUtility.Shape.SpawnTriangleAura
+  isSpec: "True"
+  fullName: AuraUtility.Shape.SpawnTriangleAura
+  nameWithType: AuraUtility.Shape.SpawnTriangleAura
 - uid: Global.AutoDestroy
   name: AutoDestroy
   href: api/Global.AutoDestroy.html

@@ -22,127 +22,6 @@
       }
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "about/coniunctis.md",
-      "output": {
-        ".html": {
-          "relative_path": "about/coniunctis.html",
-          "hash": "cUNguLyq7f8TmSuEovGRCL1t5cj1rX+1ub3Bk/C+64k="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "about/etiam.md",
-      "output": {
-        ".html": {
-          "relative_path": "about/etiam.html",
-          "hash": "8/2p+1QKjiLJCtjunI6M7F1odQrs8ugXhXjcA9vV7fo="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "about/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "about/toc.html",
-          "hash": "Tcm9qlcDaO08ZALfJLz9pvYtwG3N+BgaEbYVUBYBa84="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AscendAPI.AuraUtility.AuraSpawnManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AscendAPI.AuraUtility.AuraSpawnManager.html",
-          "hash": "9Hnxiczz2ulWiCLrAsTukOoE9bH5EAbKPqM5Mbkx24o="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AscendAPI.AuraUtility.BaseAuraProperties.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AscendAPI.AuraUtility.BaseAuraProperties.html",
-          "hash": "ZrxOanOO4gJbC7U5mJlXEqTOELRP8m+w0TOsl+ZNvgo="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AscendAPI.AuraUtility.GizmoDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AscendAPI.AuraUtility.GizmoDrawer.html",
-          "hash": "l7+Dpuxq+tF0JgqncA7qrlZUFIg6tZU+EMC/9K20Ht4="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AscendAPI.AuraUtility.Movement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AscendAPI.AuraUtility.Movement.html",
-          "hash": "16HhKafbFdhJAbGn61BAy5dWHprwG45KZySte7zKAHI="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AscendAPI.AuraUtility.Presets.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AscendAPI.AuraUtility.Presets.html",
-          "hash": "yMK40jgDCR3qakvhykneP8pEu4yplROgRn2/89lmRNE="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AscendAPI.AuraUtility.Shape.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AscendAPI.AuraUtility.Shape.html",
-          "hash": "s8KFpWcC/GavvWvp5Yaud856vt034hNSr8sKgXNC7rM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AscendAPI.AuraUtility.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AscendAPI.AuraUtility.html",
-          "hash": "DSucQW2Hbac4/mkf53HHOUp5xroXzD0WTe6NLN1xgJ8="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AscendAPI.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AscendAPI.html",
-          "hash": "qzDt9lTAfSQ2wGDGwDdNi+c5o9TrYHBUkjJTZLX4qPE="
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "ManagedReference",
       "source_relative_path": "api/Global.AABBIntCollider.RectOverlap.yml",
       "output": {
@@ -771,6 +650,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.AuraUtility.AuraSpawnManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AuraUtility.AuraSpawnManager.html",
+          "hash": "xVHrZOf0ClDzjyiqToJWVR+fVju4a5LAg7oeXWCQVz8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AuraUtility.BaseAuraProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AuraUtility.BaseAuraProperties.html",
+          "hash": "nkldnUBveNd0+63cgw4wZGupOwWKEaQR4ChUhwcmANg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AuraUtility.GizmoDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AuraUtility.GizmoDrawer.html",
+          "hash": "5aOHvzpm18Bpf8PrdL3TQut08ypKU5NveoxY1RjiaBQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AuraUtility.Movement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AuraUtility.Movement.html",
+          "hash": "8hhC3AWWJIR/ul3/We26Y2M3cG0jYxJcsEUIlUqFA24="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AuraUtility.Presets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AuraUtility.Presets.html",
+          "hash": "lZFi1+cIbG4Q/NGjSPlmJ+yj0pRRRyC6SPC/xJh8FiE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AuraUtility.Shape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AuraUtility.Shape.html",
+          "hash": "taz4ShJoHKFluuL77j5W2EHgaj11CNykddO+ToXRMtY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AuraUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AuraUtility.html",
+          "hash": "5NtflU8YZQCqiwkir5WBKuN6s+/h0fLonTkME+k0wg8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.AutoDestroy.yml",
       "output": {
         ".html": {
@@ -1116,7 +1072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Blit.html",
-          "hash": "4xZDMpAmpAVK4dvSYsIzWRZUol80JQ43OuZ8aZaXtfA="
+          "hash": "UC95+llmhyXeuGfxV4G90Ft7rGzZMNehXCQZ6eJqHTE="
         }
       },
       "version": ""
@@ -1776,7 +1732,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.CustomRenderPassFeature.html",
-          "hash": "ORlkUpUmzskB1pRvjCBZpy+ua2KB8IkSFln5HX7vkjA="
+          "hash": "/PGEJ6sZAjGGa6FRxDeKkvhv7V4Ouru+/46DEBmIxlU="
         }
       },
       "version": ""
@@ -1886,7 +1842,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.DialogueBehavior.html",
-          "hash": "x3B4reKzzQrljn7X1SBEzLrXkAJZavZ8oaA70WDo8oE="
+          "hash": "b7A+7zfC2Bv45uEJAhAnmuvDz2n/RM+cB5ttuAWrxGk="
         }
       },
       "version": ""
@@ -4251,7 +4207,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.PlatformerBehavior.html",
-          "hash": "WZNeUoQhpnGGK3L0d/SWYjbWykXTP+TVTllbR8R21Zk="
+          "hash": "Nf3K1+9//nHpYyKns3KBKTUuqvXEmre1vNcFENsgT1w="
         }
       },
       "version": ""
@@ -5230,7 +5186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.SerializableDictionary-2.html",
-          "hash": "HiBXwTkdQp3bikiGKaaR5Zj//BNMv3gf5TUko10eR74="
+          "hash": "OnXXYsTGxrJmHcKpD1jdr00N/Fdj2yBt7p9y7QM4aX0="
         }
       },
       "version": ""
@@ -6110,7 +6066,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Vector2IntSerializationSurrogate.html",
-          "hash": "BVyg8342K/rUJIJ+k0VJc/c9JNM1lrdmq0v1rlrmJA0="
+          "hash": "sy5ob+ctSPBaV0aduAV+q4cJ8fmoAegS3r7DfaTeE58="
         }
       },
       "version": ""
@@ -6121,7 +6077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Vector2SerializationSurrogate.html",
-          "hash": "hEQLTVzlxjOTyIwhPQmAm0wuX1f55egkSUhicH2tlr8="
+          "hash": "omQc58znkFmZ16lqjRV9liv1xDLamCxBXwRHFtWb3Q4="
         }
       },
       "version": ""
@@ -6132,7 +6088,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Vector3IntSerializationSurrogate.html",
-          "hash": "PV5Iv8zB2WzWJvXSQRGgXS9GLgRNs/RzZJ9fKWskpCY="
+          "hash": "E9Aez4ZpiIw59jIqyLfHfUy4XL/f8XMCgK13w09YRDU="
         }
       },
       "version": ""
@@ -6143,7 +6099,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Vector3SerializationSurrogate.html",
-          "hash": "qBCh+jgr6fCkwo1+kqoeMeREeMkLEDmw+7Kv5ToAols="
+          "hash": "qEukQu+N9TsJhU8jy4QDBu03PuJpTb3PLwz8tfVz3EM="
         }
       },
       "version": ""
@@ -6264,7 +6220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.WaterBunny.WaterBunnyState.html",
-          "hash": "Hha5lHMr+1y3BJUJEixqXEBmzxnQjbvOcVGk5KhE4T4="
+          "hash": "PeAC0PP9Z4V6qXD9kYQ3XsXjZaN3u4lf/Q0pi654HT8="
         }
       },
       "version": ""
@@ -6275,7 +6231,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.WaterBunny.html",
-          "hash": "+61jlWxrb5Y4KIElt38iZYOJfwrhEmQNzTgLs+M9Ldg="
+          "hash": "93p/NoVmYrQvLvYBCj5bn2XfKwRgNA4e74aUgbbEZ7E="
         }
       },
       "version": ""
@@ -6462,7 +6418,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.html",
-          "hash": "lHhcF7gamPNhq7+0+tCTtxDnLcNzSGzMHUfPDbQEofY="
+          "hash": "WZqeO1/+fowcGzaQovxoTmzGNAxPLEZa+n/I4V+I/+I="
         }
       },
       "version": ""
@@ -6473,7 +6429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gxvGokFKIIeoiHjqTxwo7J984WaDyOHKPxd2+3rHpwE="
+          "hash": "HtXcsqxzO6kGMqoA5gDJy39nx2Qd7A2h6K28AxEgjSs="
         }
       },
       "version": ""
@@ -6515,7 +6471,40 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "611S+YzMHQqx51NK1NG6eQzaP3qzswISid73wxUK+IA="
+          "hash": "kUhXfthWkqgWHjrZKidaRQeaoLqMG6NiH2VwvBXVmmY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/coniunctis.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/coniunctis.html",
+          "hash": "31+fKU0zZOyzuyXFCVjmxO5o9g8f5YuLDcLlQXtE3yc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/etiam.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/etiam.html",
+          "hash": "xQEoGalUah7ls0/49gT+F5e8RgwK3baRuDGaOFFeaRw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "tutorials/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/toc.html",
+          "hash": "Tcm9qlcDaO08ZALfJLz9pvYtwG3N+BgaEbYVUBYBa84="
         }
       },
       "version": ""
