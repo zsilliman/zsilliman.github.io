@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SwitchSceneController.Scenes
+  commentId: T:Global.SwitchSceneController.Scenes
+  id: SwitchSceneController.Scenes
+  parent: Global
+  children:
+  - Global.SwitchSceneController.Scenes.BlademasterCabin
+  - Global.SwitchSceneController.Scenes.MainMenu
+  - Global.SwitchSceneController.Scenes.TheCrossroads
+  - Global.SwitchSceneController.Scenes.TheForest
+  - Global.SwitchSceneController.Scenes.TheHollow
+  - Global.SwitchSceneController.Scenes.WhereItBegins
+  langs:
+  - csharp
+  - vb
+  name: SwitchSceneController.Scenes
+  nameWithType: SwitchSceneController.Scenes
+  fullName: SwitchSceneController.Scenes
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Scenes
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum SwitchSceneController.Scenes
+    content.vb: Public Enum SwitchSceneController.Scenes
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SwitchSceneController.Scenes.MainMenu
+  commentId: F:Global.SwitchSceneController.Scenes.MainMenu
+  id: MainMenu
+  parent: Global.SwitchSceneController.Scenes
+  langs:
+  - csharp
+  - vb
+  name: MainMenu
+  nameWithType: SwitchSceneController.Scenes.MainMenu
+  fullName: SwitchSceneController.Scenes.MainMenu
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MainMenu
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: MainMenu = 0
+    return:
+      type: Global.SwitchSceneController.Scenes
+- uid: Global.SwitchSceneController.Scenes.WhereItBegins
+  commentId: F:Global.SwitchSceneController.Scenes.WhereItBegins
+  id: WhereItBegins
+  parent: Global.SwitchSceneController.Scenes
+  langs:
+  - csharp
+  - vb
+  name: WhereItBegins
+  nameWithType: SwitchSceneController.Scenes.WhereItBegins
+  fullName: SwitchSceneController.Scenes.WhereItBegins
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WhereItBegins
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: WhereItBegins = 1
+    return:
+      type: Global.SwitchSceneController.Scenes
+- uid: Global.SwitchSceneController.Scenes.TheHollow
+  commentId: F:Global.SwitchSceneController.Scenes.TheHollow
+  id: TheHollow
+  parent: Global.SwitchSceneController.Scenes
+  langs:
+  - csharp
+  - vb
+  name: TheHollow
+  nameWithType: SwitchSceneController.Scenes.TheHollow
+  fullName: SwitchSceneController.Scenes.TheHollow
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TheHollow
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: TheHollow = 2
+    return:
+      type: Global.SwitchSceneController.Scenes
+- uid: Global.SwitchSceneController.Scenes.TheCrossroads
+  commentId: F:Global.SwitchSceneController.Scenes.TheCrossroads
+  id: TheCrossroads
+  parent: Global.SwitchSceneController.Scenes
+  langs:
+  - csharp
+  - vb
+  name: TheCrossroads
+  nameWithType: SwitchSceneController.Scenes.TheCrossroads
+  fullName: SwitchSceneController.Scenes.TheCrossroads
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TheCrossroads
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: TheCrossroads = 3
+    return:
+      type: Global.SwitchSceneController.Scenes
+- uid: Global.SwitchSceneController.Scenes.BlademasterCabin
+  commentId: F:Global.SwitchSceneController.Scenes.BlademasterCabin
+  id: BlademasterCabin
+  parent: Global.SwitchSceneController.Scenes
+  langs:
+  - csharp
+  - vb
+  name: BlademasterCabin
+  nameWithType: SwitchSceneController.Scenes.BlademasterCabin
+  fullName: SwitchSceneController.Scenes.BlademasterCabin
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlademasterCabin
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: BlademasterCabin = 4
+    return:
+      type: Global.SwitchSceneController.Scenes
+- uid: Global.SwitchSceneController.Scenes.TheForest
+  commentId: F:Global.SwitchSceneController.Scenes.TheForest
+  id: TheForest
+  parent: Global.SwitchSceneController.Scenes
+  langs:
+  - csharp
+  - vb
+  name: TheForest
+  nameWithType: SwitchSceneController.Scenes.TheForest
+  fullName: SwitchSceneController.Scenes.TheForest
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TheForest
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SwitchSceneController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: TheForest = 5
+    return:
+      type: Global.SwitchSceneController.Scenes
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.SwitchSceneController.Scenes
+  commentId: T:Global.SwitchSceneController.Scenes
+  name: SwitchSceneController.Scenes
+  nameWithType: SwitchSceneController.Scenes
+  fullName: SwitchSceneController.Scenes
+  spec.csharp:
+  - uid: Global.SwitchSceneController
+    name: SwitchSceneController
+  - name: .
+  - uid: Global.SwitchSceneController.Scenes
+    name: Scenes
+  spec.vb:
+  - uid: Global.SwitchSceneController
+    name: SwitchSceneController
+  - name: .
+  - uid: Global.SwitchSceneController.Scenes
+    name: Scenes

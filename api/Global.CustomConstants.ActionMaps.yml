@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomConstants.ActionMaps
+  commentId: T:Global.CustomConstants.ActionMaps
+  id: CustomConstants.ActionMaps
+  parent: Global
+  children:
+  - Global.CustomConstants.ActionMaps.CUTSCENE
+  - Global.CustomConstants.ActionMaps.INGAME
+  - Global.CustomConstants.ActionMaps.INVENTORY
+  langs:
+  - csharp
+  - vb
+  name: CustomConstants.ActionMaps
+  nameWithType: CustomConstants.ActionMaps
+  fullName: CustomConstants.ActionMaps
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ActionMaps
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static class CustomConstants.ActionMaps
+    content.vb: Public Module CustomConstants.ActionMaps
+  inheritance:
+  - System.Object
+- uid: Global.CustomConstants.ActionMaps.INGAME
+  commentId: F:Global.CustomConstants.ActionMaps.INGAME
+  id: INGAME
+  parent: Global.CustomConstants.ActionMaps
+  langs:
+  - csharp
+  - vb
+  name: INGAME
+  nameWithType: CustomConstants.ActionMaps.INGAME
+  fullName: CustomConstants.ActionMaps.INGAME
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: INGAME
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string INGAME = "InGame"
+    return:
+      type: System.String
+    content.vb: Public Const INGAME As String = "InGame"
+- uid: Global.CustomConstants.ActionMaps.CUTSCENE
+  commentId: F:Global.CustomConstants.ActionMaps.CUTSCENE
+  id: CUTSCENE
+  parent: Global.CustomConstants.ActionMaps
+  langs:
+  - csharp
+  - vb
+  name: CUTSCENE
+  nameWithType: CustomConstants.ActionMaps.CUTSCENE
+  fullName: CustomConstants.ActionMaps.CUTSCENE
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CUTSCENE
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string CUTSCENE = "CutScene"
+    return:
+      type: System.String
+    content.vb: Public Const CUTSCENE As String = "CutScene"
+- uid: Global.CustomConstants.ActionMaps.INVENTORY
+  commentId: F:Global.CustomConstants.ActionMaps.INVENTORY
+  id: INVENTORY
+  parent: Global.CustomConstants.ActionMaps
+  langs:
+  - csharp
+  - vb
+  name: INVENTORY
+  nameWithType: CustomConstants.ActionMaps.INVENTORY
+  fullName: CustomConstants.ActionMaps.INVENTORY
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: INVENTORY
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string INVENTORY = "Inventory"
+    return:
+      type: System.String
+    content.vb: Public Const INVENTORY As String = "Inventory"
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

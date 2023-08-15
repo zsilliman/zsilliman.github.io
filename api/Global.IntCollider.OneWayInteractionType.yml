@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntCollider.OneWayInteractionType
+  commentId: T:Global.IntCollider.OneWayInteractionType
+  id: IntCollider.OneWayInteractionType
+  parent: Global
+  children:
+  - Global.IntCollider.OneWayInteractionType.Ignore
+  - Global.IntCollider.OneWayInteractionType.OneWay
+  - Global.IntCollider.OneWayInteractionType.Solid
+  langs:
+  - csharp
+  - vb
+  name: IntCollider.OneWayInteractionType
+  nameWithType: IntCollider.OneWayInteractionType
+  fullName: IntCollider.OneWayInteractionType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OneWayInteractionType
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nEnum that defines how a collider should interact with a one-way tile.\n- Ignore = pass through\n- Solid  = always collide\n- OneWay = pass through when moving up, solid when moving down\n"
+  example: []
+  syntax:
+    content: public enum IntCollider.OneWayInteractionType
+    content.vb: Public Enum IntCollider.OneWayInteractionType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.IntCollider.OneWayInteractionType.Ignore
+  commentId: F:Global.IntCollider.OneWayInteractionType.Ignore
+  id: Ignore
+  parent: Global.IntCollider.OneWayInteractionType
+  langs:
+  - csharp
+  - vb
+  name: Ignore
+  nameWithType: IntCollider.OneWayInteractionType.Ignore
+  fullName: IntCollider.OneWayInteractionType.Ignore
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Ignore
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Ignore = 0
+    return:
+      type: Global.IntCollider.OneWayInteractionType
+- uid: Global.IntCollider.OneWayInteractionType.Solid
+  commentId: F:Global.IntCollider.OneWayInteractionType.Solid
+  id: Solid
+  parent: Global.IntCollider.OneWayInteractionType
+  langs:
+  - csharp
+  - vb
+  name: Solid
+  nameWithType: IntCollider.OneWayInteractionType.Solid
+  fullName: IntCollider.OneWayInteractionType.Solid
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Solid
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Solid = 1
+    return:
+      type: Global.IntCollider.OneWayInteractionType
+- uid: Global.IntCollider.OneWayInteractionType.OneWay
+  commentId: F:Global.IntCollider.OneWayInteractionType.OneWay
+  id: OneWay
+  parent: Global.IntCollider.OneWayInteractionType
+  langs:
+  - csharp
+  - vb
+  name: OneWay
+  nameWithType: IntCollider.OneWayInteractionType.OneWay
+  fullName: IntCollider.OneWayInteractionType.OneWay
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OneWay
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: OneWay = 2
+    return:
+      type: Global.IntCollider.OneWayInteractionType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.IntCollider.OneWayInteractionType
+  commentId: T:Global.IntCollider.OneWayInteractionType
+  name: IntCollider.OneWayInteractionType
+  nameWithType: IntCollider.OneWayInteractionType
+  fullName: IntCollider.OneWayInteractionType
+  spec.csharp:
+  - uid: Global.IntCollider
+    name: IntCollider
+  - name: .
+  - uid: Global.IntCollider.OneWayInteractionType
+    name: OneWayInteractionType
+  spec.vb:
+  - uid: Global.IntCollider
+    name: IntCollider
+  - name: .
+  - uid: Global.IntCollider.OneWayInteractionType
+    name: OneWayInteractionType

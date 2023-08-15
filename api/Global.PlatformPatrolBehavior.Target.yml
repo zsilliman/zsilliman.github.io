@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlatformPatrolBehavior.Target
+  commentId: T:Global.PlatformPatrolBehavior.Target
+  id: PlatformPatrolBehavior.Target
+  parent: Global
+  children:
+  - Global.PlatformPatrolBehavior.Target.End
+  - Global.PlatformPatrolBehavior.Target.Start
+  langs:
+  - csharp
+  - vb
+  name: PlatformPatrolBehavior.Target
+  nameWithType: PlatformPatrolBehavior.Target
+  fullName: PlatformPatrolBehavior.Target
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/PlatformPatrolBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Target
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/PlatformPatrolBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum PlatformPatrolBehavior.Target
+    content.vb: Public Enum PlatformPatrolBehavior.Target
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.PlatformPatrolBehavior.Target.Start
+  commentId: F:Global.PlatformPatrolBehavior.Target.Start
+  id: Start
+  parent: Global.PlatformPatrolBehavior.Target
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: PlatformPatrolBehavior.Target.Start
+  fullName: PlatformPatrolBehavior.Target.Start
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/PlatformPatrolBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/PlatformPatrolBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Start = 0
+    return:
+      type: Global.PlatformPatrolBehavior.Target
+- uid: Global.PlatformPatrolBehavior.Target.End
+  commentId: F:Global.PlatformPatrolBehavior.Target.End
+  id: End
+  parent: Global.PlatformPatrolBehavior.Target
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: PlatformPatrolBehavior.Target.End
+  fullName: PlatformPatrolBehavior.Target.End
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/PlatformPatrolBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: End
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/PlatformPatrolBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: End = 1
+    return:
+      type: Global.PlatformPatrolBehavior.Target
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.PlatformPatrolBehavior.Target
+  commentId: T:Global.PlatformPatrolBehavior.Target
+  name: PlatformPatrolBehavior.Target
+  nameWithType: PlatformPatrolBehavior.Target
+  fullName: PlatformPatrolBehavior.Target
+  spec.csharp:
+  - uid: Global.PlatformPatrolBehavior
+    name: PlatformPatrolBehavior
+  - name: .
+  - uid: Global.PlatformPatrolBehavior.Target
+    name: Target
+  spec.vb:
+  - uid: Global.PlatformPatrolBehavior
+    name: PlatformPatrolBehavior
+  - name: .
+  - uid: Global.PlatformPatrolBehavior.Target
+    name: Target

@@ -1,0 +1,722 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AutoFloatingDialogueController
+  commentId: T:Global.AutoFloatingDialogueController
+  id: AutoFloatingDialogueController
+  parent: Global
+  children:
+  - Global.AutoFloatingDialogueController.dialogue
+  - Global.AutoFloatingDialogueController.FloatingDialogueUI
+  - Global.AutoFloatingDialogueController.IsInteractionActive
+  - Global.AutoFloatingDialogueController.IsInteractionFinished
+  - Global.AutoFloatingDialogueController.OnInteract
+  - Global.AutoFloatingDialogueController.OnInteractionTriggerEnter(Player)
+  - Global.AutoFloatingDialogueController.OnInteractionTriggerExit(Player)
+  - Global.AutoFloatingDialogueController.OnResetObject
+  - Global.AutoFloatingDialogueController.pointerLocation
+  - Global.AutoFloatingDialogueController.Start
+  langs:
+  - csharp
+  - vb
+  name: AutoFloatingDialogueController
+  nameWithType: AutoFloatingDialogueController
+  fullName: AutoFloatingDialogueController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AutoFloatingDialogueController
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class AutoFloatingDialogueController : InteractionController'
+    content.vb: Public Class AutoFloatingDialogueController Inherits InteractionController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.InteractionController
+  inheritedMembers:
+  - Global.InteractionController.interactable
+  - Global.InteractionController.WaitForOtherControllers
+  - Global.InteractionController.OnAllInteractionsCompleted
+  - Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  - Global.InteractionController.OnTriggerExitCallback(IntActor)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AutoFloatingDialogueController.pointerLocation
+  commentId: F:Global.AutoFloatingDialogueController.pointerLocation
+  id: pointerLocation
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: pointerLocation
+  nameWithType: AutoFloatingDialogueController.pointerLocation
+  fullName: AutoFloatingDialogueController.pointerLocation
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: pointerLocation
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public AutoFloatingDialogueController.PointerLocation pointerLocation
+    return:
+      type: Global.AutoFloatingDialogueController.PointerLocation
+    content.vb: Public pointerLocation As AutoFloatingDialogueController.PointerLocation
+- uid: Global.AutoFloatingDialogueController.FloatingDialogueUI
+  commentId: F:Global.AutoFloatingDialogueController.FloatingDialogueUI
+  id: FloatingDialogueUI
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: FloatingDialogueUI
+  nameWithType: AutoFloatingDialogueController.FloatingDialogueUI
+  fullName: AutoFloatingDialogueController.FloatingDialogueUI
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FloatingDialogueUI
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject FloatingDialogueUI
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public FloatingDialogueUI As GameObject
+- uid: Global.AutoFloatingDialogueController.dialogue
+  commentId: F:Global.AutoFloatingDialogueController.dialogue
+  id: dialogue
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: dialogue
+  nameWithType: AutoFloatingDialogueController.dialogue
+  fullName: AutoFloatingDialogueController.dialogue
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: dialogue
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [TextArea(4, 20)]
+
+      public string dialogue
+    return:
+      type: System.String
+    content.vb: >-
+      <SerializeField>
+
+      <TextArea(4, 20)>
+
+      Public dialogue As String
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: UnityEngine.TextAreaAttribute
+    ctor: UnityEngine.TextAreaAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
+    - type: System.Int32
+      value: 20
+- uid: Global.AutoFloatingDialogueController.Start
+  commentId: M:Global.AutoFloatingDialogueController.Start
+  id: Start
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: AutoFloatingDialogueController.Start()
+  fullName: AutoFloatingDialogueController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.AutoFloatingDialogueController.Start*
+- uid: Global.AutoFloatingDialogueController.OnInteract
+  commentId: M:Global.AutoFloatingDialogueController.OnInteract
+  id: OnInteract
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: OnInteract()
+  nameWithType: AutoFloatingDialogueController.OnInteract()
+  fullName: AutoFloatingDialogueController.OnInteract()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteract
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteract()
+    content.vb: Public Overrides Sub OnInteract()
+  overridden: Global.InteractionController.OnInteract
+  overload: Global.AutoFloatingDialogueController.OnInteract*
+- uid: Global.AutoFloatingDialogueController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.AutoFloatingDialogueController.OnInteractionTriggerEnter(Player)
+  id: OnInteractionTriggerEnter(Player)
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: AutoFloatingDialogueController.OnInteractionTriggerEnter(Player)
+  fullName: AutoFloatingDialogueController.OnInteractionTriggerEnter(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerEnter
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerEnter(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerEnter(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  overload: Global.AutoFloatingDialogueController.OnInteractionTriggerEnter*
+- uid: Global.AutoFloatingDialogueController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.AutoFloatingDialogueController.OnInteractionTriggerExit(Player)
+  id: OnInteractionTriggerExit(Player)
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: AutoFloatingDialogueController.OnInteractionTriggerExit(Player)
+  fullName: AutoFloatingDialogueController.OnInteractionTriggerExit(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerExit
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerExit(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerExit(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerExit(Player)
+  overload: Global.AutoFloatingDialogueController.OnInteractionTriggerExit*
+- uid: Global.AutoFloatingDialogueController.OnResetObject
+  commentId: M:Global.AutoFloatingDialogueController.OnResetObject
+  id: OnResetObject
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject()
+  nameWithType: AutoFloatingDialogueController.OnResetObject()
+  fullName: AutoFloatingDialogueController.OnResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject()
+    content.vb: Public Overrides Sub OnResetObject()
+  overridden: Global.InteractionController.OnResetObject
+  overload: Global.AutoFloatingDialogueController.OnResetObject*
+- uid: Global.AutoFloatingDialogueController.IsInteractionFinished
+  commentId: M:Global.AutoFloatingDialogueController.IsInteractionFinished
+  id: IsInteractionFinished
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionFinished()
+  nameWithType: AutoFloatingDialogueController.IsInteractionFinished()
+  fullName: AutoFloatingDialogueController.IsInteractionFinished()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionFinished
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionFinished()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionFinished() As Boolean
+  overridden: Global.InteractionController.IsInteractionFinished
+  overload: Global.AutoFloatingDialogueController.IsInteractionFinished*
+- uid: Global.AutoFloatingDialogueController.IsInteractionActive
+  commentId: M:Global.AutoFloatingDialogueController.IsInteractionActive
+  id: IsInteractionActive
+  parent: Global.AutoFloatingDialogueController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionActive()
+  nameWithType: AutoFloatingDialogueController.IsInteractionActive()
+  fullName: AutoFloatingDialogueController.IsInteractionActive()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionActive
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/AutoFloatingDialogueController.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionActive()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionActive() As Boolean
+  overridden: Global.InteractionController.IsInteractionActive
+  overload: Global.AutoFloatingDialogueController.IsInteractionActive*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.InteractionController
+  commentId: T:Global.InteractionController
+  name: InteractionController
+  nameWithType: InteractionController
+  fullName: InteractionController
+- uid: Global.InteractionController.interactable
+  commentId: F:Global.InteractionController.interactable
+  parent: Global.InteractionController
+  name: interactable
+  nameWithType: InteractionController.interactable
+  fullName: InteractionController.interactable
+- uid: Global.InteractionController.WaitForOtherControllers
+  commentId: F:Global.InteractionController.WaitForOtherControllers
+  parent: Global.InteractionController
+  name: WaitForOtherControllers
+  nameWithType: InteractionController.WaitForOtherControllers
+  fullName: InteractionController.WaitForOtherControllers
+- uid: Global.InteractionController.OnAllInteractionsCompleted
+  commentId: M:Global.InteractionController.OnAllInteractionsCompleted
+  parent: Global.InteractionController
+  name: OnAllInteractionsCompleted()
+  nameWithType: InteractionController.OnAllInteractionsCompleted()
+  fullName: InteractionController.OnAllInteractionsCompleted()
+  spec.csharp:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+- uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerEnterCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerEnterCallback(IntActor)
+  fullName: InteractionController.OnTriggerEnterCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerExitCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerExitCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerExitCallback(IntActor)
+  fullName: InteractionController.OnTriggerExitCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AutoFloatingDialogueController.PointerLocation
+  commentId: T:Global.AutoFloatingDialogueController.PointerLocation
+  name: AutoFloatingDialogueController.PointerLocation
+  nameWithType: AutoFloatingDialogueController.PointerLocation
+  fullName: AutoFloatingDialogueController.PointerLocation
+  spec.csharp:
+  - uid: Global.AutoFloatingDialogueController
+    name: AutoFloatingDialogueController
+  - name: .
+  - uid: Global.AutoFloatingDialogueController.PointerLocation
+    name: PointerLocation
+  spec.vb:
+  - uid: Global.AutoFloatingDialogueController
+    name: AutoFloatingDialogueController
+  - name: .
+  - uid: Global.AutoFloatingDialogueController.PointerLocation
+    name: PointerLocation
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.AutoFloatingDialogueController.Start*
+  commentId: Overload:Global.AutoFloatingDialogueController.Start
+  name: Start
+  nameWithType: AutoFloatingDialogueController.Start
+  fullName: AutoFloatingDialogueController.Start
+- uid: Global.InteractionController.OnInteract
+  commentId: M:Global.InteractionController.OnInteract
+  parent: Global.InteractionController
+  name: OnInteract()
+  nameWithType: InteractionController.OnInteract()
+  fullName: InteractionController.OnInteract()
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+- uid: Global.AutoFloatingDialogueController.OnInteract*
+  commentId: Overload:Global.AutoFloatingDialogueController.OnInteract
+  name: OnInteract
+  nameWithType: AutoFloatingDialogueController.OnInteract
+  fullName: AutoFloatingDialogueController.OnInteract
+- uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerEnter(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: InteractionController.OnInteractionTriggerEnter(Player)
+  fullName: InteractionController.OnInteractionTriggerEnter(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.AutoFloatingDialogueController.OnInteractionTriggerEnter*
+  commentId: Overload:Global.AutoFloatingDialogueController.OnInteractionTriggerEnter
+  name: OnInteractionTriggerEnter
+  nameWithType: AutoFloatingDialogueController.OnInteractionTriggerEnter
+  fullName: AutoFloatingDialogueController.OnInteractionTriggerEnter
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerExit(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: InteractionController.OnInteractionTriggerExit(Player)
+  fullName: InteractionController.OnInteractionTriggerExit(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.AutoFloatingDialogueController.OnInteractionTriggerExit*
+  commentId: Overload:Global.AutoFloatingDialogueController.OnInteractionTriggerExit
+  name: OnInteractionTriggerExit
+  nameWithType: AutoFloatingDialogueController.OnInteractionTriggerExit
+  fullName: AutoFloatingDialogueController.OnInteractionTriggerExit
+- uid: Global.InteractionController.OnResetObject
+  commentId: M:Global.InteractionController.OnResetObject
+  parent: Global.InteractionController
+  name: OnResetObject()
+  nameWithType: InteractionController.OnResetObject()
+  fullName: InteractionController.OnResetObject()
+  spec.csharp:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+- uid: Global.AutoFloatingDialogueController.OnResetObject*
+  commentId: Overload:Global.AutoFloatingDialogueController.OnResetObject
+  name: OnResetObject
+  nameWithType: AutoFloatingDialogueController.OnResetObject
+  fullName: AutoFloatingDialogueController.OnResetObject
+- uid: Global.InteractionController.IsInteractionFinished
+  commentId: M:Global.InteractionController.IsInteractionFinished
+  parent: Global.InteractionController
+  name: IsInteractionFinished()
+  nameWithType: InteractionController.IsInteractionFinished()
+  fullName: InteractionController.IsInteractionFinished()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+- uid: Global.AutoFloatingDialogueController.IsInteractionFinished*
+  commentId: Overload:Global.AutoFloatingDialogueController.IsInteractionFinished
+  name: IsInteractionFinished
+  nameWithType: AutoFloatingDialogueController.IsInteractionFinished
+  fullName: AutoFloatingDialogueController.IsInteractionFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.InteractionController.IsInteractionActive
+  commentId: M:Global.InteractionController.IsInteractionActive
+  parent: Global.InteractionController
+  name: IsInteractionActive()
+  nameWithType: InteractionController.IsInteractionActive()
+  fullName: InteractionController.IsInteractionActive()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+- uid: Global.AutoFloatingDialogueController.IsInteractionActive*
+  commentId: Overload:Global.AutoFloatingDialogueController.IsInteractionActive
+  name: IsInteractionActive
+  nameWithType: AutoFloatingDialogueController.IsInteractionActive
+  fullName: AutoFloatingDialogueController.IsInteractionActive

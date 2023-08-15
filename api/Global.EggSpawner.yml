@@ -1,0 +1,350 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.EggSpawner
+  commentId: T:Global.EggSpawner
+  id: EggSpawner
+  parent: Global
+  children:
+  - Global.EggSpawner.egg
+  - Global.EggSpawner.EggPrefab
+  - Global.EggSpawner.EggSpawnOffset
+  - Global.EggSpawner.interval
+  - Global.EggSpawner.RespawnTime
+  - Global.EggSpawner.SpawnEgg
+  langs:
+  - csharp
+  - vb
+  name: EggSpawner
+  nameWithType: EggSpawner
+  fullName: EggSpawner
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EggSpawner
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class EggSpawner : MonoBehaviour'
+    content.vb: Public Class EggSpawner Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.EggSpawner.EggPrefab
+  commentId: F:Global.EggSpawner.EggPrefab
+  id: EggPrefab
+  parent: Global.EggSpawner
+  langs:
+  - csharp
+  - vb
+  name: EggPrefab
+  nameWithType: EggSpawner.EggPrefab
+  fullName: EggSpawner.EggPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EggPrefab
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject EggPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public EggPrefab As GameObject
+- uid: Global.EggSpawner.RespawnTime
+  commentId: F:Global.EggSpawner.RespawnTime
+  id: RespawnTime
+  parent: Global.EggSpawner
+  langs:
+  - csharp
+  - vb
+  name: RespawnTime
+  nameWithType: EggSpawner.RespawnTime
+  fullName: EggSpawner.RespawnTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RespawnTime
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float RespawnTime
+    return:
+      type: System.Single
+    content.vb: Public RespawnTime As Single
+- uid: Global.EggSpawner.egg
+  commentId: F:Global.EggSpawner.egg
+  id: egg
+  parent: Global.EggSpawner
+  langs:
+  - csharp
+  - vb
+  name: egg
+  nameWithType: EggSpawner.egg
+  fullName: EggSpawner.egg
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: egg
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public BeeEgg egg
+    return:
+      type: Global.BeeEgg
+    content.vb: Public egg As BeeEgg
+- uid: Global.EggSpawner.EggSpawnOffset
+  commentId: F:Global.EggSpawner.EggSpawnOffset
+  id: EggSpawnOffset
+  parent: Global.EggSpawner
+  langs:
+  - csharp
+  - vb
+  name: EggSpawnOffset
+  nameWithType: EggSpawner.EggSpawnOffset
+  fullName: EggSpawner.EggSpawnOffset
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EggSpawnOffset
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int EggSpawnOffset
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public EggSpawnOffset As Vector2Int
+- uid: Global.EggSpawner.interval
+  commentId: F:Global.EggSpawner.interval
+  id: interval
+  parent: Global.EggSpawner
+  langs:
+  - csharp
+  - vb
+  name: interval
+  nameWithType: EggSpawner.interval
+  fullName: EggSpawner.interval
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: interval
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected RandomIntervalEngine interval
+    return:
+      type: Global.RandomIntervalEngine
+    content.vb: Protected interval As RandomIntervalEngine
+- uid: Global.EggSpawner.SpawnEgg
+  commentId: M:Global.EggSpawner.SpawnEgg
+  id: SpawnEgg
+  parent: Global.EggSpawner
+  langs:
+  - csharp
+  - vb
+  name: SpawnEgg()
+  nameWithType: EggSpawner.SpawnEgg()
+  fullName: EggSpawner.SpawnEgg()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnEgg
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Hive/BeeEgg/EggSpawner.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SpawnEgg()
+    content.vb: Public Sub SpawnEgg()
+  overload: Global.EggSpawner.SpawnEgg*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.BeeEgg
+  commentId: T:Global.BeeEgg
+  name: BeeEgg
+  nameWithType: BeeEgg
+  fullName: BeeEgg
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: Global.RandomIntervalEngine
+  commentId: T:Global.RandomIntervalEngine
+  name: RandomIntervalEngine
+  nameWithType: RandomIntervalEngine
+  fullName: RandomIntervalEngine
+- uid: Global.EggSpawner.SpawnEgg*
+  commentId: Overload:Global.EggSpawner.SpawnEgg
+  name: SpawnEgg
+  nameWithType: EggSpawner.SpawnEgg
+  fullName: EggSpawner.SpawnEgg

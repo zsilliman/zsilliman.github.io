@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Shrub.ShrubState
+  commentId: T:Global.Shrub.ShrubState
+  id: Shrub.ShrubState
+  parent: Global
+  children:
+  - Global.Shrub.ShrubState.Idle
+  langs:
+  - csharp
+  - vb
+  name: Shrub.ShrubState
+  nameWithType: Shrub.ShrubState
+  fullName: Shrub.ShrubState
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Shrub/Shrub.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ShrubState
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Shrub/Shrub.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum Shrub.ShrubState
+    content.vb: Public Enum Shrub.ShrubState
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.Shrub.ShrubState.Idle
+  commentId: F:Global.Shrub.ShrubState.Idle
+  id: Idle
+  parent: Global.Shrub.ShrubState
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: Shrub.ShrubState.Idle
+  fullName: Shrub.ShrubState.Idle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Forest Enemies/Shrub/Shrub.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Idle
+    path: ../Assets/Objects & Components/Entities/Enemies/Forest Enemies/Shrub/Shrub.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Idle = 0
+    return:
+      type: Global.Shrub.ShrubState
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Shrub.ShrubState
+  commentId: T:Global.Shrub.ShrubState
+  name: Shrub.ShrubState
+  nameWithType: Shrub.ShrubState
+  fullName: Shrub.ShrubState
+  spec.csharp:
+  - uid: Global.Shrub
+    name: Shrub
+  - name: .
+  - uid: Global.Shrub.ShrubState
+    name: ShrubState
+  spec.vb:
+  - uid: Global.Shrub
+    name: Shrub
+  - name: .
+  - uid: Global.Shrub.ShrubState
+    name: ShrubState

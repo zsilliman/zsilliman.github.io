@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ChargerEnemy.ChargerEnemyState
+  commentId: T:Global.ChargerEnemy.ChargerEnemyState
+  id: ChargerEnemy.ChargerEnemyState
+  parent: Global
+  children:
+  - Global.ChargerEnemy.ChargerEnemyState.Aggro
+  - Global.ChargerEnemy.ChargerEnemyState.Idle
+  langs:
+  - csharp
+  - vb
+  name: ChargerEnemy.ChargerEnemyState
+  nameWithType: ChargerEnemy.ChargerEnemyState
+  fullName: ChargerEnemy.ChargerEnemyState
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Weekly Enemies/ChargerEnemy.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ChargerEnemyState
+    path: ../Assets/Objects & Components/Entities/Enemies/Weekly Enemies/ChargerEnemy.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum ChargerEnemy.ChargerEnemyState
+    content.vb: Public Enum ChargerEnemy.ChargerEnemyState
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ChargerEnemy.ChargerEnemyState.Idle
+  commentId: F:Global.ChargerEnemy.ChargerEnemyState.Idle
+  id: Idle
+  parent: Global.ChargerEnemy.ChargerEnemyState
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: ChargerEnemy.ChargerEnemyState.Idle
+  fullName: ChargerEnemy.ChargerEnemyState.Idle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Weekly Enemies/ChargerEnemy.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Idle
+    path: ../Assets/Objects & Components/Entities/Enemies/Weekly Enemies/ChargerEnemy.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Idle = 0
+    return:
+      type: Global.ChargerEnemy.ChargerEnemyState
+- uid: Global.ChargerEnemy.ChargerEnemyState.Aggro
+  commentId: F:Global.ChargerEnemy.ChargerEnemyState.Aggro
+  id: Aggro
+  parent: Global.ChargerEnemy.ChargerEnemyState
+  langs:
+  - csharp
+  - vb
+  name: Aggro
+  nameWithType: ChargerEnemy.ChargerEnemyState.Aggro
+  fullName: ChargerEnemy.ChargerEnemyState.Aggro
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Weekly Enemies/ChargerEnemy.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Aggro
+    path: ../Assets/Objects & Components/Entities/Enemies/Weekly Enemies/ChargerEnemy.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Aggro = 1
+    return:
+      type: Global.ChargerEnemy.ChargerEnemyState
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ChargerEnemy.ChargerEnemyState
+  commentId: T:Global.ChargerEnemy.ChargerEnemyState
+  name: ChargerEnemy.ChargerEnemyState
+  nameWithType: ChargerEnemy.ChargerEnemyState
+  fullName: ChargerEnemy.ChargerEnemyState
+  spec.csharp:
+  - uid: Global.ChargerEnemy
+    name: ChargerEnemy
+  - name: .
+  - uid: Global.ChargerEnemy.ChargerEnemyState
+    name: ChargerEnemyState
+  spec.vb:
+  - uid: Global.ChargerEnemy
+    name: ChargerEnemy
+  - name: .
+  - uid: Global.ChargerEnemy.ChargerEnemyState
+    name: ChargerEnemyState

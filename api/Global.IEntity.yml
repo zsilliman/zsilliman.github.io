@@ -1,0 +1,376 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IEntity
+  commentId: T:Global.IEntity
+  id: IEntity
+  parent: Global
+  children:
+  - Global.IEntity.Animate
+  - Global.IEntity.Initialize
+  - Global.IEntity.OnDrawDebugGizmos
+  - Global.IEntity.OnFirstFrame
+  - Global.IEntity.PostInputUpdate
+  - Global.IEntity.PreInputUpdate
+  - Global.IEntity.SpawnAura
+  - Global.IEntity.UpdateInput
+  langs:
+  - csharp
+  - vb
+  name: IEntity
+  nameWithType: IEntity
+  fullName: IEntity
+  type: Interface
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IEntity
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public interface IEntity
+    content.vb: Public Interface IEntity
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.IEntity.Initialize
+  commentId: M:Global.IEntity.Initialize
+  id: Initialize
+  parent: Global.IEntity
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: IEntity.Initialize()
+  fullName: IEntity.Initialize()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Initialize
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis will do any (re)initalization that needs to happen in the editor view for level design purposes\n"
+  example: []
+  syntax:
+    content: void Initialize()
+    content.vb: Sub Initialize()
+  overload: Global.IEntity.Initialize*
+- uid: Global.IEntity.SpawnAura
+  commentId: M:Global.IEntity.SpawnAura
+  id: SpawnAura
+  parent: Global.IEntity
+  langs:
+  - csharp
+  - vb
+  name: SpawnAura()
+  nameWithType: IEntity.SpawnAura()
+  fullName: IEntity.SpawnAura()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnAura
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis is to create an aura. You may leave blank if the enitity does not create an aura.\n"
+  example: []
+  syntax:
+    content: GameObject SpawnAura()
+    return:
+      type: UnityEngine.GameObject
+      description: Null if an entity does not create an aura. Returns a GameObject if an aura is created.
+    content.vb: Function SpawnAura() As GameObject
+  overload: Global.IEntity.SpawnAura*
+- uid: Global.IEntity.OnFirstFrame
+  commentId: M:Global.IEntity.OnFirstFrame
+  id: OnFirstFrame
+  parent: Global.IEntity
+  langs:
+  - csharp
+  - vb
+  name: OnFirstFrame()
+  nameWithType: IEntity.OnFirstFrame()
+  fullName: IEntity.OnFirstFrame()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnFirstFrame
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis is called on the first frame of the update loop\n"
+  example: []
+  syntax:
+    content: void OnFirstFrame()
+    content.vb: Sub OnFirstFrame()
+  overload: Global.IEntity.OnFirstFrame*
+- uid: Global.IEntity.PreInputUpdate
+  commentId: M:Global.IEntity.PreInputUpdate
+  id: PreInputUpdate
+  parent: Global.IEntity
+  langs:
+  - csharp
+  - vb
+  name: PreInputUpdate()
+  nameWithType: IEntity.PreInputUpdate()
+  fullName: IEntity.PreInputUpdate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PreInputUpdate
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis is for resetting values at the start of any frame.\n"
+  example: []
+  syntax:
+    content: void PreInputUpdate()
+    content.vb: Sub PreInputUpdate()
+  overload: Global.IEntity.PreInputUpdate*
+- uid: Global.IEntity.UpdateInput
+  commentId: M:Global.IEntity.UpdateInput
+  id: UpdateInput
+  parent: Global.IEntity
+  langs:
+  - csharp
+  - vb
+  name: UpdateInput()
+  nameWithType: IEntity.UpdateInput()
+  fullName: IEntity.UpdateInput()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateInput
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis is for user/AI input\n"
+  example: []
+  syntax:
+    content: void UpdateInput()
+    content.vb: Sub UpdateInput()
+  overload: Global.IEntity.UpdateInput*
+- uid: Global.IEntity.PostInputUpdate
+  commentId: M:Global.IEntity.PostInputUpdate
+  id: PostInputUpdate
+  parent: Global.IEntity
+  langs:
+  - csharp
+  - vb
+  name: PostInputUpdate()
+  nameWithType: IEntity.PostInputUpdate()
+  fullName: IEntity.PostInputUpdate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PostInputUpdate
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis is for handling input and performing the associated actions.\n"
+  example: []
+  syntax:
+    content: void PostInputUpdate()
+    content.vb: Sub PostInputUpdate()
+  overload: Global.IEntity.PostInputUpdate*
+- uid: Global.IEntity.Animate
+  commentId: M:Global.IEntity.Animate
+  id: Animate
+  parent: Global.IEntity
+  langs:
+  - csharp
+  - vb
+  name: Animate()
+  nameWithType: IEntity.Animate()
+  fullName: IEntity.Animate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Animate
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis is for animating the character\n"
+  example: []
+  syntax:
+    content: void Animate()
+    content.vb: Sub Animate()
+  overload: Global.IEntity.Animate*
+- uid: Global.IEntity.OnDrawDebugGizmos
+  commentId: M:Global.IEntity.OnDrawDebugGizmos
+  id: OnDrawDebugGizmos
+  parent: Global.IEntity
+  langs:
+  - csharp
+  - vb
+  name: OnDrawDebugGizmos()
+  nameWithType: IEntity.OnDrawDebugGizmos()
+  fullName: IEntity.OnDrawDebugGizmos()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/IEntity.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnDrawDebugGizmos
+    path: ../Assets/Objects & Components/Entities/IEntity.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nDraw debug auras for editor view\n"
+  example: []
+  syntax:
+    content: void OnDrawDebugGizmos()
+    content.vb: Sub OnDrawDebugGizmos()
+  overload: Global.IEntity.OnDrawDebugGizmos*
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.IEntity.Initialize*
+  commentId: Overload:Global.IEntity.Initialize
+  name: Initialize
+  nameWithType: IEntity.Initialize
+  fullName: IEntity.Initialize
+- uid: Global.IEntity.SpawnAura*
+  commentId: Overload:Global.IEntity.SpawnAura
+  name: SpawnAura
+  nameWithType: IEntity.SpawnAura
+  fullName: IEntity.SpawnAura
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.IEntity.OnFirstFrame*
+  commentId: Overload:Global.IEntity.OnFirstFrame
+  name: OnFirstFrame
+  nameWithType: IEntity.OnFirstFrame
+  fullName: IEntity.OnFirstFrame
+- uid: Global.IEntity.PreInputUpdate*
+  commentId: Overload:Global.IEntity.PreInputUpdate
+  name: PreInputUpdate
+  nameWithType: IEntity.PreInputUpdate
+  fullName: IEntity.PreInputUpdate
+- uid: Global.IEntity.UpdateInput*
+  commentId: Overload:Global.IEntity.UpdateInput
+  name: UpdateInput
+  nameWithType: IEntity.UpdateInput
+  fullName: IEntity.UpdateInput
+- uid: Global.IEntity.PostInputUpdate*
+  commentId: Overload:Global.IEntity.PostInputUpdate
+  name: PostInputUpdate
+  nameWithType: IEntity.PostInputUpdate
+  fullName: IEntity.PostInputUpdate
+- uid: Global.IEntity.Animate*
+  commentId: Overload:Global.IEntity.Animate
+  name: Animate
+  nameWithType: IEntity.Animate
+  fullName: IEntity.Animate
+- uid: Global.IEntity.OnDrawDebugGizmos*
+  commentId: Overload:Global.IEntity.OnDrawDebugGizmos
+  name: OnDrawDebugGizmos
+  nameWithType: IEntity.OnDrawDebugGizmos
+  fullName: IEntity.OnDrawDebugGizmos

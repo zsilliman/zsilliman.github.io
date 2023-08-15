@@ -1,0 +1,723 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ChargeMovement
+  commentId: T:Global.ChargeMovement
+  id: ChargeMovement
+  parent: Global
+  children:
+  - Global.ChargeMovement.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  langs:
+  - csharp
+  - vb
+  name: ChargeMovement
+  nameWithType: ChargeMovement
+  fullName: ChargeMovement
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ChargeMovement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 211
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class ChargeMovement : CustomMovement<IntEnemy.ChargeProps>'
+    content.vb: Public Class ChargeMovement Inherits CustomMovement(Of IntEnemy.ChargeProps)
+  inheritance:
+  - System.Object
+  - Global.CustomMovement{IntEnemy.ChargeProps}
+  inheritedMembers:
+  - Global.CustomMovement{IntEnemy.ChargeProps}.IsActive
+  - Global.CustomMovement{IntEnemy.ChargeProps}.t
+  - Global.CustomMovement{IntEnemy.ChargeProps}.enemy
+  - Global.CustomMovement{IntEnemy.ChargeProps}.properties
+  - Global.CustomMovement{IntEnemy.ChargeProps}.SetEnemy(IntEnemy)
+  - Global.CustomMovement{IntEnemy.ChargeProps}.SetProperties(IntEnemy.ChargeProps)
+  - Global.CustomMovement{IntEnemy.ChargeProps}.GetProperties
+  - Global.CustomMovement{IntEnemy.ChargeProps}.StartMovement
+  - Global.CustomMovement{IntEnemy.ChargeProps}.EndMovement
+  - Global.CustomMovement{IntEnemy.ChargeProps}.Reset
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ChargeMovement.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  commentId: M:Global.ChargeMovement.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  id: UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  parent: Global.ChargeMovement
+  langs:
+  - csharp
+  - vb
+  name: UpdateMovement(float, Action, SolidAction, SolidAction, ActorAction, TriggerAction)
+  nameWithType: ChargeMovement.UpdateMovement(float, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  fullName: ChargeMovement.UpdateMovement(float, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateMovement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 214
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void UpdateMovement(float deltaTime, IntObject.Action OnMovementEnd, IntObject.SolidAction OnCollideX, IntObject.SolidAction OnCollideY, IntObject.ActorAction OnOverlapActor, IntObject.TriggerAction OnOverlapTrigger)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    - id: OnMovementEnd
+      type: Global.IntObject.Action
+    - id: OnCollideX
+      type: Global.IntObject.SolidAction
+    - id: OnCollideY
+      type: Global.IntObject.SolidAction
+    - id: OnOverlapActor
+      type: Global.IntObject.ActorAction
+    - id: OnOverlapTrigger
+      type: Global.IntObject.TriggerAction
+    content.vb: Public Overrides Sub UpdateMovement(deltaTime As Single, OnMovementEnd As IntObject.Action, OnCollideX As IntObject.SolidAction, OnCollideY As IntObject.SolidAction, OnOverlapActor As IntObject.ActorAction, OnOverlapTrigger As IntObject.TriggerAction)
+  overridden: Global.CustomMovement{IntEnemy.ChargeProps}.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  overload: Global.ChargeMovement.UpdateMovement*
+  nameWithType.vb: ChargeMovement.UpdateMovement(Single, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  fullName.vb: ChargeMovement.UpdateMovement(Single, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  name.vb: UpdateMovement(Single, Action, SolidAction, SolidAction, ActorAction, TriggerAction)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}
+  commentId: T:Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1
+  name: CustomMovement<IntEnemy.ChargeProps>
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>
+  fullName: CustomMovement<IntEnemy.ChargeProps>
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps)
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps)
+  name.vb: CustomMovement(Of IntEnemy.ChargeProps)
+  spec.csharp:
+  - uid: Global.CustomMovement`1
+    name: CustomMovement
+  - name: <
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: .
+  - uid: Global.IntEnemy.ChargeProps
+    name: ChargeProps
+  - name: '>'
+  spec.vb:
+  - uid: Global.CustomMovement`1
+    name: CustomMovement
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: .
+  - uid: Global.IntEnemy.ChargeProps
+    name: ChargeProps
+  - name: )
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.IsActive
+  commentId: P:Global.CustomMovement{IntEnemy.ChargeProps}.IsActive
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.IsActive
+  name: IsActive
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.IsActive
+  fullName: CustomMovement<IntEnemy.ChargeProps>.IsActive
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).IsActive
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).IsActive
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.t
+  commentId: P:Global.CustomMovement{IntEnemy.ChargeProps}.t
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.t
+  name: t
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.t
+  fullName: CustomMovement<IntEnemy.ChargeProps>.t
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).t
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).t
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.enemy
+  commentId: F:Global.CustomMovement{IntEnemy.ChargeProps}.enemy
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.enemy
+  name: enemy
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.enemy
+  fullName: CustomMovement<IntEnemy.ChargeProps>.enemy
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).enemy
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).enemy
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.properties
+  commentId: F:Global.CustomMovement{IntEnemy.ChargeProps}.properties
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.properties
+  name: properties
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.properties
+  fullName: CustomMovement<IntEnemy.ChargeProps>.properties
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).properties
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).properties
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.SetEnemy(IntEnemy)
+  commentId: M:Global.CustomMovement{IntEnemy.ChargeProps}.SetEnemy(IntEnemy)
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.SetEnemy(IntEnemy)
+  name: SetEnemy(IntEnemy)
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.SetEnemy(IntEnemy)
+  fullName: CustomMovement<IntEnemy.ChargeProps>.SetEnemy(IntEnemy)
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).SetEnemy(IntEnemy)
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).SetEnemy(IntEnemy)
+  spec.csharp:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.SetEnemy(IntEnemy)
+    name: SetEnemy
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.SetEnemy(IntEnemy)
+    name: SetEnemy
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.SetProperties(IntEnemy.ChargeProps)
+  commentId: M:Global.CustomMovement{IntEnemy.ChargeProps}.SetProperties(IntEnemy.ChargeProps)
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.SetProperties(`0)
+  name: SetProperties(ChargeProps)
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.SetProperties(IntEnemy.ChargeProps)
+  fullName: CustomMovement<IntEnemy.ChargeProps>.SetProperties(IntEnemy.ChargeProps)
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).SetProperties(IntEnemy.ChargeProps)
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).SetProperties(IntEnemy.ChargeProps)
+  spec.csharp:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.SetProperties(IntEnemy.ChargeProps)
+    name: SetProperties
+  - name: (
+  - uid: Global.IntEnemy.ChargeProps
+    name: ChargeProps
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.SetProperties(IntEnemy.ChargeProps)
+    name: SetProperties
+  - name: (
+  - uid: Global.IntEnemy.ChargeProps
+    name: ChargeProps
+  - name: )
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.GetProperties
+  commentId: M:Global.CustomMovement{IntEnemy.ChargeProps}.GetProperties
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.GetProperties
+  name: GetProperties()
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.GetProperties()
+  fullName: CustomMovement<IntEnemy.ChargeProps>.GetProperties()
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).GetProperties()
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).GetProperties()
+  spec.csharp:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.GetProperties
+    name: GetProperties
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.GetProperties
+    name: GetProperties
+  - name: (
+  - name: )
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.StartMovement
+  commentId: M:Global.CustomMovement{IntEnemy.ChargeProps}.StartMovement
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.StartMovement
+  name: StartMovement()
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.StartMovement()
+  fullName: CustomMovement<IntEnemy.ChargeProps>.StartMovement()
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).StartMovement()
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).StartMovement()
+  spec.csharp:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.StartMovement
+    name: StartMovement
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.StartMovement
+    name: StartMovement
+  - name: (
+  - name: )
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.EndMovement
+  commentId: M:Global.CustomMovement{IntEnemy.ChargeProps}.EndMovement
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.EndMovement
+  name: EndMovement()
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.EndMovement()
+  fullName: CustomMovement<IntEnemy.ChargeProps>.EndMovement()
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).EndMovement()
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).EndMovement()
+  spec.csharp:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.EndMovement
+    name: EndMovement
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.EndMovement
+    name: EndMovement
+  - name: (
+  - name: )
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.Reset
+  commentId: M:Global.CustomMovement{IntEnemy.ChargeProps}.Reset
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.Reset
+  name: Reset()
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.Reset()
+  fullName: CustomMovement<IntEnemy.ChargeProps>.Reset()
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).Reset()
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).Reset()
+  spec.csharp:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.CustomMovement`1
+  commentId: T:Global.CustomMovement`1
+  name: CustomMovement<T>
+  nameWithType: CustomMovement<T>
+  fullName: CustomMovement<T>
+  nameWithType.vb: CustomMovement(Of T)
+  fullName.vb: CustomMovement(Of T)
+  name.vb: CustomMovement(Of T)
+  spec.csharp:
+  - uid: Global.CustomMovement`1
+    name: CustomMovement
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.CustomMovement`1
+    name: CustomMovement
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.CustomMovement`1.IsActive
+  commentId: P:Global.CustomMovement`1.IsActive
+  name: IsActive
+  nameWithType: CustomMovement<T>.IsActive
+  fullName: CustomMovement<T>.IsActive
+  nameWithType.vb: CustomMovement(Of T).IsActive
+  fullName.vb: CustomMovement(Of T).IsActive
+- uid: Global.CustomMovement`1.t
+  commentId: P:Global.CustomMovement`1.t
+  name: t
+  nameWithType: CustomMovement<T>.t
+  fullName: CustomMovement<T>.t
+  nameWithType.vb: CustomMovement(Of T).t
+  fullName.vb: CustomMovement(Of T).t
+- uid: Global.CustomMovement`1.enemy
+  commentId: F:Global.CustomMovement`1.enemy
+  name: enemy
+  nameWithType: CustomMovement<T>.enemy
+  fullName: CustomMovement<T>.enemy
+  nameWithType.vb: CustomMovement(Of T).enemy
+  fullName.vb: CustomMovement(Of T).enemy
+- uid: Global.CustomMovement`1.properties
+  commentId: F:Global.CustomMovement`1.properties
+  name: properties
+  nameWithType: CustomMovement<T>.properties
+  fullName: CustomMovement<T>.properties
+  nameWithType.vb: CustomMovement(Of T).properties
+  fullName.vb: CustomMovement(Of T).properties
+- uid: Global.CustomMovement`1.SetEnemy(IntEnemy)
+  commentId: M:Global.CustomMovement`1.SetEnemy(IntEnemy)
+  name: SetEnemy(IntEnemy)
+  nameWithType: CustomMovement<T>.SetEnemy(IntEnemy)
+  fullName: CustomMovement<T>.SetEnemy(IntEnemy)
+  nameWithType.vb: CustomMovement(Of T).SetEnemy(IntEnemy)
+  fullName.vb: CustomMovement(Of T).SetEnemy(IntEnemy)
+  spec.csharp:
+  - uid: Global.CustomMovement`1.SetEnemy(IntEnemy)
+    name: SetEnemy
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement`1.SetEnemy(IntEnemy)
+    name: SetEnemy
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+- uid: Global.CustomMovement`1.SetProperties(`0)
+  commentId: M:Global.CustomMovement`1.SetProperties(`0)
+  name: SetProperties(T)
+  nameWithType: CustomMovement<T>.SetProperties(T)
+  fullName: CustomMovement<T>.SetProperties(T)
+  nameWithType.vb: CustomMovement(Of T).SetProperties(T)
+  fullName.vb: CustomMovement(Of T).SetProperties(T)
+  spec.csharp:
+  - uid: Global.CustomMovement`1.SetProperties(`0)
+    name: SetProperties
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement`1.SetProperties(`0)
+    name: SetProperties
+  - name: (
+  - name: T
+  - name: )
+- uid: Global.CustomMovement`1.GetProperties
+  commentId: M:Global.CustomMovement`1.GetProperties
+  name: GetProperties()
+  nameWithType: CustomMovement<T>.GetProperties()
+  fullName: CustomMovement<T>.GetProperties()
+  nameWithType.vb: CustomMovement(Of T).GetProperties()
+  fullName.vb: CustomMovement(Of T).GetProperties()
+  spec.csharp:
+  - uid: Global.CustomMovement`1.GetProperties
+    name: GetProperties
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement`1.GetProperties
+    name: GetProperties
+  - name: (
+  - name: )
+- uid: Global.CustomMovement`1.StartMovement
+  commentId: M:Global.CustomMovement`1.StartMovement
+  name: StartMovement()
+  nameWithType: CustomMovement<T>.StartMovement()
+  fullName: CustomMovement<T>.StartMovement()
+  nameWithType.vb: CustomMovement(Of T).StartMovement()
+  fullName.vb: CustomMovement(Of T).StartMovement()
+  spec.csharp:
+  - uid: Global.CustomMovement`1.StartMovement
+    name: StartMovement
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement`1.StartMovement
+    name: StartMovement
+  - name: (
+  - name: )
+- uid: Global.CustomMovement`1.EndMovement
+  commentId: M:Global.CustomMovement`1.EndMovement
+  name: EndMovement()
+  nameWithType: CustomMovement<T>.EndMovement()
+  fullName: CustomMovement<T>.EndMovement()
+  nameWithType.vb: CustomMovement(Of T).EndMovement()
+  fullName.vb: CustomMovement(Of T).EndMovement()
+  spec.csharp:
+  - uid: Global.CustomMovement`1.EndMovement
+    name: EndMovement
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement`1.EndMovement
+    name: EndMovement
+  - name: (
+  - name: )
+- uid: Global.CustomMovement`1.Reset
+  commentId: M:Global.CustomMovement`1.Reset
+  name: Reset()
+  nameWithType: CustomMovement<T>.Reset()
+  fullName: CustomMovement<T>.Reset()
+  nameWithType.vb: CustomMovement(Of T).Reset()
+  fullName.vb: CustomMovement(Of T).Reset()
+  spec.csharp:
+  - uid: Global.CustomMovement`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.CustomMovement{IntEnemy.ChargeProps}.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  commentId: M:Global.CustomMovement{IntEnemy.ChargeProps}.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  parent: Global.CustomMovement{IntEnemy.ChargeProps}
+  definition: Global.CustomMovement`1.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  name: UpdateMovement(float, Action, SolidAction, SolidAction, ActorAction, TriggerAction)
+  nameWithType: CustomMovement<IntEnemy.ChargeProps>.UpdateMovement(float, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  fullName: CustomMovement<IntEnemy.ChargeProps>.UpdateMovement(float, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  nameWithType.vb: CustomMovement(Of IntEnemy.ChargeProps).UpdateMovement(Single, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  fullName.vb: CustomMovement(Of IntEnemy.ChargeProps).UpdateMovement(Single, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  name.vb: UpdateMovement(Single, Action, SolidAction, SolidAction, ActorAction, TriggerAction)
+  spec.csharp:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+    name: UpdateMovement
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement{IntEnemy.ChargeProps}.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+    name: UpdateMovement
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.ChargeMovement.UpdateMovement*
+  commentId: Overload:Global.ChargeMovement.UpdateMovement
+  name: UpdateMovement
+  nameWithType: ChargeMovement.UpdateMovement
+  fullName: ChargeMovement.UpdateMovement
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.IntObject.Action
+  commentId: T:Global.IntObject.Action
+  name: IntObject.Action
+  nameWithType: IntObject.Action
+  fullName: IntObject.Action
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+- uid: Global.IntObject.SolidAction
+  commentId: T:Global.IntObject.SolidAction
+  name: IntObject.SolidAction
+  nameWithType: IntObject.SolidAction
+  fullName: IntObject.SolidAction
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+- uid: Global.IntObject.ActorAction
+  commentId: T:Global.IntObject.ActorAction
+  name: IntObject.ActorAction
+  nameWithType: IntObject.ActorAction
+  fullName: IntObject.ActorAction
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+- uid: Global.IntObject.TriggerAction
+  commentId: T:Global.IntObject.TriggerAction
+  name: IntObject.TriggerAction
+  nameWithType: IntObject.TriggerAction
+  fullName: IntObject.TriggerAction
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+- uid: Global.CustomMovement`1.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  commentId: M:Global.CustomMovement`1.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  isExternal: true
+  name: UpdateMovement(float, Action, SolidAction, SolidAction, ActorAction, TriggerAction)
+  nameWithType: CustomMovement<T>.UpdateMovement(float, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  fullName: CustomMovement<T>.UpdateMovement(float, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  nameWithType.vb: CustomMovement(Of T).UpdateMovement(Single, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  fullName.vb: CustomMovement(Of T).UpdateMovement(Single, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  name.vb: UpdateMovement(Single, Action, SolidAction, SolidAction, ActorAction, TriggerAction)
+  spec.csharp:
+  - uid: Global.CustomMovement`1.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+    name: UpdateMovement
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.CustomMovement`1.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+    name: UpdateMovement
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )

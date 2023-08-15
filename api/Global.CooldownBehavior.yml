@@ -1,0 +1,1035 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CooldownBehavior
+  commentId: T:Global.CooldownBehavior
+  id: CooldownBehavior
+  parent: Global
+  children:
+  - Global.CooldownBehavior.CooldownType
+  - Global.CooldownBehavior.RegisterBehaviors(ModularEnemy)
+  - Global.CooldownBehavior.ReturnToStart
+  - Global.CooldownBehavior.SetInitialBehavior(ModularEnemy)
+  - Global.CooldownBehavior.SpawnShield
+  - Global.CooldownBehavior.Timer
+  langs:
+  - csharp
+  - vb
+  name: CooldownBehavior
+  nameWithType: CooldownBehavior
+  fullName: CooldownBehavior
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CooldownBehavior
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class CooldownBehavior : ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>
+    content.vb: >-
+      <Serializable>
+
+      Public Class CooldownBehavior Inherits ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType)
+  inheritance:
+  - System.Object
+  - Global.ModularEnemy.EnemyBehaviorInterface
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  inheritedMembers:
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.CurrentBehavior
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisteredBehaviors
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisteredAlwaysRun
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehavior(CooldownBehaviorType,ModularEnemy.EnemyBehaviorInterface)
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Start(ModularEnemy)
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Update
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.DrawGizmos(ModularEnemy)
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnRestart
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.HasStarted(CooldownBehaviorType)
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnKill(ModularEnemy,System.Boolean)
+  - Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnResetObject(ModularEnemy)
+  - Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  - Global.ModularEnemy.EnemyBehaviorInterface.self
+  - Global.ModularEnemy.EnemyBehaviorInterface.Started
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.CooldownBehavior.SpawnShield
+  commentId: F:Global.CooldownBehavior.SpawnShield
+  id: SpawnShield
+  parent: Global.CooldownBehavior
+  langs:
+  - csharp
+  - vb
+  name: SpawnShield
+  nameWithType: CooldownBehavior.SpawnShield
+  fullName: CooldownBehavior.SpawnShield
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnShield
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool SpawnShield
+    return:
+      type: System.Boolean
+    content.vb: Public SpawnShield As Boolean
+- uid: Global.CooldownBehavior.CooldownType
+  commentId: F:Global.CooldownBehavior.CooldownType
+  id: CooldownType
+  parent: Global.CooldownBehavior
+  langs:
+  - csharp
+  - vb
+  name: CooldownType
+  nameWithType: CooldownBehavior.CooldownType
+  fullName: CooldownBehavior.CooldownType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CooldownType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public CooldownBehaviorType CooldownType
+    return:
+      type: Global.CooldownBehaviorType
+    content.vb: Public CooldownType As CooldownBehaviorType
+- uid: Global.CooldownBehavior.Timer
+  commentId: F:Global.CooldownBehavior.Timer
+  id: Timer
+  parent: Global.CooldownBehavior
+  langs:
+  - csharp
+  - vb
+  name: Timer
+  nameWithType: CooldownBehavior.Timer
+  fullName: CooldownBehavior.Timer
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Timer
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [ConditionalShow("CooldownType", 0)]
+
+      public TimerBehavior Timer
+    return:
+      type: Global.TimerBehavior
+    content.vb: >-
+      <SerializeField>
+
+      <ConditionalShow("CooldownType", 0)>
+
+      Public Timer As TimerBehavior
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: CooldownType
+    - type: System.Int32
+      value: 0
+- uid: Global.CooldownBehavior.ReturnToStart
+  commentId: F:Global.CooldownBehavior.ReturnToStart
+  id: ReturnToStart
+  parent: Global.CooldownBehavior
+  langs:
+  - csharp
+  - vb
+  name: ReturnToStart
+  nameWithType: CooldownBehavior.ReturnToStart
+  fullName: CooldownBehavior.ReturnToStart
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ReturnToStart
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [ConditionalShow("CooldownType", 1)]
+
+      public ReturnToStartBehavior ReturnToStart
+    return:
+      type: Global.ReturnToStartBehavior
+    content.vb: >-
+      <SerializeField>
+
+      <ConditionalShow("CooldownType", 1)>
+
+      Public ReturnToStart As ReturnToStartBehavior
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: CooldownType
+    - type: System.Int32
+      value: 1
+- uid: Global.CooldownBehavior.RegisterBehaviors(ModularEnemy)
+  commentId: M:Global.CooldownBehavior.RegisterBehaviors(ModularEnemy)
+  id: RegisterBehaviors(ModularEnemy)
+  parent: Global.CooldownBehavior
+  langs:
+  - csharp
+  - vb
+  name: RegisterBehaviors(ModularEnemy)
+  nameWithType: CooldownBehavior.RegisterBehaviors(ModularEnemy)
+  fullName: CooldownBehavior.RegisterBehaviors(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterBehaviors
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void RegisterBehaviors(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub RegisterBehaviors(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviors(ModularEnemy)
+  overload: Global.CooldownBehavior.RegisterBehaviors*
+- uid: Global.CooldownBehavior.SetInitialBehavior(ModularEnemy)
+  commentId: M:Global.CooldownBehavior.SetInitialBehavior(ModularEnemy)
+  id: SetInitialBehavior(ModularEnemy)
+  parent: Global.CooldownBehavior
+  langs:
+  - csharp
+  - vb
+  name: SetInitialBehavior(ModularEnemy)
+  nameWithType: CooldownBehavior.SetInitialBehavior(ModularEnemy)
+  fullName: CooldownBehavior.SetInitialBehavior(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetInitialBehavior
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Cooldown/CooldownBehavior.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void SetInitialBehavior(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub SetInitialBehavior(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.SetInitialBehavior(ModularEnemy)
+  overload: Global.CooldownBehavior.SetInitialBehavior*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ModularEnemy.EnemyBehaviorInterface
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterface
+  name: ModularEnemy.EnemyBehaviorInterface
+  nameWithType: ModularEnemy.EnemyBehaviorInterface
+  fullName: ModularEnemy.EnemyBehaviorInterface
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1
+  name: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType)
+  name.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType)
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1
+    name: EnemyBehaviorInterfaceManager
+  - name: <
+  - uid: Global.CooldownBehaviorType
+    name: CooldownBehaviorType
+  - name: '>'
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1
+    name: EnemyBehaviorInterfaceManager
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.CooldownBehaviorType
+    name: CooldownBehaviorType
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.CurrentBehavior
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.CurrentBehavior
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.CurrentBehavior
+  name: CurrentBehavior
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.CurrentBehavior
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.CurrentBehavior
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).CurrentBehavior
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).CurrentBehavior
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisteredBehaviors
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisteredBehaviors
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisteredBehaviors
+  name: RegisteredBehaviors
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisteredBehaviors
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisteredBehaviors
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisteredBehaviors
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisteredBehaviors
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisteredAlwaysRun
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisteredAlwaysRun
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisteredAlwaysRun
+  name: RegisteredAlwaysRun
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisteredAlwaysRun
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisteredAlwaysRun
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisteredAlwaysRun
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisteredAlwaysRun
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehavior(CooldownBehaviorType,ModularEnemy.EnemyBehaviorInterface)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehavior(CooldownBehaviorType,ModularEnemy.EnemyBehaviorInterface)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehavior(`0,ModularEnemy.EnemyBehaviorInterface)
+  name: RegisterBehavior(CooldownBehaviorType, EnemyBehaviorInterface)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisterBehavior(CooldownBehaviorType, ModularEnemy.EnemyBehaviorInterface)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisterBehavior(CooldownBehaviorType, ModularEnemy.EnemyBehaviorInterface)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisterBehavior(CooldownBehaviorType, ModularEnemy.EnemyBehaviorInterface)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisterBehavior(CooldownBehaviorType, ModularEnemy.EnemyBehaviorInterface)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehavior(CooldownBehaviorType,ModularEnemy.EnemyBehaviorInterface)
+    name: RegisterBehavior
+  - name: (
+  - uid: Global.CooldownBehaviorType
+    name: CooldownBehaviorType
+  - name: ','
+  - name: " "
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehavior(CooldownBehaviorType,ModularEnemy.EnemyBehaviorInterface)
+    name: RegisterBehavior
+  - name: (
+  - uid: Global.CooldownBehaviorType
+    name: CooldownBehaviorType
+  - name: ','
+  - name: " "
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  name: RegisterBehaviorAlwaysRun(EnemyBehaviorInterface)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+    name: RegisterBehaviorAlwaysRun
+  - name: (
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+    name: RegisterBehaviorAlwaysRun
+  - name: (
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Start(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Start(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Start(ModularEnemy)
+  name: Start(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.Start(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.Start(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).Start(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Update
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Update
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Update
+  name: Update()
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.Update()
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.Update()
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).Update()
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).Update()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.DrawGizmos(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.DrawGizmos(ModularEnemy)
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.DrawGizmos(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.DrawGizmos(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).DrawGizmos(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnRestart
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnRestart
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnRestart
+  name: OnRestart()
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.OnRestart()
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.OnRestart()
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).OnRestart()
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).OnRestart()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.HasStarted(CooldownBehaviorType)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.HasStarted(CooldownBehaviorType)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.HasStarted(`0)
+  name: HasStarted(CooldownBehaviorType)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.HasStarted(CooldownBehaviorType)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.HasStarted(CooldownBehaviorType)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).HasStarted(CooldownBehaviorType)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).HasStarted(CooldownBehaviorType)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.HasStarted(CooldownBehaviorType)
+    name: HasStarted
+  - name: (
+  - uid: Global.CooldownBehaviorType
+    name: CooldownBehaviorType
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.HasStarted(CooldownBehaviorType)
+    name: HasStarted
+  - name: (
+  - uid: Global.CooldownBehaviorType
+    name: CooldownBehaviorType
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnKill(ModularEnemy,System.Boolean)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnKill(ModularEnemy,System.Boolean)
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnResetObject(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnResetObject(ModularEnemy)
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.OnResetObject(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).OnResetObject(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: ShowGizmos
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  fullName: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.self
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.self
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: self
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.self
+  fullName: ModularEnemy.EnemyBehaviorInterface.self
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Started
+  commentId: P:Global.ModularEnemy.EnemyBehaviorInterface.Started
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Started
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Started
+  fullName: ModularEnemy.EnemyBehaviorInterface.Started
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1
+  name: ModularEnemy.EnemyBehaviorInterfaceManager<T>
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T)
+  name.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T)
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1
+    name: EnemyBehaviorInterfaceManager
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1
+    name: EnemyBehaviorInterfaceManager
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.CurrentBehavior
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.CurrentBehavior
+  name: CurrentBehavior
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.CurrentBehavior
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.CurrentBehavior
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).CurrentBehavior
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).CurrentBehavior
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisteredBehaviors
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisteredBehaviors
+  name: RegisteredBehaviors
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisteredBehaviors
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisteredBehaviors
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisteredBehaviors
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisteredBehaviors
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisteredAlwaysRun
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisteredAlwaysRun
+  name: RegisteredAlwaysRun
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisteredAlwaysRun
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisteredAlwaysRun
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisteredAlwaysRun
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisteredAlwaysRun
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehavior(`0,ModularEnemy.EnemyBehaviorInterface)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehavior(`0,ModularEnemy.EnemyBehaviorInterface)
+  name: RegisterBehavior(T, EnemyBehaviorInterface)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisterBehavior(T, ModularEnemy.EnemyBehaviorInterface)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisterBehavior(T, ModularEnemy.EnemyBehaviorInterface)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisterBehavior(T, ModularEnemy.EnemyBehaviorInterface)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisterBehavior(T, ModularEnemy.EnemyBehaviorInterface)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehavior(`0,ModularEnemy.EnemyBehaviorInterface)
+    name: RegisterBehavior
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehavior(`0,ModularEnemy.EnemyBehaviorInterface)
+    name: RegisterBehavior
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  name: RegisterBehaviorAlwaysRun(EnemyBehaviorInterface)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+    name: RegisterBehaviorAlwaysRun
+  - name: (
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviorAlwaysRun(ModularEnemy.EnemyBehaviorInterface)
+    name: RegisterBehaviorAlwaysRun
+  - name: (
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Start(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Start(ModularEnemy)
+  name: Start(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.Start(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.Start(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).Start(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Update
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Update
+  name: Update()
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.Update()
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.Update()
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).Update()
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).Update()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.DrawGizmos(ModularEnemy)
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.DrawGizmos(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.DrawGizmos(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).DrawGizmos(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnRestart
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnRestart
+  name: OnRestart()
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.OnRestart()
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.OnRestart()
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).OnRestart()
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).OnRestart()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.HasStarted(`0)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.HasStarted(`0)
+  name: HasStarted(T)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.HasStarted(T)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.HasStarted(T)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).HasStarted(T)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).HasStarted(T)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.HasStarted(`0)
+    name: HasStarted
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.HasStarted(`0)
+    name: HasStarted
+  - name: (
+  - name: T
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnKill(ModularEnemy,System.Boolean)
+  isExternal: true
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnResetObject(ModularEnemy)
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.OnResetObject(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).OnResetObject(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.CooldownBehaviorType
+  commentId: T:Global.CooldownBehaviorType
+  name: CooldownBehaviorType
+  nameWithType: CooldownBehaviorType
+  fullName: CooldownBehaviorType
+- uid: Global.TimerBehavior
+  commentId: T:Global.TimerBehavior
+  name: TimerBehavior
+  nameWithType: TimerBehavior
+  fullName: TimerBehavior
+- uid: Global.ReturnToStartBehavior
+  commentId: T:Global.ReturnToStartBehavior
+  name: ReturnToStartBehavior
+  nameWithType: ReturnToStartBehavior
+  fullName: ReturnToStartBehavior
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviors(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviors(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviors(ModularEnemy)
+  name: RegisterBehaviors(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisterBehaviors(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.RegisterBehaviors(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisterBehaviors(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).RegisterBehaviors(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviors(ModularEnemy)
+    name: RegisterBehaviors
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.RegisterBehaviors(ModularEnemy)
+    name: RegisterBehaviors
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.CooldownBehavior.RegisterBehaviors*
+  commentId: Overload:Global.CooldownBehavior.RegisterBehaviors
+  name: RegisterBehaviors
+  nameWithType: CooldownBehavior.RegisterBehaviors
+  fullName: CooldownBehavior.RegisterBehaviors
+- uid: Global.ModularEnemy
+  commentId: T:Global.ModularEnemy
+  name: ModularEnemy
+  nameWithType: ModularEnemy
+  fullName: ModularEnemy
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviors(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviors(ModularEnemy)
+  name: RegisterBehaviors(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisterBehaviors(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.RegisterBehaviors(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisterBehaviors(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).RegisterBehaviors(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviors(ModularEnemy)
+    name: RegisterBehaviors
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.RegisterBehaviors(ModularEnemy)
+    name: RegisterBehaviors
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.SetInitialBehavior(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.SetInitialBehavior(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}
+  definition: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.SetInitialBehavior(ModularEnemy)
+  name: SetInitialBehavior(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.SetInitialBehavior(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<CooldownBehaviorType>.SetInitialBehavior(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).SetInitialBehavior(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of CooldownBehaviorType).SetInitialBehavior(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.SetInitialBehavior(ModularEnemy)
+    name: SetInitialBehavior
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager{CooldownBehaviorType}.SetInitialBehavior(ModularEnemy)
+    name: SetInitialBehavior
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.CooldownBehavior.SetInitialBehavior*
+  commentId: Overload:Global.CooldownBehavior.SetInitialBehavior
+  name: SetInitialBehavior
+  nameWithType: CooldownBehavior.SetInitialBehavior
+  fullName: CooldownBehavior.SetInitialBehavior
+- uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.SetInitialBehavior(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.SetInitialBehavior(ModularEnemy)
+  name: SetInitialBehavior(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterfaceManager<T>.SetInitialBehavior(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterfaceManager<T>.SetInitialBehavior(ModularEnemy)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).SetInitialBehavior(ModularEnemy)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterfaceManager(Of T).SetInitialBehavior(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.SetInitialBehavior(ModularEnemy)
+    name: SetInitialBehavior
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterfaceManager`1.SetInitialBehavior(ModularEnemy)
+    name: SetInitialBehavior
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )

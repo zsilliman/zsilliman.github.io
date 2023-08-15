@@ -1,0 +1,2438 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SwimMovementController
+  commentId: T:Global.SwimMovementController
+  id: SwimMovementController
+  parent: Global
+  children:
+  - Global.SwimMovementController.Charge(UnityEngine.Vector2)
+  - Global.SwimMovementController.Dive(System.Single,System.Single)
+  - Global.SwimMovementController.GetEdgeXCallback
+  - Global.SwimMovementController.GetJumpCallback
+  - Global.SwimMovementController.GoTo(UnityEngine.Vector2)
+  - Global.SwimMovementController.Idle
+  - Global.SwimMovementController.Initialize(IntEnemy)
+  - Global.SwimMovementController.IsSubmerged
+  - Global.SwimMovementController.Leap(System.Single,System.Single)
+  - Global.SwimMovementController.Move(UnityEngine.Vector2)
+  - Global.SwimMovementController.OnCollideY(IntSolid)
+  - Global.SwimMovementController.RegisterEdgeXCallback(IntObject.Action)
+  - Global.SwimMovementController.RegisterFlounderingUpdate(IntObject.Action)
+  - Global.SwimMovementController.RegisterJumpCallback(IntObject.Action)
+  - Global.SwimMovementController.RegisterOnLandCallback(IntObject.Action)
+  - Global.SwimMovementController.RegisterOnLeapPeakCallback(IntObject.Action)
+  - Global.SwimMovementController.RegisterOnSubmergedCallback(IntObject.Action)
+  - Global.SwimMovementController.RegisterOnSurfacedCallback(IntObject.Action)
+  - Global.SwimMovementController.Surface(System.Single)
+  - Global.SwimMovementController.UnegisterOnLandCallback(IntObject.Action)
+  - Global.SwimMovementController.UnegisterOnLeapPeakCallback(IntObject.Action)
+  - Global.SwimMovementController.UnegisterOnSubmergedCallback(IntObject.Action)
+  - Global.SwimMovementController.UnegisterOnSurfacedCallback(IntObject.Action)
+  - Global.SwimMovementController.UnregisterEdgeXCallback(IntObject.Action)
+  - Global.SwimMovementController.UnregisterFlounderingUpdate(IntObject.Action)
+  - Global.SwimMovementController.UnregisterJumpCallback(IntObject.Action)
+  - Global.SwimMovementController.Update
+  langs:
+  - csharp
+  - vb
+  name: SwimMovementController
+  nameWithType: SwimMovementController
+  fullName: SwimMovementController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwimMovementController
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class SwimMovementController : EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>'
+    content.vb: Public Class SwimMovementController Inherits EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState)
+  inheritance:
+  - System.Object
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  inheritedMembers:
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.MovementProperties
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Enemy
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.osm
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CollideX
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CollideY
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OverlapActor
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OverlapTrigger
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.StartCharge
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.EndCharge
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CurrentState
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Initialize(IntEnemy)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetTimeInState
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Update
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Reset
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideXCallback
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideYCallback
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapActorCallback
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapTriggerCallback
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideX(IntSolid)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideY(IntSolid)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapActor(IntActor)
+  - Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapTrigger(IntTrigger)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SwimMovementController.Initialize(IntEnemy)
+  commentId: M:Global.SwimMovementController.Initialize(IntEnemy)
+  id: Initialize(IntEnemy)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IntEnemy)
+  nameWithType: SwimMovementController.Initialize(IntEnemy)
+  fullName: SwimMovementController.Initialize(IntEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Initialize
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Initialize(IntEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.IntEnemy
+    content.vb: Public Overrides Sub Initialize(enemy As IntEnemy)
+  overridden: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Initialize(IntEnemy)
+  overload: Global.SwimMovementController.Initialize*
+- uid: Global.SwimMovementController.IsSubmerged
+  commentId: P:Global.SwimMovementController.IsSubmerged
+  id: IsSubmerged
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: IsSubmerged
+  nameWithType: SwimMovementController.IsSubmerged
+  fullName: SwimMovementController.IsSubmerged
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsSubmerged
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsSubmerged { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSubmerged As Boolean
+  overload: Global.SwimMovementController.IsSubmerged*
+- uid: Global.SwimMovementController.Update
+  commentId: M:Global.SwimMovementController.Update
+  id: Update
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: SwimMovementController.Update()
+  fullName: SwimMovementController.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Update
+  overload: Global.SwimMovementController.Update*
+- uid: Global.SwimMovementController.Idle
+  commentId: M:Global.SwimMovementController.Idle
+  id: Idle
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: Idle()
+  nameWithType: SwimMovementController.Idle()
+  fullName: SwimMovementController.Idle()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Idle
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 155
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Idle()
+    content.vb: Public Sub Idle()
+  overload: Global.SwimMovementController.Idle*
+- uid: Global.SwimMovementController.Move(UnityEngine.Vector2)
+  commentId: M:Global.SwimMovementController.Move(UnityEngine.Vector2)
+  id: Move(UnityEngine.Vector2)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: Move(Vector2)
+  nameWithType: SwimMovementController.Move(Vector2)
+  fullName: SwimMovementController.Move(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Move
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 160
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Move(Vector2 desired_velocity)
+    parameters:
+    - id: desired_velocity
+      type: UnityEngine.Vector2
+    content.vb: Public Sub Move(desired_velocity As Vector2)
+  overload: Global.SwimMovementController.Move*
+- uid: Global.SwimMovementController.GoTo(UnityEngine.Vector2)
+  commentId: M:Global.SwimMovementController.GoTo(UnityEngine.Vector2)
+  id: GoTo(UnityEngine.Vector2)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: GoTo(Vector2)
+  nameWithType: SwimMovementController.GoTo(Vector2)
+  fullName: SwimMovementController.GoTo(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GoTo
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 166
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void GoTo(Vector2 location)
+    parameters:
+    - id: location
+      type: UnityEngine.Vector2
+    content.vb: Public Sub [GoTo](location As Vector2)
+  overload: Global.SwimMovementController.GoTo*
+- uid: Global.SwimMovementController.Surface(System.Single)
+  commentId: M:Global.SwimMovementController.Surface(System.Single)
+  id: Surface(System.Single)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: Surface(float)
+  nameWithType: SwimMovementController.Surface(float)
+  fullName: SwimMovementController.Surface(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Surface
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 172
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Surface(float location_x)
+    parameters:
+    - id: location_x
+      type: System.Single
+    content.vb: Public Sub Surface(location_x As Single)
+  overload: Global.SwimMovementController.Surface*
+  nameWithType.vb: SwimMovementController.Surface(Single)
+  fullName.vb: SwimMovementController.Surface(Single)
+  name.vb: Surface(Single)
+- uid: Global.SwimMovementController.Dive(System.Single,System.Single)
+  commentId: M:Global.SwimMovementController.Dive(System.Single,System.Single)
+  id: Dive(System.Single,System.Single)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: Dive(float, float)
+  nameWithType: SwimMovementController.Dive(float, float)
+  fullName: SwimMovementController.Dive(float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Dive
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 185
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Dive(float location_x, float dist_from_floor = 10)
+    parameters:
+    - id: location_x
+      type: System.Single
+    - id: dist_from_floor
+      type: System.Single
+    content.vb: Public Sub Dive(location_x As Single, dist_from_floor As Single = 10)
+  overload: Global.SwimMovementController.Dive*
+  nameWithType.vb: SwimMovementController.Dive(Single, Single)
+  fullName.vb: SwimMovementController.Dive(Single, Single)
+  name.vb: Dive(Single, Single)
+- uid: Global.SwimMovementController.Leap(System.Single,System.Single)
+  commentId: M:Global.SwimMovementController.Leap(System.Single,System.Single)
+  id: Leap(System.Single,System.Single)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: Leap(float, float)
+  nameWithType: SwimMovementController.Leap(float, float)
+  fullName: SwimMovementController.Leap(float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Leap
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 197
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Leap(float JumpHeight, float JumpLateral)
+    parameters:
+    - id: JumpHeight
+      type: System.Single
+    - id: JumpLateral
+      type: System.Single
+    content.vb: Public Sub Leap(JumpHeight As Single, JumpLateral As Single)
+  overload: Global.SwimMovementController.Leap*
+  nameWithType.vb: SwimMovementController.Leap(Single, Single)
+  fullName.vb: SwimMovementController.Leap(Single, Single)
+  name.vb: Leap(Single, Single)
+- uid: Global.SwimMovementController.Charge(UnityEngine.Vector2)
+  commentId: M:Global.SwimMovementController.Charge(UnityEngine.Vector2)
+  id: Charge(UnityEngine.Vector2)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: Charge(Vector2)
+  nameWithType: SwimMovementController.Charge(Vector2)
+  fullName: SwimMovementController.Charge(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Charge
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 211
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Charge(Vector2 direction)
+    parameters:
+    - id: direction
+      type: UnityEngine.Vector2
+    content.vb: Public Sub Charge(direction As Vector2)
+  overload: Global.SwimMovementController.Charge*
+- uid: Global.SwimMovementController.RegisterEdgeXCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.RegisterEdgeXCallback(IntObject.Action)
+  id: RegisterEdgeXCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterEdgeXCallback(Action)
+  nameWithType: SwimMovementController.RegisterEdgeXCallback(IntObject.Action)
+  fullName: SwimMovementController.RegisterEdgeXCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterEdgeXCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 353
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterEdgeXCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterEdgeXCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.RegisterEdgeXCallback*
+- uid: Global.SwimMovementController.UnregisterEdgeXCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.UnregisterEdgeXCallback(IntObject.Action)
+  id: UnregisterEdgeXCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnregisterEdgeXCallback(Action)
+  nameWithType: SwimMovementController.UnregisterEdgeXCallback(IntObject.Action)
+  fullName: SwimMovementController.UnregisterEdgeXCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnregisterEdgeXCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 358
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnregisterEdgeXCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnregisterEdgeXCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.UnregisterEdgeXCallback*
+- uid: Global.SwimMovementController.GetEdgeXCallback
+  commentId: M:Global.SwimMovementController.GetEdgeXCallback
+  id: GetEdgeXCallback
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: GetEdgeXCallback()
+  nameWithType: SwimMovementController.GetEdgeXCallback()
+  fullName: SwimMovementController.GetEdgeXCallback()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetEdgeXCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 363
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected IntObject.Action GetEdgeXCallback()
+    return:
+      type: Global.IntObject.Action
+    content.vb: Protected Function GetEdgeXCallback() As IntObject.Action
+  overload: Global.SwimMovementController.GetEdgeXCallback*
+- uid: Global.SwimMovementController.RegisterJumpCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.RegisterJumpCallback(IntObject.Action)
+  id: RegisterJumpCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterJumpCallback(Action)
+  nameWithType: SwimMovementController.RegisterJumpCallback(IntObject.Action)
+  fullName: SwimMovementController.RegisterJumpCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterJumpCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 368
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterJumpCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterJumpCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.RegisterJumpCallback*
+- uid: Global.SwimMovementController.UnregisterJumpCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.UnregisterJumpCallback(IntObject.Action)
+  id: UnregisterJumpCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnregisterJumpCallback(Action)
+  nameWithType: SwimMovementController.UnregisterJumpCallback(IntObject.Action)
+  fullName: SwimMovementController.UnregisterJumpCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnregisterJumpCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 373
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnregisterJumpCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnregisterJumpCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.UnregisterJumpCallback*
+- uid: Global.SwimMovementController.GetJumpCallback
+  commentId: M:Global.SwimMovementController.GetJumpCallback
+  id: GetJumpCallback
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: GetJumpCallback()
+  nameWithType: SwimMovementController.GetJumpCallback()
+  fullName: SwimMovementController.GetJumpCallback()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetJumpCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 378
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected IntObject.Action GetJumpCallback()
+    return:
+      type: Global.IntObject.Action
+    content.vb: Protected Function GetJumpCallback() As IntObject.Action
+  overload: Global.SwimMovementController.GetJumpCallback*
+- uid: Global.SwimMovementController.RegisterOnSubmergedCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.RegisterOnSubmergedCallback(IntObject.Action)
+  id: RegisterOnSubmergedCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterOnSubmergedCallback(Action)
+  nameWithType: SwimMovementController.RegisterOnSubmergedCallback(IntObject.Action)
+  fullName: SwimMovementController.RegisterOnSubmergedCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterOnSubmergedCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 386
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterOnSubmergedCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterOnSubmergedCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.RegisterOnSubmergedCallback*
+- uid: Global.SwimMovementController.UnegisterOnSubmergedCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.UnegisterOnSubmergedCallback(IntObject.Action)
+  id: UnegisterOnSubmergedCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnegisterOnSubmergedCallback(Action)
+  nameWithType: SwimMovementController.UnegisterOnSubmergedCallback(IntObject.Action)
+  fullName: SwimMovementController.UnegisterOnSubmergedCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnegisterOnSubmergedCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 391
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnegisterOnSubmergedCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnegisterOnSubmergedCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.UnegisterOnSubmergedCallback*
+- uid: Global.SwimMovementController.RegisterOnSurfacedCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.RegisterOnSurfacedCallback(IntObject.Action)
+  id: RegisterOnSurfacedCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterOnSurfacedCallback(Action)
+  nameWithType: SwimMovementController.RegisterOnSurfacedCallback(IntObject.Action)
+  fullName: SwimMovementController.RegisterOnSurfacedCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterOnSurfacedCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 396
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterOnSurfacedCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterOnSurfacedCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.RegisterOnSurfacedCallback*
+- uid: Global.SwimMovementController.UnegisterOnSurfacedCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.UnegisterOnSurfacedCallback(IntObject.Action)
+  id: UnegisterOnSurfacedCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnegisterOnSurfacedCallback(Action)
+  nameWithType: SwimMovementController.UnegisterOnSurfacedCallback(IntObject.Action)
+  fullName: SwimMovementController.UnegisterOnSurfacedCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnegisterOnSurfacedCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 401
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnegisterOnSurfacedCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnegisterOnSurfacedCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.UnegisterOnSurfacedCallback*
+- uid: Global.SwimMovementController.RegisterOnLandCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.RegisterOnLandCallback(IntObject.Action)
+  id: RegisterOnLandCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterOnLandCallback(Action)
+  nameWithType: SwimMovementController.RegisterOnLandCallback(IntObject.Action)
+  fullName: SwimMovementController.RegisterOnLandCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterOnLandCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 406
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterOnLandCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterOnLandCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.RegisterOnLandCallback*
+- uid: Global.SwimMovementController.UnegisterOnLandCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.UnegisterOnLandCallback(IntObject.Action)
+  id: UnegisterOnLandCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnegisterOnLandCallback(Action)
+  nameWithType: SwimMovementController.UnegisterOnLandCallback(IntObject.Action)
+  fullName: SwimMovementController.UnegisterOnLandCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnegisterOnLandCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 411
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnegisterOnLandCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnegisterOnLandCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.UnegisterOnLandCallback*
+- uid: Global.SwimMovementController.RegisterOnLeapPeakCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.RegisterOnLeapPeakCallback(IntObject.Action)
+  id: RegisterOnLeapPeakCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterOnLeapPeakCallback(Action)
+  nameWithType: SwimMovementController.RegisterOnLeapPeakCallback(IntObject.Action)
+  fullName: SwimMovementController.RegisterOnLeapPeakCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterOnLeapPeakCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 416
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterOnLeapPeakCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterOnLeapPeakCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.RegisterOnLeapPeakCallback*
+- uid: Global.SwimMovementController.UnegisterOnLeapPeakCallback(IntObject.Action)
+  commentId: M:Global.SwimMovementController.UnegisterOnLeapPeakCallback(IntObject.Action)
+  id: UnegisterOnLeapPeakCallback(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnegisterOnLeapPeakCallback(Action)
+  nameWithType: SwimMovementController.UnegisterOnLeapPeakCallback(IntObject.Action)
+  fullName: SwimMovementController.UnegisterOnLeapPeakCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnegisterOnLeapPeakCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 421
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnegisterOnLeapPeakCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnegisterOnLeapPeakCallback(callback As IntObject.Action)
+  overload: Global.SwimMovementController.UnegisterOnLeapPeakCallback*
+- uid: Global.SwimMovementController.RegisterFlounderingUpdate(IntObject.Action)
+  commentId: M:Global.SwimMovementController.RegisterFlounderingUpdate(IntObject.Action)
+  id: RegisterFlounderingUpdate(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterFlounderingUpdate(Action)
+  nameWithType: SwimMovementController.RegisterFlounderingUpdate(IntObject.Action)
+  fullName: SwimMovementController.RegisterFlounderingUpdate(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterFlounderingUpdate
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 426
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterFlounderingUpdate(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterFlounderingUpdate(callback As IntObject.Action)
+  overload: Global.SwimMovementController.RegisterFlounderingUpdate*
+- uid: Global.SwimMovementController.UnregisterFlounderingUpdate(IntObject.Action)
+  commentId: M:Global.SwimMovementController.UnregisterFlounderingUpdate(IntObject.Action)
+  id: UnregisterFlounderingUpdate(IntObject.Action)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnregisterFlounderingUpdate(Action)
+  nameWithType: SwimMovementController.UnregisterFlounderingUpdate(IntObject.Action)
+  fullName: SwimMovementController.UnregisterFlounderingUpdate(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnregisterFlounderingUpdate
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 431
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnregisterFlounderingUpdate(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnregisterFlounderingUpdate(callback As IntObject.Action)
+  overload: Global.SwimMovementController.UnregisterFlounderingUpdate*
+- uid: Global.SwimMovementController.OnCollideY(IntSolid)
+  commentId: M:Global.SwimMovementController.OnCollideY(IntSolid)
+  id: OnCollideY(IntSolid)
+  parent: Global.SwimMovementController
+  langs:
+  - csharp
+  - vb
+  name: OnCollideY(IntSolid)
+  nameWithType: SwimMovementController.OnCollideY(IntSolid)
+  fullName: SwimMovementController.OnCollideY(IntSolid)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnCollideY
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 440
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override void OnCollideY(IntSolid solid)
+    parameters:
+    - id: solid
+      type: Global.IntSolid
+    content.vb: Protected Overrides Sub OnCollideY(solid As IntSolid)
+  overridden: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideY(IntSolid)
+  overload: Global.SwimMovementController.OnCollideY*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  commentId: T:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2
+  name: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState)
+  name.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2
+    name: EnemyMovementController
+  - name: <
+  - uid: Global.SwimMovementProperties
+    name: SwimMovementProperties
+  - name: ','
+  - name: " "
+  - uid: Global.SwimMovementController
+    name: SwimMovementController
+  - name: .
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: '>'
+  spec.vb:
+  - uid: Global.EnemyMovementController`2
+    name: EnemyMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.SwimMovementProperties
+    name: SwimMovementProperties
+  - name: ','
+  - name: " "
+  - uid: Global.SwimMovementController
+    name: SwimMovementController
+  - name: .
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.MovementProperties
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.MovementProperties
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.MovementProperties
+  name: MovementProperties
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.MovementProperties
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.MovementProperties
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).MovementProperties
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).MovementProperties
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Enemy
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Enemy
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.Enemy
+  name: Enemy
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.Enemy
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.Enemy
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).Enemy
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).Enemy
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.osm
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.osm
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.osm
+  name: osm
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.osm
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.osm
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).osm
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).osm
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CollideX
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CollideX
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.CollideX
+  name: CollideX
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.CollideX
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.CollideX
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).CollideX
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).CollideX
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CollideY
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CollideY
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.CollideY
+  name: CollideY
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.CollideY
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.CollideY
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).CollideY
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).CollideY
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OverlapActor
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OverlapActor
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.OverlapActor
+  name: OverlapActor
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OverlapActor
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OverlapActor
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OverlapActor
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OverlapActor
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OverlapTrigger
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OverlapTrigger
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.OverlapTrigger
+  name: OverlapTrigger
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OverlapTrigger
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OverlapTrigger
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OverlapTrigger
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OverlapTrigger
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.StartCharge
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.StartCharge
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.StartCharge
+  name: StartCharge
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.StartCharge
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.StartCharge
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).StartCharge
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).StartCharge
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.EndCharge
+  commentId: F:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.EndCharge
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.EndCharge
+  name: EndCharge
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.EndCharge
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.EndCharge
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).EndCharge
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).EndCharge
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CurrentState
+  commentId: P:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.CurrentState
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.CurrentState
+  name: CurrentState
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.CurrentState
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.CurrentState
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).CurrentState
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).CurrentState
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Initialize(IntEnemy)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Initialize(IntEnemy)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.Initialize(IntEnemy)
+  name: Initialize(IntEnemy)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.Initialize(IntEnemy)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.Initialize(IntEnemy)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).Initialize(IntEnemy)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).Initialize(IntEnemy)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Initialize(IntEnemy)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Initialize(IntEnemy)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetTimeInState
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetTimeInState
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.GetTimeInState
+  name: GetTimeInState()
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetTimeInState()
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetTimeInState()
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetTimeInState()
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetTimeInState()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetTimeInState
+    name: GetTimeInState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetTimeInState
+    name: GetTimeInState
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Update
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Update
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.Update
+  name: Update()
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.Update()
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.Update()
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).Update()
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).Update()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Reset
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Reset
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.Reset
+  name: Reset()
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.Reset()
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.Reset()
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).Reset()
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).Reset()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  name: RegisterForStateEnter(SwimmingMovementState, TransitionAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterForStateEnter(SwimMovementController.SwimmingMovementState, OptionStateMachine<SwimMovementController.SwimmingMovementState>.TransitionAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterForStateEnter(SwimMovementController.SwimmingMovementState, OptionStateMachine<SwimMovementController.SwimmingMovementState>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterForStateEnter(SwimMovementController.SwimmingMovementState, OptionStateMachine(Of SwimMovementController.SwimmingMovementState).TransitionAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterForStateEnter(SwimMovementController.SwimmingMovementState, OptionStateMachine(Of SwimMovementController.SwimmingMovementState).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+    name: RegisterForStateEnter
+  - name: (
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+    name: RegisterForStateEnter
+  - name: (
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  name: UnregisterForStateEnter(SwimmingMovementState, TransitionAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterForStateEnter(SwimMovementController.SwimmingMovementState, OptionStateMachine<SwimMovementController.SwimmingMovementState>.TransitionAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterForStateEnter(SwimMovementController.SwimmingMovementState, OptionStateMachine<SwimMovementController.SwimmingMovementState>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterForStateEnter(SwimMovementController.SwimmingMovementState, OptionStateMachine(Of SwimMovementController.SwimmingMovementState).TransitionAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterForStateEnter(SwimMovementController.SwimmingMovementState, OptionStateMachine(Of SwimMovementController.SwimmingMovementState).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+    name: UnregisterForStateEnter
+  - name: (
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateEnter(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+    name: UnregisterForStateEnter
+  - name: (
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  name: RegisterForStateExit(SwimmingMovementState, TransitionAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterForStateExit(SwimMovementController.SwimmingMovementState, OptionStateMachine<SwimMovementController.SwimmingMovementState>.TransitionAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterForStateExit(SwimMovementController.SwimmingMovementState, OptionStateMachine<SwimMovementController.SwimmingMovementState>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterForStateExit(SwimMovementController.SwimmingMovementState, OptionStateMachine(Of SwimMovementController.SwimmingMovementState).TransitionAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterForStateExit(SwimMovementController.SwimmingMovementState, OptionStateMachine(Of SwimMovementController.SwimmingMovementState).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+    name: RegisterForStateExit
+  - name: (
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+    name: RegisterForStateExit
+  - name: (
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  name: UnregisterForStateExit(SwimmingMovementState, TransitionAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterForStateExit(SwimMovementController.SwimmingMovementState, OptionStateMachine<SwimMovementController.SwimmingMovementState>.TransitionAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterForStateExit(SwimMovementController.SwimmingMovementState, OptionStateMachine<SwimMovementController.SwimmingMovementState>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterForStateExit(SwimMovementController.SwimmingMovementState, OptionStateMachine(Of SwimMovementController.SwimmingMovementState).TransitionAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterForStateExit(SwimMovementController.SwimmingMovementState, OptionStateMachine(Of SwimMovementController.SwimmingMovementState).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+    name: UnregisterForStateExit
+  - name: (
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterForStateExit(SwimMovementController.SwimmingMovementState,OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction)
+    name: UnregisterForStateExit
+  - name: (
+  - uid: Global.SwimMovementController.SwimmingMovementState
+    name: SwimmingMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{SwimMovementController.SwimmingMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+  name: RegisterCollideXCallback(SolidAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterCollideXCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterCollideXCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterCollideXCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterCollideXCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+    name: RegisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+    name: RegisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+  name: UnregisterCollideXCallback(SolidAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterCollideXCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterCollideXCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterCollideXCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterCollideXCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+    name: UnregisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+    name: UnregisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+  name: RegisterCollideYCallback(SolidAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterCollideYCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterCollideYCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterCollideYCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterCollideYCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+    name: RegisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+    name: RegisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+  name: UnregisterCollideYCallback(SolidAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterCollideYCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterCollideYCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterCollideYCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterCollideYCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+    name: UnregisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+    name: UnregisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+  name: RegisterOverlapActorCallback(ActorAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterOverlapActorCallback(IntObject.ActorAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterOverlapActorCallback(IntObject.ActorAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterOverlapActorCallback(IntObject.ActorAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterOverlapActorCallback(IntObject.ActorAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+    name: RegisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+    name: RegisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  name: UnregisterOverlapActorCallback(ActorAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterOverlapActorCallback(IntObject.ActorAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterOverlapActorCallback(IntObject.ActorAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+    name: UnregisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+    name: UnregisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  name: RegisterOverlapTriggerCallback(TriggerAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: RegisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: RegisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  name: UnregisterOverlapTriggerCallback(TriggerAction)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: UnregisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: UnregisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideXCallback
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideXCallback
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.GetCollideXCallback
+  name: GetCollideXCallback()
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetCollideXCallback()
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetCollideXCallback()
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetCollideXCallback()
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetCollideXCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideXCallback
+    name: GetCollideXCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideXCallback
+    name: GetCollideXCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideYCallback
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideYCallback
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.GetCollideYCallback
+  name: GetCollideYCallback()
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetCollideYCallback()
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetCollideYCallback()
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetCollideYCallback()
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetCollideYCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideYCallback
+    name: GetCollideYCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetCollideYCallback
+    name: GetCollideYCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapActorCallback
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapActorCallback
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.GetOverlapActorCallback
+  name: GetOverlapActorCallback()
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetOverlapActorCallback()
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetOverlapActorCallback()
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetOverlapActorCallback()
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetOverlapActorCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapActorCallback
+    name: GetOverlapActorCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapActorCallback
+    name: GetOverlapActorCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapTriggerCallback
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapTriggerCallback
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.GetOverlapTriggerCallback
+  name: GetOverlapTriggerCallback()
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetOverlapTriggerCallback()
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.GetOverlapTriggerCallback()
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetOverlapTriggerCallback()
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).GetOverlapTriggerCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapTriggerCallback
+    name: GetOverlapTriggerCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.GetOverlapTriggerCallback
+    name: GetOverlapTriggerCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideX(IntSolid)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideX(IntSolid)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.OnCollideX(IntSolid)
+  name: OnCollideX(IntSolid)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OnCollideX(IntSolid)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OnCollideX(IntSolid)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OnCollideX(IntSolid)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OnCollideX(IntSolid)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideX(IntSolid)
+    name: OnCollideX
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideX(IntSolid)
+    name: OnCollideX
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideY(IntSolid)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideY(IntSolid)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.OnCollideY(IntSolid)
+  name: OnCollideY(IntSolid)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OnCollideY(IntSolid)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OnCollideY(IntSolid)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OnCollideY(IntSolid)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OnCollideY(IntSolid)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideY(IntSolid)
+    name: OnCollideY
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnCollideY(IntSolid)
+    name: OnCollideY
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapActor(IntActor)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapActor(IntActor)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+  name: OnOverlapActor(IntActor)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OnOverlapActor(IntActor)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OnOverlapActor(IntActor)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OnOverlapActor(IntActor)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OnOverlapActor(IntActor)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapActor(IntActor)
+    name: OnOverlapActor
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapActor(IntActor)
+    name: OnOverlapActor
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapTrigger(IntTrigger)
+  commentId: M:Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapTrigger(IntTrigger)
+  parent: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}
+  definition: Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+  name: OnOverlapTrigger(IntTrigger)
+  nameWithType: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OnOverlapTrigger(IntTrigger)
+  fullName: EnemyMovementController<SwimMovementProperties, SwimMovementController.SwimmingMovementState>.OnOverlapTrigger(IntTrigger)
+  nameWithType.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OnOverlapTrigger(IntTrigger)
+  fullName.vb: EnemyMovementController(Of SwimMovementProperties, SwimMovementController.SwimmingMovementState).OnOverlapTrigger(IntTrigger)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapTrigger(IntTrigger)
+    name: OnOverlapTrigger
+  - name: (
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{SwimMovementProperties,SwimMovementController.SwimmingMovementState}.OnOverlapTrigger(IntTrigger)
+    name: OnOverlapTrigger
+  - name: (
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.EnemyMovementController`2
+  commentId: T:Global.EnemyMovementController`2
+  name: EnemyMovementController<T, U>
+  nameWithType: EnemyMovementController<T, U>
+  fullName: EnemyMovementController<T, U>
+  nameWithType.vb: EnemyMovementController(Of T, U)
+  fullName.vb: EnemyMovementController(Of T, U)
+  name.vb: EnemyMovementController(Of T, U)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2
+    name: EnemyMovementController
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: U
+  - name: '>'
+  spec.vb:
+  - uid: Global.EnemyMovementController`2
+    name: EnemyMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: U
+  - name: )
+- uid: Global.EnemyMovementController`2.MovementProperties
+  commentId: F:Global.EnemyMovementController`2.MovementProperties
+  name: MovementProperties
+  nameWithType: EnemyMovementController<T, U>.MovementProperties
+  fullName: EnemyMovementController<T, U>.MovementProperties
+  nameWithType.vb: EnemyMovementController(Of T, U).MovementProperties
+  fullName.vb: EnemyMovementController(Of T, U).MovementProperties
+- uid: Global.EnemyMovementController`2.Enemy
+  commentId: F:Global.EnemyMovementController`2.Enemy
+  name: Enemy
+  nameWithType: EnemyMovementController<T, U>.Enemy
+  fullName: EnemyMovementController<T, U>.Enemy
+  nameWithType.vb: EnemyMovementController(Of T, U).Enemy
+  fullName.vb: EnemyMovementController(Of T, U).Enemy
+- uid: Global.EnemyMovementController`2.osm
+  commentId: F:Global.EnemyMovementController`2.osm
+  name: osm
+  nameWithType: EnemyMovementController<T, U>.osm
+  fullName: EnemyMovementController<T, U>.osm
+  nameWithType.vb: EnemyMovementController(Of T, U).osm
+  fullName.vb: EnemyMovementController(Of T, U).osm
+- uid: Global.EnemyMovementController`2.CollideX
+  commentId: F:Global.EnemyMovementController`2.CollideX
+  name: CollideX
+  nameWithType: EnemyMovementController<T, U>.CollideX
+  fullName: EnemyMovementController<T, U>.CollideX
+  nameWithType.vb: EnemyMovementController(Of T, U).CollideX
+  fullName.vb: EnemyMovementController(Of T, U).CollideX
+- uid: Global.EnemyMovementController`2.CollideY
+  commentId: F:Global.EnemyMovementController`2.CollideY
+  name: CollideY
+  nameWithType: EnemyMovementController<T, U>.CollideY
+  fullName: EnemyMovementController<T, U>.CollideY
+  nameWithType.vb: EnemyMovementController(Of T, U).CollideY
+  fullName.vb: EnemyMovementController(Of T, U).CollideY
+- uid: Global.EnemyMovementController`2.OverlapActor
+  commentId: F:Global.EnemyMovementController`2.OverlapActor
+  name: OverlapActor
+  nameWithType: EnemyMovementController<T, U>.OverlapActor
+  fullName: EnemyMovementController<T, U>.OverlapActor
+  nameWithType.vb: EnemyMovementController(Of T, U).OverlapActor
+  fullName.vb: EnemyMovementController(Of T, U).OverlapActor
+- uid: Global.EnemyMovementController`2.OverlapTrigger
+  commentId: F:Global.EnemyMovementController`2.OverlapTrigger
+  name: OverlapTrigger
+  nameWithType: EnemyMovementController<T, U>.OverlapTrigger
+  fullName: EnemyMovementController<T, U>.OverlapTrigger
+  nameWithType.vb: EnemyMovementController(Of T, U).OverlapTrigger
+  fullName.vb: EnemyMovementController(Of T, U).OverlapTrigger
+- uid: Global.EnemyMovementController`2.StartCharge
+  commentId: F:Global.EnemyMovementController`2.StartCharge
+  name: StartCharge
+  nameWithType: EnemyMovementController<T, U>.StartCharge
+  fullName: EnemyMovementController<T, U>.StartCharge
+  nameWithType.vb: EnemyMovementController(Of T, U).StartCharge
+  fullName.vb: EnemyMovementController(Of T, U).StartCharge
+- uid: Global.EnemyMovementController`2.EndCharge
+  commentId: F:Global.EnemyMovementController`2.EndCharge
+  name: EndCharge
+  nameWithType: EnemyMovementController<T, U>.EndCharge
+  fullName: EnemyMovementController<T, U>.EndCharge
+  nameWithType.vb: EnemyMovementController(Of T, U).EndCharge
+  fullName.vb: EnemyMovementController(Of T, U).EndCharge
+- uid: Global.EnemyMovementController`2.CurrentState
+  commentId: P:Global.EnemyMovementController`2.CurrentState
+  name: CurrentState
+  nameWithType: EnemyMovementController<T, U>.CurrentState
+  fullName: EnemyMovementController<T, U>.CurrentState
+  nameWithType.vb: EnemyMovementController(Of T, U).CurrentState
+  fullName.vb: EnemyMovementController(Of T, U).CurrentState
+- uid: Global.EnemyMovementController`2.Initialize(IntEnemy)
+  commentId: M:Global.EnemyMovementController`2.Initialize(IntEnemy)
+  name: Initialize(IntEnemy)
+  nameWithType: EnemyMovementController<T, U>.Initialize(IntEnemy)
+  fullName: EnemyMovementController<T, U>.Initialize(IntEnemy)
+  nameWithType.vb: EnemyMovementController(Of T, U).Initialize(IntEnemy)
+  fullName.vb: EnemyMovementController(Of T, U).Initialize(IntEnemy)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.Initialize(IntEnemy)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.Initialize(IntEnemy)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+- uid: Global.EnemyMovementController`2.GetTimeInState
+  commentId: M:Global.EnemyMovementController`2.GetTimeInState
+  name: GetTimeInState()
+  nameWithType: EnemyMovementController<T, U>.GetTimeInState()
+  fullName: EnemyMovementController<T, U>.GetTimeInState()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetTimeInState()
+  fullName.vb: EnemyMovementController(Of T, U).GetTimeInState()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetTimeInState
+    name: GetTimeInState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetTimeInState
+    name: GetTimeInState
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.Update
+  commentId: M:Global.EnemyMovementController`2.Update
+  name: Update()
+  nameWithType: EnemyMovementController<T, U>.Update()
+  fullName: EnemyMovementController<T, U>.Update()
+  nameWithType.vb: EnemyMovementController(Of T, U).Update()
+  fullName.vb: EnemyMovementController(Of T, U).Update()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.Reset
+  commentId: M:Global.EnemyMovementController`2.Reset
+  name: Reset()
+  nameWithType: EnemyMovementController<T, U>.Reset()
+  fullName: EnemyMovementController<T, U>.Reset()
+  nameWithType.vb: EnemyMovementController(Of T, U).Reset()
+  fullName.vb: EnemyMovementController(Of T, U).Reset()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  name: RegisterForStateEnter(U, TransitionAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterForStateEnter(U, OptionStateMachine<U>.TransitionAction)
+  fullName: EnemyMovementController<T, U>.RegisterForStateEnter(U, OptionStateMachine<U>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterForStateEnter(U, OptionStateMachine(Of U).TransitionAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterForStateEnter(U, OptionStateMachine(Of U).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+    name: RegisterForStateEnter
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+    name: RegisterForStateEnter
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  name: UnregisterForStateEnter(U, TransitionAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterForStateEnter(U, OptionStateMachine<U>.TransitionAction)
+  fullName: EnemyMovementController<T, U>.UnregisterForStateEnter(U, OptionStateMachine<U>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterForStateEnter(U, OptionStateMachine(Of U).TransitionAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterForStateEnter(U, OptionStateMachine(Of U).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+    name: UnregisterForStateEnter
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+    name: UnregisterForStateEnter
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  name: RegisterForStateExit(U, TransitionAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterForStateExit(U, OptionStateMachine<U>.TransitionAction)
+  fullName: EnemyMovementController<T, U>.RegisterForStateExit(U, OptionStateMachine<U>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterForStateExit(U, OptionStateMachine(Of U).TransitionAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterForStateExit(U, OptionStateMachine(Of U).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+    name: RegisterForStateExit
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+    name: RegisterForStateExit
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  name: UnregisterForStateExit(U, TransitionAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterForStateExit(U, OptionStateMachine<U>.TransitionAction)
+  fullName: EnemyMovementController<T, U>.UnregisterForStateExit(U, OptionStateMachine<U>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterForStateExit(U, OptionStateMachine(Of U).TransitionAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterForStateExit(U, OptionStateMachine(Of U).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+    name: UnregisterForStateExit
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+    name: UnregisterForStateExit
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+  name: RegisterCollideXCallback(SolidAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterCollideXCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<T, U>.RegisterCollideXCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterCollideXCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterCollideXCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+    name: RegisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+    name: RegisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+  name: UnregisterCollideXCallback(SolidAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterCollideXCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<T, U>.UnregisterCollideXCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterCollideXCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterCollideXCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+    name: UnregisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+    name: UnregisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+  name: RegisterCollideYCallback(SolidAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterCollideYCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<T, U>.RegisterCollideYCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterCollideYCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterCollideYCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+    name: RegisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+    name: RegisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+  name: UnregisterCollideYCallback(SolidAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterCollideYCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<T, U>.UnregisterCollideYCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterCollideYCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterCollideYCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+    name: UnregisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+    name: UnregisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+  name: RegisterOverlapActorCallback(ActorAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterOverlapActorCallback(IntObject.ActorAction)
+  fullName: EnemyMovementController<T, U>.RegisterOverlapActorCallback(IntObject.ActorAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterOverlapActorCallback(IntObject.ActorAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterOverlapActorCallback(IntObject.ActorAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+    name: RegisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+    name: RegisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  name: UnregisterOverlapActorCallback(ActorAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  fullName: EnemyMovementController<T, U>.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterOverlapActorCallback(IntObject.ActorAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterOverlapActorCallback(IntObject.ActorAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+    name: UnregisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+    name: UnregisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  name: RegisterOverlapTriggerCallback(TriggerAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName: EnemyMovementController<T, U>.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: RegisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: RegisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  name: UnregisterOverlapTriggerCallback(TriggerAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName: EnemyMovementController<T, U>.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: UnregisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: UnregisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.EnemyMovementController`2.GetCollideXCallback
+  commentId: M:Global.EnemyMovementController`2.GetCollideXCallback
+  name: GetCollideXCallback()
+  nameWithType: EnemyMovementController<T, U>.GetCollideXCallback()
+  fullName: EnemyMovementController<T, U>.GetCollideXCallback()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetCollideXCallback()
+  fullName.vb: EnemyMovementController(Of T, U).GetCollideXCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetCollideXCallback
+    name: GetCollideXCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetCollideXCallback
+    name: GetCollideXCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.GetCollideYCallback
+  commentId: M:Global.EnemyMovementController`2.GetCollideYCallback
+  name: GetCollideYCallback()
+  nameWithType: EnemyMovementController<T, U>.GetCollideYCallback()
+  fullName: EnemyMovementController<T, U>.GetCollideYCallback()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetCollideYCallback()
+  fullName.vb: EnemyMovementController(Of T, U).GetCollideYCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetCollideYCallback
+    name: GetCollideYCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetCollideYCallback
+    name: GetCollideYCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.GetOverlapActorCallback
+  commentId: M:Global.EnemyMovementController`2.GetOverlapActorCallback
+  name: GetOverlapActorCallback()
+  nameWithType: EnemyMovementController<T, U>.GetOverlapActorCallback()
+  fullName: EnemyMovementController<T, U>.GetOverlapActorCallback()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetOverlapActorCallback()
+  fullName.vb: EnemyMovementController(Of T, U).GetOverlapActorCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetOverlapActorCallback
+    name: GetOverlapActorCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetOverlapActorCallback
+    name: GetOverlapActorCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.GetOverlapTriggerCallback
+  commentId: M:Global.EnemyMovementController`2.GetOverlapTriggerCallback
+  name: GetOverlapTriggerCallback()
+  nameWithType: EnemyMovementController<T, U>.GetOverlapTriggerCallback()
+  fullName: EnemyMovementController<T, U>.GetOverlapTriggerCallback()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetOverlapTriggerCallback()
+  fullName.vb: EnemyMovementController(Of T, U).GetOverlapTriggerCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetOverlapTriggerCallback
+    name: GetOverlapTriggerCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetOverlapTriggerCallback
+    name: GetOverlapTriggerCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.OnCollideX(IntSolid)
+  commentId: M:Global.EnemyMovementController`2.OnCollideX(IntSolid)
+  name: OnCollideX(IntSolid)
+  nameWithType: EnemyMovementController<T, U>.OnCollideX(IntSolid)
+  fullName: EnemyMovementController<T, U>.OnCollideX(IntSolid)
+  nameWithType.vb: EnemyMovementController(Of T, U).OnCollideX(IntSolid)
+  fullName.vb: EnemyMovementController(Of T, U).OnCollideX(IntSolid)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.OnCollideX(IntSolid)
+    name: OnCollideX
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.OnCollideX(IntSolid)
+    name: OnCollideX
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.EnemyMovementController`2.OnCollideY(IntSolid)
+  commentId: M:Global.EnemyMovementController`2.OnCollideY(IntSolid)
+  name: OnCollideY(IntSolid)
+  nameWithType: EnemyMovementController<T, U>.OnCollideY(IntSolid)
+  fullName: EnemyMovementController<T, U>.OnCollideY(IntSolid)
+  nameWithType.vb: EnemyMovementController(Of T, U).OnCollideY(IntSolid)
+  fullName.vb: EnemyMovementController(Of T, U).OnCollideY(IntSolid)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.OnCollideY(IntSolid)
+    name: OnCollideY
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.OnCollideY(IntSolid)
+    name: OnCollideY
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+  commentId: M:Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+  name: OnOverlapActor(IntActor)
+  nameWithType: EnemyMovementController<T, U>.OnOverlapActor(IntActor)
+  fullName: EnemyMovementController<T, U>.OnOverlapActor(IntActor)
+  nameWithType.vb: EnemyMovementController(Of T, U).OnOverlapActor(IntActor)
+  fullName.vb: EnemyMovementController(Of T, U).OnOverlapActor(IntActor)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+    name: OnOverlapActor
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+    name: OnOverlapActor
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+  commentId: M:Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+  name: OnOverlapTrigger(IntTrigger)
+  nameWithType: EnemyMovementController<T, U>.OnOverlapTrigger(IntTrigger)
+  fullName: EnemyMovementController<T, U>.OnOverlapTrigger(IntTrigger)
+  nameWithType.vb: EnemyMovementController(Of T, U).OnOverlapTrigger(IntTrigger)
+  fullName.vb: EnemyMovementController(Of T, U).OnOverlapTrigger(IntTrigger)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+    name: OnOverlapTrigger
+  - name: (
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+    name: OnOverlapTrigger
+  - name: (
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.SwimMovementController.Initialize*
+  commentId: Overload:Global.SwimMovementController.Initialize
+  name: Initialize
+  nameWithType: SwimMovementController.Initialize
+  fullName: SwimMovementController.Initialize
+- uid: Global.IntEnemy
+  commentId: T:Global.IntEnemy
+  name: IntEnemy
+  nameWithType: IntEnemy
+  fullName: IntEnemy
+- uid: Global.SwimMovementController.IsSubmerged*
+  commentId: Overload:Global.SwimMovementController.IsSubmerged
+  name: IsSubmerged
+  nameWithType: SwimMovementController.IsSubmerged
+  fullName: SwimMovementController.IsSubmerged
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.SwimMovementController.Update*
+  commentId: Overload:Global.SwimMovementController.Update
+  name: Update
+  nameWithType: SwimMovementController.Update
+  fullName: SwimMovementController.Update
+- uid: Global.SwimMovementController.Idle*
+  commentId: Overload:Global.SwimMovementController.Idle
+  name: Idle
+  nameWithType: SwimMovementController.Idle
+  fullName: SwimMovementController.Idle
+- uid: Global.SwimMovementController.Move*
+  commentId: Overload:Global.SwimMovementController.Move
+  name: Move
+  nameWithType: SwimMovementController.Move
+  fullName: SwimMovementController.Move
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.SwimMovementController.GoTo*
+  commentId: Overload:Global.SwimMovementController.GoTo
+  name: GoTo
+  nameWithType: SwimMovementController.GoTo
+  fullName: SwimMovementController.GoTo
+- uid: Global.SwimMovementController.Surface*
+  commentId: Overload:Global.SwimMovementController.Surface
+  name: Surface
+  nameWithType: SwimMovementController.Surface
+  fullName: SwimMovementController.Surface
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.SwimMovementController.Dive*
+  commentId: Overload:Global.SwimMovementController.Dive
+  name: Dive
+  nameWithType: SwimMovementController.Dive
+  fullName: SwimMovementController.Dive
+- uid: Global.SwimMovementController.Leap*
+  commentId: Overload:Global.SwimMovementController.Leap
+  name: Leap
+  nameWithType: SwimMovementController.Leap
+  fullName: SwimMovementController.Leap
+- uid: Global.SwimMovementController.Charge*
+  commentId: Overload:Global.SwimMovementController.Charge
+  name: Charge
+  nameWithType: SwimMovementController.Charge
+  fullName: SwimMovementController.Charge
+- uid: Global.SwimMovementController.RegisterEdgeXCallback*
+  commentId: Overload:Global.SwimMovementController.RegisterEdgeXCallback
+  name: RegisterEdgeXCallback
+  nameWithType: SwimMovementController.RegisterEdgeXCallback
+  fullName: SwimMovementController.RegisterEdgeXCallback
+- uid: Global.IntObject.Action
+  commentId: T:Global.IntObject.Action
+  name: IntObject.Action
+  nameWithType: IntObject.Action
+  fullName: IntObject.Action
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+- uid: Global.SwimMovementController.UnregisterEdgeXCallback*
+  commentId: Overload:Global.SwimMovementController.UnregisterEdgeXCallback
+  name: UnregisterEdgeXCallback
+  nameWithType: SwimMovementController.UnregisterEdgeXCallback
+  fullName: SwimMovementController.UnregisterEdgeXCallback
+- uid: Global.SwimMovementController.GetEdgeXCallback*
+  commentId: Overload:Global.SwimMovementController.GetEdgeXCallback
+  name: GetEdgeXCallback
+  nameWithType: SwimMovementController.GetEdgeXCallback
+  fullName: SwimMovementController.GetEdgeXCallback
+- uid: Global.SwimMovementController.RegisterJumpCallback*
+  commentId: Overload:Global.SwimMovementController.RegisterJumpCallback
+  name: RegisterJumpCallback
+  nameWithType: SwimMovementController.RegisterJumpCallback
+  fullName: SwimMovementController.RegisterJumpCallback
+- uid: Global.SwimMovementController.UnregisterJumpCallback*
+  commentId: Overload:Global.SwimMovementController.UnregisterJumpCallback
+  name: UnregisterJumpCallback
+  nameWithType: SwimMovementController.UnregisterJumpCallback
+  fullName: SwimMovementController.UnregisterJumpCallback
+- uid: Global.SwimMovementController.GetJumpCallback*
+  commentId: Overload:Global.SwimMovementController.GetJumpCallback
+  name: GetJumpCallback
+  nameWithType: SwimMovementController.GetJumpCallback
+  fullName: SwimMovementController.GetJumpCallback
+- uid: Global.SwimMovementController.RegisterOnSubmergedCallback*
+  commentId: Overload:Global.SwimMovementController.RegisterOnSubmergedCallback
+  name: RegisterOnSubmergedCallback
+  nameWithType: SwimMovementController.RegisterOnSubmergedCallback
+  fullName: SwimMovementController.RegisterOnSubmergedCallback
+- uid: Global.SwimMovementController.UnegisterOnSubmergedCallback*
+  commentId: Overload:Global.SwimMovementController.UnegisterOnSubmergedCallback
+  name: UnegisterOnSubmergedCallback
+  nameWithType: SwimMovementController.UnegisterOnSubmergedCallback
+  fullName: SwimMovementController.UnegisterOnSubmergedCallback
+- uid: Global.SwimMovementController.RegisterOnSurfacedCallback*
+  commentId: Overload:Global.SwimMovementController.RegisterOnSurfacedCallback
+  name: RegisterOnSurfacedCallback
+  nameWithType: SwimMovementController.RegisterOnSurfacedCallback
+  fullName: SwimMovementController.RegisterOnSurfacedCallback
+- uid: Global.SwimMovementController.UnegisterOnSurfacedCallback*
+  commentId: Overload:Global.SwimMovementController.UnegisterOnSurfacedCallback
+  name: UnegisterOnSurfacedCallback
+  nameWithType: SwimMovementController.UnegisterOnSurfacedCallback
+  fullName: SwimMovementController.UnegisterOnSurfacedCallback
+- uid: Global.SwimMovementController.RegisterOnLandCallback*
+  commentId: Overload:Global.SwimMovementController.RegisterOnLandCallback
+  name: RegisterOnLandCallback
+  nameWithType: SwimMovementController.RegisterOnLandCallback
+  fullName: SwimMovementController.RegisterOnLandCallback
+- uid: Global.SwimMovementController.UnegisterOnLandCallback*
+  commentId: Overload:Global.SwimMovementController.UnegisterOnLandCallback
+  name: UnegisterOnLandCallback
+  nameWithType: SwimMovementController.UnegisterOnLandCallback
+  fullName: SwimMovementController.UnegisterOnLandCallback
+- uid: Global.SwimMovementController.RegisterOnLeapPeakCallback*
+  commentId: Overload:Global.SwimMovementController.RegisterOnLeapPeakCallback
+  name: RegisterOnLeapPeakCallback
+  nameWithType: SwimMovementController.RegisterOnLeapPeakCallback
+  fullName: SwimMovementController.RegisterOnLeapPeakCallback
+- uid: Global.SwimMovementController.UnegisterOnLeapPeakCallback*
+  commentId: Overload:Global.SwimMovementController.UnegisterOnLeapPeakCallback
+  name: UnegisterOnLeapPeakCallback
+  nameWithType: SwimMovementController.UnegisterOnLeapPeakCallback
+  fullName: SwimMovementController.UnegisterOnLeapPeakCallback
+- uid: Global.SwimMovementController.RegisterFlounderingUpdate*
+  commentId: Overload:Global.SwimMovementController.RegisterFlounderingUpdate
+  name: RegisterFlounderingUpdate
+  nameWithType: SwimMovementController.RegisterFlounderingUpdate
+  fullName: SwimMovementController.RegisterFlounderingUpdate
+- uid: Global.SwimMovementController.UnregisterFlounderingUpdate*
+  commentId: Overload:Global.SwimMovementController.UnregisterFlounderingUpdate
+  name: UnregisterFlounderingUpdate
+  nameWithType: SwimMovementController.UnregisterFlounderingUpdate
+  fullName: SwimMovementController.UnregisterFlounderingUpdate
+- uid: Global.SwimMovementController.OnCollideY*
+  commentId: Overload:Global.SwimMovementController.OnCollideY
+  name: OnCollideY
+  nameWithType: SwimMovementController.OnCollideY
+  fullName: SwimMovementController.OnCollideY
+- uid: Global.IntSolid
+  commentId: T:Global.IntSolid
+  name: IntSolid
+  nameWithType: IntSolid
+  fullName: IntSolid

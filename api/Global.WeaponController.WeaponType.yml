@@ -1,0 +1,250 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.WeaponController.WeaponType
+  commentId: T:Global.WeaponController.WeaponType
+  id: WeaponController.WeaponType
+  parent: Global
+  children:
+  - Global.WeaponController.WeaponType.Blink
+  - Global.WeaponController.WeaponType.Invisibility
+  - Global.WeaponController.WeaponType.Melee
+  - Global.WeaponController.WeaponType.None
+  - Global.WeaponController.WeaponType.Ranged
+  langs:
+  - csharp
+  - vb
+  name: WeaponController.WeaponType
+  nameWithType: WeaponController.WeaponType
+  fullName: WeaponController.WeaponType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WeaponType
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum WeaponController.WeaponType
+    content.vb: >-
+      <Serializable>
+
+      Public Enum WeaponController.WeaponType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.WeaponController.WeaponType.None
+  commentId: F:Global.WeaponController.WeaponType.None
+  id: None
+  parent: Global.WeaponController.WeaponType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: WeaponController.WeaponType.None
+  fullName: WeaponController.WeaponType.None
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: None
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: None = 0
+    return:
+      type: Global.WeaponController.WeaponType
+- uid: Global.WeaponController.WeaponType.Melee
+  commentId: F:Global.WeaponController.WeaponType.Melee
+  id: Melee
+  parent: Global.WeaponController.WeaponType
+  langs:
+  - csharp
+  - vb
+  name: Melee
+  nameWithType: WeaponController.WeaponType.Melee
+  fullName: WeaponController.WeaponType.Melee
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Melee
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Melee = 1
+    return:
+      type: Global.WeaponController.WeaponType
+- uid: Global.WeaponController.WeaponType.Ranged
+  commentId: F:Global.WeaponController.WeaponType.Ranged
+  id: Ranged
+  parent: Global.WeaponController.WeaponType
+  langs:
+  - csharp
+  - vb
+  name: Ranged
+  nameWithType: WeaponController.WeaponType.Ranged
+  fullName: WeaponController.WeaponType.Ranged
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Ranged
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Ranged = 2
+    return:
+      type: Global.WeaponController.WeaponType
+- uid: Global.WeaponController.WeaponType.Blink
+  commentId: F:Global.WeaponController.WeaponType.Blink
+  id: Blink
+  parent: Global.WeaponController.WeaponType
+  langs:
+  - csharp
+  - vb
+  name: Blink
+  nameWithType: WeaponController.WeaponType.Blink
+  fullName: WeaponController.WeaponType.Blink
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Blink
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Blink = 3
+    return:
+      type: Global.WeaponController.WeaponType
+- uid: Global.WeaponController.WeaponType.Invisibility
+  commentId: F:Global.WeaponController.WeaponType.Invisibility
+  id: Invisibility
+  parent: Global.WeaponController.WeaponType
+  langs:
+  - csharp
+  - vb
+  name: Invisibility
+  nameWithType: WeaponController.WeaponType.Invisibility
+  fullName: WeaponController.WeaponType.Invisibility
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Invisibility
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Invisibility = 4
+    return:
+      type: Global.WeaponController.WeaponType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.WeaponController.WeaponType
+  commentId: T:Global.WeaponController.WeaponType
+  name: WeaponController.WeaponType
+  nameWithType: WeaponController.WeaponType
+  fullName: WeaponController.WeaponType
+  spec.csharp:
+  - uid: Global.WeaponController
+    name: WeaponController
+  - name: .
+  - uid: Global.WeaponController.WeaponType
+    name: WeaponType
+  spec.vb:
+  - uid: Global.WeaponController
+    name: WeaponController
+  - name: .
+  - uid: Global.WeaponController.WeaponType
+    name: WeaponType

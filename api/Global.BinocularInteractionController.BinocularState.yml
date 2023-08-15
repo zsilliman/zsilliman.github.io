@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BinocularInteractionController.BinocularState
+  commentId: T:Global.BinocularInteractionController.BinocularState
+  id: BinocularInteractionController.BinocularState
+  parent: Global
+  children:
+  - Global.BinocularInteractionController.BinocularState.Home
+  - Global.BinocularInteractionController.BinocularState.TransitionToHome
+  - Global.BinocularInteractionController.BinocularState.TransitionToView
+  - Global.BinocularInteractionController.BinocularState.Viewing
+  langs:
+  - csharp
+  - vb
+  name: BinocularInteractionController.BinocularState
+  nameWithType: BinocularInteractionController.BinocularState
+  fullName: BinocularInteractionController.BinocularState
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BinocularState
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum BinocularInteractionController.BinocularState
+    content.vb: Public Enum BinocularInteractionController.BinocularState
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.BinocularInteractionController.BinocularState.Home
+  commentId: F:Global.BinocularInteractionController.BinocularState.Home
+  id: Home
+  parent: Global.BinocularInteractionController.BinocularState
+  langs:
+  - csharp
+  - vb
+  name: Home
+  nameWithType: BinocularInteractionController.BinocularState.Home
+  fullName: BinocularInteractionController.BinocularState.Home
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Home
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Home = 0
+    return:
+      type: Global.BinocularInteractionController.BinocularState
+- uid: Global.BinocularInteractionController.BinocularState.TransitionToView
+  commentId: F:Global.BinocularInteractionController.BinocularState.TransitionToView
+  id: TransitionToView
+  parent: Global.BinocularInteractionController.BinocularState
+  langs:
+  - csharp
+  - vb
+  name: TransitionToView
+  nameWithType: BinocularInteractionController.BinocularState.TransitionToView
+  fullName: BinocularInteractionController.BinocularState.TransitionToView
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TransitionToView
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: TransitionToView = 1
+    return:
+      type: Global.BinocularInteractionController.BinocularState
+- uid: Global.BinocularInteractionController.BinocularState.Viewing
+  commentId: F:Global.BinocularInteractionController.BinocularState.Viewing
+  id: Viewing
+  parent: Global.BinocularInteractionController.BinocularState
+  langs:
+  - csharp
+  - vb
+  name: Viewing
+  nameWithType: BinocularInteractionController.BinocularState.Viewing
+  fullName: BinocularInteractionController.BinocularState.Viewing
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Viewing
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Viewing = 2
+    return:
+      type: Global.BinocularInteractionController.BinocularState
+- uid: Global.BinocularInteractionController.BinocularState.TransitionToHome
+  commentId: F:Global.BinocularInteractionController.BinocularState.TransitionToHome
+  id: TransitionToHome
+  parent: Global.BinocularInteractionController.BinocularState
+  langs:
+  - csharp
+  - vb
+  name: TransitionToHome
+  nameWithType: BinocularInteractionController.BinocularState.TransitionToHome
+  fullName: BinocularInteractionController.BinocularState.TransitionToHome
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TransitionToHome
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/BinocularInteractionController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: TransitionToHome = 3
+    return:
+      type: Global.BinocularInteractionController.BinocularState
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.BinocularInteractionController.BinocularState
+  commentId: T:Global.BinocularInteractionController.BinocularState
+  name: BinocularInteractionController.BinocularState
+  nameWithType: BinocularInteractionController.BinocularState
+  fullName: BinocularInteractionController.BinocularState
+  spec.csharp:
+  - uid: Global.BinocularInteractionController
+    name: BinocularInteractionController
+  - name: .
+  - uid: Global.BinocularInteractionController.BinocularState
+    name: BinocularState
+  spec.vb:
+  - uid: Global.BinocularInteractionController
+    name: BinocularInteractionController
+  - name: .
+  - uid: Global.BinocularInteractionController.BinocularState
+    name: BinocularState

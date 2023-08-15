@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MiniChargeMovementController.MiniChargeIntensity
+  commentId: T:Global.MiniChargeMovementController.MiniChargeIntensity
+  id: MiniChargeMovementController.MiniChargeIntensity
+  parent: Global
+  children:
+  - Global.MiniChargeMovementController.MiniChargeIntensity.Aggressive
+  - Global.MiniChargeMovementController.MiniChargeIntensity.Attack
+  - Global.MiniChargeMovementController.MiniChargeIntensity.Casual
+  langs:
+  - csharp
+  - vb
+  name: MiniChargeMovementController.MiniChargeIntensity
+  nameWithType: MiniChargeMovementController.MiniChargeIntensity
+  fullName: MiniChargeMovementController.MiniChargeIntensity
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MiniChargeIntensity
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum MiniChargeMovementController.MiniChargeIntensity
+    content.vb: Public Enum MiniChargeMovementController.MiniChargeIntensity
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.MiniChargeMovementController.MiniChargeIntensity.Casual
+  commentId: F:Global.MiniChargeMovementController.MiniChargeIntensity.Casual
+  id: Casual
+  parent: Global.MiniChargeMovementController.MiniChargeIntensity
+  langs:
+  - csharp
+  - vb
+  name: Casual
+  nameWithType: MiniChargeMovementController.MiniChargeIntensity.Casual
+  fullName: MiniChargeMovementController.MiniChargeIntensity.Casual
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Casual
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Casual = 0
+    return:
+      type: Global.MiniChargeMovementController.MiniChargeIntensity
+- uid: Global.MiniChargeMovementController.MiniChargeIntensity.Aggressive
+  commentId: F:Global.MiniChargeMovementController.MiniChargeIntensity.Aggressive
+  id: Aggressive
+  parent: Global.MiniChargeMovementController.MiniChargeIntensity
+  langs:
+  - csharp
+  - vb
+  name: Aggressive
+  nameWithType: MiniChargeMovementController.MiniChargeIntensity.Aggressive
+  fullName: MiniChargeMovementController.MiniChargeIntensity.Aggressive
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Aggressive
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Aggressive = 1
+    return:
+      type: Global.MiniChargeMovementController.MiniChargeIntensity
+- uid: Global.MiniChargeMovementController.MiniChargeIntensity.Attack
+  commentId: F:Global.MiniChargeMovementController.MiniChargeIntensity.Attack
+  id: Attack
+  parent: Global.MiniChargeMovementController.MiniChargeIntensity
+  langs:
+  - csharp
+  - vb
+  name: Attack
+  nameWithType: MiniChargeMovementController.MiniChargeIntensity.Attack
+  fullName: MiniChargeMovementController.MiniChargeIntensity.Attack
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Attack
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Attack = 2
+    return:
+      type: Global.MiniChargeMovementController.MiniChargeIntensity
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.MiniChargeMovementController.MiniChargeIntensity
+  commentId: T:Global.MiniChargeMovementController.MiniChargeIntensity
+  name: MiniChargeMovementController.MiniChargeIntensity
+  nameWithType: MiniChargeMovementController.MiniChargeIntensity
+  fullName: MiniChargeMovementController.MiniChargeIntensity
+  spec.csharp:
+  - uid: Global.MiniChargeMovementController
+    name: MiniChargeMovementController
+  - name: .
+  - uid: Global.MiniChargeMovementController.MiniChargeIntensity
+    name: MiniChargeIntensity
+  spec.vb:
+  - uid: Global.MiniChargeMovementController
+    name: MiniChargeMovementController
+  - name: .
+  - uid: Global.MiniChargeMovementController.MiniChargeIntensity
+    name: MiniChargeIntensity

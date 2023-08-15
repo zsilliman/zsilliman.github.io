@@ -1,0 +1,515 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ExamineUI
+  commentId: T:Global.ExamineUI
+  id: ExamineUI
+  parent: Global
+  children:
+  - Global.ExamineUI.animator
+  - Global.ExamineUI.FadeTimeSeconds
+  - Global.ExamineUI.hoverTriangle
+  - Global.ExamineUI.Instance
+  - Global.ExamineUI.IsShowingInteractable(Interactable)
+  - Global.ExamineUI.lastFrameShowing
+  - Global.ExamineUI.player
+  - Global.ExamineUI.ShowCounter
+  - Global.ExamineUI.showing
+  - Global.ExamineUI.showingText
+  langs:
+  - csharp
+  - vb
+  name: ExamineUI
+  nameWithType: ExamineUI
+  fullName: ExamineUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ExamineUI
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(Animator))]
+
+      public class ExamineUI : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(Animator))>
+
+      Public Class ExamineUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ExamineUI.Instance
+  commentId: P:Global.ExamineUI.Instance
+  id: Instance
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ExamineUI.Instance
+  fullName: ExamineUI.Instance
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Instance
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static ExamineUI Instance { get; }
+    parameters: []
+    return:
+      type: Global.ExamineUI
+    content.vb: Public Shared ReadOnly Property Instance As ExamineUI
+  overload: Global.ExamineUI.Instance*
+- uid: Global.ExamineUI.hoverTriangle
+  commentId: F:Global.ExamineUI.hoverTriangle
+  id: hoverTriangle
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: hoverTriangle
+  nameWithType: ExamineUI.hoverTriangle
+  fullName: ExamineUI.hoverTriangle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: hoverTriangle
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RectTransform hoverTriangle
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public hoverTriangle As RectTransform
+- uid: Global.ExamineUI.FadeTimeSeconds
+  commentId: F:Global.ExamineUI.FadeTimeSeconds
+  id: FadeTimeSeconds
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: FadeTimeSeconds
+  nameWithType: ExamineUI.FadeTimeSeconds
+  fullName: ExamineUI.FadeTimeSeconds
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FadeTimeSeconds
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float FadeTimeSeconds
+    return:
+      type: System.Single
+    content.vb: Public FadeTimeSeconds As Single
+- uid: Global.ExamineUI.animator
+  commentId: F:Global.ExamineUI.animator
+  id: animator
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: animator
+  nameWithType: ExamineUI.animator
+  fullName: ExamineUI.animator
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: animator
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Animator animator
+    return:
+      type: UnityEngine.Animator
+    content.vb: Protected animator As Animator
+- uid: Global.ExamineUI.ShowCounter
+  commentId: F:Global.ExamineUI.ShowCounter
+  id: ShowCounter
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: ShowCounter
+  nameWithType: ExamineUI.ShowCounter
+  fullName: ExamineUI.ShowCounter
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ShowCounter
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected int ShowCounter
+    return:
+      type: System.Int32
+    content.vb: Protected ShowCounter As Integer
+- uid: Global.ExamineUI.showing
+  commentId: F:Global.ExamineUI.showing
+  id: showing
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: showing
+  nameWithType: ExamineUI.showing
+  fullName: ExamineUI.showing
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: showing
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool showing
+    return:
+      type: System.Boolean
+    content.vb: Protected showing As Boolean
+- uid: Global.ExamineUI.showingText
+  commentId: F:Global.ExamineUI.showingText
+  id: showingText
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: showingText
+  nameWithType: ExamineUI.showingText
+  fullName: ExamineUI.showingText
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: showingText
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected string showingText
+    return:
+      type: System.String
+    content.vb: Protected showingText As String
+- uid: Global.ExamineUI.lastFrameShowing
+  commentId: F:Global.ExamineUI.lastFrameShowing
+  id: lastFrameShowing
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: lastFrameShowing
+  nameWithType: ExamineUI.lastFrameShowing
+  fullName: ExamineUI.lastFrameShowing
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: lastFrameShowing
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool lastFrameShowing
+    return:
+      type: System.Boolean
+    content.vb: Protected lastFrameShowing As Boolean
+- uid: Global.ExamineUI.player
+  commentId: F:Global.ExamineUI.player
+  id: player
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: player
+  nameWithType: ExamineUI.player
+  fullName: ExamineUI.player
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: player
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Player player
+    return:
+      type: Global.Player
+    content.vb: Protected player As Player
+- uid: Global.ExamineUI.IsShowingInteractable(Interactable)
+  commentId: M:Global.ExamineUI.IsShowingInteractable(Interactable)
+  id: IsShowingInteractable(Interactable)
+  parent: Global.ExamineUI
+  langs:
+  - csharp
+  - vb
+  name: IsShowingInteractable(Interactable)
+  nameWithType: ExamineUI.IsShowingInteractable(Interactable)
+  fullName: ExamineUI.IsShowingInteractable(Interactable)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsShowingInteractable
+    path: ../Assets/Objects & Components/World/Interactable/UI/ExamineOverlay/ExamineUI.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsShowingInteractable(Interactable interactable)
+    parameters:
+    - id: interactable
+      type: Global.Interactable
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsShowingInteractable(interactable As Interactable) As Boolean
+  overload: Global.ExamineUI.IsShowingInteractable*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ExamineUI.Instance*
+  commentId: Overload:Global.ExamineUI.Instance
+  name: Instance
+  nameWithType: ExamineUI.Instance
+  fullName: ExamineUI.Instance
+- uid: Global.ExamineUI
+  commentId: T:Global.ExamineUI
+  name: ExamineUI
+  nameWithType: ExamineUI
+  fullName: ExamineUI
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.ExamineUI.IsShowingInteractable*
+  commentId: Overload:Global.ExamineUI.IsShowingInteractable
+  name: IsShowingInteractable
+  nameWithType: ExamineUI.IsShowingInteractable
+  fullName: ExamineUI.IsShowingInteractable
+- uid: Global.Interactable
+  commentId: T:Global.Interactable
+  name: Interactable
+  nameWithType: Interactable
+  fullName: Interactable

@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraUtility
+  commentId: T:Global.AuraUtility
+  id: AuraUtility
+  parent: Global
+  children:
+  - Global.AuraUtility.DefaultAuraProperties
+  - Global.AuraUtility.DischargeMultipleAuraProperties
+  - Global.AuraUtility.DischargeOnceAuraProperties
+  langs:
+  - csharp
+  - vb
+  name: AuraUtility
+  nameWithType: AuraUtility
+  fullName: AuraUtility
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraUtility
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nA class used for easily generating auras from anywhere\n"
+  example: []
+  syntax:
+    content: public static class AuraUtility
+    content.vb: Public Module AuraUtility
+  inheritance:
+  - System.Object
+- uid: Global.AuraUtility.DefaultAuraProperties
+  commentId: P:Global.AuraUtility.DefaultAuraProperties
+  id: DefaultAuraProperties
+  parent: Global.AuraUtility
+  langs:
+  - csharp
+  - vb
+  name: DefaultAuraProperties
+  nameWithType: AuraUtility.DefaultAuraProperties
+  fullName: AuraUtility.DefaultAuraProperties
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DefaultAuraProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AuraUtility.BaseAuraProperties DefaultAuraProperties { get; }
+    parameters: []
+    return:
+      type: Global.AuraUtility.BaseAuraProperties
+    content.vb: Public Shared ReadOnly Property DefaultAuraProperties As AuraUtility.BaseAuraProperties
+  overload: Global.AuraUtility.DefaultAuraProperties*
+- uid: Global.AuraUtility.DischargeMultipleAuraProperties
+  commentId: P:Global.AuraUtility.DischargeMultipleAuraProperties
+  id: DischargeMultipleAuraProperties
+  parent: Global.AuraUtility
+  langs:
+  - csharp
+  - vb
+  name: DischargeMultipleAuraProperties
+  nameWithType: AuraUtility.DischargeMultipleAuraProperties
+  fullName: AuraUtility.DischargeMultipleAuraProperties
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DischargeMultipleAuraProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AuraUtility.BaseAuraProperties DischargeMultipleAuraProperties { get; }
+    parameters: []
+    return:
+      type: Global.AuraUtility.BaseAuraProperties
+    content.vb: Public Shared ReadOnly Property DischargeMultipleAuraProperties As AuraUtility.BaseAuraProperties
+  overload: Global.AuraUtility.DischargeMultipleAuraProperties*
+- uid: Global.AuraUtility.DischargeOnceAuraProperties
+  commentId: P:Global.AuraUtility.DischargeOnceAuraProperties
+  id: DischargeOnceAuraProperties
+  parent: Global.AuraUtility
+  langs:
+  - csharp
+  - vb
+  name: DischargeOnceAuraProperties
+  nameWithType: AuraUtility.DischargeOnceAuraProperties
+  fullName: AuraUtility.DischargeOnceAuraProperties
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DischargeOnceAuraProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AuraUtility.BaseAuraProperties DischargeOnceAuraProperties { get; }
+    parameters: []
+    return:
+      type: Global.AuraUtility.BaseAuraProperties
+    content.vb: Public Shared ReadOnly Property DischargeOnceAuraProperties As AuraUtility.BaseAuraProperties
+  overload: Global.AuraUtility.DischargeOnceAuraProperties*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.AuraUtility.DefaultAuraProperties*
+  commentId: Overload:Global.AuraUtility.DefaultAuraProperties
+  name: DefaultAuraProperties
+  nameWithType: AuraUtility.DefaultAuraProperties
+  fullName: AuraUtility.DefaultAuraProperties
+- uid: Global.AuraUtility.BaseAuraProperties
+  commentId: T:Global.AuraUtility.BaseAuraProperties
+  name: AuraUtility.BaseAuraProperties
+  nameWithType: AuraUtility.BaseAuraProperties
+  fullName: AuraUtility.BaseAuraProperties
+  spec.csharp:
+  - uid: Global.AuraUtility
+    name: AuraUtility
+  - name: .
+  - uid: Global.AuraUtility.BaseAuraProperties
+    name: BaseAuraProperties
+  spec.vb:
+  - uid: Global.AuraUtility
+    name: AuraUtility
+  - name: .
+  - uid: Global.AuraUtility.BaseAuraProperties
+    name: BaseAuraProperties
+- uid: Global.AuraUtility.DischargeMultipleAuraProperties*
+  commentId: Overload:Global.AuraUtility.DischargeMultipleAuraProperties
+  name: DischargeMultipleAuraProperties
+  nameWithType: AuraUtility.DischargeMultipleAuraProperties
+  fullName: AuraUtility.DischargeMultipleAuraProperties
+- uid: Global.AuraUtility.DischargeOnceAuraProperties*
+  commentId: Overload:Global.AuraUtility.DischargeOnceAuraProperties
+  name: DischargeOnceAuraProperties
+  nameWithType: AuraUtility.DischargeOnceAuraProperties
+  fullName: AuraUtility.DischargeOnceAuraProperties

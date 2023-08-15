@@ -1,0 +1,728 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LeanSmooth
+  commentId: T:Global.LeanSmooth
+  id: LeanSmooth
+  parent: Global
+  children:
+  - Global.LeanSmooth.bounceOut(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.bounceOut(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.bounceOut(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.damp(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.damp(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.damp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.linear(System.Single,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.linear(UnityEngine.Color,UnityEngine.Color,System.Single)
+  - Global.LeanSmooth.linear(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
+  - Global.LeanSmooth.spring(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.spring(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.LeanSmooth.spring(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: LeanSmooth
+  nameWithType: LeanSmooth
+  fullName: LeanSmooth
+  type: Class
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LeanSmooth
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class LeanSmooth
+    content.vb: Public Class LeanSmooth
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LeanSmooth.damp(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.damp(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single)
+  id: damp(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: damp(float, float, ref float, float, float, float)
+  nameWithType: LeanSmooth.damp(float, float, ref float, float, float, float)
+  fullName: LeanSmooth.damp(float, float, ref float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: damp
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Moves one value towards another (eases in and out to destination with no overshoot)
+  example: []
+  syntax:
+    content: public static float damp(float current, float target, ref float currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1)
+    parameters:
+    - id: current
+      type: System.Single
+    - id: target
+      type: System.Single
+    - id: currentVelocity
+      type: System.Single
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function damp(current As Single, target As Single, currentVelocity As Single, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1) As Single
+  overload: Global.LeanSmooth.damp*
+  nameWithType.vb: LeanSmooth.damp(Single, Single, Single, Single, Single, Single)
+  fullName.vb: LeanSmooth.damp(Single, Single, Single, Single, Single, Single)
+  name.vb: damp(Single, Single, Single, Single, Single, Single)
+- uid: Global.LeanSmooth.damp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.damp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single)
+  id: damp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: damp(Vector3, Vector3, ref Vector3, float, float, float)
+  nameWithType: LeanSmooth.damp(Vector3, Vector3, ref Vector3, float, float, float)
+  fullName: LeanSmooth.damp(UnityEngine.Vector3, UnityEngine.Vector3, ref UnityEngine.Vector3, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: damp
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Moves one value towards another (eases in and out to destination with no overshoot)
+  example: []
+  syntax:
+    content: public static Vector3 damp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1)
+    parameters:
+    - id: current
+      type: UnityEngine.Vector3
+    - id: target
+      type: UnityEngine.Vector3
+    - id: currentVelocity
+      type: UnityEngine.Vector3
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function damp(current As Vector3, target As Vector3, currentVelocity As Vector3, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1) As Vector3
+  overload: Global.LeanSmooth.damp*
+  nameWithType.vb: LeanSmooth.damp(Vector3, Vector3, Vector3, Single, Single, Single)
+  fullName.vb: LeanSmooth.damp(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3, Single, Single, Single)
+  name.vb: damp(Vector3, Vector3, Vector3, Single, Single, Single)
+- uid: Global.LeanSmooth.damp(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.damp(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single)
+  id: damp(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: damp(Color, Color, ref Color, float, float, float)
+  nameWithType: LeanSmooth.damp(Color, Color, ref Color, float, float, float)
+  fullName: LeanSmooth.damp(UnityEngine.Color, UnityEngine.Color, ref UnityEngine.Color, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: damp
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 96
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Color damp(Color current, Color target, ref Color currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1)
+    parameters:
+    - id: current
+      type: UnityEngine.Color
+    - id: target
+      type: UnityEngine.Color
+    - id: currentVelocity
+      type: UnityEngine.Color
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared Function damp(current As Color, target As Color, currentVelocity As Color, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1) As Color
+  overload: Global.LeanSmooth.damp*
+  nameWithType.vb: LeanSmooth.damp(Color, Color, Color, Single, Single, Single)
+  fullName.vb: LeanSmooth.damp(UnityEngine.Color, UnityEngine.Color, UnityEngine.Color, Single, Single, Single)
+  name.vb: damp(Color, Color, Color, Single, Single, Single)
+- uid: Global.LeanSmooth.spring(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.spring(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: spring(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: spring(float, float, ref float, float, float, float, float, float)
+  nameWithType: LeanSmooth.spring(float, float, ref float, float, float, float, float, float)
+  fullName: LeanSmooth.spring(float, float, ref float, float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: spring
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 122
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Moves one value towards another (eases in and out to destination with possible overshoot bounciness)
+  example: []
+  syntax:
+    content: public static float spring(float current, float target, ref float currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1, float friction = 2, float accelRate = 0.5)
+    parameters:
+    - id: current
+      type: System.Single
+    - id: target
+      type: System.Single
+    - id: currentVelocity
+      type: System.Single
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    - id: friction
+      type: System.Single
+    - id: accelRate
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function spring(current As Single, target As Single, currentVelocity As Single, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1, friction As Single = 2, accelRate As Single = 0.5) As Single
+  overload: Global.LeanSmooth.spring*
+  nameWithType.vb: LeanSmooth.spring(Single, Single, Single, Single, Single, Single, Single, Single)
+  fullName.vb: LeanSmooth.spring(Single, Single, Single, Single, Single, Single, Single, Single)
+  name.vb: spring(Single, Single, Single, Single, Single, Single, Single, Single)
+- uid: Global.LeanSmooth.spring(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.spring(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: spring(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: spring(Vector3, Vector3, ref Vector3, float, float, float, float, float)
+  nameWithType: LeanSmooth.spring(Vector3, Vector3, ref Vector3, float, float, float, float, float)
+  fullName: LeanSmooth.spring(UnityEngine.Vector3, UnityEngine.Vector3, ref UnityEngine.Vector3, float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: spring
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 157
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Moves one value towards another (eases in and out to destination with possible overshoot bounciness)
+  example: []
+  syntax:
+    content: public static Vector3 spring(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1, float friction = 2, float accelRate = 0.5)
+    parameters:
+    - id: current
+      type: UnityEngine.Vector3
+    - id: target
+      type: UnityEngine.Vector3
+    - id: currentVelocity
+      type: UnityEngine.Vector3
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    - id: friction
+      type: System.Single
+    - id: accelRate
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function spring(current As Vector3, target As Vector3, currentVelocity As Vector3, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1, friction As Single = 2, accelRate As Single = 0.5) As Vector3
+  overload: Global.LeanSmooth.spring*
+  nameWithType.vb: LeanSmooth.spring(Vector3, Vector3, Vector3, Single, Single, Single, Single, Single)
+  fullName.vb: LeanSmooth.spring(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3, Single, Single, Single, Single, Single)
+  name.vb: spring(Vector3, Vector3, Vector3, Single, Single, Single, Single, Single)
+- uid: Global.LeanSmooth.spring(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.spring(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: spring(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: spring(Color, Color, ref Color, float, float, float, float, float)
+  nameWithType: LeanSmooth.spring(Color, Color, ref Color, float, float, float, float, float)
+  fullName: LeanSmooth.spring(UnityEngine.Color, UnityEngine.Color, ref UnityEngine.Color, float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: spring
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 182
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Color spring(Color current, Color target, ref Color currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1, float friction = 2, float accelRate = 0.5)
+    parameters:
+    - id: current
+      type: UnityEngine.Color
+    - id: target
+      type: UnityEngine.Color
+    - id: currentVelocity
+      type: UnityEngine.Color
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    - id: friction
+      type: System.Single
+    - id: accelRate
+      type: System.Single
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared Function spring(current As Color, target As Color, currentVelocity As Color, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1, friction As Single = 2, accelRate As Single = 0.5) As Color
+  overload: Global.LeanSmooth.spring*
+  nameWithType.vb: LeanSmooth.spring(Color, Color, Color, Single, Single, Single, Single, Single)
+  fullName.vb: LeanSmooth.spring(UnityEngine.Color, UnityEngine.Color, UnityEngine.Color, Single, Single, Single, Single, Single)
+  name.vb: spring(Color, Color, Color, Single, Single, Single, Single, Single)
+- uid: Global.LeanSmooth.linear(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.linear(System.Single,System.Single,System.Single,System.Single)
+  id: linear(System.Single,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: linear(float, float, float, float)
+  nameWithType: LeanSmooth.linear(float, float, float, float)
+  fullName: LeanSmooth.linear(float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: linear
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 204
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Moves one value towards another (at a constant speed)
+  example: []
+  syntax:
+    content: public static float linear(float current, float target, float moveSpeed, float deltaTime = -1)
+    parameters:
+    - id: current
+      type: System.Single
+    - id: target
+      type: System.Single
+    - id: moveSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function linear(current As Single, target As Single, moveSpeed As Single, deltaTime As Single = -1) As Single
+  overload: Global.LeanSmooth.linear*
+  nameWithType.vb: LeanSmooth.linear(Single, Single, Single, Single)
+  fullName.vb: LeanSmooth.linear(Single, Single, Single, Single)
+  name.vb: linear(Single, Single, Single, Single)
+- uid: Global.LeanSmooth.linear(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.linear(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
+  id: linear(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: linear(Vector3, Vector3, float, float)
+  nameWithType: LeanSmooth.linear(Vector3, Vector3, float, float)
+  fullName: LeanSmooth.linear(UnityEngine.Vector3, UnityEngine.Vector3, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: linear
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 236
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Moves one value towards another (at a constant speed)
+  example: []
+  syntax:
+    content: public static Vector3 linear(Vector3 current, Vector3 target, float moveSpeed, float deltaTime = -1)
+    parameters:
+    - id: current
+      type: UnityEngine.Vector3
+    - id: target
+      type: UnityEngine.Vector3
+    - id: moveSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function linear(current As Vector3, target As Vector3, moveSpeed As Single, deltaTime As Single = -1) As Vector3
+  overload: Global.LeanSmooth.linear*
+  nameWithType.vb: LeanSmooth.linear(Vector3, Vector3, Single, Single)
+  fullName.vb: LeanSmooth.linear(UnityEngine.Vector3, UnityEngine.Vector3, Single, Single)
+  name.vb: linear(Vector3, Vector3, Single, Single)
+- uid: Global.LeanSmooth.linear(UnityEngine.Color,UnityEngine.Color,System.Single)
+  commentId: M:Global.LeanSmooth.linear(UnityEngine.Color,UnityEngine.Color,System.Single)
+  id: linear(UnityEngine.Color,UnityEngine.Color,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: linear(Color, Color, float)
+  nameWithType: LeanSmooth.linear(Color, Color, float)
+  fullName: LeanSmooth.linear(UnityEngine.Color, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: linear
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 257
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Color linear(Color current, Color target, float moveSpeed)
+    parameters:
+    - id: current
+      type: UnityEngine.Color
+    - id: target
+      type: UnityEngine.Color
+    - id: moveSpeed
+      type: System.Single
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared Function linear(current As Color, target As Color, moveSpeed As Single) As Color
+  overload: Global.LeanSmooth.linear*
+  nameWithType.vb: LeanSmooth.linear(Color, Color, Single)
+  fullName.vb: LeanSmooth.linear(UnityEngine.Color, UnityEngine.Color, Single)
+  name.vb: linear(Color, Color, Single)
+- uid: Global.LeanSmooth.bounceOut(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.bounceOut(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: bounceOut(System.Single,System.Single,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: bounceOut(float, float, ref float, float, float, float, float, float, float)
+  nameWithType: LeanSmooth.bounceOut(float, float, ref float, float, float, float, float, float, float)
+  fullName: LeanSmooth.bounceOut(float, float, ref float, float, float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: bounceOut
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 284
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Moves one value towards another (with an ease that bounces back some when it reaches it&apos;s destination)
+  example: []
+  syntax:
+    content: public static float bounceOut(float current, float target, ref float currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1, float friction = 2, float accelRate = 0.5, float hitDamping = 0.9)
+    parameters:
+    - id: current
+      type: System.Single
+    - id: target
+      type: System.Single
+    - id: currentVelocity
+      type: System.Single
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    - id: friction
+      type: System.Single
+    - id: accelRate
+      type: System.Single
+    - id: hitDamping
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function bounceOut(current As Single, target As Single, currentVelocity As Single, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1, friction As Single = 2, accelRate As Single = 0.5, hitDamping As Single = 0.9) As Single
+  overload: Global.LeanSmooth.bounceOut*
+  nameWithType.vb: LeanSmooth.bounceOut(Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  fullName.vb: LeanSmooth.bounceOut(Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  name.vb: bounceOut(Single, Single, Single, Single, Single, Single, Single, Single, Single)
+- uid: Global.LeanSmooth.bounceOut(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.bounceOut(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: bounceOut(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: bounceOut(Vector3, Vector3, ref Vector3, float, float, float, float, float, float)
+  nameWithType: LeanSmooth.bounceOut(Vector3, Vector3, ref Vector3, float, float, float, float, float, float)
+  fullName: LeanSmooth.bounceOut(UnityEngine.Vector3, UnityEngine.Vector3, ref UnityEngine.Vector3, float, float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: bounceOut
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 328
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Moves one value towards another (with an ease that bounces back some when it reaches it&apos;s destination)
+  example: []
+  syntax:
+    content: public static Vector3 bounceOut(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1, float friction = 2, float accelRate = 0.5, float hitDamping = 0.9)
+    parameters:
+    - id: current
+      type: UnityEngine.Vector3
+    - id: target
+      type: UnityEngine.Vector3
+    - id: currentVelocity
+      type: UnityEngine.Vector3
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    - id: friction
+      type: System.Single
+    - id: accelRate
+      type: System.Single
+    - id: hitDamping
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function bounceOut(current As Vector3, target As Vector3, currentVelocity As Vector3, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1, friction As Single = 2, accelRate As Single = 0.5, hitDamping As Single = 0.9) As Vector3
+  overload: Global.LeanSmooth.bounceOut*
+  nameWithType.vb: LeanSmooth.bounceOut(Vector3, Vector3, Vector3, Single, Single, Single, Single, Single, Single)
+  fullName.vb: LeanSmooth.bounceOut(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3, Single, Single, Single, Single, Single, Single)
+  name.vb: bounceOut(Vector3, Vector3, Vector3, Single, Single, Single, Single, Single, Single)
+- uid: Global.LeanSmooth.bounceOut(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.LeanSmooth.bounceOut(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: bounceOut(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.LeanSmooth
+  langs:
+  - csharp
+  - vb
+  name: bounceOut(Color, Color, ref Color, float, float, float, float, float, float)
+  nameWithType: LeanSmooth.bounceOut(Color, Color, ref Color, float, float, float, float, float, float)
+  fullName: LeanSmooth.bounceOut(UnityEngine.Color, UnityEngine.Color, ref UnityEngine.Color, float, float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanSmooth.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: bounceOut
+    path: ../Assets/LeanTween/Framework/LeanSmooth.cs
+    startLine: 354
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Color bounceOut(Color current, Color target, ref Color currentVelocity, float smoothTime, float maxSpeed = -1, float deltaTime = -1, float friction = 2, float accelRate = 0.5, float hitDamping = 0.9)
+    parameters:
+    - id: current
+      type: UnityEngine.Color
+    - id: target
+      type: UnityEngine.Color
+    - id: currentVelocity
+      type: UnityEngine.Color
+    - id: smoothTime
+      type: System.Single
+    - id: maxSpeed
+      type: System.Single
+    - id: deltaTime
+      type: System.Single
+    - id: friction
+      type: System.Single
+    - id: accelRate
+      type: System.Single
+    - id: hitDamping
+      type: System.Single
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared Function bounceOut(current As Color, target As Color, currentVelocity As Color, smoothTime As Single, maxSpeed As Single = -1, deltaTime As Single = -1, friction As Single = 2, accelRate As Single = 0.5, hitDamping As Single = 0.9) As Color
+  overload: Global.LeanSmooth.bounceOut*
+  nameWithType.vb: LeanSmooth.bounceOut(Color, Color, Color, Single, Single, Single, Single, Single, Single)
+  fullName.vb: LeanSmooth.bounceOut(UnityEngine.Color, UnityEngine.Color, UnityEngine.Color, Single, Single, Single, Single, Single, Single)
+  name.vb: bounceOut(Color, Color, Color, Single, Single, Single, Single, Single, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.LeanSmooth.damp*
+  commentId: Overload:Global.LeanSmooth.damp
+  name: damp
+  nameWithType: LeanSmooth.damp
+  fullName: LeanSmooth.damp
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: Global.LeanSmooth.spring*
+  commentId: Overload:Global.LeanSmooth.spring
+  name: spring
+  nameWithType: LeanSmooth.spring
+  fullName: LeanSmooth.spring
+- uid: Global.LeanSmooth.linear*
+  commentId: Overload:Global.LeanSmooth.linear
+  name: linear
+  nameWithType: LeanSmooth.linear
+  fullName: LeanSmooth.linear
+- uid: Global.LeanSmooth.bounceOut*
+  commentId: Overload:Global.LeanSmooth.bounceOut
+  name: bounceOut
+  nameWithType: LeanSmooth.bounceOut
+  fullName: LeanSmooth.bounceOut

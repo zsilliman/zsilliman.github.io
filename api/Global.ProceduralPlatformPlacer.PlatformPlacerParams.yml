@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralPlatformPlacer.PlatformPlacerParams
+  commentId: T:Global.ProceduralPlatformPlacer.PlatformPlacerParams
+  id: ProceduralPlatformPlacer.PlatformPlacerParams
+  parent: Global
+  children:
+  - Global.ProceduralPlatformPlacer.PlatformPlacerParams.Container
+  - Global.ProceduralPlatformPlacer.PlatformPlacerParams.MaxCellSize
+  - Global.ProceduralPlatformPlacer.PlatformPlacerParams.MinCellSize
+  langs:
+  - csharp
+  - vb
+  name: ProceduralPlatformPlacer.PlatformPlacerParams
+  nameWithType: ProceduralPlatformPlacer.PlatformPlacerParams
+  fullName: ProceduralPlatformPlacer.PlatformPlacerParams
+  type: Struct
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlatformPlacerParams
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public struct ProceduralPlatformPlacer.PlatformPlacerParams
+    content.vb: Public Structure ProceduralPlatformPlacer.PlatformPlacerParams
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ProceduralPlatformPlacer.PlatformPlacerParams.Container
+  commentId: F:Global.ProceduralPlatformPlacer.PlatformPlacerParams.Container
+  id: Container
+  parent: Global.ProceduralPlatformPlacer.PlatformPlacerParams
+  langs:
+  - csharp
+  - vb
+  name: Container
+  nameWithType: ProceduralPlatformPlacer.PlatformPlacerParams.Container
+  fullName: ProceduralPlatformPlacer.PlatformPlacerParams.Container
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Container
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RectInt Container
+    return:
+      type: UnityEngine.RectInt
+    content.vb: Public Container As RectInt
+- uid: Global.ProceduralPlatformPlacer.PlatformPlacerParams.MinCellSize
+  commentId: F:Global.ProceduralPlatformPlacer.PlatformPlacerParams.MinCellSize
+  id: MinCellSize
+  parent: Global.ProceduralPlatformPlacer.PlatformPlacerParams
+  langs:
+  - csharp
+  - vb
+  name: MinCellSize
+  nameWithType: ProceduralPlatformPlacer.PlatformPlacerParams.MinCellSize
+  fullName: ProceduralPlatformPlacer.PlatformPlacerParams.MinCellSize
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MinCellSize
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int MinCellSize
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public MinCellSize As Vector2Int
+- uid: Global.ProceduralPlatformPlacer.PlatformPlacerParams.MaxCellSize
+  commentId: F:Global.ProceduralPlatformPlacer.PlatformPlacerParams.MaxCellSize
+  id: MaxCellSize
+  parent: Global.ProceduralPlatformPlacer.PlatformPlacerParams
+  langs:
+  - csharp
+  - vb
+  name: MaxCellSize
+  nameWithType: ProceduralPlatformPlacer.PlatformPlacerParams.MaxCellSize
+  fullName: ProceduralPlatformPlacer.PlatformPlacerParams.MaxCellSize
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxCellSize
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int MaxCellSize
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public MaxCellSize As Vector2Int
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.RectInt
+  commentId: T:UnityEngine.RectInt
+  parent: UnityEngine
+  isExternal: true
+  name: RectInt
+  nameWithType: RectInt
+  fullName: UnityEngine.RectInt
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int

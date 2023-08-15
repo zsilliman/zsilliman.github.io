@@ -1,0 +1,223 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralSpawner.EnemySpawnType
+  commentId: T:Global.ProceduralSpawner.EnemySpawnType
+  id: ProceduralSpawner.EnemySpawnType
+  parent: Global
+  children:
+  - Global.ProceduralSpawner.EnemySpawnType.Any
+  - Global.ProceduralSpawner.EnemySpawnType.Flying
+  - Global.ProceduralSpawner.EnemySpawnType.Ground
+  - Global.ProceduralSpawner.EnemySpawnType.Water
+  langs:
+  - csharp
+  - vb
+  name: ProceduralSpawner.EnemySpawnType
+  nameWithType: ProceduralSpawner.EnemySpawnType
+  fullName: ProceduralSpawner.EnemySpawnType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EnemySpawnType
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum ProceduralSpawner.EnemySpawnType
+    content.vb: >-
+      <Serializable>
+
+      Public Enum ProceduralSpawner.EnemySpawnType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.ProceduralSpawner.EnemySpawnType.Ground
+  commentId: F:Global.ProceduralSpawner.EnemySpawnType.Ground
+  id: Ground
+  parent: Global.ProceduralSpawner.EnemySpawnType
+  langs:
+  - csharp
+  - vb
+  name: Ground
+  nameWithType: ProceduralSpawner.EnemySpawnType.Ground
+  fullName: ProceduralSpawner.EnemySpawnType.Ground
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Ground
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Ground = 0
+    return:
+      type: Global.ProceduralSpawner.EnemySpawnType
+- uid: Global.ProceduralSpawner.EnemySpawnType.Flying
+  commentId: F:Global.ProceduralSpawner.EnemySpawnType.Flying
+  id: Flying
+  parent: Global.ProceduralSpawner.EnemySpawnType
+  langs:
+  - csharp
+  - vb
+  name: Flying
+  nameWithType: ProceduralSpawner.EnemySpawnType.Flying
+  fullName: ProceduralSpawner.EnemySpawnType.Flying
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Flying
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Flying = 1
+    return:
+      type: Global.ProceduralSpawner.EnemySpawnType
+- uid: Global.ProceduralSpawner.EnemySpawnType.Water
+  commentId: F:Global.ProceduralSpawner.EnemySpawnType.Water
+  id: Water
+  parent: Global.ProceduralSpawner.EnemySpawnType
+  langs:
+  - csharp
+  - vb
+  name: Water
+  nameWithType: ProceduralSpawner.EnemySpawnType.Water
+  fullName: ProceduralSpawner.EnemySpawnType.Water
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Water
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Water = 2
+    return:
+      type: Global.ProceduralSpawner.EnemySpawnType
+- uid: Global.ProceduralSpawner.EnemySpawnType.Any
+  commentId: F:Global.ProceduralSpawner.EnemySpawnType.Any
+  id: Any
+  parent: Global.ProceduralSpawner.EnemySpawnType
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: ProceduralSpawner.EnemySpawnType.Any
+  fullName: ProceduralSpawner.EnemySpawnType.Any
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Any
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Any = 3
+    return:
+      type: Global.ProceduralSpawner.EnemySpawnType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ProceduralSpawner.EnemySpawnType
+  commentId: T:Global.ProceduralSpawner.EnemySpawnType
+  name: ProceduralSpawner.EnemySpawnType
+  nameWithType: ProceduralSpawner.EnemySpawnType
+  fullName: ProceduralSpawner.EnemySpawnType
+  spec.csharp:
+  - uid: Global.ProceduralSpawner
+    name: ProceduralSpawner
+  - name: .
+  - uid: Global.ProceduralSpawner.EnemySpawnType
+    name: EnemySpawnType
+  spec.vb:
+  - uid: Global.ProceduralSpawner
+    name: ProceduralSpawner
+  - name: .
+  - uid: Global.ProceduralSpawner.EnemySpawnType
+    name: EnemySpawnType

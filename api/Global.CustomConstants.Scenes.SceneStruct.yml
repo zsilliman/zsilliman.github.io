@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomConstants.Scenes.SceneStruct
+  commentId: T:Global.CustomConstants.Scenes.SceneStruct
+  id: CustomConstants.Scenes.SceneStruct
+  parent: Global
+  children:
+  - Global.CustomConstants.Scenes.SceneStruct.#ctor(CustomConstants.Scenes.SceneStruct)
+  - Global.CustomConstants.Scenes.SceneStruct.#ctor(System.String,System.String)
+  - Global.CustomConstants.Scenes.SceneStruct.assetPath
+  - Global.CustomConstants.Scenes.SceneStruct.friendlyName
+  langs:
+  - csharp
+  - vb
+  name: CustomConstants.Scenes.SceneStruct
+  nameWithType: CustomConstants.Scenes.SceneStruct
+  fullName: CustomConstants.Scenes.SceneStruct
+  type: Struct
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SceneStruct
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct CustomConstants.Scenes.SceneStruct
+    content.vb: >-
+      <Serializable>
+
+      Public Structure CustomConstants.Scenes.SceneStruct
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.CustomConstants.Scenes.SceneStruct.friendlyName
+  commentId: P:Global.CustomConstants.Scenes.SceneStruct.friendlyName
+  id: friendlyName
+  parent: Global.CustomConstants.Scenes.SceneStruct
+  langs:
+  - csharp
+  - vb
+  name: friendlyName
+  nameWithType: CustomConstants.Scenes.SceneStruct.friendlyName
+  fullName: CustomConstants.Scenes.SceneStruct.friendlyName
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: friendlyName
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public readonly string friendlyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property friendlyName As String
+  overload: Global.CustomConstants.Scenes.SceneStruct.friendlyName*
+- uid: Global.CustomConstants.Scenes.SceneStruct.assetPath
+  commentId: P:Global.CustomConstants.Scenes.SceneStruct.assetPath
+  id: assetPath
+  parent: Global.CustomConstants.Scenes.SceneStruct
+  langs:
+  - csharp
+  - vb
+  name: assetPath
+  nameWithType: CustomConstants.Scenes.SceneStruct.assetPath
+  fullName: CustomConstants.Scenes.SceneStruct.assetPath
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: assetPath
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public readonly string assetPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property assetPath As String
+  overload: Global.CustomConstants.Scenes.SceneStruct.assetPath*
+- uid: Global.CustomConstants.Scenes.SceneStruct.#ctor(CustomConstants.Scenes.SceneStruct)
+  commentId: M:Global.CustomConstants.Scenes.SceneStruct.#ctor(CustomConstants.Scenes.SceneStruct)
+  id: '#ctor(CustomConstants.Scenes.SceneStruct)'
+  parent: Global.CustomConstants.Scenes.SceneStruct
+  langs:
+  - csharp
+  - vb
+  name: SceneStruct(SceneStruct)
+  nameWithType: CustomConstants.Scenes.SceneStruct.SceneStruct(CustomConstants.Scenes.SceneStruct)
+  fullName: CustomConstants.Scenes.SceneStruct.SceneStruct(CustomConstants.Scenes.SceneStruct)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public SceneStruct(CustomConstants.Scenes.SceneStruct other)
+    parameters:
+    - id: other
+      type: Global.CustomConstants.Scenes.SceneStruct
+    content.vb: Public Sub New(other As CustomConstants.Scenes.SceneStruct)
+  overload: Global.CustomConstants.Scenes.SceneStruct.#ctor*
+  nameWithType.vb: CustomConstants.Scenes.SceneStruct.New(CustomConstants.Scenes.SceneStruct)
+  fullName.vb: CustomConstants.Scenes.SceneStruct.New(CustomConstants.Scenes.SceneStruct)
+  name.vb: New(SceneStruct)
+- uid: Global.CustomConstants.Scenes.SceneStruct.#ctor(System.String,System.String)
+  commentId: M:Global.CustomConstants.Scenes.SceneStruct.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Global.CustomConstants.Scenes.SceneStruct
+  langs:
+  - csharp
+  - vb
+  name: SceneStruct(string, string)
+  nameWithType: CustomConstants.Scenes.SceneStruct.SceneStruct(string, string)
+  fullName: CustomConstants.Scenes.SceneStruct.SceneStruct(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public SceneStruct(string friendly, string path)
+    parameters:
+    - id: friendly
+      type: System.String
+    - id: path
+      type: System.String
+    content.vb: Public Sub New(friendly As String, path As String)
+  overload: Global.CustomConstants.Scenes.SceneStruct.#ctor*
+  nameWithType.vb: CustomConstants.Scenes.SceneStruct.New(String, String)
+  fullName.vb: CustomConstants.Scenes.SceneStruct.New(String, String)
+  name.vb: New(String, String)
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.CustomConstants.Scenes.SceneStruct.friendlyName*
+  commentId: Overload:Global.CustomConstants.Scenes.SceneStruct.friendlyName
+  name: friendlyName
+  nameWithType: CustomConstants.Scenes.SceneStruct.friendlyName
+  fullName: CustomConstants.Scenes.SceneStruct.friendlyName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.CustomConstants.Scenes.SceneStruct.assetPath*
+  commentId: Overload:Global.CustomConstants.Scenes.SceneStruct.assetPath
+  name: assetPath
+  nameWithType: CustomConstants.Scenes.SceneStruct.assetPath
+  fullName: CustomConstants.Scenes.SceneStruct.assetPath
+- uid: Global.CustomConstants.Scenes.SceneStruct.#ctor*
+  commentId: Overload:Global.CustomConstants.Scenes.SceneStruct.#ctor
+  name: SceneStruct
+  nameWithType: CustomConstants.Scenes.SceneStruct.SceneStruct
+  fullName: CustomConstants.Scenes.SceneStruct.SceneStruct
+  nameWithType.vb: CustomConstants.Scenes.SceneStruct.New
+  fullName.vb: CustomConstants.Scenes.SceneStruct.New
+  name.vb: New
+- uid: Global.CustomConstants.Scenes.SceneStruct
+  commentId: T:Global.CustomConstants.Scenes.SceneStruct
+  name: CustomConstants.Scenes.SceneStruct
+  nameWithType: CustomConstants.Scenes.SceneStruct
+  fullName: CustomConstants.Scenes.SceneStruct
+  spec.csharp:
+  - uid: Global.CustomConstants
+    name: CustomConstants
+  - name: .
+  - uid: Global.CustomConstants.Scenes
+    name: Scenes
+  - name: .
+  - uid: Global.CustomConstants.Scenes.SceneStruct
+    name: SceneStruct
+  spec.vb:
+  - uid: Global.CustomConstants
+    name: CustomConstants
+  - name: .
+  - uid: Global.CustomConstants.Scenes
+    name: Scenes
+  - name: .
+  - uid: Global.CustomConstants.Scenes.SceneStruct
+    name: SceneStruct

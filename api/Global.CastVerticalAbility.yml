@@ -1,0 +1,811 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CastVerticalAbility
+  commentId: T:Global.CastVerticalAbility
+  id: CastVerticalAbility
+  parent: Global
+  children:
+  - Global.CastVerticalAbility.#ctor(IntBasePlatformer)
+  - Global.CastVerticalAbility.BeamSpeed
+  - Global.CastVerticalAbility.CastAbilityInternal(UnityEngine.Vector2)
+  - Global.CastVerticalAbility.Cooldown
+  - Global.CastVerticalAbility.IndicatorDuration
+  - Global.CastVerticalAbility.Lifetime
+  - Global.CastVerticalAbility.MaxAuraCount
+  - Global.CastVerticalAbility.MaxAuraHeight
+  - Global.CastVerticalAbility.SpawnOffset
+  - Global.CastVerticalAbility.Update
+  - Global.CastVerticalAbility.UpdateAuraLifetime(System.Single)
+  - Global.CastVerticalAbility.UpdateMaxAuraCount(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: CastVerticalAbility
+  nameWithType: CastVerticalAbility
+  fullName: CastVerticalAbility
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CastVerticalAbility
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class CastVerticalAbility : Ability'
+    content.vb: Public Class CastVerticalAbility Inherits Ability
+  inheritance:
+  - System.Object
+  - Global.Ability
+  inheritedMembers:
+  - Global.Ability.StaminaCost
+  - Global.Ability.CooldownSeconds
+  - Global.Ability.Active
+  - Global.Ability.Finished
+  - Global.Ability.Weilder
+  - Global.Ability.CastAbility(UnityEngine.Vector2)
+  - Global.Ability.GetStaminaCost
+  - Global.Ability.GetCooldownDuration
+  - Global.Ability.OnFinish
+  - Global.Ability.Cancel
+  - Global.Ability.IsActive
+  - Global.Ability.IsFinished
+  - Global.Ability.Finish
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.CastVerticalAbility.MaxAuraCount
+  commentId: F:Global.CastVerticalAbility.MaxAuraCount
+  id: MaxAuraCount
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: MaxAuraCount
+  nameWithType: CastVerticalAbility.MaxAuraCount
+  fullName: CastVerticalAbility.MaxAuraCount
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxAuraCount
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const int MaxAuraCount = 5
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxAuraCount As Integer = 5
+- uid: Global.CastVerticalAbility.Lifetime
+  commentId: F:Global.CastVerticalAbility.Lifetime
+  id: Lifetime
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: Lifetime
+  nameWithType: CastVerticalAbility.Lifetime
+  fullName: CastVerticalAbility.Lifetime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Lifetime
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Lifetime
+    return:
+      type: System.Single
+    content.vb: Public Lifetime As Single
+- uid: Global.CastVerticalAbility.Cooldown
+  commentId: F:Global.CastVerticalAbility.Cooldown
+  id: Cooldown
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: Cooldown
+  nameWithType: CastVerticalAbility.Cooldown
+  fullName: CastVerticalAbility.Cooldown
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Cooldown
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const float Cooldown = 1
+    return:
+      type: System.Single
+    content.vb: Public Const Cooldown As Single = 1
+- uid: Global.CastVerticalAbility.MaxAuraHeight
+  commentId: F:Global.CastVerticalAbility.MaxAuraHeight
+  id: MaxAuraHeight
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: MaxAuraHeight
+  nameWithType: CastVerticalAbility.MaxAuraHeight
+  fullName: CastVerticalAbility.MaxAuraHeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxAuraHeight
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const int MaxAuraHeight = 300
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxAuraHeight As Integer = 300
+- uid: Global.CastVerticalAbility.BeamSpeed
+  commentId: F:Global.CastVerticalAbility.BeamSpeed
+  id: BeamSpeed
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: BeamSpeed
+  nameWithType: CastVerticalAbility.BeamSpeed
+  fullName: CastVerticalAbility.BeamSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BeamSpeed
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const float BeamSpeed = 450
+    return:
+      type: System.Single
+    content.vb: Public Const BeamSpeed As Single = 450
+- uid: Global.CastVerticalAbility.IndicatorDuration
+  commentId: F:Global.CastVerticalAbility.IndicatorDuration
+  id: IndicatorDuration
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: IndicatorDuration
+  nameWithType: CastVerticalAbility.IndicatorDuration
+  fullName: CastVerticalAbility.IndicatorDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IndicatorDuration
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const float IndicatorDuration = 0.2
+    return:
+      type: System.Single
+    content.vb: Public Const IndicatorDuration As Single = 0.2
+- uid: Global.CastVerticalAbility.SpawnOffset
+  commentId: F:Global.CastVerticalAbility.SpawnOffset
+  id: SpawnOffset
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: SpawnOffset
+  nameWithType: CastVerticalAbility.SpawnOffset
+  fullName: CastVerticalAbility.SpawnOffset
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnOffset
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int SpawnOffset
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public SpawnOffset As Vector2Int
+- uid: Global.CastVerticalAbility.#ctor(IntBasePlatformer)
+  commentId: M:Global.CastVerticalAbility.#ctor(IntBasePlatformer)
+  id: '#ctor(IntBasePlatformer)'
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: CastVerticalAbility(IntBasePlatformer)
+  nameWithType: CastVerticalAbility.CastVerticalAbility(IntBasePlatformer)
+  fullName: CastVerticalAbility.CastVerticalAbility(IntBasePlatformer)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public CastVerticalAbility(IntBasePlatformer Weilder)
+    parameters:
+    - id: Weilder
+      type: Global.IntBasePlatformer
+    content.vb: Public Sub New(Weilder As IntBasePlatformer)
+  overload: Global.CastVerticalAbility.#ctor*
+  nameWithType.vb: CastVerticalAbility.New(IntBasePlatformer)
+  fullName.vb: CastVerticalAbility.New(IntBasePlatformer)
+  name.vb: New(IntBasePlatformer)
+- uid: Global.CastVerticalAbility.Update
+  commentId: M:Global.CastVerticalAbility.Update
+  id: Update
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: CastVerticalAbility.Update()
+  fullName: CastVerticalAbility.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.Ability.Update
+  overload: Global.CastVerticalAbility.Update*
+- uid: Global.CastVerticalAbility.UpdateAuraLifetime(System.Single)
+  commentId: M:Global.CastVerticalAbility.UpdateAuraLifetime(System.Single)
+  id: UpdateAuraLifetime(System.Single)
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: UpdateAuraLifetime(float)
+  nameWithType: CastVerticalAbility.UpdateAuraLifetime(float)
+  fullName: CastVerticalAbility.UpdateAuraLifetime(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateAuraLifetime
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void UpdateAuraLifetime(float new_aura_lifetime)
+    parameters:
+    - id: new_aura_lifetime
+      type: System.Single
+    content.vb: Public Overrides Sub UpdateAuraLifetime(new_aura_lifetime As Single)
+  overridden: Global.Ability.UpdateAuraLifetime(System.Single)
+  overload: Global.CastVerticalAbility.UpdateAuraLifetime*
+  nameWithType.vb: CastVerticalAbility.UpdateAuraLifetime(Single)
+  fullName.vb: CastVerticalAbility.UpdateAuraLifetime(Single)
+  name.vb: UpdateAuraLifetime(Single)
+- uid: Global.CastVerticalAbility.UpdateMaxAuraCount(System.Int32)
+  commentId: M:Global.CastVerticalAbility.UpdateMaxAuraCount(System.Int32)
+  id: UpdateMaxAuraCount(System.Int32)
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: UpdateMaxAuraCount(int)
+  nameWithType: CastVerticalAbility.UpdateMaxAuraCount(int)
+  fullName: CastVerticalAbility.UpdateMaxAuraCount(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateMaxAuraCount
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void UpdateMaxAuraCount(int new_max_count)
+    parameters:
+    - id: new_max_count
+      type: System.Int32
+    content.vb: Public Overrides Sub UpdateMaxAuraCount(new_max_count As Integer)
+  overridden: Global.Ability.UpdateMaxAuraCount(System.Int32)
+  overload: Global.CastVerticalAbility.UpdateMaxAuraCount*
+  nameWithType.vb: CastVerticalAbility.UpdateMaxAuraCount(Integer)
+  fullName.vb: CastVerticalAbility.UpdateMaxAuraCount(Integer)
+  name.vb: UpdateMaxAuraCount(Integer)
+- uid: Global.CastVerticalAbility.CastAbilityInternal(UnityEngine.Vector2)
+  commentId: M:Global.CastVerticalAbility.CastAbilityInternal(UnityEngine.Vector2)
+  id: CastAbilityInternal(UnityEngine.Vector2)
+  parent: Global.CastVerticalAbility
+  langs:
+  - csharp
+  - vb
+  name: CastAbilityInternal(Vector2)
+  nameWithType: CastVerticalAbility.CastAbilityInternal(Vector2)
+  fullName: CastVerticalAbility.CastAbilityInternal(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CastAbilityInternal
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/CastVertical/CastVerticalAbility.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override void CastAbilityInternal(Vector2 direction)
+    parameters:
+    - id: direction
+      type: UnityEngine.Vector2
+    content.vb: Protected Overrides Sub CastAbilityInternal(direction As Vector2)
+  overridden: Global.Ability.CastAbilityInternal(UnityEngine.Vector2)
+  overload: Global.CastVerticalAbility.CastAbilityInternal*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.Ability
+  commentId: T:Global.Ability
+  name: Ability
+  nameWithType: Ability
+  fullName: Ability
+- uid: Global.Ability.StaminaCost
+  commentId: F:Global.Ability.StaminaCost
+  parent: Global.Ability
+  name: StaminaCost
+  nameWithType: Ability.StaminaCost
+  fullName: Ability.StaminaCost
+- uid: Global.Ability.CooldownSeconds
+  commentId: F:Global.Ability.CooldownSeconds
+  parent: Global.Ability
+  name: CooldownSeconds
+  nameWithType: Ability.CooldownSeconds
+  fullName: Ability.CooldownSeconds
+- uid: Global.Ability.Active
+  commentId: F:Global.Ability.Active
+  parent: Global.Ability
+  name: Active
+  nameWithType: Ability.Active
+  fullName: Ability.Active
+- uid: Global.Ability.Finished
+  commentId: F:Global.Ability.Finished
+  parent: Global.Ability
+  name: Finished
+  nameWithType: Ability.Finished
+  fullName: Ability.Finished
+- uid: Global.Ability.Weilder
+  commentId: F:Global.Ability.Weilder
+  parent: Global.Ability
+  name: Weilder
+  nameWithType: Ability.Weilder
+  fullName: Ability.Weilder
+- uid: Global.Ability.CastAbility(UnityEngine.Vector2)
+  commentId: M:Global.Ability.CastAbility(UnityEngine.Vector2)
+  parent: Global.Ability
+  isExternal: true
+  name: CastAbility(Vector2)
+  nameWithType: Ability.CastAbility(Vector2)
+  fullName: Ability.CastAbility(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.Ability.CastAbility(UnityEngine.Vector2)
+    name: CastAbility
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.CastAbility(UnityEngine.Vector2)
+    name: CastAbility
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.Ability.GetStaminaCost
+  commentId: M:Global.Ability.GetStaminaCost
+  parent: Global.Ability
+  name: GetStaminaCost()
+  nameWithType: Ability.GetStaminaCost()
+  fullName: Ability.GetStaminaCost()
+  spec.csharp:
+  - uid: Global.Ability.GetStaminaCost
+    name: GetStaminaCost
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.GetStaminaCost
+    name: GetStaminaCost
+  - name: (
+  - name: )
+- uid: Global.Ability.GetCooldownDuration
+  commentId: M:Global.Ability.GetCooldownDuration
+  parent: Global.Ability
+  name: GetCooldownDuration()
+  nameWithType: Ability.GetCooldownDuration()
+  fullName: Ability.GetCooldownDuration()
+  spec.csharp:
+  - uid: Global.Ability.GetCooldownDuration
+    name: GetCooldownDuration
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.GetCooldownDuration
+    name: GetCooldownDuration
+  - name: (
+  - name: )
+- uid: Global.Ability.OnFinish
+  commentId: M:Global.Ability.OnFinish
+  parent: Global.Ability
+  name: OnFinish()
+  nameWithType: Ability.OnFinish()
+  fullName: Ability.OnFinish()
+  spec.csharp:
+  - uid: Global.Ability.OnFinish
+    name: OnFinish
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.OnFinish
+    name: OnFinish
+  - name: (
+  - name: )
+- uid: Global.Ability.Cancel
+  commentId: M:Global.Ability.Cancel
+  parent: Global.Ability
+  name: Cancel()
+  nameWithType: Ability.Cancel()
+  fullName: Ability.Cancel()
+  spec.csharp:
+  - uid: Global.Ability.Cancel
+    name: Cancel
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.Cancel
+    name: Cancel
+  - name: (
+  - name: )
+- uid: Global.Ability.IsActive
+  commentId: M:Global.Ability.IsActive
+  parent: Global.Ability
+  name: IsActive()
+  nameWithType: Ability.IsActive()
+  fullName: Ability.IsActive()
+  spec.csharp:
+  - uid: Global.Ability.IsActive
+    name: IsActive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.IsActive
+    name: IsActive
+  - name: (
+  - name: )
+- uid: Global.Ability.IsFinished
+  commentId: M:Global.Ability.IsFinished
+  parent: Global.Ability
+  name: IsFinished()
+  nameWithType: Ability.IsFinished()
+  fullName: Ability.IsFinished()
+  spec.csharp:
+  - uid: Global.Ability.IsFinished
+    name: IsFinished
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.IsFinished
+    name: IsFinished
+  - name: (
+  - name: )
+- uid: Global.Ability.Finish
+  commentId: M:Global.Ability.Finish
+  parent: Global.Ability
+  name: Finish()
+  nameWithType: Ability.Finish()
+  fullName: Ability.Finish()
+  spec.csharp:
+  - uid: Global.Ability.Finish
+    name: Finish
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.Finish
+    name: Finish
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.CastVerticalAbility.#ctor*
+  commentId: Overload:Global.CastVerticalAbility.#ctor
+  name: CastVerticalAbility
+  nameWithType: CastVerticalAbility.CastVerticalAbility
+  fullName: CastVerticalAbility.CastVerticalAbility
+  nameWithType.vb: CastVerticalAbility.New
+  fullName.vb: CastVerticalAbility.New
+  name.vb: New
+- uid: Global.IntBasePlatformer
+  commentId: T:Global.IntBasePlatformer
+  name: IntBasePlatformer
+  nameWithType: IntBasePlatformer
+  fullName: IntBasePlatformer
+- uid: Global.Ability.Update
+  commentId: M:Global.Ability.Update
+  parent: Global.Ability
+  name: Update()
+  nameWithType: Ability.Update()
+  fullName: Ability.Update()
+  spec.csharp:
+  - uid: Global.Ability.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.CastVerticalAbility.Update*
+  commentId: Overload:Global.CastVerticalAbility.Update
+  name: Update
+  nameWithType: CastVerticalAbility.Update
+  fullName: CastVerticalAbility.Update
+- uid: Global.Ability.UpdateAuraLifetime(System.Single)
+  commentId: M:Global.Ability.UpdateAuraLifetime(System.Single)
+  parent: Global.Ability
+  isExternal: true
+  name: UpdateAuraLifetime(float)
+  nameWithType: Ability.UpdateAuraLifetime(float)
+  fullName: Ability.UpdateAuraLifetime(float)
+  nameWithType.vb: Ability.UpdateAuraLifetime(Single)
+  fullName.vb: Ability.UpdateAuraLifetime(Single)
+  name.vb: UpdateAuraLifetime(Single)
+  spec.csharp:
+  - uid: Global.Ability.UpdateAuraLifetime(System.Single)
+    name: UpdateAuraLifetime
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.UpdateAuraLifetime(System.Single)
+    name: UpdateAuraLifetime
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: Global.CastVerticalAbility.UpdateAuraLifetime*
+  commentId: Overload:Global.CastVerticalAbility.UpdateAuraLifetime
+  name: UpdateAuraLifetime
+  nameWithType: CastVerticalAbility.UpdateAuraLifetime
+  fullName: CastVerticalAbility.UpdateAuraLifetime
+- uid: Global.Ability.UpdateMaxAuraCount(System.Int32)
+  commentId: M:Global.Ability.UpdateMaxAuraCount(System.Int32)
+  parent: Global.Ability
+  isExternal: true
+  name: UpdateMaxAuraCount(int)
+  nameWithType: Ability.UpdateMaxAuraCount(int)
+  fullName: Ability.UpdateMaxAuraCount(int)
+  nameWithType.vb: Ability.UpdateMaxAuraCount(Integer)
+  fullName.vb: Ability.UpdateMaxAuraCount(Integer)
+  name.vb: UpdateMaxAuraCount(Integer)
+  spec.csharp:
+  - uid: Global.Ability.UpdateMaxAuraCount(System.Int32)
+    name: UpdateMaxAuraCount
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.UpdateMaxAuraCount(System.Int32)
+    name: UpdateMaxAuraCount
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Global.CastVerticalAbility.UpdateMaxAuraCount*
+  commentId: Overload:Global.CastVerticalAbility.UpdateMaxAuraCount
+  name: UpdateMaxAuraCount
+  nameWithType: CastVerticalAbility.UpdateMaxAuraCount
+  fullName: CastVerticalAbility.UpdateMaxAuraCount
+- uid: Global.Ability.CastAbilityInternal(UnityEngine.Vector2)
+  commentId: M:Global.Ability.CastAbilityInternal(UnityEngine.Vector2)
+  parent: Global.Ability
+  isExternal: true
+  name: CastAbilityInternal(Vector2)
+  nameWithType: Ability.CastAbilityInternal(Vector2)
+  fullName: Ability.CastAbilityInternal(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.Ability.CastAbilityInternal(UnityEngine.Vector2)
+    name: CastAbilityInternal
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Ability.CastAbilityInternal(UnityEngine.Vector2)
+    name: CastAbilityInternal
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.CastVerticalAbility.CastAbilityInternal*
+  commentId: Overload:Global.CastVerticalAbility.CastAbilityInternal
+  name: CastAbilityInternal
+  nameWithType: CastVerticalAbility.CastAbilityInternal
+  fullName: CastVerticalAbility.CastAbilityInternal
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2

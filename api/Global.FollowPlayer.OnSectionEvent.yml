@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FollowPlayer.OnSectionEvent
+  commentId: T:Global.FollowPlayer.OnSectionEvent
+  id: FollowPlayer.OnSectionEvent
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: FollowPlayer.OnSectionEvent
+  nameWithType: FollowPlayer.OnSectionEvent
+  fullName: FollowPlayer.OnSectionEvent
+  type: Delegate
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/FollowPlayer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnSectionEvent
+    path: ../Assets/Objects & Components/Camera/FollowPlayer.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public delegate void FollowPlayer.OnSectionEvent(Section from, Section to)
+    parameters:
+    - id: from
+      type: Global.Section
+    - id: to
+      type: Global.Section
+    content.vb: Public Delegate Sub FollowPlayer.OnSectionEvent(from As Section, [to] As Section)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.Section
+  commentId: T:Global.Section
+  name: Section
+  nameWithType: Section
+  fullName: Section
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions

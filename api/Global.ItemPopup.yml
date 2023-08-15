@@ -1,0 +1,1047 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ItemPopup
+  commentId: T:Global.ItemPopup
+  id: ItemPopup
+  parent: Global
+  children:
+  - Global.ItemPopup.category
+  - Global.ItemPopup.classRequirement
+  - Global.ItemPopup.commonColor
+  - Global.ItemPopup.commonFrame
+  - Global.ItemPopup.damageGradient
+  - Global.ItemPopup.damageIcon
+  - Global.ItemPopup.description
+  - Global.ItemPopup.effect
+  - Global.ItemPopup.frame
+  - Global.ItemPopup.healthGradient
+  - Global.ItemPopup.healthIcon
+  - Global.ItemPopup.image
+  - Global.ItemPopup.Initialize(Item)
+  - Global.ItemPopup.item
+  - Global.ItemPopup.legendaryColor
+  - Global.ItemPopup.legendaryFrame
+  - Global.ItemPopup.levelRequirement
+  - Global.ItemPopup.rareColor
+  - Global.ItemPopup.rareFrame
+  - Global.ItemPopup.rarity
+  - Global.ItemPopup.staminaGradient
+  - Global.ItemPopup.staminaIcon
+  - Global.ItemPopup.statsChange
+  - Global.ItemPopup.statsIcon
+  - Global.ItemPopup.tags
+  - Global.ItemPopup.tagsToString(Tags[])
+  - Global.ItemPopup.title
+  - Global.ItemPopup.UpdateLayoutAndPosition
+  langs:
+  - csharp
+  - vb
+  name: ItemPopup
+  nameWithType: ItemPopup
+  fullName: ItemPopup
+  type: Class
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ItemPopup
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class ItemPopup : MonoBehaviour'
+    content.vb: Public Class ItemPopup Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ItemPopup.item
+  commentId: F:Global.ItemPopup.item
+  id: item
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: item
+  nameWithType: ItemPopup.item
+  fullName: ItemPopup.item
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: item
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Item item
+    return:
+      type: Global.Item
+    content.vb: Public item As Item
+- uid: Global.ItemPopup.title
+  commentId: F:Global.ItemPopup.title
+  id: title
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: title
+  nameWithType: ItemPopup.title
+  fullName: ItemPopup.title
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: title
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI title
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public title As TextMeshProUGUI
+- uid: Global.ItemPopup.category
+  commentId: F:Global.ItemPopup.category
+  id: category
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: category
+  nameWithType: ItemPopup.category
+  fullName: ItemPopup.category
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: category
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI category
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public category As TextMeshProUGUI
+- uid: Global.ItemPopup.rarity
+  commentId: F:Global.ItemPopup.rarity
+  id: rarity
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: rarity
+  nameWithType: ItemPopup.rarity
+  fullName: ItemPopup.rarity
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: rarity
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI rarity
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public rarity As TextMeshProUGUI
+- uid: Global.ItemPopup.statsChange
+  commentId: F:Global.ItemPopup.statsChange
+  id: statsChange
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: statsChange
+  nameWithType: ItemPopup.statsChange
+  fullName: ItemPopup.statsChange
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: statsChange
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI statsChange
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public statsChange As TextMeshProUGUI
+- uid: Global.ItemPopup.effect
+  commentId: F:Global.ItemPopup.effect
+  id: effect
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: effect
+  nameWithType: ItemPopup.effect
+  fullName: ItemPopup.effect
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: effect
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI effect
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public effect As TextMeshProUGUI
+- uid: Global.ItemPopup.description
+  commentId: F:Global.ItemPopup.description
+  id: description
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: description
+  nameWithType: ItemPopup.description
+  fullName: ItemPopup.description
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: description
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI description
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public description As TextMeshProUGUI
+- uid: Global.ItemPopup.tags
+  commentId: F:Global.ItemPopup.tags
+  id: tags
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: tags
+  nameWithType: ItemPopup.tags
+  fullName: ItemPopup.tags
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: tags
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI tags
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public tags As TextMeshProUGUI
+- uid: Global.ItemPopup.levelRequirement
+  commentId: F:Global.ItemPopup.levelRequirement
+  id: levelRequirement
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: levelRequirement
+  nameWithType: ItemPopup.levelRequirement
+  fullName: ItemPopup.levelRequirement
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: levelRequirement
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI levelRequirement
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public levelRequirement As TextMeshProUGUI
+- uid: Global.ItemPopup.classRequirement
+  commentId: F:Global.ItemPopup.classRequirement
+  id: classRequirement
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: classRequirement
+  nameWithType: ItemPopup.classRequirement
+  fullName: ItemPopup.classRequirement
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: classRequirement
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI classRequirement
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public classRequirement As TextMeshProUGUI
+- uid: Global.ItemPopup.image
+  commentId: F:Global.ItemPopup.image
+  id: image
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: image
+  nameWithType: ItemPopup.image
+  fullName: ItemPopup.image
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: image
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Image image
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public image As Image
+- uid: Global.ItemPopup.frame
+  commentId: F:Global.ItemPopup.frame
+  id: frame
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: frame
+  nameWithType: ItemPopup.frame
+  fullName: ItemPopup.frame
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: frame
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Image frame
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public frame As Image
+- uid: Global.ItemPopup.statsIcon
+  commentId: F:Global.ItemPopup.statsIcon
+  id: statsIcon
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: statsIcon
+  nameWithType: ItemPopup.statsIcon
+  fullName: ItemPopup.statsIcon
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: statsIcon
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Image statsIcon
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public statsIcon As Image
+- uid: Global.ItemPopup.commonColor
+  commentId: F:Global.ItemPopup.commonColor
+  id: commonColor
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: commonColor
+  nameWithType: ItemPopup.commonColor
+  fullName: ItemPopup.commonColor
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: commonColor
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Color commonColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public commonColor As Color
+- uid: Global.ItemPopup.rareColor
+  commentId: F:Global.ItemPopup.rareColor
+  id: rareColor
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: rareColor
+  nameWithType: ItemPopup.rareColor
+  fullName: ItemPopup.rareColor
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: rareColor
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Color rareColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public rareColor As Color
+- uid: Global.ItemPopup.legendaryColor
+  commentId: F:Global.ItemPopup.legendaryColor
+  id: legendaryColor
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: legendaryColor
+  nameWithType: ItemPopup.legendaryColor
+  fullName: ItemPopup.legendaryColor
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: legendaryColor
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Color legendaryColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public legendaryColor As Color
+- uid: Global.ItemPopup.healthGradient
+  commentId: F:Global.ItemPopup.healthGradient
+  id: healthGradient
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: healthGradient
+  nameWithType: ItemPopup.healthGradient
+  fullName: ItemPopup.healthGradient
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: healthGradient
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TMP_ColorGradient healthGradient
+    return:
+      type: TMPro.TMP_ColorGradient
+    content.vb: Public healthGradient As TMP_ColorGradient
+- uid: Global.ItemPopup.staminaGradient
+  commentId: F:Global.ItemPopup.staminaGradient
+  id: staminaGradient
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: staminaGradient
+  nameWithType: ItemPopup.staminaGradient
+  fullName: ItemPopup.staminaGradient
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: staminaGradient
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TMP_ColorGradient staminaGradient
+    return:
+      type: TMPro.TMP_ColorGradient
+    content.vb: Public staminaGradient As TMP_ColorGradient
+- uid: Global.ItemPopup.damageGradient
+  commentId: F:Global.ItemPopup.damageGradient
+  id: damageGradient
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: damageGradient
+  nameWithType: ItemPopup.damageGradient
+  fullName: ItemPopup.damageGradient
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: damageGradient
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TMP_ColorGradient damageGradient
+    return:
+      type: TMPro.TMP_ColorGradient
+    content.vb: Public damageGradient As TMP_ColorGradient
+- uid: Global.ItemPopup.commonFrame
+  commentId: F:Global.ItemPopup.commonFrame
+  id: commonFrame
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: commonFrame
+  nameWithType: ItemPopup.commonFrame
+  fullName: ItemPopup.commonFrame
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: commonFrame
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Sprite commonFrame
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public commonFrame As Sprite
+- uid: Global.ItemPopup.rareFrame
+  commentId: F:Global.ItemPopup.rareFrame
+  id: rareFrame
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: rareFrame
+  nameWithType: ItemPopup.rareFrame
+  fullName: ItemPopup.rareFrame
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: rareFrame
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Sprite rareFrame
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public rareFrame As Sprite
+- uid: Global.ItemPopup.legendaryFrame
+  commentId: F:Global.ItemPopup.legendaryFrame
+  id: legendaryFrame
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: legendaryFrame
+  nameWithType: ItemPopup.legendaryFrame
+  fullName: ItemPopup.legendaryFrame
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: legendaryFrame
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Sprite legendaryFrame
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public legendaryFrame As Sprite
+- uid: Global.ItemPopup.healthIcon
+  commentId: F:Global.ItemPopup.healthIcon
+  id: healthIcon
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: healthIcon
+  nameWithType: ItemPopup.healthIcon
+  fullName: ItemPopup.healthIcon
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: healthIcon
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Sprite healthIcon
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public healthIcon As Sprite
+- uid: Global.ItemPopup.staminaIcon
+  commentId: F:Global.ItemPopup.staminaIcon
+  id: staminaIcon
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: staminaIcon
+  nameWithType: ItemPopup.staminaIcon
+  fullName: ItemPopup.staminaIcon
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: staminaIcon
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Sprite staminaIcon
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public staminaIcon As Sprite
+- uid: Global.ItemPopup.damageIcon
+  commentId: F:Global.ItemPopup.damageIcon
+  id: damageIcon
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: damageIcon
+  nameWithType: ItemPopup.damageIcon
+  fullName: ItemPopup.damageIcon
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: damageIcon
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Sprite damageIcon
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public damageIcon As Sprite
+- uid: Global.ItemPopup.Initialize(Item)
+  commentId: M:Global.ItemPopup.Initialize(Item)
+  id: Initialize(Item)
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Item)
+  nameWithType: ItemPopup.Initialize(Item)
+  fullName: ItemPopup.Initialize(Item)
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Initialize
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Initialize(Item itemToShow)
+    parameters:
+    - id: itemToShow
+      type: Global.Item
+    content.vb: Public Sub Initialize(itemToShow As Item)
+  overload: Global.ItemPopup.Initialize*
+- uid: Global.ItemPopup.UpdateLayoutAndPosition
+  commentId: M:Global.ItemPopup.UpdateLayoutAndPosition
+  id: UpdateLayoutAndPosition
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: UpdateLayoutAndPosition()
+  nameWithType: ItemPopup.UpdateLayoutAndPosition()
+  fullName: ItemPopup.UpdateLayoutAndPosition()
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateLayoutAndPosition
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UpdateLayoutAndPosition()
+    content.vb: Public Sub UpdateLayoutAndPosition()
+  overload: Global.ItemPopup.UpdateLayoutAndPosition*
+- uid: Global.ItemPopup.tagsToString(Tags[])
+  commentId: M:Global.ItemPopup.tagsToString(Tags[])
+  id: tagsToString(Tags[])
+  parent: Global.ItemPopup
+  langs:
+  - csharp
+  - vb
+  name: tagsToString(Tags[])
+  nameWithType: ItemPopup.tagsToString(Tags[])
+  fullName: ItemPopup.tagsToString(Tags[])
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/ItemPopup.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: tagsToString
+    path: ../Assets/User Interface/Inventory/ItemPopup.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public string tagsToString(Tags[] tags)
+    parameters:
+    - id: tags
+      type: Global.Tags[]
+    return:
+      type: System.String
+    content.vb: Public Function tagsToString(tags As Tags()) As String
+  overload: Global.ItemPopup.tagsToString*
+  nameWithType.vb: ItemPopup.tagsToString(Tags())
+  fullName.vb: ItemPopup.tagsToString(Tags())
+  name.vb: tagsToString(Tags())
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Item
+  commentId: T:Global.Item
+  name: Item
+  nameWithType: Item
+  fullName: Item
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  isExternal: true
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: TMPro.TMP_ColorGradient
+  commentId: T:TMPro.TMP_ColorGradient
+  parent: TMPro
+  isExternal: true
+  name: TMP_ColorGradient
+  nameWithType: TMP_ColorGradient
+  fullName: TMPro.TMP_ColorGradient
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: Global.ItemPopup.Initialize*
+  commentId: Overload:Global.ItemPopup.Initialize
+  name: Initialize
+  nameWithType: ItemPopup.Initialize
+  fullName: ItemPopup.Initialize
+- uid: Global.ItemPopup.UpdateLayoutAndPosition*
+  commentId: Overload:Global.ItemPopup.UpdateLayoutAndPosition
+  name: UpdateLayoutAndPosition
+  nameWithType: ItemPopup.UpdateLayoutAndPosition
+  fullName: ItemPopup.UpdateLayoutAndPosition
+- uid: Global.ItemPopup.tagsToString*
+  commentId: Overload:Global.ItemPopup.tagsToString
+  name: tagsToString
+  nameWithType: ItemPopup.tagsToString
+  fullName: ItemPopup.tagsToString
+- uid: Global.Tags[]
+  isExternal: true
+  name: Tags[]
+  nameWithType: Tags[]
+  fullName: Tags[]
+  nameWithType.vb: Tags()
+  fullName.vb: Tags()
+  name.vb: Tags()
+  spec.csharp:
+  - uid: Global.Tags
+    name: Tags
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.Tags
+    name: Tags
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

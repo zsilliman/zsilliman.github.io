@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SpawnShieldBehavior
+  commentId: T:Global.SpawnShieldBehavior
+  id: SpawnShieldBehavior
+  parent: Global
+  children:
+  - Global.SpawnShieldBehavior.Start(ModularEnemy)
+  - Global.SpawnShieldBehavior.TimerCallback(System.Single,System.Single)
+  - Global.SpawnShieldBehavior.Update
+  langs:
+  - csharp
+  - vb
+  name: SpawnShieldBehavior
+  nameWithType: SpawnShieldBehavior
+  fullName: SpawnShieldBehavior
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/SpawnShieldBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnShieldBehavior
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/SpawnShieldBehavior.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SpawnShieldBehavior : TimerBehavior
+    content.vb: >-
+      <Serializable>
+
+      Public Class SpawnShieldBehavior Inherits TimerBehavior
+  inheritance:
+  - System.Object
+  - Global.ModularEnemy.EnemyBehaviorInterface
+  - Global.TimerBehavior
+  inheritedMembers:
+  - Global.TimerBehavior.TimerDuration
+  - Global.TimerBehavior.LookAtPlayer
+  - Global.TimerBehavior.Decelerate
+  - Global.TimerBehavior.Acceleration
+  - Global.TimerBehavior.RegisterTimerCallback(RandomIntervalEngine.Callback)
+  - Global.TimerBehavior.DrawGizmos(ModularEnemy)
+  - Global.TimerBehavior.OnRestart
+  - Global.TimerBehavior.GetIntervalT
+  - Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  - Global.ModularEnemy.EnemyBehaviorInterface.self
+  - Global.ModularEnemy.EnemyBehaviorInterface.Started
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.SpawnShieldBehavior.Start(ModularEnemy)
+  commentId: M:Global.SpawnShieldBehavior.Start(ModularEnemy)
+  id: Start(ModularEnemy)
+  parent: Global.SpawnShieldBehavior
+  langs:
+  - csharp
+  - vb
+  name: Start(ModularEnemy)
+  nameWithType: SpawnShieldBehavior.Start(ModularEnemy)
+  fullName: SpawnShieldBehavior.Start(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/SpawnShieldBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/SpawnShieldBehavior.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Start(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub Start(enemy As ModularEnemy)
+  overridden: Global.TimerBehavior.Start(ModularEnemy)
+  overload: Global.SpawnShieldBehavior.Start*
+- uid: Global.SpawnShieldBehavior.Update
+  commentId: M:Global.SpawnShieldBehavior.Update
+  id: Update
+  parent: Global.SpawnShieldBehavior
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: SpawnShieldBehavior.Update()
+  fullName: SpawnShieldBehavior.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/SpawnShieldBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/SpawnShieldBehavior.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.TimerBehavior.Update
+  overload: Global.SpawnShieldBehavior.Update*
+- uid: Global.SpawnShieldBehavior.TimerCallback(System.Single,System.Single)
+  commentId: M:Global.SpawnShieldBehavior.TimerCallback(System.Single,System.Single)
+  id: TimerCallback(System.Single,System.Single)
+  parent: Global.SpawnShieldBehavior
+  langs:
+  - csharp
+  - vb
+  name: TimerCallback(float, float)
+  nameWithType: SpawnShieldBehavior.TimerCallback(float, float)
+  fullName: SpawnShieldBehavior.TimerCallback(float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/SpawnShieldBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TimerCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/SpawnShieldBehavior.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void TimerCallback(float timePassed, float desiredInterval)
+    parameters:
+    - id: timePassed
+      type: System.Single
+    - id: desiredInterval
+      type: System.Single
+    content.vb: Public Sub TimerCallback(timePassed As Single, desiredInterval As Single)
+  overload: Global.SpawnShieldBehavior.TimerCallback*
+  nameWithType.vb: SpawnShieldBehavior.TimerCallback(Single, Single)
+  fullName.vb: SpawnShieldBehavior.TimerCallback(Single, Single)
+  name.vb: TimerCallback(Single, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ModularEnemy.EnemyBehaviorInterface
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterface
+  name: ModularEnemy.EnemyBehaviorInterface
+  nameWithType: ModularEnemy.EnemyBehaviorInterface
+  fullName: ModularEnemy.EnemyBehaviorInterface
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+- uid: Global.TimerBehavior
+  commentId: T:Global.TimerBehavior
+  name: TimerBehavior
+  nameWithType: TimerBehavior
+  fullName: TimerBehavior
+- uid: Global.TimerBehavior.TimerDuration
+  commentId: F:Global.TimerBehavior.TimerDuration
+  parent: Global.TimerBehavior
+  name: TimerDuration
+  nameWithType: TimerBehavior.TimerDuration
+  fullName: TimerBehavior.TimerDuration
+- uid: Global.TimerBehavior.LookAtPlayer
+  commentId: F:Global.TimerBehavior.LookAtPlayer
+  parent: Global.TimerBehavior
+  name: LookAtPlayer
+  nameWithType: TimerBehavior.LookAtPlayer
+  fullName: TimerBehavior.LookAtPlayer
+- uid: Global.TimerBehavior.Decelerate
+  commentId: F:Global.TimerBehavior.Decelerate
+  parent: Global.TimerBehavior
+  name: Decelerate
+  nameWithType: TimerBehavior.Decelerate
+  fullName: TimerBehavior.Decelerate
+- uid: Global.TimerBehavior.Acceleration
+  commentId: F:Global.TimerBehavior.Acceleration
+  parent: Global.TimerBehavior
+  name: Acceleration
+  nameWithType: TimerBehavior.Acceleration
+  fullName: TimerBehavior.Acceleration
+- uid: Global.TimerBehavior.RegisterTimerCallback(RandomIntervalEngine.Callback)
+  commentId: M:Global.TimerBehavior.RegisterTimerCallback(RandomIntervalEngine.Callback)
+  parent: Global.TimerBehavior
+  name: RegisterTimerCallback(Callback)
+  nameWithType: TimerBehavior.RegisterTimerCallback(RandomIntervalEngine.Callback)
+  fullName: TimerBehavior.RegisterTimerCallback(RandomIntervalEngine.Callback)
+  spec.csharp:
+  - uid: Global.TimerBehavior.RegisterTimerCallback(RandomIntervalEngine.Callback)
+    name: RegisterTimerCallback
+  - name: (
+  - uid: Global.RandomIntervalEngine.Callback
+    name: Callback
+  - name: )
+  spec.vb:
+  - uid: Global.TimerBehavior.RegisterTimerCallback(RandomIntervalEngine.Callback)
+    name: RegisterTimerCallback
+  - name: (
+  - uid: Global.RandomIntervalEngine.Callback
+    name: Callback
+  - name: )
+- uid: Global.TimerBehavior.DrawGizmos(ModularEnemy)
+  commentId: M:Global.TimerBehavior.DrawGizmos(ModularEnemy)
+  parent: Global.TimerBehavior
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: TimerBehavior.DrawGizmos(ModularEnemy)
+  fullName: TimerBehavior.DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.TimerBehavior.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.TimerBehavior.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.TimerBehavior.OnRestart
+  commentId: M:Global.TimerBehavior.OnRestart
+  parent: Global.TimerBehavior
+  name: OnRestart()
+  nameWithType: TimerBehavior.OnRestart()
+  fullName: TimerBehavior.OnRestart()
+  spec.csharp:
+  - uid: Global.TimerBehavior.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.TimerBehavior.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.TimerBehavior.GetIntervalT
+  commentId: M:Global.TimerBehavior.GetIntervalT
+  parent: Global.TimerBehavior
+  name: GetIntervalT()
+  nameWithType: TimerBehavior.GetIntervalT()
+  fullName: TimerBehavior.GetIntervalT()
+  spec.csharp:
+  - uid: Global.TimerBehavior.GetIntervalT
+    name: GetIntervalT
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.TimerBehavior.GetIntervalT
+    name: GetIntervalT
+  - name: (
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: ShowGizmos
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  fullName: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.self
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.self
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: self
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.self
+  fullName: ModularEnemy.EnemyBehaviorInterface.self
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Started
+  commentId: P:Global.ModularEnemy.EnemyBehaviorInterface.Started
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Started
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Started
+  fullName: ModularEnemy.EnemyBehaviorInterface.Started
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  isExternal: true
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.TimerBehavior.Start(ModularEnemy)
+  commentId: M:Global.TimerBehavior.Start(ModularEnemy)
+  parent: Global.TimerBehavior
+  name: Start(ModularEnemy)
+  nameWithType: TimerBehavior.Start(ModularEnemy)
+  fullName: TimerBehavior.Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.TimerBehavior.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.TimerBehavior.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.SpawnShieldBehavior.Start*
+  commentId: Overload:Global.SpawnShieldBehavior.Start
+  name: Start
+  nameWithType: SpawnShieldBehavior.Start
+  fullName: SpawnShieldBehavior.Start
+- uid: Global.ModularEnemy
+  commentId: T:Global.ModularEnemy
+  name: ModularEnemy
+  nameWithType: ModularEnemy
+  fullName: ModularEnemy
+- uid: Global.TimerBehavior.Update
+  commentId: M:Global.TimerBehavior.Update
+  parent: Global.TimerBehavior
+  name: Update()
+  nameWithType: TimerBehavior.Update()
+  fullName: TimerBehavior.Update()
+  spec.csharp:
+  - uid: Global.TimerBehavior.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.TimerBehavior.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.SpawnShieldBehavior.Update*
+  commentId: Overload:Global.SpawnShieldBehavior.Update
+  name: Update
+  nameWithType: SpawnShieldBehavior.Update
+  fullName: SpawnShieldBehavior.Update
+- uid: Global.SpawnShieldBehavior.TimerCallback*
+  commentId: Overload:Global.SpawnShieldBehavior.TimerCallback
+  name: TimerCallback
+  nameWithType: SpawnShieldBehavior.TimerCallback
+  fullName: SpawnShieldBehavior.TimerCallback
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

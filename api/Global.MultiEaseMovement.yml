@@ -1,0 +1,461 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MultiEaseMovement
+  commentId: T:Global.MultiEaseMovement
+  id: MultiEaseMovement
+  parent: Global
+  children:
+  - Global.MultiEaseMovement.AddToAuraObject(UnityEngine.GameObject,MultiEaseMovement.MultiEaseProperties)
+  - Global.MultiEaseMovement.Awake
+  - Global.MultiEaseMovement.ResetObject
+  langs:
+  - csharp
+  - vb
+  name: MultiEaseMovement
+  nameWithType: MultiEaseMovement
+  fullName: MultiEaseMovement
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MultiEaseMovement
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(AuraShapeController))]
+
+      public class MultiEaseMovement : AuraMovementController<MultiEaseMovement.MultiEaseProperties>
+    content.vb: >-
+      <RequireComponent(GetType(AuraShapeController))>
+
+      Public Class MultiEaseMovement Inherits AuraMovementController(Of MultiEaseMovement.MultiEaseProperties)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}
+  inheritedMembers:
+  - Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.Properties
+  - Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.auraCreator
+  - Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.auraComponent
+  - Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.Start
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.AuraShapeController
+- uid: Global.MultiEaseMovement.Awake
+  commentId: M:Global.MultiEaseMovement.Awake
+  id: Awake
+  parent: Global.MultiEaseMovement
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: MultiEaseMovement.Awake()
+  fullName: MultiEaseMovement.Awake()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Awake
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Awake()
+    content.vb: Protected Sub Awake()
+  overload: Global.MultiEaseMovement.Awake*
+- uid: Global.MultiEaseMovement.ResetObject
+  commentId: M:Global.MultiEaseMovement.ResetObject
+  id: ResetObject
+  parent: Global.MultiEaseMovement
+  langs:
+  - csharp
+  - vb
+  name: ResetObject()
+  nameWithType: MultiEaseMovement.ResetObject()
+  fullName: MultiEaseMovement.ResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResetObject
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 113
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void ResetObject()
+    content.vb: Public Overrides Sub ResetObject()
+  overridden: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.ResetObject
+  overload: Global.MultiEaseMovement.ResetObject*
+- uid: Global.MultiEaseMovement.AddToAuraObject(UnityEngine.GameObject,MultiEaseMovement.MultiEaseProperties)
+  commentId: M:Global.MultiEaseMovement.AddToAuraObject(UnityEngine.GameObject,MultiEaseMovement.MultiEaseProperties)
+  id: AddToAuraObject(UnityEngine.GameObject,MultiEaseMovement.MultiEaseProperties)
+  parent: Global.MultiEaseMovement
+  langs:
+  - csharp
+  - vb
+  name: AddToAuraObject(GameObject, MultiEaseProperties)
+  nameWithType: MultiEaseMovement.AddToAuraObject(GameObject, MultiEaseMovement.MultiEaseProperties)
+  fullName: MultiEaseMovement.AddToAuraObject(UnityEngine.GameObject, MultiEaseMovement.MultiEaseProperties)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddToAuraObject
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 122
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void AddToAuraObject(GameObject aura, MultiEaseMovement.MultiEaseProperties props)
+    parameters:
+    - id: aura
+      type: UnityEngine.GameObject
+    - id: props
+      type: Global.MultiEaseMovement.MultiEaseProperties
+    content.vb: Public Shared Sub AddToAuraObject(aura As GameObject, props As MultiEaseMovement.MultiEaseProperties)
+  overload: Global.MultiEaseMovement.AddToAuraObject*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}
+  commentId: T:Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}
+  definition: Global.AuraMovementController`1
+  name: AuraMovementController<MultiEaseMovement.MultiEaseProperties>
+  nameWithType: AuraMovementController<MultiEaseMovement.MultiEaseProperties>
+  fullName: AuraMovementController<MultiEaseMovement.MultiEaseProperties>
+  nameWithType.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties)
+  fullName.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties)
+  name.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties)
+  spec.csharp:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: <
+  - uid: Global.MultiEaseMovement
+    name: MultiEaseMovement
+  - name: .
+  - uid: Global.MultiEaseMovement.MultiEaseProperties
+    name: MultiEaseProperties
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.MultiEaseMovement
+    name: MultiEaseMovement
+  - name: .
+  - uid: Global.MultiEaseMovement.MultiEaseProperties
+    name: MultiEaseProperties
+  - name: )
+- uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.Properties
+  commentId: F:Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.Properties
+  parent: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}
+  definition: Global.AuraMovementController`1.Properties
+  name: Properties
+  nameWithType: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.Properties
+  fullName: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.Properties
+  nameWithType.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).Properties
+  fullName.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).Properties
+- uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.auraCreator
+  commentId: F:Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.auraCreator
+  parent: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}
+  definition: Global.AuraMovementController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.auraCreator
+  fullName: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.auraCreator
+  nameWithType.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).auraCreator
+  fullName.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).auraCreator
+- uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.auraComponent
+  commentId: F:Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.auraComponent
+  parent: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}
+  definition: Global.AuraMovementController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.auraComponent
+  fullName: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.auraComponent
+  nameWithType.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).auraComponent
+  fullName.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).auraComponent
+- uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.Start
+  commentId: M:Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.Start
+  parent: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}
+  definition: Global.AuraMovementController`1.Start
+  name: Start()
+  nameWithType: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.Start()
+  fullName: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.Start()
+  nameWithType.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).Start()
+  fullName.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).Start()
+  spec.csharp:
+  - uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.Start
+    name: Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.Start
+    name: Start
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraMovementController`1
+  commentId: T:Global.AuraMovementController`1
+  name: AuraMovementController<T>
+  nameWithType: AuraMovementController<T>
+  fullName: AuraMovementController<T>
+  nameWithType.vb: AuraMovementController(Of T)
+  fullName.vb: AuraMovementController(Of T)
+  name.vb: AuraMovementController(Of T)
+  spec.csharp:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraMovementController`1.Properties
+  commentId: F:Global.AuraMovementController`1.Properties
+  name: Properties
+  nameWithType: AuraMovementController<T>.Properties
+  fullName: AuraMovementController<T>.Properties
+  nameWithType.vb: AuraMovementController(Of T).Properties
+  fullName.vb: AuraMovementController(Of T).Properties
+- uid: Global.AuraMovementController`1.auraCreator
+  commentId: F:Global.AuraMovementController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraMovementController<T>.auraCreator
+  fullName: AuraMovementController<T>.auraCreator
+  nameWithType.vb: AuraMovementController(Of T).auraCreator
+  fullName.vb: AuraMovementController(Of T).auraCreator
+- uid: Global.AuraMovementController`1.auraComponent
+  commentId: F:Global.AuraMovementController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraMovementController<T>.auraComponent
+  fullName: AuraMovementController<T>.auraComponent
+  nameWithType.vb: AuraMovementController(Of T).auraComponent
+  fullName.vb: AuraMovementController(Of T).auraComponent
+- uid: Global.AuraMovementController`1.Start
+  commentId: M:Global.AuraMovementController`1.Start
+  name: Start()
+  nameWithType: AuraMovementController<T>.Start()
+  fullName: AuraMovementController<T>.Start()
+  nameWithType.vb: AuraMovementController(Of T).Start()
+  fullName.vb: AuraMovementController(Of T).Start()
+  spec.csharp:
+  - uid: Global.AuraMovementController`1.Start
+    name: Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController`1.Start
+    name: Start
+  - name: (
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.MultiEaseMovement.Awake*
+  commentId: Overload:Global.MultiEaseMovement.Awake
+  name: Awake
+  nameWithType: MultiEaseMovement.Awake
+  fullName: MultiEaseMovement.Awake
+- uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.ResetObject
+  commentId: M:Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.ResetObject
+  parent: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}
+  definition: Global.AuraMovementController`1.ResetObject
+  name: ResetObject()
+  nameWithType: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.ResetObject()
+  fullName: AuraMovementController<MultiEaseMovement.MultiEaseProperties>.ResetObject()
+  nameWithType.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).ResetObject()
+  fullName.vb: AuraMovementController(Of MultiEaseMovement.MultiEaseProperties).ResetObject()
+  spec.csharp:
+  - uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController{MultiEaseMovement.MultiEaseProperties}.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+- uid: Global.MultiEaseMovement.ResetObject*
+  commentId: Overload:Global.MultiEaseMovement.ResetObject
+  name: ResetObject
+  nameWithType: MultiEaseMovement.ResetObject
+  fullName: MultiEaseMovement.ResetObject
+- uid: Global.AuraMovementController`1.ResetObject
+  commentId: M:Global.AuraMovementController`1.ResetObject
+  name: ResetObject()
+  nameWithType: AuraMovementController<T>.ResetObject()
+  fullName: AuraMovementController<T>.ResetObject()
+  nameWithType.vb: AuraMovementController(Of T).ResetObject()
+  fullName.vb: AuraMovementController(Of T).ResetObject()
+  spec.csharp:
+  - uid: Global.AuraMovementController`1.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController`1.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+- uid: Global.MultiEaseMovement.AddToAuraObject*
+  commentId: Overload:Global.MultiEaseMovement.AddToAuraObject
+  name: AddToAuraObject
+  nameWithType: MultiEaseMovement.AddToAuraObject
+  fullName: MultiEaseMovement.AddToAuraObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.MultiEaseMovement.MultiEaseProperties
+  commentId: T:Global.MultiEaseMovement.MultiEaseProperties
+  name: MultiEaseMovement.MultiEaseProperties
+  nameWithType: MultiEaseMovement.MultiEaseProperties
+  fullName: MultiEaseMovement.MultiEaseProperties
+  spec.csharp:
+  - uid: Global.MultiEaseMovement
+    name: MultiEaseMovement
+  - name: .
+  - uid: Global.MultiEaseMovement.MultiEaseProperties
+    name: MultiEaseProperties
+  spec.vb:
+  - uid: Global.MultiEaseMovement
+    name: MultiEaseMovement
+  - name: .
+  - uid: Global.MultiEaseMovement.MultiEaseProperties
+    name: MultiEaseProperties

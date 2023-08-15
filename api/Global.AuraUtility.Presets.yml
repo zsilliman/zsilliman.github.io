@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraUtility.Presets
+  commentId: T:Global.AuraUtility.Presets
+  id: AuraUtility.Presets
+  parent: Global
+  children:
+  - Global.AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  - Global.AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  - Global.AuraUtility.Presets.SpawnDoubleBeamAura(DoubleBeamMovementController.DoubleBeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  langs:
+  - csharp
+  - vb
+  name: AuraUtility.Presets
+  nameWithType: AuraUtility.Presets
+  fullName: AuraUtility.Presets
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Presets
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 295
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static class AuraUtility.Presets
+    content.vb: Public Module AuraUtility.Presets
+  inheritance:
+  - System.Object
+- uid: Global.AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  commentId: M:Global.AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  id: SpawnBeamAura(BeamMovementController.BeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  parent: Global.AuraUtility.Presets
+  langs:
+  - csharp
+  - vb
+  name: SpawnBeamAura(BeamProperties, GameObject, Vector2Int, Transform, BaseAuraProperties)
+  nameWithType: AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties, GameObject, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  fullName: AuraUtility.Presets.SpawnBeamAura(BeamMovementController.BeamProperties, UnityEngine.GameObject, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnBeamAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 297
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AutoMergeAura SpawnBeamAura(BeamMovementController.BeamProperties beam_props, GameObject aura_creator, Vector2Int position, Transform parent, AuraUtility.BaseAuraProperties props = null)
+    parameters:
+    - id: beam_props
+      type: Global.BeamMovementController.BeamProperties
+    - id: aura_creator
+      type: UnityEngine.GameObject
+    - id: position
+      type: UnityEngine.Vector2Int
+    - id: parent
+      type: UnityEngine.Transform
+    - id: props
+      type: Global.AuraUtility.BaseAuraProperties
+    return:
+      type: Global.AutoMergeAura
+    content.vb: Public Shared Function SpawnBeamAura(beam_props As BeamMovementController.BeamProperties, aura_creator As GameObject, position As Vector2Int, parent As Transform, props As AuraUtility.BaseAuraProperties = Nothing) As AutoMergeAura
+  overload: Global.AuraUtility.Presets.SpawnBeamAura*
+- uid: Global.AuraUtility.Presets.SpawnDoubleBeamAura(DoubleBeamMovementController.DoubleBeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  commentId: M:Global.AuraUtility.Presets.SpawnDoubleBeamAura(DoubleBeamMovementController.DoubleBeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  id: SpawnDoubleBeamAura(DoubleBeamMovementController.DoubleBeamProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  parent: Global.AuraUtility.Presets
+  langs:
+  - csharp
+  - vb
+  name: SpawnDoubleBeamAura(DoubleBeamProperties, GameObject, Vector2Int, Transform, BaseAuraProperties)
+  nameWithType: AuraUtility.Presets.SpawnDoubleBeamAura(DoubleBeamMovementController.DoubleBeamProperties, GameObject, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  fullName: AuraUtility.Presets.SpawnDoubleBeamAura(DoubleBeamMovementController.DoubleBeamProperties, UnityEngine.GameObject, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnDoubleBeamAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 307
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AutoMergeAura SpawnDoubleBeamAura(DoubleBeamMovementController.DoubleBeamProperties beam_props, GameObject aura_creator, Vector2Int position, Transform parent, AuraUtility.BaseAuraProperties props = null)
+    parameters:
+    - id: beam_props
+      type: Global.DoubleBeamMovementController.DoubleBeamProperties
+    - id: aura_creator
+      type: UnityEngine.GameObject
+    - id: position
+      type: UnityEngine.Vector2Int
+    - id: parent
+      type: UnityEngine.Transform
+    - id: props
+      type: Global.AuraUtility.BaseAuraProperties
+    return:
+      type: Global.AutoMergeAura
+    content.vb: Public Shared Function SpawnDoubleBeamAura(beam_props As DoubleBeamMovementController.DoubleBeamProperties, aura_creator As GameObject, position As Vector2Int, parent As Transform, props As AuraUtility.BaseAuraProperties = Nothing) As AutoMergeAura
+  overload: Global.AuraUtility.Presets.SpawnDoubleBeamAura*
+- uid: Global.AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  commentId: M:Global.AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  id: SpawnBeaconAura(EasingAutoAuraController.EasingProperties,UnityEngine.GameObject,UnityEngine.Vector2Int,UnityEngine.Transform,AuraUtility.BaseAuraProperties)
+  parent: Global.AuraUtility.Presets
+  langs:
+  - csharp
+  - vb
+  name: SpawnBeaconAura(EasingProperties, GameObject, Vector2Int, Transform, BaseAuraProperties)
+  nameWithType: AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties, GameObject, Vector2Int, Transform, AuraUtility.BaseAuraProperties)
+  fullName: AuraUtility.Presets.SpawnBeaconAura(EasingAutoAuraController.EasingProperties, UnityEngine.GameObject, UnityEngine.Vector2Int, UnityEngine.Transform, AuraUtility.BaseAuraProperties)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnBeaconAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 317
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AutoMergeAura SpawnBeaconAura(EasingAutoAuraController.EasingProperties beacon_props, GameObject aura_creator, Vector2Int position, Transform parent, AuraUtility.BaseAuraProperties props = null)
+    parameters:
+    - id: beacon_props
+      type: Global.EasingAutoAuraController.EasingProperties
+    - id: aura_creator
+      type: UnityEngine.GameObject
+    - id: position
+      type: UnityEngine.Vector2Int
+    - id: parent
+      type: UnityEngine.Transform
+    - id: props
+      type: Global.AuraUtility.BaseAuraProperties
+    return:
+      type: Global.AutoMergeAura
+    content.vb: Public Shared Function SpawnBeaconAura(beacon_props As EasingAutoAuraController.EasingProperties, aura_creator As GameObject, position As Vector2Int, parent As Transform, props As AuraUtility.BaseAuraProperties = Nothing) As AutoMergeAura
+  overload: Global.AuraUtility.Presets.SpawnBeaconAura*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.AuraUtility.Presets.SpawnBeamAura*
+  commentId: Overload:Global.AuraUtility.Presets.SpawnBeamAura
+  name: SpawnBeamAura
+  nameWithType: AuraUtility.Presets.SpawnBeamAura
+  fullName: AuraUtility.Presets.SpawnBeamAura
+- uid: Global.BeamMovementController.BeamProperties
+  commentId: T:Global.BeamMovementController.BeamProperties
+  name: BeamMovementController.BeamProperties
+  nameWithType: BeamMovementController.BeamProperties
+  fullName: BeamMovementController.BeamProperties
+  spec.csharp:
+  - uid: Global.BeamMovementController
+    name: BeamMovementController
+  - name: .
+  - uid: Global.BeamMovementController.BeamProperties
+    name: BeamProperties
+  spec.vb:
+  - uid: Global.BeamMovementController
+    name: BeamMovementController
+  - name: .
+  - uid: Global.BeamMovementController.BeamProperties
+    name: BeamProperties
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: Global.AuraUtility.BaseAuraProperties
+  commentId: T:Global.AuraUtility.BaseAuraProperties
+  name: AuraUtility.BaseAuraProperties
+  nameWithType: AuraUtility.BaseAuraProperties
+  fullName: AuraUtility.BaseAuraProperties
+  spec.csharp:
+  - uid: Global.AuraUtility
+    name: AuraUtility
+  - name: .
+  - uid: Global.AuraUtility.BaseAuraProperties
+    name: BaseAuraProperties
+  spec.vb:
+  - uid: Global.AuraUtility
+    name: AuraUtility
+  - name: .
+  - uid: Global.AuraUtility.BaseAuraProperties
+    name: BaseAuraProperties
+- uid: Global.AutoMergeAura
+  commentId: T:Global.AutoMergeAura
+  name: AutoMergeAura
+  nameWithType: AutoMergeAura
+  fullName: AutoMergeAura
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraUtility.Presets.SpawnDoubleBeamAura*
+  commentId: Overload:Global.AuraUtility.Presets.SpawnDoubleBeamAura
+  name: SpawnDoubleBeamAura
+  nameWithType: AuraUtility.Presets.SpawnDoubleBeamAura
+  fullName: AuraUtility.Presets.SpawnDoubleBeamAura
+- uid: Global.DoubleBeamMovementController.DoubleBeamProperties
+  commentId: T:Global.DoubleBeamMovementController.DoubleBeamProperties
+  name: DoubleBeamMovementController.DoubleBeamProperties
+  nameWithType: DoubleBeamMovementController.DoubleBeamProperties
+  fullName: DoubleBeamMovementController.DoubleBeamProperties
+  spec.csharp:
+  - uid: Global.DoubleBeamMovementController
+    name: DoubleBeamMovementController
+  - name: .
+  - uid: Global.DoubleBeamMovementController.DoubleBeamProperties
+    name: DoubleBeamProperties
+  spec.vb:
+  - uid: Global.DoubleBeamMovementController
+    name: DoubleBeamMovementController
+  - name: .
+  - uid: Global.DoubleBeamMovementController.DoubleBeamProperties
+    name: DoubleBeamProperties
+- uid: Global.AuraUtility.Presets.SpawnBeaconAura*
+  commentId: Overload:Global.AuraUtility.Presets.SpawnBeaconAura
+  name: SpawnBeaconAura
+  nameWithType: AuraUtility.Presets.SpawnBeaconAura
+  fullName: AuraUtility.Presets.SpawnBeaconAura
+- uid: Global.EasingAutoAuraController.EasingProperties
+  commentId: T:Global.EasingAutoAuraController.EasingProperties
+  name: EasingAutoAuraController.EasingProperties
+  nameWithType: EasingAutoAuraController.EasingProperties
+  fullName: EasingAutoAuraController.EasingProperties
+  spec.csharp:
+  - uid: Global.EasingAutoAuraController
+    name: EasingAutoAuraController
+  - name: .
+  - uid: Global.EasingAutoAuraController.EasingProperties
+    name: EasingProperties
+  spec.vb:
+  - uid: Global.EasingAutoAuraController
+    name: EasingAutoAuraController
+  - name: .
+  - uid: Global.EasingAutoAuraController.EasingProperties
+    name: EasingProperties

@@ -1,0 +1,873 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LockableDoorController
+  commentId: T:Global.LockableDoorController
+  id: LockableDoorController
+  parent: Global
+  children:
+  - Global.LockableDoorController.doorAction
+  - Global.LockableDoorController.Doors
+  - Global.LockableDoorController.InstantCloseDoors
+  - Global.LockableDoorController.InstantOpenDoors
+  - Global.LockableDoorController.InteractionDelaySeconds
+  - Global.LockableDoorController.IsInteractionActive
+  - Global.LockableDoorController.IsInteractionFinished
+  - Global.LockableDoorController.OnInteract
+  - Global.LockableDoorController.OnInteractionTriggerEnter(Player)
+  - Global.LockableDoorController.OnInteractionTriggerExit(Player)
+  - Global.LockableDoorController.OnResetObject
+  - Global.LockableDoorController.Start
+  - Global.LockableDoorController.Update
+  langs:
+  - csharp
+  - vb
+  name: LockableDoorController
+  nameWithType: LockableDoorController
+  fullName: LockableDoorController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LockableDoorController
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class LockableDoorController : InteractionController'
+    content.vb: Public Class LockableDoorController Inherits InteractionController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.InteractionController
+  inheritedMembers:
+  - Global.InteractionController.interactable
+  - Global.InteractionController.WaitForOtherControllers
+  - Global.InteractionController.OnAllInteractionsCompleted
+  - Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  - Global.InteractionController.OnTriggerExitCallback(IntActor)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LockableDoorController.Doors
+  commentId: F:Global.LockableDoorController.Doors
+  id: Doors
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: Doors
+  nameWithType: LockableDoorController.Doors
+  fullName: LockableDoorController.Doors
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Doors
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<LockableDoor> Doors
+    return:
+      type: System.Collections.Generic.List{LockableDoor}
+    content.vb: Public Doors As List(Of LockableDoor)
+- uid: Global.LockableDoorController.InteractionDelaySeconds
+  commentId: F:Global.LockableDoorController.InteractionDelaySeconds
+  id: InteractionDelaySeconds
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: InteractionDelaySeconds
+  nameWithType: LockableDoorController.InteractionDelaySeconds
+  fullName: LockableDoorController.InteractionDelaySeconds
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InteractionDelaySeconds
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float InteractionDelaySeconds
+    return:
+      type: System.Single
+    content.vb: Public InteractionDelaySeconds As Single
+- uid: Global.LockableDoorController.doorAction
+  commentId: F:Global.LockableDoorController.doorAction
+  id: doorAction
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: doorAction
+  nameWithType: LockableDoorController.doorAction
+  fullName: LockableDoorController.doorAction
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: doorAction
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LockableDoorController.DoorAction doorAction
+    return:
+      type: Global.LockableDoorController.DoorAction
+    content.vb: Public doorAction As LockableDoorController.DoorAction
+- uid: Global.LockableDoorController.Start
+  commentId: M:Global.LockableDoorController.Start
+  id: Start
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: LockableDoorController.Start()
+  fullName: LockableDoorController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.LockableDoorController.Start*
+- uid: Global.LockableDoorController.Update
+  commentId: M:Global.LockableDoorController.Update
+  id: Update
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: LockableDoorController.Update()
+  fullName: LockableDoorController.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Update()
+    content.vb: Protected Sub Update()
+  overload: Global.LockableDoorController.Update*
+- uid: Global.LockableDoorController.OnInteract
+  commentId: M:Global.LockableDoorController.OnInteract
+  id: OnInteract
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: OnInteract()
+  nameWithType: LockableDoorController.OnInteract()
+  fullName: LockableDoorController.OnInteract()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteract
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteract()
+    content.vb: Public Overrides Sub OnInteract()
+  overridden: Global.InteractionController.OnInteract
+  overload: Global.LockableDoorController.OnInteract*
+- uid: Global.LockableDoorController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.LockableDoorController.OnInteractionTriggerEnter(Player)
+  id: OnInteractionTriggerEnter(Player)
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: LockableDoorController.OnInteractionTriggerEnter(Player)
+  fullName: LockableDoorController.OnInteractionTriggerEnter(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerEnter
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerEnter(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerEnter(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  overload: Global.LockableDoorController.OnInteractionTriggerEnter*
+- uid: Global.LockableDoorController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.LockableDoorController.OnInteractionTriggerExit(Player)
+  id: OnInteractionTriggerExit(Player)
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: LockableDoorController.OnInteractionTriggerExit(Player)
+  fullName: LockableDoorController.OnInteractionTriggerExit(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerExit
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerExit(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerExit(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerExit(Player)
+  overload: Global.LockableDoorController.OnInteractionTriggerExit*
+- uid: Global.LockableDoorController.OnResetObject
+  commentId: M:Global.LockableDoorController.OnResetObject
+  id: OnResetObject
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject()
+  nameWithType: LockableDoorController.OnResetObject()
+  fullName: LockableDoorController.OnResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject()
+    content.vb: Public Overrides Sub OnResetObject()
+  overridden: Global.InteractionController.OnResetObject
+  overload: Global.LockableDoorController.OnResetObject*
+- uid: Global.LockableDoorController.InstantOpenDoors
+  commentId: M:Global.LockableDoorController.InstantOpenDoors
+  id: InstantOpenDoors
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: InstantOpenDoors()
+  nameWithType: LockableDoorController.InstantOpenDoors()
+  fullName: LockableDoorController.InstantOpenDoors()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InstantOpenDoors
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void InstantOpenDoors()
+    content.vb: Public Sub InstantOpenDoors()
+  overload: Global.LockableDoorController.InstantOpenDoors*
+- uid: Global.LockableDoorController.InstantCloseDoors
+  commentId: M:Global.LockableDoorController.InstantCloseDoors
+  id: InstantCloseDoors
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: InstantCloseDoors()
+  nameWithType: LockableDoorController.InstantCloseDoors()
+  fullName: LockableDoorController.InstantCloseDoors()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InstantCloseDoors
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 108
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void InstantCloseDoors()
+    content.vb: Public Sub InstantCloseDoors()
+  overload: Global.LockableDoorController.InstantCloseDoors*
+- uid: Global.LockableDoorController.IsInteractionFinished
+  commentId: M:Global.LockableDoorController.IsInteractionFinished
+  id: IsInteractionFinished
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionFinished()
+  nameWithType: LockableDoorController.IsInteractionFinished()
+  fullName: LockableDoorController.IsInteractionFinished()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionFinished
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 116
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionFinished()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionFinished() As Boolean
+  overridden: Global.InteractionController.IsInteractionFinished
+  overload: Global.LockableDoorController.IsInteractionFinished*
+- uid: Global.LockableDoorController.IsInteractionActive
+  commentId: M:Global.LockableDoorController.IsInteractionActive
+  id: IsInteractionActive
+  parent: Global.LockableDoorController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionActive()
+  nameWithType: LockableDoorController.IsInteractionActive()
+  fullName: LockableDoorController.IsInteractionActive()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionActive
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 121
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionActive()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionActive() As Boolean
+  overridden: Global.InteractionController.IsInteractionActive
+  overload: Global.LockableDoorController.IsInteractionActive*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.InteractionController
+  commentId: T:Global.InteractionController
+  name: InteractionController
+  nameWithType: InteractionController
+  fullName: InteractionController
+- uid: Global.InteractionController.interactable
+  commentId: F:Global.InteractionController.interactable
+  parent: Global.InteractionController
+  name: interactable
+  nameWithType: InteractionController.interactable
+  fullName: InteractionController.interactable
+- uid: Global.InteractionController.WaitForOtherControllers
+  commentId: F:Global.InteractionController.WaitForOtherControllers
+  parent: Global.InteractionController
+  name: WaitForOtherControllers
+  nameWithType: InteractionController.WaitForOtherControllers
+  fullName: InteractionController.WaitForOtherControllers
+- uid: Global.InteractionController.OnAllInteractionsCompleted
+  commentId: M:Global.InteractionController.OnAllInteractionsCompleted
+  parent: Global.InteractionController
+  name: OnAllInteractionsCompleted()
+  nameWithType: InteractionController.OnAllInteractionsCompleted()
+  fullName: InteractionController.OnAllInteractionsCompleted()
+  spec.csharp:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+- uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerEnterCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerEnterCallback(IntActor)
+  fullName: InteractionController.OnTriggerEnterCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerExitCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerExitCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerExitCallback(IntActor)
+  fullName: InteractionController.OnTriggerExitCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Collections.Generic.List{LockableDoor}
+  commentId: T:System.Collections.Generic.List{LockableDoor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<LockableDoor>
+  nameWithType: List<LockableDoor>
+  fullName: System.Collections.Generic.List<LockableDoor>
+  nameWithType.vb: List(Of LockableDoor)
+  fullName.vb: System.Collections.Generic.List(Of LockableDoor)
+  name.vb: List(Of LockableDoor)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.LockableDoor
+    name: LockableDoor
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.LockableDoor
+    name: LockableDoor
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.LockableDoorController.DoorAction
+  commentId: T:Global.LockableDoorController.DoorAction
+  name: LockableDoorController.DoorAction
+  nameWithType: LockableDoorController.DoorAction
+  fullName: LockableDoorController.DoorAction
+  spec.csharp:
+  - uid: Global.LockableDoorController
+    name: LockableDoorController
+  - name: .
+  - uid: Global.LockableDoorController.DoorAction
+    name: DoorAction
+  spec.vb:
+  - uid: Global.LockableDoorController
+    name: LockableDoorController
+  - name: .
+  - uid: Global.LockableDoorController.DoorAction
+    name: DoorAction
+- uid: Global.LockableDoorController.Start*
+  commentId: Overload:Global.LockableDoorController.Start
+  name: Start
+  nameWithType: LockableDoorController.Start
+  fullName: LockableDoorController.Start
+- uid: Global.LockableDoorController.Update*
+  commentId: Overload:Global.LockableDoorController.Update
+  name: Update
+  nameWithType: LockableDoorController.Update
+  fullName: LockableDoorController.Update
+- uid: Global.InteractionController.OnInteract
+  commentId: M:Global.InteractionController.OnInteract
+  parent: Global.InteractionController
+  name: OnInteract()
+  nameWithType: InteractionController.OnInteract()
+  fullName: InteractionController.OnInteract()
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+- uid: Global.LockableDoorController.OnInteract*
+  commentId: Overload:Global.LockableDoorController.OnInteract
+  name: OnInteract
+  nameWithType: LockableDoorController.OnInteract
+  fullName: LockableDoorController.OnInteract
+- uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerEnter(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: InteractionController.OnInteractionTriggerEnter(Player)
+  fullName: InteractionController.OnInteractionTriggerEnter(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.LockableDoorController.OnInteractionTriggerEnter*
+  commentId: Overload:Global.LockableDoorController.OnInteractionTriggerEnter
+  name: OnInteractionTriggerEnter
+  nameWithType: LockableDoorController.OnInteractionTriggerEnter
+  fullName: LockableDoorController.OnInteractionTriggerEnter
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerExit(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: InteractionController.OnInteractionTriggerExit(Player)
+  fullName: InteractionController.OnInteractionTriggerExit(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.LockableDoorController.OnInteractionTriggerExit*
+  commentId: Overload:Global.LockableDoorController.OnInteractionTriggerExit
+  name: OnInteractionTriggerExit
+  nameWithType: LockableDoorController.OnInteractionTriggerExit
+  fullName: LockableDoorController.OnInteractionTriggerExit
+- uid: Global.InteractionController.OnResetObject
+  commentId: M:Global.InteractionController.OnResetObject
+  parent: Global.InteractionController
+  name: OnResetObject()
+  nameWithType: InteractionController.OnResetObject()
+  fullName: InteractionController.OnResetObject()
+  spec.csharp:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+- uid: Global.LockableDoorController.OnResetObject*
+  commentId: Overload:Global.LockableDoorController.OnResetObject
+  name: OnResetObject
+  nameWithType: LockableDoorController.OnResetObject
+  fullName: LockableDoorController.OnResetObject
+- uid: Global.LockableDoorController.InstantOpenDoors*
+  commentId: Overload:Global.LockableDoorController.InstantOpenDoors
+  name: InstantOpenDoors
+  nameWithType: LockableDoorController.InstantOpenDoors
+  fullName: LockableDoorController.InstantOpenDoors
+- uid: Global.LockableDoorController.InstantCloseDoors*
+  commentId: Overload:Global.LockableDoorController.InstantCloseDoors
+  name: InstantCloseDoors
+  nameWithType: LockableDoorController.InstantCloseDoors
+  fullName: LockableDoorController.InstantCloseDoors
+- uid: Global.InteractionController.IsInteractionFinished
+  commentId: M:Global.InteractionController.IsInteractionFinished
+  parent: Global.InteractionController
+  name: IsInteractionFinished()
+  nameWithType: InteractionController.IsInteractionFinished()
+  fullName: InteractionController.IsInteractionFinished()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+- uid: Global.LockableDoorController.IsInteractionFinished*
+  commentId: Overload:Global.LockableDoorController.IsInteractionFinished
+  name: IsInteractionFinished
+  nameWithType: LockableDoorController.IsInteractionFinished
+  fullName: LockableDoorController.IsInteractionFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.InteractionController.IsInteractionActive
+  commentId: M:Global.InteractionController.IsInteractionActive
+  parent: Global.InteractionController
+  name: IsInteractionActive()
+  nameWithType: InteractionController.IsInteractionActive()
+  fullName: InteractionController.IsInteractionActive()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+- uid: Global.LockableDoorController.IsInteractionActive*
+  commentId: Overload:Global.LockableDoorController.IsInteractionActive
+  name: IsInteractionActive
+  nameWithType: LockableDoorController.IsInteractionActive
+  fullName: LockableDoorController.IsInteractionActive

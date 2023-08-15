@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SwimMovementProperties
+  commentId: T:Global.SwimMovementProperties
+  id: SwimMovementProperties
+  parent: Global
+  children:
+  - Global.SwimMovementProperties.AcceleratorX
+  - Global.SwimMovementProperties.AcceleratorY
+  - Global.SwimMovementProperties.CanSuffocate
+  - Global.SwimMovementProperties.Charge
+  - Global.SwimMovementProperties.SuffocationTime
+  - Global.SwimMovementProperties.SurfaceBouyancyPercentage
+  langs:
+  - csharp
+  - vb
+  name: SwimMovementProperties
+  nameWithType: SwimMovementProperties
+  fullName: SwimMovementProperties
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwimMovementProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SwimMovementProperties
+    content.vb: >-
+      <Serializable>
+
+      Public Class SwimMovementProperties
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.SwimMovementProperties.AcceleratorX
+  commentId: F:Global.SwimMovementProperties.AcceleratorX
+  id: AcceleratorX
+  parent: Global.SwimMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: AcceleratorX
+  nameWithType: SwimMovementProperties.AcceleratorX
+  fullName: SwimMovementProperties.AcceleratorX
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AcceleratorX
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Accelerator AcceleratorX
+    return:
+      type: Global.Accelerator
+    content.vb: Public AcceleratorX As Accelerator
+- uid: Global.SwimMovementProperties.AcceleratorY
+  commentId: F:Global.SwimMovementProperties.AcceleratorY
+  id: AcceleratorY
+  parent: Global.SwimMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: AcceleratorY
+  nameWithType: SwimMovementProperties.AcceleratorY
+  fullName: SwimMovementProperties.AcceleratorY
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AcceleratorY
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Accelerator AcceleratorY
+    return:
+      type: Global.Accelerator
+    content.vb: Public AcceleratorY As Accelerator
+- uid: Global.SwimMovementProperties.SurfaceBouyancyPercentage
+  commentId: F:Global.SwimMovementProperties.SurfaceBouyancyPercentage
+  id: SurfaceBouyancyPercentage
+  parent: Global.SwimMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: SurfaceBouyancyPercentage
+  nameWithType: SwimMovementProperties.SurfaceBouyancyPercentage
+  fullName: SwimMovementProperties.SurfaceBouyancyPercentage
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SurfaceBouyancyPercentage
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Number between [0,1] that represents what percent of the fish sits above the surface of the water when idle at surface")]
+
+      public float SurfaceBouyancyPercentage
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Number between [0,1] that represents what percent of the fish sits above the surface of the water when idle at surface")>
+
+      Public SurfaceBouyancyPercentage As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Number between [0,1] that represents what percent of the fish sits above the surface of the water when idle at surface
+- uid: Global.SwimMovementProperties.Charge
+  commentId: F:Global.SwimMovementProperties.Charge
+  id: Charge
+  parent: Global.SwimMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: Charge
+  nameWithType: SwimMovementProperties.Charge
+  fullName: SwimMovementProperties.Charge
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Charge
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public SwimMovementController.SwimmingChargeProps Charge
+    return:
+      type: Global.SwimMovementController.SwimmingChargeProps
+    content.vb: Public Charge As SwimMovementController.SwimmingChargeProps
+- uid: Global.SwimMovementProperties.CanSuffocate
+  commentId: F:Global.SwimMovementProperties.CanSuffocate
+  id: CanSuffocate
+  parent: Global.SwimMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: CanSuffocate
+  nameWithType: SwimMovementProperties.CanSuffocate
+  fullName: SwimMovementProperties.CanSuffocate
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CanSuffocate
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool CanSuffocate
+    return:
+      type: System.Boolean
+    content.vb: Public CanSuffocate As Boolean
+- uid: Global.SwimMovementProperties.SuffocationTime
+  commentId: F:Global.SwimMovementProperties.SuffocationTime
+  id: SuffocationTime
+  parent: Global.SwimMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: SuffocationTime
+  nameWithType: SwimMovementProperties.SuffocationTime
+  fullName: SwimMovementProperties.SuffocationTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SuffocationTime
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/SwimMovementController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("CanSuffocate", 1)]
+
+      public float SuffocationTime
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("CanSuffocate", 1)>
+
+      Public SuffocationTime As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: CanSuffocate
+    - type: System.Int32
+      value: 1
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Accelerator
+  commentId: T:Global.Accelerator
+  name: Accelerator
+  nameWithType: Accelerator
+  fullName: Accelerator
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.SwimMovementController.SwimmingChargeProps
+  commentId: T:Global.SwimMovementController.SwimmingChargeProps
+  name: SwimMovementController.SwimmingChargeProps
+  nameWithType: SwimMovementController.SwimmingChargeProps
+  fullName: SwimMovementController.SwimmingChargeProps
+  spec.csharp:
+  - uid: Global.SwimMovementController
+    name: SwimMovementController
+  - name: .
+  - uid: Global.SwimMovementController.SwimmingChargeProps
+    name: SwimmingChargeProps
+  spec.vb:
+  - uid: Global.SwimMovementController
+    name: SwimMovementController
+  - name: .
+  - uid: Global.SwimMovementController.SwimmingChargeProps
+    name: SwimmingChargeProps
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

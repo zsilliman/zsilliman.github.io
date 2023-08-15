@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.StateMachine`1.Transition
+  commentId: T:Global.StateMachine`1.Transition
+  id: StateMachine`1.Transition
+  parent: Global
+  children:
+  - Global.StateMachine`1.Transition.from
+  - Global.StateMachine`1.Transition.to
+  langs:
+  - csharp
+  - vb
+  name: StateMachine<T>.Transition
+  nameWithType: StateMachine<T>.Transition
+  fullName: StateMachine<T>.Transition
+  type: Struct
+  source:
+    remote:
+      path: Assets/Framework/Util/StateMachine.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Transition
+    path: ../Assets/Framework/Util/StateMachine.cs
+    startLine: 221
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public struct StateMachine<T>.Transition
+    content.vb: Public Structure StateMachine(Of T).Transition
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  nameWithType.vb: StateMachine(Of T).Transition
+  fullName.vb: StateMachine(Of T).Transition
+  name.vb: StateMachine(Of T).Transition
+- uid: Global.StateMachine`1.Transition.from
+  commentId: F:Global.StateMachine`1.Transition.from
+  id: from
+  parent: Global.StateMachine`1.Transition
+  langs:
+  - csharp
+  - vb
+  name: from
+  nameWithType: StateMachine<T>.Transition.from
+  fullName: StateMachine<T>.Transition.from
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/StateMachine.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: from
+    path: ../Assets/Framework/Util/StateMachine.cs
+    startLine: 222
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public T from
+    return:
+      type: '{T}'
+    content.vb: Public from As T
+  nameWithType.vb: StateMachine(Of T).Transition.from
+  fullName.vb: StateMachine(Of T).Transition.from
+- uid: Global.StateMachine`1.Transition.to
+  commentId: F:Global.StateMachine`1.Transition.to
+  id: to
+  parent: Global.StateMachine`1.Transition
+  langs:
+  - csharp
+  - vb
+  name: to
+  nameWithType: StateMachine<T>.Transition.to
+  fullName: StateMachine<T>.Transition.to
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/StateMachine.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: to
+    path: ../Assets/Framework/Util/StateMachine.cs
+    startLine: 223
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public T to
+    return:
+      type: '{T}'
+    content.vb: Public [to] As T
+  nameWithType.vb: StateMachine(Of T).Transition.to
+  fullName.vb: StateMachine(Of T).Transition.to
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

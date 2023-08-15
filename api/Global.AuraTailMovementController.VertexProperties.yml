@@ -1,0 +1,183 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraTailMovementController.VertexProperties
+  commentId: T:Global.AuraTailMovementController.VertexProperties
+  id: AuraTailMovementController.VertexProperties
+  parent: Global
+  children:
+  - Global.AuraTailMovementController.VertexProperties.#ctor(System.Single)
+  - Global.AuraTailMovementController.VertexProperties.SpawnTime
+  langs:
+  - csharp
+  - vb
+  name: AuraTailMovementController.VertexProperties
+  nameWithType: AuraTailMovementController.VertexProperties
+  fullName: AuraTailMovementController.VertexProperties
+  type: Struct
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraTailMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: VertexProperties
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraTailMovementController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct AuraTailMovementController.VertexProperties
+    content.vb: >-
+      <Serializable>
+
+      Public Structure AuraTailMovementController.VertexProperties
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.AuraTailMovementController.VertexProperties.SpawnTime
+  commentId: F:Global.AuraTailMovementController.VertexProperties.SpawnTime
+  id: SpawnTime
+  parent: Global.AuraTailMovementController.VertexProperties
+  langs:
+  - csharp
+  - vb
+  name: SpawnTime
+  nameWithType: AuraTailMovementController.VertexProperties.SpawnTime
+  fullName: AuraTailMovementController.VertexProperties.SpawnTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraTailMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnTime
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraTailMovementController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float SpawnTime
+    return:
+      type: System.Single
+    content.vb: Public SpawnTime As Single
+- uid: Global.AuraTailMovementController.VertexProperties.#ctor(System.Single)
+  commentId: M:Global.AuraTailMovementController.VertexProperties.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: Global.AuraTailMovementController.VertexProperties
+  langs:
+  - csharp
+  - vb
+  name: VertexProperties(float)
+  nameWithType: AuraTailMovementController.VertexProperties.VertexProperties(float)
+  fullName: AuraTailMovementController.VertexProperties.VertexProperties(float)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraTailMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraTailMovementController.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public VertexProperties(float spawnTime)
+    parameters:
+    - id: spawnTime
+      type: System.Single
+    content.vb: Public Sub New(spawnTime As Single)
+  overload: Global.AuraTailMovementController.VertexProperties.#ctor*
+  nameWithType.vb: AuraTailMovementController.VertexProperties.New(Single)
+  fullName.vb: AuraTailMovementController.VertexProperties.New(Single)
+  name.vb: New(Single)
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.AuraTailMovementController.VertexProperties.#ctor*
+  commentId: Overload:Global.AuraTailMovementController.VertexProperties.#ctor
+  name: VertexProperties
+  nameWithType: AuraTailMovementController.VertexProperties.VertexProperties
+  fullName: AuraTailMovementController.VertexProperties.VertexProperties
+  nameWithType.vb: AuraTailMovementController.VertexProperties.New
+  fullName.vb: AuraTailMovementController.VertexProperties.New
+  name.vb: New

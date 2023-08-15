@@ -1,0 +1,1490 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.GlobalProperties
+  commentId: T:Global.GlobalProperties
+  id: GlobalProperties
+  parent: Global
+  children:
+  - Global.GlobalProperties.AuraDisableOnDischargeDuration
+  - Global.GlobalProperties.AuraFlashColor
+  - Global.GlobalProperties.AuraPrefab
+  - Global.GlobalProperties.AuraSegmentSpacing
+  - Global.GlobalProperties.BlackAuraFlashColor
+  - Global.GlobalProperties.BlackAuraPrefab
+  - Global.GlobalProperties.ContainsTileBaseKey(UnityEngine.Tilemaps.TileBase)
+  - Global.GlobalProperties.CurrentSceneAssetPath
+  - Global.GlobalProperties.defaultTileData
+  - Global.GlobalProperties.DoorPrefab
+  - Global.GlobalProperties.EditorPreviewAuraSegmentSpacing
+  - Global.GlobalProperties.EnableSaveGame
+  - Global.GlobalProperties.EnemyUICanvas
+  - Global.GlobalProperties.FPS
+  - Global.GlobalProperties.GetInstanceEditorAgnostic
+  - Global.GlobalProperties.GetSolidTileBase
+  - Global.GlobalProperties.GetTileData(UnityEngine.Tilemaps.TileBase)
+  - Global.GlobalProperties.GetTileDataStatic(UnityEngine.Tilemaps.TileBase)
+  - Global.GlobalProperties.HomeSection
+  - Global.GlobalProperties.Instance
+  - Global.GlobalProperties.IslandProps
+  - Global.GlobalProperties.LastSceneAssetPath
+  - Global.GlobalProperties.MidwaySection
+  - Global.GlobalProperties.PlainsProps
+  - Global.GlobalProperties.PlayerPortalPrefab
+  - Global.GlobalProperties.PlayerSpawnPrefab
+  - Global.GlobalProperties.RandomizeSeed
+  - Global.GlobalProperties.RandomSeed
+  - Global.GlobalProperties.SaveFilename
+  - Global.GlobalProperties.SectionSpawnLocation
+  - Global.GlobalProperties.tileData
+  - Global.GlobalProperties.UseMoreThanTwoPointsForLine
+  - Global.GlobalProperties.VillageProps
+  langs:
+  - csharp
+  - vb
+  name: GlobalProperties
+  nameWithType: GlobalProperties
+  fullName: GlobalProperties
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GlobalProperties
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class GlobalProperties : MonoBehaviour'
+    content.vb: Public Class GlobalProperties Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.GlobalProperties.Instance
+  commentId: F:Global.GlobalProperties.Instance
+  id: Instance
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: GlobalProperties.Instance
+  fullName: GlobalProperties.Instance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Instance
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static GlobalProperties Instance
+    return:
+      type: Global.GlobalProperties
+    content.vb: Public Shared Instance As GlobalProperties
+- uid: Global.GlobalProperties.EditorPreviewAuraSegmentSpacing
+  commentId: F:Global.GlobalProperties.EditorPreviewAuraSegmentSpacing
+  id: EditorPreviewAuraSegmentSpacing
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: EditorPreviewAuraSegmentSpacing
+  nameWithType: GlobalProperties.EditorPreviewAuraSegmentSpacing
+  fullName: GlobalProperties.EditorPreviewAuraSegmentSpacing
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EditorPreviewAuraSegmentSpacing
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int EditorPreviewAuraSegmentSpacing
+    return:
+      type: System.Int32
+    content.vb: Public Shared EditorPreviewAuraSegmentSpacing As Integer
+- uid: Global.GlobalProperties.LastSceneAssetPath
+  commentId: F:Global.GlobalProperties.LastSceneAssetPath
+  id: LastSceneAssetPath
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: LastSceneAssetPath
+  nameWithType: GlobalProperties.LastSceneAssetPath
+  fullName: GlobalProperties.LastSceneAssetPath
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LastSceneAssetPath
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static string LastSceneAssetPath
+    return:
+      type: System.String
+    content.vb: Public Shared LastSceneAssetPath As String
+- uid: Global.GlobalProperties.CurrentSceneAssetPath
+  commentId: P:Global.GlobalProperties.CurrentSceneAssetPath
+  id: CurrentSceneAssetPath
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: CurrentSceneAssetPath
+  nameWithType: GlobalProperties.CurrentSceneAssetPath
+  fullName: GlobalProperties.CurrentSceneAssetPath
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CurrentSceneAssetPath
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static string CurrentSceneAssetPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CurrentSceneAssetPath As String
+  overload: Global.GlobalProperties.CurrentSceneAssetPath*
+- uid: Global.GlobalProperties.FPS
+  commentId: F:Global.GlobalProperties.FPS
+  id: FPS
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: FPS
+  nameWithType: GlobalProperties.FPS
+  fullName: GlobalProperties.FPS
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FPS
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Game Settings")]
+
+      public int FPS
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Header("Game Settings")>
+
+      Public FPS As Integer
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Game Settings
+- uid: Global.GlobalProperties.tileData
+  commentId: F:Global.GlobalProperties.tileData
+  id: tileData
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: tileData
+  nameWithType: GlobalProperties.tileData
+  fullName: GlobalProperties.tileData
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: tileData
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [Header("Tile Data")]
+
+      public List<TileData> tileData
+    return:
+      type: System.Collections.Generic.List{TileData}
+    content.vb: >-
+      <SerializeField>
+
+      <Header("Tile Data")>
+
+      Public tileData As List(Of TileData)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Tile Data
+- uid: Global.GlobalProperties.defaultTileData
+  commentId: F:Global.GlobalProperties.defaultTileData
+  id: defaultTileData
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: defaultTileData
+  nameWithType: GlobalProperties.defaultTileData
+  fullName: GlobalProperties.defaultTileData
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: defaultTileData
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TileData defaultTileData
+    return:
+      type: Global.TileData
+    content.vb: Public defaultTileData As TileData
+- uid: Global.GlobalProperties.AuraPrefab
+  commentId: F:Global.GlobalProperties.AuraPrefab
+  id: AuraPrefab
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: AuraPrefab
+  nameWithType: GlobalProperties.AuraPrefab
+  fullName: GlobalProperties.AuraPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraPrefab
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Aura Prefabs")]
+
+      public GameObject AuraPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <Header("Aura Prefabs")>
+
+      Public AuraPrefab As GameObject
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura Prefabs
+- uid: Global.GlobalProperties.BlackAuraPrefab
+  commentId: F:Global.GlobalProperties.BlackAuraPrefab
+  id: BlackAuraPrefab
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: BlackAuraPrefab
+  nameWithType: GlobalProperties.BlackAuraPrefab
+  fullName: GlobalProperties.BlackAuraPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlackAuraPrefab
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject BlackAuraPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public BlackAuraPrefab As GameObject
+- uid: Global.GlobalProperties.AuraFlashColor
+  commentId: F:Global.GlobalProperties.AuraFlashColor
+  id: AuraFlashColor
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: AuraFlashColor
+  nameWithType: GlobalProperties.AuraFlashColor
+  fullName: GlobalProperties.AuraFlashColor
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraFlashColor
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Color AuraFlashColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public AuraFlashColor As Color
+- uid: Global.GlobalProperties.BlackAuraFlashColor
+  commentId: F:Global.GlobalProperties.BlackAuraFlashColor
+  id: BlackAuraFlashColor
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: BlackAuraFlashColor
+  nameWithType: GlobalProperties.BlackAuraFlashColor
+  fullName: GlobalProperties.BlackAuraFlashColor
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlackAuraFlashColor
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Color BlackAuraFlashColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public BlackAuraFlashColor As Color
+- uid: Global.GlobalProperties.AuraSegmentSpacing
+  commentId: F:Global.GlobalProperties.AuraSegmentSpacing
+  id: AuraSegmentSpacing
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: AuraSegmentSpacing
+  nameWithType: GlobalProperties.AuraSegmentSpacing
+  fullName: GlobalProperties.AuraSegmentSpacing
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraSegmentSpacing
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int AuraSegmentSpacing
+    return:
+      type: System.Int32
+    content.vb: Public AuraSegmentSpacing As Integer
+- uid: Global.GlobalProperties.AuraDisableOnDischargeDuration
+  commentId: F:Global.GlobalProperties.AuraDisableOnDischargeDuration
+  id: AuraDisableOnDischargeDuration
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: AuraDisableOnDischargeDuration
+  nameWithType: GlobalProperties.AuraDisableOnDischargeDuration
+  fullName: GlobalProperties.AuraDisableOnDischargeDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraDisableOnDischargeDuration
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float AuraDisableOnDischargeDuration
+    return:
+      type: System.Single
+    content.vb: Public AuraDisableOnDischargeDuration As Single
+- uid: Global.GlobalProperties.UseMoreThanTwoPointsForLine
+  commentId: F:Global.GlobalProperties.UseMoreThanTwoPointsForLine
+  id: UseMoreThanTwoPointsForLine
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: UseMoreThanTwoPointsForLine
+  nameWithType: GlobalProperties.UseMoreThanTwoPointsForLine
+  fullName: GlobalProperties.UseMoreThanTwoPointsForLine
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UseMoreThanTwoPointsForLine
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool UseMoreThanTwoPointsForLine
+    return:
+      type: System.Boolean
+    content.vb: Public UseMoreThanTwoPointsForLine As Boolean
+- uid: Global.GlobalProperties.EnemyUICanvas
+  commentId: F:Global.GlobalProperties.EnemyUICanvas
+  id: EnemyUICanvas
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: EnemyUICanvas
+  nameWithType: GlobalProperties.EnemyUICanvas
+  fullName: GlobalProperties.EnemyUICanvas
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EnemyUICanvas
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Modular Enemies")]
+
+      public GameObject EnemyUICanvas
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <Header("Modular Enemies")>
+
+      Public EnemyUICanvas As GameObject
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Modular Enemies
+- uid: Global.GlobalProperties.DoorPrefab
+  commentId: F:Global.GlobalProperties.DoorPrefab
+  id: DoorPrefab
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: DoorPrefab
+  nameWithType: GlobalProperties.DoorPrefab
+  fullName: GlobalProperties.DoorPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DoorPrefab
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 86
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Section Properties")]
+
+      public GameObject DoorPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <Header("Section Properties")>
+
+      Public DoorPrefab As GameObject
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Section Properties
+- uid: Global.GlobalProperties.EnableSaveGame
+  commentId: F:Global.GlobalProperties.EnableSaveGame
+  id: EnableSaveGame
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: EnableSaveGame
+  nameWithType: GlobalProperties.EnableSaveGame
+  fullName: GlobalProperties.EnableSaveGame
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EnableSaveGame
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Save Game")]
+
+      public bool EnableSaveGame
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Save Game")>
+
+      Public EnableSaveGame As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Save Game
+- uid: Global.GlobalProperties.SaveFilename
+  commentId: F:Global.GlobalProperties.SaveFilename
+  id: SaveFilename
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: SaveFilename
+  nameWithType: GlobalProperties.SaveFilename
+  fullName: GlobalProperties.SaveFilename
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SaveFilename
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public string SaveFilename
+    return:
+      type: System.String
+    content.vb: Public SaveFilename As String
+- uid: Global.GlobalProperties.RandomizeSeed
+  commentId: F:Global.GlobalProperties.RandomizeSeed
+  id: RandomizeSeed
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: RandomizeSeed
+  nameWithType: GlobalProperties.RandomizeSeed
+  fullName: GlobalProperties.RandomizeSeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RandomizeSeed
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 93
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Random")]
+
+      public bool RandomizeSeed
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Random")>
+
+      Public RandomizeSeed As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Random
+- uid: Global.GlobalProperties.RandomSeed
+  commentId: F:Global.GlobalProperties.RandomSeed
+  id: RandomSeed
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: RandomSeed
+  nameWithType: GlobalProperties.RandomSeed
+  fullName: GlobalProperties.RandomSeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RandomSeed
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("RandomizeSeed", 0)]
+
+      public int RandomSeed
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ConditionalShow("RandomizeSeed", 0)>
+
+      Public RandomSeed As Integer
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: RandomizeSeed
+    - type: System.Int32
+      value: 0
+- uid: Global.GlobalProperties.PlayerSpawnPrefab
+  commentId: F:Global.GlobalProperties.PlayerSpawnPrefab
+  id: PlayerSpawnPrefab
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: PlayerSpawnPrefab
+  nameWithType: GlobalProperties.PlayerSpawnPrefab
+  fullName: GlobalProperties.PlayerSpawnPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerSpawnPrefab
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Section Generation")]
+
+      public GameObject PlayerSpawnPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <Header("Section Generation")>
+
+      Public PlayerSpawnPrefab As GameObject
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Section Generation
+- uid: Global.GlobalProperties.PlayerPortalPrefab
+  commentId: F:Global.GlobalProperties.PlayerPortalPrefab
+  id: PlayerPortalPrefab
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: PlayerPortalPrefab
+  nameWithType: GlobalProperties.PlayerPortalPrefab
+  fullName: GlobalProperties.PlayerPortalPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerPortalPrefab
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 99
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject PlayerPortalPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public PlayerPortalPrefab As GameObject
+- uid: Global.GlobalProperties.SectionSpawnLocation
+  commentId: F:Global.GlobalProperties.SectionSpawnLocation
+  id: SectionSpawnLocation
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: SectionSpawnLocation
+  nameWithType: GlobalProperties.SectionSpawnLocation
+  fullName: GlobalProperties.SectionSpawnLocation
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionSpawnLocation
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int SectionSpawnLocation
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public SectionSpawnLocation As Vector2Int
+- uid: Global.GlobalProperties.PlainsProps
+  commentId: F:Global.GlobalProperties.PlainsProps
+  id: PlainsProps
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: PlainsProps
+  nameWithType: GlobalProperties.PlainsProps
+  fullName: GlobalProperties.PlainsProps
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlainsProps
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 101
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public PlainsGenerator.PlainsProperties PlainsProps
+    return:
+      type: Global.PlainsGenerator.PlainsProperties
+    content.vb: Public PlainsProps As PlainsGenerator.PlainsProperties
+- uid: Global.GlobalProperties.IslandProps
+  commentId: F:Global.GlobalProperties.IslandProps
+  id: IslandProps
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: IslandProps
+  nameWithType: GlobalProperties.IslandProps
+  fullName: GlobalProperties.IslandProps
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IslandProps
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 102
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IslandsGenerator.IslandProperties IslandProps
+    return:
+      type: Global.IslandsGenerator.IslandProperties
+    content.vb: Public IslandProps As IslandsGenerator.IslandProperties
+- uid: Global.GlobalProperties.VillageProps
+  commentId: F:Global.GlobalProperties.VillageProps
+  id: VillageProps
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: VillageProps
+  nameWithType: GlobalProperties.VillageProps
+  fullName: GlobalProperties.VillageProps
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: VillageProps
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 103
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public VillageGenerator.VillageProperties VillageProps
+    return:
+      type: Global.VillageGenerator.VillageProperties
+    content.vb: Public VillageProps As VillageGenerator.VillageProperties
+- uid: Global.GlobalProperties.HomeSection
+  commentId: F:Global.GlobalProperties.HomeSection
+  id: HomeSection
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: HomeSection
+  nameWithType: GlobalProperties.HomeSection
+  fullName: GlobalProperties.HomeSection
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HomeSection
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 105
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Section HomeSection
+    return:
+      type: Global.Section
+    content.vb: >-
+      <HideInInspector>
+
+      Public HomeSection As Section
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.GlobalProperties.MidwaySection
+  commentId: F:Global.GlobalProperties.MidwaySection
+  id: MidwaySection
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: MidwaySection
+  nameWithType: GlobalProperties.MidwaySection
+  fullName: GlobalProperties.MidwaySection
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MidwaySection
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Section MidwaySection
+    return:
+      type: Global.Section
+    content.vb: >-
+      <HideInInspector>
+
+      Public MidwaySection As Section
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.GlobalProperties.GetInstanceEditorAgnostic
+  commentId: M:Global.GlobalProperties.GetInstanceEditorAgnostic
+  id: GetInstanceEditorAgnostic
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: GetInstanceEditorAgnostic()
+  nameWithType: GlobalProperties.GetInstanceEditorAgnostic()
+  fullName: GlobalProperties.GetInstanceEditorAgnostic()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetInstanceEditorAgnostic
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 109
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static GlobalProperties GetInstanceEditorAgnostic()
+    return:
+      type: Global.GlobalProperties
+    content.vb: Public Shared Function GetInstanceEditorAgnostic() As GlobalProperties
+  overload: Global.GlobalProperties.GetInstanceEditorAgnostic*
+- uid: Global.GlobalProperties.GetSolidTileBase
+  commentId: M:Global.GlobalProperties.GetSolidTileBase
+  id: GetSolidTileBase
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: GetSolidTileBase()
+  nameWithType: GlobalProperties.GetSolidTileBase()
+  fullName: GlobalProperties.GetSolidTileBase()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetSolidTileBase
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 152
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TileBase GetSolidTileBase()
+    return:
+      type: UnityEngine.Tilemaps.TileBase
+    content.vb: Public Function GetSolidTileBase() As TileBase
+  overload: Global.GlobalProperties.GetSolidTileBase*
+- uid: Global.GlobalProperties.ContainsTileBaseKey(UnityEngine.Tilemaps.TileBase)
+  commentId: M:Global.GlobalProperties.ContainsTileBaseKey(UnityEngine.Tilemaps.TileBase)
+  id: ContainsTileBaseKey(UnityEngine.Tilemaps.TileBase)
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: ContainsTileBaseKey(TileBase)
+  nameWithType: GlobalProperties.ContainsTileBaseKey(TileBase)
+  fullName: GlobalProperties.ContainsTileBaseKey(UnityEngine.Tilemaps.TileBase)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ContainsTileBaseKey
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 175
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ContainsTileBaseKey(TileBase key)
+    parameters:
+    - id: key
+      type: UnityEngine.Tilemaps.TileBase
+    return:
+      type: System.Boolean
+    content.vb: Public Function ContainsTileBaseKey(key As TileBase) As Boolean
+  overload: Global.GlobalProperties.ContainsTileBaseKey*
+- uid: Global.GlobalProperties.GetTileDataStatic(UnityEngine.Tilemaps.TileBase)
+  commentId: M:Global.GlobalProperties.GetTileDataStatic(UnityEngine.Tilemaps.TileBase)
+  id: GetTileDataStatic(UnityEngine.Tilemaps.TileBase)
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: GetTileDataStatic(TileBase)
+  nameWithType: GlobalProperties.GetTileDataStatic(TileBase)
+  fullName: GlobalProperties.GetTileDataStatic(UnityEngine.Tilemaps.TileBase)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileDataStatic
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 184
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static TileData GetTileDataStatic(TileBase tile)
+    parameters:
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    return:
+      type: Global.TileData
+    content.vb: Public Shared Function GetTileDataStatic(tile As TileBase) As TileData
+  overload: Global.GlobalProperties.GetTileDataStatic*
+- uid: Global.GlobalProperties.GetTileData(UnityEngine.Tilemaps.TileBase)
+  commentId: M:Global.GlobalProperties.GetTileData(UnityEngine.Tilemaps.TileBase)
+  id: GetTileData(UnityEngine.Tilemaps.TileBase)
+  parent: Global.GlobalProperties
+  langs:
+  - csharp
+  - vb
+  name: GetTileData(TileBase)
+  nameWithType: GlobalProperties.GetTileData(TileBase)
+  fullName: GlobalProperties.GetTileData(UnityEngine.Tilemaps.TileBase)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/GlobalProperties.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileData
+    path: ../Assets/Objects & Components/GameState/GlobalProperties.cs
+    startLine: 198
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TileData GetTileData(TileBase tile)
+    parameters:
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    return:
+      type: Global.TileData
+    content.vb: Public Function GetTileData(tile As TileBase) As TileData
+  overload: Global.GlobalProperties.GetTileData*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.GlobalProperties
+  commentId: T:Global.GlobalProperties
+  name: GlobalProperties
+  nameWithType: GlobalProperties
+  fullName: GlobalProperties
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.GlobalProperties.CurrentSceneAssetPath*
+  commentId: Overload:Global.GlobalProperties.CurrentSceneAssetPath
+  name: CurrentSceneAssetPath
+  nameWithType: GlobalProperties.CurrentSceneAssetPath
+  fullName: GlobalProperties.CurrentSceneAssetPath
+- uid: System.Collections.Generic.List{TileData}
+  commentId: T:System.Collections.Generic.List{TileData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TileData>
+  nameWithType: List<TileData>
+  fullName: System.Collections.Generic.List<TileData>
+  nameWithType.vb: List(Of TileData)
+  fullName.vb: System.Collections.Generic.List(Of TileData)
+  name.vb: List(Of TileData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.TileData
+    name: TileData
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.TileData
+    name: TileData
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.TileData
+  commentId: T:Global.TileData
+  name: TileData
+  nameWithType: TileData
+  fullName: TileData
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: Global.PlainsGenerator.PlainsProperties
+  commentId: T:Global.PlainsGenerator.PlainsProperties
+  name: PlainsGenerator.PlainsProperties
+  nameWithType: PlainsGenerator.PlainsProperties
+  fullName: PlainsGenerator.PlainsProperties
+  spec.csharp:
+  - uid: Global.PlainsGenerator
+    name: PlainsGenerator
+  - name: .
+  - uid: Global.PlainsGenerator.PlainsProperties
+    name: PlainsProperties
+  spec.vb:
+  - uid: Global.PlainsGenerator
+    name: PlainsGenerator
+  - name: .
+  - uid: Global.PlainsGenerator.PlainsProperties
+    name: PlainsProperties
+- uid: Global.IslandsGenerator.IslandProperties
+  commentId: T:Global.IslandsGenerator.IslandProperties
+  name: IslandsGenerator.IslandProperties
+  nameWithType: IslandsGenerator.IslandProperties
+  fullName: IslandsGenerator.IslandProperties
+  spec.csharp:
+  - uid: Global.IslandsGenerator
+    name: IslandsGenerator
+  - name: .
+  - uid: Global.IslandsGenerator.IslandProperties
+    name: IslandProperties
+  spec.vb:
+  - uid: Global.IslandsGenerator
+    name: IslandsGenerator
+  - name: .
+  - uid: Global.IslandsGenerator.IslandProperties
+    name: IslandProperties
+- uid: Global.VillageGenerator.VillageProperties
+  commentId: T:Global.VillageGenerator.VillageProperties
+  name: VillageGenerator.VillageProperties
+  nameWithType: VillageGenerator.VillageProperties
+  fullName: VillageGenerator.VillageProperties
+  spec.csharp:
+  - uid: Global.VillageGenerator
+    name: VillageGenerator
+  - name: .
+  - uid: Global.VillageGenerator.VillageProperties
+    name: VillageProperties
+  spec.vb:
+  - uid: Global.VillageGenerator
+    name: VillageGenerator
+  - name: .
+  - uid: Global.VillageGenerator.VillageProperties
+    name: VillageProperties
+- uid: Global.Section
+  commentId: T:Global.Section
+  name: Section
+  nameWithType: Section
+  fullName: Section
+- uid: Global.GlobalProperties.GetInstanceEditorAgnostic*
+  commentId: Overload:Global.GlobalProperties.GetInstanceEditorAgnostic
+  name: GetInstanceEditorAgnostic
+  nameWithType: GlobalProperties.GetInstanceEditorAgnostic
+  fullName: GlobalProperties.GetInstanceEditorAgnostic
+- uid: Global.GlobalProperties.GetSolidTileBase*
+  commentId: Overload:Global.GlobalProperties.GetSolidTileBase
+  name: GetSolidTileBase
+  nameWithType: GlobalProperties.GetSolidTileBase
+  fullName: GlobalProperties.GetSolidTileBase
+- uid: UnityEngine.Tilemaps.TileBase
+  commentId: T:UnityEngine.Tilemaps.TileBase
+  parent: UnityEngine.Tilemaps
+  isExternal: true
+  name: TileBase
+  nameWithType: TileBase
+  fullName: UnityEngine.Tilemaps.TileBase
+- uid: UnityEngine.Tilemaps
+  commentId: N:UnityEngine.Tilemaps
+  isExternal: true
+  name: UnityEngine.Tilemaps
+  nameWithType: UnityEngine.Tilemaps
+  fullName: UnityEngine.Tilemaps
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Tilemaps
+    name: Tilemaps
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Tilemaps
+    name: Tilemaps
+    isExternal: true
+- uid: Global.GlobalProperties.ContainsTileBaseKey*
+  commentId: Overload:Global.GlobalProperties.ContainsTileBaseKey
+  name: ContainsTileBaseKey
+  nameWithType: GlobalProperties.ContainsTileBaseKey
+  fullName: GlobalProperties.ContainsTileBaseKey
+- uid: Global.GlobalProperties.GetTileDataStatic*
+  commentId: Overload:Global.GlobalProperties.GetTileDataStatic
+  name: GetTileDataStatic
+  nameWithType: GlobalProperties.GetTileDataStatic
+  fullName: GlobalProperties.GetTileDataStatic
+- uid: Global.GlobalProperties.GetTileData*
+  commentId: Overload:Global.GlobalProperties.GetTileData
+  name: GetTileData
+  nameWithType: GlobalProperties.GetTileData
+  fullName: GlobalProperties.GetTileData

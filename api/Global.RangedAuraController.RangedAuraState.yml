@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RangedAuraController.RangedAuraState
+  commentId: T:Global.RangedAuraController.RangedAuraState
+  id: RangedAuraController.RangedAuraState
+  parent: Global
+  children:
+  - Global.RangedAuraController.RangedAuraState.Full
+  - Global.RangedAuraController.RangedAuraState.Waning
+  - Global.RangedAuraController.RangedAuraState.Waxing
+  langs:
+  - csharp
+  - vb
+  name: RangedAuraController.RangedAuraState
+  nameWithType: RangedAuraController.RangedAuraState
+  fullName: RangedAuraController.RangedAuraState
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RangedAuraState
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum RangedAuraController.RangedAuraState
+    content.vb: Public Enum RangedAuraController.RangedAuraState
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.RangedAuraController.RangedAuraState.Waxing
+  commentId: F:Global.RangedAuraController.RangedAuraState.Waxing
+  id: Waxing
+  parent: Global.RangedAuraController.RangedAuraState
+  langs:
+  - csharp
+  - vb
+  name: Waxing
+  nameWithType: RangedAuraController.RangedAuraState.Waxing
+  fullName: RangedAuraController.RangedAuraState.Waxing
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Waxing
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Waxing = 0
+    return:
+      type: Global.RangedAuraController.RangedAuraState
+- uid: Global.RangedAuraController.RangedAuraState.Full
+  commentId: F:Global.RangedAuraController.RangedAuraState.Full
+  id: Full
+  parent: Global.RangedAuraController.RangedAuraState
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: RangedAuraController.RangedAuraState.Full
+  fullName: RangedAuraController.RangedAuraState.Full
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Full
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Full = 1
+    return:
+      type: Global.RangedAuraController.RangedAuraState
+- uid: Global.RangedAuraController.RangedAuraState.Waning
+  commentId: F:Global.RangedAuraController.RangedAuraState.Waning
+  id: Waning
+  parent: Global.RangedAuraController.RangedAuraState
+  langs:
+  - csharp
+  - vb
+  name: Waning
+  nameWithType: RangedAuraController.RangedAuraState.Waning
+  fullName: RangedAuraController.RangedAuraState.Waning
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Waning
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Waning = 2
+    return:
+      type: Global.RangedAuraController.RangedAuraState
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.RangedAuraController.RangedAuraState
+  commentId: T:Global.RangedAuraController.RangedAuraState
+  name: RangedAuraController.RangedAuraState
+  nameWithType: RangedAuraController.RangedAuraState
+  fullName: RangedAuraController.RangedAuraState
+  spec.csharp:
+  - uid: Global.RangedAuraController
+    name: RangedAuraController
+  - name: .
+  - uid: Global.RangedAuraController.RangedAuraState
+    name: RangedAuraState
+  spec.vb:
+  - uid: Global.RangedAuraController
+    name: RangedAuraController
+  - name: .
+  - uid: Global.RangedAuraController.RangedAuraState
+    name: RangedAuraState

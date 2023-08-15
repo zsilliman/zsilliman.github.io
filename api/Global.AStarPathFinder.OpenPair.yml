@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AStarPathFinder.OpenPair
+  commentId: T:Global.AStarPathFinder.OpenPair
+  id: AStarPathFinder.OpenPair
+  parent: Global
+  children:
+  - Global.AStarPathFinder.OpenPair.f
+  - Global.AStarPathFinder.OpenPair.index
+  langs:
+  - csharp
+  - vb
+  name: AStarPathFinder.OpenPair
+  nameWithType: AStarPathFinder.OpenPair
+  fullName: AStarPathFinder.OpenPair
+  type: Struct
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OpenPair
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected struct AStarPathFinder.OpenPair
+    content.vb: Protected Structure AStarPathFinder.OpenPair
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AStarPathFinder.OpenPair.f
+  commentId: F:Global.AStarPathFinder.OpenPair.f
+  id: f
+  parent: Global.AStarPathFinder.OpenPair
+  langs:
+  - csharp
+  - vb
+  name: f
+  nameWithType: AStarPathFinder.OpenPair.f
+  fullName: AStarPathFinder.OpenPair.f
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: f
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float f
+    return:
+      type: System.Single
+    content.vb: Public f As Single
+- uid: Global.AStarPathFinder.OpenPair.index
+  commentId: F:Global.AStarPathFinder.OpenPair.index
+  id: index
+  parent: Global.AStarPathFinder.OpenPair
+  langs:
+  - csharp
+  - vb
+  name: index
+  nameWithType: AStarPathFinder.OpenPair.index
+  fullName: AStarPathFinder.OpenPair.index
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: index
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int index
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public index As Vector2Int
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

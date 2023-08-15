@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PointOfInterest.DimensionControlType
+  commentId: T:Global.PointOfInterest.DimensionControlType
+  id: PointOfInterest.DimensionControlType
+  parent: Global
+  children:
+  - Global.PointOfInterest.DimensionControlType.Height
+  - Global.PointOfInterest.DimensionControlType.Width
+  langs:
+  - csharp
+  - vb
+  name: PointOfInterest.DimensionControlType
+  nameWithType: PointOfInterest.DimensionControlType
+  fullName: PointOfInterest.DimensionControlType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Binoculars/PointOfInterest.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DimensionControlType
+    path: ../Assets/Objects & Components/World/Binoculars/PointOfInterest.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum PointOfInterest.DimensionControlType
+    content.vb: Public Enum PointOfInterest.DimensionControlType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.PointOfInterest.DimensionControlType.Width
+  commentId: F:Global.PointOfInterest.DimensionControlType.Width
+  id: Width
+  parent: Global.PointOfInterest.DimensionControlType
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: PointOfInterest.DimensionControlType.Width
+  fullName: PointOfInterest.DimensionControlType.Width
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Binoculars/PointOfInterest.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Width
+    path: ../Assets/Objects & Components/World/Binoculars/PointOfInterest.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Width = 0
+    return:
+      type: Global.PointOfInterest.DimensionControlType
+- uid: Global.PointOfInterest.DimensionControlType.Height
+  commentId: F:Global.PointOfInterest.DimensionControlType.Height
+  id: Height
+  parent: Global.PointOfInterest.DimensionControlType
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: PointOfInterest.DimensionControlType.Height
+  fullName: PointOfInterest.DimensionControlType.Height
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Binoculars/PointOfInterest.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Height
+    path: ../Assets/Objects & Components/World/Binoculars/PointOfInterest.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Height = 1
+    return:
+      type: Global.PointOfInterest.DimensionControlType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.PointOfInterest.DimensionControlType
+  commentId: T:Global.PointOfInterest.DimensionControlType
+  name: PointOfInterest.DimensionControlType
+  nameWithType: PointOfInterest.DimensionControlType
+  fullName: PointOfInterest.DimensionControlType
+  spec.csharp:
+  - uid: Global.PointOfInterest
+    name: PointOfInterest
+  - name: .
+  - uid: Global.PointOfInterest.DimensionControlType
+    name: DimensionControlType
+  spec.vb:
+  - uid: Global.PointOfInterest
+    name: PointOfInterest
+  - name: .
+  - uid: Global.PointOfInterest.DimensionControlType
+    name: DimensionControlType

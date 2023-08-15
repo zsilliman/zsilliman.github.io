@@ -1,0 +1,387 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DynamicFloatParam
+  commentId: T:Global.DynamicFloatParam
+  id: DynamicFloatParam
+  parent: Global
+  children:
+  - Global.DynamicFloatParam.behavior
+  - Global.DynamicFloatParam.ease
+  - Global.DynamicFloatParam.GetValue
+  - Global.DynamicFloatParam.Update(System.Single)
+  - Global.DynamicFloatParam.value
+  - Global.DynamicFloatParam.ValueRange
+  langs:
+  - csharp
+  - vb
+  name: DynamicFloatParam
+  nameWithType: DynamicFloatParam
+  fullName: DynamicFloatParam
+  type: Struct
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DynamicFloatParam
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct DynamicFloatParam
+    content.vb: >-
+      <Serializable>
+
+      Public Structure DynamicFloatParam
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.DynamicFloatParam.behavior
+  commentId: F:Global.DynamicFloatParam.behavior
+  id: behavior
+  parent: Global.DynamicFloatParam
+  langs:
+  - csharp
+  - vb
+  name: behavior
+  nameWithType: DynamicFloatParam.behavior
+  fullName: DynamicFloatParam.behavior
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: behavior
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public DynamicFloatParam.DynamicBehavior behavior
+    return:
+      type: Global.DynamicFloatParam.DynamicBehavior
+    content.vb: Public behavior As DynamicFloatParam.DynamicBehavior
+- uid: Global.DynamicFloatParam.ease
+  commentId: F:Global.DynamicFloatParam.ease
+  id: ease
+  parent: Global.DynamicFloatParam
+  langs:
+  - csharp
+  - vb
+  name: ease
+  nameWithType: DynamicFloatParam.ease
+  fullName: DynamicFloatParam.ease
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ease
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("behavior", 1)]
+
+      public EasingFunction.Ease ease
+    return:
+      type: Global.EasingFunction.Ease
+    content.vb: >-
+      <ConditionalShow("behavior", 1)>
+
+      Public ease As EasingFunction.Ease
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: behavior
+    - type: System.Int32
+      value: 1
+- uid: Global.DynamicFloatParam.ValueRange
+  commentId: F:Global.DynamicFloatParam.ValueRange
+  id: ValueRange
+  parent: Global.DynamicFloatParam
+  langs:
+  - csharp
+  - vb
+  name: ValueRange
+  nameWithType: DynamicFloatParam.ValueRange
+  fullName: DynamicFloatParam.ValueRange
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ValueRange
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("behavior", 1)]
+
+      public Vector2 ValueRange
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ConditionalShow("behavior", 1)>
+
+      Public ValueRange As Vector2
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: behavior
+    - type: System.Int32
+      value: 1
+- uid: Global.DynamicFloatParam.value
+  commentId: F:Global.DynamicFloatParam.value
+  id: value
+  parent: Global.DynamicFloatParam
+  langs:
+  - csharp
+  - vb
+  name: value
+  nameWithType: DynamicFloatParam.value
+  fullName: DynamicFloatParam.value
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: value
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("behavior", 0)]
+
+      public float value
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("behavior", 0)>
+
+      Public value As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: behavior
+    - type: System.Int32
+      value: 0
+- uid: Global.DynamicFloatParam.Update(System.Single)
+  commentId: M:Global.DynamicFloatParam.Update(System.Single)
+  id: Update(System.Single)
+  parent: Global.DynamicFloatParam
+  langs:
+  - csharp
+  - vb
+  name: Update(float)
+  nameWithType: DynamicFloatParam.Update(float)
+  fullName: DynamicFloatParam.Update(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Update(float t)
+    parameters:
+    - id: t
+      type: System.Single
+    content.vb: Public Sub Update(t As Single)
+  overload: Global.DynamicFloatParam.Update*
+  nameWithType.vb: DynamicFloatParam.Update(Single)
+  fullName.vb: DynamicFloatParam.Update(Single)
+  name.vb: Update(Single)
+- uid: Global.DynamicFloatParam.GetValue
+  commentId: M:Global.DynamicFloatParam.GetValue
+  id: GetValue
+  parent: Global.DynamicFloatParam
+  langs:
+  - csharp
+  - vb
+  name: GetValue()
+  nameWithType: DynamicFloatParam.GetValue()
+  fullName: DynamicFloatParam.GetValue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetValue
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float GetValue()
+    return:
+      type: System.Single
+    content.vb: Public Function GetValue() As Single
+  overload: Global.DynamicFloatParam.GetValue*
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.DynamicFloatParam.DynamicBehavior
+  commentId: T:Global.DynamicFloatParam.DynamicBehavior
+  name: DynamicFloatParam.DynamicBehavior
+  nameWithType: DynamicFloatParam.DynamicBehavior
+  fullName: DynamicFloatParam.DynamicBehavior
+  spec.csharp:
+  - uid: Global.DynamicFloatParam
+    name: DynamicFloatParam
+  - name: .
+  - uid: Global.DynamicFloatParam.DynamicBehavior
+    name: DynamicBehavior
+  spec.vb:
+  - uid: Global.DynamicFloatParam
+    name: DynamicFloatParam
+  - name: .
+  - uid: Global.DynamicFloatParam.DynamicBehavior
+    name: DynamicBehavior
+- uid: Global.EasingFunction.Ease
+  commentId: T:Global.EasingFunction.Ease
+  name: EasingFunction.Ease
+  nameWithType: EasingFunction.Ease
+  fullName: EasingFunction.Ease
+  spec.csharp:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+  spec.vb:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.DynamicFloatParam.Update*
+  commentId: Overload:Global.DynamicFloatParam.Update
+  name: Update
+  nameWithType: DynamicFloatParam.Update
+  fullName: DynamicFloatParam.Update
+- uid: Global.DynamicFloatParam.GetValue*
+  commentId: Overload:Global.DynamicFloatParam.GetValue
+  name: GetValue
+  nameWithType: DynamicFloatParam.GetValue
+  fullName: DynamicFloatParam.GetValue

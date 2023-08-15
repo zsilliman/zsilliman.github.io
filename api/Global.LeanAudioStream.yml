@@ -1,0 +1,350 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LeanAudioStream
+  commentId: T:Global.LeanAudioStream
+  id: LeanAudioStream
+  parent: Global
+  children:
+  - Global.LeanAudioStream.#ctor(System.Single[])
+  - Global.LeanAudioStream.audioArr
+  - Global.LeanAudioStream.audioClip
+  - Global.LeanAudioStream.OnAudioRead(System.Single[])
+  - Global.LeanAudioStream.OnAudioSetPosition(System.Int32)
+  - Global.LeanAudioStream.position
+  langs:
+  - csharp
+  - vb
+  name: LeanAudioStream
+  nameWithType: LeanAudioStream
+  fullName: LeanAudioStream
+  type: Class
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LeanAudioStream
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class LeanAudioStream
+    content.vb: Public Class LeanAudioStream
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LeanAudioStream.position
+  commentId: F:Global.LeanAudioStream.position
+  id: position
+  parent: Global.LeanAudioStream
+  langs:
+  - csharp
+  - vb
+  name: position
+  nameWithType: LeanAudioStream.position
+  fullName: LeanAudioStream.position
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: position
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int position
+    return:
+      type: System.Int32
+    content.vb: Public position As Integer
+- uid: Global.LeanAudioStream.audioClip
+  commentId: F:Global.LeanAudioStream.audioClip
+  id: audioClip
+  parent: Global.LeanAudioStream
+  langs:
+  - csharp
+  - vb
+  name: audioClip
+  nameWithType: LeanAudioStream.audioClip
+  fullName: LeanAudioStream.audioClip
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: audioClip
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public AudioClip audioClip
+    return:
+      type: UnityEngine.AudioClip
+    content.vb: Public audioClip As AudioClip
+- uid: Global.LeanAudioStream.audioArr
+  commentId: F:Global.LeanAudioStream.audioArr
+  id: audioArr
+  parent: Global.LeanAudioStream
+  langs:
+  - csharp
+  - vb
+  name: audioArr
+  nameWithType: LeanAudioStream.audioArr
+  fullName: LeanAudioStream.audioArr
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: audioArr
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float[] audioArr
+    return:
+      type: System.Single[]
+    content.vb: Public audioArr As Single()
+- uid: Global.LeanAudioStream.#ctor(System.Single[])
+  commentId: M:Global.LeanAudioStream.#ctor(System.Single[])
+  id: '#ctor(System.Single[])'
+  parent: Global.LeanAudioStream
+  langs:
+  - csharp
+  - vb
+  name: LeanAudioStream(float[])
+  nameWithType: LeanAudioStream.LeanAudioStream(float[])
+  fullName: LeanAudioStream.LeanAudioStream(float[])
+  type: Constructor
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LeanAudioStream(float[] audioArr)
+    parameters:
+    - id: audioArr
+      type: System.Single[]
+    content.vb: Public Sub New(audioArr As Single())
+  overload: Global.LeanAudioStream.#ctor*
+  nameWithType.vb: LeanAudioStream.New(Single())
+  fullName.vb: LeanAudioStream.New(Single())
+  name.vb: New(Single())
+- uid: Global.LeanAudioStream.OnAudioRead(System.Single[])
+  commentId: M:Global.LeanAudioStream.OnAudioRead(System.Single[])
+  id: OnAudioRead(System.Single[])
+  parent: Global.LeanAudioStream
+  langs:
+  - csharp
+  - vb
+  name: OnAudioRead(float[])
+  nameWithType: LeanAudioStream.OnAudioRead(float[])
+  fullName: LeanAudioStream.OnAudioRead(float[])
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnAudioRead
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnAudioRead(float[] data)
+    parameters:
+    - id: data
+      type: System.Single[]
+    content.vb: Public Sub OnAudioRead(data As Single())
+  overload: Global.LeanAudioStream.OnAudioRead*
+  nameWithType.vb: LeanAudioStream.OnAudioRead(Single())
+  fullName.vb: LeanAudioStream.OnAudioRead(Single())
+  name.vb: OnAudioRead(Single())
+- uid: Global.LeanAudioStream.OnAudioSetPosition(System.Int32)
+  commentId: M:Global.LeanAudioStream.OnAudioSetPosition(System.Int32)
+  id: OnAudioSetPosition(System.Int32)
+  parent: Global.LeanAudioStream
+  langs:
+  - csharp
+  - vb
+  name: OnAudioSetPosition(int)
+  nameWithType: LeanAudioStream.OnAudioSetPosition(int)
+  fullName: LeanAudioStream.OnAudioSetPosition(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnAudioSetPosition
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnAudioSetPosition(int newPosition)
+    parameters:
+    - id: newPosition
+      type: System.Int32
+    content.vb: Public Sub OnAudioSetPosition(newPosition As Integer)
+  overload: Global.LeanAudioStream.OnAudioSetPosition*
+  nameWithType.vb: LeanAudioStream.OnAudioSetPosition(Integer)
+  fullName.vb: LeanAudioStream.OnAudioSetPosition(Integer)
+  name.vb: OnAudioSetPosition(Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.AudioClip
+  commentId: T:UnityEngine.AudioClip
+  parent: UnityEngine
+  isExternal: true
+  name: AudioClip
+  nameWithType: AudioClip
+  fullName: UnityEngine.AudioClip
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single[]
+  isExternal: true
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Global.LeanAudioStream.#ctor*
+  commentId: Overload:Global.LeanAudioStream.#ctor
+  name: LeanAudioStream
+  nameWithType: LeanAudioStream.LeanAudioStream
+  fullName: LeanAudioStream.LeanAudioStream
+  nameWithType.vb: LeanAudioStream.New
+  fullName.vb: LeanAudioStream.New
+  name.vb: New
+- uid: Global.LeanAudioStream.OnAudioRead*
+  commentId: Overload:Global.LeanAudioStream.OnAudioRead
+  name: OnAudioRead
+  nameWithType: LeanAudioStream.OnAudioRead
+  fullName: LeanAudioStream.OnAudioRead
+- uid: Global.LeanAudioStream.OnAudioSetPosition*
+  commentId: Overload:Global.LeanAudioStream.OnAudioSetPosition
+  name: OnAudioSetPosition
+  nameWithType: LeanAudioStream.OnAudioSetPosition
+  fullName: LeanAudioStream.OnAudioSetPosition

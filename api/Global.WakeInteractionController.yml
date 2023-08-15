@@ -1,0 +1,750 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.WakeInteractionController
+  commentId: T:Global.WakeInteractionController
+  id: WakeInteractionController
+  parent: Global
+  children:
+  - Global.WakeInteractionController.ForceOppositeWakeStateAtStart
+  - Global.WakeInteractionController.IsInteractionActive
+  - Global.WakeInteractionController.IsInteractionFinished
+  - Global.WakeInteractionController.ObjectsToSleep
+  - Global.WakeInteractionController.ObjectsToWake
+  - Global.WakeInteractionController.OnInteract
+  - Global.WakeInteractionController.OnInteractionTriggerEnter(Player)
+  - Global.WakeInteractionController.OnInteractionTriggerExit(Player)
+  - Global.WakeInteractionController.OnResetObject
+  - Global.WakeInteractionController.Start
+  langs:
+  - csharp
+  - vb
+  name: WakeInteractionController
+  nameWithType: WakeInteractionController
+  fullName: WakeInteractionController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WakeInteractionController
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class WakeInteractionController : InteractionController'
+    content.vb: Public Class WakeInteractionController Inherits InteractionController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.InteractionController
+  inheritedMembers:
+  - Global.InteractionController.interactable
+  - Global.InteractionController.WaitForOtherControllers
+  - Global.InteractionController.OnAllInteractionsCompleted
+  - Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  - Global.InteractionController.OnTriggerExitCallback(IntActor)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.WakeInteractionController.ObjectsToWake
+  commentId: F:Global.WakeInteractionController.ObjectsToWake
+  id: ObjectsToWake
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: ObjectsToWake
+  nameWithType: WakeInteractionController.ObjectsToWake
+  fullName: WakeInteractionController.ObjectsToWake
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ObjectsToWake
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<IntObject> ObjectsToWake
+    return:
+      type: System.Collections.Generic.List{IntObject}
+    content.vb: Public ObjectsToWake As List(Of IntObject)
+- uid: Global.WakeInteractionController.ObjectsToSleep
+  commentId: F:Global.WakeInteractionController.ObjectsToSleep
+  id: ObjectsToSleep
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: ObjectsToSleep
+  nameWithType: WakeInteractionController.ObjectsToSleep
+  fullName: WakeInteractionController.ObjectsToSleep
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ObjectsToSleep
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<IntObject> ObjectsToSleep
+    return:
+      type: System.Collections.Generic.List{IntObject}
+    content.vb: Public ObjectsToSleep As List(Of IntObject)
+- uid: Global.WakeInteractionController.ForceOppositeWakeStateAtStart
+  commentId: F:Global.WakeInteractionController.ForceOppositeWakeStateAtStart
+  id: ForceOppositeWakeStateAtStart
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: ForceOppositeWakeStateAtStart
+  nameWithType: WakeInteractionController.ForceOppositeWakeStateAtStart
+  fullName: WakeInteractionController.ForceOppositeWakeStateAtStart
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ForceOppositeWakeStateAtStart
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ForceOppositeWakeStateAtStart
+    return:
+      type: System.Boolean
+    content.vb: Public ForceOppositeWakeStateAtStart As Boolean
+- uid: Global.WakeInteractionController.Start
+  commentId: M:Global.WakeInteractionController.Start
+  id: Start
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: WakeInteractionController.Start()
+  fullName: WakeInteractionController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.WakeInteractionController.Start*
+- uid: Global.WakeInteractionController.OnInteract
+  commentId: M:Global.WakeInteractionController.OnInteract
+  id: OnInteract
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: OnInteract()
+  nameWithType: WakeInteractionController.OnInteract()
+  fullName: WakeInteractionController.OnInteract()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteract
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteract()
+    content.vb: Public Overrides Sub OnInteract()
+  overridden: Global.InteractionController.OnInteract
+  overload: Global.WakeInteractionController.OnInteract*
+- uid: Global.WakeInteractionController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.WakeInteractionController.OnInteractionTriggerEnter(Player)
+  id: OnInteractionTriggerEnter(Player)
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: WakeInteractionController.OnInteractionTriggerEnter(Player)
+  fullName: WakeInteractionController.OnInteractionTriggerEnter(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerEnter
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerEnter(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerEnter(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  overload: Global.WakeInteractionController.OnInteractionTriggerEnter*
+- uid: Global.WakeInteractionController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.WakeInteractionController.OnInteractionTriggerExit(Player)
+  id: OnInteractionTriggerExit(Player)
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: WakeInteractionController.OnInteractionTriggerExit(Player)
+  fullName: WakeInteractionController.OnInteractionTriggerExit(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerExit
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerExit(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerExit(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerExit(Player)
+  overload: Global.WakeInteractionController.OnInteractionTriggerExit*
+- uid: Global.WakeInteractionController.OnResetObject
+  commentId: M:Global.WakeInteractionController.OnResetObject
+  id: OnResetObject
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject()
+  nameWithType: WakeInteractionController.OnResetObject()
+  fullName: WakeInteractionController.OnResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject()
+    content.vb: Public Overrides Sub OnResetObject()
+  overridden: Global.InteractionController.OnResetObject
+  overload: Global.WakeInteractionController.OnResetObject*
+- uid: Global.WakeInteractionController.IsInteractionFinished
+  commentId: M:Global.WakeInteractionController.IsInteractionFinished
+  id: IsInteractionFinished
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionFinished()
+  nameWithType: WakeInteractionController.IsInteractionFinished()
+  fullName: WakeInteractionController.IsInteractionFinished()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionFinished
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionFinished()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionFinished() As Boolean
+  overridden: Global.InteractionController.IsInteractionFinished
+  overload: Global.WakeInteractionController.IsInteractionFinished*
+- uid: Global.WakeInteractionController.IsInteractionActive
+  commentId: M:Global.WakeInteractionController.IsInteractionActive
+  id: IsInteractionActive
+  parent: Global.WakeInteractionController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionActive()
+  nameWithType: WakeInteractionController.IsInteractionActive()
+  fullName: WakeInteractionController.IsInteractionActive()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionActive
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/WakeInteractionController.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionActive()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionActive() As Boolean
+  overridden: Global.InteractionController.IsInteractionActive
+  overload: Global.WakeInteractionController.IsInteractionActive*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.InteractionController
+  commentId: T:Global.InteractionController
+  name: InteractionController
+  nameWithType: InteractionController
+  fullName: InteractionController
+- uid: Global.InteractionController.interactable
+  commentId: F:Global.InteractionController.interactable
+  parent: Global.InteractionController
+  name: interactable
+  nameWithType: InteractionController.interactable
+  fullName: InteractionController.interactable
+- uid: Global.InteractionController.WaitForOtherControllers
+  commentId: F:Global.InteractionController.WaitForOtherControllers
+  parent: Global.InteractionController
+  name: WaitForOtherControllers
+  nameWithType: InteractionController.WaitForOtherControllers
+  fullName: InteractionController.WaitForOtherControllers
+- uid: Global.InteractionController.OnAllInteractionsCompleted
+  commentId: M:Global.InteractionController.OnAllInteractionsCompleted
+  parent: Global.InteractionController
+  name: OnAllInteractionsCompleted()
+  nameWithType: InteractionController.OnAllInteractionsCompleted()
+  fullName: InteractionController.OnAllInteractionsCompleted()
+  spec.csharp:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+- uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerEnterCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerEnterCallback(IntActor)
+  fullName: InteractionController.OnTriggerEnterCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerExitCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerExitCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerExitCallback(IntActor)
+  fullName: InteractionController.OnTriggerExitCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Collections.Generic.List{IntObject}
+  commentId: T:System.Collections.Generic.List{IntObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IntObject>
+  nameWithType: List<IntObject>
+  fullName: System.Collections.Generic.List<IntObject>
+  nameWithType.vb: List(Of IntObject)
+  fullName.vb: System.Collections.Generic.List(Of IntObject)
+  name.vb: List(Of IntObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntObject
+    name: IntObject
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.WakeInteractionController.Start*
+  commentId: Overload:Global.WakeInteractionController.Start
+  name: Start
+  nameWithType: WakeInteractionController.Start
+  fullName: WakeInteractionController.Start
+- uid: Global.InteractionController.OnInteract
+  commentId: M:Global.InteractionController.OnInteract
+  parent: Global.InteractionController
+  name: OnInteract()
+  nameWithType: InteractionController.OnInteract()
+  fullName: InteractionController.OnInteract()
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+- uid: Global.WakeInteractionController.OnInteract*
+  commentId: Overload:Global.WakeInteractionController.OnInteract
+  name: OnInteract
+  nameWithType: WakeInteractionController.OnInteract
+  fullName: WakeInteractionController.OnInteract
+- uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerEnter(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: InteractionController.OnInteractionTriggerEnter(Player)
+  fullName: InteractionController.OnInteractionTriggerEnter(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.WakeInteractionController.OnInteractionTriggerEnter*
+  commentId: Overload:Global.WakeInteractionController.OnInteractionTriggerEnter
+  name: OnInteractionTriggerEnter
+  nameWithType: WakeInteractionController.OnInteractionTriggerEnter
+  fullName: WakeInteractionController.OnInteractionTriggerEnter
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerExit(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: InteractionController.OnInteractionTriggerExit(Player)
+  fullName: InteractionController.OnInteractionTriggerExit(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.WakeInteractionController.OnInteractionTriggerExit*
+  commentId: Overload:Global.WakeInteractionController.OnInteractionTriggerExit
+  name: OnInteractionTriggerExit
+  nameWithType: WakeInteractionController.OnInteractionTriggerExit
+  fullName: WakeInteractionController.OnInteractionTriggerExit
+- uid: Global.InteractionController.OnResetObject
+  commentId: M:Global.InteractionController.OnResetObject
+  parent: Global.InteractionController
+  name: OnResetObject()
+  nameWithType: InteractionController.OnResetObject()
+  fullName: InteractionController.OnResetObject()
+  spec.csharp:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+- uid: Global.WakeInteractionController.OnResetObject*
+  commentId: Overload:Global.WakeInteractionController.OnResetObject
+  name: OnResetObject
+  nameWithType: WakeInteractionController.OnResetObject
+  fullName: WakeInteractionController.OnResetObject
+- uid: Global.InteractionController.IsInteractionFinished
+  commentId: M:Global.InteractionController.IsInteractionFinished
+  parent: Global.InteractionController
+  name: IsInteractionFinished()
+  nameWithType: InteractionController.IsInteractionFinished()
+  fullName: InteractionController.IsInteractionFinished()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+- uid: Global.WakeInteractionController.IsInteractionFinished*
+  commentId: Overload:Global.WakeInteractionController.IsInteractionFinished
+  name: IsInteractionFinished
+  nameWithType: WakeInteractionController.IsInteractionFinished
+  fullName: WakeInteractionController.IsInteractionFinished
+- uid: Global.InteractionController.IsInteractionActive
+  commentId: M:Global.InteractionController.IsInteractionActive
+  parent: Global.InteractionController
+  name: IsInteractionActive()
+  nameWithType: InteractionController.IsInteractionActive()
+  fullName: InteractionController.IsInteractionActive()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+- uid: Global.WakeInteractionController.IsInteractionActive*
+  commentId: Overload:Global.WakeInteractionController.IsInteractionActive
+  name: IsInteractionActive
+  nameWithType: WakeInteractionController.IsInteractionActive
+  fullName: WakeInteractionController.IsInteractionActive

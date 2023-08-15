@@ -1,0 +1,418 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntObjectSaveData
+  commentId: T:Global.IntObjectSaveData
+  id: IntObjectSaveData
+  parent: Global
+  children:
+  - Global.IntObjectSaveData.#ctor(System.String,System.String,ObjectStatus,ObjectStatus,System.Int32,System.Boolean)
+  - Global.IntObjectSaveData.CurrentStatus
+  - Global.IntObjectSaveData.CustomBool0
+  - Global.IntObjectSaveData.CustomInt0
+  - Global.IntObjectSaveData.Identifier
+  - Global.IntObjectSaveData.InitialStatus
+  - Global.IntObjectSaveData.Name
+  langs:
+  - csharp
+  - vb
+  name: IntObjectSaveData
+  nameWithType: IntObjectSaveData
+  fullName: IntObjectSaveData
+  type: Struct
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntObjectSaveData
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct IntObjectSaveData
+    content.vb: >-
+      <Serializable>
+
+      Public Structure IntObjectSaveData
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.IntObjectSaveData.Identifier
+  commentId: F:Global.IntObjectSaveData.Identifier
+  id: Identifier
+  parent: Global.IntObjectSaveData
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: IntObjectSaveData.Identifier
+  fullName: IntObjectSaveData.Identifier
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Identifier
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public string Identifier
+    return:
+      type: System.String
+    content.vb: >-
+      <SerializeField>
+
+      Public Identifier As String
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntObjectSaveData.Name
+  commentId: F:Global.IntObjectSaveData.Name
+  id: Name
+  parent: Global.IntObjectSaveData
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IntObjectSaveData.Name
+  fullName: IntObjectSaveData.Name
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Name
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public string Name
+    return:
+      type: System.String
+    content.vb: >-
+      <SerializeField>
+
+      Public Name As String
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntObjectSaveData.InitialStatus
+  commentId: F:Global.IntObjectSaveData.InitialStatus
+  id: InitialStatus
+  parent: Global.IntObjectSaveData
+  langs:
+  - csharp
+  - vb
+  name: InitialStatus
+  nameWithType: IntObjectSaveData.InitialStatus
+  fullName: IntObjectSaveData.InitialStatus
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InitialStatus
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public ObjectStatus InitialStatus
+    return:
+      type: Global.ObjectStatus
+    content.vb: >-
+      <SerializeField>
+
+      Public InitialStatus As ObjectStatus
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntObjectSaveData.CurrentStatus
+  commentId: F:Global.IntObjectSaveData.CurrentStatus
+  id: CurrentStatus
+  parent: Global.IntObjectSaveData
+  langs:
+  - csharp
+  - vb
+  name: CurrentStatus
+  nameWithType: IntObjectSaveData.CurrentStatus
+  fullName: IntObjectSaveData.CurrentStatus
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CurrentStatus
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public ObjectStatus CurrentStatus
+    return:
+      type: Global.ObjectStatus
+    content.vb: >-
+      <SerializeField>
+
+      Public CurrentStatus As ObjectStatus
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntObjectSaveData.CustomInt0
+  commentId: F:Global.IntObjectSaveData.CustomInt0
+  id: CustomInt0
+  parent: Global.IntObjectSaveData
+  langs:
+  - csharp
+  - vb
+  name: CustomInt0
+  nameWithType: IntObjectSaveData.CustomInt0
+  fullName: IntObjectSaveData.CustomInt0
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CustomInt0
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public int CustomInt0
+    return:
+      type: System.Int32
+    content.vb: >-
+      <SerializeField>
+
+      Public CustomInt0 As Integer
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntObjectSaveData.CustomBool0
+  commentId: F:Global.IntObjectSaveData.CustomBool0
+  id: CustomBool0
+  parent: Global.IntObjectSaveData
+  langs:
+  - csharp
+  - vb
+  name: CustomBool0
+  nameWithType: IntObjectSaveData.CustomBool0
+  fullName: IntObjectSaveData.CustomBool0
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CustomBool0
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public bool CustomBool0
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      Public CustomBool0 As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntObjectSaveData.#ctor(System.String,System.String,ObjectStatus,ObjectStatus,System.Int32,System.Boolean)
+  commentId: M:Global.IntObjectSaveData.#ctor(System.String,System.String,ObjectStatus,ObjectStatus,System.Int32,System.Boolean)
+  id: '#ctor(System.String,System.String,ObjectStatus,ObjectStatus,System.Int32,System.Boolean)'
+  parent: Global.IntObjectSaveData
+  langs:
+  - csharp
+  - vb
+  name: IntObjectSaveData(string, string, ObjectStatus, ObjectStatus, int, bool)
+  nameWithType: IntObjectSaveData.IntObjectSaveData(string, string, ObjectStatus, ObjectStatus, int, bool)
+  fullName: IntObjectSaveData.IntObjectSaveData(string, string, ObjectStatus, ObjectStatus, int, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IntObjectSaveData(string id, string name, ObjectStatus initialStatus, ObjectStatus currentStatus, int int0 = 0, bool bool0 = false)
+    parameters:
+    - id: id
+      type: System.String
+    - id: name
+      type: System.String
+    - id: initialStatus
+      type: Global.ObjectStatus
+    - id: currentStatus
+      type: Global.ObjectStatus
+    - id: int0
+      type: System.Int32
+    - id: bool0
+      type: System.Boolean
+    content.vb: Public Sub New(id As String, name As String, initialStatus As ObjectStatus, currentStatus As ObjectStatus, int0 As Integer = 0, bool0 As Boolean = False)
+  overload: Global.IntObjectSaveData.#ctor*
+  nameWithType.vb: IntObjectSaveData.New(String, String, ObjectStatus, ObjectStatus, Integer, Boolean)
+  fullName.vb: IntObjectSaveData.New(String, String, ObjectStatus, ObjectStatus, Integer, Boolean)
+  name.vb: New(String, String, ObjectStatus, ObjectStatus, Integer, Boolean)
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ObjectStatus
+  commentId: T:Global.ObjectStatus
+  name: ObjectStatus
+  nameWithType: ObjectStatus
+  fullName: ObjectStatus
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.IntObjectSaveData.#ctor*
+  commentId: Overload:Global.IntObjectSaveData.#ctor
+  name: IntObjectSaveData
+  nameWithType: IntObjectSaveData.IntObjectSaveData
+  fullName: IntObjectSaveData.IntObjectSaveData
+  nameWithType.vb: IntObjectSaveData.New
+  fullName.vb: IntObjectSaveData.New
+  name.vb: New

@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IdlePatrolBehavior.Target
+  commentId: T:Global.IdlePatrolBehavior.Target
+  id: IdlePatrolBehavior.Target
+  parent: Global
+  children:
+  - Global.IdlePatrolBehavior.Target.End
+  - Global.IdlePatrolBehavior.Target.Start
+  langs:
+  - csharp
+  - vb
+  name: IdlePatrolBehavior.Target
+  nameWithType: IdlePatrolBehavior.Target
+  fullName: IdlePatrolBehavior.Target
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/IdlePatrolBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Target
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/IdlePatrolBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum IdlePatrolBehavior.Target
+    content.vb: Public Enum IdlePatrolBehavior.Target
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.IdlePatrolBehavior.Target.Start
+  commentId: F:Global.IdlePatrolBehavior.Target.Start
+  id: Start
+  parent: Global.IdlePatrolBehavior.Target
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: IdlePatrolBehavior.Target.Start
+  fullName: IdlePatrolBehavior.Target.Start
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/IdlePatrolBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/IdlePatrolBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Start = 0
+    return:
+      type: Global.IdlePatrolBehavior.Target
+- uid: Global.IdlePatrolBehavior.Target.End
+  commentId: F:Global.IdlePatrolBehavior.Target.End
+  id: End
+  parent: Global.IdlePatrolBehavior.Target
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: IdlePatrolBehavior.Target.End
+  fullName: IdlePatrolBehavior.Target.End
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/IdlePatrolBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: End
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Idle/IdlePatrolBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: End = 1
+    return:
+      type: Global.IdlePatrolBehavior.Target
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.IdlePatrolBehavior.Target
+  commentId: T:Global.IdlePatrolBehavior.Target
+  name: IdlePatrolBehavior.Target
+  nameWithType: IdlePatrolBehavior.Target
+  fullName: IdlePatrolBehavior.Target
+  spec.csharp:
+  - uid: Global.IdlePatrolBehavior
+    name: IdlePatrolBehavior
+  - name: .
+  - uid: Global.IdlePatrolBehavior.Target
+    name: Target
+  spec.vb:
+  - uid: Global.IdlePatrolBehavior
+    name: IdlePatrolBehavior
+  - name: .
+  - uid: Global.IdlePatrolBehavior.Target
+    name: Target

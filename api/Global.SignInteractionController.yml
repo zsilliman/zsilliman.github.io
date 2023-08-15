@@ -1,0 +1,727 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SignInteractionController
+  commentId: T:Global.SignInteractionController
+  id: SignInteractionController
+  parent: Global
+  children:
+  - Global.SignInteractionController.ExamineText
+  - Global.SignInteractionController.IsInteractionActive
+  - Global.SignInteractionController.IsInteractionFinished
+  - Global.SignInteractionController.OnInteract
+  - Global.SignInteractionController.OnInteractionTriggerEnter(Player)
+  - Global.SignInteractionController.OnInteractionTriggerExit(Player)
+  - Global.SignInteractionController.OnResetObject
+  - Global.SignInteractionController.QuoteText
+  - Global.SignInteractionController.ShowQuoteTextAsGizmo
+  - Global.SignInteractionController.speaker
+  - Global.SignInteractionController.Start
+  langs:
+  - csharp
+  - vb
+  name: SignInteractionController
+  nameWithType: SignInteractionController
+  fullName: SignInteractionController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SignInteractionController
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(Speaker))]
+
+      public class SignInteractionController : InteractionController
+    content.vb: >-
+      <RequireComponent(GetType(Speaker))>
+
+      Public Class SignInteractionController Inherits InteractionController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.InteractionController
+  inheritedMembers:
+  - Global.InteractionController.interactable
+  - Global.InteractionController.WaitForOtherControllers
+  - Global.InteractionController.OnAllInteractionsCompleted
+  - Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  - Global.InteractionController.OnTriggerExitCallback(IntActor)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.Speaker
+- uid: Global.SignInteractionController.speaker
+  commentId: F:Global.SignInteractionController.speaker
+  id: speaker
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: speaker
+  nameWithType: SignInteractionController.speaker
+  fullName: SignInteractionController.speaker
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: speaker
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Speaker speaker
+    return:
+      type: Global.Speaker
+    content.vb: Protected speaker As Speaker
+- uid: Global.SignInteractionController.QuoteText
+  commentId: F:Global.SignInteractionController.QuoteText
+  id: QuoteText
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: QuoteText
+  nameWithType: SignInteractionController.QuoteText
+  fullName: SignInteractionController.QuoteText
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: QuoteText
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public string QuoteText
+    return:
+      type: System.String
+    content.vb: Public QuoteText As String
+- uid: Global.SignInteractionController.ShowQuoteTextAsGizmo
+  commentId: F:Global.SignInteractionController.ShowQuoteTextAsGizmo
+  id: ShowQuoteTextAsGizmo
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: ShowQuoteTextAsGizmo
+  nameWithType: SignInteractionController.ShowQuoteTextAsGizmo
+  fullName: SignInteractionController.ShowQuoteTextAsGizmo
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ShowQuoteTextAsGizmo
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ShowQuoteTextAsGizmo
+    return:
+      type: System.Boolean
+    content.vb: Public ShowQuoteTextAsGizmo As Boolean
+- uid: Global.SignInteractionController.ExamineText
+  commentId: F:Global.SignInteractionController.ExamineText
+  id: ExamineText
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: ExamineText
+  nameWithType: SignInteractionController.ExamineText
+  fullName: SignInteractionController.ExamineText
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ExamineText
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected ExamineUI ExamineText
+    return:
+      type: Global.ExamineUI
+    content.vb: Protected ExamineText As ExamineUI
+- uid: Global.SignInteractionController.Start
+  commentId: M:Global.SignInteractionController.Start
+  id: Start
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: SignInteractionController.Start()
+  fullName: SignInteractionController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.SignInteractionController.Start*
+- uid: Global.SignInteractionController.OnInteract
+  commentId: M:Global.SignInteractionController.OnInteract
+  id: OnInteract
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: OnInteract()
+  nameWithType: SignInteractionController.OnInteract()
+  fullName: SignInteractionController.OnInteract()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteract
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteract()
+    content.vb: Public Overrides Sub OnInteract()
+  overridden: Global.InteractionController.OnInteract
+  overload: Global.SignInteractionController.OnInteract*
+- uid: Global.SignInteractionController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.SignInteractionController.OnInteractionTriggerEnter(Player)
+  id: OnInteractionTriggerEnter(Player)
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: SignInteractionController.OnInteractionTriggerEnter(Player)
+  fullName: SignInteractionController.OnInteractionTriggerEnter(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerEnter
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerEnter(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerEnter(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  overload: Global.SignInteractionController.OnInteractionTriggerEnter*
+- uid: Global.SignInteractionController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.SignInteractionController.OnInteractionTriggerExit(Player)
+  id: OnInteractionTriggerExit(Player)
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: SignInteractionController.OnInteractionTriggerExit(Player)
+  fullName: SignInteractionController.OnInteractionTriggerExit(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerExit
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerExit(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerExit(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerExit(Player)
+  overload: Global.SignInteractionController.OnInteractionTriggerExit*
+- uid: Global.SignInteractionController.OnResetObject
+  commentId: M:Global.SignInteractionController.OnResetObject
+  id: OnResetObject
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject()
+  nameWithType: SignInteractionController.OnResetObject()
+  fullName: SignInteractionController.OnResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject()
+    content.vb: Public Overrides Sub OnResetObject()
+  overridden: Global.InteractionController.OnResetObject
+  overload: Global.SignInteractionController.OnResetObject*
+- uid: Global.SignInteractionController.IsInteractionFinished
+  commentId: M:Global.SignInteractionController.IsInteractionFinished
+  id: IsInteractionFinished
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionFinished()
+  nameWithType: SignInteractionController.IsInteractionFinished()
+  fullName: SignInteractionController.IsInteractionFinished()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionFinished
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionFinished()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionFinished() As Boolean
+  overridden: Global.InteractionController.IsInteractionFinished
+  overload: Global.SignInteractionController.IsInteractionFinished*
+- uid: Global.SignInteractionController.IsInteractionActive
+  commentId: M:Global.SignInteractionController.IsInteractionActive
+  id: IsInteractionActive
+  parent: Global.SignInteractionController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionActive()
+  nameWithType: SignInteractionController.IsInteractionActive()
+  fullName: SignInteractionController.IsInteractionActive()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionActive
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/SignInteractionController.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionActive()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionActive() As Boolean
+  overridden: Global.InteractionController.IsInteractionActive
+  overload: Global.SignInteractionController.IsInteractionActive*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.InteractionController
+  commentId: T:Global.InteractionController
+  name: InteractionController
+  nameWithType: InteractionController
+  fullName: InteractionController
+- uid: Global.InteractionController.interactable
+  commentId: F:Global.InteractionController.interactable
+  parent: Global.InteractionController
+  name: interactable
+  nameWithType: InteractionController.interactable
+  fullName: InteractionController.interactable
+- uid: Global.InteractionController.WaitForOtherControllers
+  commentId: F:Global.InteractionController.WaitForOtherControllers
+  parent: Global.InteractionController
+  name: WaitForOtherControllers
+  nameWithType: InteractionController.WaitForOtherControllers
+  fullName: InteractionController.WaitForOtherControllers
+- uid: Global.InteractionController.OnAllInteractionsCompleted
+  commentId: M:Global.InteractionController.OnAllInteractionsCompleted
+  parent: Global.InteractionController
+  name: OnAllInteractionsCompleted()
+  nameWithType: InteractionController.OnAllInteractionsCompleted()
+  fullName: InteractionController.OnAllInteractionsCompleted()
+  spec.csharp:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+- uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerEnterCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerEnterCallback(IntActor)
+  fullName: InteractionController.OnTriggerEnterCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerExitCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerExitCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerExitCallback(IntActor)
+  fullName: InteractionController.OnTriggerExitCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Speaker
+  commentId: T:Global.Speaker
+  name: Speaker
+  nameWithType: Speaker
+  fullName: Speaker
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.ExamineUI
+  commentId: T:Global.ExamineUI
+  name: ExamineUI
+  nameWithType: ExamineUI
+  fullName: ExamineUI
+- uid: Global.SignInteractionController.Start*
+  commentId: Overload:Global.SignInteractionController.Start
+  name: Start
+  nameWithType: SignInteractionController.Start
+  fullName: SignInteractionController.Start
+- uid: Global.InteractionController.OnInteract
+  commentId: M:Global.InteractionController.OnInteract
+  parent: Global.InteractionController
+  name: OnInteract()
+  nameWithType: InteractionController.OnInteract()
+  fullName: InteractionController.OnInteract()
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+- uid: Global.SignInteractionController.OnInteract*
+  commentId: Overload:Global.SignInteractionController.OnInteract
+  name: OnInteract
+  nameWithType: SignInteractionController.OnInteract
+  fullName: SignInteractionController.OnInteract
+- uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerEnter(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: InteractionController.OnInteractionTriggerEnter(Player)
+  fullName: InteractionController.OnInteractionTriggerEnter(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.SignInteractionController.OnInteractionTriggerEnter*
+  commentId: Overload:Global.SignInteractionController.OnInteractionTriggerEnter
+  name: OnInteractionTriggerEnter
+  nameWithType: SignInteractionController.OnInteractionTriggerEnter
+  fullName: SignInteractionController.OnInteractionTriggerEnter
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerExit(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: InteractionController.OnInteractionTriggerExit(Player)
+  fullName: InteractionController.OnInteractionTriggerExit(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.SignInteractionController.OnInteractionTriggerExit*
+  commentId: Overload:Global.SignInteractionController.OnInteractionTriggerExit
+  name: OnInteractionTriggerExit
+  nameWithType: SignInteractionController.OnInteractionTriggerExit
+  fullName: SignInteractionController.OnInteractionTriggerExit
+- uid: Global.InteractionController.OnResetObject
+  commentId: M:Global.InteractionController.OnResetObject
+  parent: Global.InteractionController
+  name: OnResetObject()
+  nameWithType: InteractionController.OnResetObject()
+  fullName: InteractionController.OnResetObject()
+  spec.csharp:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+- uid: Global.SignInteractionController.OnResetObject*
+  commentId: Overload:Global.SignInteractionController.OnResetObject
+  name: OnResetObject
+  nameWithType: SignInteractionController.OnResetObject
+  fullName: SignInteractionController.OnResetObject
+- uid: Global.InteractionController.IsInteractionFinished
+  commentId: M:Global.InteractionController.IsInteractionFinished
+  parent: Global.InteractionController
+  name: IsInteractionFinished()
+  nameWithType: InteractionController.IsInteractionFinished()
+  fullName: InteractionController.IsInteractionFinished()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+- uid: Global.SignInteractionController.IsInteractionFinished*
+  commentId: Overload:Global.SignInteractionController.IsInteractionFinished
+  name: IsInteractionFinished
+  nameWithType: SignInteractionController.IsInteractionFinished
+  fullName: SignInteractionController.IsInteractionFinished
+- uid: Global.InteractionController.IsInteractionActive
+  commentId: M:Global.InteractionController.IsInteractionActive
+  parent: Global.InteractionController
+  name: IsInteractionActive()
+  nameWithType: InteractionController.IsInteractionActive()
+  fullName: InteractionController.IsInteractionActive()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+- uid: Global.SignInteractionController.IsInteractionActive*
+  commentId: Overload:Global.SignInteractionController.IsInteractionActive
+  name: IsInteractionActive
+  nameWithType: SignInteractionController.IsInteractionActive
+  fullName: SignInteractionController.IsInteractionActive

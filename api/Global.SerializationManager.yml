@@ -1,0 +1,615 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SerializationManager
+  commentId: T:Global.SerializationManager
+  id: SerializationManager
+  parent: Global
+  children:
+  - Global.SerializationManager.ApplySaveData
+  - Global.SerializationManager.CleanObjectToIDMap
+  - Global.SerializationManager.GetBinaryFormatter
+  - Global.SerializationManager.GetSaveDirectoryPath
+  - Global.SerializationManager.GetSaveFilePath(System.String)
+  - Global.SerializationManager.IdToObjectMapToDebugString
+  - Global.SerializationManager.InvokeOnPostLoadSaveFile
+  - Global.SerializationManager.Load(System.String)
+  - Global.SerializationManager.RegisterObjectForSave(System.String,IntObject)
+  - Global.SerializationManager.RegisterSectionForSave(System.String,Section)
+  - Global.SerializationManager.Save
+  - Global.SerializationManager.UpdateSaveDataToReflectWorld
+  langs:
+  - csharp
+  - vb
+  name: SerializationManager
+  nameWithType: SerializationManager
+  fullName: SerializationManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SerializationManager
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class SerializationManager
+    content.vb: Public Class SerializationManager
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SerializationManager.RegisterObjectForSave(System.String,IntObject)
+  commentId: M:Global.SerializationManager.RegisterObjectForSave(System.String,IntObject)
+  id: RegisterObjectForSave(System.String,IntObject)
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterObjectForSave(string, IntObject)
+  nameWithType: SerializationManager.RegisterObjectForSave(string, IntObject)
+  fullName: SerializationManager.RegisterObjectForSave(string, IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterObjectForSave
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void RegisterObjectForSave(string id, IntObject obj)
+    parameters:
+    - id: id
+      type: System.String
+    - id: obj
+      type: Global.IntObject
+    content.vb: Public Shared Sub RegisterObjectForSave(id As String, obj As IntObject)
+  overload: Global.SerializationManager.RegisterObjectForSave*
+  nameWithType.vb: SerializationManager.RegisterObjectForSave(String, IntObject)
+  fullName.vb: SerializationManager.RegisterObjectForSave(String, IntObject)
+  name.vb: RegisterObjectForSave(String, IntObject)
+- uid: Global.SerializationManager.RegisterSectionForSave(System.String,Section)
+  commentId: M:Global.SerializationManager.RegisterSectionForSave(System.String,Section)
+  id: RegisterSectionForSave(System.String,Section)
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterSectionForSave(string, Section)
+  nameWithType: SerializationManager.RegisterSectionForSave(string, Section)
+  fullName: SerializationManager.RegisterSectionForSave(string, Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterSectionForSave
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void RegisterSectionForSave(string id, Section section)
+    parameters:
+    - id: id
+      type: System.String
+    - id: section
+      type: Global.Section
+    content.vb: Public Shared Sub RegisterSectionForSave(id As String, section As Section)
+  overload: Global.SerializationManager.RegisterSectionForSave*
+  nameWithType.vb: SerializationManager.RegisterSectionForSave(String, Section)
+  fullName.vb: SerializationManager.RegisterSectionForSave(String, Section)
+  name.vb: RegisterSectionForSave(String, Section)
+- uid: Global.SerializationManager.GetBinaryFormatter
+  commentId: M:Global.SerializationManager.GetBinaryFormatter
+  id: GetBinaryFormatter
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: GetBinaryFormatter()
+  nameWithType: SerializationManager.GetBinaryFormatter()
+  fullName: SerializationManager.GetBinaryFormatter()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetBinaryFormatter
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static BinaryFormatter GetBinaryFormatter()
+    return:
+      type: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+    content.vb: Public Shared Function GetBinaryFormatter() As BinaryFormatter
+  overload: Global.SerializationManager.GetBinaryFormatter*
+- uid: Global.SerializationManager.GetSaveDirectoryPath
+  commentId: M:Global.SerializationManager.GetSaveDirectoryPath
+  id: GetSaveDirectoryPath
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: GetSaveDirectoryPath()
+  nameWithType: SerializationManager.GetSaveDirectoryPath()
+  fullName: SerializationManager.GetSaveDirectoryPath()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetSaveDirectoryPath
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static string GetSaveDirectoryPath()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSaveDirectoryPath() As String
+  overload: Global.SerializationManager.GetSaveDirectoryPath*
+- uid: Global.SerializationManager.GetSaveFilePath(System.String)
+  commentId: M:Global.SerializationManager.GetSaveFilePath(System.String)
+  id: GetSaveFilePath(System.String)
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: GetSaveFilePath(string)
+  nameWithType: SerializationManager.GetSaveFilePath(string)
+  fullName: SerializationManager.GetSaveFilePath(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetSaveFilePath
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static string GetSaveFilePath(string saveName)
+    parameters:
+    - id: saveName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSaveFilePath(saveName As String) As String
+  overload: Global.SerializationManager.GetSaveFilePath*
+  nameWithType.vb: SerializationManager.GetSaveFilePath(String)
+  fullName.vb: SerializationManager.GetSaveFilePath(String)
+  name.vb: GetSaveFilePath(String)
+- uid: Global.SerializationManager.Save
+  commentId: M:Global.SerializationManager.Save
+  id: Save
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: SerializationManager.Save()
+  fullName: SerializationManager.Save()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Save
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool Save()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Save() As Boolean
+  overload: Global.SerializationManager.Save*
+- uid: Global.SerializationManager.Load(System.String)
+  commentId: M:Global.SerializationManager.Load(System.String)
+  id: Load(System.String)
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: Load(string)
+  nameWithType: SerializationManager.Load(string)
+  fullName: SerializationManager.Load(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Load
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 126
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool Load(string saveName)
+    parameters:
+    - id: saveName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Load(saveName As String) As Boolean
+  overload: Global.SerializationManager.Load*
+  nameWithType.vb: SerializationManager.Load(String)
+  fullName.vb: SerializationManager.Load(String)
+  name.vb: Load(String)
+- uid: Global.SerializationManager.CleanObjectToIDMap
+  commentId: M:Global.SerializationManager.CleanObjectToIDMap
+  id: CleanObjectToIDMap
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: CleanObjectToIDMap()
+  nameWithType: SerializationManager.CleanObjectToIDMap()
+  fullName: SerializationManager.CleanObjectToIDMap()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CleanObjectToIDMap
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 161
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void CleanObjectToIDMap()
+    content.vb: Public Shared Sub CleanObjectToIDMap()
+  overload: Global.SerializationManager.CleanObjectToIDMap*
+- uid: Global.SerializationManager.UpdateSaveDataToReflectWorld
+  commentId: M:Global.SerializationManager.UpdateSaveDataToReflectWorld
+  id: UpdateSaveDataToReflectWorld
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateSaveDataToReflectWorld()
+  nameWithType: SerializationManager.UpdateSaveDataToReflectWorld()
+  fullName: SerializationManager.UpdateSaveDataToReflectWorld()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateSaveDataToReflectWorld
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 174
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void UpdateSaveDataToReflectWorld()
+    content.vb: Public Shared Sub UpdateSaveDataToReflectWorld()
+  overload: Global.SerializationManager.UpdateSaveDataToReflectWorld*
+- uid: Global.SerializationManager.ApplySaveData
+  commentId: M:Global.SerializationManager.ApplySaveData
+  id: ApplySaveData
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: ApplySaveData()
+  nameWithType: SerializationManager.ApplySaveData()
+  fullName: SerializationManager.ApplySaveData()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ApplySaveData
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 193
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nTake a SaveData object and apply it to the current scene (Load, not from file, but from SaveData object in memory)\n"
+  example: []
+  syntax:
+    content: public static void ApplySaveData()
+    content.vb: Public Shared Sub ApplySaveData()
+  overload: Global.SerializationManager.ApplySaveData*
+- uid: Global.SerializationManager.InvokeOnPostLoadSaveFile
+  commentId: M:Global.SerializationManager.InvokeOnPostLoadSaveFile
+  id: InvokeOnPostLoadSaveFile
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: InvokeOnPostLoadSaveFile()
+  nameWithType: SerializationManager.InvokeOnPostLoadSaveFile()
+  fullName: SerializationManager.InvokeOnPostLoadSaveFile()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InvokeOnPostLoadSaveFile
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 254
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void InvokeOnPostLoadSaveFile()
+    content.vb: Public Shared Sub InvokeOnPostLoadSaveFile()
+  overload: Global.SerializationManager.InvokeOnPostLoadSaveFile*
+- uid: Global.SerializationManager.IdToObjectMapToDebugString
+  commentId: M:Global.SerializationManager.IdToObjectMapToDebugString
+  id: IdToObjectMapToDebugString
+  parent: Global.SerializationManager
+  langs:
+  - csharp
+  - vb
+  name: IdToObjectMapToDebugString()
+  nameWithType: SerializationManager.IdToObjectMapToDebugString()
+  fullName: SerializationManager.IdToObjectMapToDebugString()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IdToObjectMapToDebugString
+    path: ../Assets/Objects & Components/SaveGame/SerializationManager.cs
+    startLine: 267
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static string IdToObjectMapToDebugString()
+    return:
+      type: System.String
+    content.vb: Public Shared Function IdToObjectMapToDebugString() As String
+  overload: Global.SerializationManager.IdToObjectMapToDebugString*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.SerializationManager.RegisterObjectForSave*
+  commentId: Overload:Global.SerializationManager.RegisterObjectForSave
+  name: RegisterObjectForSave
+  nameWithType: SerializationManager.RegisterObjectForSave
+  fullName: SerializationManager.RegisterObjectForSave
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.IntObject
+  commentId: T:Global.IntObject
+  name: IntObject
+  nameWithType: IntObject
+  fullName: IntObject
+- uid: Global.SerializationManager.RegisterSectionForSave*
+  commentId: Overload:Global.SerializationManager.RegisterSectionForSave
+  name: RegisterSectionForSave
+  nameWithType: SerializationManager.RegisterSectionForSave
+  fullName: SerializationManager.RegisterSectionForSave
+- uid: Global.Section
+  commentId: T:Global.Section
+  name: Section
+  nameWithType: Section
+  fullName: Section
+- uid: Global.SerializationManager.GetBinaryFormatter*
+  commentId: Overload:Global.SerializationManager.GetBinaryFormatter
+  name: GetBinaryFormatter
+  nameWithType: SerializationManager.GetBinaryFormatter
+  fullName: SerializationManager.GetBinaryFormatter
+- uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+  commentId: T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+  parent: System.Runtime.Serialization.Formatters.Binary
+  isExternal: true
+  name: BinaryFormatter
+  nameWithType: BinaryFormatter
+  fullName: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+- uid: System.Runtime.Serialization.Formatters.Binary
+  commentId: N:System.Runtime.Serialization.Formatters.Binary
+  isExternal: true
+  name: System.Runtime.Serialization.Formatters.Binary
+  nameWithType: System.Runtime.Serialization.Formatters.Binary
+  fullName: System.Runtime.Serialization.Formatters.Binary
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+  - name: .
+  - uid: System.Runtime.Serialization.Formatters
+    name: Formatters
+    isExternal: true
+  - name: .
+  - uid: System.Runtime.Serialization.Formatters.Binary
+    name: Binary
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+  - name: .
+  - uid: System.Runtime.Serialization.Formatters
+    name: Formatters
+    isExternal: true
+  - name: .
+  - uid: System.Runtime.Serialization.Formatters.Binary
+    name: Binary
+    isExternal: true
+- uid: Global.SerializationManager.GetSaveDirectoryPath*
+  commentId: Overload:Global.SerializationManager.GetSaveDirectoryPath
+  name: GetSaveDirectoryPath
+  nameWithType: SerializationManager.GetSaveDirectoryPath
+  fullName: SerializationManager.GetSaveDirectoryPath
+- uid: Global.SerializationManager.GetSaveFilePath*
+  commentId: Overload:Global.SerializationManager.GetSaveFilePath
+  name: GetSaveFilePath
+  nameWithType: SerializationManager.GetSaveFilePath
+  fullName: SerializationManager.GetSaveFilePath
+- uid: Global.SerializationManager.Save*
+  commentId: Overload:Global.SerializationManager.Save
+  name: Save
+  nameWithType: SerializationManager.Save
+  fullName: SerializationManager.Save
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.SerializationManager.Load*
+  commentId: Overload:Global.SerializationManager.Load
+  name: Load
+  nameWithType: SerializationManager.Load
+  fullName: SerializationManager.Load
+- uid: Global.SerializationManager.CleanObjectToIDMap*
+  commentId: Overload:Global.SerializationManager.CleanObjectToIDMap
+  name: CleanObjectToIDMap
+  nameWithType: SerializationManager.CleanObjectToIDMap
+  fullName: SerializationManager.CleanObjectToIDMap
+- uid: Global.SerializationManager.UpdateSaveDataToReflectWorld*
+  commentId: Overload:Global.SerializationManager.UpdateSaveDataToReflectWorld
+  name: UpdateSaveDataToReflectWorld
+  nameWithType: SerializationManager.UpdateSaveDataToReflectWorld
+  fullName: SerializationManager.UpdateSaveDataToReflectWorld
+- uid: Global.SerializationManager.ApplySaveData*
+  commentId: Overload:Global.SerializationManager.ApplySaveData
+  name: ApplySaveData
+  nameWithType: SerializationManager.ApplySaveData
+  fullName: SerializationManager.ApplySaveData
+- uid: Global.SerializationManager.InvokeOnPostLoadSaveFile*
+  commentId: Overload:Global.SerializationManager.InvokeOnPostLoadSaveFile
+  name: InvokeOnPostLoadSaveFile
+  nameWithType: SerializationManager.InvokeOnPostLoadSaveFile
+  fullName: SerializationManager.InvokeOnPostLoadSaveFile
+- uid: Global.SerializationManager.IdToObjectMapToDebugString*
+  commentId: Overload:Global.SerializationManager.IdToObjectMapToDebugString
+  name: IdToObjectMapToDebugString
+  nameWithType: SerializationManager.IdToObjectMapToDebugString
+  fullName: SerializationManager.IdToObjectMapToDebugString

@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ManaType
+  commentId: T:Global.ManaType
+  id: ManaType
+  parent: Global
+  children:
+  - Global.ManaType.Empty
+  - Global.ManaType.Variation1
+  - Global.ManaType.Variation2
+  langs:
+  - csharp
+  - vb
+  name: ManaType
+  nameWithType: ManaType
+  fullName: ManaType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Mana/PlayerMana.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ManaType
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Mana/PlayerMana.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum ManaType
+    content.vb: Public Enum ManaType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ManaType.Variation1
+  commentId: F:Global.ManaType.Variation1
+  id: Variation1
+  parent: Global.ManaType
+  langs:
+  - csharp
+  - vb
+  name: Variation1
+  nameWithType: ManaType.Variation1
+  fullName: ManaType.Variation1
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Mana/PlayerMana.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Variation1
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Mana/PlayerMana.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Variation1 = 0
+    return:
+      type: Global.ManaType
+- uid: Global.ManaType.Variation2
+  commentId: F:Global.ManaType.Variation2
+  id: Variation2
+  parent: Global.ManaType
+  langs:
+  - csharp
+  - vb
+  name: Variation2
+  nameWithType: ManaType.Variation2
+  fullName: ManaType.Variation2
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Mana/PlayerMana.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Variation2
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Mana/PlayerMana.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Variation2 = 1
+    return:
+      type: Global.ManaType
+- uid: Global.ManaType.Empty
+  commentId: F:Global.ManaType.Empty
+  id: Empty
+  parent: Global.ManaType
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: ManaType.Empty
+  fullName: ManaType.Empty
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Mana/PlayerMana.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Empty
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Mana/PlayerMana.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Empty = 2
+    return:
+      type: Global.ManaType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ManaType
+  commentId: T:Global.ManaType
+  name: ManaType
+  nameWithType: ManaType
+  fullName: ManaType

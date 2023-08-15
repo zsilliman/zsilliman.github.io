@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ObjectRespawnBehavior
+  commentId: T:Global.ObjectRespawnBehavior
+  id: ObjectRespawnBehavior
+  parent: Global
+  children:
+  - Global.ObjectRespawnBehavior.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - Global.ObjectRespawnBehavior.RespawnEvenWhenSectionCompleted
+  - Global.ObjectRespawnBehavior.RespawnOnPlayerMajorDeath
+  - Global.ObjectRespawnBehavior.RespawnOnPlayerMinorDeath
+  - Global.ObjectRespawnBehavior.RespawnOnSectionEnter
+  langs:
+  - csharp
+  - vb
+  name: ObjectRespawnBehavior
+  nameWithType: ObjectRespawnBehavior
+  fullName: ObjectRespawnBehavior
+  type: Struct
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ObjectRespawnBehavior
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct ObjectRespawnBehavior
+    content.vb: >-
+      <Serializable>
+
+      Public Structure ObjectRespawnBehavior
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.ObjectRespawnBehavior.RespawnOnSectionEnter
+  commentId: F:Global.ObjectRespawnBehavior.RespawnOnSectionEnter
+  id: RespawnOnSectionEnter
+  parent: Global.ObjectRespawnBehavior
+  langs:
+  - csharp
+  - vb
+  name: RespawnOnSectionEnter
+  nameWithType: ObjectRespawnBehavior.RespawnOnSectionEnter
+  fullName: ObjectRespawnBehavior.RespawnOnSectionEnter
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RespawnOnSectionEnter
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [Tooltip("Respawn when the player leaves/enters a section")]
+
+      public bool RespawnOnSectionEnter
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      <Tooltip("Respawn when the player leaves/enters a section")>
+
+      Public RespawnOnSectionEnter As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Respawn when the player leaves/enters a section
+- uid: Global.ObjectRespawnBehavior.RespawnOnPlayerMinorDeath
+  commentId: F:Global.ObjectRespawnBehavior.RespawnOnPlayerMinorDeath
+  id: RespawnOnPlayerMinorDeath
+  parent: Global.ObjectRespawnBehavior
+  langs:
+  - csharp
+  - vb
+  name: RespawnOnPlayerMinorDeath
+  nameWithType: ObjectRespawnBehavior.RespawnOnPlayerMinorDeath
+  fullName: ObjectRespawnBehavior.RespawnOnPlayerMinorDeath
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RespawnOnPlayerMinorDeath
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [Tooltip("Respawn when the player dies due to spikes, but doesn't fully die")]
+
+      public bool RespawnOnPlayerMinorDeath
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      <Tooltip("Respawn when the player dies due to spikes, but doesn't fully die")>
+
+      Public RespawnOnPlayerMinorDeath As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Respawn when the player dies due to spikes, but doesn't fully die
+- uid: Global.ObjectRespawnBehavior.RespawnOnPlayerMajorDeath
+  commentId: F:Global.ObjectRespawnBehavior.RespawnOnPlayerMajorDeath
+  id: RespawnOnPlayerMajorDeath
+  parent: Global.ObjectRespawnBehavior
+  langs:
+  - csharp
+  - vb
+  name: RespawnOnPlayerMajorDeath
+  nameWithType: ObjectRespawnBehavior.RespawnOnPlayerMajorDeath
+  fullName: ObjectRespawnBehavior.RespawnOnPlayerMajorDeath
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RespawnOnPlayerMajorDeath
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [Tooltip("Respawn when the player dies due to 0 hearts")]
+
+      public bool RespawnOnPlayerMajorDeath
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      <Tooltip("Respawn when the player dies due to 0 hearts")>
+
+      Public RespawnOnPlayerMajorDeath As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Respawn when the player dies due to 0 hearts
+- uid: Global.ObjectRespawnBehavior.RespawnEvenWhenSectionCompleted
+  commentId: F:Global.ObjectRespawnBehavior.RespawnEvenWhenSectionCompleted
+  id: RespawnEvenWhenSectionCompleted
+  parent: Global.ObjectRespawnBehavior
+  langs:
+  - csharp
+  - vb
+  name: RespawnEvenWhenSectionCompleted
+  nameWithType: ObjectRespawnBehavior.RespawnEvenWhenSectionCompleted
+  fullName: ObjectRespawnBehavior.RespawnEvenWhenSectionCompleted
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RespawnEvenWhenSectionCompleted
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [Tooltip("Respawn even when the section completion condition has been met")]
+
+      public bool RespawnEvenWhenSectionCompleted
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      <Tooltip("Respawn even when the section completion condition has been met")>
+
+      Public RespawnEvenWhenSectionCompleted As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Respawn even when the section completion condition has been met
+- uid: Global.ObjectRespawnBehavior.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Global.ObjectRespawnBehavior.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: '#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)'
+  parent: Global.ObjectRespawnBehavior
+  langs:
+  - csharp
+  - vb
+  name: ObjectRespawnBehavior(bool, bool, bool, bool)
+  nameWithType: ObjectRespawnBehavior.ObjectRespawnBehavior(bool, bool, bool, bool)
+  fullName: ObjectRespawnBehavior.ObjectRespawnBehavior(bool, bool, bool, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ObjectRespawnBehavior(bool In_Section, bool In_Minor, bool In_Major, bool In_Completed)
+    parameters:
+    - id: In_Section
+      type: System.Boolean
+    - id: In_Minor
+      type: System.Boolean
+    - id: In_Major
+      type: System.Boolean
+    - id: In_Completed
+      type: System.Boolean
+    content.vb: Public Sub New(In_Section As Boolean, In_Minor As Boolean, In_Major As Boolean, In_Completed As Boolean)
+  overload: Global.ObjectRespawnBehavior.#ctor*
+  nameWithType.vb: ObjectRespawnBehavior.New(Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: ObjectRespawnBehavior.New(Boolean, Boolean, Boolean, Boolean)
+  name.vb: New(Boolean, Boolean, Boolean, Boolean)
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ObjectRespawnBehavior.#ctor*
+  commentId: Overload:Global.ObjectRespawnBehavior.#ctor
+  name: ObjectRespawnBehavior
+  nameWithType: ObjectRespawnBehavior.ObjectRespawnBehavior
+  fullName: ObjectRespawnBehavior.ObjectRespawnBehavior
+  nameWithType.vb: ObjectRespawnBehavior.New
+  fullName.vb: ObjectRespawnBehavior.New
+  name.vb: New

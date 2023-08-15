@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SectionSaveData
+  commentId: T:Global.SectionSaveData
+  id: SectionSaveData
+  parent: Global
+  children:
+  - Global.SectionSaveData.#ctor(System.String,System.String,System.Boolean)
+  - Global.SectionSaveData.Identifier
+  - Global.SectionSaveData.IsSectionCompleted
+  - Global.SectionSaveData.Name
+  - Global.SectionSaveData.SectionObjects
+  - Global.SectionSaveData.SectionPlatforms
+  - Global.SectionSaveData.SectionStateSave
+  langs:
+  - csharp
+  - vb
+  name: SectionSaveData
+  nameWithType: SectionSaveData
+  fullName: SectionSaveData
+  type: Struct
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionSaveData
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct SectionSaveData
+    content.vb: >-
+      <Serializable>
+
+      Public Structure SectionSaveData
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.SectionSaveData.Identifier
+  commentId: F:Global.SectionSaveData.Identifier
+  id: Identifier
+  parent: Global.SectionSaveData
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: SectionSaveData.Identifier
+  fullName: SectionSaveData.Identifier
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Identifier
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public string Identifier
+    return:
+      type: System.String
+    content.vb: >-
+      <SerializeField>
+
+      Public Identifier As String
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.SectionSaveData.Name
+  commentId: F:Global.SectionSaveData.Name
+  id: Name
+  parent: Global.SectionSaveData
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: SectionSaveData.Name
+  fullName: SectionSaveData.Name
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Name
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public string Name
+    return:
+      type: System.String
+    content.vb: >-
+      <SerializeField>
+
+      Public Name As String
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.SectionSaveData.IsSectionCompleted
+  commentId: F:Global.SectionSaveData.IsSectionCompleted
+  id: IsSectionCompleted
+  parent: Global.SectionSaveData
+  langs:
+  - csharp
+  - vb
+  name: IsSectionCompleted
+  nameWithType: SectionSaveData.IsSectionCompleted
+  fullName: SectionSaveData.IsSectionCompleted
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsSectionCompleted
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public bool IsSectionCompleted
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      Public IsSectionCompleted As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.SectionSaveData.SectionObjects
+  commentId: F:Global.SectionSaveData.SectionObjects
+  id: SectionObjects
+  parent: Global.SectionSaveData
+  langs:
+  - csharp
+  - vb
+  name: SectionObjects
+  nameWithType: SectionSaveData.SectionObjects
+  fullName: SectionSaveData.SectionObjects
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionObjects
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public List<IntObjectSaveData> SectionObjects
+    return:
+      type: System.Collections.Generic.List{IntObjectSaveData}
+    content.vb: >-
+      <SerializeField>
+
+      Public SectionObjects As List(Of IntObjectSaveData)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.SectionSaveData.SectionPlatforms
+  commentId: F:Global.SectionSaveData.SectionPlatforms
+  id: SectionPlatforms
+  parent: Global.SectionSaveData
+  langs:
+  - csharp
+  - vb
+  name: SectionPlatforms
+  nameWithType: SectionSaveData.SectionPlatforms
+  fullName: SectionSaveData.SectionPlatforms
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionPlatforms
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public List<PlatformSaveData> SectionPlatforms
+    return:
+      type: System.Collections.Generic.List{PlatformSaveData}
+    content.vb: >-
+      <SerializeField>
+
+      Public SectionPlatforms As List(Of PlatformSaveData)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.SectionSaveData.SectionStateSave
+  commentId: F:Global.SectionSaveData.SectionStateSave
+  id: SectionStateSave
+  parent: Global.SectionSaveData
+  langs:
+  - csharp
+  - vb
+  name: SectionStateSave
+  nameWithType: SectionSaveData.SectionStateSave
+  fullName: SectionSaveData.SectionStateSave
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionStateSave
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public StateManager.StateManagerSaveData SectionStateSave
+    return:
+      type: Global.StateManager.StateManagerSaveData
+    content.vb: >-
+      <SerializeField>
+
+      Public SectionStateSave As StateManager.StateManagerSaveData
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.SectionSaveData.#ctor(System.String,System.String,System.Boolean)
+  commentId: M:Global.SectionSaveData.#ctor(System.String,System.String,System.Boolean)
+  id: '#ctor(System.String,System.String,System.Boolean)'
+  parent: Global.SectionSaveData
+  langs:
+  - csharp
+  - vb
+  name: SectionSaveData(string, string, bool)
+  nameWithType: SectionSaveData.SectionSaveData(string, string, bool)
+  fullName: SectionSaveData.SectionSaveData(string, string, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public SectionSaveData(string id, string name, bool completed)
+    parameters:
+    - id: id
+      type: System.String
+    - id: name
+      type: System.String
+    - id: completed
+      type: System.Boolean
+    content.vb: Public Sub New(id As String, name As String, completed As Boolean)
+  overload: Global.SectionSaveData.#ctor*
+  nameWithType.vb: SectionSaveData.New(String, String, Boolean)
+  fullName.vb: SectionSaveData.New(String, String, Boolean)
+  name.vb: New(String, String, Boolean)
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{IntObjectSaveData}
+  commentId: T:System.Collections.Generic.List{IntObjectSaveData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IntObjectSaveData>
+  nameWithType: List<IntObjectSaveData>
+  fullName: System.Collections.Generic.List<IntObjectSaveData>
+  nameWithType.vb: List(Of IntObjectSaveData)
+  fullName.vb: System.Collections.Generic.List(Of IntObjectSaveData)
+  name.vb: List(Of IntObjectSaveData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntObjectSaveData
+    name: IntObjectSaveData
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntObjectSaveData
+    name: IntObjectSaveData
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Collections.Generic.List{PlatformSaveData}
+  commentId: T:System.Collections.Generic.List{PlatformSaveData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<PlatformSaveData>
+  nameWithType: List<PlatformSaveData>
+  fullName: System.Collections.Generic.List<PlatformSaveData>
+  nameWithType.vb: List(Of PlatformSaveData)
+  fullName.vb: System.Collections.Generic.List(Of PlatformSaveData)
+  name.vb: List(Of PlatformSaveData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.PlatformSaveData
+    name: PlatformSaveData
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.PlatformSaveData
+    name: PlatformSaveData
+  - name: )
+- uid: Global.StateManager.StateManagerSaveData
+  commentId: T:Global.StateManager.StateManagerSaveData
+  name: StateManager.StateManagerSaveData
+  nameWithType: StateManager.StateManagerSaveData
+  fullName: StateManager.StateManagerSaveData
+  spec.csharp:
+  - uid: Global.StateManager
+    name: StateManager
+  - name: .
+  - uid: Global.StateManager.StateManagerSaveData
+    name: StateManagerSaveData
+  spec.vb:
+  - uid: Global.StateManager
+    name: StateManager
+  - name: .
+  - uid: Global.StateManager.StateManagerSaveData
+    name: StateManagerSaveData
+- uid: Global.SectionSaveData.#ctor*
+  commentId: Overload:Global.SectionSaveData.#ctor
+  name: SectionSaveData
+  nameWithType: SectionSaveData.SectionSaveData
+  fullName: SectionSaveData.SectionSaveData
+  nameWithType.vb: SectionSaveData.New
+  fullName.vb: SectionSaveData.New
+  name.vb: New

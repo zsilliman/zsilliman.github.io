@@ -1,0 +1,743 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntRay
+  commentId: T:Global.IntRay
+  id: IntRay
+  parent: Global
+  children:
+  - Global.IntRay.#ctor
+  - Global.IntRay.#ctor(UnityEngine.Vector2Int,UnityEngine.Vector2,UnityEngine.Vector2)
+  - Global.IntRay.direction
+  - Global.IntRay.end
+  - Global.IntRay.GetClosestPoint(UnityEngine.Vector2)
+  - Global.IntRay.GetClosestTValueFromPoint(UnityEngine.Vector2,System.Single)
+  - Global.IntRay.GetPointAtDistanceAlongRay(System.Single)
+  - Global.IntRay.GetPositionAt(System.Single)
+  - Global.IntRay.GetRayIntersection(IntRay)
+  - Global.IntRay.GetRayLengthNotRounded
+  - Global.IntRay.Intersects(IntCollider)
+  - Global.IntRay.Intersects(IntRay)
+  - Global.IntRay.origin
+  - Global.IntRay.start
+  - Global.IntRay.t_range
+  langs:
+  - csharp
+  - vb
+  name: IntRay
+  nameWithType: IntRay
+  fullName: IntRay
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntRay
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 280
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\n<code>IntRay</code> is a 2D ray defined by an integer origin, but a float-based direction\n - Note that the direction is not normalized.\n - The start is not necessarily the origin, but rather origin + direction* t_range.x\n - The origin + direction* t_range.y is the end of the ray\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class IntRay
+    content.vb: >-
+      <Serializable>
+
+      Public Class IntRay
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.IntRay.origin
+  commentId: F:Global.IntRay.origin
+  id: origin
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: origin
+  nameWithType: IntRay.origin
+  fullName: IntRay.origin
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: origin
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 283
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public Vector2Int origin
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <SerializeField>
+
+      Public origin As Vector2Int
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntRay.direction
+  commentId: F:Global.IntRay.direction
+  id: direction
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: direction
+  nameWithType: IntRay.direction
+  fullName: IntRay.direction
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: direction
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 285
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public Vector2 direction
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <SerializeField>
+
+      Public direction As Vector2
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntRay.t_range
+  commentId: F:Global.IntRay.t_range
+  id: t_range
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: t_range
+  nameWithType: IntRay.t_range
+  fullName: IntRay.t_range
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: t_range
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 287
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public Vector2 t_range
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <SerializeField>
+
+      Public t_range As Vector2
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.IntRay.#ctor
+  commentId: M:Global.IntRay.#ctor
+  id: '#ctor'
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: IntRay()
+  nameWithType: IntRay.IntRay()
+  fullName: IntRay.IntRay()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 290
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IntRay()
+    content.vb: Public Sub New()
+  overload: Global.IntRay.#ctor*
+  nameWithType.vb: IntRay.New()
+  fullName.vb: IntRay.New()
+  name.vb: New()
+- uid: Global.IntRay.#ctor(UnityEngine.Vector2Int,UnityEngine.Vector2,UnityEngine.Vector2)
+  commentId: M:Global.IntRay.#ctor(UnityEngine.Vector2Int,UnityEngine.Vector2,UnityEngine.Vector2)
+  id: '#ctor(UnityEngine.Vector2Int,UnityEngine.Vector2,UnityEngine.Vector2)'
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: IntRay(Vector2Int, Vector2, Vector2)
+  nameWithType: IntRay.IntRay(Vector2Int, Vector2, Vector2)
+  fullName: IntRay.IntRay(UnityEngine.Vector2Int, UnityEngine.Vector2, UnityEngine.Vector2)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 296
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IntRay(Vector2Int origin, Vector2 direction, Vector2 t_range)
+    parameters:
+    - id: origin
+      type: UnityEngine.Vector2Int
+    - id: direction
+      type: UnityEngine.Vector2
+    - id: t_range
+      type: UnityEngine.Vector2
+    content.vb: Public Sub New(origin As Vector2Int, direction As Vector2, t_range As Vector2)
+  overload: Global.IntRay.#ctor*
+  nameWithType.vb: IntRay.New(Vector2Int, Vector2, Vector2)
+  fullName.vb: IntRay.New(UnityEngine.Vector2Int, UnityEngine.Vector2, UnityEngine.Vector2)
+  name.vb: New(Vector2Int, Vector2, Vector2)
+- uid: Global.IntRay.GetPositionAt(System.Single)
+  commentId: M:Global.IntRay.GetPositionAt(System.Single)
+  id: GetPositionAt(System.Single)
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: GetPositionAt(float)
+  nameWithType: IntRay.GetPositionAt(float)
+  fullName: IntRay.GetPositionAt(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetPositionAt
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 303
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 GetPositionAt(float t)
+    parameters:
+    - id: t
+      type: System.Single
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Function GetPositionAt(t As Single) As Vector2
+  overload: Global.IntRay.GetPositionAt*
+  nameWithType.vb: IntRay.GetPositionAt(Single)
+  fullName.vb: IntRay.GetPositionAt(Single)
+  name.vb: GetPositionAt(Single)
+- uid: Global.IntRay.start
+  commentId: P:Global.IntRay.start
+  id: start
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: start
+  nameWithType: IntRay.start
+  fullName: IntRay.start
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: start
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 311
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThe start of the ray\n"
+  example: []
+  syntax:
+    content: public Vector2Int start { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public ReadOnly Property start As Vector2Int
+  overload: Global.IntRay.start*
+- uid: Global.IntRay.end
+  commentId: P:Global.IntRay.end
+  id: end
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: end
+  nameWithType: IntRay.end
+  fullName: IntRay.end
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: end
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 316
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThe end of the ray\n"
+  example: []
+  syntax:
+    content: public Vector2Int end { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public ReadOnly Property [end] As Vector2Int
+  overload: Global.IntRay.end*
+- uid: Global.IntRay.Intersects(IntCollider)
+  commentId: M:Global.IntRay.Intersects(IntCollider)
+  id: Intersects(IntCollider)
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: Intersects(IntCollider)
+  nameWithType: IntRay.Intersects(IntCollider)
+  fullName: IntRay.Intersects(IntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Intersects
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 323
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck for ray intersection with collider\n"
+  example: []
+  syntax:
+    content: public bool Intersects(IntCollider collider)
+    parameters:
+    - id: collider
+      type: Global.IntCollider
+      description: Collider to intersect ray with
+    return:
+      type: System.Boolean
+      description: returns true if the ray intersects the collider
+    content.vb: Public Function Intersects(collider As IntCollider) As Boolean
+  overload: Global.IntRay.Intersects*
+- uid: Global.IntRay.Intersects(IntRay)
+  commentId: M:Global.IntRay.Intersects(IntRay)
+  id: Intersects(IntRay)
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: Intersects(IntRay)
+  nameWithType: IntRay.Intersects(IntRay)
+  fullName: IntRay.Intersects(IntRay)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Intersects
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 333
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck for ray intersection with another ray\n"
+  example: []
+  syntax:
+    content: public bool Intersects(IntRay ray)
+    parameters:
+    - id: ray
+      type: Global.IntRay
+      description: Ray to intersect with
+    return:
+      type: System.Boolean
+      description: returns true if the two rays intersect
+    content.vb: Public Function Intersects(ray As IntRay) As Boolean
+  overload: Global.IntRay.Intersects*
+- uid: Global.IntRay.GetRayIntersection(IntRay)
+  commentId: M:Global.IntRay.GetRayIntersection(IntRay)
+  id: GetRayIntersection(IntRay)
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: GetRayIntersection(IntRay)
+  nameWithType: IntRay.GetRayIntersection(IntRay)
+  fullName: IntRay.GetRayIntersection(IntRay)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetRayIntersection
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 338
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Intersection GetRayIntersection(IntRay ray)
+    parameters:
+    - id: ray
+      type: Global.IntRay
+    return:
+      type: Global.Intersection
+    content.vb: Public Function GetRayIntersection(ray As IntRay) As Intersection
+  overload: Global.IntRay.GetRayIntersection*
+- uid: Global.IntRay.GetClosestPoint(UnityEngine.Vector2)
+  commentId: M:Global.IntRay.GetClosestPoint(UnityEngine.Vector2)
+  id: GetClosestPoint(UnityEngine.Vector2)
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: GetClosestPoint(Vector2)
+  nameWithType: IntRay.GetClosestPoint(Vector2)
+  fullName: IntRay.GetClosestPoint(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetClosestPoint
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 343
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 GetClosestPoint(Vector2 worldLoc)
+    parameters:
+    - id: worldLoc
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Function GetClosestPoint(worldLoc As Vector2) As Vector2
+  overload: Global.IntRay.GetClosestPoint*
+- uid: Global.IntRay.GetClosestTValueFromPoint(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.IntRay.GetClosestTValueFromPoint(UnityEngine.Vector2,System.Single)
+  id: GetClosestTValueFromPoint(UnityEngine.Vector2,System.Single)
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: GetClosestTValueFromPoint(Vector2, float)
+  nameWithType: IntRay.GetClosestTValueFromPoint(Vector2, float)
+  fullName: IntRay.GetClosestTValueFromPoint(UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetClosestTValueFromPoint
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 351
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float GetClosestTValueFromPoint(Vector2 point, float end_epsilon = 0.01)
+    parameters:
+    - id: point
+      type: UnityEngine.Vector2
+    - id: end_epsilon
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function GetClosestTValueFromPoint(point As Vector2, end_epsilon As Single = 0.01) As Single
+  overload: Global.IntRay.GetClosestTValueFromPoint*
+  nameWithType.vb: IntRay.GetClosestTValueFromPoint(Vector2, Single)
+  fullName.vb: IntRay.GetClosestTValueFromPoint(UnityEngine.Vector2, Single)
+  name.vb: GetClosestTValueFromPoint(Vector2, Single)
+- uid: Global.IntRay.GetRayLengthNotRounded
+  commentId: M:Global.IntRay.GetRayLengthNotRounded
+  id: GetRayLengthNotRounded
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: GetRayLengthNotRounded()
+  nameWithType: IntRay.GetRayLengthNotRounded()
+  fullName: IntRay.GetRayLengthNotRounded()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetRayLengthNotRounded
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 364
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float GetRayLengthNotRounded()
+    return:
+      type: System.Single
+    content.vb: Public Function GetRayLengthNotRounded() As Single
+  overload: Global.IntRay.GetRayLengthNotRounded*
+- uid: Global.IntRay.GetPointAtDistanceAlongRay(System.Single)
+  commentId: M:Global.IntRay.GetPointAtDistanceAlongRay(System.Single)
+  id: GetPointAtDistanceAlongRay(System.Single)
+  parent: Global.IntRay
+  langs:
+  - csharp
+  - vb
+  name: GetPointAtDistanceAlongRay(float)
+  nameWithType: IntRay.GetPointAtDistanceAlongRay(float)
+  fullName: IntRay.GetPointAtDistanceAlongRay(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/IntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetPointAtDistanceAlongRay
+    path: ../Assets/Framework/Physics/Colliders/IntCollider.cs
+    startLine: 369
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 GetPointAtDistanceAlongRay(float dist)
+    parameters:
+    - id: dist
+      type: System.Single
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Function GetPointAtDistanceAlongRay(dist As Single) As Vector2
+  overload: Global.IntRay.GetPointAtDistanceAlongRay*
+  nameWithType.vb: IntRay.GetPointAtDistanceAlongRay(Single)
+  fullName.vb: IntRay.GetPointAtDistanceAlongRay(Single)
+  name.vb: GetPointAtDistanceAlongRay(Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.IntRay.#ctor*
+  commentId: Overload:Global.IntRay.#ctor
+  name: IntRay
+  nameWithType: IntRay.IntRay
+  fullName: IntRay.IntRay
+  nameWithType.vb: IntRay.New
+  fullName.vb: IntRay.New
+  name.vb: New
+- uid: Global.IntRay.GetPositionAt*
+  commentId: Overload:Global.IntRay.GetPositionAt
+  name: GetPositionAt
+  nameWithType: IntRay.GetPositionAt
+  fullName: IntRay.GetPositionAt
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.IntRay.start*
+  commentId: Overload:Global.IntRay.start
+  name: start
+  nameWithType: IntRay.start
+  fullName: IntRay.start
+- uid: Global.IntRay.end*
+  commentId: Overload:Global.IntRay.end
+  name: end
+  nameWithType: IntRay.end
+  fullName: IntRay.end
+- uid: Global.IntRay.Intersects*
+  commentId: Overload:Global.IntRay.Intersects
+  name: Intersects
+  nameWithType: IntRay.Intersects
+  fullName: IntRay.Intersects
+- uid: Global.IntCollider
+  commentId: T:Global.IntCollider
+  name: IntCollider
+  nameWithType: IntCollider
+  fullName: IntCollider
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.IntRay
+  commentId: T:Global.IntRay
+  name: IntRay
+  nameWithType: IntRay
+  fullName: IntRay
+- uid: Global.IntRay.GetRayIntersection*
+  commentId: Overload:Global.IntRay.GetRayIntersection
+  name: GetRayIntersection
+  nameWithType: IntRay.GetRayIntersection
+  fullName: IntRay.GetRayIntersection
+- uid: Global.Intersection
+  commentId: T:Global.Intersection
+  name: Intersection
+  nameWithType: Intersection
+  fullName: Intersection
+- uid: Global.IntRay.GetClosestPoint*
+  commentId: Overload:Global.IntRay.GetClosestPoint
+  name: GetClosestPoint
+  nameWithType: IntRay.GetClosestPoint
+  fullName: IntRay.GetClosestPoint
+- uid: Global.IntRay.GetClosestTValueFromPoint*
+  commentId: Overload:Global.IntRay.GetClosestTValueFromPoint
+  name: GetClosestTValueFromPoint
+  nameWithType: IntRay.GetClosestTValueFromPoint
+  fullName: IntRay.GetClosestTValueFromPoint
+- uid: Global.IntRay.GetRayLengthNotRounded*
+  commentId: Overload:Global.IntRay.GetRayLengthNotRounded
+  name: GetRayLengthNotRounded
+  nameWithType: IntRay.GetRayLengthNotRounded
+  fullName: IntRay.GetRayLengthNotRounded
+- uid: Global.IntRay.GetPointAtDistanceAlongRay*
+  commentId: Overload:Global.IntRay.GetPointAtDistanceAlongRay
+  name: GetPointAtDistanceAlongRay
+  nameWithType: IntRay.GetPointAtDistanceAlongRay
+  fullName: IntRay.GetPointAtDistanceAlongRay

@@ -1,0 +1,299 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CharacterCollapsedStatsManager
+  commentId: T:Global.CharacterCollapsedStatsManager
+  id: CharacterCollapsedStatsManager
+  parent: Global
+  children:
+  - Global.CharacterCollapsedStatsManager.equippedItemsManager
+  - Global.CharacterCollapsedStatsManager.NoSpellItem
+  - Global.CharacterCollapsedStatsManager.NoWeaponItem
+  - Global.CharacterCollapsedStatsManager.spellPreview
+  - Global.CharacterCollapsedStatsManager.weaponPreview
+  langs:
+  - csharp
+  - vb
+  name: CharacterCollapsedStatsManager
+  nameWithType: CharacterCollapsedStatsManager
+  fullName: CharacterCollapsedStatsManager
+  type: Class
+  source:
+    remote:
+      path: Assets/CharacterCollapsedStatsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CharacterCollapsedStatsManager
+    path: ../Assets/CharacterCollapsedStatsManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class CharacterCollapsedStatsManager : MonoBehaviour'
+    content.vb: Public Class CharacterCollapsedStatsManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.CharacterCollapsedStatsManager.equippedItemsManager
+  commentId: F:Global.CharacterCollapsedStatsManager.equippedItemsManager
+  id: equippedItemsManager
+  parent: Global.CharacterCollapsedStatsManager
+  langs:
+  - csharp
+  - vb
+  name: equippedItemsManager
+  nameWithType: CharacterCollapsedStatsManager.equippedItemsManager
+  fullName: CharacterCollapsedStatsManager.equippedItemsManager
+  type: Field
+  source:
+    remote:
+      path: Assets/CharacterCollapsedStatsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: equippedItemsManager
+    path: ../Assets/CharacterCollapsedStatsManager.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public EquippedItemsManager equippedItemsManager
+    return:
+      type: Global.EquippedItemsManager
+    content.vb: Public equippedItemsManager As EquippedItemsManager
+- uid: Global.CharacterCollapsedStatsManager.weaponPreview
+  commentId: F:Global.CharacterCollapsedStatsManager.weaponPreview
+  id: weaponPreview
+  parent: Global.CharacterCollapsedStatsManager
+  langs:
+  - csharp
+  - vb
+  name: weaponPreview
+  nameWithType: CharacterCollapsedStatsManager.weaponPreview
+  fullName: CharacterCollapsedStatsManager.weaponPreview
+  type: Field
+  source:
+    remote:
+      path: Assets/CharacterCollapsedStatsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: weaponPreview
+    path: ../Assets/CharacterCollapsedStatsManager.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ItemPreview weaponPreview
+    return:
+      type: Global.ItemPreview
+    content.vb: Public weaponPreview As ItemPreview
+- uid: Global.CharacterCollapsedStatsManager.spellPreview
+  commentId: F:Global.CharacterCollapsedStatsManager.spellPreview
+  id: spellPreview
+  parent: Global.CharacterCollapsedStatsManager
+  langs:
+  - csharp
+  - vb
+  name: spellPreview
+  nameWithType: CharacterCollapsedStatsManager.spellPreview
+  fullName: CharacterCollapsedStatsManager.spellPreview
+  type: Field
+  source:
+    remote:
+      path: Assets/CharacterCollapsedStatsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: spellPreview
+    path: ../Assets/CharacterCollapsedStatsManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ItemPreview spellPreview
+    return:
+      type: Global.ItemPreview
+    content.vb: Public spellPreview As ItemPreview
+- uid: Global.CharacterCollapsedStatsManager.NoWeaponItem
+  commentId: F:Global.CharacterCollapsedStatsManager.NoWeaponItem
+  id: NoWeaponItem
+  parent: Global.CharacterCollapsedStatsManager
+  langs:
+  - csharp
+  - vb
+  name: NoWeaponItem
+  nameWithType: CharacterCollapsedStatsManager.NoWeaponItem
+  fullName: CharacterCollapsedStatsManager.NoWeaponItem
+  type: Field
+  source:
+    remote:
+      path: Assets/CharacterCollapsedStatsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NoWeaponItem
+    path: ../Assets/CharacterCollapsedStatsManager.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Item NoWeaponItem
+    return:
+      type: Global.Item
+    content.vb: Public NoWeaponItem As Item
+- uid: Global.CharacterCollapsedStatsManager.NoSpellItem
+  commentId: F:Global.CharacterCollapsedStatsManager.NoSpellItem
+  id: NoSpellItem
+  parent: Global.CharacterCollapsedStatsManager
+  langs:
+  - csharp
+  - vb
+  name: NoSpellItem
+  nameWithType: CharacterCollapsedStatsManager.NoSpellItem
+  fullName: CharacterCollapsedStatsManager.NoSpellItem
+  type: Field
+  source:
+    remote:
+      path: Assets/CharacterCollapsedStatsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NoSpellItem
+    path: ../Assets/CharacterCollapsedStatsManager.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Item NoSpellItem
+    return:
+      type: Global.Item
+    content.vb: Public NoSpellItem As Item
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.EquippedItemsManager
+  commentId: T:Global.EquippedItemsManager
+  name: EquippedItemsManager
+  nameWithType: EquippedItemsManager
+  fullName: EquippedItemsManager
+- uid: Global.ItemPreview
+  commentId: T:Global.ItemPreview
+  name: ItemPreview
+  nameWithType: ItemPreview
+  fullName: ItemPreview
+- uid: Global.Item
+  commentId: T:Global.Item
+  name: Item
+  nameWithType: Item
+  fullName: Item

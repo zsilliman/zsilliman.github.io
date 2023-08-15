@@ -1,0 +1,371 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Validator
+  commentId: T:Global.Validator
+  id: Validator
+  parent: Global
+  children:
+  - Global.Validator.AutoAlignEnabled
+  - Global.Validator.TileSize
+  - Global.Validator.ValidateAuras
+  - Global.Validator.ValidateGameStates
+  - Global.Validator.ValidateScene
+  - Global.Validator.ValidateSections
+  langs:
+  - csharp
+  - vb
+  name: Validator
+  nameWithType: Validator
+  fullName: Validator
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Validator/Validator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Validator
+    path: ../Assets/Objects & Components/Validator/Validator.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ExecuteInEditMode]
+
+      public class Validator : MonoBehaviour
+    content.vb: >-
+      <ExecuteInEditMode>
+
+      Public Class Validator Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.ExecuteInEditMode
+    ctor: UnityEngine.ExecuteInEditMode.#ctor
+    arguments: []
+- uid: Global.Validator.TileSize
+  commentId: F:Global.Validator.TileSize
+  id: TileSize
+  parent: Global.Validator
+  langs:
+  - csharp
+  - vb
+  name: TileSize
+  nameWithType: Validator.TileSize
+  fullName: Validator.TileSize
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Validator/Validator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TileSize
+    path: ../Assets/Objects & Components/Validator/Validator.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float TileSize
+    return:
+      type: System.Single
+    content.vb: Public TileSize As Single
+- uid: Global.Validator.AutoAlignEnabled
+  commentId: F:Global.Validator.AutoAlignEnabled
+  id: AutoAlignEnabled
+  parent: Global.Validator
+  langs:
+  - csharp
+  - vb
+  name: AutoAlignEnabled
+  nameWithType: Validator.AutoAlignEnabled
+  fullName: Validator.AutoAlignEnabled
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Validator/Validator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AutoAlignEnabled
+    path: ../Assets/Objects & Components/Validator/Validator.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nAligns section transform to the nearest tile\n"
+  example: []
+  syntax:
+    content: public bool AutoAlignEnabled
+    return:
+      type: System.Boolean
+    content.vb: Public AutoAlignEnabled As Boolean
+- uid: Global.Validator.ValidateScene
+  commentId: M:Global.Validator.ValidateScene
+  id: ValidateScene
+  parent: Global.Validator
+  langs:
+  - csharp
+  - vb
+  name: ValidateScene()
+  nameWithType: Validator.ValidateScene()
+  fullName: Validator.ValidateScene()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Validator/Validator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ValidateScene
+    path: ../Assets/Objects & Components/Validator/Validator.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ValidateScene()
+    return:
+      type: System.Boolean
+    content.vb: Public Function ValidateScene() As Boolean
+  overload: Global.Validator.ValidateScene*
+- uid: Global.Validator.ValidateSections
+  commentId: M:Global.Validator.ValidateSections
+  id: ValidateSections
+  parent: Global.Validator
+  langs:
+  - csharp
+  - vb
+  name: ValidateSections()
+  nameWithType: Validator.ValidateSections()
+  fullName: Validator.ValidateSections()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Validator/Validator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ValidateSections
+    path: ../Assets/Objects & Components/Validator/Validator.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ValidateSections()
+    return:
+      type: System.Boolean
+    content.vb: Public Function ValidateSections() As Boolean
+  overload: Global.Validator.ValidateSections*
+- uid: Global.Validator.ValidateGameStates
+  commentId: M:Global.Validator.ValidateGameStates
+  id: ValidateGameStates
+  parent: Global.Validator
+  langs:
+  - csharp
+  - vb
+  name: ValidateGameStates()
+  nameWithType: Validator.ValidateGameStates()
+  fullName: Validator.ValidateGameStates()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Validator/Validator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ValidateGameStates
+    path: ../Assets/Objects & Components/Validator/Validator.cs
+    startLine: 133
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ValidateGameStates()
+    return:
+      type: System.Boolean
+    content.vb: Public Function ValidateGameStates() As Boolean
+  overload: Global.Validator.ValidateGameStates*
+- uid: Global.Validator.ValidateAuras
+  commentId: M:Global.Validator.ValidateAuras
+  id: ValidateAuras
+  parent: Global.Validator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAuras()
+  nameWithType: Validator.ValidateAuras()
+  fullName: Validator.ValidateAuras()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Validator/Validator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ValidateAuras
+    path: ../Assets/Objects & Components/Validator/Validator.cs
+    startLine: 151
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nAt the moment this only supports converting Aura types to AutoMergeAuras for lines\n"
+  example: []
+  syntax:
+    content: public bool ValidateAuras()
+    return:
+      type: System.Boolean
+      description: Whether the validation was successful.
+    content.vb: Public Function ValidateAuras() As Boolean
+  overload: Global.Validator.ValidateAuras*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Validator.ValidateScene*
+  commentId: Overload:Global.Validator.ValidateScene
+  name: ValidateScene
+  nameWithType: Validator.ValidateScene
+  fullName: Validator.ValidateScene
+- uid: Global.Validator.ValidateSections*
+  commentId: Overload:Global.Validator.ValidateSections
+  name: ValidateSections
+  nameWithType: Validator.ValidateSections
+  fullName: Validator.ValidateSections
+- uid: Global.Validator.ValidateGameStates*
+  commentId: Overload:Global.Validator.ValidateGameStates
+  name: ValidateGameStates
+  nameWithType: Validator.ValidateGameStates
+  fullName: Validator.ValidateGameStates
+- uid: Global.Validator.ValidateAuras*
+  commentId: Overload:Global.Validator.ValidateAuras
+  name: ValidateAuras
+  nameWithType: Validator.ValidateAuras
+  fullName: Validator.ValidateAuras

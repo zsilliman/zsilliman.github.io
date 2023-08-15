@@ -1,0 +1,1938 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralSectionGenerator
+  commentId: T:Global.ProceduralSectionGenerator
+  id: ProceduralSectionGenerator
+  parent: Global
+  children:
+  - Global.ProceduralSectionGenerator.AddEntrances(Section,ProceduralSectionGenerator.ProceduralSectionProperties,System.Collections.Generic.List{Section.DoorEndpoints})
+  - Global.ProceduralSectionGenerator.AddParallaxToSection(Section,UnityEngine.GameObject)
+  - Global.ProceduralSectionGenerator.AreSectionsNeighbors(Section,Section)
+  - Global.ProceduralSectionGenerator.CarveTunnel(Section,Section.DoorEndpoints,Section.DoorEndpoints,System.Single,System.Single,System.Single)
+  - Global.ProceduralSectionGenerator.CaveBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)
+  - Global.ProceduralSectionGenerator.ClearTiles(Section)
+  - Global.ProceduralSectionGenerator.CopyTiles(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.Tilemap,UnityEngine.RectInt,UnityEngine.Vector2Int)
+  - Global.ProceduralSectionGenerator.CreateNewSection(Section,IntMath.Direction,ProceduralSectionGenerator.ProceduralSectionProperties,System.Boolean)
+  - Global.ProceduralSectionGenerator.CurrentSectionProps
+  - Global.ProceduralSectionGenerator.CustomBoxFill(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,UnityEngine.Vector3Int)
+  - Global.ProceduralSectionGenerator.DebugDrawHill(Section,System.Int32,System.Int32,System.Single,System.Single)
+  - Global.ProceduralSectionGenerator.DebugDrawTunnel(Section,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)
+  - Global.ProceduralSectionGenerator.DrawCube(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  - Global.ProceduralSectionGenerator.DrawHorizontalLine(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  - Global.ProceduralSectionGenerator.DrawVerticalLine(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  - Global.ProceduralSectionGenerator.FillSection(Section,UnityEngine.Tilemaps.TileBase)
+  - Global.ProceduralSectionGenerator.FindNeighboringSections(Section)
+  - Global.ProceduralSectionGenerator.FoldOutRect(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.RectInt,IntMath.Direction)
+  - Global.ProceduralSectionGenerator.GenerateEntranceRoomsRec(UnityEngine.RectInt,System.Collections.Generic.List{Section.DoorEndpoints},UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32,System.Int32)
+  - Global.ProceduralSectionGenerator.GenerateSection(ProceduralSectionGenerator.SectionTerrainType)
+  - Global.ProceduralSectionGenerator.GenerateTemplateSection(System.String,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  - Global.ProceduralSectionGenerator.GetMinDoorOnSide(System.Collections.Generic.List{Section.DoorEndpoints},IntMath.Direction)
+  - Global.ProceduralSectionGenerator.GetSharedDoorEndpoints(Section,Section)
+  - Global.ProceduralSectionGenerator.GetSharedEdge(Section,Section)
+  - Global.ProceduralSectionGenerator.GridBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32)
+  - Global.ProceduralSectionGenerator.HillBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32,System.Int32,System.Single,System.Single)
+  - Global.ProceduralSectionGenerator.PositionSectionAboveParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  - Global.ProceduralSectionGenerator.PositionSectionBelowParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  - Global.ProceduralSectionGenerator.PositionSectionToLeftOfParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  - Global.ProceduralSectionGenerator.PositionSectionToRightOfParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  - Global.ProceduralSectionGenerator.RegenerateSection(Section,ProceduralSectionGenerator.ProceduralSectionProperties)
+  - Global.ProceduralSectionGenerator.RemapEntrance(UnityEngine.RectInt,Section.DoorEndpoints,Section.DoorEndpoints@)
+  - Global.ProceduralSectionGenerator.ResolveEntrances(Section,UnityEngine.Tilemaps.TileBase,System.Collections.Generic.List{Section.DoorEndpoints})
+  - Global.ProceduralSectionGenerator.RoomBorder(Section,UnityEngine.Tilemaps.TileBase,System.Collections.Generic.List{Section.DoorEndpoints},UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32,System.Int32)
+  - Global.ProceduralSectionGenerator.SelectSection(Section)
+  - Global.ProceduralSectionGenerator.TransformTilemapIndex(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.Tilemap,UnityEngine.Vector2Int)
+  langs:
+  - csharp
+  - vb
+  name: ProceduralSectionGenerator
+  nameWithType: ProceduralSectionGenerator
+  fullName: ProceduralSectionGenerator
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ProceduralSectionGenerator
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nUtility for procedurally generating sections\n"
+  example: []
+  syntax:
+    content: public static class ProceduralSectionGenerator
+    content.vb: Public Module ProceduralSectionGenerator
+  inheritance:
+  - System.Object
+- uid: Global.ProceduralSectionGenerator.CurrentSectionProps
+  commentId: F:Global.ProceduralSectionGenerator.CurrentSectionProps
+  id: CurrentSectionProps
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: CurrentSectionProps
+  nameWithType: ProceduralSectionGenerator.CurrentSectionProps
+  fullName: ProceduralSectionGenerator.CurrentSectionProps
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CurrentSectionProps
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static ProceduralSectionGenerator.ProceduralSectionProperties CurrentSectionProps
+    return:
+      type: Global.ProceduralSectionGenerator.ProceduralSectionProperties
+    content.vb: Public Shared CurrentSectionProps As ProceduralSectionGenerator.ProceduralSectionProperties
+- uid: Global.ProceduralSectionGenerator.CreateNewSection(Section,IntMath.Direction,ProceduralSectionGenerator.ProceduralSectionProperties,System.Boolean)
+  commentId: M:Global.ProceduralSectionGenerator.CreateNewSection(Section,IntMath.Direction,ProceduralSectionGenerator.ProceduralSectionProperties,System.Boolean)
+  id: CreateNewSection(Section,IntMath.Direction,ProceduralSectionGenerator.ProceduralSectionProperties,System.Boolean)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: CreateNewSection(Section, Direction, ProceduralSectionProperties, bool)
+  nameWithType: ProceduralSectionGenerator.CreateNewSection(Section, IntMath.Direction, ProceduralSectionGenerator.ProceduralSectionProperties, bool)
+  fullName: ProceduralSectionGenerator.CreateNewSection(Section, IntMath.Direction, ProceduralSectionGenerator.ProceduralSectionProperties, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CreateNewSection
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 86
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCreate a new section\n"
+  example: []
+  syntax:
+    content: public static Section CreateNewSection(Section parent, IntMath.Direction dir, ProceduralSectionGenerator.ProceduralSectionProperties props, bool select = true)
+    parameters:
+    - id: parent
+      type: Global.Section
+      description: Make a copy of this section
+    - id: dir
+      type: Global.IntMath.Direction
+      description: Dimensions of the new section
+    - id: props
+      type: Global.ProceduralSectionGenerator.ProceduralSectionProperties
+      description: procedural section properties
+    - id: select
+      type: System.Boolean
+      description: whether to select the new section in the hierarchy
+    return:
+      type: Global.Section
+      description: Returns the newly generated section
+    content.vb: Public Shared Function CreateNewSection(parent As Section, dir As IntMath.Direction, props As ProceduralSectionGenerator.ProceduralSectionProperties, [select] As Boolean = True) As Section
+  overload: Global.ProceduralSectionGenerator.CreateNewSection*
+  nameWithType.vb: ProceduralSectionGenerator.CreateNewSection(Section, IntMath.Direction, ProceduralSectionGenerator.ProceduralSectionProperties, Boolean)
+  fullName.vb: ProceduralSectionGenerator.CreateNewSection(Section, IntMath.Direction, ProceduralSectionGenerator.ProceduralSectionProperties, Boolean)
+  name.vb: CreateNewSection(Section, Direction, ProceduralSectionProperties, Boolean)
+- uid: Global.ProceduralSectionGenerator.RegenerateSection(Section,ProceduralSectionGenerator.ProceduralSectionProperties)
+  commentId: M:Global.ProceduralSectionGenerator.RegenerateSection(Section,ProceduralSectionGenerator.ProceduralSectionProperties)
+  id: RegenerateSection(Section,ProceduralSectionGenerator.ProceduralSectionProperties)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: RegenerateSection(Section, ProceduralSectionProperties)
+  nameWithType: ProceduralSectionGenerator.RegenerateSection(Section, ProceduralSectionGenerator.ProceduralSectionProperties)
+  fullName: ProceduralSectionGenerator.RegenerateSection(Section, ProceduralSectionGenerator.ProceduralSectionProperties)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegenerateSection
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 140
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void RegenerateSection(Section section, ProceduralSectionGenerator.ProceduralSectionProperties props)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: props
+      type: Global.ProceduralSectionGenerator.ProceduralSectionProperties
+    content.vb: Public Shared Sub RegenerateSection(section As Section, props As ProceduralSectionGenerator.ProceduralSectionProperties)
+  overload: Global.ProceduralSectionGenerator.RegenerateSection*
+- uid: Global.ProceduralSectionGenerator.PositionSectionAboveParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  commentId: M:Global.ProceduralSectionGenerator.PositionSectionAboveParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  id: PositionSectionAboveParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: PositionSectionAboveParent(Section, Section, SectionAlignmentRule)
+  nameWithType: ProceduralSectionGenerator.PositionSectionAboveParent(Section, Section, ProceduralSectionGenerator.SectionAlignmentRule)
+  fullName: ProceduralSectionGenerator.PositionSectionAboveParent(Section, Section, ProceduralSectionGenerator.SectionAlignmentRule)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PositionSectionAboveParent
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 262
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void PositionSectionAboveParent(Section parent, Section child, ProceduralSectionGenerator.SectionAlignmentRule alignment)
+    parameters:
+    - id: parent
+      type: Global.Section
+    - id: child
+      type: Global.Section
+    - id: alignment
+      type: Global.ProceduralSectionGenerator.SectionAlignmentRule
+    content.vb: Public Shared Sub PositionSectionAboveParent(parent As Section, child As Section, alignment As ProceduralSectionGenerator.SectionAlignmentRule)
+  overload: Global.ProceduralSectionGenerator.PositionSectionAboveParent*
+- uid: Global.ProceduralSectionGenerator.PositionSectionBelowParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  commentId: M:Global.ProceduralSectionGenerator.PositionSectionBelowParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  id: PositionSectionBelowParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: PositionSectionBelowParent(Section, Section, SectionAlignmentRule)
+  nameWithType: ProceduralSectionGenerator.PositionSectionBelowParent(Section, Section, ProceduralSectionGenerator.SectionAlignmentRule)
+  fullName: ProceduralSectionGenerator.PositionSectionBelowParent(Section, Section, ProceduralSectionGenerator.SectionAlignmentRule)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PositionSectionBelowParent
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 278
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void PositionSectionBelowParent(Section parent, Section child, ProceduralSectionGenerator.SectionAlignmentRule alignment)
+    parameters:
+    - id: parent
+      type: Global.Section
+    - id: child
+      type: Global.Section
+    - id: alignment
+      type: Global.ProceduralSectionGenerator.SectionAlignmentRule
+    content.vb: Public Shared Sub PositionSectionBelowParent(parent As Section, child As Section, alignment As ProceduralSectionGenerator.SectionAlignmentRule)
+  overload: Global.ProceduralSectionGenerator.PositionSectionBelowParent*
+- uid: Global.ProceduralSectionGenerator.PositionSectionToRightOfParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  commentId: M:Global.ProceduralSectionGenerator.PositionSectionToRightOfParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  id: PositionSectionToRightOfParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: PositionSectionToRightOfParent(Section, Section, SectionAlignmentRule)
+  nameWithType: ProceduralSectionGenerator.PositionSectionToRightOfParent(Section, Section, ProceduralSectionGenerator.SectionAlignmentRule)
+  fullName: ProceduralSectionGenerator.PositionSectionToRightOfParent(Section, Section, ProceduralSectionGenerator.SectionAlignmentRule)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PositionSectionToRightOfParent
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 294
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void PositionSectionToRightOfParent(Section parent, Section child, ProceduralSectionGenerator.SectionAlignmentRule alignment)
+    parameters:
+    - id: parent
+      type: Global.Section
+    - id: child
+      type: Global.Section
+    - id: alignment
+      type: Global.ProceduralSectionGenerator.SectionAlignmentRule
+    content.vb: Public Shared Sub PositionSectionToRightOfParent(parent As Section, child As Section, alignment As ProceduralSectionGenerator.SectionAlignmentRule)
+  overload: Global.ProceduralSectionGenerator.PositionSectionToRightOfParent*
+- uid: Global.ProceduralSectionGenerator.PositionSectionToLeftOfParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  commentId: M:Global.ProceduralSectionGenerator.PositionSectionToLeftOfParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  id: PositionSectionToLeftOfParent(Section,Section,ProceduralSectionGenerator.SectionAlignmentRule)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: PositionSectionToLeftOfParent(Section, Section, SectionAlignmentRule)
+  nameWithType: ProceduralSectionGenerator.PositionSectionToLeftOfParent(Section, Section, ProceduralSectionGenerator.SectionAlignmentRule)
+  fullName: ProceduralSectionGenerator.PositionSectionToLeftOfParent(Section, Section, ProceduralSectionGenerator.SectionAlignmentRule)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PositionSectionToLeftOfParent
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 310
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void PositionSectionToLeftOfParent(Section parent, Section child, ProceduralSectionGenerator.SectionAlignmentRule alignment)
+    parameters:
+    - id: parent
+      type: Global.Section
+    - id: child
+      type: Global.Section
+    - id: alignment
+      type: Global.ProceduralSectionGenerator.SectionAlignmentRule
+    content.vb: Public Shared Sub PositionSectionToLeftOfParent(parent As Section, child As Section, alignment As ProceduralSectionGenerator.SectionAlignmentRule)
+  overload: Global.ProceduralSectionGenerator.PositionSectionToLeftOfParent*
+- uid: Global.ProceduralSectionGenerator.SelectSection(Section)
+  commentId: M:Global.ProceduralSectionGenerator.SelectSection(Section)
+  id: SelectSection(Section)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: SelectSection(Section)
+  nameWithType: ProceduralSectionGenerator.SelectSection(Section)
+  fullName: ProceduralSectionGenerator.SelectSection(Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SelectSection
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 326
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void SelectSection(Section section)
+    parameters:
+    - id: section
+      type: Global.Section
+    content.vb: Public Shared Sub SelectSection(section As Section)
+  overload: Global.ProceduralSectionGenerator.SelectSection*
+- uid: Global.ProceduralSectionGenerator.AddParallaxToSection(Section,UnityEngine.GameObject)
+  commentId: M:Global.ProceduralSectionGenerator.AddParallaxToSection(Section,UnityEngine.GameObject)
+  id: AddParallaxToSection(Section,UnityEngine.GameObject)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: AddParallaxToSection(Section, GameObject)
+  nameWithType: ProceduralSectionGenerator.AddParallaxToSection(Section, GameObject)
+  fullName: ProceduralSectionGenerator.AddParallaxToSection(Section, UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddParallaxToSection
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 339
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nAdd parallax to a newly created section. This will not work if the section has already called the &quot;Start&quot; function.\n"
+  example: []
+  syntax:
+    content: public static void AddParallaxToSection(Section section, GameObject parallax_prefab)
+    parameters:
+    - id: section
+      type: Global.Section
+      description: Section
+    - id: parallax_prefab
+      type: UnityEngine.GameObject
+      description: Gameobject that contains a Section Parallax component
+    content.vb: Public Shared Sub AddParallaxToSection(section As Section, parallax_prefab As GameObject)
+  overload: Global.ProceduralSectionGenerator.AddParallaxToSection*
+- uid: Global.ProceduralSectionGenerator.ClearTiles(Section)
+  commentId: M:Global.ProceduralSectionGenerator.ClearTiles(Section)
+  id: ClearTiles(Section)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: ClearTiles(Section)
+  nameWithType: ProceduralSectionGenerator.ClearTiles(Section)
+  fullName: ProceduralSectionGenerator.ClearTiles(Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ClearTiles
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 363
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void ClearTiles(Section section)
+    parameters:
+    - id: section
+      type: Global.Section
+    content.vb: Public Shared Sub ClearTiles(section As Section)
+  overload: Global.ProceduralSectionGenerator.ClearTiles*
+- uid: Global.ProceduralSectionGenerator.TransformTilemapIndex(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.Tilemap,UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralSectionGenerator.TransformTilemapIndex(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.Tilemap,UnityEngine.Vector2Int)
+  id: TransformTilemapIndex(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.Tilemap,UnityEngine.Vector2Int)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: TransformTilemapIndex(Tilemap, Tilemap, Vector2Int)
+  nameWithType: ProceduralSectionGenerator.TransformTilemapIndex(Tilemap, Tilemap, Vector2Int)
+  fullName: ProceduralSectionGenerator.TransformTilemapIndex(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.Tilemap, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TransformTilemapIndex
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 373
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2Int TransformTilemapIndex(Tilemap src, Tilemap dst, Vector2Int index)
+    parameters:
+    - id: src
+      type: UnityEngine.Tilemaps.Tilemap
+    - id: dst
+      type: UnityEngine.Tilemaps.Tilemap
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Function TransformTilemapIndex(src As Tilemap, dst As Tilemap, index As Vector2Int) As Vector2Int
+  overload: Global.ProceduralSectionGenerator.TransformTilemapIndex*
+- uid: Global.ProceduralSectionGenerator.CustomBoxFill(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,UnityEngine.Vector3Int)
+  commentId: M:Global.ProceduralSectionGenerator.CustomBoxFill(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,UnityEngine.Vector3Int)
+  id: CustomBoxFill(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,UnityEngine.Vector3Int)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: CustomBoxFill(Tilemap, TileBase, Vector3Int, Vector3Int)
+  nameWithType: ProceduralSectionGenerator.CustomBoxFill(Tilemap, TileBase, Vector3Int, Vector3Int)
+  fullName: ProceduralSectionGenerator.CustomBoxFill(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.TileBase, UnityEngine.Vector3Int, UnityEngine.Vector3Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CustomBoxFill
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 379
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void CustomBoxFill(Tilemap map, TileBase tile, Vector3Int start, Vector3Int end)
+    parameters:
+    - id: map
+      type: UnityEngine.Tilemaps.Tilemap
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: start
+      type: UnityEngine.Vector3Int
+    - id: end
+      type: UnityEngine.Vector3Int
+    content.vb: Public Shared Sub CustomBoxFill(map As Tilemap, tile As TileBase, start As Vector3Int, [end] As Vector3Int)
+  overload: Global.ProceduralSectionGenerator.CustomBoxFill*
+- uid: Global.ProceduralSectionGenerator.CopyTiles(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.Tilemap,UnityEngine.RectInt,UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralSectionGenerator.CopyTiles(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.Tilemap,UnityEngine.RectInt,UnityEngine.Vector2Int)
+  id: CopyTiles(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.Tilemap,UnityEngine.RectInt,UnityEngine.Vector2Int)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: CopyTiles(Tilemap, Tilemap, RectInt, Vector2Int)
+  nameWithType: ProceduralSectionGenerator.CopyTiles(Tilemap, Tilemap, RectInt, Vector2Int)
+  fullName: ProceduralSectionGenerator.CopyTiles(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.Tilemap, UnityEngine.RectInt, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CopyTiles
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 398
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void CopyTiles(Tilemap src_map, Tilemap dest_map, RectInt src_rect, Vector2Int paste_loc)
+    parameters:
+    - id: src_map
+      type: UnityEngine.Tilemaps.Tilemap
+    - id: dest_map
+      type: UnityEngine.Tilemaps.Tilemap
+    - id: src_rect
+      type: UnityEngine.RectInt
+    - id: paste_loc
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Sub CopyTiles(src_map As Tilemap, dest_map As Tilemap, src_rect As RectInt, paste_loc As Vector2Int)
+  overload: Global.ProceduralSectionGenerator.CopyTiles*
+- uid: Global.ProceduralSectionGenerator.FillSection(Section,UnityEngine.Tilemaps.TileBase)
+  commentId: M:Global.ProceduralSectionGenerator.FillSection(Section,UnityEngine.Tilemaps.TileBase)
+  id: FillSection(Section,UnityEngine.Tilemaps.TileBase)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: FillSection(Section, TileBase)
+  nameWithType: ProceduralSectionGenerator.FillSection(Section, TileBase)
+  fullName: ProceduralSectionGenerator.FillSection(Section, UnityEngine.Tilemaps.TileBase)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FillSection
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 419
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void FillSection(Section section, TileBase tile)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    content.vb: Public Shared Sub FillSection(section As Section, tile As TileBase)
+  overload: Global.ProceduralSectionGenerator.FillSection*
+- uid: Global.ProceduralSectionGenerator.DrawVerticalLine(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralSectionGenerator.DrawVerticalLine(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  id: DrawVerticalLine(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: DrawVerticalLine(Tilemap, TileBase, Vector3Int, int, Vector2Int)
+  nameWithType: ProceduralSectionGenerator.DrawVerticalLine(Tilemap, TileBase, Vector3Int, int, Vector2Int)
+  fullName: ProceduralSectionGenerator.DrawVerticalLine(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.TileBase, UnityEngine.Vector3Int, int, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawVerticalLine
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 428
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void DrawVerticalLine(Tilemap map, TileBase tile, Vector3Int start, int LineHeight, Vector2Int bound)
+    parameters:
+    - id: map
+      type: UnityEngine.Tilemaps.Tilemap
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: start
+      type: UnityEngine.Vector3Int
+    - id: LineHeight
+      type: System.Int32
+    - id: bound
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Sub DrawVerticalLine(map As Tilemap, tile As TileBase, start As Vector3Int, LineHeight As Integer, bound As Vector2Int)
+  overload: Global.ProceduralSectionGenerator.DrawVerticalLine*
+  nameWithType.vb: ProceduralSectionGenerator.DrawVerticalLine(Tilemap, TileBase, Vector3Int, Integer, Vector2Int)
+  fullName.vb: ProceduralSectionGenerator.DrawVerticalLine(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.TileBase, UnityEngine.Vector3Int, Integer, UnityEngine.Vector2Int)
+  name.vb: DrawVerticalLine(Tilemap, TileBase, Vector3Int, Integer, Vector2Int)
+- uid: Global.ProceduralSectionGenerator.DrawHorizontalLine(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralSectionGenerator.DrawHorizontalLine(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  id: DrawHorizontalLine(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: DrawHorizontalLine(Tilemap, TileBase, Vector3Int, int, Vector2Int)
+  nameWithType: ProceduralSectionGenerator.DrawHorizontalLine(Tilemap, TileBase, Vector3Int, int, Vector2Int)
+  fullName: ProceduralSectionGenerator.DrawHorizontalLine(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.TileBase, UnityEngine.Vector3Int, int, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawHorizontalLine
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 437
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void DrawHorizontalLine(Tilemap map, TileBase tile, Vector3Int start, int LineWidth, Vector2Int bound)
+    parameters:
+    - id: map
+      type: UnityEngine.Tilemaps.Tilemap
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: start
+      type: UnityEngine.Vector3Int
+    - id: LineWidth
+      type: System.Int32
+    - id: bound
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Sub DrawHorizontalLine(map As Tilemap, tile As TileBase, start As Vector3Int, LineWidth As Integer, bound As Vector2Int)
+  overload: Global.ProceduralSectionGenerator.DrawHorizontalLine*
+  nameWithType.vb: ProceduralSectionGenerator.DrawHorizontalLine(Tilemap, TileBase, Vector3Int, Integer, Vector2Int)
+  fullName.vb: ProceduralSectionGenerator.DrawHorizontalLine(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.TileBase, UnityEngine.Vector3Int, Integer, UnityEngine.Vector2Int)
+  name.vb: DrawHorizontalLine(Tilemap, TileBase, Vector3Int, Integer, Vector2Int)
+- uid: Global.ProceduralSectionGenerator.DrawCube(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralSectionGenerator.DrawCube(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  id: DrawCube(UnityEngine.Tilemaps.Tilemap,UnityEngine.Tilemaps.TileBase,UnityEngine.Vector3Int,System.Int32,UnityEngine.Vector2Int)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: DrawCube(Tilemap, TileBase, Vector3Int, int, Vector2Int)
+  nameWithType: ProceduralSectionGenerator.DrawCube(Tilemap, TileBase, Vector3Int, int, Vector2Int)
+  fullName: ProceduralSectionGenerator.DrawCube(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.TileBase, UnityEngine.Vector3Int, int, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawCube
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 446
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void DrawCube(Tilemap map, TileBase tile, Vector3Int start, int size, Vector2Int bound)
+    parameters:
+    - id: map
+      type: UnityEngine.Tilemaps.Tilemap
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: start
+      type: UnityEngine.Vector3Int
+    - id: size
+      type: System.Int32
+    - id: bound
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Sub DrawCube(map As Tilemap, tile As TileBase, start As Vector3Int, size As Integer, bound As Vector2Int)
+  overload: Global.ProceduralSectionGenerator.DrawCube*
+  nameWithType.vb: ProceduralSectionGenerator.DrawCube(Tilemap, TileBase, Vector3Int, Integer, Vector2Int)
+  fullName.vb: ProceduralSectionGenerator.DrawCube(UnityEngine.Tilemaps.Tilemap, UnityEngine.Tilemaps.TileBase, UnityEngine.Vector3Int, Integer, UnityEngine.Vector2Int)
+  name.vb: DrawCube(Tilemap, TileBase, Vector3Int, Integer, Vector2Int)
+- uid: Global.ProceduralSectionGenerator.AreSectionsNeighbors(Section,Section)
+  commentId: M:Global.ProceduralSectionGenerator.AreSectionsNeighbors(Section,Section)
+  id: AreSectionsNeighbors(Section,Section)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: AreSectionsNeighbors(Section, Section)
+  nameWithType: ProceduralSectionGenerator.AreSectionsNeighbors(Section, Section)
+  fullName: ProceduralSectionGenerator.AreSectionsNeighbors(Section, Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AreSectionsNeighbors
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 461
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck if two sections border one another\n"
+  example: []
+  syntax:
+    content: public static bool AreSectionsNeighbors(Section a, Section b)
+    parameters:
+    - id: a
+      type: Global.Section
+      description: First section
+    - id: b
+      type: Global.Section
+      description: Second section
+    return:
+      type: System.Boolean
+      description: true if they are neighbors (border each other)
+    content.vb: Public Shared Function AreSectionsNeighbors(a As Section, b As Section) As Boolean
+  overload: Global.ProceduralSectionGenerator.AreSectionsNeighbors*
+- uid: Global.ProceduralSectionGenerator.FindNeighboringSections(Section)
+  commentId: M:Global.ProceduralSectionGenerator.FindNeighboringSections(Section)
+  id: FindNeighboringSections(Section)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: FindNeighboringSections(Section)
+  nameWithType: ProceduralSectionGenerator.FindNeighboringSections(Section)
+  fullName: ProceduralSectionGenerator.FindNeighboringSections(Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FindNeighboringSections
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 469
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static List<Section> FindNeighboringSections(Section section)
+    parameters:
+    - id: section
+      type: Global.Section
+    return:
+      type: System.Collections.Generic.List{Section}
+    content.vb: Public Shared Function FindNeighboringSections(section As Section) As List(Of Section)
+  overload: Global.ProceduralSectionGenerator.FindNeighboringSections*
+- uid: Global.ProceduralSectionGenerator.GetSharedEdge(Section,Section)
+  commentId: M:Global.ProceduralSectionGenerator.GetSharedEdge(Section,Section)
+  id: GetSharedEdge(Section,Section)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GetSharedEdge(Section, Section)
+  nameWithType: ProceduralSectionGenerator.GetSharedEdge(Section, Section)
+  fullName: ProceduralSectionGenerator.GetSharedEdge(Section, Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetSharedEdge
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 489
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nGet the shared edge of two sections relative to the first. When &quot;Left&quot; is returned, then neighbor is &quot;to the left of&quot; self.\n"
+  example: []
+  syntax:
+    content: public static IntMath.Direction GetSharedEdge(Section self, Section neighbor)
+    parameters:
+    - id: self
+      type: Global.Section
+      description: First section
+    - id: neighbor
+      type: Global.Section
+      description: Second section
+    return:
+      type: Global.IntMath.Direction
+      description: The shared edge of the two sections relative to &quot;self&quot;
+    content.vb: Public Shared Function GetSharedEdge(self As Section, neighbor As Section) As IntMath.Direction
+  overload: Global.ProceduralSectionGenerator.GetSharedEdge*
+- uid: Global.ProceduralSectionGenerator.GenerateTemplateSection(System.String,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  commentId: M:Global.ProceduralSectionGenerator.GenerateTemplateSection(System.String,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  id: GenerateTemplateSection(System.String,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateTemplateSection(string, Vector2Int, Vector2Int, int)
+  nameWithType: ProceduralSectionGenerator.GenerateTemplateSection(string, Vector2Int, Vector2Int, int)
+  fullName: ProceduralSectionGenerator.GenerateTemplateSection(string, UnityEngine.Vector2Int, UnityEngine.Vector2Int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GenerateTemplateSection
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 504
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Section GenerateTemplateSection(string name, Vector2Int tile_dimensions, Vector2Int position, int camera_orthographic_size)
+    parameters:
+    - id: name
+      type: System.String
+    - id: tile_dimensions
+      type: UnityEngine.Vector2Int
+    - id: position
+      type: UnityEngine.Vector2Int
+    - id: camera_orthographic_size
+      type: System.Int32
+    return:
+      type: Global.Section
+    content.vb: Public Shared Function GenerateTemplateSection(name As String, tile_dimensions As Vector2Int, position As Vector2Int, camera_orthographic_size As Integer) As Section
+  overload: Global.ProceduralSectionGenerator.GenerateTemplateSection*
+  nameWithType.vb: ProceduralSectionGenerator.GenerateTemplateSection(String, Vector2Int, Vector2Int, Integer)
+  fullName.vb: ProceduralSectionGenerator.GenerateTemplateSection(String, UnityEngine.Vector2Int, UnityEngine.Vector2Int, Integer)
+  name.vb: GenerateTemplateSection(String, Vector2Int, Vector2Int, Integer)
+- uid: Global.ProceduralSectionGenerator.GenerateSection(ProceduralSectionGenerator.SectionTerrainType)
+  commentId: M:Global.ProceduralSectionGenerator.GenerateSection(ProceduralSectionGenerator.SectionTerrainType)
+  id: GenerateSection(ProceduralSectionGenerator.SectionTerrainType)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateSection(SectionTerrainType)
+  nameWithType: ProceduralSectionGenerator.GenerateSection(ProceduralSectionGenerator.SectionTerrainType)
+  fullName: ProceduralSectionGenerator.GenerateSection(ProceduralSectionGenerator.SectionTerrainType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GenerateSection
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 552
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Section GenerateSection(ProceduralSectionGenerator.SectionTerrainType sectionTerrainType)
+    parameters:
+    - id: sectionTerrainType
+      type: Global.ProceduralSectionGenerator.SectionTerrainType
+    return:
+      type: Global.Section
+    content.vb: Public Shared Function GenerateSection(sectionTerrainType As ProceduralSectionGenerator.SectionTerrainType) As Section
+  overload: Global.ProceduralSectionGenerator.GenerateSection*
+- uid: Global.ProceduralSectionGenerator.GetSharedDoorEndpoints(Section,Section)
+  commentId: M:Global.ProceduralSectionGenerator.GetSharedDoorEndpoints(Section,Section)
+  id: GetSharedDoorEndpoints(Section,Section)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GetSharedDoorEndpoints(Section, Section)
+  nameWithType: ProceduralSectionGenerator.GetSharedDoorEndpoints(Section, Section)
+  fullName: ProceduralSectionGenerator.GetSharedDoorEndpoints(Section, Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetSharedDoorEndpoints
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 588
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static List<Section.DoorEndpoints> GetSharedDoorEndpoints(Section existing_section, Section new_section)
+    parameters:
+    - id: existing_section
+      type: Global.Section
+      description: ''
+    - id: new_section
+      type: Global.Section
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Section.DoorEndpoints}
+      description: ''
+    content.vb: Public Shared Function GetSharedDoorEndpoints(existing_section As Section, new_section As Section) As List(Of Section.DoorEndpoints)
+  overload: Global.ProceduralSectionGenerator.GetSharedDoorEndpoints*
+- uid: Global.ProceduralSectionGenerator.AddEntrances(Section,ProceduralSectionGenerator.ProceduralSectionProperties,System.Collections.Generic.List{Section.DoorEndpoints})
+  commentId: M:Global.ProceduralSectionGenerator.AddEntrances(Section,ProceduralSectionGenerator.ProceduralSectionProperties,System.Collections.Generic.List{Section.DoorEndpoints})
+  id: AddEntrances(Section,ProceduralSectionGenerator.ProceduralSectionProperties,System.Collections.Generic.List{Section.DoorEndpoints})
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: AddEntrances(Section, ProceduralSectionProperties, List<DoorEndpoints>)
+  nameWithType: ProceduralSectionGenerator.AddEntrances(Section, ProceduralSectionGenerator.ProceduralSectionProperties, List<Section.DoorEndpoints>)
+  fullName: ProceduralSectionGenerator.AddEntrances(Section, ProceduralSectionGenerator.ProceduralSectionProperties, System.Collections.Generic.List<Section.DoorEndpoints>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddEntrances
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 633
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void AddEntrances(Section section, ProceduralSectionGenerator.ProceduralSectionProperties props, List<Section.DoorEndpoints> doors)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: props
+      type: Global.ProceduralSectionGenerator.ProceduralSectionProperties
+    - id: doors
+      type: System.Collections.Generic.List{Section.DoorEndpoints}
+    content.vb: Public Shared Sub AddEntrances(section As Section, props As ProceduralSectionGenerator.ProceduralSectionProperties, doors As List(Of Section.DoorEndpoints))
+  overload: Global.ProceduralSectionGenerator.AddEntrances*
+  nameWithType.vb: ProceduralSectionGenerator.AddEntrances(Section, ProceduralSectionGenerator.ProceduralSectionProperties, List(Of Section.DoorEndpoints))
+  fullName.vb: ProceduralSectionGenerator.AddEntrances(Section, ProceduralSectionGenerator.ProceduralSectionProperties, System.Collections.Generic.List(Of Section.DoorEndpoints))
+  name.vb: AddEntrances(Section, ProceduralSectionProperties, List(Of DoorEndpoints))
+- uid: Global.ProceduralSectionGenerator.GetMinDoorOnSide(System.Collections.Generic.List{Section.DoorEndpoints},IntMath.Direction)
+  commentId: M:Global.ProceduralSectionGenerator.GetMinDoorOnSide(System.Collections.Generic.List{Section.DoorEndpoints},IntMath.Direction)
+  id: GetMinDoorOnSide(System.Collections.Generic.List{Section.DoorEndpoints},IntMath.Direction)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GetMinDoorOnSide(List<DoorEndpoints>, Direction)
+  nameWithType: ProceduralSectionGenerator.GetMinDoorOnSide(List<Section.DoorEndpoints>, IntMath.Direction)
+  fullName: ProceduralSectionGenerator.GetMinDoorOnSide(System.Collections.Generic.List<Section.DoorEndpoints>, IntMath.Direction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetMinDoorOnSide
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 687
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Section.DoorEndpoints GetMinDoorOnSide(List<Section.DoorEndpoints> doors, IntMath.Direction side)
+    parameters:
+    - id: doors
+      type: System.Collections.Generic.List{Section.DoorEndpoints}
+    - id: side
+      type: Global.IntMath.Direction
+    return:
+      type: Global.Section.DoorEndpoints
+    content.vb: Public Shared Function GetMinDoorOnSide(doors As List(Of Section.DoorEndpoints), side As IntMath.Direction) As Section.DoorEndpoints
+  overload: Global.ProceduralSectionGenerator.GetMinDoorOnSide*
+  nameWithType.vb: ProceduralSectionGenerator.GetMinDoorOnSide(List(Of Section.DoorEndpoints), IntMath.Direction)
+  fullName.vb: ProceduralSectionGenerator.GetMinDoorOnSide(System.Collections.Generic.List(Of Section.DoorEndpoints), IntMath.Direction)
+  name.vb: GetMinDoorOnSide(List(Of DoorEndpoints), Direction)
+- uid: Global.ProceduralSectionGenerator.GridBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32)
+  commentId: M:Global.ProceduralSectionGenerator.GridBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32)
+  id: GridBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GridBorder(Section, TileBase, int)
+  nameWithType: ProceduralSectionGenerator.GridBorder(Section, TileBase, int)
+  fullName: ProceduralSectionGenerator.GridBorder(Section, UnityEngine.Tilemaps.TileBase, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GridBorder
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 714
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCreate a solid border around the perimeter of the section\n"
+  example: []
+  syntax:
+    content: public static void GridBorder(Section section, TileBase tile, int inset = 0)
+    parameters:
+    - id: section
+      type: Global.Section
+      description: Section to generate border on
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: inset
+      type: System.Int32
+    content.vb: Public Shared Sub GridBorder(section As Section, tile As TileBase, inset As Integer = 0)
+  overload: Global.ProceduralSectionGenerator.GridBorder*
+  nameWithType.vb: ProceduralSectionGenerator.GridBorder(Section, TileBase, Integer)
+  fullName.vb: ProceduralSectionGenerator.GridBorder(Section, UnityEngine.Tilemaps.TileBase, Integer)
+  name.vb: GridBorder(Section, TileBase, Integer)
+- uid: Global.ProceduralSectionGenerator.HillBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32,System.Int32,System.Single,System.Single)
+  commentId: M:Global.ProceduralSectionGenerator.HillBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32,System.Int32,System.Single,System.Single)
+  id: HillBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32,System.Int32,System.Single,System.Single)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: HillBorder(Section, TileBase, int, int, float, float)
+  nameWithType: ProceduralSectionGenerator.HillBorder(Section, TileBase, int, int, float, float)
+  fullName: ProceduralSectionGenerator.HillBorder(Section, UnityEngine.Tilemaps.TileBase, int, int, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HillBorder
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 739
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void HillBorder(Section section, TileBase tile, int LeftTileHeight, int RightTileHeight, float HillSpread, float HillHeight)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: LeftTileHeight
+      type: System.Int32
+    - id: RightTileHeight
+      type: System.Int32
+    - id: HillSpread
+      type: System.Single
+    - id: HillHeight
+      type: System.Single
+    content.vb: Public Shared Sub HillBorder(section As Section, tile As TileBase, LeftTileHeight As Integer, RightTileHeight As Integer, HillSpread As Single, HillHeight As Single)
+  overload: Global.ProceduralSectionGenerator.HillBorder*
+  nameWithType.vb: ProceduralSectionGenerator.HillBorder(Section, TileBase, Integer, Integer, Single, Single)
+  fullName.vb: ProceduralSectionGenerator.HillBorder(Section, UnityEngine.Tilemaps.TileBase, Integer, Integer, Single, Single)
+  name.vb: HillBorder(Section, TileBase, Integer, Integer, Single, Single)
+- uid: Global.ProceduralSectionGenerator.CaveBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.ProceduralSectionGenerator.CaveBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)
+  id: CaveBorder(Section,UnityEngine.Tilemaps.TileBase,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: CaveBorder(Section, TileBase, int, int, int, int, float, float, float, float)
+  nameWithType: ProceduralSectionGenerator.CaveBorder(Section, TileBase, int, int, int, int, float, float, float, float)
+  fullName: ProceduralSectionGenerator.CaveBorder(Section, UnityEngine.Tilemaps.TileBase, int, int, int, int, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CaveBorder
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 765
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void CaveBorder(Section section, TileBase tile, int LeftTileHeight, int LeftEntranceTopHeight, int RightTileHeight, int RightEntranceTopHeight, float FloorHillSpread, float FloorHillHeight, float CeilingHillSpread, float CeilingHillHeight)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: LeftTileHeight
+      type: System.Int32
+    - id: LeftEntranceTopHeight
+      type: System.Int32
+    - id: RightTileHeight
+      type: System.Int32
+    - id: RightEntranceTopHeight
+      type: System.Int32
+    - id: FloorHillSpread
+      type: System.Single
+    - id: FloorHillHeight
+      type: System.Single
+    - id: CeilingHillSpread
+      type: System.Single
+    - id: CeilingHillHeight
+      type: System.Single
+    content.vb: Public Shared Sub CaveBorder(section As Section, tile As TileBase, LeftTileHeight As Integer, LeftEntranceTopHeight As Integer, RightTileHeight As Integer, RightEntranceTopHeight As Integer, FloorHillSpread As Single, FloorHillHeight As Single, CeilingHillSpread As Single, CeilingHillHeight As Single)
+  overload: Global.ProceduralSectionGenerator.CaveBorder*
+  nameWithType.vb: ProceduralSectionGenerator.CaveBorder(Section, TileBase, Integer, Integer, Integer, Integer, Single, Single, Single, Single)
+  fullName.vb: ProceduralSectionGenerator.CaveBorder(Section, UnityEngine.Tilemaps.TileBase, Integer, Integer, Integer, Integer, Single, Single, Single, Single)
+  name.vb: CaveBorder(Section, TileBase, Integer, Integer, Integer, Integer, Single, Single, Single, Single)
+- uid: Global.ProceduralSectionGenerator.FoldOutRect(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.RectInt,IntMath.Direction)
+  commentId: M:Global.ProceduralSectionGenerator.FoldOutRect(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.RectInt,IntMath.Direction)
+  id: FoldOutRect(UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.RectInt,IntMath.Direction)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: FoldOutRect(Vector2Int, Vector2Int, RectInt, Direction)
+  nameWithType: ProceduralSectionGenerator.FoldOutRect(Vector2Int, Vector2Int, RectInt, IntMath.Direction)
+  fullName: ProceduralSectionGenerator.FoldOutRect(UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.RectInt, IntMath.Direction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FoldOutRect
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 852
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static RectInt FoldOutRect(Vector2Int RoomSizeMin, Vector2Int RoomSizeMax, RectInt rect, IntMath.Direction foldout_dir)
+    parameters:
+    - id: RoomSizeMin
+      type: UnityEngine.Vector2Int
+    - id: RoomSizeMax
+      type: UnityEngine.Vector2Int
+    - id: rect
+      type: UnityEngine.RectInt
+    - id: foldout_dir
+      type: Global.IntMath.Direction
+    return:
+      type: UnityEngine.RectInt
+    content.vb: Public Shared Function FoldOutRect(RoomSizeMin As Vector2Int, RoomSizeMax As Vector2Int, rect As RectInt, foldout_dir As IntMath.Direction) As RectInt
+  overload: Global.ProceduralSectionGenerator.FoldOutRect*
+- uid: Global.ProceduralSectionGenerator.RemapEntrance(UnityEngine.RectInt,Section.DoorEndpoints,Section.DoorEndpoints@)
+  commentId: M:Global.ProceduralSectionGenerator.RemapEntrance(UnityEngine.RectInt,Section.DoorEndpoints,Section.DoorEndpoints@)
+  id: RemapEntrance(UnityEngine.RectInt,Section.DoorEndpoints,Section.DoorEndpoints@)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: RemapEntrance(RectInt, DoorEndpoints, out DoorEndpoints)
+  nameWithType: ProceduralSectionGenerator.RemapEntrance(RectInt, Section.DoorEndpoints, out Section.DoorEndpoints)
+  fullName: ProceduralSectionGenerator.RemapEntrance(UnityEngine.RectInt, Section.DoorEndpoints, out Section.DoorEndpoints)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RemapEntrance
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 879
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool RemapEntrance(RectInt Container, Section.DoorEndpoints endpoint, out Section.DoorEndpoints endpoint_remapped)
+    parameters:
+    - id: Container
+      type: UnityEngine.RectInt
+    - id: endpoint
+      type: Global.Section.DoorEndpoints
+    - id: endpoint_remapped
+      type: Global.Section.DoorEndpoints
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function RemapEntrance(Container As RectInt, endpoint As Section.DoorEndpoints, endpoint_remapped As Section.DoorEndpoints) As Boolean
+  overload: Global.ProceduralSectionGenerator.RemapEntrance*
+  nameWithType.vb: ProceduralSectionGenerator.RemapEntrance(RectInt, Section.DoorEndpoints, Section.DoorEndpoints)
+  fullName.vb: ProceduralSectionGenerator.RemapEntrance(UnityEngine.RectInt, Section.DoorEndpoints, Section.DoorEndpoints)
+  name.vb: RemapEntrance(RectInt, DoorEndpoints, DoorEndpoints)
+- uid: Global.ProceduralSectionGenerator.GenerateEntranceRoomsRec(UnityEngine.RectInt,System.Collections.Generic.List{Section.DoorEndpoints},UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32,System.Int32)
+  commentId: M:Global.ProceduralSectionGenerator.GenerateEntranceRoomsRec(UnityEngine.RectInt,System.Collections.Generic.List{Section.DoorEndpoints},UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32,System.Int32)
+  id: GenerateEntranceRoomsRec(UnityEngine.RectInt,System.Collections.Generic.List{Section.DoorEndpoints},UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32,System.Int32)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateEntranceRoomsRec(RectInt, List<DoorEndpoints>, Vector2Int, Vector2Int, int, int)
+  nameWithType: ProceduralSectionGenerator.GenerateEntranceRoomsRec(RectInt, List<Section.DoorEndpoints>, Vector2Int, Vector2Int, int, int)
+  fullName: ProceduralSectionGenerator.GenerateEntranceRoomsRec(UnityEngine.RectInt, System.Collections.Generic.List<Section.DoorEndpoints>, UnityEngine.Vector2Int, UnityEngine.Vector2Int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GenerateEntranceRoomsRec
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 892
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static List<RectInt> GenerateEntranceRoomsRec(RectInt Container, List<Section.DoorEndpoints> Entrances, Vector2Int RoomSizeMin, Vector2Int RoomSizeMax, int HeightAboveDoor = 2, int spacing = 0)
+    parameters:
+    - id: Container
+      type: UnityEngine.RectInt
+    - id: Entrances
+      type: System.Collections.Generic.List{Section.DoorEndpoints}
+    - id: RoomSizeMin
+      type: UnityEngine.Vector2Int
+    - id: RoomSizeMax
+      type: UnityEngine.Vector2Int
+    - id: HeightAboveDoor
+      type: System.Int32
+    - id: spacing
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{UnityEngine.RectInt}
+    content.vb: Public Shared Function GenerateEntranceRoomsRec(Container As RectInt, Entrances As List(Of Section.DoorEndpoints), RoomSizeMin As Vector2Int, RoomSizeMax As Vector2Int, HeightAboveDoor As Integer = 2, spacing As Integer = 0) As List(Of RectInt)
+  overload: Global.ProceduralSectionGenerator.GenerateEntranceRoomsRec*
+  nameWithType.vb: ProceduralSectionGenerator.GenerateEntranceRoomsRec(RectInt, List(Of Section.DoorEndpoints), Vector2Int, Vector2Int, Integer, Integer)
+  fullName.vb: ProceduralSectionGenerator.GenerateEntranceRoomsRec(UnityEngine.RectInt, System.Collections.Generic.List(Of Section.DoorEndpoints), UnityEngine.Vector2Int, UnityEngine.Vector2Int, Integer, Integer)
+  name.vb: GenerateEntranceRoomsRec(RectInt, List(Of DoorEndpoints), Vector2Int, Vector2Int, Integer, Integer)
+- uid: Global.ProceduralSectionGenerator.RoomBorder(Section,UnityEngine.Tilemaps.TileBase,System.Collections.Generic.List{Section.DoorEndpoints},UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32,System.Int32)
+  commentId: M:Global.ProceduralSectionGenerator.RoomBorder(Section,UnityEngine.Tilemaps.TileBase,System.Collections.Generic.List{Section.DoorEndpoints},UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32,System.Int32)
+  id: RoomBorder(Section,UnityEngine.Tilemaps.TileBase,System.Collections.Generic.List{Section.DoorEndpoints},UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32,System.Int32)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: RoomBorder(Section, TileBase, List<DoorEndpoints>, Vector2Int, Vector2Int, int, int)
+  nameWithType: ProceduralSectionGenerator.RoomBorder(Section, TileBase, List<Section.DoorEndpoints>, Vector2Int, Vector2Int, int, int)
+  fullName: ProceduralSectionGenerator.RoomBorder(Section, UnityEngine.Tilemaps.TileBase, System.Collections.Generic.List<Section.DoorEndpoints>, UnityEngine.Vector2Int, UnityEngine.Vector2Int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RoomBorder
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 976
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void RoomBorder(Section section, TileBase tile, List<Section.DoorEndpoints> doors, Vector2Int RoomSizeMin, Vector2Int RoomSizeMax, int HeightAboveDoor = 3, int spacing = 1)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: doors
+      type: System.Collections.Generic.List{Section.DoorEndpoints}
+    - id: RoomSizeMin
+      type: UnityEngine.Vector2Int
+    - id: RoomSizeMax
+      type: UnityEngine.Vector2Int
+    - id: HeightAboveDoor
+      type: System.Int32
+    - id: spacing
+      type: System.Int32
+    content.vb: Public Shared Sub RoomBorder(section As Section, tile As TileBase, doors As List(Of Section.DoorEndpoints), RoomSizeMin As Vector2Int, RoomSizeMax As Vector2Int, HeightAboveDoor As Integer = 3, spacing As Integer = 1)
+  overload: Global.ProceduralSectionGenerator.RoomBorder*
+  nameWithType.vb: ProceduralSectionGenerator.RoomBorder(Section, TileBase, List(Of Section.DoorEndpoints), Vector2Int, Vector2Int, Integer, Integer)
+  fullName.vb: ProceduralSectionGenerator.RoomBorder(Section, UnityEngine.Tilemaps.TileBase, System.Collections.Generic.List(Of Section.DoorEndpoints), UnityEngine.Vector2Int, UnityEngine.Vector2Int, Integer, Integer)
+  name.vb: RoomBorder(Section, TileBase, List(Of DoorEndpoints), Vector2Int, Vector2Int, Integer, Integer)
+- uid: Global.ProceduralSectionGenerator.CarveTunnel(Section,Section.DoorEndpoints,Section.DoorEndpoints,System.Single,System.Single,System.Single)
+  commentId: M:Global.ProceduralSectionGenerator.CarveTunnel(Section,Section.DoorEndpoints,Section.DoorEndpoints,System.Single,System.Single,System.Single)
+  id: CarveTunnel(Section,Section.DoorEndpoints,Section.DoorEndpoints,System.Single,System.Single,System.Single)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: CarveTunnel(Section, DoorEndpoints, DoorEndpoints, float, float, float)
+  nameWithType: ProceduralSectionGenerator.CarveTunnel(Section, Section.DoorEndpoints, Section.DoorEndpoints, float, float, float)
+  fullName: ProceduralSectionGenerator.CarveTunnel(Section, Section.DoorEndpoints, Section.DoorEndpoints, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CarveTunnel
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 1023
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void CarveTunnel(Section section, Section.DoorEndpoints start, Section.DoorEndpoints end, float NoiseSpread = 4, float CurveNoiseAmount = 12, float ThicknessNoiseAmount = 5)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: start
+      type: Global.Section.DoorEndpoints
+    - id: end
+      type: Global.Section.DoorEndpoints
+    - id: NoiseSpread
+      type: System.Single
+    - id: CurveNoiseAmount
+      type: System.Single
+    - id: ThicknessNoiseAmount
+      type: System.Single
+    content.vb: Public Shared Sub CarveTunnel(section As Section, start As Section.DoorEndpoints, [end] As Section.DoorEndpoints, NoiseSpread As Single = 4, CurveNoiseAmount As Single = 12, ThicknessNoiseAmount As Single = 5)
+  overload: Global.ProceduralSectionGenerator.CarveTunnel*
+  nameWithType.vb: ProceduralSectionGenerator.CarveTunnel(Section, Section.DoorEndpoints, Section.DoorEndpoints, Single, Single, Single)
+  fullName.vb: ProceduralSectionGenerator.CarveTunnel(Section, Section.DoorEndpoints, Section.DoorEndpoints, Single, Single, Single)
+  name.vb: CarveTunnel(Section, DoorEndpoints, DoorEndpoints, Single, Single, Single)
+- uid: Global.ProceduralSectionGenerator.DebugDrawHill(Section,System.Int32,System.Int32,System.Single,System.Single)
+  commentId: M:Global.ProceduralSectionGenerator.DebugDrawHill(Section,System.Int32,System.Int32,System.Single,System.Single)
+  id: DebugDrawHill(Section,System.Int32,System.Int32,System.Single,System.Single)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: DebugDrawHill(Section, int, int, float, float)
+  nameWithType: ProceduralSectionGenerator.DebugDrawHill(Section, int, int, float, float)
+  fullName: ProceduralSectionGenerator.DebugDrawHill(Section, int, int, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugDrawHill
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 1062
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void DebugDrawHill(Section section, int LeftTileHeight, int RightTileHeight, float HillWidth, float HillHeight)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: LeftTileHeight
+      type: System.Int32
+    - id: RightTileHeight
+      type: System.Int32
+    - id: HillWidth
+      type: System.Single
+    - id: HillHeight
+      type: System.Single
+    content.vb: Public Shared Sub DebugDrawHill(section As Section, LeftTileHeight As Integer, RightTileHeight As Integer, HillWidth As Single, HillHeight As Single)
+  overload: Global.ProceduralSectionGenerator.DebugDrawHill*
+  nameWithType.vb: ProceduralSectionGenerator.DebugDrawHill(Section, Integer, Integer, Single, Single)
+  fullName.vb: ProceduralSectionGenerator.DebugDrawHill(Section, Integer, Integer, Single, Single)
+  name.vb: DebugDrawHill(Section, Integer, Integer, Single, Single)
+- uid: Global.ProceduralSectionGenerator.DebugDrawTunnel(Section,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)
+  commentId: M:Global.ProceduralSectionGenerator.DebugDrawTunnel(Section,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)
+  id: DebugDrawTunnel(Section,System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: DebugDrawTunnel(Section, int, int, int, int, float, float)
+  nameWithType: ProceduralSectionGenerator.DebugDrawTunnel(Section, int, int, int, int, float, float)
+  fullName: ProceduralSectionGenerator.DebugDrawTunnel(Section, int, int, int, int, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugDrawTunnel
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 1085
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void DebugDrawTunnel(Section section, int StartTileHeight, int StartTunnelHeight, int EndTileHeight, int EndTunnelHeight, float NoiseSpread = 8, float NoiseAmount = 8)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: StartTileHeight
+      type: System.Int32
+    - id: StartTunnelHeight
+      type: System.Int32
+    - id: EndTileHeight
+      type: System.Int32
+    - id: EndTunnelHeight
+      type: System.Int32
+    - id: NoiseSpread
+      type: System.Single
+    - id: NoiseAmount
+      type: System.Single
+    content.vb: Public Shared Sub DebugDrawTunnel(section As Section, StartTileHeight As Integer, StartTunnelHeight As Integer, EndTileHeight As Integer, EndTunnelHeight As Integer, NoiseSpread As Single = 8, NoiseAmount As Single = 8)
+  overload: Global.ProceduralSectionGenerator.DebugDrawTunnel*
+  nameWithType.vb: ProceduralSectionGenerator.DebugDrawTunnel(Section, Integer, Integer, Integer, Integer, Single, Single)
+  fullName.vb: ProceduralSectionGenerator.DebugDrawTunnel(Section, Integer, Integer, Integer, Integer, Single, Single)
+  name.vb: DebugDrawTunnel(Section, Integer, Integer, Integer, Integer, Single, Single)
+- uid: Global.ProceduralSectionGenerator.ResolveEntrances(Section,UnityEngine.Tilemaps.TileBase,System.Collections.Generic.List{Section.DoorEndpoints})
+  commentId: M:Global.ProceduralSectionGenerator.ResolveEntrances(Section,UnityEngine.Tilemaps.TileBase,System.Collections.Generic.List{Section.DoorEndpoints})
+  id: ResolveEntrances(Section,UnityEngine.Tilemaps.TileBase,System.Collections.Generic.List{Section.DoorEndpoints})
+  parent: Global.ProceduralSectionGenerator
+  langs:
+  - csharp
+  - vb
+  name: ResolveEntrances(Section, TileBase, List<DoorEndpoints>)
+  nameWithType: ProceduralSectionGenerator.ResolveEntrances(Section, TileBase, List<Section.DoorEndpoints>)
+  fullName: ProceduralSectionGenerator.ResolveEntrances(Section, UnityEngine.Tilemaps.TileBase, System.Collections.Generic.List<Section.DoorEndpoints>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResolveEntrances
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 1113
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void ResolveEntrances(Section section, TileBase tile, List<Section.DoorEndpoints> entrances)
+    parameters:
+    - id: section
+      type: Global.Section
+    - id: tile
+      type: UnityEngine.Tilemaps.TileBase
+    - id: entrances
+      type: System.Collections.Generic.List{Section.DoorEndpoints}
+    content.vb: Public Shared Sub ResolveEntrances(section As Section, tile As TileBase, entrances As List(Of Section.DoorEndpoints))
+  overload: Global.ProceduralSectionGenerator.ResolveEntrances*
+  nameWithType.vb: ProceduralSectionGenerator.ResolveEntrances(Section, TileBase, List(Of Section.DoorEndpoints))
+  fullName.vb: ProceduralSectionGenerator.ResolveEntrances(Section, UnityEngine.Tilemaps.TileBase, System.Collections.Generic.List(Of Section.DoorEndpoints))
+  name.vb: ResolveEntrances(Section, TileBase, List(Of DoorEndpoints))
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ProceduralSectionGenerator.ProceduralSectionProperties
+  commentId: T:Global.ProceduralSectionGenerator.ProceduralSectionProperties
+  name: ProceduralSectionGenerator.ProceduralSectionProperties
+  nameWithType: ProceduralSectionGenerator.ProceduralSectionProperties
+  fullName: ProceduralSectionGenerator.ProceduralSectionProperties
+  spec.csharp:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.ProceduralSectionProperties
+    name: ProceduralSectionProperties
+  spec.vb:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.ProceduralSectionProperties
+    name: ProceduralSectionProperties
+- uid: Global.ProceduralSectionGenerator.CreateNewSection*
+  commentId: Overload:Global.ProceduralSectionGenerator.CreateNewSection
+  name: CreateNewSection
+  nameWithType: ProceduralSectionGenerator.CreateNewSection
+  fullName: ProceduralSectionGenerator.CreateNewSection
+- uid: Global.Section
+  commentId: T:Global.Section
+  name: Section
+  nameWithType: Section
+  fullName: Section
+- uid: Global.IntMath.Direction
+  commentId: T:Global.IntMath.Direction
+  name: IntMath.Direction
+  nameWithType: IntMath.Direction
+  fullName: IntMath.Direction
+  spec.csharp:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Direction
+    name: Direction
+  spec.vb:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Direction
+    name: Direction
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.ProceduralSectionGenerator.RegenerateSection*
+  commentId: Overload:Global.ProceduralSectionGenerator.RegenerateSection
+  name: RegenerateSection
+  nameWithType: ProceduralSectionGenerator.RegenerateSection
+  fullName: ProceduralSectionGenerator.RegenerateSection
+- uid: Global.ProceduralSectionGenerator.PositionSectionAboveParent*
+  commentId: Overload:Global.ProceduralSectionGenerator.PositionSectionAboveParent
+  name: PositionSectionAboveParent
+  nameWithType: ProceduralSectionGenerator.PositionSectionAboveParent
+  fullName: ProceduralSectionGenerator.PositionSectionAboveParent
+- uid: Global.ProceduralSectionGenerator.SectionAlignmentRule
+  commentId: T:Global.ProceduralSectionGenerator.SectionAlignmentRule
+  name: ProceduralSectionGenerator.SectionAlignmentRule
+  nameWithType: ProceduralSectionGenerator.SectionAlignmentRule
+  fullName: ProceduralSectionGenerator.SectionAlignmentRule
+  spec.csharp:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.SectionAlignmentRule
+    name: SectionAlignmentRule
+  spec.vb:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.SectionAlignmentRule
+    name: SectionAlignmentRule
+- uid: Global.ProceduralSectionGenerator.PositionSectionBelowParent*
+  commentId: Overload:Global.ProceduralSectionGenerator.PositionSectionBelowParent
+  name: PositionSectionBelowParent
+  nameWithType: ProceduralSectionGenerator.PositionSectionBelowParent
+  fullName: ProceduralSectionGenerator.PositionSectionBelowParent
+- uid: Global.ProceduralSectionGenerator.PositionSectionToRightOfParent*
+  commentId: Overload:Global.ProceduralSectionGenerator.PositionSectionToRightOfParent
+  name: PositionSectionToRightOfParent
+  nameWithType: ProceduralSectionGenerator.PositionSectionToRightOfParent
+  fullName: ProceduralSectionGenerator.PositionSectionToRightOfParent
+- uid: Global.ProceduralSectionGenerator.PositionSectionToLeftOfParent*
+  commentId: Overload:Global.ProceduralSectionGenerator.PositionSectionToLeftOfParent
+  name: PositionSectionToLeftOfParent
+  nameWithType: ProceduralSectionGenerator.PositionSectionToLeftOfParent
+  fullName: ProceduralSectionGenerator.PositionSectionToLeftOfParent
+- uid: Global.ProceduralSectionGenerator.SelectSection*
+  commentId: Overload:Global.ProceduralSectionGenerator.SelectSection
+  name: SelectSection
+  nameWithType: ProceduralSectionGenerator.SelectSection
+  fullName: ProceduralSectionGenerator.SelectSection
+- uid: Global.ProceduralSectionGenerator.AddParallaxToSection*
+  commentId: Overload:Global.ProceduralSectionGenerator.AddParallaxToSection
+  name: AddParallaxToSection
+  nameWithType: ProceduralSectionGenerator.AddParallaxToSection
+  fullName: ProceduralSectionGenerator.AddParallaxToSection
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ProceduralSectionGenerator.ClearTiles*
+  commentId: Overload:Global.ProceduralSectionGenerator.ClearTiles
+  name: ClearTiles
+  nameWithType: ProceduralSectionGenerator.ClearTiles
+  fullName: ProceduralSectionGenerator.ClearTiles
+- uid: Global.ProceduralSectionGenerator.TransformTilemapIndex*
+  commentId: Overload:Global.ProceduralSectionGenerator.TransformTilemapIndex
+  name: TransformTilemapIndex
+  nameWithType: ProceduralSectionGenerator.TransformTilemapIndex
+  fullName: ProceduralSectionGenerator.TransformTilemapIndex
+- uid: UnityEngine.Tilemaps.Tilemap
+  commentId: T:UnityEngine.Tilemaps.Tilemap
+  parent: UnityEngine.Tilemaps
+  isExternal: true
+  name: Tilemap
+  nameWithType: Tilemap
+  fullName: UnityEngine.Tilemaps.Tilemap
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine.Tilemaps
+  commentId: N:UnityEngine.Tilemaps
+  isExternal: true
+  name: UnityEngine.Tilemaps
+  nameWithType: UnityEngine.Tilemaps
+  fullName: UnityEngine.Tilemaps
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Tilemaps
+    name: Tilemaps
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Tilemaps
+    name: Tilemaps
+    isExternal: true
+- uid: Global.ProceduralSectionGenerator.CustomBoxFill*
+  commentId: Overload:Global.ProceduralSectionGenerator.CustomBoxFill
+  name: CustomBoxFill
+  nameWithType: ProceduralSectionGenerator.CustomBoxFill
+  fullName: ProceduralSectionGenerator.CustomBoxFill
+- uid: UnityEngine.Tilemaps.TileBase
+  commentId: T:UnityEngine.Tilemaps.TileBase
+  parent: UnityEngine.Tilemaps
+  isExternal: true
+  name: TileBase
+  nameWithType: TileBase
+  fullName: UnityEngine.Tilemaps.TileBase
+- uid: UnityEngine.Vector3Int
+  commentId: T:UnityEngine.Vector3Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3Int
+  nameWithType: Vector3Int
+  fullName: UnityEngine.Vector3Int
+- uid: Global.ProceduralSectionGenerator.CopyTiles*
+  commentId: Overload:Global.ProceduralSectionGenerator.CopyTiles
+  name: CopyTiles
+  nameWithType: ProceduralSectionGenerator.CopyTiles
+  fullName: ProceduralSectionGenerator.CopyTiles
+- uid: UnityEngine.RectInt
+  commentId: T:UnityEngine.RectInt
+  parent: UnityEngine
+  isExternal: true
+  name: RectInt
+  nameWithType: RectInt
+  fullName: UnityEngine.RectInt
+- uid: Global.ProceduralSectionGenerator.FillSection*
+  commentId: Overload:Global.ProceduralSectionGenerator.FillSection
+  name: FillSection
+  nameWithType: ProceduralSectionGenerator.FillSection
+  fullName: ProceduralSectionGenerator.FillSection
+- uid: Global.ProceduralSectionGenerator.DrawVerticalLine*
+  commentId: Overload:Global.ProceduralSectionGenerator.DrawVerticalLine
+  name: DrawVerticalLine
+  nameWithType: ProceduralSectionGenerator.DrawVerticalLine
+  fullName: ProceduralSectionGenerator.DrawVerticalLine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ProceduralSectionGenerator.DrawHorizontalLine*
+  commentId: Overload:Global.ProceduralSectionGenerator.DrawHorizontalLine
+  name: DrawHorizontalLine
+  nameWithType: ProceduralSectionGenerator.DrawHorizontalLine
+  fullName: ProceduralSectionGenerator.DrawHorizontalLine
+- uid: Global.ProceduralSectionGenerator.DrawCube*
+  commentId: Overload:Global.ProceduralSectionGenerator.DrawCube
+  name: DrawCube
+  nameWithType: ProceduralSectionGenerator.DrawCube
+  fullName: ProceduralSectionGenerator.DrawCube
+- uid: Global.ProceduralSectionGenerator.AreSectionsNeighbors*
+  commentId: Overload:Global.ProceduralSectionGenerator.AreSectionsNeighbors
+  name: AreSectionsNeighbors
+  nameWithType: ProceduralSectionGenerator.AreSectionsNeighbors
+  fullName: ProceduralSectionGenerator.AreSectionsNeighbors
+- uid: Global.ProceduralSectionGenerator.FindNeighboringSections*
+  commentId: Overload:Global.ProceduralSectionGenerator.FindNeighboringSections
+  name: FindNeighboringSections
+  nameWithType: ProceduralSectionGenerator.FindNeighboringSections
+  fullName: ProceduralSectionGenerator.FindNeighboringSections
+- uid: System.Collections.Generic.List{Section}
+  commentId: T:System.Collections.Generic.List{Section}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Section>
+  nameWithType: List<Section>
+  fullName: System.Collections.Generic.List<Section>
+  nameWithType.vb: List(Of Section)
+  fullName.vb: System.Collections.Generic.List(Of Section)
+  name.vb: List(Of Section)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Section
+    name: Section
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Section
+    name: Section
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.ProceduralSectionGenerator.GetSharedEdge*
+  commentId: Overload:Global.ProceduralSectionGenerator.GetSharedEdge
+  name: GetSharedEdge
+  nameWithType: ProceduralSectionGenerator.GetSharedEdge
+  fullName: ProceduralSectionGenerator.GetSharedEdge
+- uid: Global.ProceduralSectionGenerator.GenerateTemplateSection*
+  commentId: Overload:Global.ProceduralSectionGenerator.GenerateTemplateSection
+  name: GenerateTemplateSection
+  nameWithType: ProceduralSectionGenerator.GenerateTemplateSection
+  fullName: ProceduralSectionGenerator.GenerateTemplateSection
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.ProceduralSectionGenerator.GenerateSection*
+  commentId: Overload:Global.ProceduralSectionGenerator.GenerateSection
+  name: GenerateSection
+  nameWithType: ProceduralSectionGenerator.GenerateSection
+  fullName: ProceduralSectionGenerator.GenerateSection
+- uid: Global.ProceduralSectionGenerator.SectionTerrainType
+  commentId: T:Global.ProceduralSectionGenerator.SectionTerrainType
+  name: ProceduralSectionGenerator.SectionTerrainType
+  nameWithType: ProceduralSectionGenerator.SectionTerrainType
+  fullName: ProceduralSectionGenerator.SectionTerrainType
+  spec.csharp:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.SectionTerrainType
+    name: SectionTerrainType
+  spec.vb:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.SectionTerrainType
+    name: SectionTerrainType
+- uid: Global.ProceduralSectionGenerator.GetSharedDoorEndpoints*
+  commentId: Overload:Global.ProceduralSectionGenerator.GetSharedDoorEndpoints
+  name: GetSharedDoorEndpoints
+  nameWithType: ProceduralSectionGenerator.GetSharedDoorEndpoints
+  fullName: ProceduralSectionGenerator.GetSharedDoorEndpoints
+- uid: System.Collections.Generic.List{Section.DoorEndpoints}
+  commentId: T:System.Collections.Generic.List{Section.DoorEndpoints}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Section.DoorEndpoints>
+  nameWithType: List<Section.DoorEndpoints>
+  fullName: System.Collections.Generic.List<Section.DoorEndpoints>
+  nameWithType.vb: List(Of Section.DoorEndpoints)
+  fullName.vb: System.Collections.Generic.List(Of Section.DoorEndpoints)
+  name.vb: List(Of Section.DoorEndpoints)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Section
+    name: Section
+  - name: .
+  - uid: Global.Section.DoorEndpoints
+    name: DoorEndpoints
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Section
+    name: Section
+  - name: .
+  - uid: Global.Section.DoorEndpoints
+    name: DoorEndpoints
+  - name: )
+- uid: Global.ProceduralSectionGenerator.AddEntrances*
+  commentId: Overload:Global.ProceduralSectionGenerator.AddEntrances
+  name: AddEntrances
+  nameWithType: ProceduralSectionGenerator.AddEntrances
+  fullName: ProceduralSectionGenerator.AddEntrances
+- uid: Global.ProceduralSectionGenerator.GetMinDoorOnSide*
+  commentId: Overload:Global.ProceduralSectionGenerator.GetMinDoorOnSide
+  name: GetMinDoorOnSide
+  nameWithType: ProceduralSectionGenerator.GetMinDoorOnSide
+  fullName: ProceduralSectionGenerator.GetMinDoorOnSide
+- uid: Global.Section.DoorEndpoints
+  commentId: T:Global.Section.DoorEndpoints
+  name: Section.DoorEndpoints
+  nameWithType: Section.DoorEndpoints
+  fullName: Section.DoorEndpoints
+  spec.csharp:
+  - uid: Global.Section
+    name: Section
+  - name: .
+  - uid: Global.Section.DoorEndpoints
+    name: DoorEndpoints
+  spec.vb:
+  - uid: Global.Section
+    name: Section
+  - name: .
+  - uid: Global.Section.DoorEndpoints
+    name: DoorEndpoints
+- uid: Global.ProceduralSectionGenerator.GridBorder*
+  commentId: Overload:Global.ProceduralSectionGenerator.GridBorder
+  name: GridBorder
+  nameWithType: ProceduralSectionGenerator.GridBorder
+  fullName: ProceduralSectionGenerator.GridBorder
+- uid: Global.ProceduralSectionGenerator.HillBorder*
+  commentId: Overload:Global.ProceduralSectionGenerator.HillBorder
+  name: HillBorder
+  nameWithType: ProceduralSectionGenerator.HillBorder
+  fullName: ProceduralSectionGenerator.HillBorder
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.ProceduralSectionGenerator.CaveBorder*
+  commentId: Overload:Global.ProceduralSectionGenerator.CaveBorder
+  name: CaveBorder
+  nameWithType: ProceduralSectionGenerator.CaveBorder
+  fullName: ProceduralSectionGenerator.CaveBorder
+- uid: Global.ProceduralSectionGenerator.FoldOutRect*
+  commentId: Overload:Global.ProceduralSectionGenerator.FoldOutRect
+  name: FoldOutRect
+  nameWithType: ProceduralSectionGenerator.FoldOutRect
+  fullName: ProceduralSectionGenerator.FoldOutRect
+- uid: Global.ProceduralSectionGenerator.RemapEntrance*
+  commentId: Overload:Global.ProceduralSectionGenerator.RemapEntrance
+  name: RemapEntrance
+  nameWithType: ProceduralSectionGenerator.RemapEntrance
+  fullName: ProceduralSectionGenerator.RemapEntrance
+- uid: Global.ProceduralSectionGenerator.GenerateEntranceRoomsRec*
+  commentId: Overload:Global.ProceduralSectionGenerator.GenerateEntranceRoomsRec
+  name: GenerateEntranceRoomsRec
+  nameWithType: ProceduralSectionGenerator.GenerateEntranceRoomsRec
+  fullName: ProceduralSectionGenerator.GenerateEntranceRoomsRec
+- uid: System.Collections.Generic.List{UnityEngine.RectInt}
+  commentId: T:System.Collections.Generic.List{UnityEngine.RectInt}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<RectInt>
+  nameWithType: List<RectInt>
+  fullName: System.Collections.Generic.List<UnityEngine.RectInt>
+  nameWithType.vb: List(Of RectInt)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.RectInt)
+  name.vb: List(Of RectInt)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.RectInt
+    name: RectInt
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.RectInt
+    name: RectInt
+    isExternal: true
+  - name: )
+- uid: Global.ProceduralSectionGenerator.RoomBorder*
+  commentId: Overload:Global.ProceduralSectionGenerator.RoomBorder
+  name: RoomBorder
+  nameWithType: ProceduralSectionGenerator.RoomBorder
+  fullName: ProceduralSectionGenerator.RoomBorder
+- uid: Global.ProceduralSectionGenerator.CarveTunnel*
+  commentId: Overload:Global.ProceduralSectionGenerator.CarveTunnel
+  name: CarveTunnel
+  nameWithType: ProceduralSectionGenerator.CarveTunnel
+  fullName: ProceduralSectionGenerator.CarveTunnel
+- uid: Global.ProceduralSectionGenerator.DebugDrawHill*
+  commentId: Overload:Global.ProceduralSectionGenerator.DebugDrawHill
+  name: DebugDrawHill
+  nameWithType: ProceduralSectionGenerator.DebugDrawHill
+  fullName: ProceduralSectionGenerator.DebugDrawHill
+- uid: Global.ProceduralSectionGenerator.DebugDrawTunnel*
+  commentId: Overload:Global.ProceduralSectionGenerator.DebugDrawTunnel
+  name: DebugDrawTunnel
+  nameWithType: ProceduralSectionGenerator.DebugDrawTunnel
+  fullName: ProceduralSectionGenerator.DebugDrawTunnel
+- uid: Global.ProceduralSectionGenerator.ResolveEntrances*
+  commentId: Overload:Global.ProceduralSectionGenerator.ResolveEntrances
+  name: ResolveEntrances
+  nameWithType: ProceduralSectionGenerator.ResolveEntrances
+  fullName: ProceduralSectionGenerator.ResolveEntrances

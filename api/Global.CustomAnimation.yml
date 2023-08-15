@@ -1,0 +1,646 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomAnimation
+  commentId: T:Global.CustomAnimation
+  id: CustomAnimation
+  parent: Global
+  children:
+  - Global.CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  - Global.CustomAnimation.endCallback
+  - Global.CustomAnimation.Finish
+  - Global.CustomAnimation.GetState
+  - Global.CustomAnimation.Loop
+  - Global.CustomAnimation.Name
+  - Global.CustomAnimation.Pause
+  - Global.CustomAnimation.PauseUpdate
+  - Global.CustomAnimation.Play
+  - Global.CustomAnimation.PlayUpdate(System.Single)
+  - Global.CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  - Global.CustomAnimation.Resume
+  - Global.CustomAnimation.state
+  - Global.CustomAnimation.t
+  - Global.CustomAnimation.UpdateAnimation
+  langs:
+  - csharp
+  - vb
+  name: CustomAnimation
+  nameWithType: CustomAnimation
+  fullName: CustomAnimation
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CustomAnimation
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public abstract class CustomAnimation
+    content.vb: Public MustInherit Class CustomAnimation
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Global.MeshAnimation
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.CustomAnimation.Name
+  commentId: F:Global.CustomAnimation.Name
+  id: Name
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: CustomAnimation.Name
+  fullName: CustomAnimation.Name
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Name
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public string Name
+    return:
+      type: System.String
+    content.vb: Public Name As String
+- uid: Global.CustomAnimation.Loop
+  commentId: F:Global.CustomAnimation.Loop
+  id: Loop
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: Loop
+  nameWithType: CustomAnimation.Loop
+  fullName: CustomAnimation.Loop
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Loop
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool Loop
+    return:
+      type: System.Boolean
+    content.vb: Public [Loop] As Boolean
+- uid: Global.CustomAnimation.t
+  commentId: F:Global.CustomAnimation.t
+  id: t
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: t
+  nameWithType: CustomAnimation.t
+  fullName: CustomAnimation.t
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: t
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float t
+    return:
+      type: System.Single
+    content.vb: Protected t As Single
+- uid: Global.CustomAnimation.state
+  commentId: F:Global.CustomAnimation.state
+  id: state
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: state
+  nameWithType: CustomAnimation.state
+  fullName: CustomAnimation.state
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: state
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected CustomAnimation.AnimationState state
+    return:
+      type: Global.CustomAnimation.AnimationState
+    content.vb: Protected state As CustomAnimation.AnimationState
+- uid: Global.CustomAnimation.endCallback
+  commentId: F:Global.CustomAnimation.endCallback
+  id: endCallback
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: endCallback
+  nameWithType: CustomAnimation.endCallback
+  fullName: CustomAnimation.endCallback
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: endCallback
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected CustomAnimation.AnimationCallback endCallback
+    return:
+      type: Global.CustomAnimation.AnimationCallback
+    content.vb: Protected endCallback As CustomAnimation.AnimationCallback
+- uid: Global.CustomAnimation.Play
+  commentId: M:Global.CustomAnimation.Play
+  id: Play
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: CustomAnimation.Play()
+  fullName: CustomAnimation.Play()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Play
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Play()
+    content.vb: Public Sub Play()
+  overload: Global.CustomAnimation.Play*
+- uid: Global.CustomAnimation.Pause
+  commentId: M:Global.CustomAnimation.Pause
+  id: Pause
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: CustomAnimation.Pause()
+  fullName: CustomAnimation.Pause()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Pause
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: Global.CustomAnimation.Pause*
+- uid: Global.CustomAnimation.Resume
+  commentId: M:Global.CustomAnimation.Resume
+  id: Resume
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: CustomAnimation.Resume()
+  fullName: CustomAnimation.Resume()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Resume
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub [Resume]()
+  overload: Global.CustomAnimation.Resume*
+- uid: Global.CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  commentId: M:Global.CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  id: AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: AddAnimationEndCallback(AnimationCallback)
+  nameWithType: CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  fullName: CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddAnimationEndCallback
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddAnimationEndCallback(CustomAnimation.AnimationCallback callback)
+    parameters:
+    - id: callback
+      type: Global.CustomAnimation.AnimationCallback
+    content.vb: Public Sub AddAnimationEndCallback(callback As CustomAnimation.AnimationCallback)
+  overload: Global.CustomAnimation.AddAnimationEndCallback*
+- uid: Global.CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  commentId: M:Global.CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  id: RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: RemoveAnimationEndCallback(AnimationCallback)
+  nameWithType: CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  fullName: CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RemoveAnimationEndCallback
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RemoveAnimationEndCallback(CustomAnimation.AnimationCallback callback)
+    parameters:
+    - id: callback
+      type: Global.CustomAnimation.AnimationCallback
+    content.vb: Public Sub RemoveAnimationEndCallback(callback As CustomAnimation.AnimationCallback)
+  overload: Global.CustomAnimation.RemoveAnimationEndCallback*
+- uid: Global.CustomAnimation.PlayUpdate(System.Single)
+  commentId: M:Global.CustomAnimation.PlayUpdate(System.Single)
+  id: PlayUpdate(System.Single)
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: PlayUpdate(float)
+  nameWithType: CustomAnimation.PlayUpdate(float)
+  fullName: CustomAnimation.PlayUpdate(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayUpdate
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected abstract void PlayUpdate(float t)
+    parameters:
+    - id: t
+      type: System.Single
+    content.vb: Protected MustOverride Sub PlayUpdate(t As Single)
+  overload: Global.CustomAnimation.PlayUpdate*
+  nameWithType.vb: CustomAnimation.PlayUpdate(Single)
+  fullName.vb: CustomAnimation.PlayUpdate(Single)
+  name.vb: PlayUpdate(Single)
+- uid: Global.CustomAnimation.PauseUpdate
+  commentId: M:Global.CustomAnimation.PauseUpdate
+  id: PauseUpdate
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: PauseUpdate()
+  nameWithType: CustomAnimation.PauseUpdate()
+  fullName: CustomAnimation.PauseUpdate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PauseUpdate
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected virtual void PauseUpdate()
+    content.vb: Protected Overridable Sub PauseUpdate()
+  overload: Global.CustomAnimation.PauseUpdate*
+- uid: Global.CustomAnimation.UpdateAnimation
+  commentId: M:Global.CustomAnimation.UpdateAnimation
+  id: UpdateAnimation
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: UpdateAnimation()
+  nameWithType: CustomAnimation.UpdateAnimation()
+  fullName: CustomAnimation.UpdateAnimation()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateAnimation
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UpdateAnimation()
+    content.vb: Public Sub UpdateAnimation()
+  overload: Global.CustomAnimation.UpdateAnimation*
+- uid: Global.CustomAnimation.GetState
+  commentId: M:Global.CustomAnimation.GetState
+  id: GetState
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: GetState()
+  nameWithType: CustomAnimation.GetState()
+  fullName: CustomAnimation.GetState()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetState
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public CustomAnimation.AnimationState GetState()
+    return:
+      type: Global.CustomAnimation.AnimationState
+    content.vb: Public Function GetState() As CustomAnimation.AnimationState
+  overload: Global.CustomAnimation.GetState*
+- uid: Global.CustomAnimation.Finish
+  commentId: M:Global.CustomAnimation.Finish
+  id: Finish
+  parent: Global.CustomAnimation
+  langs:
+  - csharp
+  - vb
+  name: Finish()
+  nameWithType: CustomAnimation.Finish()
+  fullName: CustomAnimation.Finish()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Finish
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Finish()
+    content.vb: Protected Sub Finish()
+  overload: Global.CustomAnimation.Finish*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.CustomAnimation.AnimationState
+  commentId: T:Global.CustomAnimation.AnimationState
+  name: CustomAnimation.AnimationState
+  nameWithType: CustomAnimation.AnimationState
+  fullName: CustomAnimation.AnimationState
+  spec.csharp:
+  - uid: Global.CustomAnimation
+    name: CustomAnimation
+  - name: .
+  - uid: Global.CustomAnimation.AnimationState
+    name: AnimationState
+  spec.vb:
+  - uid: Global.CustomAnimation
+    name: CustomAnimation
+  - name: .
+  - uid: Global.CustomAnimation.AnimationState
+    name: AnimationState
+- uid: Global.CustomAnimation.AnimationCallback
+  commentId: T:Global.CustomAnimation.AnimationCallback
+  name: CustomAnimation.AnimationCallback
+  nameWithType: CustomAnimation.AnimationCallback
+  fullName: CustomAnimation.AnimationCallback
+  spec.csharp:
+  - uid: Global.CustomAnimation
+    name: CustomAnimation
+  - name: .
+  - uid: Global.CustomAnimation.AnimationCallback
+    name: AnimationCallback
+  spec.vb:
+  - uid: Global.CustomAnimation
+    name: CustomAnimation
+  - name: .
+  - uid: Global.CustomAnimation.AnimationCallback
+    name: AnimationCallback
+- uid: Global.CustomAnimation.Play*
+  commentId: Overload:Global.CustomAnimation.Play
+  name: Play
+  nameWithType: CustomAnimation.Play
+  fullName: CustomAnimation.Play
+- uid: Global.CustomAnimation.Pause*
+  commentId: Overload:Global.CustomAnimation.Pause
+  name: Pause
+  nameWithType: CustomAnimation.Pause
+  fullName: CustomAnimation.Pause
+- uid: Global.CustomAnimation.Resume*
+  commentId: Overload:Global.CustomAnimation.Resume
+  name: Resume
+  nameWithType: CustomAnimation.Resume
+  fullName: CustomAnimation.Resume
+- uid: Global.CustomAnimation.AddAnimationEndCallback*
+  commentId: Overload:Global.CustomAnimation.AddAnimationEndCallback
+  name: AddAnimationEndCallback
+  nameWithType: CustomAnimation.AddAnimationEndCallback
+  fullName: CustomAnimation.AddAnimationEndCallback
+- uid: Global.CustomAnimation.RemoveAnimationEndCallback*
+  commentId: Overload:Global.CustomAnimation.RemoveAnimationEndCallback
+  name: RemoveAnimationEndCallback
+  nameWithType: CustomAnimation.RemoveAnimationEndCallback
+  fullName: CustomAnimation.RemoveAnimationEndCallback
+- uid: Global.CustomAnimation.PlayUpdate*
+  commentId: Overload:Global.CustomAnimation.PlayUpdate
+  name: PlayUpdate
+  nameWithType: CustomAnimation.PlayUpdate
+  fullName: CustomAnimation.PlayUpdate
+- uid: Global.CustomAnimation.PauseUpdate*
+  commentId: Overload:Global.CustomAnimation.PauseUpdate
+  name: PauseUpdate
+  nameWithType: CustomAnimation.PauseUpdate
+  fullName: CustomAnimation.PauseUpdate
+- uid: Global.CustomAnimation.UpdateAnimation*
+  commentId: Overload:Global.CustomAnimation.UpdateAnimation
+  name: UpdateAnimation
+  nameWithType: CustomAnimation.UpdateAnimation
+  fullName: CustomAnimation.UpdateAnimation
+- uid: Global.CustomAnimation.GetState*
+  commentId: Overload:Global.CustomAnimation.GetState
+  name: GetState
+  nameWithType: CustomAnimation.GetState
+  fullName: CustomAnimation.GetState
+- uid: Global.CustomAnimation.Finish*
+  commentId: Overload:Global.CustomAnimation.Finish
+  name: Finish
+  nameWithType: CustomAnimation.Finish
+  fullName: CustomAnimation.Finish

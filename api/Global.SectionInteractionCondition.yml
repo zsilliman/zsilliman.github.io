@@ -1,0 +1,301 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SectionInteractionCondition
+  commentId: T:Global.SectionInteractionCondition
+  id: SectionInteractionCondition
+  parent: Global
+  children:
+  - Global.SectionInteractionCondition.OnSectionEnterCallback(Section,Section)
+  - Global.SectionInteractionCondition.SetupCondition(Interactable)
+  - Global.SectionInteractionCondition.UpdateCondition
+  langs:
+  - csharp
+  - vb
+  name: SectionInteractionCondition
+  nameWithType: SectionInteractionCondition
+  fullName: SectionInteractionCondition
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/SectionInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionInteractionCondition
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/SectionInteractionCondition.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class SectionInteractionCondition : Interactable.InteractionCondition'
+    content.vb: Public Class SectionInteractionCondition Inherits Interactable.InteractionCondition
+  inheritance:
+  - System.Object
+  - Global.Interactable.InteractionCondition
+  inheritedMembers:
+  - Global.Interactable.InteractionCondition.interactable
+  - Global.Interactable.InteractionCondition.InvokeOnConditionMet
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SectionInteractionCondition.SetupCondition(Interactable)
+  commentId: M:Global.SectionInteractionCondition.SetupCondition(Interactable)
+  id: SetupCondition(Interactable)
+  parent: Global.SectionInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: SetupCondition(Interactable)
+  nameWithType: SectionInteractionCondition.SetupCondition(Interactable)
+  fullName: SectionInteractionCondition.SetupCondition(Interactable)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/SectionInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetupCondition
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/SectionInteractionCondition.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void SetupCondition(Interactable interactable)
+    parameters:
+    - id: interactable
+      type: Global.Interactable
+    content.vb: Public Overrides Sub SetupCondition(interactable As Interactable)
+  overridden: Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+  overload: Global.SectionInteractionCondition.SetupCondition*
+- uid: Global.SectionInteractionCondition.UpdateCondition
+  commentId: M:Global.SectionInteractionCondition.UpdateCondition
+  id: UpdateCondition
+  parent: Global.SectionInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: UpdateCondition()
+  nameWithType: SectionInteractionCondition.UpdateCondition()
+  fullName: SectionInteractionCondition.UpdateCondition()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/SectionInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateCondition
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/SectionInteractionCondition.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void UpdateCondition()
+    content.vb: Public Overrides Sub UpdateCondition()
+  overridden: Global.Interactable.InteractionCondition.UpdateCondition
+  overload: Global.SectionInteractionCondition.UpdateCondition*
+- uid: Global.SectionInteractionCondition.OnSectionEnterCallback(Section,Section)
+  commentId: M:Global.SectionInteractionCondition.OnSectionEnterCallback(Section,Section)
+  id: OnSectionEnterCallback(Section,Section)
+  parent: Global.SectionInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: OnSectionEnterCallback(Section, Section)
+  nameWithType: SectionInteractionCondition.OnSectionEnterCallback(Section, Section)
+  fullName: SectionInteractionCondition.OnSectionEnterCallback(Section, Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/SectionInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnSectionEnterCallback
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/SectionInteractionCondition.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnSectionEnterCallback(Section source, Section destination)
+    parameters:
+    - id: source
+      type: Global.Section
+    - id: destination
+      type: Global.Section
+    content.vb: Public Sub OnSectionEnterCallback(source As Section, destination As Section)
+  overload: Global.SectionInteractionCondition.OnSectionEnterCallback*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.Interactable.InteractionCondition
+  commentId: T:Global.Interactable.InteractionCondition
+  name: Interactable.InteractionCondition
+  nameWithType: Interactable.InteractionCondition
+  fullName: Interactable.InteractionCondition
+  spec.csharp:
+  - uid: Global.Interactable
+    name: Interactable
+  - name: .
+  - uid: Global.Interactable.InteractionCondition
+    name: InteractionCondition
+  spec.vb:
+  - uid: Global.Interactable
+    name: Interactable
+  - name: .
+  - uid: Global.Interactable.InteractionCondition
+    name: InteractionCondition
+- uid: Global.Interactable.InteractionCondition.interactable
+  commentId: F:Global.Interactable.InteractionCondition.interactable
+  parent: Global.Interactable.InteractionCondition
+  name: interactable
+  nameWithType: Interactable.InteractionCondition.interactable
+  fullName: Interactable.InteractionCondition.interactable
+- uid: Global.Interactable.InteractionCondition.InvokeOnConditionMet
+  commentId: M:Global.Interactable.InteractionCondition.InvokeOnConditionMet
+  parent: Global.Interactable.InteractionCondition
+  name: InvokeOnConditionMet()
+  nameWithType: Interactable.InteractionCondition.InvokeOnConditionMet()
+  fullName: Interactable.InteractionCondition.InvokeOnConditionMet()
+  spec.csharp:
+  - uid: Global.Interactable.InteractionCondition.InvokeOnConditionMet
+    name: InvokeOnConditionMet
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Interactable.InteractionCondition.InvokeOnConditionMet
+    name: InvokeOnConditionMet
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+  commentId: M:Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+  parent: Global.Interactable.InteractionCondition
+  name: SetupCondition(Interactable)
+  nameWithType: Interactable.InteractionCondition.SetupCondition(Interactable)
+  fullName: Interactable.InteractionCondition.SetupCondition(Interactable)
+  spec.csharp:
+  - uid: Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+    name: SetupCondition
+  - name: (
+  - uid: Global.Interactable
+    name: Interactable
+  - name: )
+  spec.vb:
+  - uid: Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+    name: SetupCondition
+  - name: (
+  - uid: Global.Interactable
+    name: Interactable
+  - name: )
+- uid: Global.SectionInteractionCondition.SetupCondition*
+  commentId: Overload:Global.SectionInteractionCondition.SetupCondition
+  name: SetupCondition
+  nameWithType: SectionInteractionCondition.SetupCondition
+  fullName: SectionInteractionCondition.SetupCondition
+- uid: Global.Interactable
+  commentId: T:Global.Interactable
+  name: Interactable
+  nameWithType: Interactable
+  fullName: Interactable
+- uid: Global.Interactable.InteractionCondition.UpdateCondition
+  commentId: M:Global.Interactable.InteractionCondition.UpdateCondition
+  parent: Global.Interactable.InteractionCondition
+  name: UpdateCondition()
+  nameWithType: Interactable.InteractionCondition.UpdateCondition()
+  fullName: Interactable.InteractionCondition.UpdateCondition()
+  spec.csharp:
+  - uid: Global.Interactable.InteractionCondition.UpdateCondition
+    name: UpdateCondition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Interactable.InteractionCondition.UpdateCondition
+    name: UpdateCondition
+  - name: (
+  - name: )
+- uid: Global.SectionInteractionCondition.UpdateCondition*
+  commentId: Overload:Global.SectionInteractionCondition.UpdateCondition
+  name: UpdateCondition
+  nameWithType: SectionInteractionCondition.UpdateCondition
+  fullName: SectionInteractionCondition.UpdateCondition
+- uid: Global.SectionInteractionCondition.OnSectionEnterCallback*
+  commentId: Overload:Global.SectionInteractionCondition.OnSectionEnterCallback
+  name: OnSectionEnterCallback
+  nameWithType: SectionInteractionCondition.OnSectionEnterCallback
+  fullName: SectionInteractionCondition.OnSectionEnterCallback
+- uid: Global.Section
+  commentId: T:Global.Section
+  name: Section
+  nameWithType: Section
+  fullName: Section

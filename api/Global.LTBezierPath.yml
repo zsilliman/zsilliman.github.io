@@ -1,0 +1,790 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LTBezierPath
+  commentId: T:Global.LTBezierPath
+  id: LTBezierPath
+  parent: Global
+  children:
+  - Global.LTBezierPath.#ctor
+  - Global.LTBezierPath.#ctor(UnityEngine.Vector3[])
+  - Global.LTBezierPath.distance
+  - Global.LTBezierPath.gizmoDraw(System.Single)
+  - Global.LTBezierPath.length
+  - Global.LTBezierPath.orientToPath
+  - Global.LTBezierPath.orientToPath2d
+  - Global.LTBezierPath.place(UnityEngine.Transform,System.Single,UnityEngine.Vector3)
+  - Global.LTBezierPath.place(UnityEngine.Transform,System.Single)
+  - Global.LTBezierPath.place2d(UnityEngine.Transform,System.Single)
+  - Global.LTBezierPath.placeLocal(UnityEngine.Transform,System.Single,UnityEngine.Vector3)
+  - Global.LTBezierPath.placeLocal(UnityEngine.Transform,System.Single)
+  - Global.LTBezierPath.placeLocal2d(UnityEngine.Transform,System.Single)
+  - Global.LTBezierPath.point(System.Single)
+  - Global.LTBezierPath.pts
+  - Global.LTBezierPath.ratioAtPoint(UnityEngine.Vector3,System.Single)
+  - Global.LTBezierPath.setPoints(UnityEngine.Vector3[])
+  langs:
+  - csharp
+  - vb
+  name: LTBezierPath
+  nameWithType: LTBezierPath
+  fullName: LTBezierPath
+  type: Class
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LTBezierPath
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2955
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  example: []
+  syntax:
+    content: public class LTBezierPath
+    content.vb: Public Class LTBezierPath
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LTBezierPath.pts
+  commentId: F:Global.LTBezierPath.pts
+  id: pts
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: pts
+  nameWithType: LTBezierPath.pts
+  fullName: LTBezierPath.pts
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: pts
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2956
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector3[] pts
+    return:
+      type: UnityEngine.Vector3[]
+    content.vb: Public pts As Vector3()
+- uid: Global.LTBezierPath.length
+  commentId: F:Global.LTBezierPath.length
+  id: length
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: length
+  nameWithType: LTBezierPath.length
+  fullName: LTBezierPath.length
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: length
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2957
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float length
+    return:
+      type: System.Single
+    content.vb: Public length As Single
+- uid: Global.LTBezierPath.orientToPath
+  commentId: F:Global.LTBezierPath.orientToPath
+  id: orientToPath
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: orientToPath
+  nameWithType: LTBezierPath.orientToPath
+  fullName: LTBezierPath.orientToPath
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: orientToPath
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2958
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool orientToPath
+    return:
+      type: System.Boolean
+    content.vb: Public orientToPath As Boolean
+- uid: Global.LTBezierPath.orientToPath2d
+  commentId: F:Global.LTBezierPath.orientToPath2d
+  id: orientToPath2d
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: orientToPath2d
+  nameWithType: LTBezierPath.orientToPath2d
+  fullName: LTBezierPath.orientToPath2d
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: orientToPath2d
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2959
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool orientToPath2d
+    return:
+      type: System.Boolean
+    content.vb: Public orientToPath2d As Boolean
+- uid: Global.LTBezierPath.#ctor
+  commentId: M:Global.LTBezierPath.#ctor
+  id: '#ctor'
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: LTBezierPath()
+  nameWithType: LTBezierPath.LTBezierPath()
+  fullName: LTBezierPath.LTBezierPath()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2965
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LTBezierPath()
+    content.vb: Public Sub New()
+  overload: Global.LTBezierPath.#ctor*
+  nameWithType.vb: LTBezierPath.New()
+  fullName.vb: LTBezierPath.New()
+  name.vb: New()
+- uid: Global.LTBezierPath.#ctor(UnityEngine.Vector3[])
+  commentId: M:Global.LTBezierPath.#ctor(UnityEngine.Vector3[])
+  id: '#ctor(UnityEngine.Vector3[])'
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: LTBezierPath(Vector3[])
+  nameWithType: LTBezierPath.LTBezierPath(Vector3[])
+  fullName: LTBezierPath.LTBezierPath(UnityEngine.Vector3[])
+  type: Constructor
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2966
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LTBezierPath(Vector3[] pts_)
+    parameters:
+    - id: pts_
+      type: UnityEngine.Vector3[]
+    content.vb: Public Sub New(pts_ As Vector3())
+  overload: Global.LTBezierPath.#ctor*
+  nameWithType.vb: LTBezierPath.New(Vector3())
+  fullName.vb: LTBezierPath.New(UnityEngine.Vector3())
+  name.vb: New(Vector3())
+- uid: Global.LTBezierPath.setPoints(UnityEngine.Vector3[])
+  commentId: M:Global.LTBezierPath.setPoints(UnityEngine.Vector3[])
+  id: setPoints(UnityEngine.Vector3[])
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: setPoints(Vector3[])
+  nameWithType: LTBezierPath.setPoints(Vector3[])
+  fullName: LTBezierPath.setPoints(UnityEngine.Vector3[])
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: setPoints
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2970
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void setPoints(Vector3[] pts_)
+    parameters:
+    - id: pts_
+      type: UnityEngine.Vector3[]
+    content.vb: Public Sub setPoints(pts_ As Vector3())
+  overload: Global.LTBezierPath.setPoints*
+  nameWithType.vb: LTBezierPath.setPoints(Vector3())
+  fullName.vb: LTBezierPath.setPoints(UnityEngine.Vector3())
+  name.vb: setPoints(Vector3())
+- uid: Global.LTBezierPath.distance
+  commentId: P:Global.LTBezierPath.distance
+  id: distance
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: distance
+  nameWithType: LTBezierPath.distance
+  fullName: LTBezierPath.distance
+  type: Property
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: distance
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2997
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  example: []
+  syntax:
+    content: public float distance { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property distance As Single
+  overload: Global.LTBezierPath.distance*
+- uid: Global.LTBezierPath.point(System.Single)
+  commentId: M:Global.LTBezierPath.point(System.Single)
+  id: point(System.Single)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: point(float)
+  nameWithType: LTBezierPath.point(float)
+  fullName: LTBezierPath.point(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: point
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3012
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Retrieve a point along a path
+  example: []
+  syntax:
+    content: public Vector3 point(float ratio)
+    parameters:
+    - id: ratio
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function point(ratio As Single) As Vector3
+  overload: Global.LTBezierPath.point*
+  nameWithType.vb: LTBezierPath.point(Single)
+  fullName.vb: LTBezierPath.point(Single)
+  name.vb: point(Single)
+- uid: Global.LTBezierPath.place2d(UnityEngine.Transform,System.Single)
+  commentId: M:Global.LTBezierPath.place2d(UnityEngine.Transform,System.Single)
+  id: place2d(UnityEngine.Transform,System.Single)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: place2d(Transform, float)
+  nameWithType: LTBezierPath.place2d(Transform, float)
+  fullName: LTBezierPath.place2d(UnityEngine.Transform, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: place2d
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3022
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void place2d(Transform transform, float ratio)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: ratio
+      type: System.Single
+    content.vb: Public Sub place2d(transform As Transform, ratio As Single)
+  overload: Global.LTBezierPath.place2d*
+  nameWithType.vb: LTBezierPath.place2d(Transform, Single)
+  fullName.vb: LTBezierPath.place2d(UnityEngine.Transform, Single)
+  name.vb: place2d(Transform, Single)
+- uid: Global.LTBezierPath.placeLocal2d(UnityEngine.Transform,System.Single)
+  commentId: M:Global.LTBezierPath.placeLocal2d(UnityEngine.Transform,System.Single)
+  id: placeLocal2d(UnityEngine.Transform,System.Single)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: placeLocal2d(Transform, float)
+  nameWithType: LTBezierPath.placeLocal2d(Transform, float)
+  fullName: LTBezierPath.placeLocal2d(UnityEngine.Transform, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: placeLocal2d
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3032
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void placeLocal2d(Transform transform, float ratio)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: ratio
+      type: System.Single
+    content.vb: Public Sub placeLocal2d(transform As Transform, ratio As Single)
+  overload: Global.LTBezierPath.placeLocal2d*
+  nameWithType.vb: LTBezierPath.placeLocal2d(Transform, Single)
+  fullName.vb: LTBezierPath.placeLocal2d(UnityEngine.Transform, Single)
+  name.vb: placeLocal2d(Transform, Single)
+- uid: Global.LTBezierPath.place(UnityEngine.Transform,System.Single)
+  commentId: M:Global.LTBezierPath.place(UnityEngine.Transform,System.Single)
+  id: place(UnityEngine.Transform,System.Single)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: place(Transform, float)
+  nameWithType: LTBezierPath.place(Transform, float)
+  fullName: LTBezierPath.place(UnityEngine.Transform, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: place
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3051
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Place an object along a certain point on the path (facing the direction perpendicular to the path)
+  example: []
+  syntax:
+    content: public void place(Transform transform, float ratio)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: ratio
+      type: System.Single
+    content.vb: Public Sub place(transform As Transform, ratio As Single)
+  overload: Global.LTBezierPath.place*
+  nameWithType.vb: LTBezierPath.place(Transform, Single)
+  fullName.vb: LTBezierPath.place(UnityEngine.Transform, Single)
+  name.vb: place(Transform, Single)
+- uid: Global.LTBezierPath.place(UnityEngine.Transform,System.Single,UnityEngine.Vector3)
+  commentId: M:Global.LTBezierPath.place(UnityEngine.Transform,System.Single,UnityEngine.Vector3)
+  id: place(UnityEngine.Transform,System.Single,UnityEngine.Vector3)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: place(Transform, float, Vector3)
+  nameWithType: LTBezierPath.place(Transform, float, Vector3)
+  fullName: LTBezierPath.place(UnityEngine.Transform, float, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: place
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3066
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Place an object along a certain point on the path, with it facing a certain direction perpendicular to the path
+  example: []
+  syntax:
+    content: public void place(Transform transform, float ratio, Vector3 worldUp)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: ratio
+      type: System.Single
+    - id: worldUp
+      type: UnityEngine.Vector3
+    content.vb: Public Sub place(transform As Transform, ratio As Single, worldUp As Vector3)
+  overload: Global.LTBezierPath.place*
+  nameWithType.vb: LTBezierPath.place(Transform, Single, Vector3)
+  fullName.vb: LTBezierPath.place(UnityEngine.Transform, Single, UnityEngine.Vector3)
+  name.vb: place(Transform, Single, Vector3)
+- uid: Global.LTBezierPath.placeLocal(UnityEngine.Transform,System.Single)
+  commentId: M:Global.LTBezierPath.placeLocal(UnityEngine.Transform,System.Single)
+  id: placeLocal(UnityEngine.Transform,System.Single)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: placeLocal(Transform, float)
+  nameWithType: LTBezierPath.placeLocal(Transform, float)
+  fullName: LTBezierPath.placeLocal(UnityEngine.Transform, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: placeLocal
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3083
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Place an object along a certain point on the path (facing the direction perpendicular to the path) - Local Space, not world-space
+  example: []
+  syntax:
+    content: public void placeLocal(Transform transform, float ratio)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: ratio
+      type: System.Single
+    content.vb: Public Sub placeLocal(transform As Transform, ratio As Single)
+  overload: Global.LTBezierPath.placeLocal*
+  nameWithType.vb: LTBezierPath.placeLocal(Transform, Single)
+  fullName.vb: LTBezierPath.placeLocal(UnityEngine.Transform, Single)
+  name.vb: placeLocal(Transform, Single)
+- uid: Global.LTBezierPath.placeLocal(UnityEngine.Transform,System.Single,UnityEngine.Vector3)
+  commentId: M:Global.LTBezierPath.placeLocal(UnityEngine.Transform,System.Single,UnityEngine.Vector3)
+  id: placeLocal(UnityEngine.Transform,System.Single,UnityEngine.Vector3)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: placeLocal(Transform, float, Vector3)
+  nameWithType: LTBezierPath.placeLocal(Transform, float, Vector3)
+  fullName: LTBezierPath.placeLocal(UnityEngine.Transform, float, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: placeLocal
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3097
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Place an object along a certain point on the path, with it facing a certain direction perpendicular to the path - Local Space, not world-space
+  example: []
+  syntax:
+    content: public void placeLocal(Transform transform, float ratio, Vector3 worldUp)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: ratio
+      type: System.Single
+    - id: worldUp
+      type: UnityEngine.Vector3
+    content.vb: Public Sub placeLocal(transform As Transform, ratio As Single, worldUp As Vector3)
+  overload: Global.LTBezierPath.placeLocal*
+  nameWithType.vb: LTBezierPath.placeLocal(Transform, Single, Vector3)
+  fullName.vb: LTBezierPath.placeLocal(UnityEngine.Transform, Single, UnityEngine.Vector3)
+  name.vb: placeLocal(Transform, Single, Vector3)
+- uid: Global.LTBezierPath.gizmoDraw(System.Single)
+  commentId: M:Global.LTBezierPath.gizmoDraw(System.Single)
+  id: gizmoDraw(System.Single)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: gizmoDraw(float)
+  nameWithType: LTBezierPath.gizmoDraw(float)
+  fullName: LTBezierPath.gizmoDraw(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: gizmoDraw
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3108
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void gizmoDraw(float t = -1)
+    parameters:
+    - id: t
+      type: System.Single
+    content.vb: Public Sub gizmoDraw(t As Single = -1)
+  overload: Global.LTBezierPath.gizmoDraw*
+  nameWithType.vb: LTBezierPath.gizmoDraw(Single)
+  fullName.vb: LTBezierPath.gizmoDraw(Single)
+  name.vb: gizmoDraw(Single)
+- uid: Global.LTBezierPath.ratioAtPoint(UnityEngine.Vector3,System.Single)
+  commentId: M:Global.LTBezierPath.ratioAtPoint(UnityEngine.Vector3,System.Single)
+  id: ratioAtPoint(UnityEngine.Vector3,System.Single)
+  parent: Global.LTBezierPath
+  langs:
+  - csharp
+  - vb
+  name: ratioAtPoint(Vector3, float)
+  nameWithType: LTBezierPath.ratioAtPoint(Vector3, float)
+  fullName: LTBezierPath.ratioAtPoint(UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ratioAtPoint
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3133
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Retrieve the closest ratio near the point
+  example: []
+  syntax:
+    content: public float ratioAtPoint(Vector3 pt, float precision = 0.01)
+    parameters:
+    - id: pt
+      type: UnityEngine.Vector3
+    - id: precision
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function ratioAtPoint(pt As Vector3, precision As Single = 0.01) As Single
+  overload: Global.LTBezierPath.ratioAtPoint*
+  nameWithType.vb: LTBezierPath.ratioAtPoint(Vector3, Single)
+  fullName.vb: LTBezierPath.ratioAtPoint(UnityEngine.Vector3, Single)
+  name.vb: ratioAtPoint(Vector3, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.LTBezierPath.#ctor*
+  commentId: Overload:Global.LTBezierPath.#ctor
+  name: LTBezierPath
+  nameWithType: LTBezierPath.LTBezierPath
+  fullName: LTBezierPath.LTBezierPath
+  nameWithType.vb: LTBezierPath.New
+  fullName.vb: LTBezierPath.New
+  name.vb: New
+- uid: Global.LTBezierPath.setPoints*
+  commentId: Overload:Global.LTBezierPath.setPoints
+  name: setPoints
+  nameWithType: LTBezierPath.setPoints
+  fullName: LTBezierPath.setPoints
+- uid: Global.LTBezierPath.distance*
+  commentId: Overload:Global.LTBezierPath.distance
+  name: distance
+  nameWithType: LTBezierPath.distance
+  fullName: LTBezierPath.distance
+- uid: Global.LTBezierPath.point*
+  commentId: Overload:Global.LTBezierPath.point
+  name: point
+  nameWithType: LTBezierPath.point
+  fullName: LTBezierPath.point
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.LTBezierPath.place2d*
+  commentId: Overload:Global.LTBezierPath.place2d
+  name: place2d
+  nameWithType: LTBezierPath.place2d
+  fullName: LTBezierPath.place2d
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: Global.LTBezierPath.placeLocal2d*
+  commentId: Overload:Global.LTBezierPath.placeLocal2d
+  name: placeLocal2d
+  nameWithType: LTBezierPath.placeLocal2d
+  fullName: LTBezierPath.placeLocal2d
+- uid: Global.LTBezierPath.place*
+  commentId: Overload:Global.LTBezierPath.place
+  name: place
+  nameWithType: LTBezierPath.place
+  fullName: LTBezierPath.place
+- uid: Global.LTBezierPath.placeLocal*
+  commentId: Overload:Global.LTBezierPath.placeLocal
+  name: placeLocal
+  nameWithType: LTBezierPath.placeLocal
+  fullName: LTBezierPath.placeLocal
+- uid: Global.LTBezierPath.gizmoDraw*
+  commentId: Overload:Global.LTBezierPath.gizmoDraw
+  name: gizmoDraw
+  nameWithType: LTBezierPath.gizmoDraw
+  fullName: LTBezierPath.gizmoDraw
+- uid: Global.LTBezierPath.ratioAtPoint*
+  commentId: Overload:Global.LTBezierPath.ratioAtPoint
+  name: ratioAtPoint
+  nameWithType: LTBezierPath.ratioAtPoint
+  fullName: LTBezierPath.ratioAtPoint

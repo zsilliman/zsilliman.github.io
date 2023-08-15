@@ -1,0 +1,410 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlatformerClip
+  commentId: T:Global.PlatformerClip
+  id: PlatformerClip
+  parent: Global
+  children:
+  - Global.PlatformerClip.CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+  - Global.PlatformerClip.platformer
+  - Global.PlatformerClip.PlatformerAction
+  langs:
+  - csharp
+  - vb
+  name: PlatformerClip
+  nameWithType: PlatformerClip
+  fullName: PlatformerClip
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Cutscenes/PlayerClip/PlatformerClip.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlatformerClip
+    path: ../Assets/Objects & Components/World/Cutscenes/PlayerClip/PlatformerClip.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class PlatformerClip : PlayableAsset
+    content.vb: >-
+      <Serializable>
+
+      Public Class PlatformerClip Inherits PlayableAsset
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEngine.Playables.PlayableAsset
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.PlatformerClip.PlatformerAction
+  commentId: F:Global.PlatformerClip.PlatformerAction
+  id: PlatformerAction
+  parent: Global.PlatformerClip
+  langs:
+  - csharp
+  - vb
+  name: PlatformerAction
+  nameWithType: PlatformerClip.PlatformerAction
+  fullName: PlatformerClip.PlatformerAction
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Cutscenes/PlayerClip/PlatformerClip.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlatformerAction
+    path: ../Assets/Objects & Components/World/Cutscenes/PlayerClip/PlatformerClip.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public PlatformerBehavior.PlatformerBehaviorData PlatformerAction
+    return:
+      type: Global.PlatformerBehavior.PlatformerBehaviorData
+    content.vb: >-
+      <SerializeField>
+
+      Public PlatformerAction As PlatformerBehavior.PlatformerBehaviorData
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.PlatformerClip.platformer
+  commentId: F:Global.PlatformerClip.platformer
+  id: platformer
+  parent: Global.PlatformerClip
+  langs:
+  - csharp
+  - vb
+  name: platformer
+  nameWithType: PlatformerClip.platformer
+  fullName: PlatformerClip.platformer
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Cutscenes/PlayerClip/PlatformerClip.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: platformer
+    path: ../Assets/Objects & Components/World/Cutscenes/PlayerClip/PlatformerClip.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public ExposedReference<IntBasePlatformer> platformer
+    return:
+      type: UnityEngine.ExposedReference{IntBasePlatformer}
+    content.vb: >-
+      <HideInInspector>
+
+      Public platformer As ExposedReference(Of IntBasePlatformer)
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.PlatformerClip.CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+  commentId: M:Global.PlatformerClip.CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+  id: CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+  parent: Global.PlatformerClip
+  langs:
+  - csharp
+  - vb
+  name: CreatePlayable(PlayableGraph, GameObject)
+  nameWithType: PlatformerClip.CreatePlayable(PlayableGraph, GameObject)
+  fullName: PlatformerClip.CreatePlayable(UnityEngine.Playables.PlayableGraph, UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Cutscenes/PlayerClip/PlatformerClip.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CreatePlayable
+    path: ../Assets/Objects & Components/World/Cutscenes/PlayerClip/PlatformerClip.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
+    parameters:
+    - id: graph
+      type: UnityEngine.Playables.PlayableGraph
+    - id: owner
+      type: UnityEngine.GameObject
+    return:
+      type: UnityEngine.Playables.Playable
+    content.vb: Public Overrides Function CreatePlayable(graph As PlayableGraph, owner As GameObject) As Playable
+  overridden: UnityEngine.Playables.PlayableAsset.CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+  overload: Global.PlatformerClip.CreatePlayable*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.Playables.PlayableAsset
+  commentId: T:UnityEngine.Playables.PlayableAsset
+  parent: UnityEngine.Playables
+  isExternal: true
+  name: PlayableAsset
+  nameWithType: PlayableAsset
+  fullName: UnityEngine.Playables.PlayableAsset
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Playables
+  commentId: N:UnityEngine.Playables
+  isExternal: true
+  name: UnityEngine.Playables
+  nameWithType: UnityEngine.Playables
+  fullName: UnityEngine.Playables
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Playables
+    name: Playables
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Playables
+    name: Playables
+    isExternal: true
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.PlatformerBehavior.PlatformerBehaviorData
+  commentId: T:Global.PlatformerBehavior.PlatformerBehaviorData
+  name: PlatformerBehavior.PlatformerBehaviorData
+  nameWithType: PlatformerBehavior.PlatformerBehaviorData
+  fullName: PlatformerBehavior.PlatformerBehaviorData
+  spec.csharp:
+  - uid: Global.PlatformerBehavior
+    name: PlatformerBehavior
+  - name: .
+  - uid: Global.PlatformerBehavior.PlatformerBehaviorData
+    name: PlatformerBehaviorData
+  spec.vb:
+  - uid: Global.PlatformerBehavior
+    name: PlatformerBehavior
+  - name: .
+  - uid: Global.PlatformerBehavior.PlatformerBehaviorData
+    name: PlatformerBehaviorData
+- uid: UnityEngine.ExposedReference{IntBasePlatformer}
+  commentId: T:UnityEngine.ExposedReference{IntBasePlatformer}
+  parent: UnityEngine
+  definition: UnityEngine.ExposedReference`1
+  name: ExposedReference<IntBasePlatformer>
+  nameWithType: ExposedReference<IntBasePlatformer>
+  fullName: UnityEngine.ExposedReference<IntBasePlatformer>
+  nameWithType.vb: ExposedReference(Of IntBasePlatformer)
+  fullName.vb: UnityEngine.ExposedReference(Of IntBasePlatformer)
+  name.vb: ExposedReference(Of IntBasePlatformer)
+  spec.csharp:
+  - uid: UnityEngine.ExposedReference`1
+    name: ExposedReference
+    isExternal: true
+  - name: <
+  - uid: Global.IntBasePlatformer
+    name: IntBasePlatformer
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.ExposedReference`1
+    name: ExposedReference
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntBasePlatformer
+    name: IntBasePlatformer
+  - name: )
+- uid: UnityEngine.ExposedReference`1
+  commentId: T:UnityEngine.ExposedReference`1
+  isExternal: true
+  name: ExposedReference<T>
+  nameWithType: ExposedReference<T>
+  fullName: UnityEngine.ExposedReference<T>
+  nameWithType.vb: ExposedReference(Of T)
+  fullName.vb: UnityEngine.ExposedReference(Of T)
+  name.vb: ExposedReference(Of T)
+  spec.csharp:
+  - uid: UnityEngine.ExposedReference`1
+    name: ExposedReference
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.ExposedReference`1
+    name: ExposedReference
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UnityEngine.Playables.PlayableAsset.CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+  commentId: M:UnityEngine.Playables.PlayableAsset.CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+  parent: UnityEngine.Playables.PlayableAsset
+  isExternal: true
+  name: CreatePlayable(PlayableGraph, GameObject)
+  nameWithType: PlayableAsset.CreatePlayable(PlayableGraph, GameObject)
+  fullName: UnityEngine.Playables.PlayableAsset.CreatePlayable(UnityEngine.Playables.PlayableGraph, UnityEngine.GameObject)
+  spec.csharp:
+  - uid: UnityEngine.Playables.PlayableAsset.CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+    name: CreatePlayable
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Playables.PlayableGraph
+    name: PlayableGraph
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Playables.PlayableAsset.CreatePlayable(UnityEngine.Playables.PlayableGraph,UnityEngine.GameObject)
+    name: CreatePlayable
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Playables.PlayableGraph
+    name: PlayableGraph
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: Global.PlatformerClip.CreatePlayable*
+  commentId: Overload:Global.PlatformerClip.CreatePlayable
+  name: CreatePlayable
+  nameWithType: PlatformerClip.CreatePlayable
+  fullName: PlatformerClip.CreatePlayable
+- uid: UnityEngine.Playables.PlayableGraph
+  commentId: T:UnityEngine.Playables.PlayableGraph
+  parent: UnityEngine.Playables
+  isExternal: true
+  name: PlayableGraph
+  nameWithType: PlayableGraph
+  fullName: UnityEngine.Playables.PlayableGraph
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Playables.Playable
+  commentId: T:UnityEngine.Playables.Playable
+  parent: UnityEngine.Playables
+  isExternal: true
+  name: Playable
+  nameWithType: Playable
+  fullName: UnityEngine.Playables.Playable

@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  commentId: T:Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  id: ProceduralSectionGenerator.EntranceAlignmentRule
+  parent: Global
+  children:
+  - Global.ProceduralSectionGenerator.EntranceAlignmentRule.AlignLeftOrBottom
+  - Global.ProceduralSectionGenerator.EntranceAlignmentRule.AlignRightOrTop
+  - Global.ProceduralSectionGenerator.EntranceAlignmentRule.Random
+  langs:
+  - csharp
+  - vb
+  name: ProceduralSectionGenerator.EntranceAlignmentRule
+  nameWithType: ProceduralSectionGenerator.EntranceAlignmentRule
+  fullName: ProceduralSectionGenerator.EntranceAlignmentRule
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EntranceAlignmentRule
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum ProceduralSectionGenerator.EntranceAlignmentRule
+    content.vb: Public Enum ProceduralSectionGenerator.EntranceAlignmentRule
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule.AlignLeftOrBottom
+  commentId: F:Global.ProceduralSectionGenerator.EntranceAlignmentRule.AlignLeftOrBottom
+  id: AlignLeftOrBottom
+  parent: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  langs:
+  - csharp
+  - vb
+  name: AlignLeftOrBottom
+  nameWithType: ProceduralSectionGenerator.EntranceAlignmentRule.AlignLeftOrBottom
+  fullName: ProceduralSectionGenerator.EntranceAlignmentRule.AlignLeftOrBottom
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AlignLeftOrBottom
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: AlignLeftOrBottom = 0
+    return:
+      type: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+- uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule.AlignRightOrTop
+  commentId: F:Global.ProceduralSectionGenerator.EntranceAlignmentRule.AlignRightOrTop
+  id: AlignRightOrTop
+  parent: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  langs:
+  - csharp
+  - vb
+  name: AlignRightOrTop
+  nameWithType: ProceduralSectionGenerator.EntranceAlignmentRule.AlignRightOrTop
+  fullName: ProceduralSectionGenerator.EntranceAlignmentRule.AlignRightOrTop
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AlignRightOrTop
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: AlignRightOrTop = 1
+    return:
+      type: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+- uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule.Random
+  commentId: F:Global.ProceduralSectionGenerator.EntranceAlignmentRule.Random
+  id: Random
+  parent: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  langs:
+  - csharp
+  - vb
+  name: Random
+  nameWithType: ProceduralSectionGenerator.EntranceAlignmentRule.Random
+  fullName: ProceduralSectionGenerator.EntranceAlignmentRule.Random
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Random
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Random = 2
+    return:
+      type: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  commentId: T:Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  name: ProceduralSectionGenerator.EntranceAlignmentRule
+  nameWithType: ProceduralSectionGenerator.EntranceAlignmentRule
+  fullName: ProceduralSectionGenerator.EntranceAlignmentRule
+  spec.csharp:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+    name: EntranceAlignmentRule
+  spec.vb:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+    name: EntranceAlignmentRule

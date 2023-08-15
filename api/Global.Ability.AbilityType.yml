@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Ability.AbilityType
+  commentId: T:Global.Ability.AbilityType
+  id: Ability.AbilityType
+  parent: Global
+  children:
+  - Global.Ability.AbilityType.CastAura
+  langs:
+  - csharp
+  - vb
+  name: Ability.AbilityType
+  nameWithType: Ability.AbilityType
+  fullName: Ability.AbilityType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/Ability.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AbilityType
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/Ability.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum Ability.AbilityType
+    content.vb: >-
+      <Serializable>
+
+      Public Enum Ability.AbilityType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.Ability.AbilityType.CastAura
+  commentId: F:Global.Ability.AbilityType.CastAura
+  id: CastAura
+  parent: Global.Ability.AbilityType
+  langs:
+  - csharp
+  - vb
+  name: CastAura
+  nameWithType: Ability.AbilityType.CastAura
+  fullName: Ability.AbilityType.CastAura
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Abilities/Ability.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CastAura
+    path: ../Assets/Objects & Components/Entities/Player/Abilities/Ability.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: CastAura = 0
+    return:
+      type: Global.Ability.AbilityType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Ability.AbilityType
+  commentId: T:Global.Ability.AbilityType
+  name: Ability.AbilityType
+  nameWithType: Ability.AbilityType
+  fullName: Ability.AbilityType
+  spec.csharp:
+  - uid: Global.Ability
+    name: Ability
+  - name: .
+  - uid: Global.Ability.AbilityType
+    name: AbilityType
+  spec.vb:
+  - uid: Global.Ability
+    name: Ability
+  - name: .
+  - uid: Global.Ability.AbilityType
+    name: AbilityType

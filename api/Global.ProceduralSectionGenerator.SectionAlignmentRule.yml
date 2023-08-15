@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralSectionGenerator.SectionAlignmentRule
+  commentId: T:Global.ProceduralSectionGenerator.SectionAlignmentRule
+  id: ProceduralSectionGenerator.SectionAlignmentRule
+  parent: Global
+  children:
+  - Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignCenter
+  - Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignLeftOrBottom
+  - Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignRightOrTop
+  langs:
+  - csharp
+  - vb
+  name: ProceduralSectionGenerator.SectionAlignmentRule
+  nameWithType: ProceduralSectionGenerator.SectionAlignmentRule
+  fullName: ProceduralSectionGenerator.SectionAlignmentRule
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionAlignmentRule
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum ProceduralSectionGenerator.SectionAlignmentRule
+    content.vb: Public Enum ProceduralSectionGenerator.SectionAlignmentRule
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignCenter
+  commentId: F:Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignCenter
+  id: AlignCenter
+  parent: Global.ProceduralSectionGenerator.SectionAlignmentRule
+  langs:
+  - csharp
+  - vb
+  name: AlignCenter
+  nameWithType: ProceduralSectionGenerator.SectionAlignmentRule.AlignCenter
+  fullName: ProceduralSectionGenerator.SectionAlignmentRule.AlignCenter
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AlignCenter
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: AlignCenter = 0
+    return:
+      type: Global.ProceduralSectionGenerator.SectionAlignmentRule
+- uid: Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignLeftOrBottom
+  commentId: F:Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignLeftOrBottom
+  id: AlignLeftOrBottom
+  parent: Global.ProceduralSectionGenerator.SectionAlignmentRule
+  langs:
+  - csharp
+  - vb
+  name: AlignLeftOrBottom
+  nameWithType: ProceduralSectionGenerator.SectionAlignmentRule.AlignLeftOrBottom
+  fullName: ProceduralSectionGenerator.SectionAlignmentRule.AlignLeftOrBottom
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AlignLeftOrBottom
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: AlignLeftOrBottom = 1
+    return:
+      type: Global.ProceduralSectionGenerator.SectionAlignmentRule
+- uid: Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignRightOrTop
+  commentId: F:Global.ProceduralSectionGenerator.SectionAlignmentRule.AlignRightOrTop
+  id: AlignRightOrTop
+  parent: Global.ProceduralSectionGenerator.SectionAlignmentRule
+  langs:
+  - csharp
+  - vb
+  name: AlignRightOrTop
+  nameWithType: ProceduralSectionGenerator.SectionAlignmentRule.AlignRightOrTop
+  fullName: ProceduralSectionGenerator.SectionAlignmentRule.AlignRightOrTop
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AlignRightOrTop
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: AlignRightOrTop = 2
+    return:
+      type: Global.ProceduralSectionGenerator.SectionAlignmentRule
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ProceduralSectionGenerator.SectionAlignmentRule
+  commentId: T:Global.ProceduralSectionGenerator.SectionAlignmentRule
+  name: ProceduralSectionGenerator.SectionAlignmentRule
+  nameWithType: ProceduralSectionGenerator.SectionAlignmentRule
+  fullName: ProceduralSectionGenerator.SectionAlignmentRule
+  spec.csharp:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.SectionAlignmentRule
+    name: SectionAlignmentRule
+  spec.vb:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.SectionAlignmentRule
+    name: SectionAlignmentRule

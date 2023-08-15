@@ -1,0 +1,318 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerHealthUIManager
+  commentId: T:Global.PlayerHealthUIManager
+  id: PlayerHealthUIManager
+  parent: Global
+  children:
+  - Global.PlayerHealthUIManager.ClearHearts
+  - Global.PlayerHealthUIManager.CreateEmptyHeart
+  - Global.PlayerHealthUIManager.DrawHearts
+  - Global.PlayerHealthUIManager.playerHeartPrefab
+  - Global.PlayerHealthUIManager.stats
+  langs:
+  - csharp
+  - vb
+  name: PlayerHealthUIManager
+  nameWithType: PlayerHealthUIManager
+  fullName: PlayerHealthUIManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerHealthUIManager
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class PlayerHealthUIManager : MonoBehaviour'
+    content.vb: Public Class PlayerHealthUIManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.PlayerHealthUIManager.playerHeartPrefab
+  commentId: F:Global.PlayerHealthUIManager.playerHeartPrefab
+  id: playerHeartPrefab
+  parent: Global.PlayerHealthUIManager
+  langs:
+  - csharp
+  - vb
+  name: playerHeartPrefab
+  nameWithType: PlayerHealthUIManager.playerHeartPrefab
+  fullName: PlayerHealthUIManager.playerHeartPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: playerHeartPrefab
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject playerHeartPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public playerHeartPrefab As GameObject
+- uid: Global.PlayerHealthUIManager.stats
+  commentId: F:Global.PlayerHealthUIManager.stats
+  id: stats
+  parent: Global.PlayerHealthUIManager
+  langs:
+  - csharp
+  - vb
+  name: stats
+  nameWithType: PlayerHealthUIManager.stats
+  fullName: PlayerHealthUIManager.stats
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: stats
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public PlayerStats stats
+    return:
+      type: Global.PlayerStats
+    content.vb: >-
+      <HideInInspector>
+
+      Public stats As PlayerStats
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.PlayerHealthUIManager.ClearHearts
+  commentId: M:Global.PlayerHealthUIManager.ClearHearts
+  id: ClearHearts
+  parent: Global.PlayerHealthUIManager
+  langs:
+  - csharp
+  - vb
+  name: ClearHearts()
+  nameWithType: PlayerHealthUIManager.ClearHearts()
+  fullName: PlayerHealthUIManager.ClearHearts()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ClearHearts
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ClearHearts()
+    content.vb: Public Sub ClearHearts()
+  overload: Global.PlayerHealthUIManager.ClearHearts*
+- uid: Global.PlayerHealthUIManager.CreateEmptyHeart
+  commentId: M:Global.PlayerHealthUIManager.CreateEmptyHeart
+  id: CreateEmptyHeart
+  parent: Global.PlayerHealthUIManager
+  langs:
+  - csharp
+  - vb
+  name: CreateEmptyHeart()
+  nameWithType: PlayerHealthUIManager.CreateEmptyHeart()
+  fullName: PlayerHealthUIManager.CreateEmptyHeart()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CreateEmptyHeart
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void CreateEmptyHeart()
+    content.vb: Public Sub CreateEmptyHeart()
+  overload: Global.PlayerHealthUIManager.CreateEmptyHeart*
+- uid: Global.PlayerHealthUIManager.DrawHearts
+  commentId: M:Global.PlayerHealthUIManager.DrawHearts
+  id: DrawHearts
+  parent: Global.PlayerHealthUIManager
+  langs:
+  - csharp
+  - vb
+  name: DrawHearts()
+  nameWithType: PlayerHealthUIManager.DrawHearts()
+  fullName: PlayerHealthUIManager.DrawHearts()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawHearts
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerHealthUIManager.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DrawHearts()
+    content.vb: Public Sub DrawHearts()
+  overload: Global.PlayerHealthUIManager.DrawHearts*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.PlayerStats
+  commentId: T:Global.PlayerStats
+  name: PlayerStats
+  nameWithType: PlayerStats
+  fullName: PlayerStats
+- uid: Global.PlayerHealthUIManager.ClearHearts*
+  commentId: Overload:Global.PlayerHealthUIManager.ClearHearts
+  name: ClearHearts
+  nameWithType: PlayerHealthUIManager.ClearHearts
+  fullName: PlayerHealthUIManager.ClearHearts
+- uid: Global.PlayerHealthUIManager.CreateEmptyHeart*
+  commentId: Overload:Global.PlayerHealthUIManager.CreateEmptyHeart
+  name: CreateEmptyHeart
+  nameWithType: PlayerHealthUIManager.CreateEmptyHeart
+  fullName: PlayerHealthUIManager.CreateEmptyHeart
+- uid: Global.PlayerHealthUIManager.DrawHearts*
+  commentId: Overload:Global.PlayerHealthUIManager.DrawHearts
+  name: DrawHearts
+  nameWithType: PlayerHealthUIManager.DrawHearts
+  fullName: PlayerHealthUIManager.DrawHearts

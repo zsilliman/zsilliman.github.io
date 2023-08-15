@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraUtility.Movement
+  commentId: T:Global.AuraUtility.Movement
+  id: AuraUtility.Movement
+  parent: Global
+  children:
+  - Global.AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura,MultiEaseMovement.MultiEaseProperties,UnityEngine.GameObject)
+  - Global.AuraUtility.Movement.AddOrbitMovement(AutoMergeAura,OrbitMovementController.OrbitMovementProperties,UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: AuraUtility.Movement
+  nameWithType: AuraUtility.Movement
+  fullName: AuraUtility.Movement
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Movement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 276
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static class AuraUtility.Movement
+    content.vb: Public Module AuraUtility.Movement
+  inheritance:
+  - System.Object
+- uid: Global.AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura,MultiEaseMovement.MultiEaseProperties,UnityEngine.GameObject)
+  commentId: M:Global.AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura,MultiEaseMovement.MultiEaseProperties,UnityEngine.GameObject)
+  id: AddMultiEaseMovement(AutoMergeAura,MultiEaseMovement.MultiEaseProperties,UnityEngine.GameObject)
+  parent: Global.AuraUtility.Movement
+  langs:
+  - csharp
+  - vb
+  name: AddMultiEaseMovement(AutoMergeAura, MultiEaseProperties, GameObject)
+  nameWithType: AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura, MultiEaseMovement.MultiEaseProperties, GameObject)
+  fullName: AuraUtility.Movement.AddMultiEaseMovement(AutoMergeAura, MultiEaseMovement.MultiEaseProperties, UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddMultiEaseMovement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 278
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void AddMultiEaseMovement(AutoMergeAura aura, MultiEaseMovement.MultiEaseProperties ease_props, GameObject aura_creator)
+    parameters:
+    - id: aura
+      type: Global.AutoMergeAura
+    - id: ease_props
+      type: Global.MultiEaseMovement.MultiEaseProperties
+    - id: aura_creator
+      type: UnityEngine.GameObject
+    content.vb: Public Shared Sub AddMultiEaseMovement(aura As AutoMergeAura, ease_props As MultiEaseMovement.MultiEaseProperties, aura_creator As GameObject)
+  overload: Global.AuraUtility.Movement.AddMultiEaseMovement*
+- uid: Global.AuraUtility.Movement.AddOrbitMovement(AutoMergeAura,OrbitMovementController.OrbitMovementProperties,UnityEngine.GameObject)
+  commentId: M:Global.AuraUtility.Movement.AddOrbitMovement(AutoMergeAura,OrbitMovementController.OrbitMovementProperties,UnityEngine.GameObject)
+  id: AddOrbitMovement(AutoMergeAura,OrbitMovementController.OrbitMovementProperties,UnityEngine.GameObject)
+  parent: Global.AuraUtility.Movement
+  langs:
+  - csharp
+  - vb
+  name: AddOrbitMovement(AutoMergeAura, OrbitMovementProperties, GameObject)
+  nameWithType: AuraUtility.Movement.AddOrbitMovement(AutoMergeAura, OrbitMovementController.OrbitMovementProperties, GameObject)
+  fullName: AuraUtility.Movement.AddOrbitMovement(AutoMergeAura, OrbitMovementController.OrbitMovementProperties, UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddOrbitMovement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 286
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void AddOrbitMovement(AutoMergeAura aura, OrbitMovementController.OrbitMovementProperties orbit_props, GameObject aura_creator)
+    parameters:
+    - id: aura
+      type: Global.AutoMergeAura
+    - id: orbit_props
+      type: Global.OrbitMovementController.OrbitMovementProperties
+    - id: aura_creator
+      type: UnityEngine.GameObject
+    content.vb: Public Shared Sub AddOrbitMovement(aura As AutoMergeAura, orbit_props As OrbitMovementController.OrbitMovementProperties, aura_creator As GameObject)
+  overload: Global.AuraUtility.Movement.AddOrbitMovement*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.AuraUtility.Movement.AddMultiEaseMovement*
+  commentId: Overload:Global.AuraUtility.Movement.AddMultiEaseMovement
+  name: AddMultiEaseMovement
+  nameWithType: AuraUtility.Movement.AddMultiEaseMovement
+  fullName: AuraUtility.Movement.AddMultiEaseMovement
+- uid: Global.AutoMergeAura
+  commentId: T:Global.AutoMergeAura
+  name: AutoMergeAura
+  nameWithType: AutoMergeAura
+  fullName: AutoMergeAura
+- uid: Global.MultiEaseMovement.MultiEaseProperties
+  commentId: T:Global.MultiEaseMovement.MultiEaseProperties
+  name: MultiEaseMovement.MultiEaseProperties
+  nameWithType: MultiEaseMovement.MultiEaseProperties
+  fullName: MultiEaseMovement.MultiEaseProperties
+  spec.csharp:
+  - uid: Global.MultiEaseMovement
+    name: MultiEaseMovement
+  - name: .
+  - uid: Global.MultiEaseMovement.MultiEaseProperties
+    name: MultiEaseProperties
+  spec.vb:
+  - uid: Global.MultiEaseMovement
+    name: MultiEaseMovement
+  - name: .
+  - uid: Global.MultiEaseMovement.MultiEaseProperties
+    name: MultiEaseProperties
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraUtility.Movement.AddOrbitMovement*
+  commentId: Overload:Global.AuraUtility.Movement.AddOrbitMovement
+  name: AddOrbitMovement
+  nameWithType: AuraUtility.Movement.AddOrbitMovement
+  fullName: AuraUtility.Movement.AddOrbitMovement
+- uid: Global.OrbitMovementController.OrbitMovementProperties
+  commentId: T:Global.OrbitMovementController.OrbitMovementProperties
+  name: OrbitMovementController.OrbitMovementProperties
+  nameWithType: OrbitMovementController.OrbitMovementProperties
+  fullName: OrbitMovementController.OrbitMovementProperties
+  spec.csharp:
+  - uid: Global.OrbitMovementController
+    name: OrbitMovementController
+  - name: .
+  - uid: Global.OrbitMovementController.OrbitMovementProperties
+    name: OrbitMovementProperties
+  spec.vb:
+  - uid: Global.OrbitMovementController
+    name: OrbitMovementController
+  - name: .
+  - uid: Global.OrbitMovementController.OrbitMovementProperties
+    name: OrbitMovementProperties

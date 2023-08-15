@@ -1,0 +1,308 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.JumpHeightAddButton
+  commentId: T:Global.JumpHeightAddButton
+  id: JumpHeightAddButton
+  parent: Global
+  children:
+  - Global.JumpHeightAddButton.addJumpHeight
+  - Global.JumpHeightAddButton.jumpHeightText
+  - Global.JumpHeightAddButton.platformer
+  - Global.JumpHeightAddButton.subtractJumpHeight
+  langs:
+  - csharp
+  - vb
+  name: JumpHeightAddButton
+  nameWithType: JumpHeightAddButton
+  fullName: JumpHeightAddButton
+  type: Class
+  source:
+    remote:
+      path: Assets/JumpHeightAddButton.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: JumpHeightAddButton
+    path: ../Assets/JumpHeightAddButton.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class JumpHeightAddButton : MonoBehaviour'
+    content.vb: Public Class JumpHeightAddButton Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.JumpHeightAddButton.jumpHeightText
+  commentId: F:Global.JumpHeightAddButton.jumpHeightText
+  id: jumpHeightText
+  parent: Global.JumpHeightAddButton
+  langs:
+  - csharp
+  - vb
+  name: jumpHeightText
+  nameWithType: JumpHeightAddButton.jumpHeightText
+  fullName: JumpHeightAddButton.jumpHeightText
+  type: Field
+  source:
+    remote:
+      path: Assets/JumpHeightAddButton.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: jumpHeightText
+    path: ../Assets/JumpHeightAddButton.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Text jumpHeightText
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public jumpHeightText As Text
+- uid: Global.JumpHeightAddButton.platformer
+  commentId: F:Global.JumpHeightAddButton.platformer
+  id: platformer
+  parent: Global.JumpHeightAddButton
+  langs:
+  - csharp
+  - vb
+  name: platformer
+  nameWithType: JumpHeightAddButton.platformer
+  fullName: JumpHeightAddButton.platformer
+  type: Field
+  source:
+    remote:
+      path: Assets/JumpHeightAddButton.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: platformer
+    path: ../Assets/JumpHeightAddButton.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public IntBasePlatformer platformer
+    return:
+      type: Global.IntBasePlatformer
+    content.vb: >-
+      <HideInInspector>
+
+      Public platformer As IntBasePlatformer
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.JumpHeightAddButton.addJumpHeight
+  commentId: M:Global.JumpHeightAddButton.addJumpHeight
+  id: addJumpHeight
+  parent: Global.JumpHeightAddButton
+  langs:
+  - csharp
+  - vb
+  name: addJumpHeight()
+  nameWithType: JumpHeightAddButton.addJumpHeight()
+  fullName: JumpHeightAddButton.addJumpHeight()
+  type: Method
+  source:
+    remote:
+      path: Assets/JumpHeightAddButton.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: addJumpHeight
+    path: ../Assets/JumpHeightAddButton.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void addJumpHeight()
+    content.vb: Public Sub addJumpHeight()
+  overload: Global.JumpHeightAddButton.addJumpHeight*
+- uid: Global.JumpHeightAddButton.subtractJumpHeight
+  commentId: M:Global.JumpHeightAddButton.subtractJumpHeight
+  id: subtractJumpHeight
+  parent: Global.JumpHeightAddButton
+  langs:
+  - csharp
+  - vb
+  name: subtractJumpHeight()
+  nameWithType: JumpHeightAddButton.subtractJumpHeight()
+  fullName: JumpHeightAddButton.subtractJumpHeight()
+  type: Method
+  source:
+    remote:
+      path: Assets/JumpHeightAddButton.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: subtractJumpHeight
+    path: ../Assets/JumpHeightAddButton.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void subtractJumpHeight()
+    content.vb: Public Sub subtractJumpHeight()
+  overload: Global.JumpHeightAddButton.subtractJumpHeight*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: Global.IntBasePlatformer
+  commentId: T:Global.IntBasePlatformer
+  name: IntBasePlatformer
+  nameWithType: IntBasePlatformer
+  fullName: IntBasePlatformer
+- uid: Global.JumpHeightAddButton.addJumpHeight*
+  commentId: Overload:Global.JumpHeightAddButton.addJumpHeight
+  name: addJumpHeight
+  nameWithType: JumpHeightAddButton.addJumpHeight
+  fullName: JumpHeightAddButton.addJumpHeight
+- uid: Global.JumpHeightAddButton.subtractJumpHeight*
+  commentId: Overload:Global.JumpHeightAddButton.subtractJumpHeight
+  name: subtractJumpHeight
+  nameWithType: JumpHeightAddButton.subtractJumpHeight
+  fullName: JumpHeightAddButton.subtractJumpHeight

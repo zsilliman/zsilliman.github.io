@@ -1,0 +1,1767 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntMath.Collisions
+  commentId: T:Global.IntMath.Collisions
+  id: IntMath.Collisions
+  parent: Global
+  children:
+  - Global.IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider,AABBIntCollider)
+  - Global.IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider,EdgeIntCollider)
+  - Global.IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider,TilemapIntCollider)
+  - Global.IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.BoundsContainsPoint(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.BoundsIntOverlapCircle(UnityEngine.BoundsInt,CircleIntCollider)
+  - Global.IntMath.Collisions.BoundsIntOverlapCircle(UnityEngine.BoundsInt,UnityEngine.Vector2Int,CircleIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.BoundsIntOverlapsAABB(UnityEngine.BoundsInt,AABBIntCollider)
+  - Global.IntMath.Collisions.BoundsIntOverlapsAABB(UnityEngine.BoundsInt,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.BoundsIntOverlapsBounds(UnityEngine.BoundsInt,UnityEngine.BoundsInt)
+  - Global.IntMath.Collisions.BoundsIntOverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.BoundsIntOverlapsEdge(UnityEngine.BoundsInt,EdgeIntCollider)
+  - Global.IntMath.Collisions.BoundsIntOverlapsEdge(UnityEngine.BoundsInt,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.BoundsIntOverlapsTilemap(UnityEngine.BoundsInt,TilemapIntCollider)
+  - Global.IntMath.Collisions.BoundsIntOverlapsTilemap(UnityEngine.BoundsInt,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.CircleOverlapAABB(CircleIntCollider,AABBIntCollider)
+  - Global.IntMath.Collisions.CircleOverlapAABB(CircleIntCollider,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.CircleOverlapCircle(CircleIntCollider,CircleIntCollider)
+  - Global.IntMath.Collisions.CircleOverlapCircle(CircleIntCollider,UnityEngine.Vector2Int,CircleIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.CircleOverlapEdge(CircleIntCollider,EdgeIntCollider)
+  - Global.IntMath.Collisions.CircleOverlapEdge(CircleIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider,TilemapIntCollider)
+  - Global.IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider,EdgeIntCollider)
+  - Global.IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.GetBoundsOutlineRays(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.GetRayIntersection(IntRay,IntRay)
+  - Global.IntMath.Collisions.GetRayIntersection(IntRay,UnityEngine.Vector2Int,IntRay,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.IntersectRays(IntRay,IntRay)
+  - Global.IntMath.Collisions.IntersectRays(IntRay,UnityEngine.Vector2Int,IntRay,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider,EdgeIntCollider)
+  - Global.IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  - Global.IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider,TilemapIntCollider)
+  - Global.IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  langs:
+  - csharp
+  - vb
+  name: IntMath.Collisions
+  nameWithType: IntMath.Collisions
+  fullName: IntMath.Collisions
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Collisions
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 570
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nPerforms all the math used for collision/intersection detection between Rays and Colliders.\nNote: Tilemap-Tilemap collisions and Tilemap-Edge collisions are not allowed/unimplemented.\n"
+  example: []
+  syntax:
+    content: public class IntMath.Collisions
+    content.vb: Public Class IntMath.Collisions
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.IntMath.Collisions.BoundsContainsPoint(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.BoundsContainsPoint(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  id: BoundsContainsPoint(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsContainsPoint(BoundsInt, Vector2Int, Vector2Int, Vector2Int)
+  nameWithType: IntMath.Collisions.BoundsContainsPoint(BoundsInt, Vector2Int, Vector2Int, Vector2Int)
+  fullName: IntMath.Collisions.BoundsContainsPoint(UnityEngine.BoundsInt, UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsContainsPoint
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 573
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool BoundsContainsPoint(BoundsInt bounds, Vector2Int dPos0, Vector2Int point, Vector2Int dPos1)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+    - id: point
+      type: UnityEngine.Vector2Int
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function BoundsContainsPoint(bounds As BoundsInt, dPos0 As Vector2Int, point As Vector2Int, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.BoundsContainsPoint*
+- uid: Global.IntMath.Collisions.GetBoundsOutlineRays(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.GetBoundsOutlineRays(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  id: GetBoundsOutlineRays(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: GetBoundsOutlineRays(BoundsInt, Vector2Int)
+  nameWithType: IntMath.Collisions.GetBoundsOutlineRays(BoundsInt, Vector2Int)
+  fullName: IntMath.Collisions.GetBoundsOutlineRays(UnityEngine.BoundsInt, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetBoundsOutlineRays
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 586
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nGet outline rays of a BoundsInt\n"
+  example: []
+  syntax:
+    content: public static List<IntRay> GetBoundsOutlineRays(BoundsInt bounds, Vector2Int dPos)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+    - id: dPos
+      type: UnityEngine.Vector2Int
+      description: ''
+    return:
+      type: System.Collections.Generic.List{IntRay}
+      description: ''
+    content.vb: Public Shared Function GetBoundsOutlineRays(bounds As BoundsInt, dPos As Vector2Int) As List(Of IntRay)
+  overload: Global.IntMath.Collisions.GetBoundsOutlineRays*
+- uid: Global.IntMath.Collisions.IntersectRays(IntRay,IntRay)
+  commentId: M:Global.IntMath.Collisions.IntersectRays(IntRay,IntRay)
+  id: IntersectRays(IntRay,IntRay)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: IntersectRays(IntRay, IntRay)
+  nameWithType: IntMath.Collisions.IntersectRays(IntRay, IntRay)
+  fullName: IntMath.Collisions.IntersectRays(IntRay, IntRay)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntersectRays
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 623
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Intersect rays overload function without an offset
+  example: []
+  syntax:
+    content: public static bool IntersectRays(IntRay ray0, IntRay ray1)
+    parameters:
+    - id: ray0
+      type: Global.IntRay
+    - id: ray1
+      type: Global.IntRay
+    return:
+      type: System.Boolean
+      description: 'True: if overlap and False: otherwise'
+    content.vb: Public Shared Function IntersectRays(ray0 As IntRay, ray1 As IntRay) As Boolean
+  overload: Global.IntMath.Collisions.IntersectRays*
+- uid: Global.IntMath.Collisions.IntersectRays(IntRay,UnityEngine.Vector2Int,IntRay,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.IntersectRays(IntRay,UnityEngine.Vector2Int,IntRay,UnityEngine.Vector2Int)
+  id: IntersectRays(IntRay,UnityEngine.Vector2Int,IntRay,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: IntersectRays(IntRay, Vector2Int, IntRay, Vector2Int)
+  nameWithType: IntMath.Collisions.IntersectRays(IntRay, Vector2Int, IntRay, Vector2Int)
+  fullName: IntMath.Collisions.IntersectRays(IntRay, UnityEngine.Vector2Int, IntRay, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntersectRays
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 628
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool IntersectRays(IntRay ray0, Vector2Int dPos0, IntRay ray1, Vector2Int dPos1)
+    parameters:
+    - id: ray0
+      type: Global.IntRay
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+    - id: ray1
+      type: Global.IntRay
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IntersectRays(ray0 As IntRay, dPos0 As Vector2Int, ray1 As IntRay, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.IntersectRays*
+- uid: Global.IntMath.Collisions.GetRayIntersection(IntRay,IntRay)
+  commentId: M:Global.IntMath.Collisions.GetRayIntersection(IntRay,IntRay)
+  id: GetRayIntersection(IntRay,IntRay)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: GetRayIntersection(IntRay, IntRay)
+  nameWithType: IntMath.Collisions.GetRayIntersection(IntRay, IntRay)
+  fullName: IntMath.Collisions.GetRayIntersection(IntRay, IntRay)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetRayIntersection
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 633
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Intersection GetRayIntersection(IntRay ray0, IntRay ray1)
+    parameters:
+    - id: ray0
+      type: Global.IntRay
+    - id: ray1
+      type: Global.IntRay
+    return:
+      type: Global.Intersection
+    content.vb: Public Shared Function GetRayIntersection(ray0 As IntRay, ray1 As IntRay) As Intersection
+  overload: Global.IntMath.Collisions.GetRayIntersection*
+- uid: Global.IntMath.Collisions.GetRayIntersection(IntRay,UnityEngine.Vector2Int,IntRay,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.GetRayIntersection(IntRay,UnityEngine.Vector2Int,IntRay,UnityEngine.Vector2Int)
+  id: GetRayIntersection(IntRay,UnityEngine.Vector2Int,IntRay,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: GetRayIntersection(IntRay, Vector2Int, IntRay, Vector2Int)
+  nameWithType: IntMath.Collisions.GetRayIntersection(IntRay, Vector2Int, IntRay, Vector2Int)
+  fullName: IntMath.Collisions.GetRayIntersection(IntRay, UnityEngine.Vector2Int, IntRay, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetRayIntersection
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 641
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Intersect two rays with a given position offset for each ray
+  example: []
+  syntax:
+    content: public static Intersection GetRayIntersection(IntRay ray0, Vector2Int dPos0, IntRay ray1, Vector2Int dPos1)
+    parameters:
+    - id: ray0
+      type: Global.IntRay
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+    - id: ray1
+      type: Global.IntRay
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+    return:
+      type: Global.Intersection
+      description: 'True: if overlap and False: otherwise'
+    content.vb: Public Shared Function GetRayIntersection(ray0 As IntRay, dPos0 As Vector2Int, ray1 As IntRay, dPos1 As Vector2Int) As Intersection
+  overload: Global.IntMath.Collisions.GetRayIntersection*
+- uid: Global.IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider,AABBIntCollider)
+  commentId: M:Global.IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider,AABBIntCollider)
+  id: AABBOverlapsAABB(AABBIntCollider,AABBIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: AABBOverlapsAABB(AABBIntCollider, AABBIntCollider)
+  nameWithType: IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider, AABBIntCollider)
+  fullName: IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider, AABBIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AABBOverlapsAABB
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 684
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck for overlap between two Axis-Aligned Bounding Box (AABB) colliders\nOverload for function AABBOverlapsAABB without position offsets\n"
+  example: []
+  syntax:
+    content: public static bool AABBOverlapsAABB(AABBIntCollider aabb0, AABBIntCollider aabb1)
+    parameters:
+    - id: aabb0
+      type: Global.AABBIntCollider
+      description: First AABB collider
+    - id: aabb1
+      type: Global.AABBIntCollider
+      description: Second AABB collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function AABBOverlapsAABB(aabb0 As AABBIntCollider, aabb1 As AABBIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.AABBOverlapsAABB*
+- uid: Global.IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  id: AABBOverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: AABBOverlapsAABB(AABBIntCollider, Vector2Int, AABBIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider, Vector2Int, AABBIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.AABBOverlapsAABB(AABBIntCollider, UnityEngine.Vector2Int, AABBIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AABBOverlapsAABB
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 697
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck for overlap between two Axis-Aligned Bounding Box (AABB) colliders\n"
+  example: []
+  syntax:
+    content: public static bool AABBOverlapsAABB(AABBIntCollider aabb0, Vector2Int dPos0, AABBIntCollider aabb1, Vector2Int dPos1)
+    parameters:
+    - id: aabb0
+      type: Global.AABBIntCollider
+      description: First AABB Collider
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: Position offset for first AABB Collider
+    - id: aabb1
+      type: Global.AABBIntCollider
+      description: Second AABB Collider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: Position offset for second AABB Collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function AABBOverlapsAABB(aabb0 As AABBIntCollider, dPos0 As Vector2Int, aabb1 As AABBIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.AABBOverlapsAABB*
+- uid: Global.IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider,TilemapIntCollider)
+  commentId: M:Global.IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider,TilemapIntCollider)
+  id: AABBOverlapsTilemap(AABBIntCollider,TilemapIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: AABBOverlapsTilemap(AABBIntCollider, TilemapIntCollider)
+  nameWithType: IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider, TilemapIntCollider)
+  fullName: IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider, TilemapIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AABBOverlapsTilemap
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 714
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nOverload for AABBOverlapsTilemap\nCheck for Axis-Aligned Bounding Box collider overlaping a Tilemap\n"
+  example: []
+  syntax:
+    content: public static bool AABBOverlapsTilemap(AABBIntCollider aabb, TilemapIntCollider tilemap)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+      description: AABB collider
+    - id: tilemap
+      type: Global.TilemapIntCollider
+      description: Tilemap collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function AABBOverlapsTilemap(aabb As AABBIntCollider, tilemap As TilemapIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.AABBOverlapsTilemap*
+- uid: Global.IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  id: AABBOverlapsTilemap(AABBIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: AABBOverlapsTilemap(AABBIntCollider, Vector2Int, TilemapIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider, Vector2Int, TilemapIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.AABBOverlapsTilemap(AABBIntCollider, UnityEngine.Vector2Int, TilemapIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AABBOverlapsTilemap
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 727
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck for Axis-Aligned Bounding Box collider overlaping a Tilemap\n"
+  example: []
+  syntax:
+    content: public static bool AABBOverlapsTilemap(AABBIntCollider aabb, Vector2Int dPos0, TilemapIntCollider tilemap, Vector2Int dPos1)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+      description: AABB collider
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: Position offset of AABB collider
+    - id: tilemap
+      type: Global.TilemapIntCollider
+      description: Tilemap collider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: Position offset of Tilemap collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function AABBOverlapsTilemap(aabb As AABBIntCollider, dPos0 As Vector2Int, tilemap As TilemapIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.AABBOverlapsTilemap*
+- uid: Global.IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider,TilemapIntCollider)
+  commentId: M:Global.IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider,TilemapIntCollider)
+  id: TilemapOverlapsTilemap(TilemapIntCollider,TilemapIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: TilemapOverlapsTilemap(TilemapIntCollider, TilemapIntCollider)
+  nameWithType: IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider, TilemapIntCollider)
+  fullName: IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider, TilemapIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TilemapOverlapsTilemap
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 754
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nUNIMPLEMENTED\n"
+  example: []
+  syntax:
+    content: public static bool TilemapOverlapsTilemap(TilemapIntCollider tilemap0, TilemapIntCollider tilemap1)
+    parameters:
+    - id: tilemap0
+      type: Global.TilemapIntCollider
+      description: ''
+    - id: tilemap1
+      type: Global.TilemapIntCollider
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function TilemapOverlapsTilemap(tilemap0 As TilemapIntCollider, tilemap1 As TilemapIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.TilemapOverlapsTilemap*
+- uid: Global.IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  id: TilemapOverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: TilemapOverlapsTilemap(TilemapIntCollider, Vector2Int, TilemapIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider, Vector2Int, TilemapIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.TilemapOverlapsTilemap(TilemapIntCollider, UnityEngine.Vector2Int, TilemapIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TilemapOverlapsTilemap
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 767
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nUNIMPLEMENTED\n"
+  example: []
+  syntax:
+    content: public static bool TilemapOverlapsTilemap(TilemapIntCollider tilemap0, Vector2Int dPos0, TilemapIntCollider tilemap1, Vector2Int dPos1)
+    parameters:
+    - id: tilemap0
+      type: Global.TilemapIntCollider
+      description: ''
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: ''
+    - id: tilemap1
+      type: Global.TilemapIntCollider
+      description: ''
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function TilemapOverlapsTilemap(tilemap0 As TilemapIntCollider, dPos0 As Vector2Int, tilemap1 As TilemapIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.TilemapOverlapsTilemap*
+- uid: Global.IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider,EdgeIntCollider)
+  commentId: M:Global.IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider,EdgeIntCollider)
+  id: AABBOverlapsEdge(AABBIntCollider,EdgeIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: AABBOverlapsEdge(AABBIntCollider, EdgeIntCollider)
+  nameWithType: IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider, EdgeIntCollider)
+  fullName: IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider, EdgeIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AABBOverlapsEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 780
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nOverload function\nCheck whether an Axis-Aligned Bounding Box collides with an Edge collider\n"
+  example: []
+  syntax:
+    content: public static bool AABBOverlapsEdge(AABBIntCollider aabb, EdgeIntCollider edge)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+      description: AABB collider
+    - id: edge
+      type: Global.EdgeIntCollider
+      description: Edge collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function AABBOverlapsEdge(aabb As AABBIntCollider, edge As EdgeIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.AABBOverlapsEdge*
+- uid: Global.IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  id: AABBOverlapsEdge(AABBIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: AABBOverlapsEdge(AABBIntCollider, Vector2Int, EdgeIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider, Vector2Int, EdgeIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.AABBOverlapsEdge(AABBIntCollider, UnityEngine.Vector2Int, EdgeIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AABBOverlapsEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 793
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether an Axis-Aligned Bounding Box collides with an Edge collider\n"
+  example: []
+  syntax:
+    content: public static bool AABBOverlapsEdge(AABBIntCollider aabb, Vector2Int dPos0, EdgeIntCollider edge, Vector2Int dPos1)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+      description: AABB collider
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: Position offset of AABB collider
+    - id: edge
+      type: Global.EdgeIntCollider
+      description: Edge collider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: Position offset of AABB collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function AABBOverlapsEdge(aabb As AABBIntCollider, dPos0 As Vector2Int, edge As EdgeIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.AABBOverlapsEdge*
+- uid: Global.IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider,EdgeIntCollider)
+  commentId: M:Global.IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider,EdgeIntCollider)
+  id: TilemapOverlapsEdge(TilemapIntCollider,EdgeIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: TilemapOverlapsEdge(TilemapIntCollider, EdgeIntCollider)
+  nameWithType: IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider, EdgeIntCollider)
+  fullName: IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider, EdgeIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TilemapOverlapsEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 831
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether a Tilemap is overlapping an edge collider\n"
+  example: []
+  syntax:
+    content: public static bool TilemapOverlapsEdge(TilemapIntCollider tilemap, EdgeIntCollider edge)
+    parameters:
+    - id: tilemap
+      type: Global.TilemapIntCollider
+      description: ''
+    - id: edge
+      type: Global.EdgeIntCollider
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function TilemapOverlapsEdge(tilemap As TilemapIntCollider, edge As EdgeIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.TilemapOverlapsEdge*
+- uid: Global.IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  id: TilemapOverlapsEdge(TilemapIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: TilemapOverlapsEdge(TilemapIntCollider, Vector2Int, EdgeIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider, Vector2Int, EdgeIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.TilemapOverlapsEdge(TilemapIntCollider, UnityEngine.Vector2Int, EdgeIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TilemapOverlapsEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 844
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether a Tilemap is overlapping an edge collider\n"
+  example: []
+  syntax:
+    content: public static bool TilemapOverlapsEdge(TilemapIntCollider tilemap, Vector2Int dPos0, EdgeIntCollider edge, Vector2Int dPos1)
+    parameters:
+    - id: tilemap
+      type: Global.TilemapIntCollider
+      description: ''
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: ''
+    - id: edge
+      type: Global.EdgeIntCollider
+      description: ''
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function TilemapOverlapsEdge(tilemap As TilemapIntCollider, dPos0 As Vector2Int, edge As EdgeIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.TilemapOverlapsEdge*
+- uid: Global.IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider,EdgeIntCollider)
+  commentId: M:Global.IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider,EdgeIntCollider)
+  id: EdgeOverlapEdge(EdgeIntCollider,EdgeIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: EdgeOverlapEdge(EdgeIntCollider, EdgeIntCollider)
+  nameWithType: IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider, EdgeIntCollider)
+  fullName: IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider, EdgeIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EdgeOverlapEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 867
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nOverload function\nCheck whether two Edge colliders overlap eachother\n"
+  example: []
+  syntax:
+    content: public static bool EdgeOverlapEdge(EdgeIntCollider edge0, EdgeIntCollider edge1)
+    parameters:
+    - id: edge0
+      type: Global.EdgeIntCollider
+      description: First edge collider
+    - id: edge1
+      type: Global.EdgeIntCollider
+      description: Second edge collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function EdgeOverlapEdge(edge0 As EdgeIntCollider, edge1 As EdgeIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.EdgeOverlapEdge*
+- uid: Global.IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  id: EdgeOverlapEdge(EdgeIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: EdgeOverlapEdge(EdgeIntCollider, Vector2Int, EdgeIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider, Vector2Int, EdgeIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.EdgeOverlapEdge(EdgeIntCollider, UnityEngine.Vector2Int, EdgeIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EdgeOverlapEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 880
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether two Edge colliders overlap eachother\n"
+  example: []
+  syntax:
+    content: public static bool EdgeOverlapEdge(EdgeIntCollider edge0, Vector2Int dPos0, EdgeIntCollider edge1, Vector2Int dPos1)
+    parameters:
+    - id: edge0
+      type: Global.EdgeIntCollider
+      description: First edge collider
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: Position offset of edge collider
+    - id: edge1
+      type: Global.EdgeIntCollider
+      description: Second edge collider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: Position offset of second edge collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function EdgeOverlapEdge(edge0 As EdgeIntCollider, dPos0 As Vector2Int, edge1 As EdgeIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.EdgeOverlapEdge*
+- uid: Global.IntMath.Collisions.CircleOverlapAABB(CircleIntCollider,AABBIntCollider)
+  commentId: M:Global.IntMath.Collisions.CircleOverlapAABB(CircleIntCollider,AABBIntCollider)
+  id: CircleOverlapAABB(CircleIntCollider,AABBIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: CircleOverlapAABB(CircleIntCollider, AABBIntCollider)
+  nameWithType: IntMath.Collisions.CircleOverlapAABB(CircleIntCollider, AABBIntCollider)
+  fullName: IntMath.Collisions.CircleOverlapAABB(CircleIntCollider, AABBIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOverlapAABB
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 904
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether a circl overlaps an AABB collider\n"
+  example: []
+  syntax:
+    content: public static bool CircleOverlapAABB(CircleIntCollider circ, AABBIntCollider aabb)
+    parameters:
+    - id: circ
+      type: Global.CircleIntCollider
+      description: circle collider
+    - id: aabb
+      type: Global.AABBIntCollider
+      description: aabb collider
+    return:
+      type: System.Boolean
+      description: true if collides, false otherwise
+    content.vb: Public Shared Function CircleOverlapAABB(circ As CircleIntCollider, aabb As AABBIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.CircleOverlapAABB*
+- uid: Global.IntMath.Collisions.CircleOverlapAABB(CircleIntCollider,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.CircleOverlapAABB(CircleIntCollider,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  id: CircleOverlapAABB(CircleIntCollider,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: CircleOverlapAABB(CircleIntCollider, Vector2Int, AABBIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.CircleOverlapAABB(CircleIntCollider, Vector2Int, AABBIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.CircleOverlapAABB(CircleIntCollider, UnityEngine.Vector2Int, AABBIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOverlapAABB
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 917
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether a circle overlaps an AABB collider\n"
+  example: []
+  syntax:
+    content: public static bool CircleOverlapAABB(CircleIntCollider circ, Vector2Int dPos0, AABBIntCollider aabb, Vector2Int dPos1)
+    parameters:
+    - id: circ
+      type: Global.CircleIntCollider
+      description: circle collider
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: Position offset of circle
+    - id: aabb
+      type: Global.AABBIntCollider
+      description: aabb collider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: Position offset of aabb collider
+    return:
+      type: System.Boolean
+      description: true if collides, false otherwise
+    content.vb: Public Shared Function CircleOverlapAABB(circ As CircleIntCollider, dPos0 As Vector2Int, aabb As AABBIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.CircleOverlapAABB*
+- uid: Global.IntMath.Collisions.CircleOverlapEdge(CircleIntCollider,EdgeIntCollider)
+  commentId: M:Global.IntMath.Collisions.CircleOverlapEdge(CircleIntCollider,EdgeIntCollider)
+  id: CircleOverlapEdge(CircleIntCollider,EdgeIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: CircleOverlapEdge(CircleIntCollider, EdgeIntCollider)
+  nameWithType: IntMath.Collisions.CircleOverlapEdge(CircleIntCollider, EdgeIntCollider)
+  fullName: IntMath.Collisions.CircleOverlapEdge(CircleIntCollider, EdgeIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOverlapEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 931
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool CircleOverlapEdge(CircleIntCollider circ, EdgeIntCollider edge)
+    parameters:
+    - id: circ
+      type: Global.CircleIntCollider
+    - id: edge
+      type: Global.EdgeIntCollider
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CircleOverlapEdge(circ As CircleIntCollider, edge As EdgeIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.CircleOverlapEdge*
+- uid: Global.IntMath.Collisions.CircleOverlapEdge(CircleIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.CircleOverlapEdge(CircleIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  id: CircleOverlapEdge(CircleIntCollider,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: CircleOverlapEdge(CircleIntCollider, Vector2Int, EdgeIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.CircleOverlapEdge(CircleIntCollider, Vector2Int, EdgeIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.CircleOverlapEdge(CircleIntCollider, UnityEngine.Vector2Int, EdgeIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOverlapEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 936
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool CircleOverlapEdge(CircleIntCollider circ, Vector2Int dPos0, EdgeIntCollider edge, Vector2Int dPos1)
+    parameters:
+    - id: circ
+      type: Global.CircleIntCollider
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+    - id: edge
+      type: Global.EdgeIntCollider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CircleOverlapEdge(circ As CircleIntCollider, dPos0 As Vector2Int, edge As EdgeIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.CircleOverlapEdge*
+- uid: Global.IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider,TilemapIntCollider)
+  commentId: M:Global.IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider,TilemapIntCollider)
+  id: CircleOverlapTilemap(CircleIntCollider,TilemapIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: CircleOverlapTilemap(CircleIntCollider, TilemapIntCollider)
+  nameWithType: IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider, TilemapIntCollider)
+  fullName: IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider, TilemapIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOverlapTilemap
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 954
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool CircleOverlapTilemap(CircleIntCollider circ, TilemapIntCollider tilemap)
+    parameters:
+    - id: circ
+      type: Global.CircleIntCollider
+    - id: tilemap
+      type: Global.TilemapIntCollider
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CircleOverlapTilemap(circ As CircleIntCollider, tilemap As TilemapIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.CircleOverlapTilemap*
+- uid: Global.IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  id: CircleOverlapTilemap(CircleIntCollider,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: CircleOverlapTilemap(CircleIntCollider, Vector2Int, TilemapIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider, Vector2Int, TilemapIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.CircleOverlapTilemap(CircleIntCollider, UnityEngine.Vector2Int, TilemapIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOverlapTilemap
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 959
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool CircleOverlapTilemap(CircleIntCollider circ, Vector2Int dPos0, TilemapIntCollider tilemap, Vector2Int dPos1)
+    parameters:
+    - id: circ
+      type: Global.CircleIntCollider
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+    - id: tilemap
+      type: Global.TilemapIntCollider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CircleOverlapTilemap(circ As CircleIntCollider, dPos0 As Vector2Int, tilemap As TilemapIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.CircleOverlapTilemap*
+- uid: Global.IntMath.Collisions.CircleOverlapCircle(CircleIntCollider,CircleIntCollider)
+  commentId: M:Global.IntMath.Collisions.CircleOverlapCircle(CircleIntCollider,CircleIntCollider)
+  id: CircleOverlapCircle(CircleIntCollider,CircleIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: CircleOverlapCircle(CircleIntCollider, CircleIntCollider)
+  nameWithType: IntMath.Collisions.CircleOverlapCircle(CircleIntCollider, CircleIntCollider)
+  fullName: IntMath.Collisions.CircleOverlapCircle(CircleIntCollider, CircleIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOverlapCircle
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 964
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool CircleOverlapCircle(CircleIntCollider circ0, CircleIntCollider circ1)
+    parameters:
+    - id: circ0
+      type: Global.CircleIntCollider
+    - id: circ1
+      type: Global.CircleIntCollider
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CircleOverlapCircle(circ0 As CircleIntCollider, circ1 As CircleIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.CircleOverlapCircle*
+- uid: Global.IntMath.Collisions.CircleOverlapCircle(CircleIntCollider,UnityEngine.Vector2Int,CircleIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.CircleOverlapCircle(CircleIntCollider,UnityEngine.Vector2Int,CircleIntCollider,UnityEngine.Vector2Int)
+  id: CircleOverlapCircle(CircleIntCollider,UnityEngine.Vector2Int,CircleIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: CircleOverlapCircle(CircleIntCollider, Vector2Int, CircleIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.CircleOverlapCircle(CircleIntCollider, Vector2Int, CircleIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.CircleOverlapCircle(CircleIntCollider, UnityEngine.Vector2Int, CircleIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOverlapCircle
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 969
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool CircleOverlapCircle(CircleIntCollider circ0, Vector2Int dPos0, CircleIntCollider circ1, Vector2Int dPos1)
+    parameters:
+    - id: circ0
+      type: Global.CircleIntCollider
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+    - id: circ1
+      type: Global.CircleIntCollider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CircleOverlapCircle(circ0 As CircleIntCollider, dPos0 As Vector2Int, circ1 As CircleIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.CircleOverlapCircle*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsBounds(UnityEngine.BoundsInt,UnityEngine.BoundsInt)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapsBounds(UnityEngine.BoundsInt,UnityEngine.BoundsInt)
+  id: BoundsIntOverlapsBounds(UnityEngine.BoundsInt,UnityEngine.BoundsInt)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapsBounds(BoundsInt, BoundsInt)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsBounds(BoundsInt, BoundsInt)
+  fullName: IntMath.Collisions.BoundsIntOverlapsBounds(UnityEngine.BoundsInt, UnityEngine.BoundsInt)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapsBounds
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 976
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool BoundsIntOverlapsBounds(BoundsInt bounds0, BoundsInt bounds1)
+    parameters:
+    - id: bounds0
+      type: UnityEngine.BoundsInt
+    - id: bounds1
+      type: UnityEngine.BoundsInt
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function BoundsIntOverlapsBounds(bounds0 As BoundsInt, bounds1 As BoundsInt) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapsBounds*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  id: BoundsIntOverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapsBounds(BoundsInt, Vector2Int, BoundsInt, Vector2Int)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsBounds(BoundsInt, Vector2Int, BoundsInt, Vector2Int)
+  fullName: IntMath.Collisions.BoundsIntOverlapsBounds(UnityEngine.BoundsInt, UnityEngine.Vector2Int, UnityEngine.BoundsInt, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapsBounds
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 981
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool BoundsIntOverlapsBounds(BoundsInt bounds0, Vector2Int dPos0, BoundsInt bounds1, Vector2Int dPos1)
+    parameters:
+    - id: bounds0
+      type: UnityEngine.BoundsInt
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+    - id: bounds1
+      type: UnityEngine.BoundsInt
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function BoundsIntOverlapsBounds(bounds0 As BoundsInt, dPos0 As Vector2Int, bounds1 As BoundsInt, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapsBounds*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsAABB(UnityEngine.BoundsInt,AABBIntCollider)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapsAABB(UnityEngine.BoundsInt,AABBIntCollider)
+  id: BoundsIntOverlapsAABB(UnityEngine.BoundsInt,AABBIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapsAABB(BoundsInt, AABBIntCollider)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsAABB(BoundsInt, AABBIntCollider)
+  fullName: IntMath.Collisions.BoundsIntOverlapsAABB(UnityEngine.BoundsInt, AABBIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapsAABB
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 989
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool BoundsIntOverlapsAABB(BoundsInt bounds, AABBIntCollider aabb)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+    - id: aabb
+      type: Global.AABBIntCollider
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function BoundsIntOverlapsAABB(bounds As BoundsInt, aabb As AABBIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapsAABB*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsAABB(UnityEngine.BoundsInt,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapsAABB(UnityEngine.BoundsInt,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  id: BoundsIntOverlapsAABB(UnityEngine.BoundsInt,UnityEngine.Vector2Int,AABBIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapsAABB(BoundsInt, Vector2Int, AABBIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsAABB(BoundsInt, Vector2Int, AABBIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.BoundsIntOverlapsAABB(UnityEngine.BoundsInt, UnityEngine.Vector2Int, AABBIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapsAABB
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 994
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool BoundsIntOverlapsAABB(BoundsInt bounds, Vector2Int dPos0, AABBIntCollider aabb, Vector2Int dPos1)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+    - id: aabb
+      type: Global.AABBIntCollider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function BoundsIntOverlapsAABB(bounds As BoundsInt, dPos0 As Vector2Int, aabb As AABBIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapsAABB*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsEdge(UnityEngine.BoundsInt,EdgeIntCollider)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapsEdge(UnityEngine.BoundsInt,EdgeIntCollider)
+  id: BoundsIntOverlapsEdge(UnityEngine.BoundsInt,EdgeIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapsEdge(BoundsInt, EdgeIntCollider)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsEdge(BoundsInt, EdgeIntCollider)
+  fullName: IntMath.Collisions.BoundsIntOverlapsEdge(UnityEngine.BoundsInt, EdgeIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapsEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 1008
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether BoundsInt overlaps an edge collider\n"
+  example: []
+  syntax:
+    content: public static bool BoundsIntOverlapsEdge(BoundsInt bounds, EdgeIntCollider edge)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+      description: ''
+    - id: edge
+      type: Global.EdgeIntCollider
+      description: ''
+    return:
+      type: System.Boolean
+      description: True if they overlap or bounds contains edge
+    content.vb: Public Shared Function BoundsIntOverlapsEdge(bounds As BoundsInt, edge As EdgeIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapsEdge*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsEdge(UnityEngine.BoundsInt,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapsEdge(UnityEngine.BoundsInt,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  id: BoundsIntOverlapsEdge(UnityEngine.BoundsInt,UnityEngine.Vector2Int,EdgeIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapsEdge(BoundsInt, Vector2Int, EdgeIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsEdge(BoundsInt, Vector2Int, EdgeIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.BoundsIntOverlapsEdge(UnityEngine.BoundsInt, UnityEngine.Vector2Int, EdgeIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapsEdge
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 1021
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether BoundsInt overlaps an edge collider\n"
+  example: []
+  syntax:
+    content: public static bool BoundsIntOverlapsEdge(BoundsInt bounds, Vector2Int dPos0, EdgeIntCollider edge, Vector2Int dPos1)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+      description: ''
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: ''
+    - id: edge
+      type: Global.EdgeIntCollider
+      description: ''
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: ''
+    return:
+      type: System.Boolean
+      description: True if they overlap or bounds contains edge
+    content.vb: Public Shared Function BoundsIntOverlapsEdge(bounds As BoundsInt, dPos0 As Vector2Int, edge As EdgeIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapsEdge*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsTilemap(UnityEngine.BoundsInt,TilemapIntCollider)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapsTilemap(UnityEngine.BoundsInt,TilemapIntCollider)
+  id: BoundsIntOverlapsTilemap(UnityEngine.BoundsInt,TilemapIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapsTilemap(BoundsInt, TilemapIntCollider)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsTilemap(BoundsInt, TilemapIntCollider)
+  fullName: IntMath.Collisions.BoundsIntOverlapsTilemap(UnityEngine.BoundsInt, TilemapIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapsTilemap
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 1064
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck for BoundsInt collider overlaping a Tilemap\n"
+  example: []
+  syntax:
+    content: public static bool BoundsIntOverlapsTilemap(BoundsInt bounds, TilemapIntCollider tilemap)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+      description: BoundsInt obj
+    - id: tilemap
+      type: Global.TilemapIntCollider
+      description: Tilemap collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function BoundsIntOverlapsTilemap(bounds As BoundsInt, tilemap As TilemapIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapsTilemap*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsTilemap(UnityEngine.BoundsInt,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapsTilemap(UnityEngine.BoundsInt,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  id: BoundsIntOverlapsTilemap(UnityEngine.BoundsInt,UnityEngine.Vector2Int,TilemapIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapsTilemap(BoundsInt, Vector2Int, TilemapIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsTilemap(BoundsInt, Vector2Int, TilemapIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.BoundsIntOverlapsTilemap(UnityEngine.BoundsInt, UnityEngine.Vector2Int, TilemapIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapsTilemap
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 1077
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck for BoundsInt object overlaping a Tilemap\n"
+  example: []
+  syntax:
+    content: public static bool BoundsIntOverlapsTilemap(BoundsInt bounds, Vector2Int dPos0, TilemapIntCollider tilemap, Vector2Int dPos1)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+      description: BoundsInt obj
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: Position offset of boundsInt obj
+    - id: tilemap
+      type: Global.TilemapIntCollider
+      description: Tilemap collider
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: Position offset of Tilemap collider
+    return:
+      type: System.Boolean
+      description: True if the colliders overlap
+    content.vb: Public Shared Function BoundsIntOverlapsTilemap(bounds As BoundsInt, dPos0 As Vector2Int, tilemap As TilemapIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapsTilemap*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapCircle(UnityEngine.BoundsInt,CircleIntCollider)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapCircle(UnityEngine.BoundsInt,CircleIntCollider)
+  id: BoundsIntOverlapCircle(UnityEngine.BoundsInt,CircleIntCollider)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapCircle(BoundsInt, CircleIntCollider)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapCircle(BoundsInt, CircleIntCollider)
+  fullName: IntMath.Collisions.BoundsIntOverlapCircle(UnityEngine.BoundsInt, CircleIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapCircle
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 1098
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool BoundsIntOverlapCircle(BoundsInt bounds, CircleIntCollider circ)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+    - id: circ
+      type: Global.CircleIntCollider
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function BoundsIntOverlapCircle(bounds As BoundsInt, circ As CircleIntCollider) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapCircle*
+- uid: Global.IntMath.Collisions.BoundsIntOverlapCircle(UnityEngine.BoundsInt,UnityEngine.Vector2Int,CircleIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Collisions.BoundsIntOverlapCircle(UnityEngine.BoundsInt,UnityEngine.Vector2Int,CircleIntCollider,UnityEngine.Vector2Int)
+  id: BoundsIntOverlapCircle(UnityEngine.BoundsInt,UnityEngine.Vector2Int,CircleIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntMath.Collisions
+  langs:
+  - csharp
+  - vb
+  name: BoundsIntOverlapCircle(BoundsInt, Vector2Int, CircleIntCollider, Vector2Int)
+  nameWithType: IntMath.Collisions.BoundsIntOverlapCircle(BoundsInt, Vector2Int, CircleIntCollider, Vector2Int)
+  fullName: IntMath.Collisions.BoundsIntOverlapCircle(UnityEngine.BoundsInt, UnityEngine.Vector2Int, CircleIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsIntOverlapCircle
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 1111
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck whether a circle overlaps a bounds object\n"
+  example: []
+  syntax:
+    content: public static bool BoundsIntOverlapCircle(BoundsInt bounds, Vector2Int dPos0, CircleIntCollider circ, Vector2Int dPos1)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+      description: BoundsInt to check
+    - id: dPos0
+      type: UnityEngine.Vector2Int
+      description: delta position of the bounds object
+    - id: circ
+      type: Global.CircleIntCollider
+      description: Circle collider to check
+    - id: dPos1
+      type: UnityEngine.Vector2Int
+      description: delta position of the circle collider
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function BoundsIntOverlapCircle(bounds As BoundsInt, dPos0 As Vector2Int, circ As CircleIntCollider, dPos1 As Vector2Int) As Boolean
+  overload: Global.IntMath.Collisions.BoundsIntOverlapCircle*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.IntMath.Collisions.BoundsContainsPoint*
+  commentId: Overload:Global.IntMath.Collisions.BoundsContainsPoint
+  name: BoundsContainsPoint
+  nameWithType: IntMath.Collisions.BoundsContainsPoint
+  fullName: IntMath.Collisions.BoundsContainsPoint
+- uid: UnityEngine.BoundsInt
+  commentId: T:UnityEngine.BoundsInt
+  parent: UnityEngine
+  isExternal: true
+  name: BoundsInt
+  nameWithType: BoundsInt
+  fullName: UnityEngine.BoundsInt
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.IntMath.Collisions.GetBoundsOutlineRays*
+  commentId: Overload:Global.IntMath.Collisions.GetBoundsOutlineRays
+  name: GetBoundsOutlineRays
+  nameWithType: IntMath.Collisions.GetBoundsOutlineRays
+  fullName: IntMath.Collisions.GetBoundsOutlineRays
+- uid: System.Collections.Generic.List{IntRay}
+  commentId: T:System.Collections.Generic.List{IntRay}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IntRay>
+  nameWithType: List<IntRay>
+  fullName: System.Collections.Generic.List<IntRay>
+  nameWithType.vb: List(Of IntRay)
+  fullName.vb: System.Collections.Generic.List(Of IntRay)
+  name.vb: List(Of IntRay)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntRay
+    name: IntRay
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.IntMath.Collisions.IntersectRays*
+  commentId: Overload:Global.IntMath.Collisions.IntersectRays
+  name: IntersectRays
+  nameWithType: IntMath.Collisions.IntersectRays
+  fullName: IntMath.Collisions.IntersectRays
+- uid: Global.IntRay
+  commentId: T:Global.IntRay
+  name: IntRay
+  nameWithType: IntRay
+  fullName: IntRay
+- uid: Global.IntMath.Collisions.GetRayIntersection*
+  commentId: Overload:Global.IntMath.Collisions.GetRayIntersection
+  name: GetRayIntersection
+  nameWithType: IntMath.Collisions.GetRayIntersection
+  fullName: IntMath.Collisions.GetRayIntersection
+- uid: Global.Intersection
+  commentId: T:Global.Intersection
+  name: Intersection
+  nameWithType: Intersection
+  fullName: Intersection
+- uid: Global.IntMath.Collisions.AABBOverlapsAABB*
+  commentId: Overload:Global.IntMath.Collisions.AABBOverlapsAABB
+  name: AABBOverlapsAABB
+  nameWithType: IntMath.Collisions.AABBOverlapsAABB
+  fullName: IntMath.Collisions.AABBOverlapsAABB
+- uid: Global.AABBIntCollider
+  commentId: T:Global.AABBIntCollider
+  name: AABBIntCollider
+  nameWithType: AABBIntCollider
+  fullName: AABBIntCollider
+- uid: Global.IntMath.Collisions.AABBOverlapsTilemap*
+  commentId: Overload:Global.IntMath.Collisions.AABBOverlapsTilemap
+  name: AABBOverlapsTilemap
+  nameWithType: IntMath.Collisions.AABBOverlapsTilemap
+  fullName: IntMath.Collisions.AABBOverlapsTilemap
+- uid: Global.TilemapIntCollider
+  commentId: T:Global.TilemapIntCollider
+  name: TilemapIntCollider
+  nameWithType: TilemapIntCollider
+  fullName: TilemapIntCollider
+- uid: Global.IntMath.Collisions.TilemapOverlapsTilemap*
+  commentId: Overload:Global.IntMath.Collisions.TilemapOverlapsTilemap
+  name: TilemapOverlapsTilemap
+  nameWithType: IntMath.Collisions.TilemapOverlapsTilemap
+  fullName: IntMath.Collisions.TilemapOverlapsTilemap
+- uid: Global.IntMath.Collisions.AABBOverlapsEdge*
+  commentId: Overload:Global.IntMath.Collisions.AABBOverlapsEdge
+  name: AABBOverlapsEdge
+  nameWithType: IntMath.Collisions.AABBOverlapsEdge
+  fullName: IntMath.Collisions.AABBOverlapsEdge
+- uid: Global.EdgeIntCollider
+  commentId: T:Global.EdgeIntCollider
+  name: EdgeIntCollider
+  nameWithType: EdgeIntCollider
+  fullName: EdgeIntCollider
+- uid: Global.IntMath.Collisions.TilemapOverlapsEdge*
+  commentId: Overload:Global.IntMath.Collisions.TilemapOverlapsEdge
+  name: TilemapOverlapsEdge
+  nameWithType: IntMath.Collisions.TilemapOverlapsEdge
+  fullName: IntMath.Collisions.TilemapOverlapsEdge
+- uid: Global.IntMath.Collisions.EdgeOverlapEdge*
+  commentId: Overload:Global.IntMath.Collisions.EdgeOverlapEdge
+  name: EdgeOverlapEdge
+  nameWithType: IntMath.Collisions.EdgeOverlapEdge
+  fullName: IntMath.Collisions.EdgeOverlapEdge
+- uid: Global.IntMath.Collisions.CircleOverlapAABB*
+  commentId: Overload:Global.IntMath.Collisions.CircleOverlapAABB
+  name: CircleOverlapAABB
+  nameWithType: IntMath.Collisions.CircleOverlapAABB
+  fullName: IntMath.Collisions.CircleOverlapAABB
+- uid: Global.CircleIntCollider
+  commentId: T:Global.CircleIntCollider
+  name: CircleIntCollider
+  nameWithType: CircleIntCollider
+  fullName: CircleIntCollider
+- uid: Global.IntMath.Collisions.CircleOverlapEdge*
+  commentId: Overload:Global.IntMath.Collisions.CircleOverlapEdge
+  name: CircleOverlapEdge
+  nameWithType: IntMath.Collisions.CircleOverlapEdge
+  fullName: IntMath.Collisions.CircleOverlapEdge
+- uid: Global.IntMath.Collisions.CircleOverlapTilemap*
+  commentId: Overload:Global.IntMath.Collisions.CircleOverlapTilemap
+  name: CircleOverlapTilemap
+  nameWithType: IntMath.Collisions.CircleOverlapTilemap
+  fullName: IntMath.Collisions.CircleOverlapTilemap
+- uid: Global.IntMath.Collisions.CircleOverlapCircle*
+  commentId: Overload:Global.IntMath.Collisions.CircleOverlapCircle
+  name: CircleOverlapCircle
+  nameWithType: IntMath.Collisions.CircleOverlapCircle
+  fullName: IntMath.Collisions.CircleOverlapCircle
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsBounds*
+  commentId: Overload:Global.IntMath.Collisions.BoundsIntOverlapsBounds
+  name: BoundsIntOverlapsBounds
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsBounds
+  fullName: IntMath.Collisions.BoundsIntOverlapsBounds
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsAABB*
+  commentId: Overload:Global.IntMath.Collisions.BoundsIntOverlapsAABB
+  name: BoundsIntOverlapsAABB
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsAABB
+  fullName: IntMath.Collisions.BoundsIntOverlapsAABB
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsEdge*
+  commentId: Overload:Global.IntMath.Collisions.BoundsIntOverlapsEdge
+  name: BoundsIntOverlapsEdge
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsEdge
+  fullName: IntMath.Collisions.BoundsIntOverlapsEdge
+- uid: Global.IntMath.Collisions.BoundsIntOverlapsTilemap*
+  commentId: Overload:Global.IntMath.Collisions.BoundsIntOverlapsTilemap
+  name: BoundsIntOverlapsTilemap
+  nameWithType: IntMath.Collisions.BoundsIntOverlapsTilemap
+  fullName: IntMath.Collisions.BoundsIntOverlapsTilemap
+- uid: Global.IntMath.Collisions.BoundsIntOverlapCircle*
+  commentId: Overload:Global.IntMath.Collisions.BoundsIntOverlapCircle
+  name: BoundsIntOverlapCircle
+  nameWithType: IntMath.Collisions.BoundsIntOverlapCircle
+  fullName: IntMath.Collisions.BoundsIntOverlapCircle

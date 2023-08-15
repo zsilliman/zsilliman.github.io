@@ -1,0 +1,201 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ObjectStatus
+  commentId: T:Global.ObjectStatus
+  id: ObjectStatus
+  parent: Global
+  children:
+  - Global.ObjectStatus.Asleep
+  - Global.ObjectStatus.Awake
+  - Global.ObjectStatus.Dead
+  - Global.ObjectStatus.OptimizeOutSleep
+  langs:
+  - csharp
+  - vb
+  name: ObjectStatus
+  nameWithType: ObjectStatus
+  fullName: ObjectStatus
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ObjectStatus
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum ObjectStatus
+    content.vb: Public Enum ObjectStatus
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ObjectStatus.Asleep
+  commentId: F:Global.ObjectStatus.Asleep
+  id: Asleep
+  parent: Global.ObjectStatus
+  langs:
+  - csharp
+  - vb
+  name: Asleep
+  nameWithType: ObjectStatus.Asleep
+  fullName: ObjectStatus.Asleep
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Asleep
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Asleep = 0
+    return:
+      type: Global.ObjectStatus
+- uid: Global.ObjectStatus.Awake
+  commentId: F:Global.ObjectStatus.Awake
+  id: Awake
+  parent: Global.ObjectStatus
+  langs:
+  - csharp
+  - vb
+  name: Awake
+  nameWithType: ObjectStatus.Awake
+  fullName: ObjectStatus.Awake
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Awake
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Awake = 1
+    return:
+      type: Global.ObjectStatus
+- uid: Global.ObjectStatus.Dead
+  commentId: F:Global.ObjectStatus.Dead
+  id: Dead
+  parent: Global.ObjectStatus
+  langs:
+  - csharp
+  - vb
+  name: Dead
+  nameWithType: ObjectStatus.Dead
+  fullName: ObjectStatus.Dead
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Dead
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Dead = 2
+    return:
+      type: Global.ObjectStatus
+- uid: Global.ObjectStatus.OptimizeOutSleep
+  commentId: F:Global.ObjectStatus.OptimizeOutSleep
+  id: OptimizeOutSleep
+  parent: Global.ObjectStatus
+  langs:
+  - csharp
+  - vb
+  name: OptimizeOutSleep
+  nameWithType: ObjectStatus.OptimizeOutSleep
+  fullName: ObjectStatus.OptimizeOutSleep
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntObject.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OptimizeOutSleep
+    path: ../Assets/Framework/Physics/Objects/IntObject.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: OptimizeOutSleep = 3
+    return:
+      type: Global.ObjectStatus
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ObjectStatus
+  commentId: T:Global.ObjectStatus
+  name: ObjectStatus
+  nameWithType: ObjectStatus
+  fullName: ObjectStatus

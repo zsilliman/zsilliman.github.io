@@ -1,0 +1,466 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CraftingManager
+  commentId: T:Global.CraftingManager
+  id: CraftingManager
+  parent: Global
+  children:
+  - Global.CraftingManager.componentSlot1
+  - Global.CraftingManager.componentSlot2
+  - Global.CraftingManager.craftButton
+  - Global.CraftingManager.hintText
+  - Global.CraftingManager.inventoryManager
+  - Global.CraftingManager.recipeDatabase
+  - Global.CraftingManager.resultPreviewSlot
+  - Global.CraftingManager.SpawnCraftItem
+  - Global.CraftingManager.UpdateResultPreview
+  langs:
+  - csharp
+  - vb
+  name: CraftingManager
+  nameWithType: CraftingManager
+  fullName: CraftingManager
+  type: Class
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CraftingManager
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class CraftingManager : MonoBehaviour'
+    content.vb: Public Class CraftingManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.CraftingManager.recipeDatabase
+  commentId: F:Global.CraftingManager.recipeDatabase
+  id: recipeDatabase
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: recipeDatabase
+  nameWithType: CraftingManager.recipeDatabase
+  fullName: CraftingManager.recipeDatabase
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: recipeDatabase
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RecipeDatabase recipeDatabase
+    return:
+      type: Global.RecipeDatabase
+    content.vb: Public recipeDatabase As RecipeDatabase
+- uid: Global.CraftingManager.inventoryManager
+  commentId: F:Global.CraftingManager.inventoryManager
+  id: inventoryManager
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: inventoryManager
+  nameWithType: CraftingManager.inventoryManager
+  fullName: CraftingManager.inventoryManager
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: inventoryManager
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InventoryManager inventoryManager
+    return:
+      type: Global.InventoryManager
+    content.vb: Public inventoryManager As InventoryManager
+- uid: Global.CraftingManager.componentSlot1
+  commentId: F:Global.CraftingManager.componentSlot1
+  id: componentSlot1
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: componentSlot1
+  nameWithType: CraftingManager.componentSlot1
+  fullName: CraftingManager.componentSlot1
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: componentSlot1
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InventorySlot componentSlot1
+    return:
+      type: Global.InventorySlot
+    content.vb: Public componentSlot1 As InventorySlot
+- uid: Global.CraftingManager.componentSlot2
+  commentId: F:Global.CraftingManager.componentSlot2
+  id: componentSlot2
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: componentSlot2
+  nameWithType: CraftingManager.componentSlot2
+  fullName: CraftingManager.componentSlot2
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: componentSlot2
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InventorySlot componentSlot2
+    return:
+      type: Global.InventorySlot
+    content.vb: Public componentSlot2 As InventorySlot
+- uid: Global.CraftingManager.resultPreviewSlot
+  commentId: F:Global.CraftingManager.resultPreviewSlot
+  id: resultPreviewSlot
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: resultPreviewSlot
+  nameWithType: CraftingManager.resultPreviewSlot
+  fullName: CraftingManager.resultPreviewSlot
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: resultPreviewSlot
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ItemPreview resultPreviewSlot
+    return:
+      type: Global.ItemPreview
+    content.vb: Public resultPreviewSlot As ItemPreview
+- uid: Global.CraftingManager.hintText
+  commentId: F:Global.CraftingManager.hintText
+  id: hintText
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: hintText
+  nameWithType: CraftingManager.hintText
+  fullName: CraftingManager.hintText
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: hintText
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI hintText
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public hintText As TextMeshProUGUI
+- uid: Global.CraftingManager.craftButton
+  commentId: F:Global.CraftingManager.craftButton
+  id: craftButton
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: craftButton
+  nameWithType: CraftingManager.craftButton
+  fullName: CraftingManager.craftButton
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: craftButton
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Button craftButton
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: Public craftButton As Button
+- uid: Global.CraftingManager.UpdateResultPreview
+  commentId: M:Global.CraftingManager.UpdateResultPreview
+  id: UpdateResultPreview
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateResultPreview()
+  nameWithType: CraftingManager.UpdateResultPreview()
+  fullName: CraftingManager.UpdateResultPreview()
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateResultPreview
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UpdateResultPreview()
+    content.vb: Public Sub UpdateResultPreview()
+  overload: Global.CraftingManager.UpdateResultPreview*
+- uid: Global.CraftingManager.SpawnCraftItem
+  commentId: M:Global.CraftingManager.SpawnCraftItem
+  id: SpawnCraftItem
+  parent: Global.CraftingManager
+  langs:
+  - csharp
+  - vb
+  name: SpawnCraftItem()
+  nameWithType: CraftingManager.SpawnCraftItem()
+  fullName: CraftingManager.SpawnCraftItem()
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/CraftingManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnCraftItem
+    path: ../Assets/User Interface/Inventory/CraftingManager.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SpawnCraftItem()
+    content.vb: Public Sub SpawnCraftItem()
+  overload: Global.CraftingManager.SpawnCraftItem*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.RecipeDatabase
+  commentId: T:Global.RecipeDatabase
+  name: RecipeDatabase
+  nameWithType: RecipeDatabase
+  fullName: RecipeDatabase
+- uid: Global.InventoryManager
+  commentId: T:Global.InventoryManager
+  name: InventoryManager
+  nameWithType: InventoryManager
+  fullName: InventoryManager
+- uid: Global.InventorySlot
+  commentId: T:Global.InventorySlot
+  name: InventorySlot
+  nameWithType: InventorySlot
+  fullName: InventorySlot
+- uid: Global.ItemPreview
+  commentId: T:Global.ItemPreview
+  name: ItemPreview
+  nameWithType: ItemPreview
+  fullName: ItemPreview
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  isExternal: true
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: Global.CraftingManager.UpdateResultPreview*
+  commentId: Overload:Global.CraftingManager.UpdateResultPreview
+  name: UpdateResultPreview
+  nameWithType: CraftingManager.UpdateResultPreview
+  fullName: CraftingManager.UpdateResultPreview
+- uid: Global.CraftingManager.SpawnCraftItem*
+  commentId: Overload:Global.CraftingManager.SpawnCraftItem
+  name: SpawnCraftItem
+  nameWithType: CraftingManager.SpawnCraftItem
+  fullName: CraftingManager.SpawnCraftItem

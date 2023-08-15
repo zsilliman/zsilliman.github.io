@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Burd2.Burd2State
+  commentId: T:Global.Burd2.Burd2State
+  id: Burd2.Burd2State
+  parent: Global
+  children:
+  - Global.Burd2.Burd2State.Charging
+  - Global.Burd2.Burd2State.Chase
+  - Global.Burd2.Burd2State.Cooldown
+  - Global.Burd2.Burd2State.Idle
+  - Global.Burd2.Burd2State.Warmup
+  langs:
+  - csharp
+  - vb
+  name: Burd2.Burd2State
+  nameWithType: Burd2.Burd2State
+  fullName: Burd2.Burd2State
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Burd2State
+    path: ../Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum Burd2.Burd2State
+    content.vb: Public Enum Burd2.Burd2State
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.Burd2.Burd2State.Idle
+  commentId: F:Global.Burd2.Burd2State.Idle
+  id: Idle
+  parent: Global.Burd2.Burd2State
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: Burd2.Burd2State.Idle
+  fullName: Burd2.Burd2State.Idle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Idle
+    path: ../Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Idle = 0
+    return:
+      type: Global.Burd2.Burd2State
+- uid: Global.Burd2.Burd2State.Chase
+  commentId: F:Global.Burd2.Burd2State.Chase
+  id: Chase
+  parent: Global.Burd2.Burd2State
+  langs:
+  - csharp
+  - vb
+  name: Chase
+  nameWithType: Burd2.Burd2State.Chase
+  fullName: Burd2.Burd2State.Chase
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Chase
+    path: ../Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Chase = 1
+    return:
+      type: Global.Burd2.Burd2State
+- uid: Global.Burd2.Burd2State.Warmup
+  commentId: F:Global.Burd2.Burd2State.Warmup
+  id: Warmup
+  parent: Global.Burd2.Burd2State
+  langs:
+  - csharp
+  - vb
+  name: Warmup
+  nameWithType: Burd2.Burd2State.Warmup
+  fullName: Burd2.Burd2State.Warmup
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Warmup
+    path: ../Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Warmup = 2
+    return:
+      type: Global.Burd2.Burd2State
+- uid: Global.Burd2.Burd2State.Charging
+  commentId: F:Global.Burd2.Burd2State.Charging
+  id: Charging
+  parent: Global.Burd2.Burd2State
+  langs:
+  - csharp
+  - vb
+  name: Charging
+  nameWithType: Burd2.Burd2State.Charging
+  fullName: Burd2.Burd2State.Charging
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Charging
+    path: ../Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Charging = 3
+    return:
+      type: Global.Burd2.Burd2State
+- uid: Global.Burd2.Burd2State.Cooldown
+  commentId: F:Global.Burd2.Burd2State.Cooldown
+  id: Cooldown
+  parent: Global.Burd2.Burd2State
+  langs:
+  - csharp
+  - vb
+  name: Cooldown
+  nameWithType: Burd2.Burd2State.Cooldown
+  fullName: Burd2.Burd2State.Cooldown
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Cooldown
+    path: ../Assets/Objects & Components/Entities/Enemies/Burd/Burd2/Burd2.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Cooldown = 4
+    return:
+      type: Global.Burd2.Burd2State
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Burd2.Burd2State
+  commentId: T:Global.Burd2.Burd2State
+  name: Burd2.Burd2State
+  nameWithType: Burd2.Burd2State
+  fullName: Burd2.Burd2State
+  spec.csharp:
+  - uid: Global.Burd2
+    name: Burd2
+  - name: .
+  - uid: Global.Burd2.Burd2State
+    name: Burd2State
+  spec.vb:
+  - uid: Global.Burd2
+    name: Burd2
+  - name: .
+  - uid: Global.Burd2.Burd2State
+    name: Burd2State

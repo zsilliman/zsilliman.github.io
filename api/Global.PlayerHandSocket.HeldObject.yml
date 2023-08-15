@@ -1,0 +1,384 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerHandSocket.HeldObject
+  commentId: T:Global.PlayerHandSocket.HeldObject
+  id: PlayerHandSocket.HeldObject
+  parent: Global
+  children:
+  - Global.PlayerHandSocket.HeldObject.enabled
+  - Global.PlayerHandSocket.HeldObject.gameobject
+  - Global.PlayerHandSocket.HeldObject.hand
+  - Global.PlayerHandSocket.HeldObject.holdable
+  - Global.PlayerHandSocket.HeldObject.is_in_front
+  - Global.PlayerHandSocket.HeldObject.offset
+  langs:
+  - csharp
+  - vb
+  name: PlayerHandSocket.HeldObject
+  nameWithType: PlayerHandSocket.HeldObject
+  fullName: PlayerHandSocket.HeldObject
+  type: Struct
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HeldObject
+    path: ../Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct PlayerHandSocket.HeldObject
+    content.vb: >-
+      <Serializable>
+
+      Public Structure PlayerHandSocket.HeldObject
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.PlayerHandSocket.HeldObject.offset
+  commentId: F:Global.PlayerHandSocket.HeldObject.offset
+  id: offset
+  parent: Global.PlayerHandSocket.HeldObject
+  langs:
+  - csharp
+  - vb
+  name: offset
+  nameWithType: PlayerHandSocket.HeldObject.offset
+  fullName: PlayerHandSocket.HeldObject.offset
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: offset
+    path: ../Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public Vector2 offset
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <SerializeField>
+
+      Public offset As Vector2
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.PlayerHandSocket.HeldObject.gameobject
+  commentId: F:Global.PlayerHandSocket.HeldObject.gameobject
+  id: gameobject
+  parent: Global.PlayerHandSocket.HeldObject
+  langs:
+  - csharp
+  - vb
+  name: gameobject
+  nameWithType: PlayerHandSocket.HeldObject.gameobject
+  fullName: PlayerHandSocket.HeldObject.gameobject
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: gameobject
+    path: ../Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public GameObject gameobject
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <SerializeField>
+
+      Public gameobject As GameObject
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.PlayerHandSocket.HeldObject.holdable
+  commentId: F:Global.PlayerHandSocket.HeldObject.holdable
+  id: holdable
+  parent: Global.PlayerHandSocket.HeldObject
+  langs:
+  - csharp
+  - vb
+  name: holdable
+  nameWithType: PlayerHandSocket.HeldObject.holdable
+  fullName: PlayerHandSocket.HeldObject.holdable
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: holdable
+    path: ../Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public HoldableObject holdable
+    return:
+      type: Global.HoldableObject
+    content.vb: >-
+      <HideInInspector>
+
+      Public holdable As HoldableObject
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.PlayerHandSocket.HeldObject.hand
+  commentId: F:Global.PlayerHandSocket.HeldObject.hand
+  id: hand
+  parent: Global.PlayerHandSocket.HeldObject
+  langs:
+  - csharp
+  - vb
+  name: hand
+  nameWithType: PlayerHandSocket.HeldObject.hand
+  fullName: PlayerHandSocket.HeldObject.hand
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: hand
+    path: ../Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public PlayerHandSocket.Hand hand
+    return:
+      type: Global.PlayerHandSocket.Hand
+    content.vb: >-
+      <SerializeField>
+
+      Public hand As PlayerHandSocket.Hand
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.PlayerHandSocket.HeldObject.is_in_front
+  commentId: F:Global.PlayerHandSocket.HeldObject.is_in_front
+  id: is_in_front
+  parent: Global.PlayerHandSocket.HeldObject
+  langs:
+  - csharp
+  - vb
+  name: is_in_front
+  nameWithType: PlayerHandSocket.HeldObject.is_in_front
+  fullName: PlayerHandSocket.HeldObject.is_in_front
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: is_in_front
+    path: ../Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public int is_in_front
+    return:
+      type: System.Int32
+    content.vb: >-
+      <HideInInspector>
+
+      Public is_in_front As Integer
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.PlayerHandSocket.HeldObject.enabled
+  commentId: F:Global.PlayerHandSocket.HeldObject.enabled
+  id: enabled
+  parent: Global.PlayerHandSocket.HeldObject
+  langs:
+  - csharp
+  - vb
+  name: enabled
+  nameWithType: PlayerHandSocket.HeldObject.enabled
+  fullName: PlayerHandSocket.HeldObject.enabled
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: enabled
+    path: ../Assets/Objects & Components/Entities/Player/Animations/PlayerHandSocket.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public int enabled
+    return:
+      type: System.Int32
+    content.vb: >-
+      <HideInInspector>
+
+      Public enabled As Integer
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.HoldableObject
+  commentId: T:Global.HoldableObject
+  name: HoldableObject
+  nameWithType: HoldableObject
+  fullName: HoldableObject
+- uid: Global.PlayerHandSocket.Hand
+  commentId: T:Global.PlayerHandSocket.Hand
+  name: PlayerHandSocket.Hand
+  nameWithType: PlayerHandSocket.Hand
+  fullName: PlayerHandSocket.Hand
+  spec.csharp:
+  - uid: Global.PlayerHandSocket
+    name: PlayerHandSocket
+  - name: .
+  - uid: Global.PlayerHandSocket.Hand
+    name: Hand
+  spec.vb:
+  - uid: Global.PlayerHandSocket
+    name: PlayerHandSocket
+  - name: .
+  - uid: Global.PlayerHandSocket.Hand
+    name: Hand
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

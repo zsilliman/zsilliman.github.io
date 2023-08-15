@@ -1,0 +1,672 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MajorCheckpoint
+  commentId: T:Global.MajorCheckpoint
+  id: MajorCheckpoint
+  parent: Global
+  children:
+  - Global.MajorCheckpoint.aabb
+  - Global.MajorCheckpoint.checkpointActivatedPrefab
+  - Global.MajorCheckpoint.IsInteractionActive
+  - Global.MajorCheckpoint.IsInteractionFinished
+  - Global.MajorCheckpoint.OnInteract
+  - Global.MajorCheckpoint.OnInteractionTriggerEnter(Player)
+  - Global.MajorCheckpoint.OnInteractionTriggerExit(Player)
+  - Global.MajorCheckpoint.OnResetObject
+  - Global.MajorCheckpoint.Start
+  langs:
+  - csharp
+  - vb
+  name: MajorCheckpoint
+  nameWithType: MajorCheckpoint
+  fullName: MajorCheckpoint
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MajorCheckpoint
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(Interactable))]
+
+      [RequireComponent(typeof(AABBIntCollider))]
+
+      public class MajorCheckpoint : InteractionController
+    content.vb: >-
+      <RequireComponent(GetType(Interactable))>
+
+      <RequireComponent(GetType(AABBIntCollider))>
+
+      Public Class MajorCheckpoint Inherits InteractionController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.InteractionController
+  inheritedMembers:
+  - Global.InteractionController.interactable
+  - Global.InteractionController.WaitForOtherControllers
+  - Global.InteractionController.OnAllInteractionsCompleted
+  - Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  - Global.InteractionController.OnTriggerExitCallback(IntActor)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.Interactable
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.AABBIntCollider
+- uid: Global.MajorCheckpoint.checkpointActivatedPrefab
+  commentId: F:Global.MajorCheckpoint.checkpointActivatedPrefab
+  id: checkpointActivatedPrefab
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: checkpointActivatedPrefab
+  nameWithType: MajorCheckpoint.checkpointActivatedPrefab
+  fullName: MajorCheckpoint.checkpointActivatedPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: checkpointActivatedPrefab
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject checkpointActivatedPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public checkpointActivatedPrefab As GameObject
+- uid: Global.MajorCheckpoint.aabb
+  commentId: F:Global.MajorCheckpoint.aabb
+  id: aabb
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: aabb
+  nameWithType: MajorCheckpoint.aabb
+  fullName: MajorCheckpoint.aabb
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: aabb
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected AABBIntCollider aabb
+    return:
+      type: Global.AABBIntCollider
+    content.vb: Protected aabb As AABBIntCollider
+- uid: Global.MajorCheckpoint.Start
+  commentId: M:Global.MajorCheckpoint.Start
+  id: Start
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: MajorCheckpoint.Start()
+  fullName: MajorCheckpoint.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.MajorCheckpoint.Start*
+- uid: Global.MajorCheckpoint.OnInteract
+  commentId: M:Global.MajorCheckpoint.OnInteract
+  id: OnInteract
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: OnInteract()
+  nameWithType: MajorCheckpoint.OnInteract()
+  fullName: MajorCheckpoint.OnInteract()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteract
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteract()
+    content.vb: Public Overrides Sub OnInteract()
+  overridden: Global.InteractionController.OnInteract
+  overload: Global.MajorCheckpoint.OnInteract*
+- uid: Global.MajorCheckpoint.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.MajorCheckpoint.OnInteractionTriggerEnter(Player)
+  id: OnInteractionTriggerEnter(Player)
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: MajorCheckpoint.OnInteractionTriggerEnter(Player)
+  fullName: MajorCheckpoint.OnInteractionTriggerEnter(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerEnter
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerEnter(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerEnter(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  overload: Global.MajorCheckpoint.OnInteractionTriggerEnter*
+- uid: Global.MajorCheckpoint.OnInteractionTriggerExit(Player)
+  commentId: M:Global.MajorCheckpoint.OnInteractionTriggerExit(Player)
+  id: OnInteractionTriggerExit(Player)
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: MajorCheckpoint.OnInteractionTriggerExit(Player)
+  fullName: MajorCheckpoint.OnInteractionTriggerExit(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerExit
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerExit(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerExit(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerExit(Player)
+  overload: Global.MajorCheckpoint.OnInteractionTriggerExit*
+- uid: Global.MajorCheckpoint.OnResetObject
+  commentId: M:Global.MajorCheckpoint.OnResetObject
+  id: OnResetObject
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject()
+  nameWithType: MajorCheckpoint.OnResetObject()
+  fullName: MajorCheckpoint.OnResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject()
+    content.vb: Public Overrides Sub OnResetObject()
+  overridden: Global.InteractionController.OnResetObject
+  overload: Global.MajorCheckpoint.OnResetObject*
+- uid: Global.MajorCheckpoint.IsInteractionFinished
+  commentId: M:Global.MajorCheckpoint.IsInteractionFinished
+  id: IsInteractionFinished
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionFinished()
+  nameWithType: MajorCheckpoint.IsInteractionFinished()
+  fullName: MajorCheckpoint.IsInteractionFinished()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionFinished
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionFinished()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionFinished() As Boolean
+  overridden: Global.InteractionController.IsInteractionFinished
+  overload: Global.MajorCheckpoint.IsInteractionFinished*
+- uid: Global.MajorCheckpoint.IsInteractionActive
+  commentId: M:Global.MajorCheckpoint.IsInteractionActive
+  id: IsInteractionActive
+  parent: Global.MajorCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionActive()
+  nameWithType: MajorCheckpoint.IsInteractionActive()
+  fullName: MajorCheckpoint.IsInteractionActive()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionActive
+    path: ../Assets/Objects & Components/World/Checkpoint/MajorCheckpoint/MajorCheckpoint.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionActive()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionActive() As Boolean
+  overridden: Global.InteractionController.IsInteractionActive
+  overload: Global.MajorCheckpoint.IsInteractionActive*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.InteractionController
+  commentId: T:Global.InteractionController
+  name: InteractionController
+  nameWithType: InteractionController
+  fullName: InteractionController
+- uid: Global.InteractionController.interactable
+  commentId: F:Global.InteractionController.interactable
+  parent: Global.InteractionController
+  name: interactable
+  nameWithType: InteractionController.interactable
+  fullName: InteractionController.interactable
+- uid: Global.InteractionController.WaitForOtherControllers
+  commentId: F:Global.InteractionController.WaitForOtherControllers
+  parent: Global.InteractionController
+  name: WaitForOtherControllers
+  nameWithType: InteractionController.WaitForOtherControllers
+  fullName: InteractionController.WaitForOtherControllers
+- uid: Global.InteractionController.OnAllInteractionsCompleted
+  commentId: M:Global.InteractionController.OnAllInteractionsCompleted
+  parent: Global.InteractionController
+  name: OnAllInteractionsCompleted()
+  nameWithType: InteractionController.OnAllInteractionsCompleted()
+  fullName: InteractionController.OnAllInteractionsCompleted()
+  spec.csharp:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+- uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerEnterCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerEnterCallback(IntActor)
+  fullName: InteractionController.OnTriggerEnterCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerExitCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerExitCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerExitCallback(IntActor)
+  fullName: InteractionController.OnTriggerExitCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.AABBIntCollider
+  commentId: T:Global.AABBIntCollider
+  name: AABBIntCollider
+  nameWithType: AABBIntCollider
+  fullName: AABBIntCollider
+- uid: Global.MajorCheckpoint.Start*
+  commentId: Overload:Global.MajorCheckpoint.Start
+  name: Start
+  nameWithType: MajorCheckpoint.Start
+  fullName: MajorCheckpoint.Start
+- uid: Global.InteractionController.OnInteract
+  commentId: M:Global.InteractionController.OnInteract
+  parent: Global.InteractionController
+  name: OnInteract()
+  nameWithType: InteractionController.OnInteract()
+  fullName: InteractionController.OnInteract()
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+- uid: Global.MajorCheckpoint.OnInteract*
+  commentId: Overload:Global.MajorCheckpoint.OnInteract
+  name: OnInteract
+  nameWithType: MajorCheckpoint.OnInteract
+  fullName: MajorCheckpoint.OnInteract
+- uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerEnter(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: InteractionController.OnInteractionTriggerEnter(Player)
+  fullName: InteractionController.OnInteractionTriggerEnter(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.MajorCheckpoint.OnInteractionTriggerEnter*
+  commentId: Overload:Global.MajorCheckpoint.OnInteractionTriggerEnter
+  name: OnInteractionTriggerEnter
+  nameWithType: MajorCheckpoint.OnInteractionTriggerEnter
+  fullName: MajorCheckpoint.OnInteractionTriggerEnter
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerExit(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: InteractionController.OnInteractionTriggerExit(Player)
+  fullName: InteractionController.OnInteractionTriggerExit(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.MajorCheckpoint.OnInteractionTriggerExit*
+  commentId: Overload:Global.MajorCheckpoint.OnInteractionTriggerExit
+  name: OnInteractionTriggerExit
+  nameWithType: MajorCheckpoint.OnInteractionTriggerExit
+  fullName: MajorCheckpoint.OnInteractionTriggerExit
+- uid: Global.InteractionController.OnResetObject
+  commentId: M:Global.InteractionController.OnResetObject
+  parent: Global.InteractionController
+  name: OnResetObject()
+  nameWithType: InteractionController.OnResetObject()
+  fullName: InteractionController.OnResetObject()
+  spec.csharp:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+- uid: Global.MajorCheckpoint.OnResetObject*
+  commentId: Overload:Global.MajorCheckpoint.OnResetObject
+  name: OnResetObject
+  nameWithType: MajorCheckpoint.OnResetObject
+  fullName: MajorCheckpoint.OnResetObject
+- uid: Global.InteractionController.IsInteractionFinished
+  commentId: M:Global.InteractionController.IsInteractionFinished
+  parent: Global.InteractionController
+  name: IsInteractionFinished()
+  nameWithType: InteractionController.IsInteractionFinished()
+  fullName: InteractionController.IsInteractionFinished()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+- uid: Global.MajorCheckpoint.IsInteractionFinished*
+  commentId: Overload:Global.MajorCheckpoint.IsInteractionFinished
+  name: IsInteractionFinished
+  nameWithType: MajorCheckpoint.IsInteractionFinished
+  fullName: MajorCheckpoint.IsInteractionFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.InteractionController.IsInteractionActive
+  commentId: M:Global.InteractionController.IsInteractionActive
+  parent: Global.InteractionController
+  name: IsInteractionActive()
+  nameWithType: InteractionController.IsInteractionActive()
+  fullName: InteractionController.IsInteractionActive()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+- uid: Global.MajorCheckpoint.IsInteractionActive*
+  commentId: Overload:Global.MajorCheckpoint.IsInteractionActive
+  name: IsInteractionActive
+  nameWithType: MajorCheckpoint.IsInteractionActive
+  fullName: MajorCheckpoint.IsInteractionActive

@@ -1,0 +1,1987 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntMath
+  commentId: T:Global.IntMath
+  id: IntMath
+  parent: Global
+  children:
+  - Global.IntMath.Abs(System.Int32)
+  - Global.IntMath.Abs(UnityEngine.Vector2Int)
+  - Global.IntMath.AddCardinalDirections(System.Collections.Generic.List{UnityEngine.Vector2Int},System.Int32)
+  - Global.IntMath.AddDiagonalDirections(System.Collections.Generic.List{UnityEngine.Vector2Int},System.Int32)
+  - Global.IntMath.AxisToVector(IntMath.Axis)
+  - Global.IntMath.BoolToInt(System.Boolean)
+  - Global.IntMath.BoolToSign(System.Boolean)
+  - Global.IntMath.ClipToGrid(System.Single,System.Int32)
+  - Global.IntMath.ClipToGrid(UnityEngine.Vector2,System.Int32)
+  - Global.IntMath.ClipToGrid(UnityEngine.Vector3,System.Int32)
+  - Global.IntMath.Contains(UnityEngine.RectInt,UnityEngine.RectInt)
+  - Global.IntMath.ContainsAlongAxis(UnityEngine.RectInt,UnityEngine.RectInt,IntMath.Axis,System.Int32)
+  - Global.IntMath.DirectionToAxis(IntMath.Direction)
+  - Global.IntMath.DirectionToVector(IntMath.Direction)
+  - Global.IntMath.Floor(System.Single)
+  - Global.IntMath.Floor(UnityEngine.Vector2)
+  - Global.IntMath.Floor(UnityEngine.Vector3)
+  - Global.IntMath.InBounds(System.Int32,System.Int32,System.Int32,System.Boolean)
+  - Global.IntMath.InBounds(System.Int32,UnityEngine.Vector2Int,System.Boolean)
+  - Global.IntMath.IntToBool(System.Int32)
+  - Global.IntMath.JoinRectInts(UnityEngine.RectInt,UnityEngine.RectInt)
+  - Global.IntMath.Modulo(System.Int32,System.Int32)
+  - Global.IntMath.ReverseDirection(IntMath.Direction)
+  - Global.IntMath.Rotate90Degrees(UnityEngine.Vector2Int)
+  - Global.IntMath.RotateAbout(UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Single)
+  - Global.IntMath.RotateAboutOrigin(UnityEngine.Vector2Int,System.Single)
+  - Global.IntMath.Round(System.Single)
+  - Global.IntMath.Round(UnityEngine.Vector2)
+  - Global.IntMath.Round(UnityEngine.Vector3)
+  - Global.IntMath.Scale(UnityEngine.Vector2Int,System.Single)
+  - Global.IntMath.Scale(UnityEngine.Vector2Int,UnityEngine.Vector2)
+  - Global.IntMath.ShrinkRectIntAlongAxisToFit(UnityEngine.RectInt,UnityEngine.RectInt,IntMath.Axis,UnityEngine.RectInt@,System.Int32)
+  - Global.IntMath.Sign(System.Single,System.Single)
+  - Global.IntMath.Sign(System.Single)
+  - Global.IntMath.SolveQuadratic(System.Single,System.Single,System.Single,UnityEngine.Vector2@)
+  - Global.IntMath.ToVector2(UnityEngine.Vector3Int)
+  - Global.IntMath.ToVector2Int(UnityEngine.Vector3)
+  - Global.IntMath.ToVector3(UnityEngine.Vector2Int,System.Int32)
+  - Global.IntMath.TruncateToInt(System.Single)
+  - Global.IntMath.TruncateToInt(UnityEngine.Vector2)
+  - Global.IntMath.TruncateToInt(UnityEngine.Vector3)
+  langs:
+  - csharp
+  - vb
+  name: IntMath
+  nameWithType: IntMath
+  fullName: IntMath
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntMath
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\n<code>IntMath</code> performs basic math operations on integers as well as Integer-based collision detection\n"
+  example: []
+  syntax:
+    content: public static class IntMath
+    content.vb: Public Module IntMath
+  inheritance:
+  - System.Object
+- uid: Global.IntMath.ReverseDirection(IntMath.Direction)
+  commentId: M:Global.IntMath.ReverseDirection(IntMath.Direction)
+  id: ReverseDirection(IntMath.Direction)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ReverseDirection(Direction)
+  nameWithType: IntMath.ReverseDirection(IntMath.Direction)
+  fullName: IntMath.ReverseDirection(IntMath.Direction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ReverseDirection
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nFlip direction. Up->Down, Left->Right and vice versa. None returns itself\n"
+  example: []
+  syntax:
+    content: public static IntMath.Direction ReverseDirection(IntMath.Direction direction)
+    parameters:
+    - id: direction
+      type: Global.IntMath.Direction
+      description: ''
+    return:
+      type: Global.IntMath.Direction
+      description: Flipped direction
+    content.vb: Public Shared Function ReverseDirection(direction As IntMath.Direction) As IntMath.Direction
+  overload: Global.IntMath.ReverseDirection*
+- uid: Global.IntMath.DirectionToVector(IntMath.Direction)
+  commentId: M:Global.IntMath.DirectionToVector(IntMath.Direction)
+  id: DirectionToVector(IntMath.Direction)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: DirectionToVector(Direction)
+  nameWithType: IntMath.DirectionToVector(IntMath.Direction)
+  fullName: IntMath.DirectionToVector(IntMath.Direction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DirectionToVector
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nConvert a direction into a Vector2Int\n"
+  example: []
+  syntax:
+    content: public static Vector2Int DirectionToVector(IntMath.Direction direction)
+    parameters:
+    - id: direction
+      type: Global.IntMath.Direction
+      description: Direction
+    return:
+      type: UnityEngine.Vector2Int
+      description: The direction as a vector2int
+    content.vb: Public Shared Function DirectionToVector(direction As IntMath.Direction) As Vector2Int
+  overload: Global.IntMath.DirectionToVector*
+- uid: Global.IntMath.AddCardinalDirections(System.Collections.Generic.List{UnityEngine.Vector2Int},System.Int32)
+  commentId: M:Global.IntMath.AddCardinalDirections(System.Collections.Generic.List{UnityEngine.Vector2Int},System.Int32)
+  id: AddCardinalDirections(System.Collections.Generic.List{UnityEngine.Vector2Int},System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: AddCardinalDirections(List<Vector2Int>, int)
+  nameWithType: IntMath.AddCardinalDirections(List<Vector2Int>, int)
+  fullName: IntMath.AddCardinalDirections(System.Collections.Generic.List<UnityEngine.Vector2Int>, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddCardinalDirections
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void AddCardinalDirections(List<Vector2Int> dirs, int scale = 1)
+    parameters:
+    - id: dirs
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    - id: scale
+      type: System.Int32
+    content.vb: Public Shared Sub AddCardinalDirections(dirs As List(Of Vector2Int), scale As Integer = 1)
+  overload: Global.IntMath.AddCardinalDirections*
+  nameWithType.vb: IntMath.AddCardinalDirections(List(Of Vector2Int), Integer)
+  fullName.vb: IntMath.AddCardinalDirections(System.Collections.Generic.List(Of UnityEngine.Vector2Int), Integer)
+  name.vb: AddCardinalDirections(List(Of Vector2Int), Integer)
+- uid: Global.IntMath.AddDiagonalDirections(System.Collections.Generic.List{UnityEngine.Vector2Int},System.Int32)
+  commentId: M:Global.IntMath.AddDiagonalDirections(System.Collections.Generic.List{UnityEngine.Vector2Int},System.Int32)
+  id: AddDiagonalDirections(System.Collections.Generic.List{UnityEngine.Vector2Int},System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: AddDiagonalDirections(List<Vector2Int>, int)
+  nameWithType: IntMath.AddDiagonalDirections(List<Vector2Int>, int)
+  fullName: IntMath.AddDiagonalDirections(System.Collections.Generic.List<UnityEngine.Vector2Int>, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddDiagonalDirections
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 91
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void AddDiagonalDirections(List<Vector2Int> dirs, int scale = 1)
+    parameters:
+    - id: dirs
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    - id: scale
+      type: System.Int32
+    content.vb: Public Shared Sub AddDiagonalDirections(dirs As List(Of Vector2Int), scale As Integer = 1)
+  overload: Global.IntMath.AddDiagonalDirections*
+  nameWithType.vb: IntMath.AddDiagonalDirections(List(Of Vector2Int), Integer)
+  fullName.vb: IntMath.AddDiagonalDirections(System.Collections.Generic.List(Of UnityEngine.Vector2Int), Integer)
+  name.vb: AddDiagonalDirections(List(Of Vector2Int), Integer)
+- uid: Global.IntMath.BoolToInt(System.Boolean)
+  commentId: M:Global.IntMath.BoolToInt(System.Boolean)
+  id: BoolToInt(System.Boolean)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: BoolToInt(bool)
+  nameWithType: IntMath.BoolToInt(bool)
+  fullName: IntMath.BoolToInt(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoolToInt
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 104
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nConverts bool to 0 or 1\n"
+  example: []
+  syntax:
+    content: public static int BoolToInt(bool b)
+    parameters:
+    - id: b
+      type: System.Boolean
+      description: ''
+    return:
+      type: System.Int32
+      description: 0 or 1
+    content.vb: Public Shared Function BoolToInt(b As Boolean) As Integer
+  overload: Global.IntMath.BoolToInt*
+  nameWithType.vb: IntMath.BoolToInt(Boolean)
+  fullName.vb: IntMath.BoolToInt(Boolean)
+  name.vb: BoolToInt(Boolean)
+- uid: Global.IntMath.IntToBool(System.Int32)
+  commentId: M:Global.IntMath.IntToBool(System.Int32)
+  id: IntToBool(System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: IntToBool(int)
+  nameWithType: IntMath.IntToBool(int)
+  fullName: IntMath.IntToBool(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntToBool
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 114
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nConverts integer to bool. 0=false, everything else=true\n"
+  example: []
+  syntax:
+    content: public static bool IntToBool(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: integer value
+    return:
+      type: System.Boolean
+      description: true or false
+    content.vb: Public Shared Function IntToBool(i As Integer) As Boolean
+  overload: Global.IntMath.IntToBool*
+  nameWithType.vb: IntMath.IntToBool(Integer)
+  fullName.vb: IntMath.IntToBool(Integer)
+  name.vb: IntToBool(Integer)
+- uid: Global.IntMath.BoolToSign(System.Boolean)
+  commentId: M:Global.IntMath.BoolToSign(System.Boolean)
+  id: BoolToSign(System.Boolean)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: BoolToSign(bool)
+  nameWithType: IntMath.BoolToSign(bool)
+  fullName: IntMath.BoolToSign(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoolToSign
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 124
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nConverts bool to -1 (false) or 1 (true)\n"
+  example: []
+  syntax:
+    content: public static int BoolToSign(bool b)
+    parameters:
+    - id: b
+      type: System.Boolean
+      description: ''
+    return:
+      type: System.Int32
+      description: -1 or 1
+    content.vb: Public Shared Function BoolToSign(b As Boolean) As Integer
+  overload: Global.IntMath.BoolToSign*
+  nameWithType.vb: IntMath.BoolToSign(Boolean)
+  fullName.vb: IntMath.BoolToSign(Boolean)
+  name.vb: BoolToSign(Boolean)
+- uid: Global.IntMath.DirectionToAxis(IntMath.Direction)
+  commentId: M:Global.IntMath.DirectionToAxis(IntMath.Direction)
+  id: DirectionToAxis(IntMath.Direction)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: DirectionToAxis(Direction)
+  nameWithType: IntMath.DirectionToAxis(IntMath.Direction)
+  fullName: IntMath.DirectionToAxis(IntMath.Direction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DirectionToAxis
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 134
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nGet the axis that corresponds with a direction. None returns YAxis\n"
+  example: []
+  syntax:
+    content: public static IntMath.Axis DirectionToAxis(IntMath.Direction direction)
+    parameters:
+    - id: direction
+      type: Global.IntMath.Direction
+      description: Direction
+    return:
+      type: Global.IntMath.Axis
+      description: Axis
+    content.vb: Public Shared Function DirectionToAxis(direction As IntMath.Direction) As IntMath.Axis
+  overload: Global.IntMath.DirectionToAxis*
+- uid: Global.IntMath.AxisToVector(IntMath.Axis)
+  commentId: M:Global.IntMath.AxisToVector(IntMath.Axis)
+  id: AxisToVector(IntMath.Axis)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: AxisToVector(Axis)
+  nameWithType: IntMath.AxisToVector(IntMath.Axis)
+  fullName: IntMath.AxisToVector(IntMath.Axis)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AxisToVector
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 146
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nConvert an axis&apos;s direction to a vector\n"
+  example: []
+  syntax:
+    content: public static Vector2Int AxisToVector(IntMath.Axis axis)
+    parameters:
+    - id: axis
+      type: Global.IntMath.Axis
+      description: axis
+    return:
+      type: UnityEngine.Vector2Int
+      description: Vector2Int.up or Vector2Int.right unit vector
+    content.vb: Public Shared Function AxisToVector(axis As IntMath.Axis) As Vector2Int
+  overload: Global.IntMath.AxisToVector*
+- uid: Global.IntMath.Modulo(System.Int32,System.Int32)
+  commentId: M:Global.IntMath.Modulo(System.Int32,System.Int32)
+  id: Modulo(System.Int32,System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Modulo(int, int)
+  nameWithType: IntMath.Modulo(int, int)
+  fullName: IntMath.Modulo(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Modulo
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 158
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nInteger-based modulo without returning negatives\n"
+  example: []
+  syntax:
+    content: public static int Modulo(int a, int b)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: a in a%b
+    - id: b
+      type: System.Int32
+      description: b in a%b
+    return:
+      type: System.Int32
+      description: a%b non-negative
+    content.vb: Public Shared Function Modulo(a As Integer, b As Integer) As Integer
+  overload: Global.IntMath.Modulo*
+  nameWithType.vb: IntMath.Modulo(Integer, Integer)
+  fullName.vb: IntMath.Modulo(Integer, Integer)
+  name.vb: Modulo(Integer, Integer)
+- uid: Global.IntMath.Sign(System.Single)
+  commentId: M:Global.IntMath.Sign(System.Single)
+  id: Sign(System.Single)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Sign(float)
+  nameWithType: IntMath.Sign(float)
+  fullName: IntMath.Sign(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Sign
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 168
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturn the sign of a float\n"
+  example: []
+  syntax:
+    content: public static int Sign(float a)
+    parameters:
+    - id: a
+      type: System.Single
+      description: float a
+    return:
+      type: System.Int32
+      description: either 1, 0 or -1
+    content.vb: Public Shared Function Sign(a As Single) As Integer
+  overload: Global.IntMath.Sign*
+  nameWithType.vb: IntMath.Sign(Single)
+  fullName.vb: IntMath.Sign(Single)
+  name.vb: Sign(Single)
+- uid: Global.IntMath.Sign(System.Single,System.Single)
+  commentId: M:Global.IntMath.Sign(System.Single,System.Single)
+  id: Sign(System.Single,System.Single)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Sign(float, float)
+  nameWithType: IntMath.Sign(float, float)
+  fullName: IntMath.Sign(float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Sign
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 181
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturn the sign of a float\n"
+  example: []
+  syntax:
+    content: public static int Sign(float a, float epsilon)
+    parameters:
+    - id: a
+      type: System.Single
+      description: float a
+    - id: epsilon
+      type: System.Single
+      description: float epsilon (if within epsilon of zero, return 0)
+    return:
+      type: System.Int32
+      description: either 1, 0 or -1
+    content.vb: Public Shared Function Sign(a As Single, epsilon As Single) As Integer
+  overload: Global.IntMath.Sign*
+  nameWithType.vb: IntMath.Sign(Single, Single)
+  fullName.vb: IntMath.Sign(Single, Single)
+  name.vb: Sign(Single, Single)
+- uid: Global.IntMath.Abs(System.Int32)
+  commentId: M:Global.IntMath.Abs(System.Int32)
+  id: Abs(System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Abs(int)
+  nameWithType: IntMath.Abs(int)
+  fullName: IntMath.Abs(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Abs
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 193
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturn absolute value of integer\n"
+  example: []
+  syntax:
+    content: public static int Abs(int a)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: int a
+    return:
+      type: System.Int32
+      description: '|a|'
+    content.vb: Public Shared Function Abs(a As Integer) As Integer
+  overload: Global.IntMath.Abs*
+  nameWithType.vb: IntMath.Abs(Integer)
+  fullName.vb: IntMath.Abs(Integer)
+  name.vb: Abs(Integer)
+- uid: Global.IntMath.Abs(UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Abs(UnityEngine.Vector2Int)
+  id: Abs(UnityEngine.Vector2Int)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Abs(Vector2Int)
+  nameWithType: IntMath.Abs(Vector2Int)
+  fullName: IntMath.Abs(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Abs
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 203
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturn absolute value of Vector2Int\n"
+  example: []
+  syntax:
+    content: public static Vector2Int Abs(Vector2Int a)
+    parameters:
+    - id: a
+      type: UnityEngine.Vector2Int
+      description: Vector2Int a
+    return:
+      type: UnityEngine.Vector2Int
+      description: '|a|'
+    content.vb: Public Shared Function Abs(a As Vector2Int) As Vector2Int
+  overload: Global.IntMath.Abs*
+- uid: Global.IntMath.Scale(UnityEngine.Vector2Int,System.Single)
+  commentId: M:Global.IntMath.Scale(UnityEngine.Vector2Int,System.Single)
+  id: Scale(UnityEngine.Vector2Int,System.Single)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Scale(Vector2Int, float)
+  nameWithType: IntMath.Scale(Vector2Int, float)
+  fullName: IntMath.Scale(UnityEngine.Vector2Int, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Scale
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 208
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2Int Scale(Vector2Int v, float scale)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2Int
+    - id: scale
+      type: System.Single
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Function Scale(v As Vector2Int, scale As Single) As Vector2Int
+  overload: Global.IntMath.Scale*
+  nameWithType.vb: IntMath.Scale(Vector2Int, Single)
+  fullName.vb: IntMath.Scale(UnityEngine.Vector2Int, Single)
+  name.vb: Scale(Vector2Int, Single)
+- uid: Global.IntMath.Scale(UnityEngine.Vector2Int,UnityEngine.Vector2)
+  commentId: M:Global.IntMath.Scale(UnityEngine.Vector2Int,UnityEngine.Vector2)
+  id: Scale(UnityEngine.Vector2Int,UnityEngine.Vector2)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Scale(Vector2Int, Vector2)
+  nameWithType: IntMath.Scale(Vector2Int, Vector2)
+  fullName: IntMath.Scale(UnityEngine.Vector2Int, UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Scale
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 214
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2Int Scale(Vector2Int v, Vector2 scale)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2Int
+    - id: scale
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Function Scale(v As Vector2Int, scale As Vector2) As Vector2Int
+  overload: Global.IntMath.Scale*
+- uid: Global.IntMath.InBounds(System.Int32,System.Int32,System.Int32,System.Boolean)
+  commentId: M:Global.IntMath.InBounds(System.Int32,System.Int32,System.Int32,System.Boolean)
+  id: InBounds(System.Int32,System.Int32,System.Int32,System.Boolean)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: InBounds(int, int, int, bool)
+  nameWithType: IntMath.InBounds(int, int, int, bool)
+  fullName: IntMath.InBounds(int, int, int, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InBounds
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 228
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck if a value is between two values. Optionally specify whether it is inclusive or exclusive\n"
+  example: []
+  syntax:
+    content: public static bool InBounds(int a, int min, int max, bool inclusive = true)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: value
+    - id: min
+      type: System.Int32
+      description: lower_bound
+    - id: max
+      type: System.Int32
+      description: upper bound
+    - id: inclusive
+      type: System.Boolean
+      description: '[default=true] Inclusive or exclusive bounds'
+    return:
+      type: System.Boolean
+      description: whether a is in bounds of min and max
+    content.vb: Public Shared Function InBounds(a As Integer, min As Integer, max As Integer, inclusive As Boolean = True) As Boolean
+  overload: Global.IntMath.InBounds*
+  nameWithType.vb: IntMath.InBounds(Integer, Integer, Integer, Boolean)
+  fullName.vb: IntMath.InBounds(Integer, Integer, Integer, Boolean)
+  name.vb: InBounds(Integer, Integer, Integer, Boolean)
+- uid: Global.IntMath.InBounds(System.Int32,UnityEngine.Vector2Int,System.Boolean)
+  commentId: M:Global.IntMath.InBounds(System.Int32,UnityEngine.Vector2Int,System.Boolean)
+  id: InBounds(System.Int32,UnityEngine.Vector2Int,System.Boolean)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: InBounds(int, Vector2Int, bool)
+  nameWithType: IntMath.InBounds(int, Vector2Int, bool)
+  fullName: IntMath.InBounds(int, UnityEngine.Vector2Int, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InBounds
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 248
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck if a value is between two values. Optionally specify whether it is inclusive or exclusive\n"
+  example: []
+  syntax:
+    content: public static bool InBounds(int a, Vector2Int bounds, bool inclusive = true)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: value
+    - id: bounds
+      type: UnityEngine.Vector2Int
+      description: Lower and upper bounds
+    - id: inclusive
+      type: System.Boolean
+      description: '[default=true] Inclusive or exclusive bounds'
+    return:
+      type: System.Boolean
+      description: whether a is in bounds of min and max
+    content.vb: Public Shared Function InBounds(a As Integer, bounds As Vector2Int, inclusive As Boolean = True) As Boolean
+  overload: Global.IntMath.InBounds*
+  nameWithType.vb: IntMath.InBounds(Integer, Vector2Int, Boolean)
+  fullName.vb: IntMath.InBounds(Integer, UnityEngine.Vector2Int, Boolean)
+  name.vb: InBounds(Integer, Vector2Int, Boolean)
+- uid: Global.IntMath.ToVector3(UnityEngine.Vector2Int,System.Int32)
+  commentId: M:Global.IntMath.ToVector3(UnityEngine.Vector2Int,System.Int32)
+  id: ToVector3(UnityEngine.Vector2Int,System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ToVector3(Vector2Int, int)
+  nameWithType: IntMath.ToVector3(Vector2Int, int)
+  fullName: IntMath.ToVector3(UnityEngine.Vector2Int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ToVector3
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 259
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nConvert Vector2Int to Vector3Int. 2D to 3D\n"
+  example: []
+  syntax:
+    content: public static Vector3Int ToVector3(Vector2Int X, int z = 0)
+    parameters:
+    - id: X
+      type: UnityEngine.Vector2Int
+      description: Vector
+    - id: z
+      type: System.Int32
+      description: '[default=0] z value assigned when converting from 2D to 3D'
+    return:
+      type: UnityEngine.Vector3Int
+      description: 3D representation of 2D vector
+    content.vb: Public Shared Function ToVector3(X As Vector2Int, z As Integer = 0) As Vector3Int
+  overload: Global.IntMath.ToVector3*
+  nameWithType.vb: IntMath.ToVector3(Vector2Int, Integer)
+  fullName.vb: IntMath.ToVector3(UnityEngine.Vector2Int, Integer)
+  name.vb: ToVector3(Vector2Int, Integer)
+- uid: Global.IntMath.ToVector2(UnityEngine.Vector3Int)
+  commentId: M:Global.IntMath.ToVector2(UnityEngine.Vector3Int)
+  id: ToVector2(UnityEngine.Vector3Int)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ToVector2(Vector3Int)
+  nameWithType: IntMath.ToVector2(Vector3Int)
+  fullName: IntMath.ToVector2(UnityEngine.Vector3Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ToVector2
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 269
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nConvert Vector3Int to Vector2Int. 3D to 2D\n"
+  example: []
+  syntax:
+    content: public static Vector2Int ToVector2(Vector3Int X)
+    parameters:
+    - id: X
+      type: UnityEngine.Vector3Int
+      description: Vector
+    return:
+      type: UnityEngine.Vector2Int
+      description: 2D representation of 3D vector
+    content.vb: Public Shared Function ToVector2(X As Vector3Int) As Vector2Int
+  overload: Global.IntMath.ToVector2*
+- uid: Global.IntMath.ToVector2Int(UnityEngine.Vector3)
+  commentId: M:Global.IntMath.ToVector2Int(UnityEngine.Vector3)
+  id: ToVector2Int(UnityEngine.Vector3)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ToVector2Int(Vector3)
+  nameWithType: IntMath.ToVector2Int(Vector3)
+  fullName: IntMath.ToVector2Int(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ToVector2Int
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 274
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2Int ToVector2Int(Vector3 X)
+    parameters:
+    - id: X
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Function ToVector2Int(X As Vector3) As Vector2Int
+  overload: Global.IntMath.ToVector2Int*
+- uid: Global.IntMath.Round(System.Single)
+  commentId: M:Global.IntMath.Round(System.Single)
+  id: Round(System.Single)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Round(float)
+  nameWithType: IntMath.Round(float)
+  fullName: IntMath.Round(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Round
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 284
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nRound float value to an integer\n"
+  example: []
+  syntax:
+    content: public static int Round(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: Float value to be rounded
+    return:
+      type: System.Int32
+      description: returns a rounded integer
+    content.vb: Public Shared Function Round(value As Single) As Integer
+  overload: Global.IntMath.Round*
+  nameWithType.vb: IntMath.Round(Single)
+  fullName.vb: IntMath.Round(Single)
+  name.vb: Round(Single)
+- uid: Global.IntMath.Round(UnityEngine.Vector2)
+  commentId: M:Global.IntMath.Round(UnityEngine.Vector2)
+  id: Round(UnityEngine.Vector2)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Round(Vector2)
+  nameWithType: IntMath.Round(Vector2)
+  fullName: IntMath.Round(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Round
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 294
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nRound Vector2 to Vector2Int\n"
+  example: []
+  syntax:
+    content: public static Vector2Int Round(Vector2 value)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector2
+      description: float vector to be rounded
+    return:
+      type: UnityEngine.Vector2Int
+      description: rounded integer vector
+    content.vb: Public Shared Function Round(value As Vector2) As Vector2Int
+  overload: Global.IntMath.Round*
+- uid: Global.IntMath.Round(UnityEngine.Vector3)
+  commentId: M:Global.IntMath.Round(UnityEngine.Vector3)
+  id: Round(UnityEngine.Vector3)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Round(Vector3)
+  nameWithType: IntMath.Round(Vector3)
+  fullName: IntMath.Round(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Round
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 304
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nRound Vector3 to Vector3Int\n"
+  example: []
+  syntax:
+    content: public static Vector3Int Round(Vector3 value)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector3
+      description: float vector to be rounded
+    return:
+      type: UnityEngine.Vector3Int
+      description: rounded integer vector
+    content.vb: Public Shared Function Round(value As Vector3) As Vector3Int
+  overload: Global.IntMath.Round*
+- uid: Global.IntMath.ClipToGrid(System.Single,System.Int32)
+  commentId: M:Global.IntMath.ClipToGrid(System.Single,System.Int32)
+  id: ClipToGrid(System.Single,System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ClipToGrid(float, int)
+  nameWithType: IntMath.ClipToGrid(float, int)
+  fullName: IntMath.ClipToGrid(float, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ClipToGrid
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 315
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nClip a float to an integer grid\n"
+  example: []
+  syntax:
+    content: public static int ClipToGrid(float value, int cellsize)
+    parameters:
+    - id: value
+      type: System.Single
+      description: float to clip
+    - id: cellsize
+      type: System.Int32
+      description: grid size as an integer
+    return:
+      type: System.Int32
+      description: clips the value to the nearest grid location
+    content.vb: Public Shared Function ClipToGrid(value As Single, cellsize As Integer) As Integer
+  overload: Global.IntMath.ClipToGrid*
+  nameWithType.vb: IntMath.ClipToGrid(Single, Integer)
+  fullName.vb: IntMath.ClipToGrid(Single, Integer)
+  name.vb: ClipToGrid(Single, Integer)
+- uid: Global.IntMath.ClipToGrid(UnityEngine.Vector2,System.Int32)
+  commentId: M:Global.IntMath.ClipToGrid(UnityEngine.Vector2,System.Int32)
+  id: ClipToGrid(UnityEngine.Vector2,System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ClipToGrid(Vector2, int)
+  nameWithType: IntMath.ClipToGrid(Vector2, int)
+  fullName: IntMath.ClipToGrid(UnityEngine.Vector2, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ClipToGrid
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 326
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nClip a float to an integer grid\n"
+  example: []
+  syntax:
+    content: public static Vector2Int ClipToGrid(Vector2 value, int cellsize)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector2
+      description: float to clip
+    - id: cellsize
+      type: System.Int32
+      description: grid size as an integer
+    return:
+      type: UnityEngine.Vector2Int
+      description: clips the value to the nearest grid location
+    content.vb: Public Shared Function ClipToGrid(value As Vector2, cellsize As Integer) As Vector2Int
+  overload: Global.IntMath.ClipToGrid*
+  nameWithType.vb: IntMath.ClipToGrid(Vector2, Integer)
+  fullName.vb: IntMath.ClipToGrid(UnityEngine.Vector2, Integer)
+  name.vb: ClipToGrid(Vector2, Integer)
+- uid: Global.IntMath.ClipToGrid(UnityEngine.Vector3,System.Int32)
+  commentId: M:Global.IntMath.ClipToGrid(UnityEngine.Vector3,System.Int32)
+  id: ClipToGrid(UnityEngine.Vector3,System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ClipToGrid(Vector3, int)
+  nameWithType: IntMath.ClipToGrid(Vector3, int)
+  fullName: IntMath.ClipToGrid(UnityEngine.Vector3, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ClipToGrid
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 337
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nClip a float to an integer grid\n"
+  example: []
+  syntax:
+    content: public static Vector3Int ClipToGrid(Vector3 value, int cellsize)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector3
+      description: float to clip
+    - id: cellsize
+      type: System.Int32
+      description: grid size as an integer
+    return:
+      type: UnityEngine.Vector3Int
+      description: clips the value to the nearest grid location
+    content.vb: Public Shared Function ClipToGrid(value As Vector3, cellsize As Integer) As Vector3Int
+  overload: Global.IntMath.ClipToGrid*
+  nameWithType.vb: IntMath.ClipToGrid(Vector3, Integer)
+  fullName.vb: IntMath.ClipToGrid(UnityEngine.Vector3, Integer)
+  name.vb: ClipToGrid(Vector3, Integer)
+- uid: Global.IntMath.Floor(System.Single)
+  commentId: M:Global.IntMath.Floor(System.Single)
+  id: Floor(System.Single)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Floor(float)
+  nameWithType: IntMath.Floor(float)
+  fullName: IntMath.Floor(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Floor
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 348
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nFloor a float to integer\n"
+  example: []
+  syntax:
+    content: public static int Floor(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: value to be floored
+    return:
+      type: System.Int32
+      description: floored integer
+    content.vb: Public Shared Function Floor(value As Single) As Integer
+  overload: Global.IntMath.Floor*
+  nameWithType.vb: IntMath.Floor(Single)
+  fullName.vb: IntMath.Floor(Single)
+  name.vb: Floor(Single)
+- uid: Global.IntMath.Floor(UnityEngine.Vector2)
+  commentId: M:Global.IntMath.Floor(UnityEngine.Vector2)
+  id: Floor(UnityEngine.Vector2)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Floor(Vector2)
+  nameWithType: IntMath.Floor(Vector2)
+  fullName: IntMath.Floor(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Floor
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 358
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nFloor a Vector2 to Vector2Int\n"
+  example: []
+  syntax:
+    content: public static Vector2Int Floor(Vector2 value)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector2
+      description: ''
+    return:
+      type: UnityEngine.Vector2Int
+      description: floored integer vector
+    content.vb: Public Shared Function Floor(value As Vector2) As Vector2Int
+  overload: Global.IntMath.Floor*
+- uid: Global.IntMath.Floor(UnityEngine.Vector3)
+  commentId: M:Global.IntMath.Floor(UnityEngine.Vector3)
+  id: Floor(UnityEngine.Vector3)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Floor(Vector3)
+  nameWithType: IntMath.Floor(Vector3)
+  fullName: IntMath.Floor(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Floor
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 368
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nFloor a Vector3 to Vector3Int\n"
+  example: []
+  syntax:
+    content: public static Vector3Int Floor(Vector3 value)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector3
+      description: ''
+    return:
+      type: UnityEngine.Vector3Int
+      description: floored integer vector
+    content.vb: Public Shared Function Floor(value As Vector3) As Vector3Int
+  overload: Global.IntMath.Floor*
+- uid: Global.IntMath.TruncateToInt(System.Single)
+  commentId: M:Global.IntMath.TruncateToInt(System.Single)
+  id: TruncateToInt(System.Single)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: TruncateToInt(float)
+  nameWithType: IntMath.TruncateToInt(float)
+  fullName: IntMath.TruncateToInt(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TruncateToInt
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 379
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nTruncate a float to integer\n"
+  example: []
+  syntax:
+    content: public static int TruncateToInt(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: value to be truncated
+    return:
+      type: System.Int32
+      description: truncated integer
+    content.vb: Public Shared Function TruncateToInt(value As Single) As Integer
+  overload: Global.IntMath.TruncateToInt*
+  nameWithType.vb: IntMath.TruncateToInt(Single)
+  fullName.vb: IntMath.TruncateToInt(Single)
+  name.vb: TruncateToInt(Single)
+- uid: Global.IntMath.TruncateToInt(UnityEngine.Vector2)
+  commentId: M:Global.IntMath.TruncateToInt(UnityEngine.Vector2)
+  id: TruncateToInt(UnityEngine.Vector2)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: TruncateToInt(Vector2)
+  nameWithType: IntMath.TruncateToInt(Vector2)
+  fullName: IntMath.TruncateToInt(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TruncateToInt
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 389
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nTruncate a Vector2 to Vector2Int\n"
+  example: []
+  syntax:
+    content: public static Vector2Int TruncateToInt(Vector2 value)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector2
+      description: value to be truncated
+    return:
+      type: UnityEngine.Vector2Int
+      description: truncated integer vector
+    content.vb: Public Shared Function TruncateToInt(value As Vector2) As Vector2Int
+  overload: Global.IntMath.TruncateToInt*
+- uid: Global.IntMath.TruncateToInt(UnityEngine.Vector3)
+  commentId: M:Global.IntMath.TruncateToInt(UnityEngine.Vector3)
+  id: TruncateToInt(UnityEngine.Vector3)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: TruncateToInt(Vector3)
+  nameWithType: IntMath.TruncateToInt(Vector3)
+  fullName: IntMath.TruncateToInt(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TruncateToInt
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 399
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nTruncate a Vector3 to Vector3Int\n"
+  example: []
+  syntax:
+    content: public static Vector3Int TruncateToInt(Vector3 value)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector3
+      description: value to be truncated
+    return:
+      type: UnityEngine.Vector3Int
+      description: truncated integer vector
+    content.vb: Public Shared Function TruncateToInt(value As Vector3) As Vector3Int
+  overload: Global.IntMath.TruncateToInt*
+- uid: Global.IntMath.RotateAboutOrigin(UnityEngine.Vector2Int,System.Single)
+  commentId: M:Global.IntMath.RotateAboutOrigin(UnityEngine.Vector2Int,System.Single)
+  id: RotateAboutOrigin(UnityEngine.Vector2Int,System.Single)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: RotateAboutOrigin(Vector2Int, float)
+  nameWithType: IntMath.RotateAboutOrigin(Vector2Int, float)
+  fullName: IntMath.RotateAboutOrigin(UnityEngine.Vector2Int, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RotateAboutOrigin
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 410
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nRotate vector by [amount] (degrees). Then round to the nearest integer.\n"
+  example: []
+  syntax:
+    content: public static Vector2Int RotateAboutOrigin(Vector2Int vector, float amount)
+    parameters:
+    - id: vector
+      type: UnityEngine.Vector2Int
+      description: ''
+    - id: amount
+      type: System.Single
+      description: Rotation amount in degrees
+    return:
+      type: UnityEngine.Vector2Int
+      description: Rotated vector rounded to nearest integer
+    content.vb: Public Shared Function RotateAboutOrigin(vector As Vector2Int, amount As Single) As Vector2Int
+  overload: Global.IntMath.RotateAboutOrigin*
+  nameWithType.vb: IntMath.RotateAboutOrigin(Vector2Int, Single)
+  fullName.vb: IntMath.RotateAboutOrigin(UnityEngine.Vector2Int, Single)
+  name.vb: RotateAboutOrigin(Vector2Int, Single)
+- uid: Global.IntMath.RotateAbout(UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Single)
+  commentId: M:Global.IntMath.RotateAbout(UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Single)
+  id: RotateAbout(UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Single)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: RotateAbout(Vector2Int, Vector2Int, float)
+  nameWithType: IntMath.RotateAbout(Vector2Int, Vector2Int, float)
+  fullName: IntMath.RotateAbout(UnityEngine.Vector2Int, UnityEngine.Vector2Int, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RotateAbout
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 424
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nRotate vector about origin in degrees\n"
+  example: []
+  syntax:
+    content: public static Vector2 RotateAbout(Vector2Int point, Vector2Int origin, float amount)
+    parameters:
+    - id: point
+      type: UnityEngine.Vector2Int
+    - id: origin
+      type: UnityEngine.Vector2Int
+    - id: amount
+      type: System.Single
+      description: ''
+    return:
+      type: UnityEngine.Vector2
+      description: ''
+    content.vb: Public Shared Function RotateAbout(point As Vector2Int, origin As Vector2Int, amount As Single) As Vector2
+  overload: Global.IntMath.RotateAbout*
+  nameWithType.vb: IntMath.RotateAbout(Vector2Int, Vector2Int, Single)
+  fullName.vb: IntMath.RotateAbout(UnityEngine.Vector2Int, UnityEngine.Vector2Int, Single)
+  name.vb: RotateAbout(Vector2Int, Vector2Int, Single)
+- uid: Global.IntMath.Rotate90Degrees(UnityEngine.Vector2Int)
+  commentId: M:Global.IntMath.Rotate90Degrees(UnityEngine.Vector2Int)
+  id: Rotate90Degrees(UnityEngine.Vector2Int)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Rotate90Degrees(Vector2Int)
+  nameWithType: IntMath.Rotate90Degrees(Vector2Int)
+  fullName: IntMath.Rotate90Degrees(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Rotate90Degrees
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 430
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2Int Rotate90Degrees(Vector2Int vector)
+    parameters:
+    - id: vector
+      type: UnityEngine.Vector2Int
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Function Rotate90Degrees(vector As Vector2Int) As Vector2Int
+  overload: Global.IntMath.Rotate90Degrees*
+- uid: Global.IntMath.SolveQuadratic(System.Single,System.Single,System.Single,UnityEngine.Vector2@)
+  commentId: M:Global.IntMath.SolveQuadratic(System.Single,System.Single,System.Single,UnityEngine.Vector2@)
+  id: SolveQuadratic(System.Single,System.Single,System.Single,UnityEngine.Vector2@)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: SolveQuadratic(float, float, float, ref Vector2)
+  nameWithType: IntMath.SolveQuadratic(float, float, float, ref Vector2)
+  fullName: IntMath.SolveQuadratic(float, float, float, ref UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SolveQuadratic
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 444
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nSolves the provided quadratic f(x) = ax^2+bx+c\nFills [x] with solution\n"
+  example: []
+  syntax:
+    content: public static int SolveQuadratic(float a, float b, float c, ref Vector2 x)
+    parameters:
+    - id: a
+      type: System.Single
+      description: ''
+    - id: b
+      type: System.Single
+      description: ''
+    - id: c
+      type: System.Single
+      description: ''
+    - id: x
+      type: UnityEngine.Vector2
+      description: solution to vector2
+    return:
+      type: System.Int32
+      description: Returns a count of the number of unique solutions
+    content.vb: Public Shared Function SolveQuadratic(a As Single, b As Single, c As Single, x As Vector2) As Integer
+  overload: Global.IntMath.SolveQuadratic*
+  nameWithType.vb: IntMath.SolveQuadratic(Single, Single, Single, Vector2)
+  fullName.vb: IntMath.SolveQuadratic(Single, Single, Single, UnityEngine.Vector2)
+  name.vb: SolveQuadratic(Single, Single, Single, Vector2)
+- uid: Global.IntMath.JoinRectInts(UnityEngine.RectInt,UnityEngine.RectInt)
+  commentId: M:Global.IntMath.JoinRectInts(UnityEngine.RectInt,UnityEngine.RectInt)
+  id: JoinRectInts(UnityEngine.RectInt,UnityEngine.RectInt)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: JoinRectInts(RectInt, RectInt)
+  nameWithType: IntMath.JoinRectInts(RectInt, RectInt)
+  fullName: IntMath.JoinRectInts(UnityEngine.RectInt, UnityEngine.RectInt)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: JoinRectInts
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 479
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCreate a new rectint that represents the extrema of both rectints\n"
+  example: []
+  syntax:
+    content: public static RectInt JoinRectInts(RectInt A, RectInt B)
+    parameters:
+    - id: A
+      type: UnityEngine.RectInt
+      description: Rect 1
+    - id: B
+      type: UnityEngine.RectInt
+      description: Rect 2
+    return:
+      type: UnityEngine.RectInt
+      description: joined rectint
+    content.vb: Public Shared Function JoinRectInts(A As RectInt, B As RectInt) As RectInt
+  overload: Global.IntMath.JoinRectInts*
+- uid: Global.IntMath.Contains(UnityEngine.RectInt,UnityEngine.RectInt)
+  commentId: M:Global.IntMath.Contains(UnityEngine.RectInt,UnityEngine.RectInt)
+  id: Contains(UnityEngine.RectInt,UnityEngine.RectInt)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: Contains(RectInt, RectInt)
+  nameWithType: IntMath.Contains(RectInt, RectInt)
+  fullName: IntMath.Contains(UnityEngine.RectInt, UnityEngine.RectInt)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Contains
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 493
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck if RectInt [A] contains another RectInt [B]. Contains is inclusive at edges (i.e. a rectangle will contain itself)\n"
+  example: []
+  syntax:
+    content: public static bool Contains(RectInt A, RectInt B)
+    parameters:
+    - id: A
+      type: UnityEngine.RectInt
+      description: Outer rect (container rect)
+    - id: B
+      type: UnityEngine.RectInt
+      description: Inner rect
+    return:
+      type: System.Boolean
+      description: true if A contains B, false otherwise
+    content.vb: Public Shared Function Contains(A As RectInt, B As RectInt) As Boolean
+  overload: Global.IntMath.Contains*
+- uid: Global.IntMath.ContainsAlongAxis(UnityEngine.RectInt,UnityEngine.RectInt,IntMath.Axis,System.Int32)
+  commentId: M:Global.IntMath.ContainsAlongAxis(UnityEngine.RectInt,UnityEngine.RectInt,IntMath.Axis,System.Int32)
+  id: ContainsAlongAxis(UnityEngine.RectInt,UnityEngine.RectInt,IntMath.Axis,System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ContainsAlongAxis(RectInt, RectInt, Axis, int)
+  nameWithType: IntMath.ContainsAlongAxis(RectInt, RectInt, IntMath.Axis, int)
+  fullName: IntMath.ContainsAlongAxis(UnityEngine.RectInt, UnityEngine.RectInt, IntMath.Axis, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ContainsAlongAxis
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 505
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCheck if RectInt [A] contains another RectInt [B] along a particular axis. Contains is inclusive at edges (i.e. a rectangle will contain itself)\n"
+  example: []
+  syntax:
+    content: public static bool ContainsAlongAxis(RectInt A, RectInt B, IntMath.Axis axis, int spacing = 0)
+    parameters:
+    - id: A
+      type: UnityEngine.RectInt
+      description: Outer rect (container rect)
+    - id: B
+      type: UnityEngine.RectInt
+      description: Inner rect
+    - id: axis
+      type: Global.IntMath.Axis
+      description: Axis to check
+    - id: spacing
+      type: System.Int32
+    return:
+      type: System.Boolean
+      description: true if A contains B along axis, false otherwise
+    content.vb: Public Shared Function ContainsAlongAxis(A As RectInt, B As RectInt, axis As IntMath.Axis, spacing As Integer = 0) As Boolean
+  overload: Global.IntMath.ContainsAlongAxis*
+  nameWithType.vb: IntMath.ContainsAlongAxis(RectInt, RectInt, IntMath.Axis, Integer)
+  fullName.vb: IntMath.ContainsAlongAxis(UnityEngine.RectInt, UnityEngine.RectInt, IntMath.Axis, Integer)
+  name.vb: ContainsAlongAxis(RectInt, RectInt, Axis, Integer)
+- uid: Global.IntMath.ShrinkRectIntAlongAxisToFit(UnityEngine.RectInt,UnityEngine.RectInt,IntMath.Axis,UnityEngine.RectInt@,System.Int32)
+  commentId: M:Global.IntMath.ShrinkRectIntAlongAxisToFit(UnityEngine.RectInt,UnityEngine.RectInt,IntMath.Axis,UnityEngine.RectInt@,System.Int32)
+  id: ShrinkRectIntAlongAxisToFit(UnityEngine.RectInt,UnityEngine.RectInt,IntMath.Axis,UnityEngine.RectInt@,System.Int32)
+  parent: Global.IntMath
+  langs:
+  - csharp
+  - vb
+  name: ShrinkRectIntAlongAxisToFit(RectInt, RectInt, Axis, out RectInt, int)
+  nameWithType: IntMath.ShrinkRectIntAlongAxisToFit(RectInt, RectInt, IntMath.Axis, out RectInt, int)
+  fullName: IntMath.ShrinkRectIntAlongAxisToFit(UnityEngine.RectInt, UnityEngine.RectInt, IntMath.Axis, out UnityEngine.RectInt, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ShrinkRectIntAlongAxisToFit
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 524
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturn a scaled down version of [A] along axis [axis] so it fits snug next to rect [B]\n"
+  example: []
+  syntax:
+    content: public static bool ShrinkRectIntAlongAxisToFit(RectInt A, RectInt B, IntMath.Axis axis, out RectInt shrunk, int spacing = 0)
+    parameters:
+    - id: A
+      type: UnityEngine.RectInt
+      description: RectInt to shrink
+    - id: B
+      type: UnityEngine.RectInt
+      description: RectInt to fit [A] next to
+    - id: axis
+      type: Global.IntMath.Axis
+      description: Axis along which to shrink RectInt [A]
+    - id: shrunk
+      type: UnityEngine.RectInt
+      description: new RectInt that fits next to B. A is unchanged if fit is not possible.
+    - id: spacing
+      type: System.Int32
+    return:
+      type: System.Boolean
+      description: Whether A was shrunk or not
+    content.vb: Public Shared Function ShrinkRectIntAlongAxisToFit(A As RectInt, B As RectInt, axis As IntMath.Axis, shrunk As RectInt, spacing As Integer = 0) As Boolean
+  overload: Global.IntMath.ShrinkRectIntAlongAxisToFit*
+  nameWithType.vb: IntMath.ShrinkRectIntAlongAxisToFit(RectInt, RectInt, IntMath.Axis, RectInt, Integer)
+  fullName.vb: IntMath.ShrinkRectIntAlongAxisToFit(UnityEngine.RectInt, UnityEngine.RectInt, IntMath.Axis, UnityEngine.RectInt, Integer)
+  name.vb: ShrinkRectIntAlongAxisToFit(RectInt, RectInt, Axis, RectInt, Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.IntMath.ReverseDirection*
+  commentId: Overload:Global.IntMath.ReverseDirection
+  name: ReverseDirection
+  nameWithType: IntMath.ReverseDirection
+  fullName: IntMath.ReverseDirection
+- uid: Global.IntMath.Direction
+  commentId: T:Global.IntMath.Direction
+  name: IntMath.Direction
+  nameWithType: IntMath.Direction
+  fullName: IntMath.Direction
+  spec.csharp:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Direction
+    name: Direction
+  spec.vb:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Direction
+    name: Direction
+- uid: Global.IntMath.DirectionToVector*
+  commentId: Overload:Global.IntMath.DirectionToVector
+  name: DirectionToVector
+  nameWithType: IntMath.DirectionToVector
+  fullName: IntMath.DirectionToVector
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.IntMath.AddCardinalDirections*
+  commentId: Overload:Global.IntMath.AddCardinalDirections
+  name: AddCardinalDirections
+  nameWithType: IntMath.AddCardinalDirections
+  fullName: IntMath.AddCardinalDirections
+- uid: System.Collections.Generic.List{UnityEngine.Vector2Int}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2Int}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector2Int>
+  nameWithType: List<Vector2Int>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2Int>
+  nameWithType.vb: List(Of Vector2Int)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2Int)
+  name.vb: List(Of Vector2Int)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.IntMath.AddDiagonalDirections*
+  commentId: Overload:Global.IntMath.AddDiagonalDirections
+  name: AddDiagonalDirections
+  nameWithType: IntMath.AddDiagonalDirections
+  fullName: IntMath.AddDiagonalDirections
+- uid: Global.IntMath.BoolToInt*
+  commentId: Overload:Global.IntMath.BoolToInt
+  name: BoolToInt
+  nameWithType: IntMath.BoolToInt
+  fullName: IntMath.BoolToInt
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.IntMath.IntToBool*
+  commentId: Overload:Global.IntMath.IntToBool
+  name: IntToBool
+  nameWithType: IntMath.IntToBool
+  fullName: IntMath.IntToBool
+- uid: Global.IntMath.BoolToSign*
+  commentId: Overload:Global.IntMath.BoolToSign
+  name: BoolToSign
+  nameWithType: IntMath.BoolToSign
+  fullName: IntMath.BoolToSign
+- uid: Global.IntMath.DirectionToAxis*
+  commentId: Overload:Global.IntMath.DirectionToAxis
+  name: DirectionToAxis
+  nameWithType: IntMath.DirectionToAxis
+  fullName: IntMath.DirectionToAxis
+- uid: Global.IntMath.Axis
+  commentId: T:Global.IntMath.Axis
+  name: IntMath.Axis
+  nameWithType: IntMath.Axis
+  fullName: IntMath.Axis
+  spec.csharp:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Axis
+    name: Axis
+  spec.vb:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Axis
+    name: Axis
+- uid: Global.IntMath.AxisToVector*
+  commentId: Overload:Global.IntMath.AxisToVector
+  name: AxisToVector
+  nameWithType: IntMath.AxisToVector
+  fullName: IntMath.AxisToVector
+- uid: Global.IntMath.Modulo*
+  commentId: Overload:Global.IntMath.Modulo
+  name: Modulo
+  nameWithType: IntMath.Modulo
+  fullName: IntMath.Modulo
+- uid: Global.IntMath.Sign*
+  commentId: Overload:Global.IntMath.Sign
+  name: Sign
+  nameWithType: IntMath.Sign
+  fullName: IntMath.Sign
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.IntMath.Abs*
+  commentId: Overload:Global.IntMath.Abs
+  name: Abs
+  nameWithType: IntMath.Abs
+  fullName: IntMath.Abs
+- uid: Global.IntMath.Scale*
+  commentId: Overload:Global.IntMath.Scale
+  name: Scale
+  nameWithType: IntMath.Scale
+  fullName: IntMath.Scale
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.IntMath.InBounds*
+  commentId: Overload:Global.IntMath.InBounds
+  name: InBounds
+  nameWithType: IntMath.InBounds
+  fullName: IntMath.InBounds
+- uid: Global.IntMath.ToVector3*
+  commentId: Overload:Global.IntMath.ToVector3
+  name: ToVector3
+  nameWithType: IntMath.ToVector3
+  fullName: IntMath.ToVector3
+- uid: UnityEngine.Vector3Int
+  commentId: T:UnityEngine.Vector3Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3Int
+  nameWithType: Vector3Int
+  fullName: UnityEngine.Vector3Int
+- uid: Global.IntMath.ToVector2*
+  commentId: Overload:Global.IntMath.ToVector2
+  name: ToVector2
+  nameWithType: IntMath.ToVector2
+  fullName: IntMath.ToVector2
+- uid: Global.IntMath.ToVector2Int*
+  commentId: Overload:Global.IntMath.ToVector2Int
+  name: ToVector2Int
+  nameWithType: IntMath.ToVector2Int
+  fullName: IntMath.ToVector2Int
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: Global.IntMath.Round*
+  commentId: Overload:Global.IntMath.Round
+  name: Round
+  nameWithType: IntMath.Round
+  fullName: IntMath.Round
+- uid: Global.IntMath.ClipToGrid*
+  commentId: Overload:Global.IntMath.ClipToGrid
+  name: ClipToGrid
+  nameWithType: IntMath.ClipToGrid
+  fullName: IntMath.ClipToGrid
+- uid: Global.IntMath.Floor*
+  commentId: Overload:Global.IntMath.Floor
+  name: Floor
+  nameWithType: IntMath.Floor
+  fullName: IntMath.Floor
+- uid: Global.IntMath.TruncateToInt*
+  commentId: Overload:Global.IntMath.TruncateToInt
+  name: TruncateToInt
+  nameWithType: IntMath.TruncateToInt
+  fullName: IntMath.TruncateToInt
+- uid: Global.IntMath.RotateAboutOrigin*
+  commentId: Overload:Global.IntMath.RotateAboutOrigin
+  name: RotateAboutOrigin
+  nameWithType: IntMath.RotateAboutOrigin
+  fullName: IntMath.RotateAboutOrigin
+- uid: Global.IntMath.RotateAbout*
+  commentId: Overload:Global.IntMath.RotateAbout
+  name: RotateAbout
+  nameWithType: IntMath.RotateAbout
+  fullName: IntMath.RotateAbout
+- uid: Global.IntMath.Rotate90Degrees*
+  commentId: Overload:Global.IntMath.Rotate90Degrees
+  name: Rotate90Degrees
+  nameWithType: IntMath.Rotate90Degrees
+  fullName: IntMath.Rotate90Degrees
+- uid: Global.IntMath.SolveQuadratic*
+  commentId: Overload:Global.IntMath.SolveQuadratic
+  name: SolveQuadratic
+  nameWithType: IntMath.SolveQuadratic
+  fullName: IntMath.SolveQuadratic
+- uid: Global.IntMath.JoinRectInts*
+  commentId: Overload:Global.IntMath.JoinRectInts
+  name: JoinRectInts
+  nameWithType: IntMath.JoinRectInts
+  fullName: IntMath.JoinRectInts
+- uid: UnityEngine.RectInt
+  commentId: T:UnityEngine.RectInt
+  parent: UnityEngine
+  isExternal: true
+  name: RectInt
+  nameWithType: RectInt
+  fullName: UnityEngine.RectInt
+- uid: Global.IntMath.Contains*
+  commentId: Overload:Global.IntMath.Contains
+  name: Contains
+  nameWithType: IntMath.Contains
+  fullName: IntMath.Contains
+- uid: Global.IntMath.ContainsAlongAxis*
+  commentId: Overload:Global.IntMath.ContainsAlongAxis
+  name: ContainsAlongAxis
+  nameWithType: IntMath.ContainsAlongAxis
+  fullName: IntMath.ContainsAlongAxis
+- uid: Global.IntMath.ShrinkRectIntAlongAxisToFit*
+  commentId: Overload:Global.IntMath.ShrinkRectIntAlongAxisToFit
+  name: ShrinkRectIntAlongAxisToFit
+  nameWithType: IntMath.ShrinkRectIntAlongAxisToFit
+  fullName: IntMath.ShrinkRectIntAlongAxisToFit

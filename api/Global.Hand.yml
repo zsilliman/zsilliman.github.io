@@ -1,0 +1,410 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Hand
+  commentId: T:Global.Hand
+  id: Hand
+  parent: Global
+  children:
+  - Global.Hand.DropItem(UnityEngine.Transform)
+  - Global.Hand.isHoldingItem
+  - Global.Hand.onHandItemChanged
+  - Global.Hand.pickedUpItem
+  - Global.Hand.PickUpItem(InventoryItem)
+  - Global.Hand.SwitchItems(InventoryItem)
+  langs:
+  - csharp
+  - vb
+  name: Hand
+  nameWithType: Hand
+  fullName: Hand
+  type: Class
+  source:
+    remote:
+      path: Assets/User Interface/Hand.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Hand
+    path: ../Assets/User Interface/Hand.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class Hand : MonoBehaviour'
+    content.vb: Public Class Hand Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.Hand.pickedUpItem
+  commentId: F:Global.Hand.pickedUpItem
+  id: pickedUpItem
+  parent: Global.Hand
+  langs:
+  - csharp
+  - vb
+  name: pickedUpItem
+  nameWithType: Hand.pickedUpItem
+  fullName: Hand.pickedUpItem
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Hand.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: pickedUpItem
+    path: ../Assets/User Interface/Hand.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public InventoryItem pickedUpItem
+    return:
+      type: Global.InventoryItem
+    content.vb: >-
+      <HideInInspector>
+
+      Public pickedUpItem As InventoryItem
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.Hand.onHandItemChanged
+  commentId: F:Global.Hand.onHandItemChanged
+  id: onHandItemChanged
+  parent: Global.Hand
+  langs:
+  - csharp
+  - vb
+  name: onHandItemChanged
+  nameWithType: Hand.onHandItemChanged
+  fullName: Hand.onHandItemChanged
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Hand.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: onHandItemChanged
+    path: ../Assets/User Interface/Hand.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public UnityEvent onHandItemChanged
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <HideInInspector>
+
+      Public onHandItemChanged As UnityEvent
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.Hand.isHoldingItem
+  commentId: M:Global.Hand.isHoldingItem
+  id: isHoldingItem
+  parent: Global.Hand
+  langs:
+  - csharp
+  - vb
+  name: isHoldingItem()
+  nameWithType: Hand.isHoldingItem()
+  fullName: Hand.isHoldingItem()
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Hand.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: isHoldingItem
+    path: ../Assets/User Interface/Hand.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool isHoldingItem()
+    return:
+      type: System.Boolean
+    content.vb: Public Function isHoldingItem() As Boolean
+  overload: Global.Hand.isHoldingItem*
+- uid: Global.Hand.PickUpItem(InventoryItem)
+  commentId: M:Global.Hand.PickUpItem(InventoryItem)
+  id: PickUpItem(InventoryItem)
+  parent: Global.Hand
+  langs:
+  - csharp
+  - vb
+  name: PickUpItem(InventoryItem)
+  nameWithType: Hand.PickUpItem(InventoryItem)
+  fullName: Hand.PickUpItem(InventoryItem)
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Hand.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PickUpItem
+    path: ../Assets/User Interface/Hand.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void PickUpItem(InventoryItem item)
+    parameters:
+    - id: item
+      type: Global.InventoryItem
+    content.vb: Public Sub PickUpItem(item As InventoryItem)
+  overload: Global.Hand.PickUpItem*
+- uid: Global.Hand.DropItem(UnityEngine.Transform)
+  commentId: M:Global.Hand.DropItem(UnityEngine.Transform)
+  id: DropItem(UnityEngine.Transform)
+  parent: Global.Hand
+  langs:
+  - csharp
+  - vb
+  name: DropItem(Transform)
+  nameWithType: Hand.DropItem(Transform)
+  fullName: Hand.DropItem(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Hand.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DropItem
+    path: ../Assets/User Interface/Hand.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DropItem(Transform parentTransform)
+    parameters:
+    - id: parentTransform
+      type: UnityEngine.Transform
+    content.vb: Public Sub DropItem(parentTransform As Transform)
+  overload: Global.Hand.DropItem*
+- uid: Global.Hand.SwitchItems(InventoryItem)
+  commentId: M:Global.Hand.SwitchItems(InventoryItem)
+  id: SwitchItems(InventoryItem)
+  parent: Global.Hand
+  langs:
+  - csharp
+  - vb
+  name: SwitchItems(InventoryItem)
+  nameWithType: Hand.SwitchItems(InventoryItem)
+  fullName: Hand.SwitchItems(InventoryItem)
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Hand.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwitchItems
+    path: ../Assets/User Interface/Hand.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SwitchItems(InventoryItem item)
+    parameters:
+    - id: item
+      type: Global.InventoryItem
+    content.vb: Public Sub SwitchItems(item As InventoryItem)
+  overload: Global.Hand.SwitchItems*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.InventoryItem
+  commentId: T:Global.InventoryItem
+  name: InventoryItem
+  nameWithType: InventoryItem
+  fullName: InventoryItem
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.Hand.isHoldingItem*
+  commentId: Overload:Global.Hand.isHoldingItem
+  name: isHoldingItem
+  nameWithType: Hand.isHoldingItem
+  fullName: Hand.isHoldingItem
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Hand.PickUpItem*
+  commentId: Overload:Global.Hand.PickUpItem
+  name: PickUpItem
+  nameWithType: Hand.PickUpItem
+  fullName: Hand.PickUpItem
+- uid: Global.Hand.DropItem*
+  commentId: Overload:Global.Hand.DropItem
+  name: DropItem
+  nameWithType: Hand.DropItem
+  fullName: Hand.DropItem
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: Global.Hand.SwitchItems*
+  commentId: Overload:Global.Hand.SwitchItems
+  name: SwitchItems
+  nameWithType: Hand.SwitchItems
+  fullName: Hand.SwitchItems

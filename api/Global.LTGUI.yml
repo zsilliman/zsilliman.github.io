@@ -1,0 +1,859 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LTGUI
+  commentId: T:Global.LTGUI
+  id: LTGUI
+  parent: Global
+  children:
+  - Global.LTGUI.BUTTONS_MAX
+  - Global.LTGUI.checkOnScreen(UnityEngine.Rect)
+  - Global.LTGUI.checkWithinRect(UnityEngine.Vector2,UnityEngine.Rect)
+  - Global.LTGUI.destroy(System.Int32)
+  - Global.LTGUI.destroyAll(System.Int32)
+  - Global.LTGUI.element(LTRect,System.Int32)
+  - Global.LTGUI.firstTouch
+  - Global.LTGUI.hasNoOverlap(UnityEngine.Rect,System.Int32)
+  - Global.LTGUI.init
+  - Global.LTGUI.initRectCheck
+  - Global.LTGUI.label(LTRect,System.String,System.Int32)
+  - Global.LTGUI.label(UnityEngine.Rect,System.String,System.Int32)
+  - Global.LTGUI.pressedWithinRect(UnityEngine.Rect)
+  - Global.LTGUI.RECT_LEVELS
+  - Global.LTGUI.RECTS_PER_LEVEL
+  - Global.LTGUI.reset
+  - Global.LTGUI.texture(LTRect,UnityEngine.Texture,System.Int32)
+  - Global.LTGUI.texture(UnityEngine.Rect,UnityEngine.Texture,System.Int32)
+  - Global.LTGUI.update(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: LTGUI
+  nameWithType: LTGUI
+  fullName: LTGUI
+  type: Class
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LTGUI
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3850
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class LTGUI
+    content.vb: Public Class LTGUI
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LTGUI.RECT_LEVELS
+  commentId: F:Global.LTGUI.RECT_LEVELS
+  id: RECT_LEVELS
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: RECT_LEVELS
+  nameWithType: LTGUI.RECT_LEVELS
+  fullName: LTGUI.RECT_LEVELS
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RECT_LEVELS
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3851
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int RECT_LEVELS
+    return:
+      type: System.Int32
+    content.vb: Public Shared RECT_LEVELS As Integer
+- uid: Global.LTGUI.RECTS_PER_LEVEL
+  commentId: F:Global.LTGUI.RECTS_PER_LEVEL
+  id: RECTS_PER_LEVEL
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: RECTS_PER_LEVEL
+  nameWithType: LTGUI.RECTS_PER_LEVEL
+  fullName: LTGUI.RECTS_PER_LEVEL
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RECTS_PER_LEVEL
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3852
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int RECTS_PER_LEVEL
+    return:
+      type: System.Int32
+    content.vb: Public Shared RECTS_PER_LEVEL As Integer
+- uid: Global.LTGUI.BUTTONS_MAX
+  commentId: F:Global.LTGUI.BUTTONS_MAX
+  id: BUTTONS_MAX
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: BUTTONS_MAX
+  nameWithType: LTGUI.BUTTONS_MAX
+  fullName: LTGUI.BUTTONS_MAX
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BUTTONS_MAX
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3853
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int BUTTONS_MAX
+    return:
+      type: System.Int32
+    content.vb: Public Shared BUTTONS_MAX As Integer
+- uid: Global.LTGUI.init
+  commentId: M:Global.LTGUI.init
+  id: init
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: init()
+  nameWithType: LTGUI.init()
+  fullName: LTGUI.init()
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: init
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3870
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void init()
+    content.vb: Public Shared Sub init()
+  overload: Global.LTGUI.init*
+- uid: Global.LTGUI.initRectCheck
+  commentId: M:Global.LTGUI.initRectCheck
+  id: initRectCheck
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: initRectCheck()
+  nameWithType: LTGUI.initRectCheck()
+  fullName: LTGUI.initRectCheck()
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: initRectCheck
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3877
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void initRectCheck()
+    content.vb: Public Shared Sub initRectCheck()
+  overload: Global.LTGUI.initRectCheck*
+- uid: Global.LTGUI.reset
+  commentId: M:Global.LTGUI.reset
+  id: reset
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: reset()
+  nameWithType: LTGUI.reset()
+  fullName: LTGUI.reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: reset
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3888
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void reset()
+    content.vb: Public Shared Sub reset()
+  overload: Global.LTGUI.reset*
+- uid: Global.LTGUI.update(System.Int32)
+  commentId: M:Global.LTGUI.update(System.Int32)
+  id: update(System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: update(int)
+  nameWithType: LTGUI.update(int)
+  fullName: LTGUI.update(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: update
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3901
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void update(int updateLevel)
+    parameters:
+    - id: updateLevel
+      type: System.Int32
+    content.vb: Public Shared Sub update(updateLevel As Integer)
+  overload: Global.LTGUI.update*
+  nameWithType.vb: LTGUI.update(Integer)
+  fullName.vb: LTGUI.update(Integer)
+  name.vb: update(Integer)
+- uid: Global.LTGUI.checkOnScreen(UnityEngine.Rect)
+  commentId: M:Global.LTGUI.checkOnScreen(UnityEngine.Rect)
+  id: checkOnScreen(UnityEngine.Rect)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: checkOnScreen(Rect)
+  nameWithType: LTGUI.checkOnScreen(Rect)
+  fullName: LTGUI.checkOnScreen(UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: checkOnScreen
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3942
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool checkOnScreen(Rect rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.Rect
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function checkOnScreen(rect As Rect) As Boolean
+  overload: Global.LTGUI.checkOnScreen*
+- uid: Global.LTGUI.destroy(System.Int32)
+  commentId: M:Global.LTGUI.destroy(System.Int32)
+  id: destroy(System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: destroy(int)
+  nameWithType: LTGUI.destroy(int)
+  fullName: LTGUI.destroy(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: destroy
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3951
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void destroy(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Public Shared Sub destroy(id As Integer)
+  overload: Global.LTGUI.destroy*
+  nameWithType.vb: LTGUI.destroy(Integer)
+  fullName.vb: LTGUI.destroy(Integer)
+  name.vb: destroy(Integer)
+- uid: Global.LTGUI.destroyAll(System.Int32)
+  commentId: M:Global.LTGUI.destroyAll(System.Int32)
+  id: destroyAll(System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: destroyAll(int)
+  nameWithType: LTGUI.destroyAll(int)
+  fullName: LTGUI.destroyAll(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: destroyAll
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3958
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void destroyAll(int depth)
+    parameters:
+    - id: depth
+      type: System.Int32
+    content.vb: Public Shared Sub destroyAll(depth As Integer)
+  overload: Global.LTGUI.destroyAll*
+  nameWithType.vb: LTGUI.destroyAll(Integer)
+  fullName.vb: LTGUI.destroyAll(Integer)
+  name.vb: destroyAll(Integer)
+- uid: Global.LTGUI.label(UnityEngine.Rect,System.String,System.Int32)
+  commentId: M:Global.LTGUI.label(UnityEngine.Rect,System.String,System.Int32)
+  id: label(UnityEngine.Rect,System.String,System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: label(Rect, string, int)
+  nameWithType: LTGUI.label(Rect, string, int)
+  fullName: LTGUI.label(UnityEngine.Rect, string, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: label
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3965
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static LTRect label(Rect rect, string label, int depth)
+    parameters:
+    - id: rect
+      type: UnityEngine.Rect
+    - id: label
+      type: System.String
+    - id: depth
+      type: System.Int32
+    return:
+      type: Global.LTRect
+    content.vb: Public Shared Function label(rect As Rect, label As String, depth As Integer) As LTRect
+  overload: Global.LTGUI.label*
+  nameWithType.vb: LTGUI.label(Rect, String, Integer)
+  fullName.vb: LTGUI.label(UnityEngine.Rect, String, Integer)
+  name.vb: label(Rect, String, Integer)
+- uid: Global.LTGUI.label(LTRect,System.String,System.Int32)
+  commentId: M:Global.LTGUI.label(LTRect,System.String,System.Int32)
+  id: label(LTRect,System.String,System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: label(LTRect, string, int)
+  nameWithType: LTGUI.label(LTRect, string, int)
+  fullName: LTGUI.label(LTRect, string, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: label
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3969
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static LTRect label(LTRect rect, string label, int depth)
+    parameters:
+    - id: rect
+      type: Global.LTRect
+    - id: label
+      type: System.String
+    - id: depth
+      type: System.Int32
+    return:
+      type: Global.LTRect
+    content.vb: Public Shared Function label(rect As LTRect, label As String, depth As Integer) As LTRect
+  overload: Global.LTGUI.label*
+  nameWithType.vb: LTGUI.label(LTRect, String, Integer)
+  fullName.vb: LTGUI.label(LTRect, String, Integer)
+  name.vb: label(LTRect, String, Integer)
+- uid: Global.LTGUI.texture(UnityEngine.Rect,UnityEngine.Texture,System.Int32)
+  commentId: M:Global.LTGUI.texture(UnityEngine.Rect,UnityEngine.Texture,System.Int32)
+  id: texture(UnityEngine.Rect,UnityEngine.Texture,System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: texture(Rect, Texture, int)
+  nameWithType: LTGUI.texture(Rect, Texture, int)
+  fullName: LTGUI.texture(UnityEngine.Rect, UnityEngine.Texture, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: texture
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3975
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static LTRect texture(Rect rect, Texture texture, int depth)
+    parameters:
+    - id: rect
+      type: UnityEngine.Rect
+    - id: texture
+      type: UnityEngine.Texture
+    - id: depth
+      type: System.Int32
+    return:
+      type: Global.LTRect
+    content.vb: Public Shared Function texture(rect As Rect, texture As Texture, depth As Integer) As LTRect
+  overload: Global.LTGUI.texture*
+  nameWithType.vb: LTGUI.texture(Rect, Texture, Integer)
+  fullName.vb: LTGUI.texture(UnityEngine.Rect, UnityEngine.Texture, Integer)
+  name.vb: texture(Rect, Texture, Integer)
+- uid: Global.LTGUI.texture(LTRect,UnityEngine.Texture,System.Int32)
+  commentId: M:Global.LTGUI.texture(LTRect,UnityEngine.Texture,System.Int32)
+  id: texture(LTRect,UnityEngine.Texture,System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: texture(LTRect, Texture, int)
+  nameWithType: LTGUI.texture(LTRect, Texture, int)
+  fullName: LTGUI.texture(LTRect, UnityEngine.Texture, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: texture
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3979
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static LTRect texture(LTRect rect, Texture texture, int depth)
+    parameters:
+    - id: rect
+      type: Global.LTRect
+    - id: texture
+      type: UnityEngine.Texture
+    - id: depth
+      type: System.Int32
+    return:
+      type: Global.LTRect
+    content.vb: Public Shared Function texture(rect As LTRect, texture As Texture, depth As Integer) As LTRect
+  overload: Global.LTGUI.texture*
+  nameWithType.vb: LTGUI.texture(LTRect, Texture, Integer)
+  fullName.vb: LTGUI.texture(LTRect, UnityEngine.Texture, Integer)
+  name.vb: texture(LTRect, Texture, Integer)
+- uid: Global.LTGUI.element(LTRect,System.Int32)
+  commentId: M:Global.LTGUI.element(LTRect,System.Int32)
+  id: element(LTRect,System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: element(LTRect, int)
+  nameWithType: LTGUI.element(LTRect, int)
+  fullName: LTGUI.element(LTRect, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: element
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3985
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static LTRect element(LTRect rect, int depth)
+    parameters:
+    - id: rect
+      type: Global.LTRect
+    - id: depth
+      type: System.Int32
+    return:
+      type: Global.LTRect
+    content.vb: Public Shared Function element(rect As LTRect, depth As Integer) As LTRect
+  overload: Global.LTGUI.element*
+  nameWithType.vb: LTGUI.element(LTRect, Integer)
+  fullName.vb: LTGUI.element(LTRect, Integer)
+  name.vb: element(LTRect, Integer)
+- uid: Global.LTGUI.hasNoOverlap(UnityEngine.Rect,System.Int32)
+  commentId: M:Global.LTGUI.hasNoOverlap(UnityEngine.Rect,System.Int32)
+  id: hasNoOverlap(UnityEngine.Rect,System.Int32)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: hasNoOverlap(Rect, int)
+  nameWithType: LTGUI.hasNoOverlap(Rect, int)
+  fullName: LTGUI.hasNoOverlap(UnityEngine.Rect, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: hasNoOverlap
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 4024
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool hasNoOverlap(Rect rect, int depth)
+    parameters:
+    - id: rect
+      type: UnityEngine.Rect
+    - id: depth
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function hasNoOverlap(rect As Rect, depth As Integer) As Boolean
+  overload: Global.LTGUI.hasNoOverlap*
+  nameWithType.vb: LTGUI.hasNoOverlap(Rect, Integer)
+  fullName.vb: LTGUI.hasNoOverlap(UnityEngine.Rect, Integer)
+  name.vb: hasNoOverlap(Rect, Integer)
+- uid: Global.LTGUI.pressedWithinRect(UnityEngine.Rect)
+  commentId: M:Global.LTGUI.pressedWithinRect(UnityEngine.Rect)
+  id: pressedWithinRect(UnityEngine.Rect)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: pressedWithinRect(Rect)
+  nameWithType: LTGUI.pressedWithinRect(Rect)
+  fullName: LTGUI.pressedWithinRect(UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: pressedWithinRect
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 4063
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool pressedWithinRect(Rect rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.Rect
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function pressedWithinRect(rect As Rect) As Boolean
+  overload: Global.LTGUI.pressedWithinRect*
+- uid: Global.LTGUI.checkWithinRect(UnityEngine.Vector2,UnityEngine.Rect)
+  commentId: M:Global.LTGUI.checkWithinRect(UnityEngine.Vector2,UnityEngine.Rect)
+  id: checkWithinRect(UnityEngine.Vector2,UnityEngine.Rect)
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: checkWithinRect(Vector2, Rect)
+  nameWithType: LTGUI.checkWithinRect(Vector2, Rect)
+  fullName: LTGUI.checkWithinRect(UnityEngine.Vector2, UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: checkWithinRect
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 4071
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool checkWithinRect(Vector2 vec2, Rect rect)
+    parameters:
+    - id: vec2
+      type: UnityEngine.Vector2
+    - id: rect
+      type: UnityEngine.Rect
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function checkWithinRect(vec2 As Vector2, rect As Rect) As Boolean
+  overload: Global.LTGUI.checkWithinRect*
+- uid: Global.LTGUI.firstTouch
+  commentId: M:Global.LTGUI.firstTouch
+  id: firstTouch
+  parent: Global.LTGUI
+  langs:
+  - csharp
+  - vb
+  name: firstTouch()
+  nameWithType: LTGUI.firstTouch()
+  fullName: LTGUI.firstTouch()
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: firstTouch
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 4076
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2 firstTouch()
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function firstTouch() As Vector2
+  overload: Global.LTGUI.firstTouch*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.LTGUI.init*
+  commentId: Overload:Global.LTGUI.init
+  name: init
+  nameWithType: LTGUI.init
+  fullName: LTGUI.init
+- uid: Global.LTGUI.initRectCheck*
+  commentId: Overload:Global.LTGUI.initRectCheck
+  name: initRectCheck
+  nameWithType: LTGUI.initRectCheck
+  fullName: LTGUI.initRectCheck
+- uid: Global.LTGUI.reset*
+  commentId: Overload:Global.LTGUI.reset
+  name: reset
+  nameWithType: LTGUI.reset
+  fullName: LTGUI.reset
+- uid: Global.LTGUI.update*
+  commentId: Overload:Global.LTGUI.update
+  name: update
+  nameWithType: LTGUI.update
+  fullName: LTGUI.update
+- uid: Global.LTGUI.checkOnScreen*
+  commentId: Overload:Global.LTGUI.checkOnScreen
+  name: checkOnScreen
+  nameWithType: LTGUI.checkOnScreen
+  fullName: LTGUI.checkOnScreen
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.LTGUI.destroy*
+  commentId: Overload:Global.LTGUI.destroy
+  name: destroy
+  nameWithType: LTGUI.destroy
+  fullName: LTGUI.destroy
+- uid: Global.LTGUI.destroyAll*
+  commentId: Overload:Global.LTGUI.destroyAll
+  name: destroyAll
+  nameWithType: LTGUI.destroyAll
+  fullName: LTGUI.destroyAll
+- uid: Global.LTGUI.label*
+  commentId: Overload:Global.LTGUI.label
+  name: label
+  nameWithType: LTGUI.label
+  fullName: LTGUI.label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.LTRect
+  commentId: T:Global.LTRect
+  name: LTRect
+  nameWithType: LTRect
+  fullName: LTRect
+- uid: Global.LTGUI.texture*
+  commentId: Overload:Global.LTGUI.texture
+  name: texture
+  nameWithType: LTGUI.texture
+  fullName: LTGUI.texture
+- uid: UnityEngine.Texture
+  commentId: T:UnityEngine.Texture
+  parent: UnityEngine
+  isExternal: true
+  name: Texture
+  nameWithType: Texture
+  fullName: UnityEngine.Texture
+- uid: Global.LTGUI.element*
+  commentId: Overload:Global.LTGUI.element
+  name: element
+  nameWithType: LTGUI.element
+  fullName: LTGUI.element
+- uid: Global.LTGUI.hasNoOverlap*
+  commentId: Overload:Global.LTGUI.hasNoOverlap
+  name: hasNoOverlap
+  nameWithType: LTGUI.hasNoOverlap
+  fullName: LTGUI.hasNoOverlap
+- uid: Global.LTGUI.pressedWithinRect*
+  commentId: Overload:Global.LTGUI.pressedWithinRect
+  name: pressedWithinRect
+  nameWithType: LTGUI.pressedWithinRect
+  fullName: LTGUI.pressedWithinRect
+- uid: Global.LTGUI.checkWithinRect*
+  commentId: Overload:Global.LTGUI.checkWithinRect
+  name: checkWithinRect
+  nameWithType: LTGUI.checkWithinRect
+  fullName: LTGUI.checkWithinRect
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.LTGUI.firstTouch*
+  commentId: Overload:Global.LTGUI.firstTouch
+  name: firstTouch
+  nameWithType: LTGUI.firstTouch
+  fullName: LTGUI.firstTouch

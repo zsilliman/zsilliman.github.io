@@ -1,0 +1,1946 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.HopMovementController
+  commentId: T:Global.HopMovementController
+  id: HopMovementController
+  parent: Global
+  children:
+  - Global.HopMovementController.CanCharge
+  - Global.HopMovementController.ChargeLeap(System.Single,System.Boolean)
+  - Global.HopMovementController.GoTo(System.Single)
+  - Global.HopMovementController.Hop(System.Int32)
+  - Global.HopMovementController.Idle
+  - Global.HopMovementController.Initialize(IntEnemy)
+  - Global.HopMovementController.IsHopping
+  - Global.HopMovementController.RegisterHopCallback(IntObject.Action)
+  - Global.HopMovementController.RegisterOnLandCallback(IntObject.Action)
+  - Global.HopMovementController.Reset
+  - Global.HopMovementController.UnegisterOnLandCallback(IntObject.Action)
+  - Global.HopMovementController.UnregisterHopCallback(IntObject.Action)
+  - Global.HopMovementController.Update
+  langs:
+  - csharp
+  - vb
+  name: HopMovementController
+  nameWithType: HopMovementController
+  fullName: HopMovementController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HopMovementController
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class HopMovementController : EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>
+    content.vb: >-
+      <Serializable>
+
+      Public Class HopMovementController Inherits EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState)
+  inheritance:
+  - System.Object
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  inheritedMembers:
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.MovementProperties
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Enemy
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.osm
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CollideX
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CollideY
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OverlapActor
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OverlapTrigger
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.StartCharge
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.EndCharge
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CurrentState
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Initialize(IntEnemy)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetTimeInState
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Update
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Reset
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideXCallback
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideYCallback
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapActorCallback
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapTriggerCallback
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideX(IntSolid)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideY(IntSolid)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapActor(IntActor)
+  - Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapTrigger(IntTrigger)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.HopMovementController.IsHopping
+  commentId: P:Global.HopMovementController.IsHopping
+  id: IsHopping
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: IsHopping
+  nameWithType: HopMovementController.IsHopping
+  fullName: HopMovementController.IsHopping
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsHopping
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsHopping { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsHopping As Boolean
+  overload: Global.HopMovementController.IsHopping*
+- uid: Global.HopMovementController.Initialize(IntEnemy)
+  commentId: M:Global.HopMovementController.Initialize(IntEnemy)
+  id: Initialize(IntEnemy)
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IntEnemy)
+  nameWithType: HopMovementController.Initialize(IntEnemy)
+  fullName: HopMovementController.Initialize(IntEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Initialize
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Initialize(IntEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.IntEnemy
+    content.vb: Public Overrides Sub Initialize(enemy As IntEnemy)
+  overridden: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Initialize(IntEnemy)
+  overload: Global.HopMovementController.Initialize*
+- uid: Global.HopMovementController.Update
+  commentId: M:Global.HopMovementController.Update
+  id: Update
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: HopMovementController.Update()
+  fullName: HopMovementController.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Update
+  overload: Global.HopMovementController.Update*
+- uid: Global.HopMovementController.ChargeLeap(System.Single,System.Boolean)
+  commentId: M:Global.HopMovementController.ChargeLeap(System.Single,System.Boolean)
+  id: ChargeLeap(System.Single,System.Boolean)
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: ChargeLeap(float, bool)
+  nameWithType: HopMovementController.ChargeLeap(float, bool)
+  fullName: HopMovementController.ChargeLeap(float, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ChargeLeap
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 103
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ChargeLeap(float direction, bool queue = true)
+    parameters:
+    - id: direction
+      type: System.Single
+    - id: queue
+      type: System.Boolean
+    content.vb: Public Sub ChargeLeap(direction As Single, queue As Boolean = True)
+  overload: Global.HopMovementController.ChargeLeap*
+  nameWithType.vb: HopMovementController.ChargeLeap(Single, Boolean)
+  fullName.vb: HopMovementController.ChargeLeap(Single, Boolean)
+  name.vb: ChargeLeap(Single, Boolean)
+- uid: Global.HopMovementController.CanCharge
+  commentId: M:Global.HopMovementController.CanCharge
+  id: CanCharge
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: CanCharge()
+  nameWithType: HopMovementController.CanCharge()
+  fullName: HopMovementController.CanCharge()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CanCharge
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 132
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool CanCharge()
+    return:
+      type: System.Boolean
+    content.vb: Public Function CanCharge() As Boolean
+  overload: Global.HopMovementController.CanCharge*
+- uid: Global.HopMovementController.Idle
+  commentId: M:Global.HopMovementController.Idle
+  id: Idle
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: Idle()
+  nameWithType: HopMovementController.Idle()
+  fullName: HopMovementController.Idle()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Idle
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 137
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Idle()
+    content.vb: Public Sub Idle()
+  overload: Global.HopMovementController.Idle*
+- uid: Global.HopMovementController.GoTo(System.Single)
+  commentId: M:Global.HopMovementController.GoTo(System.Single)
+  id: GoTo(System.Single)
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: GoTo(float)
+  nameWithType: HopMovementController.GoTo(float)
+  fullName: HopMovementController.GoTo(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GoTo
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 143
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void GoTo(float locationX)
+    parameters:
+    - id: locationX
+      type: System.Single
+    content.vb: Public Sub [GoTo](locationX As Single)
+  overload: Global.HopMovementController.GoTo*
+  nameWithType.vb: HopMovementController.GoTo(Single)
+  fullName.vb: HopMovementController.GoTo(Single)
+  name.vb: GoTo(Single)
+- uid: Global.HopMovementController.Hop(System.Int32)
+  commentId: M:Global.HopMovementController.Hop(System.Int32)
+  id: Hop(System.Int32)
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: Hop(int)
+  nameWithType: HopMovementController.Hop(int)
+  fullName: HopMovementController.Hop(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Hop
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Hop(int direction)
+    parameters:
+    - id: direction
+      type: System.Int32
+    content.vb: Public Sub Hop(direction As Integer)
+  overload: Global.HopMovementController.Hop*
+  nameWithType.vb: HopMovementController.Hop(Integer)
+  fullName.vb: HopMovementController.Hop(Integer)
+  name.vb: Hop(Integer)
+- uid: Global.HopMovementController.Reset
+  commentId: M:Global.HopMovementController.Reset
+  id: Reset
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: HopMovementController.Reset()
+  fullName: HopMovementController.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Reset
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 157
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset()
+  overridden: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Reset
+  overload: Global.HopMovementController.Reset*
+- uid: Global.HopMovementController.RegisterHopCallback(IntObject.Action)
+  commentId: M:Global.HopMovementController.RegisterHopCallback(IntObject.Action)
+  id: RegisterHopCallback(IntObject.Action)
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterHopCallback(Action)
+  nameWithType: HopMovementController.RegisterHopCallback(IntObject.Action)
+  fullName: HopMovementController.RegisterHopCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterHopCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 251
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterHopCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterHopCallback(callback As IntObject.Action)
+  overload: Global.HopMovementController.RegisterHopCallback*
+- uid: Global.HopMovementController.UnregisterHopCallback(IntObject.Action)
+  commentId: M:Global.HopMovementController.UnregisterHopCallback(IntObject.Action)
+  id: UnregisterHopCallback(IntObject.Action)
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnregisterHopCallback(Action)
+  nameWithType: HopMovementController.UnregisterHopCallback(IntObject.Action)
+  fullName: HopMovementController.UnregisterHopCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnregisterHopCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 256
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnregisterHopCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnregisterHopCallback(callback As IntObject.Action)
+  overload: Global.HopMovementController.UnregisterHopCallback*
+- uid: Global.HopMovementController.RegisterOnLandCallback(IntObject.Action)
+  commentId: M:Global.HopMovementController.RegisterOnLandCallback(IntObject.Action)
+  id: RegisterOnLandCallback(IntObject.Action)
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: RegisterOnLandCallback(Action)
+  nameWithType: HopMovementController.RegisterOnLandCallback(IntObject.Action)
+  fullName: HopMovementController.RegisterOnLandCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterOnLandCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 261
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterOnLandCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterOnLandCallback(callback As IntObject.Action)
+  overload: Global.HopMovementController.RegisterOnLandCallback*
+- uid: Global.HopMovementController.UnegisterOnLandCallback(IntObject.Action)
+  commentId: M:Global.HopMovementController.UnegisterOnLandCallback(IntObject.Action)
+  id: UnegisterOnLandCallback(IntObject.Action)
+  parent: Global.HopMovementController
+  langs:
+  - csharp
+  - vb
+  name: UnegisterOnLandCallback(Action)
+  nameWithType: HopMovementController.UnegisterOnLandCallback(IntObject.Action)
+  fullName: HopMovementController.UnegisterOnLandCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnegisterOnLandCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 266
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnegisterOnLandCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnegisterOnLandCallback(callback As IntObject.Action)
+  overload: Global.HopMovementController.UnegisterOnLandCallback*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  commentId: T:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2
+  name: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState)
+  name.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2
+    name: EnemyMovementController
+  - name: <
+  - uid: Global.HopMovementProperties
+    name: HopMovementProperties
+  - name: ','
+  - name: " "
+  - uid: Global.HopMovementController
+    name: HopMovementController
+  - name: .
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: '>'
+  spec.vb:
+  - uid: Global.EnemyMovementController`2
+    name: EnemyMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.HopMovementProperties
+    name: HopMovementProperties
+  - name: ','
+  - name: " "
+  - uid: Global.HopMovementController
+    name: HopMovementController
+  - name: .
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.MovementProperties
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.MovementProperties
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.MovementProperties
+  name: MovementProperties
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.MovementProperties
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.MovementProperties
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).MovementProperties
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).MovementProperties
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Enemy
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Enemy
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.Enemy
+  name: Enemy
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.Enemy
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.Enemy
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).Enemy
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).Enemy
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.osm
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.osm
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.osm
+  name: osm
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.osm
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.osm
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).osm
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).osm
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CollideX
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CollideX
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.CollideX
+  name: CollideX
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.CollideX
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.CollideX
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).CollideX
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).CollideX
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CollideY
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CollideY
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.CollideY
+  name: CollideY
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.CollideY
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.CollideY
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).CollideY
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).CollideY
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OverlapActor
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OverlapActor
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.OverlapActor
+  name: OverlapActor
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OverlapActor
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OverlapActor
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OverlapActor
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OverlapActor
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OverlapTrigger
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OverlapTrigger
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.OverlapTrigger
+  name: OverlapTrigger
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OverlapTrigger
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OverlapTrigger
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OverlapTrigger
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OverlapTrigger
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.StartCharge
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.StartCharge
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.StartCharge
+  name: StartCharge
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.StartCharge
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.StartCharge
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).StartCharge
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).StartCharge
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.EndCharge
+  commentId: F:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.EndCharge
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.EndCharge
+  name: EndCharge
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.EndCharge
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.EndCharge
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).EndCharge
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).EndCharge
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CurrentState
+  commentId: P:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.CurrentState
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.CurrentState
+  name: CurrentState
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.CurrentState
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.CurrentState
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).CurrentState
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).CurrentState
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Initialize(IntEnemy)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Initialize(IntEnemy)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.Initialize(IntEnemy)
+  name: Initialize(IntEnemy)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.Initialize(IntEnemy)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.Initialize(IntEnemy)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).Initialize(IntEnemy)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).Initialize(IntEnemy)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Initialize(IntEnemy)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Initialize(IntEnemy)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetTimeInState
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetTimeInState
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.GetTimeInState
+  name: GetTimeInState()
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetTimeInState()
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetTimeInState()
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetTimeInState()
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetTimeInState()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetTimeInState
+    name: GetTimeInState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetTimeInState
+    name: GetTimeInState
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Update
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Update
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.Update
+  name: Update()
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.Update()
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.Update()
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).Update()
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).Update()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Reset
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Reset
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.Reset
+  name: Reset()
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.Reset()
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.Reset()
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).Reset()
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).Reset()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  name: RegisterForStateEnter(HopMovementState, TransitionAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterForStateEnter(HopMovementController.HopMovementState, OptionStateMachine<HopMovementController.HopMovementState>.TransitionAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterForStateEnter(HopMovementController.HopMovementState, OptionStateMachine<HopMovementController.HopMovementState>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterForStateEnter(HopMovementController.HopMovementState, OptionStateMachine(Of HopMovementController.HopMovementState).TransitionAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterForStateEnter(HopMovementController.HopMovementState, OptionStateMachine(Of HopMovementController.HopMovementState).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+    name: RegisterForStateEnter
+  - name: (
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+    name: RegisterForStateEnter
+  - name: (
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  name: UnregisterForStateEnter(HopMovementState, TransitionAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterForStateEnter(HopMovementController.HopMovementState, OptionStateMachine<HopMovementController.HopMovementState>.TransitionAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterForStateEnter(HopMovementController.HopMovementState, OptionStateMachine<HopMovementController.HopMovementState>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterForStateEnter(HopMovementController.HopMovementState, OptionStateMachine(Of HopMovementController.HopMovementState).TransitionAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterForStateEnter(HopMovementController.HopMovementState, OptionStateMachine(Of HopMovementController.HopMovementState).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+    name: UnregisterForStateEnter
+  - name: (
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateEnter(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+    name: UnregisterForStateEnter
+  - name: (
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  name: RegisterForStateExit(HopMovementState, TransitionAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterForStateExit(HopMovementController.HopMovementState, OptionStateMachine<HopMovementController.HopMovementState>.TransitionAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterForStateExit(HopMovementController.HopMovementState, OptionStateMachine<HopMovementController.HopMovementState>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterForStateExit(HopMovementController.HopMovementState, OptionStateMachine(Of HopMovementController.HopMovementState).TransitionAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterForStateExit(HopMovementController.HopMovementState, OptionStateMachine(Of HopMovementController.HopMovementState).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+    name: RegisterForStateExit
+  - name: (
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+    name: RegisterForStateExit
+  - name: (
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  name: UnregisterForStateExit(HopMovementState, TransitionAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterForStateExit(HopMovementController.HopMovementState, OptionStateMachine<HopMovementController.HopMovementState>.TransitionAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterForStateExit(HopMovementController.HopMovementState, OptionStateMachine<HopMovementController.HopMovementState>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterForStateExit(HopMovementController.HopMovementState, OptionStateMachine(Of HopMovementController.HopMovementState).TransitionAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterForStateExit(HopMovementController.HopMovementState, OptionStateMachine(Of HopMovementController.HopMovementState).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+    name: UnregisterForStateExit
+  - name: (
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterForStateExit(HopMovementController.HopMovementState,OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction)
+    name: UnregisterForStateExit
+  - name: (
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{HopMovementController.HopMovementState}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+  name: RegisterCollideXCallback(SolidAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterCollideXCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterCollideXCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterCollideXCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterCollideXCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+    name: RegisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideXCallback(IntObject.SolidAction)
+    name: RegisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+  name: UnregisterCollideXCallback(SolidAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterCollideXCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterCollideXCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterCollideXCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterCollideXCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+    name: UnregisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideXCallback(IntObject.SolidAction)
+    name: UnregisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+  name: RegisterCollideYCallback(SolidAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterCollideYCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterCollideYCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterCollideYCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterCollideYCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+    name: RegisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterCollideYCallback(IntObject.SolidAction)
+    name: RegisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+  name: UnregisterCollideYCallback(SolidAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterCollideYCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterCollideYCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterCollideYCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterCollideYCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+    name: UnregisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterCollideYCallback(IntObject.SolidAction)
+    name: UnregisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+  name: RegisterOverlapActorCallback(ActorAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterOverlapActorCallback(IntObject.ActorAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterOverlapActorCallback(IntObject.ActorAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterOverlapActorCallback(IntObject.ActorAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterOverlapActorCallback(IntObject.ActorAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+    name: RegisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapActorCallback(IntObject.ActorAction)
+    name: RegisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  name: UnregisterOverlapActorCallback(ActorAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterOverlapActorCallback(IntObject.ActorAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterOverlapActorCallback(IntObject.ActorAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+    name: UnregisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapActorCallback(IntObject.ActorAction)
+    name: UnregisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  name: RegisterOverlapTriggerCallback(TriggerAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: RegisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: RegisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  name: UnregisterOverlapTriggerCallback(TriggerAction)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: UnregisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: UnregisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideXCallback
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideXCallback
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.GetCollideXCallback
+  name: GetCollideXCallback()
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetCollideXCallback()
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetCollideXCallback()
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetCollideXCallback()
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetCollideXCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideXCallback
+    name: GetCollideXCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideXCallback
+    name: GetCollideXCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideYCallback
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideYCallback
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.GetCollideYCallback
+  name: GetCollideYCallback()
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetCollideYCallback()
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetCollideYCallback()
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetCollideYCallback()
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetCollideYCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideYCallback
+    name: GetCollideYCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetCollideYCallback
+    name: GetCollideYCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapActorCallback
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapActorCallback
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.GetOverlapActorCallback
+  name: GetOverlapActorCallback()
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetOverlapActorCallback()
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetOverlapActorCallback()
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetOverlapActorCallback()
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetOverlapActorCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapActorCallback
+    name: GetOverlapActorCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapActorCallback
+    name: GetOverlapActorCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapTriggerCallback
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapTriggerCallback
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.GetOverlapTriggerCallback
+  name: GetOverlapTriggerCallback()
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetOverlapTriggerCallback()
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.GetOverlapTriggerCallback()
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetOverlapTriggerCallback()
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).GetOverlapTriggerCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapTriggerCallback
+    name: GetOverlapTriggerCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.GetOverlapTriggerCallback
+    name: GetOverlapTriggerCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideX(IntSolid)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideX(IntSolid)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.OnCollideX(IntSolid)
+  name: OnCollideX(IntSolid)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OnCollideX(IntSolid)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OnCollideX(IntSolid)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OnCollideX(IntSolid)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OnCollideX(IntSolid)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideX(IntSolid)
+    name: OnCollideX
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideX(IntSolid)
+    name: OnCollideX
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideY(IntSolid)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideY(IntSolid)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.OnCollideY(IntSolid)
+  name: OnCollideY(IntSolid)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OnCollideY(IntSolid)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OnCollideY(IntSolid)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OnCollideY(IntSolid)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OnCollideY(IntSolid)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideY(IntSolid)
+    name: OnCollideY
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnCollideY(IntSolid)
+    name: OnCollideY
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapActor(IntActor)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapActor(IntActor)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+  name: OnOverlapActor(IntActor)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OnOverlapActor(IntActor)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OnOverlapActor(IntActor)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OnOverlapActor(IntActor)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OnOverlapActor(IntActor)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapActor(IntActor)
+    name: OnOverlapActor
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapActor(IntActor)
+    name: OnOverlapActor
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapTrigger(IntTrigger)
+  commentId: M:Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapTrigger(IntTrigger)
+  parent: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}
+  definition: Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+  name: OnOverlapTrigger(IntTrigger)
+  nameWithType: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OnOverlapTrigger(IntTrigger)
+  fullName: EnemyMovementController<HopMovementProperties, HopMovementController.HopMovementState>.OnOverlapTrigger(IntTrigger)
+  nameWithType.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OnOverlapTrigger(IntTrigger)
+  fullName.vb: EnemyMovementController(Of HopMovementProperties, HopMovementController.HopMovementState).OnOverlapTrigger(IntTrigger)
+  spec.csharp:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapTrigger(IntTrigger)
+    name: OnOverlapTrigger
+  - name: (
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController{HopMovementProperties,HopMovementController.HopMovementState}.OnOverlapTrigger(IntTrigger)
+    name: OnOverlapTrigger
+  - name: (
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.EnemyMovementController`2
+  commentId: T:Global.EnemyMovementController`2
+  name: EnemyMovementController<T, U>
+  nameWithType: EnemyMovementController<T, U>
+  fullName: EnemyMovementController<T, U>
+  nameWithType.vb: EnemyMovementController(Of T, U)
+  fullName.vb: EnemyMovementController(Of T, U)
+  name.vb: EnemyMovementController(Of T, U)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2
+    name: EnemyMovementController
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: U
+  - name: '>'
+  spec.vb:
+  - uid: Global.EnemyMovementController`2
+    name: EnemyMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: U
+  - name: )
+- uid: Global.EnemyMovementController`2.MovementProperties
+  commentId: F:Global.EnemyMovementController`2.MovementProperties
+  name: MovementProperties
+  nameWithType: EnemyMovementController<T, U>.MovementProperties
+  fullName: EnemyMovementController<T, U>.MovementProperties
+  nameWithType.vb: EnemyMovementController(Of T, U).MovementProperties
+  fullName.vb: EnemyMovementController(Of T, U).MovementProperties
+- uid: Global.EnemyMovementController`2.Enemy
+  commentId: F:Global.EnemyMovementController`2.Enemy
+  name: Enemy
+  nameWithType: EnemyMovementController<T, U>.Enemy
+  fullName: EnemyMovementController<T, U>.Enemy
+  nameWithType.vb: EnemyMovementController(Of T, U).Enemy
+  fullName.vb: EnemyMovementController(Of T, U).Enemy
+- uid: Global.EnemyMovementController`2.osm
+  commentId: F:Global.EnemyMovementController`2.osm
+  name: osm
+  nameWithType: EnemyMovementController<T, U>.osm
+  fullName: EnemyMovementController<T, U>.osm
+  nameWithType.vb: EnemyMovementController(Of T, U).osm
+  fullName.vb: EnemyMovementController(Of T, U).osm
+- uid: Global.EnemyMovementController`2.CollideX
+  commentId: F:Global.EnemyMovementController`2.CollideX
+  name: CollideX
+  nameWithType: EnemyMovementController<T, U>.CollideX
+  fullName: EnemyMovementController<T, U>.CollideX
+  nameWithType.vb: EnemyMovementController(Of T, U).CollideX
+  fullName.vb: EnemyMovementController(Of T, U).CollideX
+- uid: Global.EnemyMovementController`2.CollideY
+  commentId: F:Global.EnemyMovementController`2.CollideY
+  name: CollideY
+  nameWithType: EnemyMovementController<T, U>.CollideY
+  fullName: EnemyMovementController<T, U>.CollideY
+  nameWithType.vb: EnemyMovementController(Of T, U).CollideY
+  fullName.vb: EnemyMovementController(Of T, U).CollideY
+- uid: Global.EnemyMovementController`2.OverlapActor
+  commentId: F:Global.EnemyMovementController`2.OverlapActor
+  name: OverlapActor
+  nameWithType: EnemyMovementController<T, U>.OverlapActor
+  fullName: EnemyMovementController<T, U>.OverlapActor
+  nameWithType.vb: EnemyMovementController(Of T, U).OverlapActor
+  fullName.vb: EnemyMovementController(Of T, U).OverlapActor
+- uid: Global.EnemyMovementController`2.OverlapTrigger
+  commentId: F:Global.EnemyMovementController`2.OverlapTrigger
+  name: OverlapTrigger
+  nameWithType: EnemyMovementController<T, U>.OverlapTrigger
+  fullName: EnemyMovementController<T, U>.OverlapTrigger
+  nameWithType.vb: EnemyMovementController(Of T, U).OverlapTrigger
+  fullName.vb: EnemyMovementController(Of T, U).OverlapTrigger
+- uid: Global.EnemyMovementController`2.StartCharge
+  commentId: F:Global.EnemyMovementController`2.StartCharge
+  name: StartCharge
+  nameWithType: EnemyMovementController<T, U>.StartCharge
+  fullName: EnemyMovementController<T, U>.StartCharge
+  nameWithType.vb: EnemyMovementController(Of T, U).StartCharge
+  fullName.vb: EnemyMovementController(Of T, U).StartCharge
+- uid: Global.EnemyMovementController`2.EndCharge
+  commentId: F:Global.EnemyMovementController`2.EndCharge
+  name: EndCharge
+  nameWithType: EnemyMovementController<T, U>.EndCharge
+  fullName: EnemyMovementController<T, U>.EndCharge
+  nameWithType.vb: EnemyMovementController(Of T, U).EndCharge
+  fullName.vb: EnemyMovementController(Of T, U).EndCharge
+- uid: Global.EnemyMovementController`2.CurrentState
+  commentId: P:Global.EnemyMovementController`2.CurrentState
+  name: CurrentState
+  nameWithType: EnemyMovementController<T, U>.CurrentState
+  fullName: EnemyMovementController<T, U>.CurrentState
+  nameWithType.vb: EnemyMovementController(Of T, U).CurrentState
+  fullName.vb: EnemyMovementController(Of T, U).CurrentState
+- uid: Global.EnemyMovementController`2.Initialize(IntEnemy)
+  commentId: M:Global.EnemyMovementController`2.Initialize(IntEnemy)
+  name: Initialize(IntEnemy)
+  nameWithType: EnemyMovementController<T, U>.Initialize(IntEnemy)
+  fullName: EnemyMovementController<T, U>.Initialize(IntEnemy)
+  nameWithType.vb: EnemyMovementController(Of T, U).Initialize(IntEnemy)
+  fullName.vb: EnemyMovementController(Of T, U).Initialize(IntEnemy)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.Initialize(IntEnemy)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.Initialize(IntEnemy)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: )
+- uid: Global.EnemyMovementController`2.GetTimeInState
+  commentId: M:Global.EnemyMovementController`2.GetTimeInState
+  name: GetTimeInState()
+  nameWithType: EnemyMovementController<T, U>.GetTimeInState()
+  fullName: EnemyMovementController<T, U>.GetTimeInState()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetTimeInState()
+  fullName.vb: EnemyMovementController(Of T, U).GetTimeInState()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetTimeInState
+    name: GetTimeInState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetTimeInState
+    name: GetTimeInState
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.Update
+  commentId: M:Global.EnemyMovementController`2.Update
+  name: Update()
+  nameWithType: EnemyMovementController<T, U>.Update()
+  fullName: EnemyMovementController<T, U>.Update()
+  nameWithType.vb: EnemyMovementController(Of T, U).Update()
+  fullName.vb: EnemyMovementController(Of T, U).Update()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.Reset
+  commentId: M:Global.EnemyMovementController`2.Reset
+  name: Reset()
+  nameWithType: EnemyMovementController<T, U>.Reset()
+  fullName: EnemyMovementController<T, U>.Reset()
+  nameWithType.vb: EnemyMovementController(Of T, U).Reset()
+  fullName.vb: EnemyMovementController(Of T, U).Reset()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  name: RegisterForStateEnter(U, TransitionAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterForStateEnter(U, OptionStateMachine<U>.TransitionAction)
+  fullName: EnemyMovementController<T, U>.RegisterForStateEnter(U, OptionStateMachine<U>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterForStateEnter(U, OptionStateMachine(Of U).TransitionAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterForStateEnter(U, OptionStateMachine(Of U).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+    name: RegisterForStateEnter
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+    name: RegisterForStateEnter
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+  name: UnregisterForStateEnter(U, TransitionAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterForStateEnter(U, OptionStateMachine<U>.TransitionAction)
+  fullName: EnemyMovementController<T, U>.UnregisterForStateEnter(U, OptionStateMachine<U>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterForStateEnter(U, OptionStateMachine(Of U).TransitionAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterForStateEnter(U, OptionStateMachine(Of U).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+    name: UnregisterForStateEnter
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterForStateEnter(`1,OptionStateMachine{`1}.TransitionAction)
+    name: UnregisterForStateEnter
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  name: RegisterForStateExit(U, TransitionAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterForStateExit(U, OptionStateMachine<U>.TransitionAction)
+  fullName: EnemyMovementController<T, U>.RegisterForStateExit(U, OptionStateMachine<U>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterForStateExit(U, OptionStateMachine(Of U).TransitionAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterForStateExit(U, OptionStateMachine(Of U).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+    name: RegisterForStateExit
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+    name: RegisterForStateExit
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+  name: UnregisterForStateExit(U, TransitionAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterForStateExit(U, OptionStateMachine<U>.TransitionAction)
+  fullName: EnemyMovementController<T, U>.UnregisterForStateExit(U, OptionStateMachine<U>.TransitionAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterForStateExit(U, OptionStateMachine(Of U).TransitionAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterForStateExit(U, OptionStateMachine(Of U).TransitionAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+    name: UnregisterForStateExit
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterForStateExit(`1,OptionStateMachine{`1}.TransitionAction)
+    name: UnregisterForStateExit
+  - name: (
+  - name: U
+  - name: ','
+  - name: " "
+  - uid: Global.OptionStateMachine{`1}.TransitionAction
+    name: TransitionAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+  name: RegisterCollideXCallback(SolidAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterCollideXCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<T, U>.RegisterCollideXCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterCollideXCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterCollideXCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+    name: RegisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterCollideXCallback(IntObject.SolidAction)
+    name: RegisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+  name: UnregisterCollideXCallback(SolidAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterCollideXCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<T, U>.UnregisterCollideXCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterCollideXCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterCollideXCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+    name: UnregisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterCollideXCallback(IntObject.SolidAction)
+    name: UnregisterCollideXCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+  name: RegisterCollideYCallback(SolidAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterCollideYCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<T, U>.RegisterCollideYCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterCollideYCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterCollideYCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+    name: RegisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterCollideYCallback(IntObject.SolidAction)
+    name: RegisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+  name: UnregisterCollideYCallback(SolidAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterCollideYCallback(IntObject.SolidAction)
+  fullName: EnemyMovementController<T, U>.UnregisterCollideYCallback(IntObject.SolidAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterCollideYCallback(IntObject.SolidAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterCollideYCallback(IntObject.SolidAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+    name: UnregisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterCollideYCallback(IntObject.SolidAction)
+    name: UnregisterCollideYCallback
+  - name: (
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+  name: RegisterOverlapActorCallback(ActorAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterOverlapActorCallback(IntObject.ActorAction)
+  fullName: EnemyMovementController<T, U>.RegisterOverlapActorCallback(IntObject.ActorAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterOverlapActorCallback(IntObject.ActorAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterOverlapActorCallback(IntObject.ActorAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+    name: RegisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterOverlapActorCallback(IntObject.ActorAction)
+    name: RegisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  name: UnregisterOverlapActorCallback(ActorAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  fullName: EnemyMovementController<T, U>.UnregisterOverlapActorCallback(IntObject.ActorAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterOverlapActorCallback(IntObject.ActorAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterOverlapActorCallback(IntObject.ActorAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+    name: UnregisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterOverlapActorCallback(IntObject.ActorAction)
+    name: UnregisterOverlapActorCallback
+  - name: (
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  - name: )
+- uid: Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  commentId: M:Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  name: RegisterOverlapTriggerCallback(TriggerAction)
+  nameWithType: EnemyMovementController<T, U>.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName: EnemyMovementController<T, U>.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName.vb: EnemyMovementController(Of T, U).RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: RegisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.RegisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: RegisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  commentId: M:Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  name: UnregisterOverlapTriggerCallback(TriggerAction)
+  nameWithType: EnemyMovementController<T, U>.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName: EnemyMovementController<T, U>.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  nameWithType.vb: EnemyMovementController(Of T, U).UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  fullName.vb: EnemyMovementController(Of T, U).UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: UnregisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.UnregisterOverlapTriggerCallback(IntObject.TriggerAction)
+    name: UnregisterOverlapTriggerCallback
+  - name: (
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  - name: )
+- uid: Global.EnemyMovementController`2.GetCollideXCallback
+  commentId: M:Global.EnemyMovementController`2.GetCollideXCallback
+  name: GetCollideXCallback()
+  nameWithType: EnemyMovementController<T, U>.GetCollideXCallback()
+  fullName: EnemyMovementController<T, U>.GetCollideXCallback()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetCollideXCallback()
+  fullName.vb: EnemyMovementController(Of T, U).GetCollideXCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetCollideXCallback
+    name: GetCollideXCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetCollideXCallback
+    name: GetCollideXCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.GetCollideYCallback
+  commentId: M:Global.EnemyMovementController`2.GetCollideYCallback
+  name: GetCollideYCallback()
+  nameWithType: EnemyMovementController<T, U>.GetCollideYCallback()
+  fullName: EnemyMovementController<T, U>.GetCollideYCallback()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetCollideYCallback()
+  fullName.vb: EnemyMovementController(Of T, U).GetCollideYCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetCollideYCallback
+    name: GetCollideYCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetCollideYCallback
+    name: GetCollideYCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.GetOverlapActorCallback
+  commentId: M:Global.EnemyMovementController`2.GetOverlapActorCallback
+  name: GetOverlapActorCallback()
+  nameWithType: EnemyMovementController<T, U>.GetOverlapActorCallback()
+  fullName: EnemyMovementController<T, U>.GetOverlapActorCallback()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetOverlapActorCallback()
+  fullName.vb: EnemyMovementController(Of T, U).GetOverlapActorCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetOverlapActorCallback
+    name: GetOverlapActorCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetOverlapActorCallback
+    name: GetOverlapActorCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.GetOverlapTriggerCallback
+  commentId: M:Global.EnemyMovementController`2.GetOverlapTriggerCallback
+  name: GetOverlapTriggerCallback()
+  nameWithType: EnemyMovementController<T, U>.GetOverlapTriggerCallback()
+  fullName: EnemyMovementController<T, U>.GetOverlapTriggerCallback()
+  nameWithType.vb: EnemyMovementController(Of T, U).GetOverlapTriggerCallback()
+  fullName.vb: EnemyMovementController(Of T, U).GetOverlapTriggerCallback()
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.GetOverlapTriggerCallback
+    name: GetOverlapTriggerCallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.GetOverlapTriggerCallback
+    name: GetOverlapTriggerCallback
+  - name: (
+  - name: )
+- uid: Global.EnemyMovementController`2.OnCollideX(IntSolid)
+  commentId: M:Global.EnemyMovementController`2.OnCollideX(IntSolid)
+  name: OnCollideX(IntSolid)
+  nameWithType: EnemyMovementController<T, U>.OnCollideX(IntSolid)
+  fullName: EnemyMovementController<T, U>.OnCollideX(IntSolid)
+  nameWithType.vb: EnemyMovementController(Of T, U).OnCollideX(IntSolid)
+  fullName.vb: EnemyMovementController(Of T, U).OnCollideX(IntSolid)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.OnCollideX(IntSolid)
+    name: OnCollideX
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.OnCollideX(IntSolid)
+    name: OnCollideX
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.EnemyMovementController`2.OnCollideY(IntSolid)
+  commentId: M:Global.EnemyMovementController`2.OnCollideY(IntSolid)
+  name: OnCollideY(IntSolid)
+  nameWithType: EnemyMovementController<T, U>.OnCollideY(IntSolid)
+  fullName: EnemyMovementController<T, U>.OnCollideY(IntSolid)
+  nameWithType.vb: EnemyMovementController(Of T, U).OnCollideY(IntSolid)
+  fullName.vb: EnemyMovementController(Of T, U).OnCollideY(IntSolid)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.OnCollideY(IntSolid)
+    name: OnCollideY
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.OnCollideY(IntSolid)
+    name: OnCollideY
+  - name: (
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+  commentId: M:Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+  name: OnOverlapActor(IntActor)
+  nameWithType: EnemyMovementController<T, U>.OnOverlapActor(IntActor)
+  fullName: EnemyMovementController<T, U>.OnOverlapActor(IntActor)
+  nameWithType.vb: EnemyMovementController(Of T, U).OnOverlapActor(IntActor)
+  fullName.vb: EnemyMovementController(Of T, U).OnOverlapActor(IntActor)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+    name: OnOverlapActor
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.OnOverlapActor(IntActor)
+    name: OnOverlapActor
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+  commentId: M:Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+  name: OnOverlapTrigger(IntTrigger)
+  nameWithType: EnemyMovementController<T, U>.OnOverlapTrigger(IntTrigger)
+  fullName: EnemyMovementController<T, U>.OnOverlapTrigger(IntTrigger)
+  nameWithType.vb: EnemyMovementController(Of T, U).OnOverlapTrigger(IntTrigger)
+  fullName.vb: EnemyMovementController(Of T, U).OnOverlapTrigger(IntTrigger)
+  spec.csharp:
+  - uid: Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+    name: OnOverlapTrigger
+  - name: (
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+  spec.vb:
+  - uid: Global.EnemyMovementController`2.OnOverlapTrigger(IntTrigger)
+    name: OnOverlapTrigger
+  - name: (
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.HopMovementController.IsHopping*
+  commentId: Overload:Global.HopMovementController.IsHopping
+  name: IsHopping
+  nameWithType: HopMovementController.IsHopping
+  fullName: HopMovementController.IsHopping
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.HopMovementController.Initialize*
+  commentId: Overload:Global.HopMovementController.Initialize
+  name: Initialize
+  nameWithType: HopMovementController.Initialize
+  fullName: HopMovementController.Initialize
+- uid: Global.IntEnemy
+  commentId: T:Global.IntEnemy
+  name: IntEnemy
+  nameWithType: IntEnemy
+  fullName: IntEnemy
+- uid: Global.HopMovementController.Update*
+  commentId: Overload:Global.HopMovementController.Update
+  name: Update
+  nameWithType: HopMovementController.Update
+  fullName: HopMovementController.Update
+- uid: Global.HopMovementController.ChargeLeap*
+  commentId: Overload:Global.HopMovementController.ChargeLeap
+  name: ChargeLeap
+  nameWithType: HopMovementController.ChargeLeap
+  fullName: HopMovementController.ChargeLeap
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.HopMovementController.CanCharge*
+  commentId: Overload:Global.HopMovementController.CanCharge
+  name: CanCharge
+  nameWithType: HopMovementController.CanCharge
+  fullName: HopMovementController.CanCharge
+- uid: Global.HopMovementController.Idle*
+  commentId: Overload:Global.HopMovementController.Idle
+  name: Idle
+  nameWithType: HopMovementController.Idle
+  fullName: HopMovementController.Idle
+- uid: Global.HopMovementController.GoTo*
+  commentId: Overload:Global.HopMovementController.GoTo
+  name: GoTo
+  nameWithType: HopMovementController.GoTo
+  fullName: HopMovementController.GoTo
+- uid: Global.HopMovementController.Hop*
+  commentId: Overload:Global.HopMovementController.Hop
+  name: Hop
+  nameWithType: HopMovementController.Hop
+  fullName: HopMovementController.Hop
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.HopMovementController.Reset*
+  commentId: Overload:Global.HopMovementController.Reset
+  name: Reset
+  nameWithType: HopMovementController.Reset
+  fullName: HopMovementController.Reset
+- uid: Global.HopMovementController.RegisterHopCallback*
+  commentId: Overload:Global.HopMovementController.RegisterHopCallback
+  name: RegisterHopCallback
+  nameWithType: HopMovementController.RegisterHopCallback
+  fullName: HopMovementController.RegisterHopCallback
+- uid: Global.IntObject.Action
+  commentId: T:Global.IntObject.Action
+  name: IntObject.Action
+  nameWithType: IntObject.Action
+  fullName: IntObject.Action
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+- uid: Global.HopMovementController.UnregisterHopCallback*
+  commentId: Overload:Global.HopMovementController.UnregisterHopCallback
+  name: UnregisterHopCallback
+  nameWithType: HopMovementController.UnregisterHopCallback
+  fullName: HopMovementController.UnregisterHopCallback
+- uid: Global.HopMovementController.RegisterOnLandCallback*
+  commentId: Overload:Global.HopMovementController.RegisterOnLandCallback
+  name: RegisterOnLandCallback
+  nameWithType: HopMovementController.RegisterOnLandCallback
+  fullName: HopMovementController.RegisterOnLandCallback
+- uid: Global.HopMovementController.UnegisterOnLandCallback*
+  commentId: Overload:Global.HopMovementController.UnegisterOnLandCallback
+  name: UnegisterOnLandCallback
+  nameWithType: HopMovementController.UnegisterOnLandCallback
+  fullName: HopMovementController.UnegisterOnLandCallback

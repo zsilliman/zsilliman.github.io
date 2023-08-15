@@ -1,0 +1,969 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.EasingFunction.Ease
+  commentId: T:Global.EasingFunction.Ease
+  id: EasingFunction.Ease
+  parent: Global
+  children:
+  - Global.EasingFunction.Ease.EaseInBack
+  - Global.EasingFunction.Ease.EaseInBounce
+  - Global.EasingFunction.Ease.EaseInCirc
+  - Global.EasingFunction.Ease.EaseInCubic
+  - Global.EasingFunction.Ease.EaseInElastic
+  - Global.EasingFunction.Ease.EaseInExpo
+  - Global.EasingFunction.Ease.EaseInOutBack
+  - Global.EasingFunction.Ease.EaseInOutBounce
+  - Global.EasingFunction.Ease.EaseInOutCirc
+  - Global.EasingFunction.Ease.EaseInOutCubic
+  - Global.EasingFunction.Ease.EaseInOutElastic
+  - Global.EasingFunction.Ease.EaseInOutExpo
+  - Global.EasingFunction.Ease.EaseInOutQuad
+  - Global.EasingFunction.Ease.EaseInOutQuart
+  - Global.EasingFunction.Ease.EaseInOutQuint
+  - Global.EasingFunction.Ease.EaseInOutSine
+  - Global.EasingFunction.Ease.EaseInQuad
+  - Global.EasingFunction.Ease.EaseInQuart
+  - Global.EasingFunction.Ease.EaseInQuint
+  - Global.EasingFunction.Ease.EaseInSine
+  - Global.EasingFunction.Ease.EaseOutBack
+  - Global.EasingFunction.Ease.EaseOutBounce
+  - Global.EasingFunction.Ease.EaseOutCirc
+  - Global.EasingFunction.Ease.EaseOutCubic
+  - Global.EasingFunction.Ease.EaseOutElastic
+  - Global.EasingFunction.Ease.EaseOutExpo
+  - Global.EasingFunction.Ease.EaseOutQuad
+  - Global.EasingFunction.Ease.EaseOutQuart
+  - Global.EasingFunction.Ease.EaseOutQuint
+  - Global.EasingFunction.Ease.EaseOutSine
+  - Global.EasingFunction.Ease.Linear
+  - Global.EasingFunction.Ease.Spring
+  langs:
+  - csharp
+  - vb
+  name: EasingFunction.Ease
+  nameWithType: EasingFunction.Ease
+  fullName: EasingFunction.Ease
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Ease
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum EasingFunction.Ease
+    content.vb: Public Enum EasingFunction.Ease
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.EasingFunction.Ease.EaseInQuad
+  commentId: F:Global.EasingFunction.Ease.EaseInQuad
+  id: EaseInQuad
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuad
+  nameWithType: EasingFunction.Ease.EaseInQuad
+  fullName: EasingFunction.Ease.EaseInQuad
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuad
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInQuad = 0
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutQuad
+  commentId: F:Global.EasingFunction.Ease.EaseOutQuad
+  id: EaseOutQuad
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuad
+  nameWithType: EasingFunction.Ease.EaseOutQuad
+  fullName: EasingFunction.Ease.EaseOutQuad
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuad
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutQuad = 1
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutQuad
+  commentId: F:Global.EasingFunction.Ease.EaseInOutQuad
+  id: EaseInOutQuad
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuad
+  nameWithType: EasingFunction.Ease.EaseInOutQuad
+  fullName: EasingFunction.Ease.EaseInOutQuad
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuad
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutQuad = 2
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInCubic
+  commentId: F:Global.EasingFunction.Ease.EaseInCubic
+  id: EaseInCubic
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInCubic
+  nameWithType: EasingFunction.Ease.EaseInCubic
+  fullName: EasingFunction.Ease.EaseInCubic
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInCubic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInCubic = 3
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutCubic
+  commentId: F:Global.EasingFunction.Ease.EaseOutCubic
+  id: EaseOutCubic
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutCubic
+  nameWithType: EasingFunction.Ease.EaseOutCubic
+  fullName: EasingFunction.Ease.EaseOutCubic
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutCubic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutCubic = 4
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutCubic
+  commentId: F:Global.EasingFunction.Ease.EaseInOutCubic
+  id: EaseInOutCubic
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutCubic
+  nameWithType: EasingFunction.Ease.EaseInOutCubic
+  fullName: EasingFunction.Ease.EaseInOutCubic
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutCubic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutCubic = 5
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInQuart
+  commentId: F:Global.EasingFunction.Ease.EaseInQuart
+  id: EaseInQuart
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuart
+  nameWithType: EasingFunction.Ease.EaseInQuart
+  fullName: EasingFunction.Ease.EaseInQuart
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuart
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInQuart = 6
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutQuart
+  commentId: F:Global.EasingFunction.Ease.EaseOutQuart
+  id: EaseOutQuart
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuart
+  nameWithType: EasingFunction.Ease.EaseOutQuart
+  fullName: EasingFunction.Ease.EaseOutQuart
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuart
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutQuart = 7
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutQuart
+  commentId: F:Global.EasingFunction.Ease.EaseInOutQuart
+  id: EaseInOutQuart
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuart
+  nameWithType: EasingFunction.Ease.EaseInOutQuart
+  fullName: EasingFunction.Ease.EaseInOutQuart
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuart
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutQuart = 8
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInQuint
+  commentId: F:Global.EasingFunction.Ease.EaseInQuint
+  id: EaseInQuint
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuint
+  nameWithType: EasingFunction.Ease.EaseInQuint
+  fullName: EasingFunction.Ease.EaseInQuint
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuint
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInQuint = 9
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutQuint
+  commentId: F:Global.EasingFunction.Ease.EaseOutQuint
+  id: EaseOutQuint
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuint
+  nameWithType: EasingFunction.Ease.EaseOutQuint
+  fullName: EasingFunction.Ease.EaseOutQuint
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuint
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutQuint = 10
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutQuint
+  commentId: F:Global.EasingFunction.Ease.EaseInOutQuint
+  id: EaseInOutQuint
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuint
+  nameWithType: EasingFunction.Ease.EaseInOutQuint
+  fullName: EasingFunction.Ease.EaseInOutQuint
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuint
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutQuint = 11
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInSine
+  commentId: F:Global.EasingFunction.Ease.EaseInSine
+  id: EaseInSine
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInSine
+  nameWithType: EasingFunction.Ease.EaseInSine
+  fullName: EasingFunction.Ease.EaseInSine
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInSine
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInSine = 12
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutSine
+  commentId: F:Global.EasingFunction.Ease.EaseOutSine
+  id: EaseOutSine
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutSine
+  nameWithType: EasingFunction.Ease.EaseOutSine
+  fullName: EasingFunction.Ease.EaseOutSine
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutSine
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutSine = 13
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutSine
+  commentId: F:Global.EasingFunction.Ease.EaseInOutSine
+  id: EaseInOutSine
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutSine
+  nameWithType: EasingFunction.Ease.EaseInOutSine
+  fullName: EasingFunction.Ease.EaseInOutSine
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutSine
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutSine = 14
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInExpo
+  commentId: F:Global.EasingFunction.Ease.EaseInExpo
+  id: EaseInExpo
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInExpo
+  nameWithType: EasingFunction.Ease.EaseInExpo
+  fullName: EasingFunction.Ease.EaseInExpo
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInExpo
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInExpo = 15
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutExpo
+  commentId: F:Global.EasingFunction.Ease.EaseOutExpo
+  id: EaseOutExpo
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutExpo
+  nameWithType: EasingFunction.Ease.EaseOutExpo
+  fullName: EasingFunction.Ease.EaseOutExpo
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutExpo
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutExpo = 16
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutExpo
+  commentId: F:Global.EasingFunction.Ease.EaseInOutExpo
+  id: EaseInOutExpo
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutExpo
+  nameWithType: EasingFunction.Ease.EaseInOutExpo
+  fullName: EasingFunction.Ease.EaseInOutExpo
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutExpo
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutExpo = 17
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInCirc
+  commentId: F:Global.EasingFunction.Ease.EaseInCirc
+  id: EaseInCirc
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInCirc
+  nameWithType: EasingFunction.Ease.EaseInCirc
+  fullName: EasingFunction.Ease.EaseInCirc
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInCirc
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInCirc = 18
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutCirc
+  commentId: F:Global.EasingFunction.Ease.EaseOutCirc
+  id: EaseOutCirc
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutCirc
+  nameWithType: EasingFunction.Ease.EaseOutCirc
+  fullName: EasingFunction.Ease.EaseOutCirc
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutCirc
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutCirc = 19
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutCirc
+  commentId: F:Global.EasingFunction.Ease.EaseInOutCirc
+  id: EaseInOutCirc
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutCirc
+  nameWithType: EasingFunction.Ease.EaseInOutCirc
+  fullName: EasingFunction.Ease.EaseInOutCirc
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutCirc
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 84
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutCirc = 20
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.Linear
+  commentId: F:Global.EasingFunction.Ease.Linear
+  id: Linear
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: EasingFunction.Ease.Linear
+  fullName: EasingFunction.Ease.Linear
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Linear
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 85
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Linear = 21
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.Spring
+  commentId: F:Global.EasingFunction.Ease.Spring
+  id: Spring
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: Spring
+  nameWithType: EasingFunction.Ease.Spring
+  fullName: EasingFunction.Ease.Spring
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Spring
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 86
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Spring = 22
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInBounce
+  commentId: F:Global.EasingFunction.Ease.EaseInBounce
+  id: EaseInBounce
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInBounce
+  nameWithType: EasingFunction.Ease.EaseInBounce
+  fullName: EasingFunction.Ease.EaseInBounce
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInBounce
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInBounce = 23
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutBounce
+  commentId: F:Global.EasingFunction.Ease.EaseOutBounce
+  id: EaseOutBounce
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutBounce
+  nameWithType: EasingFunction.Ease.EaseOutBounce
+  fullName: EasingFunction.Ease.EaseOutBounce
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutBounce
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutBounce = 24
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutBounce
+  commentId: F:Global.EasingFunction.Ease.EaseInOutBounce
+  id: EaseInOutBounce
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutBounce
+  nameWithType: EasingFunction.Ease.EaseInOutBounce
+  fullName: EasingFunction.Ease.EaseInOutBounce
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutBounce
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutBounce = 25
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInBack
+  commentId: F:Global.EasingFunction.Ease.EaseInBack
+  id: EaseInBack
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInBack
+  nameWithType: EasingFunction.Ease.EaseInBack
+  fullName: EasingFunction.Ease.EaseInBack
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInBack
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInBack = 26
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutBack
+  commentId: F:Global.EasingFunction.Ease.EaseOutBack
+  id: EaseOutBack
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutBack
+  nameWithType: EasingFunction.Ease.EaseOutBack
+  fullName: EasingFunction.Ease.EaseOutBack
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutBack
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 91
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutBack = 27
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutBack
+  commentId: F:Global.EasingFunction.Ease.EaseInOutBack
+  id: EaseInOutBack
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutBack
+  nameWithType: EasingFunction.Ease.EaseInOutBack
+  fullName: EasingFunction.Ease.EaseInOutBack
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutBack
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 92
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutBack = 28
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInElastic
+  commentId: F:Global.EasingFunction.Ease.EaseInElastic
+  id: EaseInElastic
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInElastic
+  nameWithType: EasingFunction.Ease.EaseInElastic
+  fullName: EasingFunction.Ease.EaseInElastic
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInElastic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 93
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInElastic = 29
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseOutElastic
+  commentId: F:Global.EasingFunction.Ease.EaseOutElastic
+  id: EaseOutElastic
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseOutElastic
+  nameWithType: EasingFunction.Ease.EaseOutElastic
+  fullName: EasingFunction.Ease.EaseOutElastic
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutElastic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 94
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseOutElastic = 30
+    return:
+      type: Global.EasingFunction.Ease
+- uid: Global.EasingFunction.Ease.EaseInOutElastic
+  commentId: F:Global.EasingFunction.Ease.EaseInOutElastic
+  id: EaseInOutElastic
+  parent: Global.EasingFunction.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutElastic
+  nameWithType: EasingFunction.Ease.EaseInOutElastic
+  fullName: EasingFunction.Ease.EaseInOutElastic
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutElastic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EaseInOutElastic = 31
+    return:
+      type: Global.EasingFunction.Ease
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.EasingFunction.Ease
+  commentId: T:Global.EasingFunction.Ease
+  name: EasingFunction.Ease
+  nameWithType: EasingFunction.Ease
+  fullName: EasingFunction.Ease
+  spec.csharp:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+  spec.vb:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease

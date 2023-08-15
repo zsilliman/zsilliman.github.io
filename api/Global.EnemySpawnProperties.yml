@@ -1,0 +1,309 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.EnemySpawnProperties
+  commentId: T:Global.EnemySpawnProperties
+  id: EnemySpawnProperties
+  parent: Global
+  children:
+  - Global.EnemySpawnProperties.AuraClutterRating
+  - Global.EnemySpawnProperties.DifficultyRating
+  - Global.EnemySpawnProperties.GroundEnemy
+  - Global.EnemySpawnProperties.MinRequiredSpaceInTiles
+  langs:
+  - csharp
+  - vb
+  name: EnemySpawnProperties
+  nameWithType: EnemySpawnProperties
+  fullName: EnemySpawnProperties
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EnemySpawnProperties
+    path: ../Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class EnemySpawnProperties
+    content.vb: >-
+      <Serializable>
+
+      Public Class EnemySpawnProperties
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.EnemySpawnProperties.MinRequiredSpaceInTiles
+  commentId: F:Global.EnemySpawnProperties.MinRequiredSpaceInTiles
+  id: MinRequiredSpaceInTiles
+  parent: Global.EnemySpawnProperties
+  langs:
+  - csharp
+  - vb
+  name: MinRequiredSpaceInTiles
+  nameWithType: EnemySpawnProperties.MinRequiredSpaceInTiles
+  fullName: EnemySpawnProperties.MinRequiredSpaceInTiles
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MinRequiredSpaceInTiles
+    path: ../Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Minimum amount of space required to spawn this enemy in tile space")]
+
+      public Vector2Int MinRequiredSpaceInTiles
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <Tooltip("Minimum amount of space required to spawn this enemy in tile space")>
+
+      Public MinRequiredSpaceInTiles As Vector2Int
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Minimum amount of space required to spawn this enemy in tile space
+- uid: Global.EnemySpawnProperties.DifficultyRating
+  commentId: F:Global.EnemySpawnProperties.DifficultyRating
+  id: DifficultyRating
+  parent: Global.EnemySpawnProperties
+  langs:
+  - csharp
+  - vb
+  name: DifficultyRating
+  nameWithType: EnemySpawnProperties.DifficultyRating
+  fullName: EnemySpawnProperties.DifficultyRating
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DifficultyRating
+    path: ../Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Integer representing the difficulty level of this enemy.")]
+
+      public int DifficultyRating
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Tooltip("Integer representing the difficulty level of this enemy.")>
+
+      Public DifficultyRating As Integer
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Integer representing the difficulty level of this enemy.
+- uid: Global.EnemySpawnProperties.AuraClutterRating
+  commentId: F:Global.EnemySpawnProperties.AuraClutterRating
+  id: AuraClutterRating
+  parent: Global.EnemySpawnProperties
+  langs:
+  - csharp
+  - vb
+  name: AuraClutterRating
+  nameWithType: EnemySpawnProperties.AuraClutterRating
+  fullName: EnemySpawnProperties.AuraClutterRating
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraClutterRating
+    path: ../Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Integer representing how much aura 'clutter' is caused by this enemy")]
+
+      public int AuraClutterRating
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Tooltip("Integer representing how much aura 'clutter' is caused by this enemy")>
+
+      Public AuraClutterRating As Integer
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Integer representing how much aura 'clutter' is caused by this enemy
+- uid: Global.EnemySpawnProperties.GroundEnemy
+  commentId: F:Global.EnemySpawnProperties.GroundEnemy
+  id: GroundEnemy
+  parent: Global.EnemySpawnProperties
+  langs:
+  - csharp
+  - vb
+  name: GroundEnemy
+  nameWithType: EnemySpawnProperties.GroundEnemy
+  fullName: EnemySpawnProperties.GroundEnemy
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GroundEnemy
+    path: ../Assets/Objects & Components/World/Section/Spawning/EnemySpawnLocation.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Whether to forcefully ground the enemy after spawn")]
+
+      public bool GroundEnemy
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("Whether to forcefully ground the enemy after spawn")>
+
+      Public GroundEnemy As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Whether to forcefully ground the enemy after spawn
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

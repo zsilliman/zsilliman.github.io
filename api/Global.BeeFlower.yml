@@ -1,0 +1,365 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BeeFlower
+  commentId: T:Global.BeeFlower
+  id: BeeFlower
+  parent: Global
+  children:
+  - Global.BeeFlower.CompareTo(BeeFlower,BeeFlower)
+  - Global.BeeFlower.GetPosition
+  - Global.BeeFlower.GetReferenceCount
+  - Global.BeeFlower.refCount
+  - Global.BeeFlower.SetAsTargetFlower
+  - Global.BeeFlower.UnsetAsTargetFlower
+  langs:
+  - csharp
+  - vb
+  name: BeeFlower
+  nameWithType: BeeFlower
+  fullName: BeeFlower
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Flowers/BeeFlower.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BeeFlower
+    path: ../Assets/Objects & Components/World/Flowers/BeeFlower.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class BeeFlower : MonoBehaviour'
+    content.vb: Public Class BeeFlower Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.BeeFlower.refCount
+  commentId: F:Global.BeeFlower.refCount
+  id: refCount
+  parent: Global.BeeFlower
+  langs:
+  - csharp
+  - vb
+  name: refCount
+  nameWithType: BeeFlower.refCount
+  fullName: BeeFlower.refCount
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Flowers/BeeFlower.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: refCount
+    path: ../Assets/Objects & Components/World/Flowers/BeeFlower.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected int refCount
+    return:
+      type: System.Int32
+    content.vb: Protected refCount As Integer
+- uid: Global.BeeFlower.GetPosition
+  commentId: M:Global.BeeFlower.GetPosition
+  id: GetPosition
+  parent: Global.BeeFlower
+  langs:
+  - csharp
+  - vb
+  name: GetPosition()
+  nameWithType: BeeFlower.GetPosition()
+  fullName: BeeFlower.GetPosition()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Flowers/BeeFlower.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetPosition
+    path: ../Assets/Objects & Components/World/Flowers/BeeFlower.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int GetPosition()
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Function GetPosition() As Vector2Int
+  overload: Global.BeeFlower.GetPosition*
+- uid: Global.BeeFlower.SetAsTargetFlower
+  commentId: M:Global.BeeFlower.SetAsTargetFlower
+  id: SetAsTargetFlower
+  parent: Global.BeeFlower
+  langs:
+  - csharp
+  - vb
+  name: SetAsTargetFlower()
+  nameWithType: BeeFlower.SetAsTargetFlower()
+  fullName: BeeFlower.SetAsTargetFlower()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Flowers/BeeFlower.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetAsTargetFlower
+    path: ../Assets/Objects & Components/World/Flowers/BeeFlower.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetAsTargetFlower()
+    content.vb: Public Sub SetAsTargetFlower()
+  overload: Global.BeeFlower.SetAsTargetFlower*
+- uid: Global.BeeFlower.UnsetAsTargetFlower
+  commentId: M:Global.BeeFlower.UnsetAsTargetFlower
+  id: UnsetAsTargetFlower
+  parent: Global.BeeFlower
+  langs:
+  - csharp
+  - vb
+  name: UnsetAsTargetFlower()
+  nameWithType: BeeFlower.UnsetAsTargetFlower()
+  fullName: BeeFlower.UnsetAsTargetFlower()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Flowers/BeeFlower.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnsetAsTargetFlower
+    path: ../Assets/Objects & Components/World/Flowers/BeeFlower.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnsetAsTargetFlower()
+    content.vb: Public Sub UnsetAsTargetFlower()
+  overload: Global.BeeFlower.UnsetAsTargetFlower*
+- uid: Global.BeeFlower.GetReferenceCount
+  commentId: M:Global.BeeFlower.GetReferenceCount
+  id: GetReferenceCount
+  parent: Global.BeeFlower
+  langs:
+  - csharp
+  - vb
+  name: GetReferenceCount()
+  nameWithType: BeeFlower.GetReferenceCount()
+  fullName: BeeFlower.GetReferenceCount()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Flowers/BeeFlower.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetReferenceCount
+    path: ../Assets/Objects & Components/World/Flowers/BeeFlower.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int GetReferenceCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetReferenceCount() As Integer
+  overload: Global.BeeFlower.GetReferenceCount*
+- uid: Global.BeeFlower.CompareTo(BeeFlower,BeeFlower)
+  commentId: M:Global.BeeFlower.CompareTo(BeeFlower,BeeFlower)
+  id: CompareTo(BeeFlower,BeeFlower)
+  parent: Global.BeeFlower
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(BeeFlower, BeeFlower)
+  nameWithType: BeeFlower.CompareTo(BeeFlower, BeeFlower)
+  fullName: BeeFlower.CompareTo(BeeFlower, BeeFlower)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Flowers/BeeFlower.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CompareTo
+    path: ../Assets/Objects & Components/World/Flowers/BeeFlower.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int CompareTo(BeeFlower a, BeeFlower b)
+    parameters:
+    - id: a
+      type: Global.BeeFlower
+    - id: b
+      type: Global.BeeFlower
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CompareTo(a As BeeFlower, b As BeeFlower) As Integer
+  overload: Global.BeeFlower.CompareTo*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.BeeFlower.GetPosition*
+  commentId: Overload:Global.BeeFlower.GetPosition
+  name: GetPosition
+  nameWithType: BeeFlower.GetPosition
+  fullName: BeeFlower.GetPosition
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: Global.BeeFlower.SetAsTargetFlower*
+  commentId: Overload:Global.BeeFlower.SetAsTargetFlower
+  name: SetAsTargetFlower
+  nameWithType: BeeFlower.SetAsTargetFlower
+  fullName: BeeFlower.SetAsTargetFlower
+- uid: Global.BeeFlower.UnsetAsTargetFlower*
+  commentId: Overload:Global.BeeFlower.UnsetAsTargetFlower
+  name: UnsetAsTargetFlower
+  nameWithType: BeeFlower.UnsetAsTargetFlower
+  fullName: BeeFlower.UnsetAsTargetFlower
+- uid: Global.BeeFlower.GetReferenceCount*
+  commentId: Overload:Global.BeeFlower.GetReferenceCount
+  name: GetReferenceCount
+  nameWithType: BeeFlower.GetReferenceCount
+  fullName: BeeFlower.GetReferenceCount
+- uid: Global.BeeFlower.CompareTo*
+  commentId: Overload:Global.BeeFlower.CompareTo
+  name: CompareTo
+  nameWithType: BeeFlower.CompareTo
+  fullName: BeeFlower.CompareTo
+- uid: Global.BeeFlower
+  commentId: T:Global.BeeFlower
+  name: BeeFlower
+  nameWithType: BeeFlower
+  fullName: BeeFlower

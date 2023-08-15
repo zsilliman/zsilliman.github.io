@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraMovementController`1
+  commentId: T:Global.AuraMovementController`1
+  id: AuraMovementController`1
+  parent: Global
+  children:
+  - Global.AuraMovementController`1.auraComponent
+  - Global.AuraMovementController`1.auraCreator
+  - Global.AuraMovementController`1.Properties
+  - Global.AuraMovementController`1.ResetObject
+  - Global.AuraMovementController`1.Start
+  langs:
+  - csharp
+  - vb
+  name: AuraMovementController<T>
+  nameWithType: AuraMovementController<T>
+  fullName: AuraMovementController<T>
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraMovementController
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(AutoMergeAura))]
+
+      public abstract class AuraMovementController<T> : MonoBehaviour
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <RequireComponent(GetType(AutoMergeAura))>
+
+      Public MustInherit Class AuraMovementController(Of T) Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - Global.AttachAuraToPlayer
+  - Global.AuraProjectileMovementBase
+  - Global.AuraTailMovementController
+  - Global.BeamMovementController
+  - Global.DoubleBeamMovementController
+  - Global.EasingAutoAuraController
+  - Global.MultiEaseMovement
+  - Global.OrbitMovementController
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.AutoMergeAura
+  nameWithType.vb: AuraMovementController(Of T)
+  fullName.vb: AuraMovementController(Of T)
+  name.vb: AuraMovementController(Of T)
+- uid: Global.AuraMovementController`1.Properties
+  commentId: F:Global.AuraMovementController`1.Properties
+  id: Properties
+  parent: Global.AuraMovementController`1
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: AuraMovementController<T>.Properties
+  fullName: AuraMovementController<T>.Properties
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Properties
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public T Properties
+    return:
+      type: '{T}'
+    content.vb: Public Properties As T
+  nameWithType.vb: AuraMovementController(Of T).Properties
+  fullName.vb: AuraMovementController(Of T).Properties
+- uid: Global.AuraMovementController`1.auraCreator
+  commentId: F:Global.AuraMovementController`1.auraCreator
+  id: auraCreator
+  parent: Global.AuraMovementController`1
+  langs:
+  - csharp
+  - vb
+  name: auraCreator
+  nameWithType: AuraMovementController<T>.auraCreator
+  fullName: AuraMovementController<T>.auraCreator
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraCreator
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThe GameObject that spawned this aura/controls it\n"
+  example: []
+  syntax:
+    content: public GameObject auraCreator
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public auraCreator As GameObject
+  nameWithType.vb: AuraMovementController(Of T).auraCreator
+  fullName.vb: AuraMovementController(Of T).auraCreator
+- uid: Global.AuraMovementController`1.auraComponent
+  commentId: F:Global.AuraMovementController`1.auraComponent
+  id: auraComponent
+  parent: Global.AuraMovementController`1
+  langs:
+  - csharp
+  - vb
+  name: auraComponent
+  nameWithType: AuraMovementController<T>.auraComponent
+  fullName: AuraMovementController<T>.auraComponent
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraComponent
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public AutoMergeAura auraComponent
+    return:
+      type: Global.AutoMergeAura
+    content.vb: >-
+      <HideInInspector>
+
+      Public auraComponent As AutoMergeAura
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  nameWithType.vb: AuraMovementController(Of T).auraComponent
+  fullName.vb: AuraMovementController(Of T).auraComponent
+- uid: Global.AuraMovementController`1.Start
+  commentId: M:Global.AuraMovementController`1.Start
+  id: Start
+  parent: Global.AuraMovementController`1
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: AuraMovementController<T>.Start()
+  fullName: AuraMovementController<T>.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.AuraMovementController`1.Start*
+  nameWithType.vb: AuraMovementController(Of T).Start()
+  fullName.vb: AuraMovementController(Of T).Start()
+- uid: Global.AuraMovementController`1.ResetObject
+  commentId: M:Global.AuraMovementController`1.ResetObject
+  id: ResetObject
+  parent: Global.AuraMovementController`1
+  langs:
+  - csharp
+  - vb
+  name: ResetObject()
+  nameWithType: AuraMovementController<T>.ResetObject()
+  fullName: AuraMovementController<T>.ResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResetObject
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AuraMovementController.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void ResetObject()
+    content.vb: Public Overridable Sub ResetObject()
+  overload: Global.AuraMovementController`1.ResetObject*
+  nameWithType.vb: AuraMovementController(Of T).ResetObject()
+  fullName.vb: AuraMovementController(Of T).ResetObject()
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.AutoMergeAura
+  commentId: T:Global.AutoMergeAura
+  name: AutoMergeAura
+  nameWithType: AutoMergeAura
+  fullName: AutoMergeAura
+- uid: Global.AuraMovementController`1.Start*
+  commentId: Overload:Global.AuraMovementController`1.Start
+  name: Start
+  nameWithType: AuraMovementController<T>.Start
+  fullName: AuraMovementController<T>.Start
+  nameWithType.vb: AuraMovementController(Of T).Start
+  fullName.vb: AuraMovementController(Of T).Start
+- uid: Global.AuraMovementController`1.ResetObject*
+  commentId: Overload:Global.AuraMovementController`1.ResetObject
+  name: ResetObject
+  nameWithType: AuraMovementController<T>.ResetObject
+  fullName: AuraMovementController<T>.ResetObject
+  nameWithType.vb: AuraMovementController(Of T).ResetObject
+  fullName.vb: AuraMovementController(Of T).ResetObject

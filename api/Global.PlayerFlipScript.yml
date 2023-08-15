@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerFlipScript
+  commentId: T:Global.PlayerFlipScript
+  id: PlayerFlipScript
+  parent: Global
+  children:
+  - Global.PlayerFlipScript.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  - Global.PlayerFlipScript.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: PlayerFlipScript
+  nameWithType: PlayerFlipScript
+  fullName: PlayerFlipScript
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/Controllers/Scripts (unused)/PlayerFlipScript.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerFlipScript
+    path: ../Assets/Objects & Components/Entities/Player/Animations/Controllers/Scripts (unused)/PlayerFlipScript.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class PlayerFlipScript : StateMachineBehaviour'
+    content.vb: Public Class PlayerFlipScript Inherits StateMachineBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEngine.StateMachineBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.PlayerFlipScript.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:Global.PlayerFlipScript.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  id: OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: Global.PlayerFlipScript
+  langs:
+  - csharp
+  - vb
+  name: OnStateEnter(Animator, AnimatorStateInfo, int)
+  nameWithType: PlayerFlipScript.OnStateEnter(Animator, AnimatorStateInfo, int)
+  fullName: PlayerFlipScript.OnStateEnter(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/Controllers/Scripts (unused)/PlayerFlipScript.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnStateEnter
+    path: ../Assets/Objects & Components/Entities/Player/Animations/Controllers/Scripts (unused)/PlayerFlipScript.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    parameters:
+    - id: animator
+      type: UnityEngine.Animator
+    - id: stateInfo
+      type: UnityEngine.AnimatorStateInfo
+    - id: layerIndex
+      type: System.Int32
+    content.vb: Public Overrides Sub OnStateEnter(animator As Animator, stateInfo As AnimatorStateInfo, layerIndex As Integer)
+  overridden: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  overload: Global.PlayerFlipScript.OnStateEnter*
+  nameWithType.vb: PlayerFlipScript.OnStateEnter(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: PlayerFlipScript.OnStateEnter(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateEnter(Animator, AnimatorStateInfo, Integer)
+- uid: Global.PlayerFlipScript.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:Global.PlayerFlipScript.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  id: OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: Global.PlayerFlipScript
+  langs:
+  - csharp
+  - vb
+  name: OnStateExit(Animator, AnimatorStateInfo, int)
+  nameWithType: PlayerFlipScript.OnStateExit(Animator, AnimatorStateInfo, int)
+  fullName: PlayerFlipScript.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Animations/Controllers/Scripts (unused)/PlayerFlipScript.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnStateExit
+    path: ../Assets/Objects & Components/Entities/Player/Animations/Controllers/Scripts (unused)/PlayerFlipScript.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    parameters:
+    - id: animator
+      type: UnityEngine.Animator
+    - id: stateInfo
+      type: UnityEngine.AnimatorStateInfo
+    - id: layerIndex
+      type: System.Int32
+    content.vb: Public Overrides Sub OnStateExit(animator As Animator, stateInfo As AnimatorStateInfo, layerIndex As Integer)
+  overridden: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  overload: Global.PlayerFlipScript.OnStateExit*
+  nameWithType.vb: PlayerFlipScript.OnStateExit(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: PlayerFlipScript.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateExit(Animator, AnimatorStateInfo, Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.StateMachineBehaviour
+  commentId: T:UnityEngine.StateMachineBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: StateMachineBehaviour
+  nameWithType: StateMachineBehaviour
+  fullName: UnityEngine.StateMachineBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  name: OnStateEnter(Animator, AnimatorStateInfo, int)
+  nameWithType: StateMachineBehaviour.OnStateEnter(Animator, AnimatorStateInfo, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateEnter(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateEnter(Animator, AnimatorStateInfo, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Global.PlayerFlipScript.OnStateEnter*
+  commentId: Overload:Global.PlayerFlipScript.OnStateEnter
+  name: OnStateEnter
+  nameWithType: PlayerFlipScript.OnStateEnter
+  fullName: PlayerFlipScript.OnStateEnter
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: UnityEngine.AnimatorStateInfo
+  commentId: T:UnityEngine.AnimatorStateInfo
+  parent: UnityEngine
+  isExternal: true
+  name: AnimatorStateInfo
+  nameWithType: AnimatorStateInfo
+  fullName: UnityEngine.AnimatorStateInfo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  name: OnStateExit(Animator, AnimatorStateInfo, int)
+  nameWithType: StateMachineBehaviour.OnStateExit(Animator, AnimatorStateInfo, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateExit(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateExit(Animator, AnimatorStateInfo, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Global.PlayerFlipScript.OnStateExit*
+  commentId: Overload:Global.PlayerFlipScript.OnStateExit
+  name: OnStateExit
+  nameWithType: PlayerFlipScript.OnStateExit
+  fullName: PlayerFlipScript.OnStateExit

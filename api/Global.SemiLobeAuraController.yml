@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SemiLobeAuraController
+  commentId: T:Global.SemiLobeAuraController
+  id: SemiLobeAuraController
+  parent: Global
+  children:
+  - Global.SemiLobeAuraController.AuraRadius
+  - Global.SemiLobeAuraController.GetCenter(UnityEngine.GameObject,System.Single)
+  - Global.SemiLobeAuraController.GetThetaRange
+  - Global.SemiLobeAuraController.LobePolarFunction(System.Int32,System.Single,System.Single)
+  - Global.SemiLobeAuraController.LobePolarFunction(System.Single)
+  - Global.SemiLobeAuraController.Notify(DefaultNotificationType)
+  - Global.SemiLobeAuraController.SegmentsPerRadian
+  - Global.SemiLobeAuraController.SetParams(System.Int32,System.Single,System.Single)
+  - Global.SemiLobeAuraController.Start
+  - Global.SemiLobeAuraController.XWeight
+  langs:
+  - csharp
+  - vb
+  name: SemiLobeAuraController
+  nameWithType: SemiLobeAuraController
+  fullName: SemiLobeAuraController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SemiLobeAuraController
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class SemiLobeAuraController : AuraController<DefaultNotificationType>'
+    content.vb: Public Class SemiLobeAuraController Inherits AuraController(Of DefaultNotificationType)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraController{DefaultNotificationType}
+  inheritedMembers:
+  - Global.AuraController{DefaultNotificationType}.auraCreator
+  - Global.AuraController{DefaultNotificationType}.auraComponent
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SemiLobeAuraController.SegmentsPerRadian
+  commentId: F:Global.SemiLobeAuraController.SegmentsPerRadian
+  id: SegmentsPerRadian
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: SegmentsPerRadian
+  nameWithType: SemiLobeAuraController.SegmentsPerRadian
+  fullName: SemiLobeAuraController.SegmentsPerRadian
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SegmentsPerRadian
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float SegmentsPerRadian
+    return:
+      type: System.Single
+    content.vb: Public SegmentsPerRadian As Single
+- uid: Global.SemiLobeAuraController.XWeight
+  commentId: F:Global.SemiLobeAuraController.XWeight
+  id: XWeight
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: XWeight
+  nameWithType: SemiLobeAuraController.XWeight
+  fullName: SemiLobeAuraController.XWeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: XWeight
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float XWeight
+    return:
+      type: System.Single
+    content.vb: Public XWeight As Single
+- uid: Global.SemiLobeAuraController.AuraRadius
+  commentId: F:Global.SemiLobeAuraController.AuraRadius
+  id: AuraRadius
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: AuraRadius
+  nameWithType: SemiLobeAuraController.AuraRadius
+  fullName: SemiLobeAuraController.AuraRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraRadius
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int AuraRadius
+    return:
+      type: System.Int32
+    content.vb: Public AuraRadius As Integer
+- uid: Global.SemiLobeAuraController.Start
+  commentId: M:Global.SemiLobeAuraController.Start
+  id: Start
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: SemiLobeAuraController.Start()
+  fullName: SemiLobeAuraController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.SemiLobeAuraController.Start*
+- uid: Global.SemiLobeAuraController.LobePolarFunction(System.Single)
+  commentId: M:Global.SemiLobeAuraController.LobePolarFunction(System.Single)
+  id: LobePolarFunction(System.Single)
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: LobePolarFunction(float)
+  nameWithType: SemiLobeAuraController.LobePolarFunction(float)
+  fullName: SemiLobeAuraController.LobePolarFunction(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LobePolarFunction
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float LobePolarFunction(float theta)
+    parameters:
+    - id: theta
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function LobePolarFunction(theta As Single) As Single
+  overload: Global.SemiLobeAuraController.LobePolarFunction*
+  nameWithType.vb: SemiLobeAuraController.LobePolarFunction(Single)
+  fullName.vb: SemiLobeAuraController.LobePolarFunction(Single)
+  name.vb: LobePolarFunction(Single)
+- uid: Global.SemiLobeAuraController.GetCenter(UnityEngine.GameObject,System.Single)
+  commentId: M:Global.SemiLobeAuraController.GetCenter(UnityEngine.GameObject,System.Single)
+  id: GetCenter(UnityEngine.GameObject,System.Single)
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: GetCenter(GameObject, float)
+  nameWithType: SemiLobeAuraController.GetCenter(GameObject, float)
+  fullName: SemiLobeAuraController.GetCenter(UnityEngine.GameObject, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetCenter
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2Int GetCenter(GameObject creator, float auraRadius)
+    parameters:
+    - id: creator
+      type: UnityEngine.GameObject
+    - id: auraRadius
+      type: System.Single
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Shared Function GetCenter(creator As GameObject, auraRadius As Single) As Vector2Int
+  overload: Global.SemiLobeAuraController.GetCenter*
+  nameWithType.vb: SemiLobeAuraController.GetCenter(GameObject, Single)
+  fullName.vb: SemiLobeAuraController.GetCenter(UnityEngine.GameObject, Single)
+  name.vb: GetCenter(GameObject, Single)
+- uid: Global.SemiLobeAuraController.GetThetaRange
+  commentId: M:Global.SemiLobeAuraController.GetThetaRange
+  id: GetThetaRange
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: GetThetaRange()
+  nameWithType: SemiLobeAuraController.GetThetaRange()
+  fullName: SemiLobeAuraController.GetThetaRange()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetThetaRange
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2 GetThetaRange()
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function GetThetaRange() As Vector2
+  overload: Global.SemiLobeAuraController.GetThetaRange*
+- uid: Global.SemiLobeAuraController.LobePolarFunction(System.Int32,System.Single,System.Single)
+  commentId: M:Global.SemiLobeAuraController.LobePolarFunction(System.Int32,System.Single,System.Single)
+  id: LobePolarFunction(System.Int32,System.Single,System.Single)
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: LobePolarFunction(int, float, float)
+  nameWithType: SemiLobeAuraController.LobePolarFunction(int, float, float)
+  fullName: SemiLobeAuraController.LobePolarFunction(int, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LobePolarFunction
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float LobePolarFunction(int auraRadius, float xWeight, float theta)
+    parameters:
+    - id: auraRadius
+      type: System.Int32
+    - id: xWeight
+      type: System.Single
+    - id: theta
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function LobePolarFunction(auraRadius As Integer, xWeight As Single, theta As Single) As Single
+  overload: Global.SemiLobeAuraController.LobePolarFunction*
+  nameWithType.vb: SemiLobeAuraController.LobePolarFunction(Integer, Single, Single)
+  fullName.vb: SemiLobeAuraController.LobePolarFunction(Integer, Single, Single)
+  name.vb: LobePolarFunction(Integer, Single, Single)
+- uid: Global.SemiLobeAuraController.SetParams(System.Int32,System.Single,System.Single)
+  commentId: M:Global.SemiLobeAuraController.SetParams(System.Int32,System.Single,System.Single)
+  id: SetParams(System.Int32,System.Single,System.Single)
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: SetParams(int, float, float)
+  nameWithType: SemiLobeAuraController.SetParams(int, float, float)
+  fullName: SemiLobeAuraController.SetParams(int, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetParams
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetParams(int radius, float xWeight, float segmentsPerRadian)
+    parameters:
+    - id: radius
+      type: System.Int32
+    - id: xWeight
+      type: System.Single
+    - id: segmentsPerRadian
+      type: System.Single
+    content.vb: Public Sub SetParams(radius As Integer, xWeight As Single, segmentsPerRadian As Single)
+  overload: Global.SemiLobeAuraController.SetParams*
+  nameWithType.vb: SemiLobeAuraController.SetParams(Integer, Single, Single)
+  fullName.vb: SemiLobeAuraController.SetParams(Integer, Single, Single)
+  name.vb: SetParams(Integer, Single, Single)
+- uid: Global.SemiLobeAuraController.Notify(DefaultNotificationType)
+  commentId: M:Global.SemiLobeAuraController.Notify(DefaultNotificationType)
+  id: Notify(DefaultNotificationType)
+  parent: Global.SemiLobeAuraController
+  langs:
+  - csharp
+  - vb
+  name: Notify(DefaultNotificationType)
+  nameWithType: SemiLobeAuraController.Notify(DefaultNotificationType)
+  fullName: SemiLobeAuraController.Notify(DefaultNotificationType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Notify
+    path: ../Assets/Objects & Components/Entities/Auras/AuraControllers/SemiLobeAuraController.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Notify(DefaultNotificationType notificationType)
+    parameters:
+    - id: notificationType
+      type: Global.DefaultNotificationType
+    content.vb: Public Overrides Sub Notify(notificationType As DefaultNotificationType)
+  overridden: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  overload: Global.SemiLobeAuraController.Notify*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraController{DefaultNotificationType}
+  commentId: T:Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1
+  name: AuraController<DefaultNotificationType>
+  nameWithType: AuraController<DefaultNotificationType>
+  fullName: AuraController<DefaultNotificationType>
+  nameWithType.vb: AuraController(Of DefaultNotificationType)
+  fullName.vb: AuraController(Of DefaultNotificationType)
+  name.vb: AuraController(Of DefaultNotificationType)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+- uid: Global.AuraController{DefaultNotificationType}.auraCreator
+  commentId: F:Global.AuraController{DefaultNotificationType}.auraCreator
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<DefaultNotificationType>.auraCreator
+  fullName: AuraController<DefaultNotificationType>.auraCreator
+  nameWithType.vb: AuraController(Of DefaultNotificationType).auraCreator
+  fullName.vb: AuraController(Of DefaultNotificationType).auraCreator
+- uid: Global.AuraController{DefaultNotificationType}.auraComponent
+  commentId: F:Global.AuraController{DefaultNotificationType}.auraComponent
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<DefaultNotificationType>.auraComponent
+  fullName: AuraController<DefaultNotificationType>.auraComponent
+  nameWithType.vb: AuraController(Of DefaultNotificationType).auraComponent
+  fullName.vb: AuraController(Of DefaultNotificationType).auraComponent
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraController`1
+  commentId: T:Global.AuraController`1
+  name: AuraController<T>
+  nameWithType: AuraController<T>
+  fullName: AuraController<T>
+  nameWithType.vb: AuraController(Of T)
+  fullName.vb: AuraController(Of T)
+  name.vb: AuraController(Of T)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraController`1.auraCreator
+  commentId: F:Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<T>.auraCreator
+  fullName: AuraController<T>.auraCreator
+  nameWithType.vb: AuraController(Of T).auraCreator
+  fullName.vb: AuraController(Of T).auraCreator
+- uid: Global.AuraController`1.auraComponent
+  commentId: F:Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<T>.auraComponent
+  fullName: AuraController<T>.auraComponent
+  nameWithType.vb: AuraController(Of T).auraComponent
+  fullName.vb: AuraController(Of T).auraComponent
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.SemiLobeAuraController.Start*
+  commentId: Overload:Global.SemiLobeAuraController.Start
+  name: Start
+  nameWithType: SemiLobeAuraController.Start
+  fullName: SemiLobeAuraController.Start
+- uid: Global.SemiLobeAuraController.LobePolarFunction*
+  commentId: Overload:Global.SemiLobeAuraController.LobePolarFunction
+  name: LobePolarFunction
+  nameWithType: SemiLobeAuraController.LobePolarFunction
+  fullName: SemiLobeAuraController.LobePolarFunction
+- uid: Global.SemiLobeAuraController.GetCenter*
+  commentId: Overload:Global.SemiLobeAuraController.GetCenter
+  name: GetCenter
+  nameWithType: SemiLobeAuraController.GetCenter
+  fullName: SemiLobeAuraController.GetCenter
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: Global.SemiLobeAuraController.GetThetaRange*
+  commentId: Overload:Global.SemiLobeAuraController.GetThetaRange
+  name: GetThetaRange
+  nameWithType: SemiLobeAuraController.GetThetaRange
+  fullName: SemiLobeAuraController.GetThetaRange
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.SemiLobeAuraController.SetParams*
+  commentId: Overload:Global.SemiLobeAuraController.SetParams
+  name: SetParams
+  nameWithType: SemiLobeAuraController.SetParams
+  fullName: SemiLobeAuraController.SetParams
+- uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  commentId: M:Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.Notify(`0)
+  name: Notify(DefaultNotificationType)
+  nameWithType: AuraController<DefaultNotificationType>.Notify(DefaultNotificationType)
+  fullName: AuraController<DefaultNotificationType>.Notify(DefaultNotificationType)
+  nameWithType.vb: AuraController(Of DefaultNotificationType).Notify(DefaultNotificationType)
+  fullName.vb: AuraController(Of DefaultNotificationType).Notify(DefaultNotificationType)
+  spec.csharp:
+  - uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+    name: Notify
+  - name: (
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+    name: Notify
+  - name: (
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+- uid: Global.SemiLobeAuraController.Notify*
+  commentId: Overload:Global.SemiLobeAuraController.Notify
+  name: Notify
+  nameWithType: SemiLobeAuraController.Notify
+  fullName: SemiLobeAuraController.Notify
+- uid: Global.DefaultNotificationType
+  commentId: T:Global.DefaultNotificationType
+  name: DefaultNotificationType
+  nameWithType: DefaultNotificationType
+  fullName: DefaultNotificationType
+- uid: Global.AuraController`1.Notify(`0)
+  commentId: M:Global.AuraController`1.Notify(`0)
+  name: Notify(T)
+  nameWithType: AuraController<T>.Notify(T)
+  fullName: AuraController<T>.Notify(T)
+  nameWithType.vb: AuraController(Of T).Notify(T)
+  fullName.vb: AuraController(Of T).Notify(T)
+  spec.csharp:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )

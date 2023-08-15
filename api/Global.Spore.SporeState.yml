@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Spore.SporeState
+  commentId: T:Global.Spore.SporeState
+  id: Spore.SporeState
+  parent: Global
+  children:
+  - Global.Spore.SporeState.Idle
+  - Global.Spore.SporeState.Spreading
+  - Global.Spore.SporeState.Sticking
+  langs:
+  - csharp
+  - vb
+  name: Spore.SporeState
+  nameWithType: Spore.SporeState
+  fullName: Spore.SporeState
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Spore/Spore.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SporeState
+    path: ../Assets/Objects & Components/World/Spore/Spore.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum Spore.SporeState
+    content.vb: Public Enum Spore.SporeState
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.Spore.SporeState.Idle
+  commentId: F:Global.Spore.SporeState.Idle
+  id: Idle
+  parent: Global.Spore.SporeState
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: Spore.SporeState.Idle
+  fullName: Spore.SporeState.Idle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Spore/Spore.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Idle
+    path: ../Assets/Objects & Components/World/Spore/Spore.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Idle = 0
+    return:
+      type: Global.Spore.SporeState
+- uid: Global.Spore.SporeState.Sticking
+  commentId: F:Global.Spore.SporeState.Sticking
+  id: Sticking
+  parent: Global.Spore.SporeState
+  langs:
+  - csharp
+  - vb
+  name: Sticking
+  nameWithType: Spore.SporeState.Sticking
+  fullName: Spore.SporeState.Sticking
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Spore/Spore.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Sticking
+    path: ../Assets/Objects & Components/World/Spore/Spore.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Sticking = 1
+    return:
+      type: Global.Spore.SporeState
+- uid: Global.Spore.SporeState.Spreading
+  commentId: F:Global.Spore.SporeState.Spreading
+  id: Spreading
+  parent: Global.Spore.SporeState
+  langs:
+  - csharp
+  - vb
+  name: Spreading
+  nameWithType: Spore.SporeState.Spreading
+  fullName: Spore.SporeState.Spreading
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Spore/Spore.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Spreading
+    path: ../Assets/Objects & Components/World/Spore/Spore.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Spreading = 2
+    return:
+      type: Global.Spore.SporeState
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Spore.SporeState
+  commentId: T:Global.Spore.SporeState
+  name: Spore.SporeState
+  nameWithType: Spore.SporeState
+  fullName: Spore.SporeState
+  spec.csharp:
+  - uid: Global.Spore
+    name: Spore
+  - name: .
+  - uid: Global.Spore.SporeState
+    name: SporeState
+  spec.vb:
+  - uid: Global.Spore
+    name: Spore
+  - name: .
+  - uid: Global.Spore.SporeState
+    name: SporeState

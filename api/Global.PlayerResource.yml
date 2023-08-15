@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerResource
+  commentId: T:Global.PlayerResource
+  id: PlayerResource
+  parent: Global
+  children:
+  - Global.PlayerResource.BossTrophy
+  - Global.PlayerResource.GlimpsesOfThePast
+  - Global.PlayerResource.MemoryFragment
+  - Global.PlayerResource.RipplingAspect
+  - Global.PlayerResource.SharpenedAspect
+  - Global.PlayerResource.VeilAspect
+  - Global.PlayerResource.WingedAspect
+  - Global.PlayerResource.WolfsClawsLvl1
+  - Global.PlayerResource.WolfsClawsLvl2
+  langs:
+  - csharp
+  - vb
+  name: PlayerResource
+  nameWithType: PlayerResource
+  fullName: PlayerResource
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerResource
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum PlayerResource
+    content.vb: Public Enum PlayerResource
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.PlayerResource.WolfsClawsLvl1
+  commentId: F:Global.PlayerResource.WolfsClawsLvl1
+  id: WolfsClawsLvl1
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: WolfsClawsLvl1
+  nameWithType: PlayerResource.WolfsClawsLvl1
+  fullName: PlayerResource.WolfsClawsLvl1
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WolfsClawsLvl1
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: WolfsClawsLvl1 = 6
+    return:
+      type: Global.PlayerResource
+- uid: Global.PlayerResource.WolfsClawsLvl2
+  commentId: F:Global.PlayerResource.WolfsClawsLvl2
+  id: WolfsClawsLvl2
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: WolfsClawsLvl2
+  nameWithType: PlayerResource.WolfsClawsLvl2
+  fullName: PlayerResource.WolfsClawsLvl2
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WolfsClawsLvl2
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: WolfsClawsLvl2 = 7
+    return:
+      type: Global.PlayerResource
+- uid: Global.PlayerResource.SharpenedAspect
+  commentId: F:Global.PlayerResource.SharpenedAspect
+  id: SharpenedAspect
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: SharpenedAspect
+  nameWithType: PlayerResource.SharpenedAspect
+  fullName: PlayerResource.SharpenedAspect
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SharpenedAspect
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: SharpenedAspect = 8
+    return:
+      type: Global.PlayerResource
+- uid: Global.PlayerResource.RipplingAspect
+  commentId: F:Global.PlayerResource.RipplingAspect
+  id: RipplingAspect
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: RipplingAspect
+  nameWithType: PlayerResource.RipplingAspect
+  fullName: PlayerResource.RipplingAspect
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RipplingAspect
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: RipplingAspect = 9
+    return:
+      type: Global.PlayerResource
+- uid: Global.PlayerResource.WingedAspect
+  commentId: F:Global.PlayerResource.WingedAspect
+  id: WingedAspect
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: WingedAspect
+  nameWithType: PlayerResource.WingedAspect
+  fullName: PlayerResource.WingedAspect
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WingedAspect
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: WingedAspect = 10
+    return:
+      type: Global.PlayerResource
+- uid: Global.PlayerResource.VeilAspect
+  commentId: F:Global.PlayerResource.VeilAspect
+  id: VeilAspect
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: VeilAspect
+  nameWithType: PlayerResource.VeilAspect
+  fullName: PlayerResource.VeilAspect
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: VeilAspect
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: VeilAspect = 11
+    return:
+      type: Global.PlayerResource
+- uid: Global.PlayerResource.MemoryFragment
+  commentId: F:Global.PlayerResource.MemoryFragment
+  id: MemoryFragment
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: MemoryFragment
+  nameWithType: PlayerResource.MemoryFragment
+  fullName: PlayerResource.MemoryFragment
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MemoryFragment
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: MemoryFragment = 12
+    return:
+      type: Global.PlayerResource
+- uid: Global.PlayerResource.GlimpsesOfThePast
+  commentId: F:Global.PlayerResource.GlimpsesOfThePast
+  id: GlimpsesOfThePast
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: GlimpsesOfThePast
+  nameWithType: PlayerResource.GlimpsesOfThePast
+  fullName: PlayerResource.GlimpsesOfThePast
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GlimpsesOfThePast
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: GlimpsesOfThePast = 13
+    return:
+      type: Global.PlayerResource
+- uid: Global.PlayerResource.BossTrophy
+  commentId: F:Global.PlayerResource.BossTrophy
+  id: BossTrophy
+  parent: Global.PlayerResource
+  langs:
+  - csharp
+  - vb
+  name: BossTrophy
+  nameWithType: PlayerResource.BossTrophy
+  fullName: PlayerResource.BossTrophy
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BossTrophy
+    path: ../Assets/Objects & Components/Entities/Player/PlayerEquipment.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: BossTrophy = 14
+    return:
+      type: Global.PlayerResource
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.PlayerResource
+  commentId: T:Global.PlayerResource
+  name: PlayerResource
+  nameWithType: PlayerResource
+  fullName: PlayerResource

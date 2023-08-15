@@ -1,0 +1,1717 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.WeaponController
+  commentId: T:Global.WeaponController
+  id: WeaponController
+  parent: Global
+  children:
+  - Global.WeaponController.BlinkDetonateBox
+  - Global.WeaponController.BlinkDistance
+  - Global.WeaponController.BlinkEffect
+  - Global.WeaponController.BlinkSlashBox
+  - Global.WeaponController.BlinkSlideDistance
+  - Global.WeaponController.BlinkSlideStepSize
+  - Global.WeaponController.CanSwapWeapon
+  - Global.WeaponController.CanTakeDamage
+  - Global.WeaponController.CurrentWeapon
+  - Global.WeaponController.CurrentWeaponType
+  - Global.WeaponController.CutAnimation
+  - Global.WeaponController.IsAttacking
+  - Global.WeaponController.IsUsingPrimary
+  - Global.WeaponController.MeleeBox
+  - Global.WeaponController.MeleeImmunityDuration
+  - Global.WeaponController.OnCharged
+  - Global.WeaponController.onCurrentWeaponChanged
+  - Global.WeaponController.OnDashEnded
+  - Global.WeaponController.OnFirstFrame
+  - Global.WeaponController.OnHitActor(IntActor)
+  - Global.WeaponController.primaryWeapon
+  - Global.WeaponController.primaryWeaponType
+  - Global.WeaponController.RangedBoxLeft
+  - Global.WeaponController.RangedBoxRight
+  - Global.WeaponController.ResetLoadout
+  - Global.WeaponController.secondaryWeapon
+  - Global.WeaponController.secondaryWeaponType
+  - Global.WeaponController.SetPrimaryWeapon(WeaponController.WeaponType)
+  - Global.WeaponController.SetSecondaryWeapon(WeaponController.WeaponType)
+  - Global.WeaponController.sigilYDisplacement
+  - Global.WeaponController.SlashHead
+  - Global.WeaponController.SlashTail
+  - Global.WeaponController.StartLoadoutCoroutine(System.Collections.IEnumerator)
+  - Global.WeaponController.swapWeaponCooldown
+  - Global.WeaponController.SwitchToBlink
+  - Global.WeaponController.SwitchToInvis
+  - Global.WeaponController.SwitchToMelee
+  - Global.WeaponController.SwitchToRanged
+  - Global.WeaponController.SwitchWeapons(System.Boolean)
+  - Global.WeaponController.weaponGlow
+  - Global.WeaponController.Weapons
+  langs:
+  - csharp
+  - vb
+  name: WeaponController
+  nameWithType: WeaponController
+  fullName: WeaponController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WeaponController
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(Player))]
+
+      public class WeaponController : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(Player))>
+
+      Public Class WeaponController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.Player
+- uid: Global.WeaponController.primaryWeapon
+  commentId: F:Global.WeaponController.primaryWeapon
+  id: primaryWeapon
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: primaryWeapon
+  nameWithType: WeaponController.primaryWeapon
+  fullName: WeaponController.primaryWeapon
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: primaryWeapon
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Weapon primaryWeapon
+    return:
+      type: Global.Weapon
+    content.vb: >-
+      <HideInInspector>
+
+      Public primaryWeapon As Weapon
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.WeaponController.secondaryWeapon
+  commentId: F:Global.WeaponController.secondaryWeapon
+  id: secondaryWeapon
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: secondaryWeapon
+  nameWithType: WeaponController.secondaryWeapon
+  fullName: WeaponController.secondaryWeapon
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: secondaryWeapon
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Weapon secondaryWeapon
+    return:
+      type: Global.Weapon
+    content.vb: Public secondaryWeapon As Weapon
+- uid: Global.WeaponController.primaryWeaponType
+  commentId: F:Global.WeaponController.primaryWeaponType
+  id: primaryWeaponType
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: primaryWeaponType
+  nameWithType: WeaponController.primaryWeaponType
+  fullName: WeaponController.primaryWeaponType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: primaryWeaponType
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public WeaponController.WeaponType primaryWeaponType
+    return:
+      type: Global.WeaponController.WeaponType
+    content.vb: Public primaryWeaponType As WeaponController.WeaponType
+- uid: Global.WeaponController.secondaryWeaponType
+  commentId: F:Global.WeaponController.secondaryWeaponType
+  id: secondaryWeaponType
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: secondaryWeaponType
+  nameWithType: WeaponController.secondaryWeaponType
+  fullName: WeaponController.secondaryWeaponType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: secondaryWeaponType
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public WeaponController.WeaponType secondaryWeaponType
+    return:
+      type: Global.WeaponController.WeaponType
+    content.vb: Public secondaryWeaponType As WeaponController.WeaponType
+- uid: Global.WeaponController.IsUsingPrimary
+  commentId: P:Global.WeaponController.IsUsingPrimary
+  id: IsUsingPrimary
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: IsUsingPrimary
+  nameWithType: WeaponController.IsUsingPrimary
+  fullName: WeaponController.IsUsingPrimary
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsUsingPrimary
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsUsingPrimary { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsUsingPrimary As Boolean
+  overload: Global.WeaponController.IsUsingPrimary*
+- uid: Global.WeaponController.CurrentWeapon
+  commentId: P:Global.WeaponController.CurrentWeapon
+  id: CurrentWeapon
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: CurrentWeapon
+  nameWithType: WeaponController.CurrentWeapon
+  fullName: WeaponController.CurrentWeapon
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CurrentWeapon
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Weapon CurrentWeapon { get; }
+    parameters: []
+    return:
+      type: Global.Weapon
+    content.vb: Public ReadOnly Property CurrentWeapon As Weapon
+  overload: Global.WeaponController.CurrentWeapon*
+- uid: Global.WeaponController.CurrentWeaponType
+  commentId: P:Global.WeaponController.CurrentWeaponType
+  id: CurrentWeaponType
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: CurrentWeaponType
+  nameWithType: WeaponController.CurrentWeaponType
+  fullName: WeaponController.CurrentWeaponType
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CurrentWeaponType
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public WeaponController.WeaponType CurrentWeaponType { get; }
+    parameters: []
+    return:
+      type: Global.WeaponController.WeaponType
+    content.vb: Public ReadOnly Property CurrentWeaponType As WeaponController.WeaponType
+  overload: Global.WeaponController.CurrentWeaponType*
+- uid: Global.WeaponController.weaponGlow
+  commentId: F:Global.WeaponController.weaponGlow
+  id: weaponGlow
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: weaponGlow
+  nameWithType: WeaponController.weaponGlow
+  fullName: WeaponController.weaponGlow
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: weaponGlow
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Weapon Properties")]
+
+      public FireEffectController weaponGlow
+    return:
+      type: Global.FireEffectController
+    content.vb: >-
+      <Header("Weapon Properties")>
+
+      Public weaponGlow As FireEffectController
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Weapon Properties
+- uid: Global.WeaponController.swapWeaponCooldown
+  commentId: F:Global.WeaponController.swapWeaponCooldown
+  id: swapWeaponCooldown
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: swapWeaponCooldown
+  nameWithType: WeaponController.swapWeaponCooldown
+  fullName: WeaponController.swapWeaponCooldown
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: swapWeaponCooldown
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float swapWeaponCooldown
+    return:
+      type: System.Single
+    content.vb: Public swapWeaponCooldown As Single
+- uid: Global.WeaponController.sigilYDisplacement
+  commentId: F:Global.WeaponController.sigilYDisplacement
+  id: sigilYDisplacement
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: sigilYDisplacement
+  nameWithType: WeaponController.sigilYDisplacement
+  fullName: WeaponController.sigilYDisplacement
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: sigilYDisplacement
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int sigilYDisplacement
+    return:
+      type: System.Int32
+    content.vb: Public sigilYDisplacement As Integer
+- uid: Global.WeaponController.BlinkDetonateBox
+  commentId: F:Global.WeaponController.BlinkDetonateBox
+  id: BlinkDetonateBox
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: BlinkDetonateBox
+  nameWithType: WeaponController.BlinkDetonateBox
+  fullName: WeaponController.BlinkDetonateBox
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlinkDetonateBox
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Blink Properties")]
+
+      public IntTrigger BlinkDetonateBox
+    return:
+      type: Global.IntTrigger
+    content.vb: >-
+      <Header("Blink Properties")>
+
+      Public BlinkDetonateBox As IntTrigger
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Blink Properties
+- uid: Global.WeaponController.BlinkSlashBox
+  commentId: F:Global.WeaponController.BlinkSlashBox
+  id: BlinkSlashBox
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: BlinkSlashBox
+  nameWithType: WeaponController.BlinkSlashBox
+  fullName: WeaponController.BlinkSlashBox
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlinkSlashBox
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IntTrigger BlinkSlashBox
+    return:
+      type: Global.IntTrigger
+    content.vb: Public BlinkSlashBox As IntTrigger
+- uid: Global.WeaponController.SlashTail
+  commentId: F:Global.WeaponController.SlashTail
+  id: SlashTail
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SlashTail
+  nameWithType: WeaponController.SlashTail
+  fullName: WeaponController.SlashTail
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SlashTail
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int SlashTail
+    return:
+      type: System.Int32
+    content.vb: Public SlashTail As Integer
+- uid: Global.WeaponController.SlashHead
+  commentId: F:Global.WeaponController.SlashHead
+  id: SlashHead
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SlashHead
+  nameWithType: WeaponController.SlashHead
+  fullName: WeaponController.SlashHead
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SlashHead
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int SlashHead
+    return:
+      type: System.Int32
+    content.vb: Public SlashHead As Integer
+- uid: Global.WeaponController.BlinkDistance
+  commentId: F:Global.WeaponController.BlinkDistance
+  id: BlinkDistance
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: BlinkDistance
+  nameWithType: WeaponController.BlinkDistance
+  fullName: WeaponController.BlinkDistance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlinkDistance
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float BlinkDistance
+    return:
+      type: System.Single
+    content.vb: Public BlinkDistance As Single
+- uid: Global.WeaponController.BlinkSlideDistance
+  commentId: F:Global.WeaponController.BlinkSlideDistance
+  id: BlinkSlideDistance
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: BlinkSlideDistance
+  nameWithType: WeaponController.BlinkSlideDistance
+  fullName: WeaponController.BlinkSlideDistance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlinkSlideDistance
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float BlinkSlideDistance
+    return:
+      type: System.Single
+    content.vb: Public BlinkSlideDistance As Single
+- uid: Global.WeaponController.BlinkSlideStepSize
+  commentId: F:Global.WeaponController.BlinkSlideStepSize
+  id: BlinkSlideStepSize
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: BlinkSlideStepSize
+  nameWithType: WeaponController.BlinkSlideStepSize
+  fullName: WeaponController.BlinkSlideStepSize
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlinkSlideStepSize
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int BlinkSlideStepSize
+    return:
+      type: System.Int32
+    content.vb: Public BlinkSlideStepSize As Integer
+- uid: Global.WeaponController.RangedBoxLeft
+  commentId: F:Global.WeaponController.RangedBoxLeft
+  id: RangedBoxLeft
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: RangedBoxLeft
+  nameWithType: WeaponController.RangedBoxLeft
+  fullName: WeaponController.RangedBoxLeft
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RangedBoxLeft
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Ranged Properties")]
+
+      public IntTrigger RangedBoxLeft
+    return:
+      type: Global.IntTrigger
+    content.vb: >-
+      <Header("Ranged Properties")>
+
+      Public RangedBoxLeft As IntTrigger
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Ranged Properties
+- uid: Global.WeaponController.RangedBoxRight
+  commentId: F:Global.WeaponController.RangedBoxRight
+  id: RangedBoxRight
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: RangedBoxRight
+  nameWithType: WeaponController.RangedBoxRight
+  fullName: WeaponController.RangedBoxRight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RangedBoxRight
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IntTrigger RangedBoxRight
+    return:
+      type: Global.IntTrigger
+    content.vb: Public RangedBoxRight As IntTrigger
+- uid: Global.WeaponController.MeleeBox
+  commentId: F:Global.WeaponController.MeleeBox
+  id: MeleeBox
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: MeleeBox
+  nameWithType: WeaponController.MeleeBox
+  fullName: WeaponController.MeleeBox
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MeleeBox
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Melee Properties")]
+
+      public IntTrigger MeleeBox
+    return:
+      type: Global.IntTrigger
+    content.vb: >-
+      <Header("Melee Properties")>
+
+      Public MeleeBox As IntTrigger
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Melee Properties
+- uid: Global.WeaponController.MeleeImmunityDuration
+  commentId: F:Global.WeaponController.MeleeImmunityDuration
+  id: MeleeImmunityDuration
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: MeleeImmunityDuration
+  nameWithType: WeaponController.MeleeImmunityDuration
+  fullName: WeaponController.MeleeImmunityDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MeleeImmunityDuration
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float MeleeImmunityDuration
+    return:
+      type: System.Single
+    content.vb: Public MeleeImmunityDuration As Single
+- uid: Global.WeaponController.Weapons
+  commentId: F:Global.WeaponController.Weapons
+  id: Weapons
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: WeaponController.Weapons
+  fullName: WeaponController.Weapons
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Weapons
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Dictionary<WeaponController.WeaponType, Weapon> Weapons
+    return:
+      type: System.Collections.Generic.Dictionary{WeaponController.WeaponType,Weapon}
+    content.vb: >-
+      <HideInInspector>
+
+      Public Weapons As Dictionary(Of WeaponController.WeaponType, Weapon)
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.WeaponController.onCurrentWeaponChanged
+  commentId: F:Global.WeaponController.onCurrentWeaponChanged
+  id: onCurrentWeaponChanged
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: onCurrentWeaponChanged
+  nameWithType: WeaponController.onCurrentWeaponChanged
+  fullName: WeaponController.onCurrentWeaponChanged
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: onCurrentWeaponChanged
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityEvent onCurrentWeaponChanged
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public onCurrentWeaponChanged As UnityEvent
+- uid: Global.WeaponController.SwitchToMelee
+  commentId: F:Global.WeaponController.SwitchToMelee
+  id: SwitchToMelee
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SwitchToMelee
+  nameWithType: WeaponController.SwitchToMelee
+  fullName: WeaponController.SwitchToMelee
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwitchToMelee
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Animation Prefebs")]
+
+      public GameObject SwitchToMelee
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <Header("Animation Prefebs")>
+
+      Public SwitchToMelee As GameObject
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Animation Prefebs
+- uid: Global.WeaponController.SwitchToRanged
+  commentId: F:Global.WeaponController.SwitchToRanged
+  id: SwitchToRanged
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SwitchToRanged
+  nameWithType: WeaponController.SwitchToRanged
+  fullName: WeaponController.SwitchToRanged
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwitchToRanged
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject SwitchToRanged
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public SwitchToRanged As GameObject
+- uid: Global.WeaponController.SwitchToBlink
+  commentId: F:Global.WeaponController.SwitchToBlink
+  id: SwitchToBlink
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SwitchToBlink
+  nameWithType: WeaponController.SwitchToBlink
+  fullName: WeaponController.SwitchToBlink
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwitchToBlink
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject SwitchToBlink
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public SwitchToBlink As GameObject
+- uid: Global.WeaponController.SwitchToInvis
+  commentId: F:Global.WeaponController.SwitchToInvis
+  id: SwitchToInvis
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SwitchToInvis
+  nameWithType: WeaponController.SwitchToInvis
+  fullName: WeaponController.SwitchToInvis
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwitchToInvis
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject SwitchToInvis
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public SwitchToInvis As GameObject
+- uid: Global.WeaponController.BlinkEffect
+  commentId: F:Global.WeaponController.BlinkEffect
+  id: BlinkEffect
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: BlinkEffect
+  nameWithType: WeaponController.BlinkEffect
+  fullName: WeaponController.BlinkEffect
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlinkEffect
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject BlinkEffect
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public BlinkEffect As GameObject
+- uid: Global.WeaponController.CutAnimation
+  commentId: F:Global.WeaponController.CutAnimation
+  id: CutAnimation
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: CutAnimation
+  nameWithType: WeaponController.CutAnimation
+  fullName: WeaponController.CutAnimation
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CutAnimation
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject CutAnimation
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public CutAnimation As GameObject
+- uid: Global.WeaponController.ResetLoadout
+  commentId: M:Global.WeaponController.ResetLoadout
+  id: ResetLoadout
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: ResetLoadout()
+  nameWithType: WeaponController.ResetLoadout()
+  fullName: WeaponController.ResetLoadout()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResetLoadout
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 86
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ResetLoadout()
+    content.vb: Public Sub ResetLoadout()
+  overload: Global.WeaponController.ResetLoadout*
+- uid: Global.WeaponController.CanTakeDamage
+  commentId: M:Global.WeaponController.CanTakeDamage
+  id: CanTakeDamage
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: CanTakeDamage()
+  nameWithType: WeaponController.CanTakeDamage()
+  fullName: WeaponController.CanTakeDamage()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CanTakeDamage
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 96
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool CanTakeDamage()
+    return:
+      type: System.Boolean
+    content.vb: Public Function CanTakeDamage() As Boolean
+  overload: Global.WeaponController.CanTakeDamage*
+- uid: Global.WeaponController.OnFirstFrame
+  commentId: M:Global.WeaponController.OnFirstFrame
+  id: OnFirstFrame
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: OnFirstFrame()
+  nameWithType: WeaponController.OnFirstFrame()
+  fullName: WeaponController.OnFirstFrame()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnFirstFrame
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 102
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void OnFirstFrame()
+    content.vb: Public Overridable Sub OnFirstFrame()
+  overload: Global.WeaponController.OnFirstFrame*
+- uid: Global.WeaponController.OnCharged
+  commentId: M:Global.WeaponController.OnCharged
+  id: OnCharged
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: OnCharged()
+  nameWithType: WeaponController.OnCharged()
+  fullName: WeaponController.OnCharged()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnCharged
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 108
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void OnCharged()
+    content.vb: Public Overridable Sub OnCharged()
+  overload: Global.WeaponController.OnCharged*
+- uid: Global.WeaponController.OnDashEnded
+  commentId: M:Global.WeaponController.OnDashEnded
+  id: OnDashEnded
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: OnDashEnded()
+  nameWithType: WeaponController.OnDashEnded()
+  fullName: WeaponController.OnDashEnded()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnDashEnded
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 113
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void OnDashEnded()
+    content.vb: Public Overridable Sub OnDashEnded()
+  overload: Global.WeaponController.OnDashEnded*
+- uid: Global.WeaponController.OnHitActor(IntActor)
+  commentId: M:Global.WeaponController.OnHitActor(IntActor)
+  id: OnHitActor(IntActor)
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: OnHitActor(IntActor)
+  nameWithType: WeaponController.OnHitActor(IntActor)
+  fullName: WeaponController.OnHitActor(IntActor)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnHitActor
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 118
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void OnHitActor(IntActor actor)
+    parameters:
+    - id: actor
+      type: Global.IntActor
+    content.vb: Public Overridable Sub OnHitActor(actor As IntActor)
+  overload: Global.WeaponController.OnHitActor*
+- uid: Global.WeaponController.CanSwapWeapon
+  commentId: M:Global.WeaponController.CanSwapWeapon
+  id: CanSwapWeapon
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: CanSwapWeapon()
+  nameWithType: WeaponController.CanSwapWeapon()
+  fullName: WeaponController.CanSwapWeapon()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CanSwapWeapon
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nCannot switch weapons if player is charged.\n"
+  example: []
+  syntax:
+    content: public bool CanSwapWeapon()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function CanSwapWeapon() As Boolean
+  overload: Global.WeaponController.CanSwapWeapon*
+- uid: Global.WeaponController.IsAttacking
+  commentId: M:Global.WeaponController.IsAttacking
+  id: IsAttacking
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: IsAttacking()
+  nameWithType: WeaponController.IsAttacking()
+  fullName: WeaponController.IsAttacking()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsAttacking
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 157
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsAttacking()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsAttacking() As Boolean
+  overload: Global.WeaponController.IsAttacking*
+- uid: Global.WeaponController.SwitchWeapons(System.Boolean)
+  commentId: M:Global.WeaponController.SwitchWeapons(System.Boolean)
+  id: SwitchWeapons(System.Boolean)
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SwitchWeapons(bool)
+  nameWithType: WeaponController.SwitchWeapons(bool)
+  fullName: WeaponController.SwitchWeapons(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwitchWeapons
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 165
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nSwaps the Player&apos;s current weapon and displays the relevent Sigil\n"
+  example: []
+  syntax:
+    content: public void SwitchWeapons(bool playAnimation = true)
+    parameters:
+    - id: playAnimation
+      type: System.Boolean
+    content.vb: Public Sub SwitchWeapons(playAnimation As Boolean = True)
+  overload: Global.WeaponController.SwitchWeapons*
+  nameWithType.vb: WeaponController.SwitchWeapons(Boolean)
+  fullName.vb: WeaponController.SwitchWeapons(Boolean)
+  name.vb: SwitchWeapons(Boolean)
+- uid: Global.WeaponController.SetPrimaryWeapon(WeaponController.WeaponType)
+  commentId: M:Global.WeaponController.SetPrimaryWeapon(WeaponController.WeaponType)
+  id: SetPrimaryWeapon(WeaponController.WeaponType)
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SetPrimaryWeapon(WeaponType)
+  nameWithType: WeaponController.SetPrimaryWeapon(WeaponController.WeaponType)
+  fullName: WeaponController.SetPrimaryWeapon(WeaponController.WeaponType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetPrimaryWeapon
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 213
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetPrimaryWeapon(WeaponController.WeaponType weaponType)
+    parameters:
+    - id: weaponType
+      type: Global.WeaponController.WeaponType
+    content.vb: Public Sub SetPrimaryWeapon(weaponType As WeaponController.WeaponType)
+  overload: Global.WeaponController.SetPrimaryWeapon*
+- uid: Global.WeaponController.SetSecondaryWeapon(WeaponController.WeaponType)
+  commentId: M:Global.WeaponController.SetSecondaryWeapon(WeaponController.WeaponType)
+  id: SetSecondaryWeapon(WeaponController.WeaponType)
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: SetSecondaryWeapon(WeaponType)
+  nameWithType: WeaponController.SetSecondaryWeapon(WeaponController.WeaponType)
+  fullName: WeaponController.SetSecondaryWeapon(WeaponController.WeaponType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetSecondaryWeapon
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 222
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetSecondaryWeapon(WeaponController.WeaponType weaponType)
+    parameters:
+    - id: weaponType
+      type: Global.WeaponController.WeaponType
+    content.vb: Public Sub SetSecondaryWeapon(weaponType As WeaponController.WeaponType)
+  overload: Global.WeaponController.SetSecondaryWeapon*
+- uid: Global.WeaponController.StartLoadoutCoroutine(System.Collections.IEnumerator)
+  commentId: M:Global.WeaponController.StartLoadoutCoroutine(System.Collections.IEnumerator)
+  id: StartLoadoutCoroutine(System.Collections.IEnumerator)
+  parent: Global.WeaponController
+  langs:
+  - csharp
+  - vb
+  name: StartLoadoutCoroutine(IEnumerator)
+  nameWithType: WeaponController.StartLoadoutCoroutine(IEnumerator)
+  fullName: WeaponController.StartLoadoutCoroutine(System.Collections.IEnumerator)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StartLoadoutCoroutine
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponController.cs
+    startLine: 236
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void StartLoadoutCoroutine(IEnumerator routine)
+    parameters:
+    - id: routine
+      type: System.Collections.IEnumerator
+    content.vb: Public Sub StartLoadoutCoroutine(routine As IEnumerator)
+  overload: Global.WeaponController.StartLoadoutCoroutine*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Weapon
+  commentId: T:Global.Weapon
+  name: Weapon
+  nameWithType: Weapon
+  fullName: Weapon
+- uid: Global.WeaponController.WeaponType
+  commentId: T:Global.WeaponController.WeaponType
+  name: WeaponController.WeaponType
+  nameWithType: WeaponController.WeaponType
+  fullName: WeaponController.WeaponType
+  spec.csharp:
+  - uid: Global.WeaponController
+    name: WeaponController
+  - name: .
+  - uid: Global.WeaponController.WeaponType
+    name: WeaponType
+  spec.vb:
+  - uid: Global.WeaponController
+    name: WeaponController
+  - name: .
+  - uid: Global.WeaponController.WeaponType
+    name: WeaponType
+- uid: Global.WeaponController.IsUsingPrimary*
+  commentId: Overload:Global.WeaponController.IsUsingPrimary
+  name: IsUsingPrimary
+  nameWithType: WeaponController.IsUsingPrimary
+  fullName: WeaponController.IsUsingPrimary
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.WeaponController.CurrentWeapon*
+  commentId: Overload:Global.WeaponController.CurrentWeapon
+  name: CurrentWeapon
+  nameWithType: WeaponController.CurrentWeapon
+  fullName: WeaponController.CurrentWeapon
+- uid: Global.WeaponController.CurrentWeaponType*
+  commentId: Overload:Global.WeaponController.CurrentWeaponType
+  name: CurrentWeaponType
+  nameWithType: WeaponController.CurrentWeaponType
+  fullName: WeaponController.CurrentWeaponType
+- uid: Global.FireEffectController
+  commentId: T:Global.FireEffectController
+  name: FireEffectController
+  nameWithType: FireEffectController
+  fullName: FireEffectController
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.IntTrigger
+  commentId: T:Global.IntTrigger
+  name: IntTrigger
+  nameWithType: IntTrigger
+  fullName: IntTrigger
+- uid: System.Collections.Generic.Dictionary{WeaponController.WeaponType,Weapon}
+  commentId: T:System.Collections.Generic.Dictionary{WeaponController.WeaponType,Weapon}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<WeaponController.WeaponType, Weapon>
+  nameWithType: Dictionary<WeaponController.WeaponType, Weapon>
+  fullName: System.Collections.Generic.Dictionary<WeaponController.WeaponType, Weapon>
+  nameWithType.vb: Dictionary(Of WeaponController.WeaponType, Weapon)
+  fullName.vb: System.Collections.Generic.Dictionary(Of WeaponController.WeaponType, Weapon)
+  name.vb: Dictionary(Of WeaponController.WeaponType, Weapon)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: Global.WeaponController
+    name: WeaponController
+  - name: .
+  - uid: Global.WeaponController.WeaponType
+    name: WeaponType
+  - name: ','
+  - name: " "
+  - uid: Global.Weapon
+    name: Weapon
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.WeaponController
+    name: WeaponController
+  - name: .
+  - uid: Global.WeaponController.WeaponType
+    name: WeaponType
+  - name: ','
+  - name: " "
+  - uid: Global.Weapon
+    name: Weapon
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.WeaponController.ResetLoadout*
+  commentId: Overload:Global.WeaponController.ResetLoadout
+  name: ResetLoadout
+  nameWithType: WeaponController.ResetLoadout
+  fullName: WeaponController.ResetLoadout
+- uid: Global.WeaponController.CanTakeDamage*
+  commentId: Overload:Global.WeaponController.CanTakeDamage
+  name: CanTakeDamage
+  nameWithType: WeaponController.CanTakeDamage
+  fullName: WeaponController.CanTakeDamage
+- uid: Global.WeaponController.OnFirstFrame*
+  commentId: Overload:Global.WeaponController.OnFirstFrame
+  name: OnFirstFrame
+  nameWithType: WeaponController.OnFirstFrame
+  fullName: WeaponController.OnFirstFrame
+- uid: Global.WeaponController.OnCharged*
+  commentId: Overload:Global.WeaponController.OnCharged
+  name: OnCharged
+  nameWithType: WeaponController.OnCharged
+  fullName: WeaponController.OnCharged
+- uid: Global.WeaponController.OnDashEnded*
+  commentId: Overload:Global.WeaponController.OnDashEnded
+  name: OnDashEnded
+  nameWithType: WeaponController.OnDashEnded
+  fullName: WeaponController.OnDashEnded
+- uid: Global.WeaponController.OnHitActor*
+  commentId: Overload:Global.WeaponController.OnHitActor
+  name: OnHitActor
+  nameWithType: WeaponController.OnHitActor
+  fullName: WeaponController.OnHitActor
+- uid: Global.IntActor
+  commentId: T:Global.IntActor
+  name: IntActor
+  nameWithType: IntActor
+  fullName: IntActor
+- uid: Global.WeaponController.CanSwapWeapon*
+  commentId: Overload:Global.WeaponController.CanSwapWeapon
+  name: CanSwapWeapon
+  nameWithType: WeaponController.CanSwapWeapon
+  fullName: WeaponController.CanSwapWeapon
+- uid: Global.WeaponController.IsAttacking*
+  commentId: Overload:Global.WeaponController.IsAttacking
+  name: IsAttacking
+  nameWithType: WeaponController.IsAttacking
+  fullName: WeaponController.IsAttacking
+- uid: Global.WeaponController.SwitchWeapons*
+  commentId: Overload:Global.WeaponController.SwitchWeapons
+  name: SwitchWeapons
+  nameWithType: WeaponController.SwitchWeapons
+  fullName: WeaponController.SwitchWeapons
+- uid: Global.WeaponController.SetPrimaryWeapon*
+  commentId: Overload:Global.WeaponController.SetPrimaryWeapon
+  name: SetPrimaryWeapon
+  nameWithType: WeaponController.SetPrimaryWeapon
+  fullName: WeaponController.SetPrimaryWeapon
+- uid: Global.WeaponController.SetSecondaryWeapon*
+  commentId: Overload:Global.WeaponController.SetSecondaryWeapon
+  name: SetSecondaryWeapon
+  nameWithType: WeaponController.SetSecondaryWeapon
+  fullName: WeaponController.SetSecondaryWeapon
+- uid: Global.WeaponController.StartLoadoutCoroutine*
+  commentId: Overload:Global.WeaponController.StartLoadoutCoroutine
+  name: StartLoadoutCoroutine
+  nameWithType: WeaponController.StartLoadoutCoroutine
+  fullName: WeaponController.StartLoadoutCoroutine
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true

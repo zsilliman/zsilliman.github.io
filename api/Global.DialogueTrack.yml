@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DialogueTrack
+  commentId: T:Global.DialogueTrack
+  id: DialogueTrack
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DialogueTrack
+  nameWithType: DialogueTrack
+  fullName: DialogueTrack
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Cutscenes/DialogueClip/DialogueTrack.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DialogueTrack
+    path: ../Assets/Objects & Components/World/Cutscenes/DialogueClip/DialogueTrack.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [TrackColor(1, 0, 0)]
+
+      [TrackClipType(typeof(DialogueClip))]
+
+      [TrackBindingType(typeof(Speaker))]
+
+      public class DialogueTrack : TrackAsset
+    content.vb: >-
+      <TrackColor(1, 0, 0)>
+
+      <TrackClipType(GetType(DialogueClip))>
+
+      <TrackBindingType(GetType(Speaker))>
+
+      Public Class DialogueTrack Inherits TrackAsset
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEngine.Playables.PlayableAsset
+  - UnityEngine.Timeline.TrackAsset
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.Timeline.TrackColorAttribute
+    ctor: UnityEngine.Timeline.TrackColorAttribute.#ctor(System.Single,System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 1
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 0
+  - type: UnityEngine.Timeline.TrackClipTypeAttribute
+    ctor: UnityEngine.Timeline.TrackClipTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.DialogueClip
+  - type: UnityEngine.Timeline.TrackBindingTypeAttribute
+    ctor: UnityEngine.Timeline.TrackBindingTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.Speaker
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.Playables.PlayableAsset
+  commentId: T:UnityEngine.Playables.PlayableAsset
+  parent: UnityEngine.Playables
+  isExternal: true
+  name: PlayableAsset
+  nameWithType: PlayableAsset
+  fullName: UnityEngine.Playables.PlayableAsset
+- uid: UnityEngine.Timeline.TrackAsset
+  commentId: T:UnityEngine.Timeline.TrackAsset
+  parent: UnityEngine.Timeline
+  isExternal: true
+  name: TrackAsset
+  nameWithType: TrackAsset
+  fullName: UnityEngine.Timeline.TrackAsset
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Playables
+  commentId: N:UnityEngine.Playables
+  isExternal: true
+  name: UnityEngine.Playables
+  nameWithType: UnityEngine.Playables
+  fullName: UnityEngine.Playables
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Playables
+    name: Playables
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Playables
+    name: Playables
+    isExternal: true
+- uid: UnityEngine.Timeline
+  commentId: N:UnityEngine.Timeline
+  isExternal: true
+  name: UnityEngine.Timeline
+  nameWithType: UnityEngine.Timeline
+  fullName: UnityEngine.Timeline
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Timeline
+    name: Timeline
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Timeline
+    name: Timeline
+    isExternal: true
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions

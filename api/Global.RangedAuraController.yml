@@ -1,0 +1,564 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RangedAuraController
+  commentId: T:Global.RangedAuraController
+  id: RangedAuraController
+  parent: Global
+  children:
+  - Global.RangedAuraController.CheckCollisions
+  - Global.RangedAuraController.Notify(RangedAuraController.RangedAuraState)
+  - Global.RangedAuraController.ScaleSpeed
+  - Global.RangedAuraController.SetTime(System.Single)
+  - Global.RangedAuraController.sr
+  - Global.RangedAuraController.state
+  - Global.RangedAuraController.t
+  langs:
+  - csharp
+  - vb
+  name: RangedAuraController
+  nameWithType: RangedAuraController
+  fullName: RangedAuraController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RangedAuraController
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class RangedAuraController : AuraController<RangedAuraController.RangedAuraState>'
+    content.vb: Public Class RangedAuraController Inherits AuraController(Of RangedAuraController.RangedAuraState)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraController{RangedAuraController.RangedAuraState}
+  inheritedMembers:
+  - Global.AuraController{RangedAuraController.RangedAuraState}.auraCreator
+  - Global.AuraController{RangedAuraController.RangedAuraState}.auraComponent
+  - Global.AuraController{RangedAuraController.RangedAuraState}.Start
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.RangedAuraController.sr
+  commentId: F:Global.RangedAuraController.sr
+  id: sr
+  parent: Global.RangedAuraController
+  langs:
+  - csharp
+  - vb
+  name: sr
+  nameWithType: RangedAuraController.sr
+  fullName: RangedAuraController.sr
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: sr
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected SpriteRenderer sr
+    return:
+      type: UnityEngine.SpriteRenderer
+    content.vb: Protected sr As SpriteRenderer
+- uid: Global.RangedAuraController.t
+  commentId: F:Global.RangedAuraController.t
+  id: t
+  parent: Global.RangedAuraController
+  langs:
+  - csharp
+  - vb
+  name: t
+  nameWithType: RangedAuraController.t
+  fullName: RangedAuraController.t
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: t
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float t
+    return:
+      type: System.Single
+    content.vb: Protected t As Single
+- uid: Global.RangedAuraController.ScaleSpeed
+  commentId: F:Global.RangedAuraController.ScaleSpeed
+  id: ScaleSpeed
+  parent: Global.RangedAuraController
+  langs:
+  - csharp
+  - vb
+  name: ScaleSpeed
+  nameWithType: RangedAuraController.ScaleSpeed
+  fullName: RangedAuraController.ScaleSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ScaleSpeed
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float ScaleSpeed
+    return:
+      type: System.Single
+    content.vb: Protected ScaleSpeed As Single
+- uid: Global.RangedAuraController.state
+  commentId: F:Global.RangedAuraController.state
+  id: state
+  parent: Global.RangedAuraController
+  langs:
+  - csharp
+  - vb
+  name: state
+  nameWithType: RangedAuraController.state
+  fullName: RangedAuraController.state
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: state
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected RangedAuraController.RangedAuraState state
+    return:
+      type: Global.RangedAuraController.RangedAuraState
+    content.vb: Protected state As RangedAuraController.RangedAuraState
+- uid: Global.RangedAuraController.Notify(RangedAuraController.RangedAuraState)
+  commentId: M:Global.RangedAuraController.Notify(RangedAuraController.RangedAuraState)
+  id: Notify(RangedAuraController.RangedAuraState)
+  parent: Global.RangedAuraController
+  langs:
+  - csharp
+  - vb
+  name: Notify(RangedAuraState)
+  nameWithType: RangedAuraController.Notify(RangedAuraController.RangedAuraState)
+  fullName: RangedAuraController.Notify(RangedAuraController.RangedAuraState)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Notify
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Notify(RangedAuraController.RangedAuraState notificationType)
+    parameters:
+    - id: notificationType
+      type: Global.RangedAuraController.RangedAuraState
+    content.vb: Public Overrides Sub Notify(notificationType As RangedAuraController.RangedAuraState)
+  overridden: Global.AuraController{RangedAuraController.RangedAuraState}.Notify(RangedAuraController.RangedAuraState)
+  overload: Global.RangedAuraController.Notify*
+- uid: Global.RangedAuraController.SetTime(System.Single)
+  commentId: M:Global.RangedAuraController.SetTime(System.Single)
+  id: SetTime(System.Single)
+  parent: Global.RangedAuraController
+  langs:
+  - csharp
+  - vb
+  name: SetTime(float)
+  nameWithType: RangedAuraController.SetTime(float)
+  fullName: RangedAuraController.SetTime(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetTime
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetTime(float t)
+    parameters:
+    - id: t
+      type: System.Single
+    content.vb: Public Sub SetTime(t As Single)
+  overload: Global.RangedAuraController.SetTime*
+  nameWithType.vb: RangedAuraController.SetTime(Single)
+  fullName.vb: RangedAuraController.SetTime(Single)
+  name.vb: SetTime(Single)
+- uid: Global.RangedAuraController.CheckCollisions
+  commentId: M:Global.RangedAuraController.CheckCollisions
+  id: CheckCollisions
+  parent: Global.RangedAuraController
+  langs:
+  - csharp
+  - vb
+  name: CheckCollisions()
+  nameWithType: RangedAuraController.CheckCollisions()
+  fullName: RangedAuraController.CheckCollisions()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CheckCollisions
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/Ranged Assets/RangedAuraController.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void CheckCollisions()
+    content.vb: Protected Sub CheckCollisions()
+  overload: Global.RangedAuraController.CheckCollisions*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraController{RangedAuraController.RangedAuraState}
+  commentId: T:Global.AuraController{RangedAuraController.RangedAuraState}
+  definition: Global.AuraController`1
+  name: AuraController<RangedAuraController.RangedAuraState>
+  nameWithType: AuraController<RangedAuraController.RangedAuraState>
+  fullName: AuraController<RangedAuraController.RangedAuraState>
+  nameWithType.vb: AuraController(Of RangedAuraController.RangedAuraState)
+  fullName.vb: AuraController(Of RangedAuraController.RangedAuraState)
+  name.vb: AuraController(Of RangedAuraController.RangedAuraState)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - uid: Global.RangedAuraController
+    name: RangedAuraController
+  - name: .
+  - uid: Global.RangedAuraController.RangedAuraState
+    name: RangedAuraState
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.RangedAuraController
+    name: RangedAuraController
+  - name: .
+  - uid: Global.RangedAuraController.RangedAuraState
+    name: RangedAuraState
+  - name: )
+- uid: Global.AuraController{RangedAuraController.RangedAuraState}.auraCreator
+  commentId: F:Global.AuraController{RangedAuraController.RangedAuraState}.auraCreator
+  parent: Global.AuraController{RangedAuraController.RangedAuraState}
+  definition: Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<RangedAuraController.RangedAuraState>.auraCreator
+  fullName: AuraController<RangedAuraController.RangedAuraState>.auraCreator
+  nameWithType.vb: AuraController(Of RangedAuraController.RangedAuraState).auraCreator
+  fullName.vb: AuraController(Of RangedAuraController.RangedAuraState).auraCreator
+- uid: Global.AuraController{RangedAuraController.RangedAuraState}.auraComponent
+  commentId: F:Global.AuraController{RangedAuraController.RangedAuraState}.auraComponent
+  parent: Global.AuraController{RangedAuraController.RangedAuraState}
+  definition: Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<RangedAuraController.RangedAuraState>.auraComponent
+  fullName: AuraController<RangedAuraController.RangedAuraState>.auraComponent
+  nameWithType.vb: AuraController(Of RangedAuraController.RangedAuraState).auraComponent
+  fullName.vb: AuraController(Of RangedAuraController.RangedAuraState).auraComponent
+- uid: Global.AuraController{RangedAuraController.RangedAuraState}.Start
+  commentId: M:Global.AuraController{RangedAuraController.RangedAuraState}.Start
+  parent: Global.AuraController{RangedAuraController.RangedAuraState}
+  definition: Global.AuraController`1.Start
+  name: Start()
+  nameWithType: AuraController<RangedAuraController.RangedAuraState>.Start()
+  fullName: AuraController<RangedAuraController.RangedAuraState>.Start()
+  nameWithType.vb: AuraController(Of RangedAuraController.RangedAuraState).Start()
+  fullName.vb: AuraController(Of RangedAuraController.RangedAuraState).Start()
+  spec.csharp:
+  - uid: Global.AuraController{RangedAuraController.RangedAuraState}.Start
+    name: Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController{RangedAuraController.RangedAuraState}.Start
+    name: Start
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraController`1
+  commentId: T:Global.AuraController`1
+  name: AuraController<T>
+  nameWithType: AuraController<T>
+  fullName: AuraController<T>
+  nameWithType.vb: AuraController(Of T)
+  fullName.vb: AuraController(Of T)
+  name.vb: AuraController(Of T)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraController`1.auraCreator
+  commentId: F:Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<T>.auraCreator
+  fullName: AuraController<T>.auraCreator
+  nameWithType.vb: AuraController(Of T).auraCreator
+  fullName.vb: AuraController(Of T).auraCreator
+- uid: Global.AuraController`1.auraComponent
+  commentId: F:Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<T>.auraComponent
+  fullName: AuraController<T>.auraComponent
+  nameWithType.vb: AuraController(Of T).auraComponent
+  fullName.vb: AuraController(Of T).auraComponent
+- uid: Global.AuraController`1.Start
+  commentId: M:Global.AuraController`1.Start
+  name: Start()
+  nameWithType: AuraController<T>.Start()
+  fullName: AuraController<T>.Start()
+  nameWithType.vb: AuraController(Of T).Start()
+  fullName.vb: AuraController(Of T).Start()
+  spec.csharp:
+  - uid: Global.AuraController`1.Start
+    name: Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController`1.Start
+    name: Start
+  - name: (
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.SpriteRenderer
+  commentId: T:UnityEngine.SpriteRenderer
+  parent: UnityEngine
+  isExternal: true
+  name: SpriteRenderer
+  nameWithType: SpriteRenderer
+  fullName: UnityEngine.SpriteRenderer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.RangedAuraController.RangedAuraState
+  commentId: T:Global.RangedAuraController.RangedAuraState
+  name: RangedAuraController.RangedAuraState
+  nameWithType: RangedAuraController.RangedAuraState
+  fullName: RangedAuraController.RangedAuraState
+  spec.csharp:
+  - uid: Global.RangedAuraController
+    name: RangedAuraController
+  - name: .
+  - uid: Global.RangedAuraController.RangedAuraState
+    name: RangedAuraState
+  spec.vb:
+  - uid: Global.RangedAuraController
+    name: RangedAuraController
+  - name: .
+  - uid: Global.RangedAuraController.RangedAuraState
+    name: RangedAuraState
+- uid: Global.AuraController{RangedAuraController.RangedAuraState}.Notify(RangedAuraController.RangedAuraState)
+  commentId: M:Global.AuraController{RangedAuraController.RangedAuraState}.Notify(RangedAuraController.RangedAuraState)
+  parent: Global.AuraController{RangedAuraController.RangedAuraState}
+  definition: Global.AuraController`1.Notify(`0)
+  name: Notify(RangedAuraState)
+  nameWithType: AuraController<RangedAuraController.RangedAuraState>.Notify(RangedAuraController.RangedAuraState)
+  fullName: AuraController<RangedAuraController.RangedAuraState>.Notify(RangedAuraController.RangedAuraState)
+  nameWithType.vb: AuraController(Of RangedAuraController.RangedAuraState).Notify(RangedAuraController.RangedAuraState)
+  fullName.vb: AuraController(Of RangedAuraController.RangedAuraState).Notify(RangedAuraController.RangedAuraState)
+  spec.csharp:
+  - uid: Global.AuraController{RangedAuraController.RangedAuraState}.Notify(RangedAuraController.RangedAuraState)
+    name: Notify
+  - name: (
+  - uid: Global.RangedAuraController.RangedAuraState
+    name: RangedAuraState
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController{RangedAuraController.RangedAuraState}.Notify(RangedAuraController.RangedAuraState)
+    name: Notify
+  - name: (
+  - uid: Global.RangedAuraController.RangedAuraState
+    name: RangedAuraState
+  - name: )
+- uid: Global.RangedAuraController.Notify*
+  commentId: Overload:Global.RangedAuraController.Notify
+  name: Notify
+  nameWithType: RangedAuraController.Notify
+  fullName: RangedAuraController.Notify
+- uid: Global.AuraController`1.Notify(`0)
+  commentId: M:Global.AuraController`1.Notify(`0)
+  name: Notify(T)
+  nameWithType: AuraController<T>.Notify(T)
+  fullName: AuraController<T>.Notify(T)
+  nameWithType.vb: AuraController(Of T).Notify(T)
+  fullName.vb: AuraController(Of T).Notify(T)
+  spec.csharp:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+- uid: Global.RangedAuraController.SetTime*
+  commentId: Overload:Global.RangedAuraController.SetTime
+  name: SetTime
+  nameWithType: RangedAuraController.SetTime
+  fullName: RangedAuraController.SetTime
+- uid: Global.RangedAuraController.CheckCollisions*
+  commentId: Overload:Global.RangedAuraController.CheckCollisions
+  name: CheckCollisions
+  nameWithType: RangedAuraController.CheckCollisions
+  fullName: RangedAuraController.CheckCollisions

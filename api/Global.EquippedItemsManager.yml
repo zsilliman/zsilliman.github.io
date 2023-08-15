@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.EquippedItemsManager
+  commentId: T:Global.EquippedItemsManager
+  id: EquippedItemsManager
+  parent: Global
+  children:
+  - Global.EquippedItemsManager.augmentSlots
+  - Global.EquippedItemsManager.consumableSlots
+  - Global.EquippedItemsManager.equipment
+  - Global.EquippedItemsManager.hand
+  - Global.EquippedItemsManager.incantationSlots
+  - Global.EquippedItemsManager.player
+  - Global.EquippedItemsManager.stats
+  - Global.EquippedItemsManager.weaponsSlots
+  langs:
+  - csharp
+  - vb
+  name: EquippedItemsManager
+  nameWithType: EquippedItemsManager
+  fullName: EquippedItemsManager
+  type: Class
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EquippedItemsManager
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class EquippedItemsManager : MonoBehaviour'
+    content.vb: Public Class EquippedItemsManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.EquippedItemsManager.weaponsSlots
+  commentId: F:Global.EquippedItemsManager.weaponsSlots
+  id: weaponsSlots
+  parent: Global.EquippedItemsManager
+  langs:
+  - csharp
+  - vb
+  name: weaponsSlots
+  nameWithType: EquippedItemsManager.weaponsSlots
+  fullName: EquippedItemsManager.weaponsSlots
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: weaponsSlots
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InventorySlot[] weaponsSlots
+    return:
+      type: Global.InventorySlot[]
+    content.vb: Public weaponsSlots As InventorySlot()
+- uid: Global.EquippedItemsManager.incantationSlots
+  commentId: F:Global.EquippedItemsManager.incantationSlots
+  id: incantationSlots
+  parent: Global.EquippedItemsManager
+  langs:
+  - csharp
+  - vb
+  name: incantationSlots
+  nameWithType: EquippedItemsManager.incantationSlots
+  fullName: EquippedItemsManager.incantationSlots
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: incantationSlots
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InventorySlot[] incantationSlots
+    return:
+      type: Global.InventorySlot[]
+    content.vb: Public incantationSlots As InventorySlot()
+- uid: Global.EquippedItemsManager.consumableSlots
+  commentId: F:Global.EquippedItemsManager.consumableSlots
+  id: consumableSlots
+  parent: Global.EquippedItemsManager
+  langs:
+  - csharp
+  - vb
+  name: consumableSlots
+  nameWithType: EquippedItemsManager.consumableSlots
+  fullName: EquippedItemsManager.consumableSlots
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: consumableSlots
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InventorySlot[] consumableSlots
+    return:
+      type: Global.InventorySlot[]
+    content.vb: Public consumableSlots As InventorySlot()
+- uid: Global.EquippedItemsManager.augmentSlots
+  commentId: F:Global.EquippedItemsManager.augmentSlots
+  id: augmentSlots
+  parent: Global.EquippedItemsManager
+  langs:
+  - csharp
+  - vb
+  name: augmentSlots
+  nameWithType: EquippedItemsManager.augmentSlots
+  fullName: EquippedItemsManager.augmentSlots
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: augmentSlots
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InventorySlot[] augmentSlots
+    return:
+      type: Global.InventorySlot[]
+    content.vb: Public augmentSlots As InventorySlot()
+- uid: Global.EquippedItemsManager.hand
+  commentId: F:Global.EquippedItemsManager.hand
+  id: hand
+  parent: Global.EquippedItemsManager
+  langs:
+  - csharp
+  - vb
+  name: hand
+  nameWithType: EquippedItemsManager.hand
+  fullName: EquippedItemsManager.hand
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: hand
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Hand hand
+    return:
+      type: Global.Hand
+    content.vb: Public hand As Hand
+- uid: Global.EquippedItemsManager.stats
+  commentId: F:Global.EquippedItemsManager.stats
+  id: stats
+  parent: Global.EquippedItemsManager
+  langs:
+  - csharp
+  - vb
+  name: stats
+  nameWithType: EquippedItemsManager.stats
+  fullName: EquippedItemsManager.stats
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: stats
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public PlayerStats stats
+    return:
+      type: Global.PlayerStats
+    content.vb: >-
+      <HideInInspector>
+
+      Public stats As PlayerStats
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.EquippedItemsManager.player
+  commentId: F:Global.EquippedItemsManager.player
+  id: player
+  parent: Global.EquippedItemsManager
+  langs:
+  - csharp
+  - vb
+  name: player
+  nameWithType: EquippedItemsManager.player
+  fullName: EquippedItemsManager.player
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: player
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Player player
+    return:
+      type: Global.Player
+    content.vb: Public player As Player
+- uid: Global.EquippedItemsManager.equipment
+  commentId: F:Global.EquippedItemsManager.equipment
+  id: equipment
+  parent: Global.EquippedItemsManager
+  langs:
+  - csharp
+  - vb
+  name: equipment
+  nameWithType: EquippedItemsManager.equipment
+  fullName: EquippedItemsManager.equipment
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/EquippedItemsManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: equipment
+    path: ../Assets/User Interface/Inventory/EquippedItemsManager.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public PlayerEquipment equipment
+    return:
+      type: Global.PlayerEquipment
+    content.vb: >-
+      <HideInInspector>
+
+      Public equipment As PlayerEquipment
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.InventorySlot[]
+  isExternal: true
+  name: InventorySlot[]
+  nameWithType: InventorySlot[]
+  fullName: InventorySlot[]
+  nameWithType.vb: InventorySlot()
+  fullName.vb: InventorySlot()
+  name.vb: InventorySlot()
+  spec.csharp:
+  - uid: Global.InventorySlot
+    name: InventorySlot
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.InventorySlot
+    name: InventorySlot
+  - name: (
+  - name: )
+- uid: Global.Hand
+  commentId: T:Global.Hand
+  name: Hand
+  nameWithType: Hand
+  fullName: Hand
+- uid: Global.PlayerStats
+  commentId: T:Global.PlayerStats
+  name: PlayerStats
+  nameWithType: PlayerStats
+  fullName: PlayerStats
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.PlayerEquipment
+  commentId: T:Global.PlayerEquipment
+  name: PlayerEquipment
+  nameWithType: PlayerEquipment
+  fullName: PlayerEquipment

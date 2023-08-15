@@ -1,0 +1,506 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RippleAuraController
+  commentId: T:Global.RippleAuraController
+  id: RippleAuraController
+  parent: Global
+  children:
+  - Global.RippleAuraController.auraEndRadius
+  - Global.RippleAuraController.auraSpeed
+  - Global.RippleAuraController.auraStartRadius
+  - Global.RippleAuraController.Notify(DefaultNotificationType)
+  - Global.RippleAuraController.segmentsPerRadian
+  - Global.RippleAuraController.Start
+  - Global.RippleAuraController.Update
+  langs:
+  - csharp
+  - vb
+  name: RippleAuraController
+  nameWithType: RippleAuraController
+  fullName: RippleAuraController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RippleAuraController
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class RippleAuraController : AuraController<DefaultNotificationType>'
+    content.vb: Public Class RippleAuraController Inherits AuraController(Of DefaultNotificationType)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraController{DefaultNotificationType}
+  inheritedMembers:
+  - Global.AuraController{DefaultNotificationType}.auraCreator
+  - Global.AuraController{DefaultNotificationType}.auraComponent
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.RippleAuraController.auraStartRadius
+  commentId: F:Global.RippleAuraController.auraStartRadius
+  id: auraStartRadius
+  parent: Global.RippleAuraController
+  langs:
+  - csharp
+  - vb
+  name: auraStartRadius
+  nameWithType: RippleAuraController.auraStartRadius
+  fullName: RippleAuraController.auraStartRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraStartRadius
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int auraStartRadius
+    return:
+      type: System.Int32
+    content.vb: Public auraStartRadius As Integer
+- uid: Global.RippleAuraController.auraEndRadius
+  commentId: F:Global.RippleAuraController.auraEndRadius
+  id: auraEndRadius
+  parent: Global.RippleAuraController
+  langs:
+  - csharp
+  - vb
+  name: auraEndRadius
+  nameWithType: RippleAuraController.auraEndRadius
+  fullName: RippleAuraController.auraEndRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraEndRadius
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int auraEndRadius
+    return:
+      type: System.Int32
+    content.vb: Public auraEndRadius As Integer
+- uid: Global.RippleAuraController.auraSpeed
+  commentId: F:Global.RippleAuraController.auraSpeed
+  id: auraSpeed
+  parent: Global.RippleAuraController
+  langs:
+  - csharp
+  - vb
+  name: auraSpeed
+  nameWithType: RippleAuraController.auraSpeed
+  fullName: RippleAuraController.auraSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraSpeed
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float auraSpeed
+    return:
+      type: System.Single
+    content.vb: Public auraSpeed As Single
+- uid: Global.RippleAuraController.segmentsPerRadian
+  commentId: F:Global.RippleAuraController.segmentsPerRadian
+  id: segmentsPerRadian
+  parent: Global.RippleAuraController
+  langs:
+  - csharp
+  - vb
+  name: segmentsPerRadian
+  nameWithType: RippleAuraController.segmentsPerRadian
+  fullName: RippleAuraController.segmentsPerRadian
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: segmentsPerRadian
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float segmentsPerRadian
+    return:
+      type: System.Single
+    content.vb: Public segmentsPerRadian As Single
+- uid: Global.RippleAuraController.Notify(DefaultNotificationType)
+  commentId: M:Global.RippleAuraController.Notify(DefaultNotificationType)
+  id: Notify(DefaultNotificationType)
+  parent: Global.RippleAuraController
+  langs:
+  - csharp
+  - vb
+  name: Notify(DefaultNotificationType)
+  nameWithType: RippleAuraController.Notify(DefaultNotificationType)
+  fullName: RippleAuraController.Notify(DefaultNotificationType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Notify
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Notify(DefaultNotificationType notificationType)
+    parameters:
+    - id: notificationType
+      type: Global.DefaultNotificationType
+    content.vb: Public Overrides Sub Notify(notificationType As DefaultNotificationType)
+  overridden: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  overload: Global.RippleAuraController.Notify*
+- uid: Global.RippleAuraController.Start
+  commentId: M:Global.RippleAuraController.Start
+  id: Start
+  parent: Global.RippleAuraController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: RippleAuraController.Start()
+  fullName: RippleAuraController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.RippleAuraController.Start*
+- uid: Global.RippleAuraController.Update
+  commentId: M:Global.RippleAuraController.Update
+  id: Update
+  parent: Global.RippleAuraController
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: RippleAuraController.Update()
+  fullName: RippleAuraController.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Ripple/RippleAuraController.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Update()
+    content.vb: Protected Sub Update()
+  overload: Global.RippleAuraController.Update*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraController{DefaultNotificationType}
+  commentId: T:Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1
+  name: AuraController<DefaultNotificationType>
+  nameWithType: AuraController<DefaultNotificationType>
+  fullName: AuraController<DefaultNotificationType>
+  nameWithType.vb: AuraController(Of DefaultNotificationType)
+  fullName.vb: AuraController(Of DefaultNotificationType)
+  name.vb: AuraController(Of DefaultNotificationType)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+- uid: Global.AuraController{DefaultNotificationType}.auraCreator
+  commentId: F:Global.AuraController{DefaultNotificationType}.auraCreator
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<DefaultNotificationType>.auraCreator
+  fullName: AuraController<DefaultNotificationType>.auraCreator
+  nameWithType.vb: AuraController(Of DefaultNotificationType).auraCreator
+  fullName.vb: AuraController(Of DefaultNotificationType).auraCreator
+- uid: Global.AuraController{DefaultNotificationType}.auraComponent
+  commentId: F:Global.AuraController{DefaultNotificationType}.auraComponent
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<DefaultNotificationType>.auraComponent
+  fullName: AuraController<DefaultNotificationType>.auraComponent
+  nameWithType.vb: AuraController(Of DefaultNotificationType).auraComponent
+  fullName.vb: AuraController(Of DefaultNotificationType).auraComponent
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraController`1
+  commentId: T:Global.AuraController`1
+  name: AuraController<T>
+  nameWithType: AuraController<T>
+  fullName: AuraController<T>
+  nameWithType.vb: AuraController(Of T)
+  fullName.vb: AuraController(Of T)
+  name.vb: AuraController(Of T)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraController`1.auraCreator
+  commentId: F:Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<T>.auraCreator
+  fullName: AuraController<T>.auraCreator
+  nameWithType.vb: AuraController(Of T).auraCreator
+  fullName.vb: AuraController(Of T).auraCreator
+- uid: Global.AuraController`1.auraComponent
+  commentId: F:Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<T>.auraComponent
+  fullName: AuraController<T>.auraComponent
+  nameWithType.vb: AuraController(Of T).auraComponent
+  fullName.vb: AuraController(Of T).auraComponent
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  commentId: M:Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.Notify(`0)
+  name: Notify(DefaultNotificationType)
+  nameWithType: AuraController<DefaultNotificationType>.Notify(DefaultNotificationType)
+  fullName: AuraController<DefaultNotificationType>.Notify(DefaultNotificationType)
+  nameWithType.vb: AuraController(Of DefaultNotificationType).Notify(DefaultNotificationType)
+  fullName.vb: AuraController(Of DefaultNotificationType).Notify(DefaultNotificationType)
+  spec.csharp:
+  - uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+    name: Notify
+  - name: (
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+    name: Notify
+  - name: (
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+- uid: Global.RippleAuraController.Notify*
+  commentId: Overload:Global.RippleAuraController.Notify
+  name: Notify
+  nameWithType: RippleAuraController.Notify
+  fullName: RippleAuraController.Notify
+- uid: Global.DefaultNotificationType
+  commentId: T:Global.DefaultNotificationType
+  name: DefaultNotificationType
+  nameWithType: DefaultNotificationType
+  fullName: DefaultNotificationType
+- uid: Global.AuraController`1.Notify(`0)
+  commentId: M:Global.AuraController`1.Notify(`0)
+  name: Notify(T)
+  nameWithType: AuraController<T>.Notify(T)
+  fullName: AuraController<T>.Notify(T)
+  nameWithType.vb: AuraController(Of T).Notify(T)
+  fullName.vb: AuraController(Of T).Notify(T)
+  spec.csharp:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+- uid: Global.RippleAuraController.Start*
+  commentId: Overload:Global.RippleAuraController.Start
+  name: Start
+  nameWithType: RippleAuraController.Start
+  fullName: RippleAuraController.Start
+- uid: Global.RippleAuraController.Update*
+  commentId: Overload:Global.RippleAuraController.Update
+  name: Update
+  nameWithType: RippleAuraController.Update
+  fullName: RippleAuraController.Update

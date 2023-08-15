@@ -1,0 +1,809 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AggroTriggerBase`1
+  commentId: T:Global.AggroTriggerBase`1
+  id: AggroTriggerBase`1
+  parent: Global
+  children:
+  - Global.AggroTriggerBase`1.CheckShouldAggro
+  - Global.AggroTriggerBase`1.Initialize(`0,UnityEngine.GameObject,IntObject)
+  - Global.AggroTriggerBase`1.IsAggroing
+  - Global.AggroTriggerBase`1.IsTargetVisible
+  - Global.AggroTriggerBase`1.LastFrameAggro
+  - Global.AggroTriggerBase`1.OnEndAggro
+  - Global.AggroTriggerBase`1.OnStartAggro
+  - Global.AggroTriggerBase`1.Properties
+  - Global.AggroTriggerBase`1.RegisterEndAggroCallback(IntObject.Action)
+  - Global.AggroTriggerBase`1.RegisterStartAggroCallback(IntObject.Action)
+  - Global.AggroTriggerBase`1.Reset
+  - Global.AggroTriggerBase`1.Self
+  - Global.AggroTriggerBase`1.Target
+  - Global.AggroTriggerBase`1.UnregisterEndAggroCallback(IntObject.Action)
+  - Global.AggroTriggerBase`1.UnregisterStartAggroCallback(IntObject.Action)
+  - Global.AggroTriggerBase`1.Update
+  - Global.AggroTriggerBase`1.UpdateBounds
+  langs:
+  - csharp
+  - vb
+  name: AggroTriggerBase<T>
+  nameWithType: AggroTriggerBase<T>
+  fullName: AggroTriggerBase<T>
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AggroTriggerBase
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public abstract class AggroTriggerBase<T> where T : AggroPropertiesBase'
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class AggroTriggerBase(Of T As AggroPropertiesBase)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Global.BoundsAggroTrigger
+  - Global.CircleAggroTrigger
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  nameWithType.vb: AggroTriggerBase(Of T)
+  fullName.vb: AggroTriggerBase(Of T)
+  name.vb: AggroTriggerBase(Of T)
+- uid: Global.AggroTriggerBase`1.Properties
+  commentId: F:Global.AggroTriggerBase`1.Properties
+  id: Properties
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: AggroTriggerBase<T>.Properties
+  fullName: AggroTriggerBase<T>.Properties
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Properties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public T Properties
+    return:
+      type: '{T}'
+    content.vb: Public Properties As T
+  nameWithType.vb: AggroTriggerBase(Of T).Properties
+  fullName.vb: AggroTriggerBase(Of T).Properties
+- uid: Global.AggroTriggerBase`1.Target
+  commentId: P:Global.AggroTriggerBase`1.Target
+  id: Target
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: AggroTriggerBase<T>.Target
+  fullName: AggroTriggerBase<T>.Target
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Target
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public GameObject Target { get; protected set; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <HideInInspector>
+
+      Public Property Target As GameObject
+  overload: Global.AggroTriggerBase`1.Target*
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  nameWithType.vb: AggroTriggerBase(Of T).Target
+  fullName.vb: AggroTriggerBase(Of T).Target
+- uid: Global.AggroTriggerBase`1.Self
+  commentId: P:Global.AggroTriggerBase`1.Self
+  id: Self
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: Self
+  nameWithType: AggroTriggerBase<T>.Self
+  fullName: AggroTriggerBase<T>.Self
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Self
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public IntObject Self { get; protected set; }
+    parameters: []
+    return:
+      type: Global.IntObject
+    content.vb: >-
+      <HideInInspector>
+
+      Public Property Self As IntObject
+  overload: Global.AggroTriggerBase`1.Self*
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  nameWithType.vb: AggroTriggerBase(Of T).Self
+  fullName.vb: AggroTriggerBase(Of T).Self
+- uid: Global.AggroTriggerBase`1.IsAggroing
+  commentId: P:Global.AggroTriggerBase`1.IsAggroing
+  id: IsAggroing
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: IsAggroing
+  nameWithType: AggroTriggerBase<T>.IsAggroing
+  fullName: AggroTriggerBase<T>.IsAggroing
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsAggroing
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsAggroing { get; protected set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsAggroing As Boolean
+  overload: Global.AggroTriggerBase`1.IsAggroing*
+  nameWithType.vb: AggroTriggerBase(Of T).IsAggroing
+  fullName.vb: AggroTriggerBase(Of T).IsAggroing
+- uid: Global.AggroTriggerBase`1.OnStartAggro
+  commentId: F:Global.AggroTriggerBase`1.OnStartAggro
+  id: OnStartAggro
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: OnStartAggro
+  nameWithType: AggroTriggerBase<T>.OnStartAggro
+  fullName: AggroTriggerBase<T>.OnStartAggro
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnStartAggro
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected IntObject.Action OnStartAggro
+    return:
+      type: Global.IntObject.Action
+    content.vb: Protected OnStartAggro As IntObject.Action
+  nameWithType.vb: AggroTriggerBase(Of T).OnStartAggro
+  fullName.vb: AggroTriggerBase(Of T).OnStartAggro
+- uid: Global.AggroTriggerBase`1.OnEndAggro
+  commentId: F:Global.AggroTriggerBase`1.OnEndAggro
+  id: OnEndAggro
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: OnEndAggro
+  nameWithType: AggroTriggerBase<T>.OnEndAggro
+  fullName: AggroTriggerBase<T>.OnEndAggro
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnEndAggro
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected IntObject.Action OnEndAggro
+    return:
+      type: Global.IntObject.Action
+    content.vb: Protected OnEndAggro As IntObject.Action
+  nameWithType.vb: AggroTriggerBase(Of T).OnEndAggro
+  fullName.vb: AggroTriggerBase(Of T).OnEndAggro
+- uid: Global.AggroTriggerBase`1.LastFrameAggro
+  commentId: F:Global.AggroTriggerBase`1.LastFrameAggro
+  id: LastFrameAggro
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: LastFrameAggro
+  nameWithType: AggroTriggerBase<T>.LastFrameAggro
+  fullName: AggroTriggerBase<T>.LastFrameAggro
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LastFrameAggro
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool LastFrameAggro
+    return:
+      type: System.Boolean
+    content.vb: Protected LastFrameAggro As Boolean
+  nameWithType.vb: AggroTriggerBase(Of T).LastFrameAggro
+  fullName.vb: AggroTriggerBase(Of T).LastFrameAggro
+- uid: Global.AggroTriggerBase`1.Initialize(`0,UnityEngine.GameObject,IntObject)
+  commentId: M:Global.AggroTriggerBase`1.Initialize(`0,UnityEngine.GameObject,IntObject)
+  id: Initialize(`0,UnityEngine.GameObject,IntObject)
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: Initialize(T, GameObject, IntObject)
+  nameWithType: AggroTriggerBase<T>.Initialize(T, GameObject, IntObject)
+  fullName: AggroTriggerBase<T>.Initialize(T, UnityEngine.GameObject, IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Initialize
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void Initialize(T props, GameObject target, IntObject self)
+    parameters:
+    - id: props
+      type: '{T}'
+    - id: target
+      type: UnityEngine.GameObject
+    - id: self
+      type: Global.IntObject
+    content.vb: Public Overridable Sub Initialize(props As T, target As GameObject, self As IntObject)
+  overload: Global.AggroTriggerBase`1.Initialize*
+  nameWithType.vb: AggroTriggerBase(Of T).Initialize(T, GameObject, IntObject)
+  fullName.vb: AggroTriggerBase(Of T).Initialize(T, UnityEngine.GameObject, IntObject)
+- uid: Global.AggroTriggerBase`1.RegisterStartAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase`1.RegisterStartAggroCallback(IntObject.Action)
+  id: RegisterStartAggroCallback(IntObject.Action)
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: RegisterStartAggroCallback(Action)
+  nameWithType: AggroTriggerBase<T>.RegisterStartAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<T>.RegisterStartAggroCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterStartAggroCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterStartAggroCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterStartAggroCallback(callback As IntObject.Action)
+  overload: Global.AggroTriggerBase`1.RegisterStartAggroCallback*
+  nameWithType.vb: AggroTriggerBase(Of T).RegisterStartAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of T).RegisterStartAggroCallback(IntObject.Action)
+- uid: Global.AggroTriggerBase`1.UnregisterStartAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase`1.UnregisterStartAggroCallback(IntObject.Action)
+  id: UnregisterStartAggroCallback(IntObject.Action)
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: UnregisterStartAggroCallback(Action)
+  nameWithType: AggroTriggerBase<T>.UnregisterStartAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<T>.UnregisterStartAggroCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnregisterStartAggroCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnregisterStartAggroCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnregisterStartAggroCallback(callback As IntObject.Action)
+  overload: Global.AggroTriggerBase`1.UnregisterStartAggroCallback*
+  nameWithType.vb: AggroTriggerBase(Of T).UnregisterStartAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of T).UnregisterStartAggroCallback(IntObject.Action)
+- uid: Global.AggroTriggerBase`1.RegisterEndAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase`1.RegisterEndAggroCallback(IntObject.Action)
+  id: RegisterEndAggroCallback(IntObject.Action)
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: RegisterEndAggroCallback(Action)
+  nameWithType: AggroTriggerBase<T>.RegisterEndAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<T>.RegisterEndAggroCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterEndAggroCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterEndAggroCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterEndAggroCallback(callback As IntObject.Action)
+  overload: Global.AggroTriggerBase`1.RegisterEndAggroCallback*
+  nameWithType.vb: AggroTriggerBase(Of T).RegisterEndAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of T).RegisterEndAggroCallback(IntObject.Action)
+- uid: Global.AggroTriggerBase`1.UnregisterEndAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase`1.UnregisterEndAggroCallback(IntObject.Action)
+  id: UnregisterEndAggroCallback(IntObject.Action)
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: UnregisterEndAggroCallback(Action)
+  nameWithType: AggroTriggerBase<T>.UnregisterEndAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<T>.UnregisterEndAggroCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnregisterEndAggroCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnregisterEndAggroCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub UnregisterEndAggroCallback(callback As IntObject.Action)
+  overload: Global.AggroTriggerBase`1.UnregisterEndAggroCallback*
+  nameWithType.vb: AggroTriggerBase(Of T).UnregisterEndAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of T).UnregisterEndAggroCallback(IntObject.Action)
+- uid: Global.AggroTriggerBase`1.Reset
+  commentId: M:Global.AggroTriggerBase`1.Reset
+  id: Reset
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: AggroTriggerBase<T>.Reset()
+  fullName: AggroTriggerBase<T>.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Reset
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: Global.AggroTriggerBase`1.Reset*
+  nameWithType.vb: AggroTriggerBase(Of T).Reset()
+  fullName.vb: AggroTriggerBase(Of T).Reset()
+- uid: Global.AggroTriggerBase`1.IsTargetVisible
+  commentId: M:Global.AggroTriggerBase`1.IsTargetVisible
+  id: IsTargetVisible
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: IsTargetVisible()
+  nameWithType: AggroTriggerBase<T>.IsTargetVisible()
+  fullName: AggroTriggerBase<T>.IsTargetVisible()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsTargetVisible
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsTargetVisible()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsTargetVisible() As Boolean
+  overload: Global.AggroTriggerBase`1.IsTargetVisible*
+  nameWithType.vb: AggroTriggerBase(Of T).IsTargetVisible()
+  fullName.vb: AggroTriggerBase(Of T).IsTargetVisible()
+- uid: Global.AggroTriggerBase`1.CheckShouldAggro
+  commentId: M:Global.AggroTriggerBase`1.CheckShouldAggro
+  id: CheckShouldAggro
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: CheckShouldAggro()
+  nameWithType: AggroTriggerBase<T>.CheckShouldAggro()
+  fullName: AggroTriggerBase<T>.CheckShouldAggro()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CheckShouldAggro
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected abstract bool CheckShouldAggro()
+    return:
+      type: System.Boolean
+    content.vb: Protected MustOverride Function CheckShouldAggro() As Boolean
+  overload: Global.AggroTriggerBase`1.CheckShouldAggro*
+  nameWithType.vb: AggroTriggerBase(Of T).CheckShouldAggro()
+  fullName.vb: AggroTriggerBase(Of T).CheckShouldAggro()
+- uid: Global.AggroTriggerBase`1.UpdateBounds
+  commentId: M:Global.AggroTriggerBase`1.UpdateBounds
+  id: UpdateBounds
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateBounds()
+  nameWithType: AggroTriggerBase<T>.UpdateBounds()
+  fullName: AggroTriggerBase<T>.UpdateBounds()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateBounds
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected abstract void UpdateBounds()
+    content.vb: Protected MustOverride Sub UpdateBounds()
+  overload: Global.AggroTriggerBase`1.UpdateBounds*
+  nameWithType.vb: AggroTriggerBase(Of T).UpdateBounds()
+  fullName.vb: AggroTriggerBase(Of T).UpdateBounds()
+- uid: Global.AggroTriggerBase`1.Update
+  commentId: M:Global.AggroTriggerBase`1.Update
+  id: Update
+  parent: Global.AggroTriggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: AggroTriggerBase<T>.Update()
+  fullName: AggroTriggerBase<T>.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 92
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void Update()
+    content.vb: Public Overridable Sub Update()
+  overload: Global.AggroTriggerBase`1.Update*
+  nameWithType.vb: AggroTriggerBase(Of T).Update()
+  fullName.vb: AggroTriggerBase(Of T).Update()
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Global.AggroTriggerBase`1.Target*
+  commentId: Overload:Global.AggroTriggerBase`1.Target
+  name: Target
+  nameWithType: AggroTriggerBase<T>.Target
+  fullName: AggroTriggerBase<T>.Target
+  nameWithType.vb: AggroTriggerBase(Of T).Target
+  fullName.vb: AggroTriggerBase(Of T).Target
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AggroTriggerBase`1.Self*
+  commentId: Overload:Global.AggroTriggerBase`1.Self
+  name: Self
+  nameWithType: AggroTriggerBase<T>.Self
+  fullName: AggroTriggerBase<T>.Self
+  nameWithType.vb: AggroTriggerBase(Of T).Self
+  fullName.vb: AggroTriggerBase(Of T).Self
+- uid: Global.IntObject
+  commentId: T:Global.IntObject
+  name: IntObject
+  nameWithType: IntObject
+  fullName: IntObject
+- uid: Global.AggroTriggerBase`1.IsAggroing*
+  commentId: Overload:Global.AggroTriggerBase`1.IsAggroing
+  name: IsAggroing
+  nameWithType: AggroTriggerBase<T>.IsAggroing
+  fullName: AggroTriggerBase<T>.IsAggroing
+  nameWithType.vb: AggroTriggerBase(Of T).IsAggroing
+  fullName.vb: AggroTriggerBase(Of T).IsAggroing
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.IntObject.Action
+  commentId: T:Global.IntObject.Action
+  name: IntObject.Action
+  nameWithType: IntObject.Action
+  fullName: IntObject.Action
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+- uid: Global.AggroTriggerBase`1.Initialize*
+  commentId: Overload:Global.AggroTriggerBase`1.Initialize
+  name: Initialize
+  nameWithType: AggroTriggerBase<T>.Initialize
+  fullName: AggroTriggerBase<T>.Initialize
+  nameWithType.vb: AggroTriggerBase(Of T).Initialize
+  fullName.vb: AggroTriggerBase(Of T).Initialize
+- uid: Global.AggroTriggerBase`1.RegisterStartAggroCallback*
+  commentId: Overload:Global.AggroTriggerBase`1.RegisterStartAggroCallback
+  name: RegisterStartAggroCallback
+  nameWithType: AggroTriggerBase<T>.RegisterStartAggroCallback
+  fullName: AggroTriggerBase<T>.RegisterStartAggroCallback
+  nameWithType.vb: AggroTriggerBase(Of T).RegisterStartAggroCallback
+  fullName.vb: AggroTriggerBase(Of T).RegisterStartAggroCallback
+- uid: Global.AggroTriggerBase`1.UnregisterStartAggroCallback*
+  commentId: Overload:Global.AggroTriggerBase`1.UnregisterStartAggroCallback
+  name: UnregisterStartAggroCallback
+  nameWithType: AggroTriggerBase<T>.UnregisterStartAggroCallback
+  fullName: AggroTriggerBase<T>.UnregisterStartAggroCallback
+  nameWithType.vb: AggroTriggerBase(Of T).UnregisterStartAggroCallback
+  fullName.vb: AggroTriggerBase(Of T).UnregisterStartAggroCallback
+- uid: Global.AggroTriggerBase`1.RegisterEndAggroCallback*
+  commentId: Overload:Global.AggroTriggerBase`1.RegisterEndAggroCallback
+  name: RegisterEndAggroCallback
+  nameWithType: AggroTriggerBase<T>.RegisterEndAggroCallback
+  fullName: AggroTriggerBase<T>.RegisterEndAggroCallback
+  nameWithType.vb: AggroTriggerBase(Of T).RegisterEndAggroCallback
+  fullName.vb: AggroTriggerBase(Of T).RegisterEndAggroCallback
+- uid: Global.AggroTriggerBase`1.UnregisterEndAggroCallback*
+  commentId: Overload:Global.AggroTriggerBase`1.UnregisterEndAggroCallback
+  name: UnregisterEndAggroCallback
+  nameWithType: AggroTriggerBase<T>.UnregisterEndAggroCallback
+  fullName: AggroTriggerBase<T>.UnregisterEndAggroCallback
+  nameWithType.vb: AggroTriggerBase(Of T).UnregisterEndAggroCallback
+  fullName.vb: AggroTriggerBase(Of T).UnregisterEndAggroCallback
+- uid: Global.AggroTriggerBase`1.Reset*
+  commentId: Overload:Global.AggroTriggerBase`1.Reset
+  name: Reset
+  nameWithType: AggroTriggerBase<T>.Reset
+  fullName: AggroTriggerBase<T>.Reset
+  nameWithType.vb: AggroTriggerBase(Of T).Reset
+  fullName.vb: AggroTriggerBase(Of T).Reset
+- uid: Global.AggroTriggerBase`1.IsTargetVisible*
+  commentId: Overload:Global.AggroTriggerBase`1.IsTargetVisible
+  name: IsTargetVisible
+  nameWithType: AggroTriggerBase<T>.IsTargetVisible
+  fullName: AggroTriggerBase<T>.IsTargetVisible
+  nameWithType.vb: AggroTriggerBase(Of T).IsTargetVisible
+  fullName.vb: AggroTriggerBase(Of T).IsTargetVisible
+- uid: Global.AggroTriggerBase`1.CheckShouldAggro*
+  commentId: Overload:Global.AggroTriggerBase`1.CheckShouldAggro
+  name: CheckShouldAggro
+  nameWithType: AggroTriggerBase<T>.CheckShouldAggro
+  fullName: AggroTriggerBase<T>.CheckShouldAggro
+  nameWithType.vb: AggroTriggerBase(Of T).CheckShouldAggro
+  fullName.vb: AggroTriggerBase(Of T).CheckShouldAggro
+- uid: Global.AggroTriggerBase`1.UpdateBounds*
+  commentId: Overload:Global.AggroTriggerBase`1.UpdateBounds
+  name: UpdateBounds
+  nameWithType: AggroTriggerBase<T>.UpdateBounds
+  fullName: AggroTriggerBase<T>.UpdateBounds
+  nameWithType.vb: AggroTriggerBase(Of T).UpdateBounds
+  fullName.vb: AggroTriggerBase(Of T).UpdateBounds
+- uid: Global.AggroTriggerBase`1.Update*
+  commentId: Overload:Global.AggroTriggerBase`1.Update
+  name: Update
+  nameWithType: AggroTriggerBase<T>.Update
+  fullName: AggroTriggerBase<T>.Update
+  nameWithType.vb: AggroTriggerBase(Of T).Update
+  fullName.vb: AggroTriggerBase(Of T).Update

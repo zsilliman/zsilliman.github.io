@@ -1,0 +1,1091 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BeaconBehavior
+  commentId: T:Global.BeaconBehavior
+  id: BeaconBehavior
+  parent: Global
+  children:
+  - Global.BeaconBehavior.AttachToEntity
+  - Global.BeaconBehavior.AuraEndRadius
+  - Global.BeaconBehavior.AuraStartRadius
+  - Global.BeaconBehavior.CleanFromAnywhere
+  - Global.BeaconBehavior.ContractingFunction
+  - Global.BeaconBehavior.ContractTime
+  - Global.BeaconBehavior.DestroyAuraOnEnemyDeath
+  - Global.BeaconBehavior.DrawGizmos(ModularEnemy)
+  - Global.BeaconBehavior.ExpandingFunction
+  - Global.BeaconBehavior.ExpandTime
+  - Global.BeaconBehavior.ExpandType
+  - Global.BeaconBehavior.HasIndicator
+  - Global.BeaconBehavior.IndicatorDuration
+  - Global.BeaconBehavior.IsBlackAura
+  - Global.BeaconBehavior.LastAuraTime
+  - Global.BeaconBehavior.MinTimeBetweenAuras
+  - Global.BeaconBehavior.OnKill(ModularEnemy,System.Boolean)
+  - Global.BeaconBehavior.OnResetObject(ModularEnemy)
+  - Global.BeaconBehavior.OnRestart
+  - Global.BeaconBehavior.SpawnBeaconAura
+  - Global.BeaconBehavior.SpawnBeaconAuraFromAnywhere(UnityEngine.GameObject)
+  - Global.BeaconBehavior.Update
+  langs:
+  - csharp
+  - vb
+  name: BeaconBehavior
+  nameWithType: BeaconBehavior
+  fullName: BeaconBehavior
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BeaconBehavior
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class BeaconBehavior : ModularEnemy.EnemyBehaviorInterface
+    content.vb: >-
+      <Serializable>
+
+      Public Class BeaconBehavior Inherits ModularEnemy.EnemyBehaviorInterface
+  inheritance:
+  - System.Object
+  - Global.ModularEnemy.EnemyBehaviorInterface
+  inheritedMembers:
+  - Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  - Global.ModularEnemy.EnemyBehaviorInterface.self
+  - Global.ModularEnemy.EnemyBehaviorInterface.Started
+  - Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.BeaconBehavior.ExpandType
+  commentId: F:Global.BeaconBehavior.ExpandType
+  id: ExpandType
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: ExpandType
+  nameWithType: BeaconBehavior.ExpandType
+  fullName: BeaconBehavior.ExpandType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ExpandType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public EasingAutoAuraController.ExpandType ExpandType
+    return:
+      type: Global.EasingAutoAuraController.ExpandType
+    content.vb: Public ExpandType As EasingAutoAuraController.ExpandType
+- uid: Global.BeaconBehavior.IsBlackAura
+  commentId: F:Global.BeaconBehavior.IsBlackAura
+  id: IsBlackAura
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: IsBlackAura
+  nameWithType: BeaconBehavior.IsBlackAura
+  fullName: BeaconBehavior.IsBlackAura
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsBlackAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsBlackAura
+    return:
+      type: System.Boolean
+    content.vb: Public IsBlackAura As Boolean
+- uid: Global.BeaconBehavior.AuraStartRadius
+  commentId: F:Global.BeaconBehavior.AuraStartRadius
+  id: AuraStartRadius
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: AuraStartRadius
+  nameWithType: BeaconBehavior.AuraStartRadius
+  fullName: BeaconBehavior.AuraStartRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraStartRadius
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int AuraStartRadius
+    return:
+      type: System.Int32
+    content.vb: Public AuraStartRadius As Integer
+- uid: Global.BeaconBehavior.AuraEndRadius
+  commentId: F:Global.BeaconBehavior.AuraEndRadius
+  id: AuraEndRadius
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: AuraEndRadius
+  nameWithType: BeaconBehavior.AuraEndRadius
+  fullName: BeaconBehavior.AuraEndRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraEndRadius
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int AuraEndRadius
+    return:
+      type: System.Int32
+    content.vb: Public AuraEndRadius As Integer
+- uid: Global.BeaconBehavior.ExpandingFunction
+  commentId: F:Global.BeaconBehavior.ExpandingFunction
+  id: ExpandingFunction
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: ExpandingFunction
+  nameWithType: BeaconBehavior.ExpandingFunction
+  fullName: BeaconBehavior.ExpandingFunction
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ExpandingFunction
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public EasingFunction.Ease ExpandingFunction
+    return:
+      type: Global.EasingFunction.Ease
+    content.vb: Public ExpandingFunction As EasingFunction.Ease
+- uid: Global.BeaconBehavior.ExpandTime
+  commentId: F:Global.BeaconBehavior.ExpandTime
+  id: ExpandTime
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: ExpandTime
+  nameWithType: BeaconBehavior.ExpandTime
+  fullName: BeaconBehavior.ExpandTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ExpandTime
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float ExpandTime
+    return:
+      type: System.Single
+    content.vb: Public ExpandTime As Single
+- uid: Global.BeaconBehavior.ContractingFunction
+  commentId: F:Global.BeaconBehavior.ContractingFunction
+  id: ContractingFunction
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: ContractingFunction
+  nameWithType: BeaconBehavior.ContractingFunction
+  fullName: BeaconBehavior.ContractingFunction
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ContractingFunction
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("ExpandType", 1)]
+
+      public EasingFunction.Ease ContractingFunction
+    return:
+      type: Global.EasingFunction.Ease
+    content.vb: >-
+      <ConditionalShow("ExpandType", 1)>
+
+      Public ContractingFunction As EasingFunction.Ease
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: ExpandType
+    - type: System.Int32
+      value: 1
+- uid: Global.BeaconBehavior.ContractTime
+  commentId: F:Global.BeaconBehavior.ContractTime
+  id: ContractTime
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: ContractTime
+  nameWithType: BeaconBehavior.ContractTime
+  fullName: BeaconBehavior.ContractTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ContractTime
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("ExpandType", 1)]
+
+      public float ContractTime
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("ExpandType", 1)>
+
+      Public ContractTime As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: ExpandType
+    - type: System.Int32
+      value: 1
+- uid: Global.BeaconBehavior.AttachToEntity
+  commentId: F:Global.BeaconBehavior.AttachToEntity
+  id: AttachToEntity
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: AttachToEntity
+  nameWithType: BeaconBehavior.AttachToEntity
+  fullName: BeaconBehavior.AttachToEntity
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AttachToEntity
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool AttachToEntity
+    return:
+      type: System.Boolean
+    content.vb: Public AttachToEntity As Boolean
+- uid: Global.BeaconBehavior.DestroyAuraOnEnemyDeath
+  commentId: F:Global.BeaconBehavior.DestroyAuraOnEnemyDeath
+  id: DestroyAuraOnEnemyDeath
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: DestroyAuraOnEnemyDeath
+  nameWithType: BeaconBehavior.DestroyAuraOnEnemyDeath
+  fullName: BeaconBehavior.DestroyAuraOnEnemyDeath
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DestroyAuraOnEnemyDeath
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Whether the beacon aura is destroyed after the enemy is killed")]
+
+      public bool DestroyAuraOnEnemyDeath
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("Whether the beacon aura is destroyed after the enemy is killed")>
+
+      Public DestroyAuraOnEnemyDeath As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Whether the beacon aura is destroyed after the enemy is killed
+- uid: Global.BeaconBehavior.HasIndicator
+  commentId: F:Global.BeaconBehavior.HasIndicator
+  id: HasIndicator
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: HasIndicator
+  nameWithType: BeaconBehavior.HasIndicator
+  fullName: BeaconBehavior.HasIndicator
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HasIndicator
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool HasIndicator
+    return:
+      type: System.Boolean
+    content.vb: Public HasIndicator As Boolean
+- uid: Global.BeaconBehavior.IndicatorDuration
+  commentId: F:Global.BeaconBehavior.IndicatorDuration
+  id: IndicatorDuration
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: IndicatorDuration
+  nameWithType: BeaconBehavior.IndicatorDuration
+  fullName: BeaconBehavior.IndicatorDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IndicatorDuration
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("HasIndicator", 1)]
+
+      public float IndicatorDuration
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("HasIndicator", 1)>
+
+      Public IndicatorDuration As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: HasIndicator
+    - type: System.Int32
+      value: 1
+- uid: Global.BeaconBehavior.MinTimeBetweenAuras
+  commentId: F:Global.BeaconBehavior.MinTimeBetweenAuras
+  id: MinTimeBetweenAuras
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: MinTimeBetweenAuras
+  nameWithType: BeaconBehavior.MinTimeBetweenAuras
+  fullName: BeaconBehavior.MinTimeBetweenAuras
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MinTimeBetweenAuras
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float MinTimeBetweenAuras
+    return:
+      type: System.Single
+    content.vb: Public MinTimeBetweenAuras As Single
+- uid: Global.BeaconBehavior.LastAuraTime
+  commentId: F:Global.BeaconBehavior.LastAuraTime
+  id: LastAuraTime
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: LastAuraTime
+  nameWithType: BeaconBehavior.LastAuraTime
+  fullName: BeaconBehavior.LastAuraTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LastAuraTime
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float LastAuraTime
+    return:
+      type: System.Single
+    content.vb: Protected LastAuraTime As Single
+- uid: Global.BeaconBehavior.DrawGizmos(ModularEnemy)
+  commentId: M:Global.BeaconBehavior.DrawGizmos(ModularEnemy)
+  id: DrawGizmos(ModularEnemy)
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: BeaconBehavior.DrawGizmos(ModularEnemy)
+  fullName: BeaconBehavior.DrawGizmos(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawGizmos
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void DrawGizmos(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub DrawGizmos(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  overload: Global.BeaconBehavior.DrawGizmos*
+- uid: Global.BeaconBehavior.OnRestart
+  commentId: M:Global.BeaconBehavior.OnRestart
+  id: OnRestart
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnRestart()
+  nameWithType: BeaconBehavior.OnRestart()
+  fullName: BeaconBehavior.OnRestart()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnRestart
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnRestart()
+    content.vb: Public Overrides Sub OnRestart()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  overload: Global.BeaconBehavior.OnRestart*
+- uid: Global.BeaconBehavior.Update
+  commentId: M:Global.BeaconBehavior.Update
+  id: Update
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: BeaconBehavior.Update()
+  fullName: BeaconBehavior.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  overload: Global.BeaconBehavior.Update*
+- uid: Global.BeaconBehavior.OnResetObject(ModularEnemy)
+  commentId: M:Global.BeaconBehavior.OnResetObject(ModularEnemy)
+  id: OnResetObject(ModularEnemy)
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject(ModularEnemy)
+  nameWithType: BeaconBehavior.OnResetObject(ModularEnemy)
+  fullName: BeaconBehavior.OnResetObject(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub OnResetObject(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  overload: Global.BeaconBehavior.OnResetObject*
+- uid: Global.BeaconBehavior.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.BeaconBehavior.OnKill(ModularEnemy,System.Boolean)
+  id: OnKill(ModularEnemy,System.Boolean)
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: BeaconBehavior.OnKill(ModularEnemy, bool)
+  fullName: BeaconBehavior.OnKill(ModularEnemy, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnKill
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnKill(ModularEnemy enemy, bool IsAnimated)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    - id: IsAnimated
+      type: System.Boolean
+    content.vb: Public Overrides Sub OnKill(enemy As ModularEnemy, IsAnimated As Boolean)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  overload: Global.BeaconBehavior.OnKill*
+  nameWithType.vb: BeaconBehavior.OnKill(ModularEnemy, Boolean)
+  fullName.vb: BeaconBehavior.OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+- uid: Global.BeaconBehavior.CleanFromAnywhere
+  commentId: M:Global.BeaconBehavior.CleanFromAnywhere
+  id: CleanFromAnywhere
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: CleanFromAnywhere()
+  nameWithType: BeaconBehavior.CleanFromAnywhere()
+  fullName: BeaconBehavior.CleanFromAnywhere()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CleanFromAnywhere
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void CleanFromAnywhere()
+    content.vb: Public Sub CleanFromAnywhere()
+  overload: Global.BeaconBehavior.CleanFromAnywhere*
+- uid: Global.BeaconBehavior.SpawnBeaconAuraFromAnywhere(UnityEngine.GameObject)
+  commentId: M:Global.BeaconBehavior.SpawnBeaconAuraFromAnywhere(UnityEngine.GameObject)
+  id: SpawnBeaconAuraFromAnywhere(UnityEngine.GameObject)
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: SpawnBeaconAuraFromAnywhere(GameObject)
+  nameWithType: BeaconBehavior.SpawnBeaconAuraFromAnywhere(GameObject)
+  fullName: BeaconBehavior.SpawnBeaconAuraFromAnywhere(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnBeaconAuraFromAnywhere
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject SpawnBeaconAuraFromAnywhere(GameObject owner)
+    parameters:
+    - id: owner
+      type: UnityEngine.GameObject
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Function SpawnBeaconAuraFromAnywhere(owner As GameObject) As GameObject
+  overload: Global.BeaconBehavior.SpawnBeaconAuraFromAnywhere*
+- uid: Global.BeaconBehavior.SpawnBeaconAura
+  commentId: M:Global.BeaconBehavior.SpawnBeaconAura
+  id: SpawnBeaconAura
+  parent: Global.BeaconBehavior
+  langs:
+  - csharp
+  - vb
+  name: SpawnBeaconAura()
+  nameWithType: BeaconBehavior.SpawnBeaconAura()
+  fullName: BeaconBehavior.SpawnBeaconAura()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnBeaconAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/BeaconBehavior.cs
+    startLine: 123
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SpawnBeaconAura()
+    content.vb: Public Sub SpawnBeaconAura()
+  overload: Global.BeaconBehavior.SpawnBeaconAura*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ModularEnemy.EnemyBehaviorInterface
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterface
+  name: ModularEnemy.EnemyBehaviorInterface
+  nameWithType: ModularEnemy.EnemyBehaviorInterface
+  fullName: ModularEnemy.EnemyBehaviorInterface
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: ShowGizmos
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  fullName: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.self
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.self
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: self
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.self
+  fullName: ModularEnemy.EnemyBehaviorInterface.self
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Started
+  commentId: P:Global.ModularEnemy.EnemyBehaviorInterface.Started
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Started
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Started
+  fullName: ModularEnemy.EnemyBehaviorInterface.Started
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Start(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.EasingAutoAuraController.ExpandType
+  commentId: T:Global.EasingAutoAuraController.ExpandType
+  name: EasingAutoAuraController.ExpandType
+  nameWithType: EasingAutoAuraController.ExpandType
+  fullName: EasingAutoAuraController.ExpandType
+  spec.csharp:
+  - uid: Global.EasingAutoAuraController
+    name: EasingAutoAuraController
+  - name: .
+  - uid: Global.EasingAutoAuraController.ExpandType
+    name: ExpandType
+  spec.vb:
+  - uid: Global.EasingAutoAuraController
+    name: EasingAutoAuraController
+  - name: .
+  - uid: Global.EasingAutoAuraController.ExpandType
+    name: ExpandType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.EasingFunction.Ease
+  commentId: T:Global.EasingFunction.Ease
+  name: EasingFunction.Ease
+  nameWithType: EasingFunction.Ease
+  fullName: EasingFunction.Ease
+  spec.csharp:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+  spec.vb:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.BeaconBehavior.DrawGizmos*
+  commentId: Overload:Global.BeaconBehavior.DrawGizmos
+  name: DrawGizmos
+  nameWithType: BeaconBehavior.DrawGizmos
+  fullName: BeaconBehavior.DrawGizmos
+- uid: Global.ModularEnemy
+  commentId: T:Global.ModularEnemy
+  name: ModularEnemy
+  nameWithType: ModularEnemy
+  fullName: ModularEnemy
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnRestart()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.BeaconBehavior.OnRestart*
+  commentId: Overload:Global.BeaconBehavior.OnRestart
+  name: OnRestart
+  nameWithType: BeaconBehavior.OnRestart
+  fullName: BeaconBehavior.OnRestart
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Update
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Update()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Update()
+  fullName: ModularEnemy.EnemyBehaviorInterface.Update()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.BeaconBehavior.Update*
+  commentId: Overload:Global.BeaconBehavior.Update
+  name: Update
+  nameWithType: BeaconBehavior.Update
+  fullName: BeaconBehavior.Update
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.BeaconBehavior.OnResetObject*
+  commentId: Overload:Global.BeaconBehavior.OnResetObject
+  name: OnResetObject
+  nameWithType: BeaconBehavior.OnResetObject
+  fullName: BeaconBehavior.OnResetObject
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  isExternal: true
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.BeaconBehavior.OnKill*
+  commentId: Overload:Global.BeaconBehavior.OnKill
+  name: OnKill
+  nameWithType: BeaconBehavior.OnKill
+  fullName: BeaconBehavior.OnKill
+- uid: Global.BeaconBehavior.CleanFromAnywhere*
+  commentId: Overload:Global.BeaconBehavior.CleanFromAnywhere
+  name: CleanFromAnywhere
+  nameWithType: BeaconBehavior.CleanFromAnywhere
+  fullName: BeaconBehavior.CleanFromAnywhere
+- uid: Global.BeaconBehavior.SpawnBeaconAuraFromAnywhere*
+  commentId: Overload:Global.BeaconBehavior.SpawnBeaconAuraFromAnywhere
+  name: SpawnBeaconAuraFromAnywhere
+  nameWithType: BeaconBehavior.SpawnBeaconAuraFromAnywhere
+  fullName: BeaconBehavior.SpawnBeaconAuraFromAnywhere
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.BeaconBehavior.SpawnBeaconAura*
+  commentId: Overload:Global.BeaconBehavior.SpawnBeaconAura
+  name: SpawnBeaconAura
+  nameWithType: BeaconBehavior.SpawnBeaconAura
+  fullName: BeaconBehavior.SpawnBeaconAura

@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProfileSelect
+  commentId: T:Global.ProfileSelect
+  id: ProfileSelect
+  parent: Global
+  children:
+  - Global.ProfileSelect.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  - Global.ProfileSelect.sceneNumberToGoTo
+  langs:
+  - csharp
+  - vb
+  name: ProfileSelect
+  nameWithType: ProfileSelect
+  fullName: ProfileSelect
+  type: Class
+  source:
+    remote:
+      path: Assets/ProfileSelect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ProfileSelect
+    path: ../Assets/ProfileSelect.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class ProfileSelect : MonoBehaviour'
+    content.vb: Public Class ProfileSelect Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ProfileSelect.sceneNumberToGoTo
+  commentId: F:Global.ProfileSelect.sceneNumberToGoTo
+  id: sceneNumberToGoTo
+  parent: Global.ProfileSelect
+  langs:
+  - csharp
+  - vb
+  name: sceneNumberToGoTo
+  nameWithType: ProfileSelect.sceneNumberToGoTo
+  fullName: ProfileSelect.sceneNumberToGoTo
+  type: Field
+  source:
+    remote:
+      path: Assets/ProfileSelect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: sceneNumberToGoTo
+    path: ../Assets/ProfileSelect.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int sceneNumberToGoTo
+    return:
+      type: System.Int32
+    content.vb: Public sceneNumberToGoTo As Integer
+- uid: Global.ProfileSelect.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:Global.ProfileSelect.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  parent: Global.ProfileSelect
+  langs:
+  - csharp
+  - vb
+  name: OnPointerClick(PointerEventData)
+  nameWithType: ProfileSelect.OnPointerClick(PointerEventData)
+  fullName: ProfileSelect.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/ProfileSelect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnPointerClick
+    path: ../Assets/ProfileSelect.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnPointerClick(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnPointerClick(eventData As PointerEventData)
+  overload: Global.ProfileSelect.OnPointerClick*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ProfileSelect.OnPointerClick*
+  commentId: Overload:Global.ProfileSelect.OnPointerClick
+  name: OnPointerClick
+  nameWithType: ProfileSelect.OnPointerClick
+  fullName: ProfileSelect.OnPointerClick
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true

@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomConstants.Actions
+  commentId: T:Global.CustomConstants.Actions
+  id: CustomConstants.Actions
+  parent: Global
+  children:
+  - Global.CustomConstants.Actions.ATTACK
+  - Global.CustomConstants.Actions.CHEAT
+  - Global.CustomConstants.Actions.CRAFTING
+  - Global.CustomConstants.Actions.DASH
+  - Global.CustomConstants.Actions.DROPDOWN
+  - Global.CustomConstants.Actions.EDITCHARACTER
+  - Global.CustomConstants.Actions.INSTANTDEATH
+  - Global.CustomConstants.Actions.INTERACT
+  - Global.CustomConstants.Actions.INVENTORY
+  - Global.CustomConstants.Actions.INVOKEAURA
+  - Global.CustomConstants.Actions.JUMP
+  - Global.CustomConstants.Actions.LOOKAROUND
+  - Global.CustomConstants.Actions.MOVEMENT
+  - Global.CustomConstants.Actions.PAUSE
+  - Global.CustomConstants.Actions.SWITCHABILITY
+  - Global.CustomConstants.Actions.SWITCHWEAPON
+  - Global.CustomConstants.Actions.TAKEDAMAGE
+  langs:
+  - csharp
+  - vb
+  name: CustomConstants.Actions
+  nameWithType: CustomConstants.Actions
+  fullName: CustomConstants.Actions
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Actions
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static class CustomConstants.Actions
+    content.vb: Public Module CustomConstants.Actions
+  inheritance:
+  - System.Object
+- uid: Global.CustomConstants.Actions.MOVEMENT
+  commentId: F:Global.CustomConstants.Actions.MOVEMENT
+  id: MOVEMENT
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: MOVEMENT
+  nameWithType: CustomConstants.Actions.MOVEMENT
+  fullName: CustomConstants.Actions.MOVEMENT
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MOVEMENT
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string MOVEMENT = "Movement"
+    return:
+      type: System.String
+    content.vb: Public Const MOVEMENT As String = "Movement"
+- uid: Global.CustomConstants.Actions.JUMP
+  commentId: F:Global.CustomConstants.Actions.JUMP
+  id: JUMP
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: JUMP
+  nameWithType: CustomConstants.Actions.JUMP
+  fullName: CustomConstants.Actions.JUMP
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: JUMP
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string JUMP = "Jump"
+    return:
+      type: System.String
+    content.vb: Public Const JUMP As String = "Jump"
+- uid: Global.CustomConstants.Actions.DASH
+  commentId: F:Global.CustomConstants.Actions.DASH
+  id: DASH
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: DASH
+  nameWithType: CustomConstants.Actions.DASH
+  fullName: CustomConstants.Actions.DASH
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DASH
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string DASH = "Dash"
+    return:
+      type: System.String
+    content.vb: Public Const DASH As String = "Dash"
+- uid: Global.CustomConstants.Actions.ATTACK
+  commentId: F:Global.CustomConstants.Actions.ATTACK
+  id: ATTACK
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: ATTACK
+  nameWithType: CustomConstants.Actions.ATTACK
+  fullName: CustomConstants.Actions.ATTACK
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ATTACK
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string ATTACK = "Attack"
+    return:
+      type: System.String
+    content.vb: Public Const ATTACK As String = "Attack"
+- uid: Global.CustomConstants.Actions.INVOKEAURA
+  commentId: F:Global.CustomConstants.Actions.INVOKEAURA
+  id: INVOKEAURA
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: INVOKEAURA
+  nameWithType: CustomConstants.Actions.INVOKEAURA
+  fullName: CustomConstants.Actions.INVOKEAURA
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: INVOKEAURA
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string INVOKEAURA = "CastAbility"
+    return:
+      type: System.String
+    content.vb: Public Const INVOKEAURA As String = "CastAbility"
+- uid: Global.CustomConstants.Actions.INTERACT
+  commentId: F:Global.CustomConstants.Actions.INTERACT
+  id: INTERACT
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: INTERACT
+  nameWithType: CustomConstants.Actions.INTERACT
+  fullName: CustomConstants.Actions.INTERACT
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: INTERACT
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string INTERACT = "Interact"
+    return:
+      type: System.String
+    content.vb: Public Const INTERACT As String = "Interact"
+- uid: Global.CustomConstants.Actions.SWITCHWEAPON
+  commentId: F:Global.CustomConstants.Actions.SWITCHWEAPON
+  id: SWITCHWEAPON
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: SWITCHWEAPON
+  nameWithType: CustomConstants.Actions.SWITCHWEAPON
+  fullName: CustomConstants.Actions.SWITCHWEAPON
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SWITCHWEAPON
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string SWITCHWEAPON = "SwitchWeapon"
+    return:
+      type: System.String
+    content.vb: Public Const SWITCHWEAPON As String = "SwitchWeapon"
+- uid: Global.CustomConstants.Actions.SWITCHABILITY
+  commentId: F:Global.CustomConstants.Actions.SWITCHABILITY
+  id: SWITCHABILITY
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: SWITCHABILITY
+  nameWithType: CustomConstants.Actions.SWITCHABILITY
+  fullName: CustomConstants.Actions.SWITCHABILITY
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SWITCHABILITY
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string SWITCHABILITY = "SwitchAbility"
+    return:
+      type: System.String
+    content.vb: Public Const SWITCHABILITY As String = "SwitchAbility"
+- uid: Global.CustomConstants.Actions.LOOKAROUND
+  commentId: F:Global.CustomConstants.Actions.LOOKAROUND
+  id: LOOKAROUND
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: LOOKAROUND
+  nameWithType: CustomConstants.Actions.LOOKAROUND
+  fullName: CustomConstants.Actions.LOOKAROUND
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LOOKAROUND
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string LOOKAROUND = "LookAround"
+    return:
+      type: System.String
+    content.vb: Public Const LOOKAROUND As String = "LookAround"
+- uid: Global.CustomConstants.Actions.DROPDOWN
+  commentId: F:Global.CustomConstants.Actions.DROPDOWN
+  id: DROPDOWN
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: DROPDOWN
+  nameWithType: CustomConstants.Actions.DROPDOWN
+  fullName: CustomConstants.Actions.DROPDOWN
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DROPDOWN
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string DROPDOWN = "DropDown"
+    return:
+      type: System.String
+    content.vb: Public Const DROPDOWN As String = "DropDown"
+- uid: Global.CustomConstants.Actions.TAKEDAMAGE
+  commentId: F:Global.CustomConstants.Actions.TAKEDAMAGE
+  id: TAKEDAMAGE
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: TAKEDAMAGE
+  nameWithType: CustomConstants.Actions.TAKEDAMAGE
+  fullName: CustomConstants.Actions.TAKEDAMAGE
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TAKEDAMAGE
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string TAKEDAMAGE = "TakeDamage"
+    return:
+      type: System.String
+    content.vb: Public Const TAKEDAMAGE As String = "TakeDamage"
+- uid: Global.CustomConstants.Actions.INSTANTDEATH
+  commentId: F:Global.CustomConstants.Actions.INSTANTDEATH
+  id: INSTANTDEATH
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: INSTANTDEATH
+  nameWithType: CustomConstants.Actions.INSTANTDEATH
+  fullName: CustomConstants.Actions.INSTANTDEATH
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: INSTANTDEATH
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string INSTANTDEATH = "InstantDeath"
+    return:
+      type: System.String
+    content.vb: Public Const INSTANTDEATH As String = "InstantDeath"
+- uid: Global.CustomConstants.Actions.PAUSE
+  commentId: F:Global.CustomConstants.Actions.PAUSE
+  id: PAUSE
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: PAUSE
+  nameWithType: CustomConstants.Actions.PAUSE
+  fullName: CustomConstants.Actions.PAUSE
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PAUSE
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string PAUSE = "Pause"
+    return:
+      type: System.String
+    content.vb: Public Const PAUSE As String = "Pause"
+- uid: Global.CustomConstants.Actions.CHEAT
+  commentId: F:Global.CustomConstants.Actions.CHEAT
+  id: CHEAT
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: CHEAT
+  nameWithType: CustomConstants.Actions.CHEAT
+  fullName: CustomConstants.Actions.CHEAT
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CHEAT
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string CHEAT = "Cheat"
+    return:
+      type: System.String
+    content.vb: Public Const CHEAT As String = "Cheat"
+- uid: Global.CustomConstants.Actions.INVENTORY
+  commentId: F:Global.CustomConstants.Actions.INVENTORY
+  id: INVENTORY
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: INVENTORY
+  nameWithType: CustomConstants.Actions.INVENTORY
+  fullName: CustomConstants.Actions.INVENTORY
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: INVENTORY
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string INVENTORY = "Inventory"
+    return:
+      type: System.String
+    content.vb: Public Const INVENTORY As String = "Inventory"
+- uid: Global.CustomConstants.Actions.CRAFTING
+  commentId: F:Global.CustomConstants.Actions.CRAFTING
+  id: CRAFTING
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: CRAFTING
+  nameWithType: CustomConstants.Actions.CRAFTING
+  fullName: CustomConstants.Actions.CRAFTING
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CRAFTING
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string CRAFTING = "Crafting"
+    return:
+      type: System.String
+    content.vb: Public Const CRAFTING As String = "Crafting"
+- uid: Global.CustomConstants.Actions.EDITCHARACTER
+  commentId: F:Global.CustomConstants.Actions.EDITCHARACTER
+  id: EDITCHARACTER
+  parent: Global.CustomConstants.Actions
+  langs:
+  - csharp
+  - vb
+  name: EDITCHARACTER
+  nameWithType: CustomConstants.Actions.EDITCHARACTER
+  fullName: CustomConstants.Actions.EDITCHARACTER
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EDITCHARACTER
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public const string EDITCHARACTER = "EditCharacter"
+    return:
+      type: System.String
+    content.vb: Public Const EDITCHARACTER As String = "EditCharacter"
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

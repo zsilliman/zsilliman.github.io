@@ -1,0 +1,400 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.InventoryManager
+  commentId: T:Global.InventoryManager
+  id: InventoryManager
+  parent: Global
+  children:
+  - Global.InventoryManager.AddItem(Item)
+  - Global.InventoryManager.hand
+  - Global.InventoryManager.instance
+  - Global.InventoryManager.inventoryGrid
+  - Global.InventoryManager.inventoryItemPrefab
+  - Global.InventoryManager.platformer
+  - Global.InventoryManager.UpdateAllSlotBorders
+  langs:
+  - csharp
+  - vb
+  name: InventoryManager
+  nameWithType: InventoryManager
+  fullName: InventoryManager
+  type: Class
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/InventoryManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InventoryManager
+    path: ../Assets/User Interface/Inventory/InventoryManager.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class InventoryManager : MonoBehaviour'
+    content.vb: Public Class InventoryManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.InventoryManager.instance
+  commentId: F:Global.InventoryManager.instance
+  id: instance
+  parent: Global.InventoryManager
+  langs:
+  - csharp
+  - vb
+  name: instance
+  nameWithType: InventoryManager.instance
+  fullName: InventoryManager.instance
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/InventoryManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: instance
+    path: ../Assets/User Interface/Inventory/InventoryManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static InventoryManager instance
+    return:
+      type: Global.InventoryManager
+    content.vb: Public Shared instance As InventoryManager
+- uid: Global.InventoryManager.inventoryGrid
+  commentId: F:Global.InventoryManager.inventoryGrid
+  id: inventoryGrid
+  parent: Global.InventoryManager
+  langs:
+  - csharp
+  - vb
+  name: inventoryGrid
+  nameWithType: InventoryManager.inventoryGrid
+  fullName: InventoryManager.inventoryGrid
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/InventoryManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: inventoryGrid
+    path: ../Assets/User Interface/Inventory/InventoryManager.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject inventoryGrid
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public inventoryGrid As GameObject
+- uid: Global.InventoryManager.inventoryItemPrefab
+  commentId: F:Global.InventoryManager.inventoryItemPrefab
+  id: inventoryItemPrefab
+  parent: Global.InventoryManager
+  langs:
+  - csharp
+  - vb
+  name: inventoryItemPrefab
+  nameWithType: InventoryManager.inventoryItemPrefab
+  fullName: InventoryManager.inventoryItemPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/InventoryManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: inventoryItemPrefab
+    path: ../Assets/User Interface/Inventory/InventoryManager.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject inventoryItemPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public inventoryItemPrefab As GameObject
+- uid: Global.InventoryManager.hand
+  commentId: F:Global.InventoryManager.hand
+  id: hand
+  parent: Global.InventoryManager
+  langs:
+  - csharp
+  - vb
+  name: hand
+  nameWithType: InventoryManager.hand
+  fullName: InventoryManager.hand
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/InventoryManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: hand
+    path: ../Assets/User Interface/Inventory/InventoryManager.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Hand hand
+    return:
+      type: Global.Hand
+    content.vb: Public hand As Hand
+- uid: Global.InventoryManager.platformer
+  commentId: F:Global.InventoryManager.platformer
+  id: platformer
+  parent: Global.InventoryManager
+  langs:
+  - csharp
+  - vb
+  name: platformer
+  nameWithType: InventoryManager.platformer
+  fullName: InventoryManager.platformer
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/InventoryManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: platformer
+    path: ../Assets/User Interface/Inventory/InventoryManager.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public IntBasePlatformer platformer
+    return:
+      type: Global.IntBasePlatformer
+    content.vb: >-
+      <HideInInspector>
+
+      Public platformer As IntBasePlatformer
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.InventoryManager.AddItem(Item)
+  commentId: M:Global.InventoryManager.AddItem(Item)
+  id: AddItem(Item)
+  parent: Global.InventoryManager
+  langs:
+  - csharp
+  - vb
+  name: AddItem(Item)
+  nameWithType: InventoryManager.AddItem(Item)
+  fullName: InventoryManager.AddItem(Item)
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/InventoryManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddItem
+    path: ../Assets/User Interface/Inventory/InventoryManager.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool AddItem(Item item)
+    parameters:
+    - id: item
+      type: Global.Item
+    return:
+      type: System.Boolean
+    content.vb: Public Function AddItem(item As Item) As Boolean
+  overload: Global.InventoryManager.AddItem*
+- uid: Global.InventoryManager.UpdateAllSlotBorders
+  commentId: M:Global.InventoryManager.UpdateAllSlotBorders
+  id: UpdateAllSlotBorders
+  parent: Global.InventoryManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateAllSlotBorders()
+  nameWithType: InventoryManager.UpdateAllSlotBorders()
+  fullName: InventoryManager.UpdateAllSlotBorders()
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/InventoryManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateAllSlotBorders
+    path: ../Assets/User Interface/Inventory/InventoryManager.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UpdateAllSlotBorders()
+    content.vb: Public Sub UpdateAllSlotBorders()
+  overload: Global.InventoryManager.UpdateAllSlotBorders*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.InventoryManager
+  commentId: T:Global.InventoryManager
+  name: InventoryManager
+  nameWithType: InventoryManager
+  fullName: InventoryManager
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.Hand
+  commentId: T:Global.Hand
+  name: Hand
+  nameWithType: Hand
+  fullName: Hand
+- uid: Global.IntBasePlatformer
+  commentId: T:Global.IntBasePlatformer
+  name: IntBasePlatformer
+  nameWithType: IntBasePlatformer
+  fullName: IntBasePlatformer
+- uid: Global.InventoryManager.AddItem*
+  commentId: Overload:Global.InventoryManager.AddItem
+  name: AddItem
+  nameWithType: InventoryManager.AddItem
+  fullName: InventoryManager.AddItem
+- uid: Global.Item
+  commentId: T:Global.Item
+  name: Item
+  nameWithType: Item
+  fullName: Item
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.InventoryManager.UpdateAllSlotBorders*
+  commentId: Overload:Global.InventoryManager.UpdateAllSlotBorders
+  name: UpdateAllSlotBorders
+  nameWithType: InventoryManager.UpdateAllSlotBorders
+  fullName: InventoryManager.UpdateAllSlotBorders

@@ -1,0 +1,752 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DirectedLauncher
+  commentId: T:Global.DirectedLauncher
+  id: DirectedLauncher
+  parent: Global
+  children:
+  - Global.DirectedLauncher.Trigger(UnityEngine.Vector2)
+  - Global.DirectedLauncher.Update
+  langs:
+  - csharp
+  - vb
+  name: DirectedLauncher
+  nameWithType: DirectedLauncher
+  fullName: DirectedLauncher
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Launchers/DirectedLauncher.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DirectedLauncher
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Launchers/DirectedLauncher.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class DirectedLauncher : ProjectileLauncher<DirectedLauncherProperties>'
+    content.vb: Public Class DirectedLauncher Inherits ProjectileLauncher(Of DirectedLauncherProperties)
+  inheritance:
+  - System.Object
+  - Global.ProjectileLauncher{DirectedLauncherProperties}
+  inheritedMembers:
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.projectileManager
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.Enemy
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.Properties
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.LaunchCounter
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.Initialize(IntEnemy,DirectedLauncherProperties)
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.IncrementLaunchCounter
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.GetNextProjectile(System.Boolean)
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.SpawnNextProjectile(System.Boolean)
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.ResetCountersAndTimers
+  - Global.ProjectileLauncher{DirectedLauncherProperties}.KillAllProjectiles
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.DirectedLauncher.Update
+  commentId: M:Global.DirectedLauncher.Update
+  id: Update
+  parent: Global.DirectedLauncher
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: DirectedLauncher.Update()
+  fullName: DirectedLauncher.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Launchers/DirectedLauncher.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Launchers/DirectedLauncher.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ProjectileLauncher{DirectedLauncherProperties}.Update
+  overload: Global.DirectedLauncher.Update*
+- uid: Global.DirectedLauncher.Trigger(UnityEngine.Vector2)
+  commentId: M:Global.DirectedLauncher.Trigger(UnityEngine.Vector2)
+  id: Trigger(UnityEngine.Vector2)
+  parent: Global.DirectedLauncher
+  langs:
+  - csharp
+  - vb
+  name: Trigger(Vector2)
+  nameWithType: DirectedLauncher.Trigger(Vector2)
+  fullName: DirectedLauncher.Trigger(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Launchers/DirectedLauncher.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Trigger
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Launchers/DirectedLauncher.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Trigger(Vector2 direction)
+    parameters:
+    - id: direction
+      type: UnityEngine.Vector2
+    content.vb: Public Overrides Sub Trigger(direction As Vector2)
+  overridden: Global.ProjectileLauncher{DirectedLauncherProperties}.Trigger(UnityEngine.Vector2)
+  overload: Global.DirectedLauncher.Trigger*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}
+  commentId: T:Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1
+  name: ProjectileLauncher<DirectedLauncherProperties>
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>
+  fullName: ProjectileLauncher<DirectedLauncherProperties>
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties)
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties)
+  name.vb: ProjectileLauncher(Of DirectedLauncherProperties)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1
+    name: ProjectileLauncher
+  - name: <
+  - uid: Global.DirectedLauncherProperties
+    name: DirectedLauncherProperties
+  - name: '>'
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1
+    name: ProjectileLauncher
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.DirectedLauncherProperties
+    name: DirectedLauncherProperties
+  - name: )
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.projectileManager
+  commentId: F:Global.ProjectileLauncher{DirectedLauncherProperties}.projectileManager
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.projectileManager
+  name: projectileManager
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.projectileManager
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.projectileManager
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).projectileManager
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).projectileManager
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Enemy
+  commentId: F:Global.ProjectileLauncher{DirectedLauncherProperties}.Enemy
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.Enemy
+  name: Enemy
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.Enemy
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.Enemy
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).Enemy
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).Enemy
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Properties
+  commentId: F:Global.ProjectileLauncher{DirectedLauncherProperties}.Properties
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.Properties
+  name: Properties
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.Properties
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.Properties
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).Properties
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).Properties
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.LaunchCounter
+  commentId: P:Global.ProjectileLauncher{DirectedLauncherProperties}.LaunchCounter
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.LaunchCounter
+  name: LaunchCounter
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.LaunchCounter
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.LaunchCounter
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).LaunchCounter
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).LaunchCounter
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Initialize(IntEnemy,DirectedLauncherProperties)
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.Initialize(IntEnemy,DirectedLauncherProperties)
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.Initialize(IntEnemy,`0)
+  name: Initialize(IntEnemy, DirectedLauncherProperties)
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.Initialize(IntEnemy, DirectedLauncherProperties)
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.Initialize(IntEnemy, DirectedLauncherProperties)
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).Initialize(IntEnemy, DirectedLauncherProperties)
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).Initialize(IntEnemy, DirectedLauncherProperties)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Initialize(IntEnemy,DirectedLauncherProperties)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: ','
+  - name: " "
+  - uid: Global.DirectedLauncherProperties
+    name: DirectedLauncherProperties
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Initialize(IntEnemy,DirectedLauncherProperties)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: ','
+  - name: " "
+  - uid: Global.DirectedLauncherProperties
+    name: DirectedLauncherProperties
+  - name: )
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.IncrementLaunchCounter
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.IncrementLaunchCounter
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.IncrementLaunchCounter
+  name: IncrementLaunchCounter()
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.IncrementLaunchCounter()
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.IncrementLaunchCounter()
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).IncrementLaunchCounter()
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).IncrementLaunchCounter()
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.IncrementLaunchCounter
+    name: IncrementLaunchCounter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.IncrementLaunchCounter
+    name: IncrementLaunchCounter
+  - name: (
+  - name: )
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+  name: LaunchDirectedProjectile(AuraProjectileProperties, Vector2, bool)
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties, Vector2, bool)
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties, UnityEngine.Vector2, bool)
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties, Vector2, Boolean)
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties, UnityEngine.Vector2, Boolean)
+  name.vb: LaunchDirectedProjectile(AuraProjectileProperties, Vector2, Boolean)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+    name: LaunchDirectedProjectile
+  - name: (
+  - uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    name: AuraProjectileProperties
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+    name: LaunchDirectedProjectile
+  - name: (
+  - uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    name: AuraProjectileProperties
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.GetNextProjectile(System.Boolean)
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.GetNextProjectile(System.Boolean)
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.GetNextProjectile(System.Boolean)
+  name: GetNextProjectile(bool)
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.GetNextProjectile(bool)
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.GetNextProjectile(bool)
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).GetNextProjectile(Boolean)
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).GetNextProjectile(Boolean)
+  name.vb: GetNextProjectile(Boolean)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.GetNextProjectile(System.Boolean)
+    name: GetNextProjectile
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.GetNextProjectile(System.Boolean)
+    name: GetNextProjectile
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.SpawnNextProjectile(System.Boolean)
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.SpawnNextProjectile(System.Boolean)
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.SpawnNextProjectile(System.Boolean)
+  name: SpawnNextProjectile(bool)
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.SpawnNextProjectile(bool)
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.SpawnNextProjectile(bool)
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).SpawnNextProjectile(Boolean)
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).SpawnNextProjectile(Boolean)
+  name.vb: SpawnNextProjectile(Boolean)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.SpawnNextProjectile(System.Boolean)
+    name: SpawnNextProjectile
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.SpawnNextProjectile(System.Boolean)
+    name: SpawnNextProjectile
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.ResetCountersAndTimers
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.ResetCountersAndTimers
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.ResetCountersAndTimers
+  name: ResetCountersAndTimers()
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.ResetCountersAndTimers()
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.ResetCountersAndTimers()
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).ResetCountersAndTimers()
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).ResetCountersAndTimers()
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.ResetCountersAndTimers
+    name: ResetCountersAndTimers
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.ResetCountersAndTimers
+    name: ResetCountersAndTimers
+  - name: (
+  - name: )
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.KillAllProjectiles
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.KillAllProjectiles
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.KillAllProjectiles
+  name: KillAllProjectiles()
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.KillAllProjectiles()
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.KillAllProjectiles()
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).KillAllProjectiles()
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).KillAllProjectiles()
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.KillAllProjectiles
+    name: KillAllProjectiles
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.KillAllProjectiles
+    name: KillAllProjectiles
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ProjectileLauncher`1
+  commentId: T:Global.ProjectileLauncher`1
+  name: ProjectileLauncher<T>
+  nameWithType: ProjectileLauncher<T>
+  fullName: ProjectileLauncher<T>
+  nameWithType.vb: ProjectileLauncher(Of T)
+  fullName.vb: ProjectileLauncher(Of T)
+  name.vb: ProjectileLauncher(Of T)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1
+    name: ProjectileLauncher
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1
+    name: ProjectileLauncher
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.ProjectileLauncher`1.projectileManager
+  commentId: F:Global.ProjectileLauncher`1.projectileManager
+  name: projectileManager
+  nameWithType: ProjectileLauncher<T>.projectileManager
+  fullName: ProjectileLauncher<T>.projectileManager
+  nameWithType.vb: ProjectileLauncher(Of T).projectileManager
+  fullName.vb: ProjectileLauncher(Of T).projectileManager
+- uid: Global.ProjectileLauncher`1.Enemy
+  commentId: F:Global.ProjectileLauncher`1.Enemy
+  name: Enemy
+  nameWithType: ProjectileLauncher<T>.Enemy
+  fullName: ProjectileLauncher<T>.Enemy
+  nameWithType.vb: ProjectileLauncher(Of T).Enemy
+  fullName.vb: ProjectileLauncher(Of T).Enemy
+- uid: Global.ProjectileLauncher`1.Properties
+  commentId: F:Global.ProjectileLauncher`1.Properties
+  name: Properties
+  nameWithType: ProjectileLauncher<T>.Properties
+  fullName: ProjectileLauncher<T>.Properties
+  nameWithType.vb: ProjectileLauncher(Of T).Properties
+  fullName.vb: ProjectileLauncher(Of T).Properties
+- uid: Global.ProjectileLauncher`1.LaunchCounter
+  commentId: P:Global.ProjectileLauncher`1.LaunchCounter
+  name: LaunchCounter
+  nameWithType: ProjectileLauncher<T>.LaunchCounter
+  fullName: ProjectileLauncher<T>.LaunchCounter
+  nameWithType.vb: ProjectileLauncher(Of T).LaunchCounter
+  fullName.vb: ProjectileLauncher(Of T).LaunchCounter
+- uid: Global.ProjectileLauncher`1.Initialize(IntEnemy,`0)
+  commentId: M:Global.ProjectileLauncher`1.Initialize(IntEnemy,`0)
+  name: Initialize(IntEnemy, T)
+  nameWithType: ProjectileLauncher<T>.Initialize(IntEnemy, T)
+  fullName: ProjectileLauncher<T>.Initialize(IntEnemy, T)
+  nameWithType.vb: ProjectileLauncher(Of T).Initialize(IntEnemy, T)
+  fullName.vb: ProjectileLauncher(Of T).Initialize(IntEnemy, T)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.Initialize(IntEnemy,`0)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.Initialize(IntEnemy,`0)
+    name: Initialize
+  - name: (
+  - uid: Global.IntEnemy
+    name: IntEnemy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.ProjectileLauncher`1.IncrementLaunchCounter
+  commentId: M:Global.ProjectileLauncher`1.IncrementLaunchCounter
+  name: IncrementLaunchCounter()
+  nameWithType: ProjectileLauncher<T>.IncrementLaunchCounter()
+  fullName: ProjectileLauncher<T>.IncrementLaunchCounter()
+  nameWithType.vb: ProjectileLauncher(Of T).IncrementLaunchCounter()
+  fullName.vb: ProjectileLauncher(Of T).IncrementLaunchCounter()
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.IncrementLaunchCounter
+    name: IncrementLaunchCounter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.IncrementLaunchCounter
+    name: IncrementLaunchCounter
+  - name: (
+  - name: )
+- uid: Global.ProjectileLauncher`1.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+  commentId: M:Global.ProjectileLauncher`1.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+  isExternal: true
+  name: LaunchDirectedProjectile(AuraProjectileProperties, Vector2, bool)
+  nameWithType: ProjectileLauncher<T>.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties, Vector2, bool)
+  fullName: ProjectileLauncher<T>.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties, UnityEngine.Vector2, bool)
+  nameWithType.vb: ProjectileLauncher(Of T).LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties, Vector2, Boolean)
+  fullName.vb: ProjectileLauncher(Of T).LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties, UnityEngine.Vector2, Boolean)
+  name.vb: LaunchDirectedProjectile(AuraProjectileProperties, Vector2, Boolean)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+    name: LaunchDirectedProjectile
+  - name: (
+  - uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    name: AuraProjectileProperties
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.LaunchDirectedProjectile(AuraProjectileMovementBase.AuraProjectileProperties,UnityEngine.Vector2,System.Boolean)
+    name: LaunchDirectedProjectile
+  - name: (
+  - uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    name: AuraProjectileProperties
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ProjectileLauncher`1.GetNextProjectile(System.Boolean)
+  commentId: M:Global.ProjectileLauncher`1.GetNextProjectile(System.Boolean)
+  isExternal: true
+  name: GetNextProjectile(bool)
+  nameWithType: ProjectileLauncher<T>.GetNextProjectile(bool)
+  fullName: ProjectileLauncher<T>.GetNextProjectile(bool)
+  nameWithType.vb: ProjectileLauncher(Of T).GetNextProjectile(Boolean)
+  fullName.vb: ProjectileLauncher(Of T).GetNextProjectile(Boolean)
+  name.vb: GetNextProjectile(Boolean)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.GetNextProjectile(System.Boolean)
+    name: GetNextProjectile
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.GetNextProjectile(System.Boolean)
+    name: GetNextProjectile
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ProjectileLauncher`1.SpawnNextProjectile(System.Boolean)
+  commentId: M:Global.ProjectileLauncher`1.SpawnNextProjectile(System.Boolean)
+  isExternal: true
+  name: SpawnNextProjectile(bool)
+  nameWithType: ProjectileLauncher<T>.SpawnNextProjectile(bool)
+  fullName: ProjectileLauncher<T>.SpawnNextProjectile(bool)
+  nameWithType.vb: ProjectileLauncher(Of T).SpawnNextProjectile(Boolean)
+  fullName.vb: ProjectileLauncher(Of T).SpawnNextProjectile(Boolean)
+  name.vb: SpawnNextProjectile(Boolean)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.SpawnNextProjectile(System.Boolean)
+    name: SpawnNextProjectile
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.SpawnNextProjectile(System.Boolean)
+    name: SpawnNextProjectile
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ProjectileLauncher`1.ResetCountersAndTimers
+  commentId: M:Global.ProjectileLauncher`1.ResetCountersAndTimers
+  name: ResetCountersAndTimers()
+  nameWithType: ProjectileLauncher<T>.ResetCountersAndTimers()
+  fullName: ProjectileLauncher<T>.ResetCountersAndTimers()
+  nameWithType.vb: ProjectileLauncher(Of T).ResetCountersAndTimers()
+  fullName.vb: ProjectileLauncher(Of T).ResetCountersAndTimers()
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.ResetCountersAndTimers
+    name: ResetCountersAndTimers
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.ResetCountersAndTimers
+    name: ResetCountersAndTimers
+  - name: (
+  - name: )
+- uid: Global.ProjectileLauncher`1.KillAllProjectiles
+  commentId: M:Global.ProjectileLauncher`1.KillAllProjectiles
+  name: KillAllProjectiles()
+  nameWithType: ProjectileLauncher<T>.KillAllProjectiles()
+  fullName: ProjectileLauncher<T>.KillAllProjectiles()
+  nameWithType.vb: ProjectileLauncher(Of T).KillAllProjectiles()
+  fullName.vb: ProjectileLauncher(Of T).KillAllProjectiles()
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.KillAllProjectiles
+    name: KillAllProjectiles
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.KillAllProjectiles
+    name: KillAllProjectiles
+  - name: (
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Update
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.Update
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.Update
+  name: Update()
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.Update()
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.Update()
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).Update()
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).Update()
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.DirectedLauncher.Update*
+  commentId: Overload:Global.DirectedLauncher.Update
+  name: Update
+  nameWithType: DirectedLauncher.Update
+  fullName: DirectedLauncher.Update
+- uid: Global.ProjectileLauncher`1.Update
+  commentId: M:Global.ProjectileLauncher`1.Update
+  name: Update()
+  nameWithType: ProjectileLauncher<T>.Update()
+  fullName: ProjectileLauncher<T>.Update()
+  nameWithType.vb: ProjectileLauncher(Of T).Update()
+  fullName.vb: ProjectileLauncher(Of T).Update()
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Trigger(UnityEngine.Vector2)
+  commentId: M:Global.ProjectileLauncher{DirectedLauncherProperties}.Trigger(UnityEngine.Vector2)
+  parent: Global.ProjectileLauncher{DirectedLauncherProperties}
+  definition: Global.ProjectileLauncher`1.Trigger(UnityEngine.Vector2)
+  name: Trigger(Vector2)
+  nameWithType: ProjectileLauncher<DirectedLauncherProperties>.Trigger(Vector2)
+  fullName: ProjectileLauncher<DirectedLauncherProperties>.Trigger(UnityEngine.Vector2)
+  nameWithType.vb: ProjectileLauncher(Of DirectedLauncherProperties).Trigger(Vector2)
+  fullName.vb: ProjectileLauncher(Of DirectedLauncherProperties).Trigger(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Trigger(UnityEngine.Vector2)
+    name: Trigger
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher{DirectedLauncherProperties}.Trigger(UnityEngine.Vector2)
+    name: Trigger
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.DirectedLauncher.Trigger*
+  commentId: Overload:Global.DirectedLauncher.Trigger
+  name: Trigger
+  nameWithType: DirectedLauncher.Trigger
+  fullName: DirectedLauncher.Trigger
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.ProjectileLauncher`1.Trigger(UnityEngine.Vector2)
+  commentId: M:Global.ProjectileLauncher`1.Trigger(UnityEngine.Vector2)
+  isExternal: true
+  name: Trigger(Vector2)
+  nameWithType: ProjectileLauncher<T>.Trigger(Vector2)
+  fullName: ProjectileLauncher<T>.Trigger(UnityEngine.Vector2)
+  nameWithType.vb: ProjectileLauncher(Of T).Trigger(Vector2)
+  fullName.vb: ProjectileLauncher(Of T).Trigger(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.ProjectileLauncher`1.Trigger(UnityEngine.Vector2)
+    name: Trigger
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ProjectileLauncher`1.Trigger(UnityEngine.Vector2)
+    name: Trigger
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

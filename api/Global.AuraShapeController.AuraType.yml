@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraShapeController.AuraType
+  commentId: T:Global.AuraShapeController.AuraType
+  id: AuraShapeController.AuraType
+  parent: Global
+  children:
+  - Global.AuraShapeController.AuraType.Arc
+  - Global.AuraShapeController.AuraType.Circle
+  - Global.AuraShapeController.AuraType.Line
+  - Global.AuraShapeController.AuraType.Square
+  - Global.AuraShapeController.AuraType.SubCardioid
+  - Global.AuraShapeController.AuraType.Triangle
+  langs:
+  - csharp
+  - vb
+  name: AuraShapeController.AuraType
+  nameWithType: AuraShapeController.AuraType
+  fullName: AuraShapeController.AuraType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraType
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum AuraShapeController.AuraType
+    content.vb: Public Enum AuraShapeController.AuraType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AuraShapeController.AuraType.Line
+  commentId: F:Global.AuraShapeController.AuraType.Line
+  id: Line
+  parent: Global.AuraShapeController.AuraType
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: AuraShapeController.AuraType.Line
+  fullName: AuraShapeController.AuraType.Line
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Line
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Line = 0
+    return:
+      type: Global.AuraShapeController.AuraType
+- uid: Global.AuraShapeController.AuraType.Circle
+  commentId: F:Global.AuraShapeController.AuraType.Circle
+  id: Circle
+  parent: Global.AuraShapeController.AuraType
+  langs:
+  - csharp
+  - vb
+  name: Circle
+  nameWithType: AuraShapeController.AuraType.Circle
+  fullName: AuraShapeController.AuraType.Circle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Circle
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Circle = 1
+    return:
+      type: Global.AuraShapeController.AuraType
+- uid: Global.AuraShapeController.AuraType.Arc
+  commentId: F:Global.AuraShapeController.AuraType.Arc
+  id: Arc
+  parent: Global.AuraShapeController.AuraType
+  langs:
+  - csharp
+  - vb
+  name: Arc
+  nameWithType: AuraShapeController.AuraType.Arc
+  fullName: AuraShapeController.AuraType.Arc
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Arc
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Arc = 2
+    return:
+      type: Global.AuraShapeController.AuraType
+- uid: Global.AuraShapeController.AuraType.Square
+  commentId: F:Global.AuraShapeController.AuraType.Square
+  id: Square
+  parent: Global.AuraShapeController.AuraType
+  langs:
+  - csharp
+  - vb
+  name: Square
+  nameWithType: AuraShapeController.AuraType.Square
+  fullName: AuraShapeController.AuraType.Square
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Square
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Square = 3
+    return:
+      type: Global.AuraShapeController.AuraType
+- uid: Global.AuraShapeController.AuraType.Triangle
+  commentId: F:Global.AuraShapeController.AuraType.Triangle
+  id: Triangle
+  parent: Global.AuraShapeController.AuraType
+  langs:
+  - csharp
+  - vb
+  name: Triangle
+  nameWithType: AuraShapeController.AuraType.Triangle
+  fullName: AuraShapeController.AuraType.Triangle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Triangle
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Triangle = 4
+    return:
+      type: Global.AuraShapeController.AuraType
+- uid: Global.AuraShapeController.AuraType.SubCardioid
+  commentId: F:Global.AuraShapeController.AuraType.SubCardioid
+  id: SubCardioid
+  parent: Global.AuraShapeController.AuraType
+  langs:
+  - csharp
+  - vb
+  name: SubCardioid
+  nameWithType: AuraShapeController.AuraType.SubCardioid
+  fullName: AuraShapeController.AuraType.SubCardioid
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SubCardioid
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: SubCardioid = 5
+    return:
+      type: Global.AuraShapeController.AuraType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AuraShapeController.AuraType
+  commentId: T:Global.AuraShapeController.AuraType
+  name: AuraShapeController.AuraType
+  nameWithType: AuraShapeController.AuraType
+  fullName: AuraShapeController.AuraType
+  spec.csharp:
+  - uid: Global.AuraShapeController
+    name: AuraShapeController
+  - name: .
+  - uid: Global.AuraShapeController.AuraType
+    name: AuraType
+  spec.vb:
+  - uid: Global.AuraShapeController
+    name: AuraShapeController
+  - name: .
+  - uid: Global.AuraShapeController.AuraType
+    name: AuraType

@@ -1,0 +1,2666 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TilemapIntCollider
+  commentId: T:Global.TilemapIntCollider
+  id: TilemapIntCollider
+  parent: Global
+  children:
+  - Global.TilemapIntCollider.ActorOverlapsKillTile(IntActor,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.ActorOverlapsSpecialTile(IntActor,UnityEngine.Vector2Int,TileData.TileDataContainer)
+  - Global.TilemapIntCollider.ArtTilemap
+  - Global.TilemapIntCollider.ContainsPoint(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.DebugDrawTileOutline(System.Int32,System.Int32,UnityEngine.Color,System.Single)
+  - Global.TilemapIntCollider.DebugDrawTileOutline(System.Int32,System.Int32)
+  - Global.TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int,UnityEngine.Color,System.Single)
+  - Global.TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.DrawGizmos(UnityEngine.Color)
+  - Global.TilemapIntCollider.DrawUnpaddedGizmos(UnityEngine.Color)
+  - Global.TilemapIntCollider.DropColliderDown(AABBIntCollider)
+  - Global.TilemapIntCollider.EnsureFunctionalTilemapExists
+  - Global.TilemapIntCollider.ExportMapToFile(System.String)
+  - Global.TilemapIntCollider.GetArtTilemap
+  - Global.TilemapIntCollider.GetBounds
+  - Global.TilemapIntCollider.GetBounds(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetCellSize
+  - Global.TilemapIntCollider.GetCellSizeAsFloat
+  - Global.TilemapIntCollider.GetCollidableBounds(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetEditorCameraTileBounds
+  - Global.TilemapIntCollider.GetFunctionalTilemap
+  - Global.TilemapIntCollider.GetOverlappingTiles(AABBIntCollider,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetRayIntersection(IntRay)
+  - Global.TilemapIntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetTileBounds(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetTileColliderBounds(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetTileData(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetTileIndex(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetTileIntersection(UnityEngine.Vector2Int,IntRay)
+  - Global.TilemapIntCollider.GetTilemapManager
+  - Global.TilemapIntCollider.GetTileOutlineRays(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GetTileWorldCenter(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.GizmosDrawTileOutline(System.Int32,System.Int32)
+  - Global.TilemapIntCollider.IsTileCollidable(System.Int32,System.Int32)
+  - Global.TilemapIntCollider.IsTileCollidable(UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.OverlapsSpecialTile(AABBIntCollider,UnityEngine.Vector2Int,TileData.TileDataContainer)
+  - Global.TilemapIntCollider.OverlapsTileCollider(AABBIntCollider,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Boolean)
+  - Global.TilemapIntCollider.OverlapsTileCollider(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Boolean)
+  - Global.TilemapIntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+  - Global.TilemapIntCollider.Start
+  - Global.TilemapIntCollider.TileKillsActor(System.Int32,System.Int32)
+  - Global.TilemapIntCollider.TileKillsActor(UnityEngine.Vector2Int)
+  langs:
+  - csharp
+  - vb
+  name: TilemapIntCollider
+  nameWithType: TilemapIntCollider
+  fullName: TilemapIntCollider
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TilemapIntCollider
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(CrumblingPlatforms))]
+
+      public class TilemapIntCollider : IntCollider
+    content.vb: >-
+      <RequireComponent(GetType(CrumblingPlatforms))>
+
+      Public Class TilemapIntCollider Inherits IntCollider
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.IntCollider
+  inheritedMembers:
+  - Global.IntCollider.DisableGizmos
+  - Global.IntCollider.AlwaysDrawGizmos
+  - Global.IntCollider.OneWayInteraction
+  - Global.IntCollider.Position
+  - Global.IntCollider.GetPosition
+  - Global.IntCollider.SetPosition(UnityEngine.Vector2Int)
+  - Global.IntCollider.IsCollidable
+  - Global.IntCollider.Overlaps(IntCollider)
+  - Global.IntCollider.Overlaps(IntCollider,UnityEngine.Vector2Int)
+  - Global.IntCollider.OverlapsDummyCollider(DummyIntCollider,UnityEngine.Vector2Int)
+  - Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt)
+  - Global.IntCollider.OverlapsComposite(CompositeIntCollider,UnityEngine.Vector2Int)
+  - Global.IntCollider.Intersects(IntRay)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.CrumblingPlatforms
+- uid: Global.TilemapIntCollider.ArtTilemap
+  commentId: F:Global.TilemapIntCollider.ArtTilemap
+  id: ArtTilemap
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: ArtTilemap
+  nameWithType: TilemapIntCollider.ArtTilemap
+  fullName: TilemapIntCollider.ArtTilemap
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ArtTilemap
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Tilemap ArtTilemap
+    return:
+      type: UnityEngine.Tilemaps.Tilemap
+    content.vb: Public ArtTilemap As Tilemap
+- uid: Global.TilemapIntCollider.Start
+  commentId: M:Global.TilemapIntCollider.Start
+  id: Start
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: TilemapIntCollider.Start()
+  fullName: TilemapIntCollider.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.TilemapIntCollider.Start*
+- uid: Global.TilemapIntCollider.EnsureFunctionalTilemapExists
+  commentId: M:Global.TilemapIntCollider.EnsureFunctionalTilemapExists
+  id: EnsureFunctionalTilemapExists
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: EnsureFunctionalTilemapExists()
+  nameWithType: TilemapIntCollider.EnsureFunctionalTilemapExists()
+  fullName: TilemapIntCollider.EnsureFunctionalTilemapExists()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EnsureFunctionalTilemapExists
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void EnsureFunctionalTilemapExists()
+    content.vb: Public Sub EnsureFunctionalTilemapExists()
+  overload: Global.TilemapIntCollider.EnsureFunctionalTilemapExists*
+- uid: Global.TilemapIntCollider.GetTileIndex(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetTileIndex(UnityEngine.Vector2Int)
+  id: GetTileIndex(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetTileIndex(Vector2Int)
+  nameWithType: TilemapIntCollider.GetTileIndex(Vector2Int)
+  fullName: TilemapIntCollider.GetTileIndex(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileIndex
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nTakes world position to cell position\n"
+  example: []
+  syntax:
+    content: public Vector2Int GetTileIndex(Vector2Int pos)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2Int
+      description: ''
+    return:
+      type: UnityEngine.Vector2Int
+      description: Vector2Int of Cell Position
+    content.vb: Public Function GetTileIndex(pos As Vector2Int) As Vector2Int
+  overload: Global.TilemapIntCollider.GetTileIndex*
+- uid: Global.TilemapIntCollider.GetTileWorldCenter(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetTileWorldCenter(UnityEngine.Vector2Int)
+  id: GetTileWorldCenter(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetTileWorldCenter(Vector2Int)
+  nameWithType: TilemapIntCollider.GetTileWorldCenter(Vector2Int)
+  fullName: TilemapIntCollider.GetTileWorldCenter(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileWorldCenter
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int GetTileWorldCenter(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Function GetTileWorldCenter(index As Vector2Int) As Vector2Int
+  overload: Global.TilemapIntCollider.GetTileWorldCenter*
+- uid: Global.TilemapIntCollider.IsTileCollidable(System.Int32,System.Int32)
+  commentId: M:Global.TilemapIntCollider.IsTileCollidable(System.Int32,System.Int32)
+  id: IsTileCollidable(System.Int32,System.Int32)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: IsTileCollidable(int, int)
+  nameWithType: TilemapIntCollider.IsTileCollidable(int, int)
+  fullName: TilemapIntCollider.IsTileCollidable(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsTileCollidable
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsTileCollidable(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsTileCollidable(x As Integer, y As Integer) As Boolean
+  overload: Global.TilemapIntCollider.IsTileCollidable*
+  nameWithType.vb: TilemapIntCollider.IsTileCollidable(Integer, Integer)
+  fullName.vb: TilemapIntCollider.IsTileCollidable(Integer, Integer)
+  name.vb: IsTileCollidable(Integer, Integer)
+- uid: Global.TilemapIntCollider.IsTileCollidable(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.IsTileCollidable(UnityEngine.Vector2Int)
+  id: IsTileCollidable(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: IsTileCollidable(Vector2Int)
+  nameWithType: TilemapIntCollider.IsTileCollidable(Vector2Int)
+  fullName: TilemapIntCollider.IsTileCollidable(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsTileCollidable
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsTileCollidable(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsTileCollidable(index As Vector2Int) As Boolean
+  overload: Global.TilemapIntCollider.IsTileCollidable*
+- uid: Global.TilemapIntCollider.TileKillsActor(System.Int32,System.Int32)
+  commentId: M:Global.TilemapIntCollider.TileKillsActor(System.Int32,System.Int32)
+  id: TileKillsActor(System.Int32,System.Int32)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: TileKillsActor(int, int)
+  nameWithType: TilemapIntCollider.TileKillsActor(int, int)
+  fullName: TilemapIntCollider.TileKillsActor(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TileKillsActor
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool TileKillsActor(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function TileKillsActor(x As Integer, y As Integer) As Boolean
+  overload: Global.TilemapIntCollider.TileKillsActor*
+  nameWithType.vb: TilemapIntCollider.TileKillsActor(Integer, Integer)
+  fullName.vb: TilemapIntCollider.TileKillsActor(Integer, Integer)
+  name.vb: TileKillsActor(Integer, Integer)
+- uid: Global.TilemapIntCollider.TileKillsActor(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.TileKillsActor(UnityEngine.Vector2Int)
+  id: TileKillsActor(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: TileKillsActor(Vector2Int)
+  nameWithType: TilemapIntCollider.TileKillsActor(Vector2Int)
+  fullName: TilemapIntCollider.TileKillsActor(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TileKillsActor
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool TileKillsActor(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Function TileKillsActor(index As Vector2Int) As Boolean
+  overload: Global.TilemapIntCollider.TileKillsActor*
+- uid: Global.TilemapIntCollider.OverlapsTileCollider(AABBIntCollider,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Boolean)
+  commentId: M:Global.TilemapIntCollider.OverlapsTileCollider(AABBIntCollider,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Boolean)
+  id: OverlapsTileCollider(AABBIntCollider,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Boolean)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: OverlapsTileCollider(AABBIntCollider, Vector2Int, Vector2Int, bool)
+  nameWithType: TilemapIntCollider.OverlapsTileCollider(AABBIntCollider, Vector2Int, Vector2Int, bool)
+  fullName: TilemapIntCollider.OverlapsTileCollider(AABBIntCollider, UnityEngine.Vector2Int, UnityEngine.Vector2Int, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsTileCollider
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool OverlapsTileCollider(AABBIntCollider aabb, Vector2Int index, Vector2Int dPos, bool override_collidable = false)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+    - id: index
+      type: UnityEngine.Vector2Int
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    - id: override_collidable
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function OverlapsTileCollider(aabb As AABBIntCollider, index As Vector2Int, dPos As Vector2Int, override_collidable As Boolean = False) As Boolean
+  overload: Global.TilemapIntCollider.OverlapsTileCollider*
+  nameWithType.vb: TilemapIntCollider.OverlapsTileCollider(AABBIntCollider, Vector2Int, Vector2Int, Boolean)
+  fullName.vb: TilemapIntCollider.OverlapsTileCollider(AABBIntCollider, UnityEngine.Vector2Int, UnityEngine.Vector2Int, Boolean)
+  name.vb: OverlapsTileCollider(AABBIntCollider, Vector2Int, Vector2Int, Boolean)
+- uid: Global.TilemapIntCollider.OverlapsTileCollider(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Boolean)
+  commentId: M:Global.TilemapIntCollider.OverlapsTileCollider(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Boolean)
+  id: OverlapsTileCollider(UnityEngine.BoundsInt,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Boolean)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: OverlapsTileCollider(BoundsInt, Vector2Int, Vector2Int, bool)
+  nameWithType: TilemapIntCollider.OverlapsTileCollider(BoundsInt, Vector2Int, Vector2Int, bool)
+  fullName: TilemapIntCollider.OverlapsTileCollider(UnityEngine.BoundsInt, UnityEngine.Vector2Int, UnityEngine.Vector2Int, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsTileCollider
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 139
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool OverlapsTileCollider(BoundsInt bounds, Vector2Int index, Vector2Int dPos, bool override_collidable = false)
+    parameters:
+    - id: bounds
+      type: UnityEngine.BoundsInt
+    - id: index
+      type: UnityEngine.Vector2Int
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    - id: override_collidable
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function OverlapsTileCollider(bounds As BoundsInt, index As Vector2Int, dPos As Vector2Int, override_collidable As Boolean = False) As Boolean
+  overload: Global.TilemapIntCollider.OverlapsTileCollider*
+  nameWithType.vb: TilemapIntCollider.OverlapsTileCollider(BoundsInt, Vector2Int, Vector2Int, Boolean)
+  fullName.vb: TilemapIntCollider.OverlapsTileCollider(UnityEngine.BoundsInt, UnityEngine.Vector2Int, UnityEngine.Vector2Int, Boolean)
+  name.vb: OverlapsTileCollider(BoundsInt, Vector2Int, Vector2Int, Boolean)
+- uid: Global.TilemapIntCollider.ActorOverlapsKillTile(IntActor,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.ActorOverlapsKillTile(IntActor,UnityEngine.Vector2Int)
+  id: ActorOverlapsKillTile(IntActor,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: ActorOverlapsKillTile(IntActor, Vector2Int)
+  nameWithType: TilemapIntCollider.ActorOverlapsKillTile(IntActor, Vector2Int)
+  fullName: TilemapIntCollider.ActorOverlapsKillTile(IntActor, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ActorOverlapsKillTile
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 160
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ActorOverlapsKillTile(IntActor actor, Vector2Int dPos)
+    parameters:
+    - id: actor
+      type: Global.IntActor
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Function ActorOverlapsKillTile(actor As IntActor, dPos As Vector2Int) As Boolean
+  overload: Global.TilemapIntCollider.ActorOverlapsKillTile*
+- uid: Global.TilemapIntCollider.ActorOverlapsSpecialTile(IntActor,UnityEngine.Vector2Int,TileData.TileDataContainer)
+  commentId: M:Global.TilemapIntCollider.ActorOverlapsSpecialTile(IntActor,UnityEngine.Vector2Int,TileData.TileDataContainer)
+  id: ActorOverlapsSpecialTile(IntActor,UnityEngine.Vector2Int,TileData.TileDataContainer)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: ActorOverlapsSpecialTile(IntActor, Vector2Int, TileDataContainer)
+  nameWithType: TilemapIntCollider.ActorOverlapsSpecialTile(IntActor, Vector2Int, TileData.TileDataContainer)
+  fullName: TilemapIntCollider.ActorOverlapsSpecialTile(IntActor, UnityEngine.Vector2Int, TileData.TileDataContainer)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ActorOverlapsSpecialTile
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 181
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ActorOverlapsSpecialTile(IntActor actor, Vector2Int dPos, TileData.TileDataContainer options)
+    parameters:
+    - id: actor
+      type: Global.IntActor
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    - id: options
+      type: Global.TileData.TileDataContainer
+    return:
+      type: System.Boolean
+    content.vb: Public Function ActorOverlapsSpecialTile(actor As IntActor, dPos As Vector2Int, options As TileData.TileDataContainer) As Boolean
+  overload: Global.TilemapIntCollider.ActorOverlapsSpecialTile*
+- uid: Global.TilemapIntCollider.OverlapsSpecialTile(AABBIntCollider,UnityEngine.Vector2Int,TileData.TileDataContainer)
+  commentId: M:Global.TilemapIntCollider.OverlapsSpecialTile(AABBIntCollider,UnityEngine.Vector2Int,TileData.TileDataContainer)
+  id: OverlapsSpecialTile(AABBIntCollider,UnityEngine.Vector2Int,TileData.TileDataContainer)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: OverlapsSpecialTile(AABBIntCollider, Vector2Int, TileDataContainer)
+  nameWithType: TilemapIntCollider.OverlapsSpecialTile(AABBIntCollider, Vector2Int, TileData.TileDataContainer)
+  fullName: TilemapIntCollider.OverlapsSpecialTile(AABBIntCollider, UnityEngine.Vector2Int, TileData.TileDataContainer)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsSpecialTile
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 187
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool OverlapsSpecialTile(AABBIntCollider aabb, Vector2Int dPos, TileData.TileDataContainer options)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    - id: options
+      type: Global.TileData.TileDataContainer
+    return:
+      type: System.Boolean
+    content.vb: Public Function OverlapsSpecialTile(aabb As AABBIntCollider, dPos As Vector2Int, options As TileData.TileDataContainer) As Boolean
+  overload: Global.TilemapIntCollider.OverlapsSpecialTile*
+- uid: Global.TilemapIntCollider.DropColliderDown(AABBIntCollider)
+  commentId: M:Global.TilemapIntCollider.DropColliderDown(AABBIntCollider)
+  id: DropColliderDown(AABBIntCollider)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: DropColliderDown(AABBIntCollider)
+  nameWithType: TilemapIntCollider.DropColliderDown(AABBIntCollider)
+  fullName: TilemapIntCollider.DropColliderDown(AABBIntCollider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DropColliderDown
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 207
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DropColliderDown(AABBIntCollider aabb)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+    content.vb: Public Sub DropColliderDown(aabb As AABBIntCollider)
+  overload: Global.TilemapIntCollider.DropColliderDown*
+- uid: Global.TilemapIntCollider.GetFunctionalTilemap
+  commentId: M:Global.TilemapIntCollider.GetFunctionalTilemap
+  id: GetFunctionalTilemap
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetFunctionalTilemap()
+  nameWithType: TilemapIntCollider.GetFunctionalTilemap()
+  fullName: TilemapIntCollider.GetFunctionalTilemap()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetFunctionalTilemap
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 231
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Tilemap GetFunctionalTilemap()
+    return:
+      type: UnityEngine.Tilemaps.Tilemap
+    content.vb: Public Function GetFunctionalTilemap() As Tilemap
+  overload: Global.TilemapIntCollider.GetFunctionalTilemap*
+- uid: Global.TilemapIntCollider.GetArtTilemap
+  commentId: M:Global.TilemapIntCollider.GetArtTilemap
+  id: GetArtTilemap
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetArtTilemap()
+  nameWithType: TilemapIntCollider.GetArtTilemap()
+  fullName: TilemapIntCollider.GetArtTilemap()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetArtTilemap
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 236
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Tilemap GetArtTilemap()
+    return:
+      type: UnityEngine.Tilemaps.Tilemap
+    content.vb: Public Function GetArtTilemap() As Tilemap
+  overload: Global.TilemapIntCollider.GetArtTilemap*
+- uid: Global.TilemapIntCollider.GetOverlappingTiles(AABBIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetOverlappingTiles(AABBIntCollider,UnityEngine.Vector2Int)
+  id: GetOverlappingTiles(AABBIntCollider,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetOverlappingTiles(AABBIntCollider, Vector2Int)
+  nameWithType: TilemapIntCollider.GetOverlappingTiles(AABBIntCollider, Vector2Int)
+  fullName: TilemapIntCollider.GetOverlappingTiles(AABBIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetOverlappingTiles
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 247
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturns the inclusive bounds in indices of tiles that overlap the aabb collider\n"
+  example: []
+  syntax:
+    content: public BoundsInt GetOverlappingTiles(AABBIntCollider aabb, Vector2Int dPos)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+      description: ''
+    - id: dPos
+      type: UnityEngine.Vector2Int
+      description: ''
+    return:
+      type: UnityEngine.BoundsInt
+      description: ''
+    content.vb: Public Function GetOverlappingTiles(aabb As AABBIntCollider, dPos As Vector2Int) As BoundsInt
+  overload: Global.TilemapIntCollider.GetOverlappingTiles*
+- uid: Global.TilemapIntCollider.DebugDrawTileOutline(System.Int32,System.Int32)
+  commentId: M:Global.TilemapIntCollider.DebugDrawTileOutline(System.Int32,System.Int32)
+  id: DebugDrawTileOutline(System.Int32,System.Int32)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: DebugDrawTileOutline(int, int)
+  nameWithType: TilemapIntCollider.DebugDrawTileOutline(int, int)
+  fullName: TilemapIntCollider.DebugDrawTileOutline(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugDrawTileOutline
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 255
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugDrawTileOutline(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    content.vb: Public Sub DebugDrawTileOutline(x As Integer, y As Integer)
+  overload: Global.TilemapIntCollider.DebugDrawTileOutline*
+  nameWithType.vb: TilemapIntCollider.DebugDrawTileOutline(Integer, Integer)
+  fullName.vb: TilemapIntCollider.DebugDrawTileOutline(Integer, Integer)
+  name.vb: DebugDrawTileOutline(Integer, Integer)
+- uid: Global.TilemapIntCollider.DebugDrawTileOutline(System.Int32,System.Int32,UnityEngine.Color,System.Single)
+  commentId: M:Global.TilemapIntCollider.DebugDrawTileOutline(System.Int32,System.Int32,UnityEngine.Color,System.Single)
+  id: DebugDrawTileOutline(System.Int32,System.Int32,UnityEngine.Color,System.Single)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: DebugDrawTileOutline(int, int, Color, float)
+  nameWithType: TilemapIntCollider.DebugDrawTileOutline(int, int, Color, float)
+  fullName: TilemapIntCollider.DebugDrawTileOutline(int, int, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugDrawTileOutline
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 262
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugDrawTileOutline(int x, int y, Color color, float duration = 0)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    - id: color
+      type: UnityEngine.Color
+    - id: duration
+      type: System.Single
+    content.vb: Public Sub DebugDrawTileOutline(x As Integer, y As Integer, color As Color, duration As Single = 0)
+  overload: Global.TilemapIntCollider.DebugDrawTileOutline*
+  nameWithType.vb: TilemapIntCollider.DebugDrawTileOutline(Integer, Integer, Color, Single)
+  fullName.vb: TilemapIntCollider.DebugDrawTileOutline(Integer, Integer, UnityEngine.Color, Single)
+  name.vb: DebugDrawTileOutline(Integer, Integer, Color, Single)
+- uid: Global.TilemapIntCollider.GizmosDrawTileOutline(System.Int32,System.Int32)
+  commentId: M:Global.TilemapIntCollider.GizmosDrawTileOutline(System.Int32,System.Int32)
+  id: GizmosDrawTileOutline(System.Int32,System.Int32)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GizmosDrawTileOutline(int, int)
+  nameWithType: TilemapIntCollider.GizmosDrawTileOutline(int, int)
+  fullName: TilemapIntCollider.GizmosDrawTileOutline(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GizmosDrawTileOutline
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 284
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void GizmosDrawTileOutline(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    content.vb: Public Sub GizmosDrawTileOutline(x As Integer, y As Integer)
+  overload: Global.TilemapIntCollider.GizmosDrawTileOutline*
+  nameWithType.vb: TilemapIntCollider.GizmosDrawTileOutline(Integer, Integer)
+  fullName.vb: TilemapIntCollider.GizmosDrawTileOutline(Integer, Integer)
+  name.vb: GizmosDrawTileOutline(Integer, Integer)
+- uid: Global.TilemapIntCollider.DrawGizmos(UnityEngine.Color)
+  commentId: M:Global.TilemapIntCollider.DrawGizmos(UnityEngine.Color)
+  id: DrawGizmos(UnityEngine.Color)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: DrawGizmos(Color)
+  nameWithType: TilemapIntCollider.DrawGizmos(Color)
+  fullName: TilemapIntCollider.DrawGizmos(UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawGizmos
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 309
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void DrawGizmos(Color color)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Overrides Sub DrawGizmos(color As Color)
+  overridden: Global.IntCollider.DrawGizmos(UnityEngine.Color)
+  overload: Global.TilemapIntCollider.DrawGizmos*
+- uid: Global.TilemapIntCollider.GetEditorCameraTileBounds
+  commentId: M:Global.TilemapIntCollider.GetEditorCameraTileBounds
+  id: GetEditorCameraTileBounds
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetEditorCameraTileBounds()
+  nameWithType: TilemapIntCollider.GetEditorCameraTileBounds()
+  fullName: TilemapIntCollider.GetEditorCameraTileBounds()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetEditorCameraTileBounds
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 334
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public BoundsInt GetEditorCameraTileBounds()
+    return:
+      type: UnityEngine.BoundsInt
+    content.vb: Public Function GetEditorCameraTileBounds() As BoundsInt
+  overload: Global.TilemapIntCollider.GetEditorCameraTileBounds*
+- uid: Global.TilemapIntCollider.DrawUnpaddedGizmos(UnityEngine.Color)
+  commentId: M:Global.TilemapIntCollider.DrawUnpaddedGizmos(UnityEngine.Color)
+  id: DrawUnpaddedGizmos(UnityEngine.Color)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: DrawUnpaddedGizmos(Color)
+  nameWithType: TilemapIntCollider.DrawUnpaddedGizmos(Color)
+  fullName: TilemapIntCollider.DrawUnpaddedGizmos(UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawUnpaddedGizmos
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 347
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DrawUnpaddedGizmos(Color color)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Sub DrawUnpaddedGizmos(color As Color)
+  overload: Global.TilemapIntCollider.DrawUnpaddedGizmos*
+- uid: Global.TilemapIntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+  id: OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: OverlapsAABB(AABBIntCollider, Vector2Int)
+  nameWithType: TilemapIntCollider.OverlapsAABB(AABBIntCollider, Vector2Int)
+  fullName: TilemapIntCollider.OverlapsAABB(AABBIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsAABB
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 407
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override bool OverlapsAABB(AABBIntCollider other, Vector2Int dPos)
+    parameters:
+    - id: other
+      type: Global.AABBIntCollider
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function OverlapsAABB(other As AABBIntCollider, dPos As Vector2Int) As Boolean
+  overridden: Global.IntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+  overload: Global.TilemapIntCollider.OverlapsAABB*
+- uid: Global.TilemapIntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+  id: OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: OverlapsTilemap(TilemapIntCollider, Vector2Int)
+  nameWithType: TilemapIntCollider.OverlapsTilemap(TilemapIntCollider, Vector2Int)
+  fullName: TilemapIntCollider.OverlapsTilemap(TilemapIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsTilemap
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 412
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override bool OverlapsTilemap(TilemapIntCollider other, Vector2Int dPos)
+    parameters:
+    - id: other
+      type: Global.TilemapIntCollider
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function OverlapsTilemap(other As TilemapIntCollider, dPos As Vector2Int) As Boolean
+  overridden: Global.IntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+  overload: Global.TilemapIntCollider.OverlapsTilemap*
+- uid: Global.TilemapIntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+  id: OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: OverlapsEdge(EdgeIntCollider, Vector2Int)
+  nameWithType: TilemapIntCollider.OverlapsEdge(EdgeIntCollider, Vector2Int)
+  fullName: TilemapIntCollider.OverlapsEdge(EdgeIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsEdge
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 417
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override bool OverlapsEdge(EdgeIntCollider other, Vector2Int dPos)
+    parameters:
+    - id: other
+      type: Global.EdgeIntCollider
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function OverlapsEdge(other As EdgeIntCollider, dPos As Vector2Int) As Boolean
+  overridden: Global.IntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+  overload: Global.TilemapIntCollider.OverlapsEdge*
+- uid: Global.TilemapIntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+  id: OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: OverlapsCircle(CircleIntCollider, Vector2Int)
+  nameWithType: TilemapIntCollider.OverlapsCircle(CircleIntCollider, Vector2Int)
+  fullName: TilemapIntCollider.OverlapsCircle(CircleIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsCircle
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 422
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override bool OverlapsCircle(CircleIntCollider collider, Vector2Int dPos)
+    parameters:
+    - id: collider
+      type: Global.CircleIntCollider
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function OverlapsCircle(collider As CircleIntCollider, dPos As Vector2Int) As Boolean
+  overridden: Global.IntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+  overload: Global.TilemapIntCollider.OverlapsCircle*
+- uid: Global.TilemapIntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  id: OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: OverlapsBounds(BoundsInt, Vector2Int)
+  nameWithType: TilemapIntCollider.OverlapsBounds(BoundsInt, Vector2Int)
+  fullName: TilemapIntCollider.OverlapsBounds(UnityEngine.BoundsInt, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsBounds
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 427
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool OverlapsBounds(BoundsInt collider, Vector2Int dPos)
+    parameters:
+    - id: collider
+      type: UnityEngine.BoundsInt
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function OverlapsBounds(collider As BoundsInt, dPos As Vector2Int) As Boolean
+  overridden: Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  overload: Global.TilemapIntCollider.OverlapsBounds*
+- uid: Global.TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int)
+  id: DebugDrawTileOutlineRays(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: DebugDrawTileOutlineRays(Vector2Int)
+  nameWithType: TilemapIntCollider.DebugDrawTileOutlineRays(Vector2Int)
+  fullName: TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugDrawTileOutlineRays
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 459
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugDrawTileOutlineRays(Vector2Int tile)
+    parameters:
+    - id: tile
+      type: UnityEngine.Vector2Int
+    content.vb: Public Sub DebugDrawTileOutlineRays(tile As Vector2Int)
+  overload: Global.TilemapIntCollider.DebugDrawTileOutlineRays*
+- uid: Global.TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int,UnityEngine.Color,System.Single)
+  commentId: M:Global.TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int,UnityEngine.Color,System.Single)
+  id: DebugDrawTileOutlineRays(UnityEngine.Vector2Int,UnityEngine.Color,System.Single)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: DebugDrawTileOutlineRays(Vector2Int, Color, float)
+  nameWithType: TilemapIntCollider.DebugDrawTileOutlineRays(Vector2Int, Color, float)
+  fullName: TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugDrawTileOutlineRays
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 464
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugDrawTileOutlineRays(Vector2Int tile, Color color, float duration = 0)
+    parameters:
+    - id: tile
+      type: UnityEngine.Vector2Int
+    - id: color
+      type: UnityEngine.Color
+    - id: duration
+      type: System.Single
+    content.vb: Public Sub DebugDrawTileOutlineRays(tile As Vector2Int, color As Color, duration As Single = 0)
+  overload: Global.TilemapIntCollider.DebugDrawTileOutlineRays*
+  nameWithType.vb: TilemapIntCollider.DebugDrawTileOutlineRays(Vector2Int, Color, Single)
+  fullName.vb: TilemapIntCollider.DebugDrawTileOutlineRays(UnityEngine.Vector2Int, UnityEngine.Color, Single)
+  name.vb: DebugDrawTileOutlineRays(Vector2Int, Color, Single)
+- uid: Global.TilemapIntCollider.GetTileOutlineRays(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetTileOutlineRays(UnityEngine.Vector2Int)
+  id: GetTileOutlineRays(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetTileOutlineRays(Vector2Int)
+  nameWithType: TilemapIntCollider.GetTileOutlineRays(Vector2Int)
+  fullName: TilemapIntCollider.GetTileOutlineRays(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileOutlineRays
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 473
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<IntRay> GetTileOutlineRays(Vector2Int tile)
+    parameters:
+    - id: tile
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Collections.Generic.List{IntRay}
+    content.vb: Protected Function GetTileOutlineRays(tile As Vector2Int) As List(Of IntRay)
+  overload: Global.TilemapIntCollider.GetTileOutlineRays*
+- uid: Global.TilemapIntCollider.GetTileIntersection(UnityEngine.Vector2Int,IntRay)
+  commentId: M:Global.TilemapIntCollider.GetTileIntersection(UnityEngine.Vector2Int,IntRay)
+  id: GetTileIntersection(UnityEngine.Vector2Int,IntRay)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetTileIntersection(Vector2Int, IntRay)
+  nameWithType: TilemapIntCollider.GetTileIntersection(Vector2Int, IntRay)
+  fullName: TilemapIntCollider.GetTileIntersection(UnityEngine.Vector2Int, IntRay)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileIntersection
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 516
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Intersection GetTileIntersection(Vector2Int tile, IntRay ray)
+    parameters:
+    - id: tile
+      type: UnityEngine.Vector2Int
+    - id: ray
+      type: Global.IntRay
+    return:
+      type: Global.Intersection
+    content.vb: Protected Function GetTileIntersection(tile As Vector2Int, ray As IntRay) As Intersection
+  overload: Global.TilemapIntCollider.GetTileIntersection*
+- uid: Global.TilemapIntCollider.GetRayIntersection(IntRay)
+  commentId: M:Global.TilemapIntCollider.GetRayIntersection(IntRay)
+  id: GetRayIntersection(IntRay)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetRayIntersection(IntRay)
+  nameWithType: TilemapIntCollider.GetRayIntersection(IntRay)
+  fullName: TilemapIntCollider.GetRayIntersection(IntRay)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetRayIntersection
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 555
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis does not account for padding. My current solution for raycast with padding is significantly less efficient... \nWill consider upgrade in the future if necessary.\n"
+  example: []
+  syntax:
+    content: public override Intersection GetRayIntersection(IntRay ray)
+    parameters:
+    - id: ray
+      type: Global.IntRay
+      description: ''
+    return:
+      type: Global.Intersection
+      description: ''
+    content.vb: Public Overrides Function GetRayIntersection(ray As IntRay) As Intersection
+  overridden: Global.IntCollider.GetRayIntersection(IntRay)
+  overload: Global.TilemapIntCollider.GetRayIntersection*
+- uid: Global.TilemapIntCollider.GetBounds
+  commentId: M:Global.TilemapIntCollider.GetBounds
+  id: GetBounds
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetBounds()
+  nameWithType: TilemapIntCollider.GetBounds()
+  fullName: TilemapIntCollider.GetBounds()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetBounds
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 632
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override BoundsInt GetBounds()
+    return:
+      type: UnityEngine.BoundsInt
+    content.vb: Public Overrides Function GetBounds() As BoundsInt
+  overridden: Global.IntCollider.GetBounds
+  overload: Global.TilemapIntCollider.GetBounds*
+- uid: Global.TilemapIntCollider.GetTileBounds(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetTileBounds(UnityEngine.Vector2Int)
+  id: GetTileBounds(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetTileBounds(Vector2Int)
+  nameWithType: TilemapIntCollider.GetTileBounds(Vector2Int)
+  fullName: TilemapIntCollider.GetTileBounds(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileBounds
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 643
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis returns the bounds of a tile as visible on the screen. It is not influenced by the padding.\n"
+  example: []
+  syntax:
+    content: public BoundsInt GetTileBounds(Vector2Int position)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector2Int
+      description: ''
+    return:
+      type: UnityEngine.BoundsInt
+      description: ''
+    content.vb: Public Function GetTileBounds(position As Vector2Int) As BoundsInt
+  overload: Global.TilemapIntCollider.GetTileBounds*
+- uid: Global.TilemapIntCollider.GetTileData(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetTileData(UnityEngine.Vector2Int)
+  id: GetTileData(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetTileData(Vector2Int)
+  nameWithType: TilemapIntCollider.GetTileData(Vector2Int)
+  fullName: TilemapIntCollider.GetTileData(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileData
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 650
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TileData GetTileData(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: Global.TileData
+    content.vb: Public Function GetTileData(index As Vector2Int) As TileData
+  overload: Global.TilemapIntCollider.GetTileData*
+- uid: Global.TilemapIntCollider.GetTilemapManager
+  commentId: M:Global.TilemapIntCollider.GetTilemapManager
+  id: GetTilemapManager
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetTilemapManager()
+  nameWithType: TilemapIntCollider.GetTilemapManager()
+  fullName: TilemapIntCollider.GetTilemapManager()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTilemapManager
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 657
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GlobalProperties GetTilemapManager()
+    return:
+      type: Global.GlobalProperties
+    content.vb: Public Function GetTilemapManager() As GlobalProperties
+  overload: Global.TilemapIntCollider.GetTilemapManager*
+- uid: Global.TilemapIntCollider.GetTileColliderBounds(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetTileColliderBounds(UnityEngine.Vector2Int)
+  id: GetTileColliderBounds(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetTileColliderBounds(Vector2Int)
+  nameWithType: TilemapIntCollider.GetTileColliderBounds(Vector2Int)
+  fullName: TilemapIntCollider.GetTileColliderBounds(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTileColliderBounds
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 669
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis returns the bounds of a tile as influenced by the padding. Returns the bounds of the collider.\n"
+  example: []
+  syntax:
+    content: public BoundsInt[] GetTileColliderBounds(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: UnityEngine.BoundsInt[]
+      description: ''
+    content.vb: Public Function GetTileColliderBounds(index As Vector2Int) As BoundsInt()
+  overload: Global.TilemapIntCollider.GetTileColliderBounds*
+- uid: Global.TilemapIntCollider.GetCellSize
+  commentId: M:Global.TilemapIntCollider.GetCellSize
+  id: GetCellSize
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetCellSize()
+  nameWithType: TilemapIntCollider.GetCellSize()
+  fullName: TilemapIntCollider.GetCellSize()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetCellSize
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 694
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int GetCellSize()
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Function GetCellSize() As Vector2Int
+  overload: Global.TilemapIntCollider.GetCellSize*
+- uid: Global.TilemapIntCollider.GetCellSizeAsFloat
+  commentId: M:Global.TilemapIntCollider.GetCellSizeAsFloat
+  id: GetCellSizeAsFloat
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetCellSizeAsFloat()
+  nameWithType: TilemapIntCollider.GetCellSizeAsFloat()
+  fullName: TilemapIntCollider.GetCellSizeAsFloat()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetCellSizeAsFloat
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 699
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 GetCellSizeAsFloat()
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Function GetCellSizeAsFloat() As Vector2
+  overload: Global.TilemapIntCollider.GetCellSizeAsFloat*
+- uid: Global.TilemapIntCollider.GetBounds(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetBounds(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  id: GetBounds(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetBounds(Vector2Int, Vector2Int)
+  nameWithType: TilemapIntCollider.GetBounds(Vector2Int, Vector2Int)
+  fullName: TilemapIntCollider.GetBounds(UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetBounds
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 704
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public BoundsInt GetBounds(Vector2Int min, Vector2Int max)
+    parameters:
+    - id: min
+      type: UnityEngine.Vector2Int
+    - id: max
+      type: UnityEngine.Vector2Int
+    return:
+      type: UnityEngine.BoundsInt
+    content.vb: Public Function GetBounds(min As Vector2Int, max As Vector2Int) As BoundsInt
+  overload: Global.TilemapIntCollider.GetBounds*
+- uid: Global.TilemapIntCollider.GetCollidableBounds(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetCollidableBounds(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  id: GetCollidableBounds(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetCollidableBounds(Vector2Int, Vector2Int)
+  nameWithType: TilemapIntCollider.GetCollidableBounds(Vector2Int, Vector2Int)
+  fullName: TilemapIntCollider.GetCollidableBounds(UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetCollidableBounds
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 712
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public BoundsInt GetCollidableBounds(Vector2Int min, Vector2Int max)
+    parameters:
+    - id: min
+      type: UnityEngine.Vector2Int
+    - id: max
+      type: UnityEngine.Vector2Int
+    return:
+      type: UnityEngine.BoundsInt
+    content.vb: Public Function GetCollidableBounds(min As Vector2Int, max As Vector2Int) As BoundsInt
+  overload: Global.TilemapIntCollider.GetCollidableBounds*
+- uid: Global.TilemapIntCollider.ContainsPoint(UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.ContainsPoint(UnityEngine.Vector2Int)
+  id: ContainsPoint(UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: ContainsPoint(Vector2Int)
+  nameWithType: TilemapIntCollider.ContainsPoint(Vector2Int)
+  fullName: TilemapIntCollider.ContainsPoint(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ContainsPoint
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 736
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool ContainsPoint(Vector2Int point)
+    parameters:
+    - id: point
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function ContainsPoint(point As Vector2Int) As Boolean
+  overridden: Global.IntCollider.ContainsPoint(UnityEngine.Vector2Int)
+  overload: Global.TilemapIntCollider.ContainsPoint*
+- uid: Global.TilemapIntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.TilemapIntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+  id: GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: GetRidingTangent(AABBIntCollider, Vector2Int)
+  nameWithType: TilemapIntCollider.GetRidingTangent(AABBIntCollider, Vector2Int)
+  fullName: TilemapIntCollider.GetRidingTangent(AABBIntCollider, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetRidingTangent
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 741
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override Vector2 GetRidingTangent(AABBIntCollider aabb, Vector2Int dPos)
+    parameters:
+    - id: aabb
+      type: Global.AABBIntCollider
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Overrides Function GetRidingTangent(aabb As AABBIntCollider, dPos As Vector2Int) As Vector2
+  overridden: Global.IntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+  overload: Global.TilemapIntCollider.GetRidingTangent*
+- uid: Global.TilemapIntCollider.ExportMapToFile(System.String)
+  commentId: M:Global.TilemapIntCollider.ExportMapToFile(System.String)
+  id: ExportMapToFile(System.String)
+  parent: Global.TilemapIntCollider
+  langs:
+  - csharp
+  - vb
+  name: ExportMapToFile(string)
+  nameWithType: TilemapIntCollider.ExportMapToFile(string)
+  fullName: TilemapIntCollider.ExportMapToFile(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ExportMapToFile
+    path: ../Assets/Framework/Physics/Colliders/TilemapIntCollider.cs
+    startLine: 834
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ExportMapToFile(string filepath)
+    parameters:
+    - id: filepath
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function ExportMapToFile(filepath As String) As Boolean
+  overload: Global.TilemapIntCollider.ExportMapToFile*
+  nameWithType.vb: TilemapIntCollider.ExportMapToFile(String)
+  fullName.vb: TilemapIntCollider.ExportMapToFile(String)
+  name.vb: ExportMapToFile(String)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.IntCollider
+  commentId: T:Global.IntCollider
+  name: IntCollider
+  nameWithType: IntCollider
+  fullName: IntCollider
+- uid: Global.IntCollider.DisableGizmos
+  commentId: F:Global.IntCollider.DisableGizmos
+  parent: Global.IntCollider
+  name: DisableGizmos
+  nameWithType: IntCollider.DisableGizmos
+  fullName: IntCollider.DisableGizmos
+- uid: Global.IntCollider.AlwaysDrawGizmos
+  commentId: F:Global.IntCollider.AlwaysDrawGizmos
+  parent: Global.IntCollider
+  name: AlwaysDrawGizmos
+  nameWithType: IntCollider.AlwaysDrawGizmos
+  fullName: IntCollider.AlwaysDrawGizmos
+- uid: Global.IntCollider.OneWayInteraction
+  commentId: F:Global.IntCollider.OneWayInteraction
+  parent: Global.IntCollider
+  name: OneWayInteraction
+  nameWithType: IntCollider.OneWayInteraction
+  fullName: IntCollider.OneWayInteraction
+- uid: Global.IntCollider.Position
+  commentId: P:Global.IntCollider.Position
+  parent: Global.IntCollider
+  name: Position
+  nameWithType: IntCollider.Position
+  fullName: IntCollider.Position
+- uid: Global.IntCollider.GetPosition
+  commentId: M:Global.IntCollider.GetPosition
+  parent: Global.IntCollider
+  name: GetPosition()
+  nameWithType: IntCollider.GetPosition()
+  fullName: IntCollider.GetPosition()
+  spec.csharp:
+  - uid: Global.IntCollider.GetPosition
+    name: GetPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.GetPosition
+    name: GetPosition
+  - name: (
+  - name: )
+- uid: Global.IntCollider.SetPosition(UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.SetPosition(UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: SetPosition(Vector2Int)
+  nameWithType: IntCollider.SetPosition(Vector2Int)
+  fullName: IntCollider.SetPosition(UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.SetPosition(UnityEngine.Vector2Int)
+    name: SetPosition
+  - name: (
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.SetPosition(UnityEngine.Vector2Int)
+    name: SetPosition
+  - name: (
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntCollider.IsCollidable
+  commentId: F:Global.IntCollider.IsCollidable
+  parent: Global.IntCollider
+  name: IsCollidable
+  nameWithType: IntCollider.IsCollidable
+  fullName: IntCollider.IsCollidable
+- uid: Global.IntCollider.Overlaps(IntCollider)
+  commentId: M:Global.IntCollider.Overlaps(IntCollider)
+  parent: Global.IntCollider
+  name: Overlaps(IntCollider)
+  nameWithType: IntCollider.Overlaps(IntCollider)
+  fullName: IntCollider.Overlaps(IntCollider)
+  spec.csharp:
+  - uid: Global.IntCollider.Overlaps(IntCollider)
+    name: Overlaps
+  - name: (
+  - uid: Global.IntCollider
+    name: IntCollider
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.Overlaps(IntCollider)
+    name: Overlaps
+  - name: (
+  - uid: Global.IntCollider
+    name: IntCollider
+  - name: )
+- uid: Global.IntCollider.Overlaps(IntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.Overlaps(IntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: Overlaps(IntCollider, Vector2Int)
+  nameWithType: IntCollider.Overlaps(IntCollider, Vector2Int)
+  fullName: IntCollider.Overlaps(IntCollider, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.Overlaps(IntCollider,UnityEngine.Vector2Int)
+    name: Overlaps
+  - name: (
+  - uid: Global.IntCollider
+    name: IntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.Overlaps(IntCollider,UnityEngine.Vector2Int)
+    name: Overlaps
+  - name: (
+  - uid: Global.IntCollider
+    name: IntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntCollider.OverlapsDummyCollider(DummyIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.OverlapsDummyCollider(DummyIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: OverlapsDummyCollider(DummyIntCollider, Vector2Int)
+  nameWithType: IntCollider.OverlapsDummyCollider(DummyIntCollider, Vector2Int)
+  fullName: IntCollider.OverlapsDummyCollider(DummyIntCollider, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.OverlapsDummyCollider(DummyIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsDummyCollider
+  - name: (
+  - uid: Global.DummyIntCollider
+    name: DummyIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.OverlapsDummyCollider(DummyIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsDummyCollider
+  - name: (
+  - uid: Global.DummyIntCollider
+    name: DummyIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt)
+  commentId: M:Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt)
+  parent: Global.IntCollider
+  isExternal: true
+  name: OverlapsBounds(BoundsInt)
+  nameWithType: IntCollider.OverlapsBounds(BoundsInt)
+  fullName: IntCollider.OverlapsBounds(UnityEngine.BoundsInt)
+  spec.csharp:
+  - uid: Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt)
+    name: OverlapsBounds
+  - name: (
+  - uid: UnityEngine.BoundsInt
+    name: BoundsInt
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt)
+    name: OverlapsBounds
+  - name: (
+  - uid: UnityEngine.BoundsInt
+    name: BoundsInt
+    isExternal: true
+  - name: )
+- uid: Global.IntCollider.OverlapsComposite(CompositeIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.OverlapsComposite(CompositeIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: OverlapsComposite(CompositeIntCollider, Vector2Int)
+  nameWithType: IntCollider.OverlapsComposite(CompositeIntCollider, Vector2Int)
+  fullName: IntCollider.OverlapsComposite(CompositeIntCollider, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.OverlapsComposite(CompositeIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsComposite
+  - name: (
+  - uid: Global.CompositeIntCollider
+    name: CompositeIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.OverlapsComposite(CompositeIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsComposite
+  - name: (
+  - uid: Global.CompositeIntCollider
+    name: CompositeIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntCollider.Intersects(IntRay)
+  commentId: M:Global.IntCollider.Intersects(IntRay)
+  parent: Global.IntCollider
+  name: Intersects(IntRay)
+  nameWithType: IntCollider.Intersects(IntRay)
+  fullName: IntCollider.Intersects(IntRay)
+  spec.csharp:
+  - uid: Global.IntCollider.Intersects(IntRay)
+    name: Intersects
+  - name: (
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.Intersects(IntRay)
+    name: Intersects
+  - name: (
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Tilemaps.Tilemap
+  commentId: T:UnityEngine.Tilemaps.Tilemap
+  parent: UnityEngine.Tilemaps
+  isExternal: true
+  name: Tilemap
+  nameWithType: Tilemap
+  fullName: UnityEngine.Tilemaps.Tilemap
+- uid: UnityEngine.Tilemaps
+  commentId: N:UnityEngine.Tilemaps
+  isExternal: true
+  name: UnityEngine.Tilemaps
+  nameWithType: UnityEngine.Tilemaps
+  fullName: UnityEngine.Tilemaps
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Tilemaps
+    name: Tilemaps
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Tilemaps
+    name: Tilemaps
+    isExternal: true
+- uid: Global.TilemapIntCollider.Start*
+  commentId: Overload:Global.TilemapIntCollider.Start
+  name: Start
+  nameWithType: TilemapIntCollider.Start
+  fullName: TilemapIntCollider.Start
+- uid: Global.TilemapIntCollider.EnsureFunctionalTilemapExists*
+  commentId: Overload:Global.TilemapIntCollider.EnsureFunctionalTilemapExists
+  name: EnsureFunctionalTilemapExists
+  nameWithType: TilemapIntCollider.EnsureFunctionalTilemapExists
+  fullName: TilemapIntCollider.EnsureFunctionalTilemapExists
+- uid: Global.TilemapIntCollider.GetTileIndex*
+  commentId: Overload:Global.TilemapIntCollider.GetTileIndex
+  name: GetTileIndex
+  nameWithType: TilemapIntCollider.GetTileIndex
+  fullName: TilemapIntCollider.GetTileIndex
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: Global.TilemapIntCollider.GetTileWorldCenter*
+  commentId: Overload:Global.TilemapIntCollider.GetTileWorldCenter
+  name: GetTileWorldCenter
+  nameWithType: TilemapIntCollider.GetTileWorldCenter
+  fullName: TilemapIntCollider.GetTileWorldCenter
+- uid: Global.TilemapIntCollider.IsTileCollidable*
+  commentId: Overload:Global.TilemapIntCollider.IsTileCollidable
+  name: IsTileCollidable
+  nameWithType: TilemapIntCollider.IsTileCollidable
+  fullName: TilemapIntCollider.IsTileCollidable
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.TilemapIntCollider.TileKillsActor*
+  commentId: Overload:Global.TilemapIntCollider.TileKillsActor
+  name: TileKillsActor
+  nameWithType: TilemapIntCollider.TileKillsActor
+  fullName: TilemapIntCollider.TileKillsActor
+- uid: Global.TilemapIntCollider.OverlapsTileCollider*
+  commentId: Overload:Global.TilemapIntCollider.OverlapsTileCollider
+  name: OverlapsTileCollider
+  nameWithType: TilemapIntCollider.OverlapsTileCollider
+  fullName: TilemapIntCollider.OverlapsTileCollider
+- uid: Global.AABBIntCollider
+  commentId: T:Global.AABBIntCollider
+  name: AABBIntCollider
+  nameWithType: AABBIntCollider
+  fullName: AABBIntCollider
+- uid: UnityEngine.BoundsInt
+  commentId: T:UnityEngine.BoundsInt
+  parent: UnityEngine
+  isExternal: true
+  name: BoundsInt
+  nameWithType: BoundsInt
+  fullName: UnityEngine.BoundsInt
+- uid: Global.TilemapIntCollider.ActorOverlapsKillTile*
+  commentId: Overload:Global.TilemapIntCollider.ActorOverlapsKillTile
+  name: ActorOverlapsKillTile
+  nameWithType: TilemapIntCollider.ActorOverlapsKillTile
+  fullName: TilemapIntCollider.ActorOverlapsKillTile
+- uid: Global.IntActor
+  commentId: T:Global.IntActor
+  name: IntActor
+  nameWithType: IntActor
+  fullName: IntActor
+- uid: Global.TilemapIntCollider.ActorOverlapsSpecialTile*
+  commentId: Overload:Global.TilemapIntCollider.ActorOverlapsSpecialTile
+  name: ActorOverlapsSpecialTile
+  nameWithType: TilemapIntCollider.ActorOverlapsSpecialTile
+  fullName: TilemapIntCollider.ActorOverlapsSpecialTile
+- uid: Global.TileData.TileDataContainer
+  commentId: T:Global.TileData.TileDataContainer
+  name: TileData.TileDataContainer
+  nameWithType: TileData.TileDataContainer
+  fullName: TileData.TileDataContainer
+  spec.csharp:
+  - uid: Global.TileData
+    name: TileData
+  - name: .
+  - uid: Global.TileData.TileDataContainer
+    name: TileDataContainer
+  spec.vb:
+  - uid: Global.TileData
+    name: TileData
+  - name: .
+  - uid: Global.TileData.TileDataContainer
+    name: TileDataContainer
+- uid: Global.TilemapIntCollider.OverlapsSpecialTile*
+  commentId: Overload:Global.TilemapIntCollider.OverlapsSpecialTile
+  name: OverlapsSpecialTile
+  nameWithType: TilemapIntCollider.OverlapsSpecialTile
+  fullName: TilemapIntCollider.OverlapsSpecialTile
+- uid: Global.TilemapIntCollider.DropColliderDown*
+  commentId: Overload:Global.TilemapIntCollider.DropColliderDown
+  name: DropColliderDown
+  nameWithType: TilemapIntCollider.DropColliderDown
+  fullName: TilemapIntCollider.DropColliderDown
+- uid: Global.TilemapIntCollider.GetFunctionalTilemap*
+  commentId: Overload:Global.TilemapIntCollider.GetFunctionalTilemap
+  name: GetFunctionalTilemap
+  nameWithType: TilemapIntCollider.GetFunctionalTilemap
+  fullName: TilemapIntCollider.GetFunctionalTilemap
+- uid: Global.TilemapIntCollider.GetArtTilemap*
+  commentId: Overload:Global.TilemapIntCollider.GetArtTilemap
+  name: GetArtTilemap
+  nameWithType: TilemapIntCollider.GetArtTilemap
+  fullName: TilemapIntCollider.GetArtTilemap
+- uid: Global.TilemapIntCollider.GetOverlappingTiles*
+  commentId: Overload:Global.TilemapIntCollider.GetOverlappingTiles
+  name: GetOverlappingTiles
+  nameWithType: TilemapIntCollider.GetOverlappingTiles
+  fullName: TilemapIntCollider.GetOverlappingTiles
+- uid: Global.TilemapIntCollider.DebugDrawTileOutline*
+  commentId: Overload:Global.TilemapIntCollider.DebugDrawTileOutline
+  name: DebugDrawTileOutline
+  nameWithType: TilemapIntCollider.DebugDrawTileOutline
+  fullName: TilemapIntCollider.DebugDrawTileOutline
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.TilemapIntCollider.GizmosDrawTileOutline*
+  commentId: Overload:Global.TilemapIntCollider.GizmosDrawTileOutline
+  name: GizmosDrawTileOutline
+  nameWithType: TilemapIntCollider.GizmosDrawTileOutline
+  fullName: TilemapIntCollider.GizmosDrawTileOutline
+- uid: Global.IntCollider.DrawGizmos(UnityEngine.Color)
+  commentId: M:Global.IntCollider.DrawGizmos(UnityEngine.Color)
+  parent: Global.IntCollider
+  isExternal: true
+  name: DrawGizmos(Color)
+  nameWithType: IntCollider.DrawGizmos(Color)
+  fullName: IntCollider.DrawGizmos(UnityEngine.Color)
+  spec.csharp:
+  - uid: Global.IntCollider.DrawGizmos(UnityEngine.Color)
+    name: DrawGizmos
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.DrawGizmos(UnityEngine.Color)
+    name: DrawGizmos
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: Global.TilemapIntCollider.DrawGizmos*
+  commentId: Overload:Global.TilemapIntCollider.DrawGizmos
+  name: DrawGizmos
+  nameWithType: TilemapIntCollider.DrawGizmos
+  fullName: TilemapIntCollider.DrawGizmos
+- uid: Global.TilemapIntCollider.GetEditorCameraTileBounds*
+  commentId: Overload:Global.TilemapIntCollider.GetEditorCameraTileBounds
+  name: GetEditorCameraTileBounds
+  nameWithType: TilemapIntCollider.GetEditorCameraTileBounds
+  fullName: TilemapIntCollider.GetEditorCameraTileBounds
+- uid: Global.TilemapIntCollider.DrawUnpaddedGizmos*
+  commentId: Overload:Global.TilemapIntCollider.DrawUnpaddedGizmos
+  name: DrawUnpaddedGizmos
+  nameWithType: TilemapIntCollider.DrawUnpaddedGizmos
+  fullName: TilemapIntCollider.DrawUnpaddedGizmos
+- uid: Global.IntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: OverlapsAABB(AABBIntCollider, Vector2Int)
+  nameWithType: IntCollider.OverlapsAABB(AABBIntCollider, Vector2Int)
+  fullName: IntCollider.OverlapsAABB(AABBIntCollider, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsAABB
+  - name: (
+  - uid: Global.AABBIntCollider
+    name: AABBIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.OverlapsAABB(AABBIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsAABB
+  - name: (
+  - uid: Global.AABBIntCollider
+    name: AABBIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.TilemapIntCollider.OverlapsAABB*
+  commentId: Overload:Global.TilemapIntCollider.OverlapsAABB
+  name: OverlapsAABB
+  nameWithType: TilemapIntCollider.OverlapsAABB
+  fullName: TilemapIntCollider.OverlapsAABB
+- uid: Global.IntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: OverlapsTilemap(TilemapIntCollider, Vector2Int)
+  nameWithType: IntCollider.OverlapsTilemap(TilemapIntCollider, Vector2Int)
+  fullName: IntCollider.OverlapsTilemap(TilemapIntCollider, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsTilemap
+  - name: (
+  - uid: Global.TilemapIntCollider
+    name: TilemapIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.OverlapsTilemap(TilemapIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsTilemap
+  - name: (
+  - uid: Global.TilemapIntCollider
+    name: TilemapIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.TilemapIntCollider.OverlapsTilemap*
+  commentId: Overload:Global.TilemapIntCollider.OverlapsTilemap
+  name: OverlapsTilemap
+  nameWithType: TilemapIntCollider.OverlapsTilemap
+  fullName: TilemapIntCollider.OverlapsTilemap
+- uid: Global.TilemapIntCollider
+  commentId: T:Global.TilemapIntCollider
+  name: TilemapIntCollider
+  nameWithType: TilemapIntCollider
+  fullName: TilemapIntCollider
+- uid: Global.IntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: OverlapsEdge(EdgeIntCollider, Vector2Int)
+  nameWithType: IntCollider.OverlapsEdge(EdgeIntCollider, Vector2Int)
+  fullName: IntCollider.OverlapsEdge(EdgeIntCollider, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsEdge
+  - name: (
+  - uid: Global.EdgeIntCollider
+    name: EdgeIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.OverlapsEdge(EdgeIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsEdge
+  - name: (
+  - uid: Global.EdgeIntCollider
+    name: EdgeIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.TilemapIntCollider.OverlapsEdge*
+  commentId: Overload:Global.TilemapIntCollider.OverlapsEdge
+  name: OverlapsEdge
+  nameWithType: TilemapIntCollider.OverlapsEdge
+  fullName: TilemapIntCollider.OverlapsEdge
+- uid: Global.EdgeIntCollider
+  commentId: T:Global.EdgeIntCollider
+  name: EdgeIntCollider
+  nameWithType: EdgeIntCollider
+  fullName: EdgeIntCollider
+- uid: Global.IntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: OverlapsCircle(CircleIntCollider, Vector2Int)
+  nameWithType: IntCollider.OverlapsCircle(CircleIntCollider, Vector2Int)
+  fullName: IntCollider.OverlapsCircle(CircleIntCollider, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsCircle
+  - name: (
+  - uid: Global.CircleIntCollider
+    name: CircleIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.OverlapsCircle(CircleIntCollider,UnityEngine.Vector2Int)
+    name: OverlapsCircle
+  - name: (
+  - uid: Global.CircleIntCollider
+    name: CircleIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.TilemapIntCollider.OverlapsCircle*
+  commentId: Overload:Global.TilemapIntCollider.OverlapsCircle
+  name: OverlapsCircle
+  nameWithType: TilemapIntCollider.OverlapsCircle
+  fullName: TilemapIntCollider.OverlapsCircle
+- uid: Global.CircleIntCollider
+  commentId: T:Global.CircleIntCollider
+  name: CircleIntCollider
+  nameWithType: CircleIntCollider
+  fullName: CircleIntCollider
+- uid: Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: OverlapsBounds(BoundsInt, Vector2Int)
+  nameWithType: IntCollider.OverlapsBounds(BoundsInt, Vector2Int)
+  fullName: IntCollider.OverlapsBounds(UnityEngine.BoundsInt, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+    name: OverlapsBounds
+  - name: (
+  - uid: UnityEngine.BoundsInt
+    name: BoundsInt
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.OverlapsBounds(UnityEngine.BoundsInt,UnityEngine.Vector2Int)
+    name: OverlapsBounds
+  - name: (
+  - uid: UnityEngine.BoundsInt
+    name: BoundsInt
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.TilemapIntCollider.OverlapsBounds*
+  commentId: Overload:Global.TilemapIntCollider.OverlapsBounds
+  name: OverlapsBounds
+  nameWithType: TilemapIntCollider.OverlapsBounds
+  fullName: TilemapIntCollider.OverlapsBounds
+- uid: Global.TilemapIntCollider.DebugDrawTileOutlineRays*
+  commentId: Overload:Global.TilemapIntCollider.DebugDrawTileOutlineRays
+  name: DebugDrawTileOutlineRays
+  nameWithType: TilemapIntCollider.DebugDrawTileOutlineRays
+  fullName: TilemapIntCollider.DebugDrawTileOutlineRays
+- uid: Global.TilemapIntCollider.GetTileOutlineRays*
+  commentId: Overload:Global.TilemapIntCollider.GetTileOutlineRays
+  name: GetTileOutlineRays
+  nameWithType: TilemapIntCollider.GetTileOutlineRays
+  fullName: TilemapIntCollider.GetTileOutlineRays
+- uid: System.Collections.Generic.List{IntRay}
+  commentId: T:System.Collections.Generic.List{IntRay}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IntRay>
+  nameWithType: List<IntRay>
+  fullName: System.Collections.Generic.List<IntRay>
+  nameWithType.vb: List(Of IntRay)
+  fullName.vb: System.Collections.Generic.List(Of IntRay)
+  name.vb: List(Of IntRay)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntRay
+    name: IntRay
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.TilemapIntCollider.GetTileIntersection*
+  commentId: Overload:Global.TilemapIntCollider.GetTileIntersection
+  name: GetTileIntersection
+  nameWithType: TilemapIntCollider.GetTileIntersection
+  fullName: TilemapIntCollider.GetTileIntersection
+- uid: Global.IntRay
+  commentId: T:Global.IntRay
+  name: IntRay
+  nameWithType: IntRay
+  fullName: IntRay
+- uid: Global.Intersection
+  commentId: T:Global.Intersection
+  name: Intersection
+  nameWithType: Intersection
+  fullName: Intersection
+- uid: Global.IntCollider.GetRayIntersection(IntRay)
+  commentId: M:Global.IntCollider.GetRayIntersection(IntRay)
+  parent: Global.IntCollider
+  name: GetRayIntersection(IntRay)
+  nameWithType: IntCollider.GetRayIntersection(IntRay)
+  fullName: IntCollider.GetRayIntersection(IntRay)
+  spec.csharp:
+  - uid: Global.IntCollider.GetRayIntersection(IntRay)
+    name: GetRayIntersection
+  - name: (
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.GetRayIntersection(IntRay)
+    name: GetRayIntersection
+  - name: (
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+- uid: Global.TilemapIntCollider.GetRayIntersection*
+  commentId: Overload:Global.TilemapIntCollider.GetRayIntersection
+  name: GetRayIntersection
+  nameWithType: TilemapIntCollider.GetRayIntersection
+  fullName: TilemapIntCollider.GetRayIntersection
+- uid: Global.IntCollider.GetBounds
+  commentId: M:Global.IntCollider.GetBounds
+  parent: Global.IntCollider
+  name: GetBounds()
+  nameWithType: IntCollider.GetBounds()
+  fullName: IntCollider.GetBounds()
+  spec.csharp:
+  - uid: Global.IntCollider.GetBounds
+    name: GetBounds
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.GetBounds
+    name: GetBounds
+  - name: (
+  - name: )
+- uid: Global.TilemapIntCollider.GetBounds*
+  commentId: Overload:Global.TilemapIntCollider.GetBounds
+  name: GetBounds
+  nameWithType: TilemapIntCollider.GetBounds
+  fullName: TilemapIntCollider.GetBounds
+- uid: Global.TilemapIntCollider.GetTileBounds*
+  commentId: Overload:Global.TilemapIntCollider.GetTileBounds
+  name: GetTileBounds
+  nameWithType: TilemapIntCollider.GetTileBounds
+  fullName: TilemapIntCollider.GetTileBounds
+- uid: Global.TilemapIntCollider.GetTileData*
+  commentId: Overload:Global.TilemapIntCollider.GetTileData
+  name: GetTileData
+  nameWithType: TilemapIntCollider.GetTileData
+  fullName: TilemapIntCollider.GetTileData
+- uid: Global.TileData
+  commentId: T:Global.TileData
+  name: TileData
+  nameWithType: TileData
+  fullName: TileData
+- uid: Global.TilemapIntCollider.GetTilemapManager*
+  commentId: Overload:Global.TilemapIntCollider.GetTilemapManager
+  name: GetTilemapManager
+  nameWithType: TilemapIntCollider.GetTilemapManager
+  fullName: TilemapIntCollider.GetTilemapManager
+- uid: Global.GlobalProperties
+  commentId: T:Global.GlobalProperties
+  name: GlobalProperties
+  nameWithType: GlobalProperties
+  fullName: GlobalProperties
+- uid: Global.TilemapIntCollider.GetTileColliderBounds*
+  commentId: Overload:Global.TilemapIntCollider.GetTileColliderBounds
+  name: GetTileColliderBounds
+  nameWithType: TilemapIntCollider.GetTileColliderBounds
+  fullName: TilemapIntCollider.GetTileColliderBounds
+- uid: UnityEngine.BoundsInt[]
+  isExternal: true
+  name: BoundsInt[]
+  nameWithType: BoundsInt[]
+  fullName: UnityEngine.BoundsInt[]
+  nameWithType.vb: BoundsInt()
+  fullName.vb: UnityEngine.BoundsInt()
+  name.vb: BoundsInt()
+  spec.csharp:
+  - uid: UnityEngine.BoundsInt
+    name: BoundsInt
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.BoundsInt
+    name: BoundsInt
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Global.TilemapIntCollider.GetCellSize*
+  commentId: Overload:Global.TilemapIntCollider.GetCellSize
+  name: GetCellSize
+  nameWithType: TilemapIntCollider.GetCellSize
+  fullName: TilemapIntCollider.GetCellSize
+- uid: Global.TilemapIntCollider.GetCellSizeAsFloat*
+  commentId: Overload:Global.TilemapIntCollider.GetCellSizeAsFloat
+  name: GetCellSizeAsFloat
+  nameWithType: TilemapIntCollider.GetCellSizeAsFloat
+  fullName: TilemapIntCollider.GetCellSizeAsFloat
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.TilemapIntCollider.GetCollidableBounds*
+  commentId: Overload:Global.TilemapIntCollider.GetCollidableBounds
+  name: GetCollidableBounds
+  nameWithType: TilemapIntCollider.GetCollidableBounds
+  fullName: TilemapIntCollider.GetCollidableBounds
+- uid: Global.IntCollider.ContainsPoint(UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.ContainsPoint(UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: ContainsPoint(Vector2Int)
+  nameWithType: IntCollider.ContainsPoint(Vector2Int)
+  fullName: IntCollider.ContainsPoint(UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.ContainsPoint(UnityEngine.Vector2Int)
+    name: ContainsPoint
+  - name: (
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.ContainsPoint(UnityEngine.Vector2Int)
+    name: ContainsPoint
+  - name: (
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.TilemapIntCollider.ContainsPoint*
+  commentId: Overload:Global.TilemapIntCollider.ContainsPoint
+  name: ContainsPoint
+  nameWithType: TilemapIntCollider.ContainsPoint
+  fullName: TilemapIntCollider.ContainsPoint
+- uid: Global.IntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+  commentId: M:Global.IntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+  parent: Global.IntCollider
+  isExternal: true
+  name: GetRidingTangent(AABBIntCollider, Vector2Int)
+  nameWithType: IntCollider.GetRidingTangent(AABBIntCollider, Vector2Int)
+  fullName: IntCollider.GetRidingTangent(AABBIntCollider, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+    name: GetRidingTangent
+  - name: (
+  - uid: Global.AABBIntCollider
+    name: AABBIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntCollider.GetRidingTangent(AABBIntCollider,UnityEngine.Vector2Int)
+    name: GetRidingTangent
+  - name: (
+  - uid: Global.AABBIntCollider
+    name: AABBIntCollider
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.TilemapIntCollider.GetRidingTangent*
+  commentId: Overload:Global.TilemapIntCollider.GetRidingTangent
+  name: GetRidingTangent
+  nameWithType: TilemapIntCollider.GetRidingTangent
+  fullName: TilemapIntCollider.GetRidingTangent
+- uid: Global.TilemapIntCollider.ExportMapToFile*
+  commentId: Overload:Global.TilemapIntCollider.ExportMapToFile
+  name: ExportMapToFile
+  nameWithType: TilemapIntCollider.ExportMapToFile
+  fullName: TilemapIntCollider.ExportMapToFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

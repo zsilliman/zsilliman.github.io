@@ -1,0 +1,295 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FlyingMovementProperties
+  commentId: T:Global.FlyingMovementProperties
+  id: FlyingMovementProperties
+  parent: Global
+  children:
+  - Global.FlyingMovementProperties.AcceleratorX
+  - Global.FlyingMovementProperties.AcceleratorY
+  - Global.FlyingMovementProperties.Charge
+  - Global.FlyingMovementProperties.Dip
+  - Global.FlyingMovementProperties.SwoopAccelerator
+  langs:
+  - csharp
+  - vb
+  name: FlyingMovementProperties
+  nameWithType: FlyingMovementProperties
+  fullName: FlyingMovementProperties
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FlyingMovementProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class FlyingMovementProperties
+    content.vb: >-
+      <Serializable>
+
+      Public Class FlyingMovementProperties
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.FlyingMovementProperties.AcceleratorX
+  commentId: F:Global.FlyingMovementProperties.AcceleratorX
+  id: AcceleratorX
+  parent: Global.FlyingMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: AcceleratorX
+  nameWithType: FlyingMovementProperties.AcceleratorX
+  fullName: FlyingMovementProperties.AcceleratorX
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AcceleratorX
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Accelerator AcceleratorX
+    return:
+      type: Global.Accelerator
+    content.vb: Public AcceleratorX As Accelerator
+- uid: Global.FlyingMovementProperties.AcceleratorY
+  commentId: F:Global.FlyingMovementProperties.AcceleratorY
+  id: AcceleratorY
+  parent: Global.FlyingMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: AcceleratorY
+  nameWithType: FlyingMovementProperties.AcceleratorY
+  fullName: FlyingMovementProperties.AcceleratorY
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AcceleratorY
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Accelerator AcceleratorY
+    return:
+      type: Global.Accelerator
+    content.vb: Public AcceleratorY As Accelerator
+- uid: Global.FlyingMovementProperties.Charge
+  commentId: F:Global.FlyingMovementProperties.Charge
+  id: Charge
+  parent: Global.FlyingMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: Charge
+  nameWithType: FlyingMovementProperties.Charge
+  fullName: FlyingMovementProperties.Charge
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Charge
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public FlyingMovementController.FlyingChargeProps Charge
+    return:
+      type: Global.FlyingMovementController.FlyingChargeProps
+    content.vb: Public Charge As FlyingMovementController.FlyingChargeProps
+- uid: Global.FlyingMovementProperties.SwoopAccelerator
+  commentId: F:Global.FlyingMovementProperties.SwoopAccelerator
+  id: SwoopAccelerator
+  parent: Global.FlyingMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: SwoopAccelerator
+  nameWithType: FlyingMovementProperties.SwoopAccelerator
+  fullName: FlyingMovementProperties.SwoopAccelerator
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwoopAccelerator
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Accelerator SwoopAccelerator
+    return:
+      type: Global.Accelerator
+    content.vb: Public SwoopAccelerator As Accelerator
+- uid: Global.FlyingMovementProperties.Dip
+  commentId: F:Global.FlyingMovementProperties.Dip
+  id: Dip
+  parent: Global.FlyingMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: Dip
+  nameWithType: FlyingMovementProperties.Dip
+  fullName: FlyingMovementProperties.Dip
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Dip
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/FlyingMovementController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public FlyingMovementController.DipChargeProps Dip
+    return:
+      type: Global.FlyingMovementController.DipChargeProps
+    content.vb: Public Dip As FlyingMovementController.DipChargeProps
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Accelerator
+  commentId: T:Global.Accelerator
+  name: Accelerator
+  nameWithType: Accelerator
+  fullName: Accelerator
+- uid: Global.FlyingMovementController.FlyingChargeProps
+  commentId: T:Global.FlyingMovementController.FlyingChargeProps
+  name: FlyingMovementController.FlyingChargeProps
+  nameWithType: FlyingMovementController.FlyingChargeProps
+  fullName: FlyingMovementController.FlyingChargeProps
+  spec.csharp:
+  - uid: Global.FlyingMovementController
+    name: FlyingMovementController
+  - name: .
+  - uid: Global.FlyingMovementController.FlyingChargeProps
+    name: FlyingChargeProps
+  spec.vb:
+  - uid: Global.FlyingMovementController
+    name: FlyingMovementController
+  - name: .
+  - uid: Global.FlyingMovementController.FlyingChargeProps
+    name: FlyingChargeProps
+- uid: Global.FlyingMovementController.DipChargeProps
+  commentId: T:Global.FlyingMovementController.DipChargeProps
+  name: FlyingMovementController.DipChargeProps
+  nameWithType: FlyingMovementController.DipChargeProps
+  fullName: FlyingMovementController.DipChargeProps
+  spec.csharp:
+  - uid: Global.FlyingMovementController
+    name: FlyingMovementController
+  - name: .
+  - uid: Global.FlyingMovementController.DipChargeProps
+    name: DipChargeProps
+  spec.vb:
+  - uid: Global.FlyingMovementController
+    name: FlyingMovementController
+  - name: .
+  - uid: Global.FlyingMovementController.DipChargeProps
+    name: DipChargeProps

@@ -1,0 +1,232 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DialogueCallback
+  commentId: T:Global.DialogueCallback
+  id: DialogueCallback
+  parent: Global
+  children:
+  - Global.DialogueCallback.OnDialogueEnd(System.String)
+  - Global.DialogueCallback.OnDialogueStart(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DialogueCallback
+  nameWithType: DialogueCallback
+  fullName: DialogueCallback
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/Callbacks/DialogueCallback.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DialogueCallback
+    path: ../Assets/Objects & Components/UI/Ingame/Callbacks/DialogueCallback.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public abstract class DialogueCallback : MonoBehaviour'
+    content.vb: Public MustInherit Class DialogueCallback Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - Global.IntroductionController
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.DialogueCallback.OnDialogueStart(System.String)
+  commentId: M:Global.DialogueCallback.OnDialogueStart(System.String)
+  id: OnDialogueStart(System.String)
+  parent: Global.DialogueCallback
+  langs:
+  - csharp
+  - vb
+  name: OnDialogueStart(string)
+  nameWithType: DialogueCallback.OnDialogueStart(string)
+  fullName: DialogueCallback.OnDialogueStart(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/Callbacks/DialogueCallback.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnDialogueStart
+    path: ../Assets/Objects & Components/UI/Ingame/Callbacks/DialogueCallback.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public abstract void OnDialogueStart(string DialogueName)
+    parameters:
+    - id: DialogueName
+      type: System.String
+    content.vb: Public MustOverride Sub OnDialogueStart(DialogueName As String)
+  overload: Global.DialogueCallback.OnDialogueStart*
+  nameWithType.vb: DialogueCallback.OnDialogueStart(String)
+  fullName.vb: DialogueCallback.OnDialogueStart(String)
+  name.vb: OnDialogueStart(String)
+- uid: Global.DialogueCallback.OnDialogueEnd(System.String)
+  commentId: M:Global.DialogueCallback.OnDialogueEnd(System.String)
+  id: OnDialogueEnd(System.String)
+  parent: Global.DialogueCallback
+  langs:
+  - csharp
+  - vb
+  name: OnDialogueEnd(string)
+  nameWithType: DialogueCallback.OnDialogueEnd(string)
+  fullName: DialogueCallback.OnDialogueEnd(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/Callbacks/DialogueCallback.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnDialogueEnd
+    path: ../Assets/Objects & Components/UI/Ingame/Callbacks/DialogueCallback.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public abstract void OnDialogueEnd(string DialogueName)
+    parameters:
+    - id: DialogueName
+      type: System.String
+    content.vb: Public MustOverride Sub OnDialogueEnd(DialogueName As String)
+  overload: Global.DialogueCallback.OnDialogueEnd*
+  nameWithType.vb: DialogueCallback.OnDialogueEnd(String)
+  fullName.vb: DialogueCallback.OnDialogueEnd(String)
+  name.vb: OnDialogueEnd(String)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.DialogueCallback.OnDialogueStart*
+  commentId: Overload:Global.DialogueCallback.OnDialogueStart
+  name: OnDialogueStart
+  nameWithType: DialogueCallback.OnDialogueStart
+  fullName: DialogueCallback.OnDialogueStart
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.DialogueCallback.OnDialogueEnd*
+  commentId: Overload:Global.DialogueCallback.OnDialogueEnd
+  name: OnDialogueEnd
+  nameWithType: DialogueCallback.OnDialogueEnd
+  fullName: DialogueCallback.OnDialogueEnd

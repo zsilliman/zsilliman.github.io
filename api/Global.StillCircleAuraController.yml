@@ -1,0 +1,453 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.StillCircleAuraController
+  commentId: T:Global.StillCircleAuraController
+  id: StillCircleAuraController
+  parent: Global
+  children:
+  - Global.StillCircleAuraController.auraRadius
+  - Global.StillCircleAuraController.Notify(DefaultNotificationType)
+  - Global.StillCircleAuraController.Offset
+  - Global.StillCircleAuraController.SegmentsPerRadian
+  - Global.StillCircleAuraController.Start
+  langs:
+  - csharp
+  - vb
+  name: StillCircleAuraController
+  nameWithType: StillCircleAuraController
+  fullName: StillCircleAuraController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StillCircleAuraController
+    path: ../Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class StillCircleAuraController : AuraController<DefaultNotificationType>'
+    content.vb: Public Class StillCircleAuraController Inherits AuraController(Of DefaultNotificationType)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraController{DefaultNotificationType}
+  inheritedMembers:
+  - Global.AuraController{DefaultNotificationType}.auraCreator
+  - Global.AuraController{DefaultNotificationType}.auraComponent
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.StillCircleAuraController.auraRadius
+  commentId: F:Global.StillCircleAuraController.auraRadius
+  id: auraRadius
+  parent: Global.StillCircleAuraController
+  langs:
+  - csharp
+  - vb
+  name: auraRadius
+  nameWithType: StillCircleAuraController.auraRadius
+  fullName: StillCircleAuraController.auraRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraRadius
+    path: ../Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int auraRadius
+    return:
+      type: System.Int32
+    content.vb: Public auraRadius As Integer
+- uid: Global.StillCircleAuraController.SegmentsPerRadian
+  commentId: F:Global.StillCircleAuraController.SegmentsPerRadian
+  id: SegmentsPerRadian
+  parent: Global.StillCircleAuraController
+  langs:
+  - csharp
+  - vb
+  name: SegmentsPerRadian
+  nameWithType: StillCircleAuraController.SegmentsPerRadian
+  fullName: StillCircleAuraController.SegmentsPerRadian
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SegmentsPerRadian
+    path: ../Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float SegmentsPerRadian
+    return:
+      type: System.Single
+    content.vb: Public SegmentsPerRadian As Single
+- uid: Global.StillCircleAuraController.Offset
+  commentId: F:Global.StillCircleAuraController.Offset
+  id: Offset
+  parent: Global.StillCircleAuraController
+  langs:
+  - csharp
+  - vb
+  name: Offset
+  nameWithType: StillCircleAuraController.Offset
+  fullName: StillCircleAuraController.Offset
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Offset
+    path: ../Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int Offset
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Offset As Vector2Int
+- uid: Global.StillCircleAuraController.Notify(DefaultNotificationType)
+  commentId: M:Global.StillCircleAuraController.Notify(DefaultNotificationType)
+  id: Notify(DefaultNotificationType)
+  parent: Global.StillCircleAuraController
+  langs:
+  - csharp
+  - vb
+  name: Notify(DefaultNotificationType)
+  nameWithType: StillCircleAuraController.Notify(DefaultNotificationType)
+  fullName: StillCircleAuraController.Notify(DefaultNotificationType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Notify
+    path: ../Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Notify(DefaultNotificationType notificationType)
+    parameters:
+    - id: notificationType
+      type: Global.DefaultNotificationType
+    content.vb: Public Overrides Sub Notify(notificationType As DefaultNotificationType)
+  overridden: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  overload: Global.StillCircleAuraController.Notify*
+- uid: Global.StillCircleAuraController.Start
+  commentId: M:Global.StillCircleAuraController.Start
+  id: Start
+  parent: Global.StillCircleAuraController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: StillCircleAuraController.Start()
+  fullName: StillCircleAuraController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Pit Enemies/Baby/StillCircleAuraController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.StillCircleAuraController.Start*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraController{DefaultNotificationType}
+  commentId: T:Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1
+  name: AuraController<DefaultNotificationType>
+  nameWithType: AuraController<DefaultNotificationType>
+  fullName: AuraController<DefaultNotificationType>
+  nameWithType.vb: AuraController(Of DefaultNotificationType)
+  fullName.vb: AuraController(Of DefaultNotificationType)
+  name.vb: AuraController(Of DefaultNotificationType)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+- uid: Global.AuraController{DefaultNotificationType}.auraCreator
+  commentId: F:Global.AuraController{DefaultNotificationType}.auraCreator
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<DefaultNotificationType>.auraCreator
+  fullName: AuraController<DefaultNotificationType>.auraCreator
+  nameWithType.vb: AuraController(Of DefaultNotificationType).auraCreator
+  fullName.vb: AuraController(Of DefaultNotificationType).auraCreator
+- uid: Global.AuraController{DefaultNotificationType}.auraComponent
+  commentId: F:Global.AuraController{DefaultNotificationType}.auraComponent
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<DefaultNotificationType>.auraComponent
+  fullName: AuraController<DefaultNotificationType>.auraComponent
+  nameWithType.vb: AuraController(Of DefaultNotificationType).auraComponent
+  fullName.vb: AuraController(Of DefaultNotificationType).auraComponent
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraController`1
+  commentId: T:Global.AuraController`1
+  name: AuraController<T>
+  nameWithType: AuraController<T>
+  fullName: AuraController<T>
+  nameWithType.vb: AuraController(Of T)
+  fullName.vb: AuraController(Of T)
+  name.vb: AuraController(Of T)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraController`1.auraCreator
+  commentId: F:Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<T>.auraCreator
+  fullName: AuraController<T>.auraCreator
+  nameWithType.vb: AuraController(Of T).auraCreator
+  fullName.vb: AuraController(Of T).auraCreator
+- uid: Global.AuraController`1.auraComponent
+  commentId: F:Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<T>.auraComponent
+  fullName: AuraController<T>.auraComponent
+  nameWithType.vb: AuraController(Of T).auraComponent
+  fullName.vb: AuraController(Of T).auraComponent
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  commentId: M:Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.Notify(`0)
+  name: Notify(DefaultNotificationType)
+  nameWithType: AuraController<DefaultNotificationType>.Notify(DefaultNotificationType)
+  fullName: AuraController<DefaultNotificationType>.Notify(DefaultNotificationType)
+  nameWithType.vb: AuraController(Of DefaultNotificationType).Notify(DefaultNotificationType)
+  fullName.vb: AuraController(Of DefaultNotificationType).Notify(DefaultNotificationType)
+  spec.csharp:
+  - uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+    name: Notify
+  - name: (
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+    name: Notify
+  - name: (
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+- uid: Global.StillCircleAuraController.Notify*
+  commentId: Overload:Global.StillCircleAuraController.Notify
+  name: Notify
+  nameWithType: StillCircleAuraController.Notify
+  fullName: StillCircleAuraController.Notify
+- uid: Global.DefaultNotificationType
+  commentId: T:Global.DefaultNotificationType
+  name: DefaultNotificationType
+  nameWithType: DefaultNotificationType
+  fullName: DefaultNotificationType
+- uid: Global.AuraController`1.Notify(`0)
+  commentId: M:Global.AuraController`1.Notify(`0)
+  name: Notify(T)
+  nameWithType: AuraController<T>.Notify(T)
+  fullName: AuraController<T>.Notify(T)
+  nameWithType.vb: AuraController(Of T).Notify(T)
+  fullName.vb: AuraController(Of T).Notify(T)
+  spec.csharp:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+- uid: Global.StillCircleAuraController.Start*
+  commentId: Overload:Global.StillCircleAuraController.Start
+  name: Start
+  nameWithType: StillCircleAuraController.Start
+  fullName: StillCircleAuraController.Start

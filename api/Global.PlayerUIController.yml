@@ -1,0 +1,582 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerUIController
+  commentId: T:Global.PlayerUIController
+  id: PlayerUIController
+  parent: Global
+  children:
+  - Global.PlayerUIController.AddHeart
+  - Global.PlayerUIController.HeartAssetMargin
+  - Global.PlayerUIController.HeartParent
+  - Global.PlayerUIController.HeartPrefab
+  - Global.PlayerUIController.Hearts
+  - Global.PlayerUIController.ManaBackground
+  - Global.PlayerUIController.ManaForeground
+  - Global.PlayerUIController.stats
+  - Global.PlayerUIController.UpdateDash
+  - Global.PlayerUIController.UpdateHearts
+  - Global.PlayerUIController.UpdateMana
+  langs:
+  - csharp
+  - vb
+  name: PlayerUIController
+  nameWithType: PlayerUIController
+  fullName: PlayerUIController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerUIController
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class PlayerUIController : MonoBehaviour'
+    content.vb: Public Class PlayerUIController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.PlayerUIController.stats
+  commentId: F:Global.PlayerUIController.stats
+  id: stats
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: stats
+  nameWithType: PlayerUIController.stats
+  fullName: PlayerUIController.stats
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: stats
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public PlayerStats stats
+    return:
+      type: Global.PlayerStats
+    content.vb: Public stats As PlayerStats
+- uid: Global.PlayerUIController.HeartParent
+  commentId: F:Global.PlayerUIController.HeartParent
+  id: HeartParent
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: HeartParent
+  nameWithType: PlayerUIController.HeartParent
+  fullName: PlayerUIController.HeartParent
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HeartParent
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RectTransform HeartParent
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public HeartParent As RectTransform
+- uid: Global.PlayerUIController.HeartPrefab
+  commentId: F:Global.PlayerUIController.HeartPrefab
+  id: HeartPrefab
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: HeartPrefab
+  nameWithType: PlayerUIController.HeartPrefab
+  fullName: PlayerUIController.HeartPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HeartPrefab
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject HeartPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public HeartPrefab As GameObject
+- uid: Global.PlayerUIController.HeartAssetMargin
+  commentId: F:Global.PlayerUIController.HeartAssetMargin
+  id: HeartAssetMargin
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: HeartAssetMargin
+  nameWithType: PlayerUIController.HeartAssetMargin
+  fullName: PlayerUIController.HeartAssetMargin
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HeartAssetMargin
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float HeartAssetMargin
+    return:
+      type: System.Single
+    content.vb: Public HeartAssetMargin As Single
+- uid: Global.PlayerUIController.ManaBackground
+  commentId: F:Global.PlayerUIController.ManaBackground
+  id: ManaBackground
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: ManaBackground
+  nameWithType: PlayerUIController.ManaBackground
+  fullName: PlayerUIController.ManaBackground
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ManaBackground
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RectTransform ManaBackground
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public ManaBackground As RectTransform
+- uid: Global.PlayerUIController.ManaForeground
+  commentId: F:Global.PlayerUIController.ManaForeground
+  id: ManaForeground
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: ManaForeground
+  nameWithType: PlayerUIController.ManaForeground
+  fullName: PlayerUIController.ManaForeground
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ManaForeground
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RectTransform ManaForeground
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public ManaForeground As RectTransform
+- uid: Global.PlayerUIController.Hearts
+  commentId: F:Global.PlayerUIController.Hearts
+  id: Hearts
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: Hearts
+  nameWithType: PlayerUIController.Hearts
+  fullName: PlayerUIController.Hearts
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Hearts
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<GameObject> Hearts
+    return:
+      type: System.Collections.Generic.List{UnityEngine.GameObject}
+    content.vb: Protected Hearts As List(Of GameObject)
+- uid: Global.PlayerUIController.AddHeart
+  commentId: M:Global.PlayerUIController.AddHeart
+  id: AddHeart
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: AddHeart()
+  nameWithType: PlayerUIController.AddHeart()
+  fullName: PlayerUIController.AddHeart()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddHeart
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void AddHeart()
+    content.vb: Protected Sub AddHeart()
+  overload: Global.PlayerUIController.AddHeart*
+- uid: Global.PlayerUIController.UpdateHearts
+  commentId: M:Global.PlayerUIController.UpdateHearts
+  id: UpdateHearts
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: UpdateHearts()
+  nameWithType: PlayerUIController.UpdateHearts()
+  fullName: PlayerUIController.UpdateHearts()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateHearts
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void UpdateHearts()
+    content.vb: Protected Sub UpdateHearts()
+  overload: Global.PlayerUIController.UpdateHearts*
+- uid: Global.PlayerUIController.UpdateMana
+  commentId: M:Global.PlayerUIController.UpdateMana
+  id: UpdateMana
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: UpdateMana()
+  nameWithType: PlayerUIController.UpdateMana()
+  fullName: PlayerUIController.UpdateMana()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateMana
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void UpdateMana()
+    content.vb: Protected Sub UpdateMana()
+  overload: Global.PlayerUIController.UpdateMana*
+- uid: Global.PlayerUIController.UpdateDash
+  commentId: M:Global.PlayerUIController.UpdateDash
+  id: UpdateDash
+  parent: Global.PlayerUIController
+  langs:
+  - csharp
+  - vb
+  name: UpdateDash()
+  nameWithType: PlayerUIController.UpdateDash()
+  fullName: PlayerUIController.UpdateDash()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateDash
+    path: ../Assets/Objects & Components/UI/Ingame/PlayerUI/Health/PlayerUIController.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void UpdateDash()
+    content.vb: Protected Sub UpdateDash()
+  overload: Global.PlayerUIController.UpdateDash*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.PlayerStats
+  commentId: T:Global.PlayerStats
+  name: PlayerStats
+  nameWithType: PlayerStats
+  fullName: PlayerStats
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.Generic.List{UnityEngine.GameObject}
+  commentId: T:System.Collections.Generic.List{UnityEngine.GameObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<GameObject>
+  nameWithType: List<GameObject>
+  fullName: System.Collections.Generic.List<UnityEngine.GameObject>
+  nameWithType.vb: List(Of GameObject)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.GameObject)
+  name.vb: List(Of GameObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.PlayerUIController.AddHeart*
+  commentId: Overload:Global.PlayerUIController.AddHeart
+  name: AddHeart
+  nameWithType: PlayerUIController.AddHeart
+  fullName: PlayerUIController.AddHeart
+- uid: Global.PlayerUIController.UpdateHearts*
+  commentId: Overload:Global.PlayerUIController.UpdateHearts
+  name: UpdateHearts
+  nameWithType: PlayerUIController.UpdateHearts
+  fullName: PlayerUIController.UpdateHearts
+- uid: Global.PlayerUIController.UpdateMana*
+  commentId: Overload:Global.PlayerUIController.UpdateMana
+  name: UpdateMana
+  nameWithType: PlayerUIController.UpdateMana
+  fullName: PlayerUIController.UpdateMana
+- uid: Global.PlayerUIController.UpdateDash*
+  commentId: Overload:Global.PlayerUIController.UpdateDash
+  name: UpdateDash
+  nameWithType: PlayerUIController.UpdateDash
+  fullName: PlayerUIController.UpdateDash

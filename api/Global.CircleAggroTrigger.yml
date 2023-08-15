@@ -1,0 +1,805 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CircleAggroTrigger
+  commentId: T:Global.CircleAggroTrigger
+  id: CircleAggroTrigger
+  parent: Global
+  children:
+  - Global.CircleAggroTrigger.CheckShouldAggro
+  - Global.CircleAggroTrigger.UpdateBounds
+  langs:
+  - csharp
+  - vb
+  name: CircleAggroTrigger
+  nameWithType: CircleAggroTrigger
+  fullName: CircleAggroTrigger
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleAggroTrigger
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 186
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class CircleAggroTrigger : AggroTriggerBase<AggroCircleProperties>
+    content.vb: >-
+      <Serializable>
+
+      Public Class CircleAggroTrigger Inherits AggroTriggerBase(Of AggroCircleProperties)
+  inheritance:
+  - System.Object
+  - Global.AggroTriggerBase{AggroCircleProperties}
+  inheritedMembers:
+  - Global.AggroTriggerBase{AggroCircleProperties}.Properties
+  - Global.AggroTriggerBase{AggroCircleProperties}.Target
+  - Global.AggroTriggerBase{AggroCircleProperties}.Self
+  - Global.AggroTriggerBase{AggroCircleProperties}.IsAggroing
+  - Global.AggroTriggerBase{AggroCircleProperties}.OnStartAggro
+  - Global.AggroTriggerBase{AggroCircleProperties}.OnEndAggro
+  - Global.AggroTriggerBase{AggroCircleProperties}.LastFrameAggro
+  - Global.AggroTriggerBase{AggroCircleProperties}.Initialize(AggroCircleProperties,UnityEngine.GameObject,IntObject)
+  - Global.AggroTriggerBase{AggroCircleProperties}.RegisterStartAggroCallback(IntObject.Action)
+  - Global.AggroTriggerBase{AggroCircleProperties}.UnregisterStartAggroCallback(IntObject.Action)
+  - Global.AggroTriggerBase{AggroCircleProperties}.RegisterEndAggroCallback(IntObject.Action)
+  - Global.AggroTriggerBase{AggroCircleProperties}.UnregisterEndAggroCallback(IntObject.Action)
+  - Global.AggroTriggerBase{AggroCircleProperties}.Reset
+  - Global.AggroTriggerBase{AggroCircleProperties}.IsTargetVisible
+  - Global.AggroTriggerBase{AggroCircleProperties}.Update
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.CircleAggroTrigger.UpdateBounds
+  commentId: M:Global.CircleAggroTrigger.UpdateBounds
+  id: UpdateBounds
+  parent: Global.CircleAggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: UpdateBounds()
+  nameWithType: CircleAggroTrigger.UpdateBounds()
+  fullName: CircleAggroTrigger.UpdateBounds()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateBounds
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 192
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override void UpdateBounds()
+    content.vb: Protected Overrides Sub UpdateBounds()
+  overridden: Global.AggroTriggerBase{AggroCircleProperties}.UpdateBounds
+  overload: Global.CircleAggroTrigger.UpdateBounds*
+- uid: Global.CircleAggroTrigger.CheckShouldAggro
+  commentId: M:Global.CircleAggroTrigger.CheckShouldAggro
+  id: CheckShouldAggro
+  parent: Global.CircleAggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: CheckShouldAggro()
+  nameWithType: CircleAggroTrigger.CheckShouldAggro()
+  fullName: CircleAggroTrigger.CheckShouldAggro()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CheckShouldAggro
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 202
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override bool CheckShouldAggro()
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function CheckShouldAggro() As Boolean
+  overridden: Global.AggroTriggerBase{AggroCircleProperties}.CheckShouldAggro
+  overload: Global.CircleAggroTrigger.CheckShouldAggro*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AggroTriggerBase{AggroCircleProperties}
+  commentId: T:Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1
+  name: AggroTriggerBase<AggroCircleProperties>
+  nameWithType: AggroTriggerBase<AggroCircleProperties>
+  fullName: AggroTriggerBase<AggroCircleProperties>
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties)
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties)
+  name.vb: AggroTriggerBase(Of AggroCircleProperties)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1
+    name: AggroTriggerBase
+  - name: <
+  - uid: Global.AggroCircleProperties
+    name: AggroCircleProperties
+  - name: '>'
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1
+    name: AggroTriggerBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.AggroCircleProperties
+    name: AggroCircleProperties
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.Properties
+  commentId: F:Global.AggroTriggerBase{AggroCircleProperties}.Properties
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.Properties
+  name: Properties
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.Properties
+  fullName: AggroTriggerBase<AggroCircleProperties>.Properties
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).Properties
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).Properties
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.Target
+  commentId: P:Global.AggroTriggerBase{AggroCircleProperties}.Target
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.Target
+  name: Target
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.Target
+  fullName: AggroTriggerBase<AggroCircleProperties>.Target
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).Target
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).Target
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.Self
+  commentId: P:Global.AggroTriggerBase{AggroCircleProperties}.Self
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.Self
+  name: Self
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.Self
+  fullName: AggroTriggerBase<AggroCircleProperties>.Self
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).Self
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).Self
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.IsAggroing
+  commentId: P:Global.AggroTriggerBase{AggroCircleProperties}.IsAggroing
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.IsAggroing
+  name: IsAggroing
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.IsAggroing
+  fullName: AggroTriggerBase<AggroCircleProperties>.IsAggroing
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).IsAggroing
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).IsAggroing
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.OnStartAggro
+  commentId: F:Global.AggroTriggerBase{AggroCircleProperties}.OnStartAggro
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.OnStartAggro
+  name: OnStartAggro
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.OnStartAggro
+  fullName: AggroTriggerBase<AggroCircleProperties>.OnStartAggro
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).OnStartAggro
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).OnStartAggro
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.OnEndAggro
+  commentId: F:Global.AggroTriggerBase{AggroCircleProperties}.OnEndAggro
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.OnEndAggro
+  name: OnEndAggro
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.OnEndAggro
+  fullName: AggroTriggerBase<AggroCircleProperties>.OnEndAggro
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).OnEndAggro
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).OnEndAggro
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.LastFrameAggro
+  commentId: F:Global.AggroTriggerBase{AggroCircleProperties}.LastFrameAggro
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.LastFrameAggro
+  name: LastFrameAggro
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.LastFrameAggro
+  fullName: AggroTriggerBase<AggroCircleProperties>.LastFrameAggro
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).LastFrameAggro
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).LastFrameAggro
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.Initialize(AggroCircleProperties,UnityEngine.GameObject,IntObject)
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.Initialize(AggroCircleProperties,UnityEngine.GameObject,IntObject)
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.Initialize(`0,UnityEngine.GameObject,IntObject)
+  name: Initialize(AggroCircleProperties, GameObject, IntObject)
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.Initialize(AggroCircleProperties, GameObject, IntObject)
+  fullName: AggroTriggerBase<AggroCircleProperties>.Initialize(AggroCircleProperties, UnityEngine.GameObject, IntObject)
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).Initialize(AggroCircleProperties, GameObject, IntObject)
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).Initialize(AggroCircleProperties, UnityEngine.GameObject, IntObject)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.Initialize(AggroCircleProperties,UnityEngine.GameObject,IntObject)
+    name: Initialize
+  - name: (
+  - uid: Global.AggroCircleProperties
+    name: AggroCircleProperties
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.Initialize(AggroCircleProperties,UnityEngine.GameObject,IntObject)
+    name: Initialize
+  - name: (
+  - uid: Global.AggroCircleProperties
+    name: AggroCircleProperties
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.RegisterStartAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.RegisterStartAggroCallback(IntObject.Action)
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.RegisterStartAggroCallback(IntObject.Action)
+  name: RegisterStartAggroCallback(Action)
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.RegisterStartAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<AggroCircleProperties>.RegisterStartAggroCallback(IntObject.Action)
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).RegisterStartAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).RegisterStartAggroCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.RegisterStartAggroCallback(IntObject.Action)
+    name: RegisterStartAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.RegisterStartAggroCallback(IntObject.Action)
+    name: RegisterStartAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.UnregisterStartAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.UnregisterStartAggroCallback(IntObject.Action)
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.UnregisterStartAggroCallback(IntObject.Action)
+  name: UnregisterStartAggroCallback(Action)
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.UnregisterStartAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<AggroCircleProperties>.UnregisterStartAggroCallback(IntObject.Action)
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).UnregisterStartAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).UnregisterStartAggroCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.UnregisterStartAggroCallback(IntObject.Action)
+    name: UnregisterStartAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.UnregisterStartAggroCallback(IntObject.Action)
+    name: UnregisterStartAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.RegisterEndAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.RegisterEndAggroCallback(IntObject.Action)
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.RegisterEndAggroCallback(IntObject.Action)
+  name: RegisterEndAggroCallback(Action)
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.RegisterEndAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<AggroCircleProperties>.RegisterEndAggroCallback(IntObject.Action)
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).RegisterEndAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).RegisterEndAggroCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.RegisterEndAggroCallback(IntObject.Action)
+    name: RegisterEndAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.RegisterEndAggroCallback(IntObject.Action)
+    name: RegisterEndAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.UnregisterEndAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.UnregisterEndAggroCallback(IntObject.Action)
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.UnregisterEndAggroCallback(IntObject.Action)
+  name: UnregisterEndAggroCallback(Action)
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.UnregisterEndAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<AggroCircleProperties>.UnregisterEndAggroCallback(IntObject.Action)
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).UnregisterEndAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).UnregisterEndAggroCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.UnregisterEndAggroCallback(IntObject.Action)
+    name: UnregisterEndAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.UnregisterEndAggroCallback(IntObject.Action)
+    name: UnregisterEndAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.Reset
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.Reset
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.Reset
+  name: Reset()
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.Reset()
+  fullName: AggroTriggerBase<AggroCircleProperties>.Reset()
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).Reset()
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).Reset()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.IsTargetVisible
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.IsTargetVisible
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.IsTargetVisible
+  name: IsTargetVisible()
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.IsTargetVisible()
+  fullName: AggroTriggerBase<AggroCircleProperties>.IsTargetVisible()
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).IsTargetVisible()
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).IsTargetVisible()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.IsTargetVisible
+    name: IsTargetVisible
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.IsTargetVisible
+    name: IsTargetVisible
+  - name: (
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.Update
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.Update
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.Update
+  name: Update()
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.Update()
+  fullName: AggroTriggerBase<AggroCircleProperties>.Update()
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).Update()
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).Update()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.AggroTriggerBase`1
+  commentId: T:Global.AggroTriggerBase`1
+  name: AggroTriggerBase<T>
+  nameWithType: AggroTriggerBase<T>
+  fullName: AggroTriggerBase<T>
+  nameWithType.vb: AggroTriggerBase(Of T)
+  fullName.vb: AggroTriggerBase(Of T)
+  name.vb: AggroTriggerBase(Of T)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1
+    name: AggroTriggerBase
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1
+    name: AggroTriggerBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AggroTriggerBase`1.Properties
+  commentId: F:Global.AggroTriggerBase`1.Properties
+  name: Properties
+  nameWithType: AggroTriggerBase<T>.Properties
+  fullName: AggroTriggerBase<T>.Properties
+  nameWithType.vb: AggroTriggerBase(Of T).Properties
+  fullName.vb: AggroTriggerBase(Of T).Properties
+- uid: Global.AggroTriggerBase`1.Target
+  commentId: P:Global.AggroTriggerBase`1.Target
+  name: Target
+  nameWithType: AggroTriggerBase<T>.Target
+  fullName: AggroTriggerBase<T>.Target
+  nameWithType.vb: AggroTriggerBase(Of T).Target
+  fullName.vb: AggroTriggerBase(Of T).Target
+- uid: Global.AggroTriggerBase`1.Self
+  commentId: P:Global.AggroTriggerBase`1.Self
+  name: Self
+  nameWithType: AggroTriggerBase<T>.Self
+  fullName: AggroTriggerBase<T>.Self
+  nameWithType.vb: AggroTriggerBase(Of T).Self
+  fullName.vb: AggroTriggerBase(Of T).Self
+- uid: Global.AggroTriggerBase`1.IsAggroing
+  commentId: P:Global.AggroTriggerBase`1.IsAggroing
+  name: IsAggroing
+  nameWithType: AggroTriggerBase<T>.IsAggroing
+  fullName: AggroTriggerBase<T>.IsAggroing
+  nameWithType.vb: AggroTriggerBase(Of T).IsAggroing
+  fullName.vb: AggroTriggerBase(Of T).IsAggroing
+- uid: Global.AggroTriggerBase`1.OnStartAggro
+  commentId: F:Global.AggroTriggerBase`1.OnStartAggro
+  name: OnStartAggro
+  nameWithType: AggroTriggerBase<T>.OnStartAggro
+  fullName: AggroTriggerBase<T>.OnStartAggro
+  nameWithType.vb: AggroTriggerBase(Of T).OnStartAggro
+  fullName.vb: AggroTriggerBase(Of T).OnStartAggro
+- uid: Global.AggroTriggerBase`1.OnEndAggro
+  commentId: F:Global.AggroTriggerBase`1.OnEndAggro
+  name: OnEndAggro
+  nameWithType: AggroTriggerBase<T>.OnEndAggro
+  fullName: AggroTriggerBase<T>.OnEndAggro
+  nameWithType.vb: AggroTriggerBase(Of T).OnEndAggro
+  fullName.vb: AggroTriggerBase(Of T).OnEndAggro
+- uid: Global.AggroTriggerBase`1.LastFrameAggro
+  commentId: F:Global.AggroTriggerBase`1.LastFrameAggro
+  name: LastFrameAggro
+  nameWithType: AggroTriggerBase<T>.LastFrameAggro
+  fullName: AggroTriggerBase<T>.LastFrameAggro
+  nameWithType.vb: AggroTriggerBase(Of T).LastFrameAggro
+  fullName.vb: AggroTriggerBase(Of T).LastFrameAggro
+- uid: Global.AggroTriggerBase`1.Initialize(`0,UnityEngine.GameObject,IntObject)
+  commentId: M:Global.AggroTriggerBase`1.Initialize(`0,UnityEngine.GameObject,IntObject)
+  isExternal: true
+  name: Initialize(T, GameObject, IntObject)
+  nameWithType: AggroTriggerBase<T>.Initialize(T, GameObject, IntObject)
+  fullName: AggroTriggerBase<T>.Initialize(T, UnityEngine.GameObject, IntObject)
+  nameWithType.vb: AggroTriggerBase(Of T).Initialize(T, GameObject, IntObject)
+  fullName.vb: AggroTriggerBase(Of T).Initialize(T, UnityEngine.GameObject, IntObject)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.Initialize(`0,UnityEngine.GameObject,IntObject)
+    name: Initialize
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.Initialize(`0,UnityEngine.GameObject,IntObject)
+    name: Initialize
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+- uid: Global.AggroTriggerBase`1.RegisterStartAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase`1.RegisterStartAggroCallback(IntObject.Action)
+  name: RegisterStartAggroCallback(Action)
+  nameWithType: AggroTriggerBase<T>.RegisterStartAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<T>.RegisterStartAggroCallback(IntObject.Action)
+  nameWithType.vb: AggroTriggerBase(Of T).RegisterStartAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of T).RegisterStartAggroCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.RegisterStartAggroCallback(IntObject.Action)
+    name: RegisterStartAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.RegisterStartAggroCallback(IntObject.Action)
+    name: RegisterStartAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.AggroTriggerBase`1.UnregisterStartAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase`1.UnregisterStartAggroCallback(IntObject.Action)
+  name: UnregisterStartAggroCallback(Action)
+  nameWithType: AggroTriggerBase<T>.UnregisterStartAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<T>.UnregisterStartAggroCallback(IntObject.Action)
+  nameWithType.vb: AggroTriggerBase(Of T).UnregisterStartAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of T).UnregisterStartAggroCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.UnregisterStartAggroCallback(IntObject.Action)
+    name: UnregisterStartAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.UnregisterStartAggroCallback(IntObject.Action)
+    name: UnregisterStartAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.AggroTriggerBase`1.RegisterEndAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase`1.RegisterEndAggroCallback(IntObject.Action)
+  name: RegisterEndAggroCallback(Action)
+  nameWithType: AggroTriggerBase<T>.RegisterEndAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<T>.RegisterEndAggroCallback(IntObject.Action)
+  nameWithType.vb: AggroTriggerBase(Of T).RegisterEndAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of T).RegisterEndAggroCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.RegisterEndAggroCallback(IntObject.Action)
+    name: RegisterEndAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.RegisterEndAggroCallback(IntObject.Action)
+    name: RegisterEndAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.AggroTriggerBase`1.UnregisterEndAggroCallback(IntObject.Action)
+  commentId: M:Global.AggroTriggerBase`1.UnregisterEndAggroCallback(IntObject.Action)
+  name: UnregisterEndAggroCallback(Action)
+  nameWithType: AggroTriggerBase<T>.UnregisterEndAggroCallback(IntObject.Action)
+  fullName: AggroTriggerBase<T>.UnregisterEndAggroCallback(IntObject.Action)
+  nameWithType.vb: AggroTriggerBase(Of T).UnregisterEndAggroCallback(IntObject.Action)
+  fullName.vb: AggroTriggerBase(Of T).UnregisterEndAggroCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.UnregisterEndAggroCallback(IntObject.Action)
+    name: UnregisterEndAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.UnregisterEndAggroCallback(IntObject.Action)
+    name: UnregisterEndAggroCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.AggroTriggerBase`1.Reset
+  commentId: M:Global.AggroTriggerBase`1.Reset
+  name: Reset()
+  nameWithType: AggroTriggerBase<T>.Reset()
+  fullName: AggroTriggerBase<T>.Reset()
+  nameWithType.vb: AggroTriggerBase(Of T).Reset()
+  fullName.vb: AggroTriggerBase(Of T).Reset()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: Global.AggroTriggerBase`1.IsTargetVisible
+  commentId: M:Global.AggroTriggerBase`1.IsTargetVisible
+  name: IsTargetVisible()
+  nameWithType: AggroTriggerBase<T>.IsTargetVisible()
+  fullName: AggroTriggerBase<T>.IsTargetVisible()
+  nameWithType.vb: AggroTriggerBase(Of T).IsTargetVisible()
+  fullName.vb: AggroTriggerBase(Of T).IsTargetVisible()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.IsTargetVisible
+    name: IsTargetVisible
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.IsTargetVisible
+    name: IsTargetVisible
+  - name: (
+  - name: )
+- uid: Global.AggroTriggerBase`1.Update
+  commentId: M:Global.AggroTriggerBase`1.Update
+  name: Update()
+  nameWithType: AggroTriggerBase<T>.Update()
+  fullName: AggroTriggerBase<T>.Update()
+  nameWithType.vb: AggroTriggerBase(Of T).Update()
+  fullName.vb: AggroTriggerBase(Of T).Update()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.UpdateBounds
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.UpdateBounds
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.UpdateBounds
+  name: UpdateBounds()
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.UpdateBounds()
+  fullName: AggroTriggerBase<AggroCircleProperties>.UpdateBounds()
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).UpdateBounds()
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).UpdateBounds()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.UpdateBounds
+    name: UpdateBounds
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.UpdateBounds
+    name: UpdateBounds
+  - name: (
+  - name: )
+- uid: Global.CircleAggroTrigger.UpdateBounds*
+  commentId: Overload:Global.CircleAggroTrigger.UpdateBounds
+  name: UpdateBounds
+  nameWithType: CircleAggroTrigger.UpdateBounds
+  fullName: CircleAggroTrigger.UpdateBounds
+- uid: Global.AggroTriggerBase`1.UpdateBounds
+  commentId: M:Global.AggroTriggerBase`1.UpdateBounds
+  name: UpdateBounds()
+  nameWithType: AggroTriggerBase<T>.UpdateBounds()
+  fullName: AggroTriggerBase<T>.UpdateBounds()
+  nameWithType.vb: AggroTriggerBase(Of T).UpdateBounds()
+  fullName.vb: AggroTriggerBase(Of T).UpdateBounds()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.UpdateBounds
+    name: UpdateBounds
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.UpdateBounds
+    name: UpdateBounds
+  - name: (
+  - name: )
+- uid: Global.AggroTriggerBase{AggroCircleProperties}.CheckShouldAggro
+  commentId: M:Global.AggroTriggerBase{AggroCircleProperties}.CheckShouldAggro
+  parent: Global.AggroTriggerBase{AggroCircleProperties}
+  definition: Global.AggroTriggerBase`1.CheckShouldAggro
+  name: CheckShouldAggro()
+  nameWithType: AggroTriggerBase<AggroCircleProperties>.CheckShouldAggro()
+  fullName: AggroTriggerBase<AggroCircleProperties>.CheckShouldAggro()
+  nameWithType.vb: AggroTriggerBase(Of AggroCircleProperties).CheckShouldAggro()
+  fullName.vb: AggroTriggerBase(Of AggroCircleProperties).CheckShouldAggro()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.CheckShouldAggro
+    name: CheckShouldAggro
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase{AggroCircleProperties}.CheckShouldAggro
+    name: CheckShouldAggro
+  - name: (
+  - name: )
+- uid: Global.CircleAggroTrigger.CheckShouldAggro*
+  commentId: Overload:Global.CircleAggroTrigger.CheckShouldAggro
+  name: CheckShouldAggro
+  nameWithType: CircleAggroTrigger.CheckShouldAggro
+  fullName: CircleAggroTrigger.CheckShouldAggro
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.AggroTriggerBase`1.CheckShouldAggro
+  commentId: M:Global.AggroTriggerBase`1.CheckShouldAggro
+  name: CheckShouldAggro()
+  nameWithType: AggroTriggerBase<T>.CheckShouldAggro()
+  fullName: AggroTriggerBase<T>.CheckShouldAggro()
+  nameWithType.vb: AggroTriggerBase(Of T).CheckShouldAggro()
+  fullName.vb: AggroTriggerBase(Of T).CheckShouldAggro()
+  spec.csharp:
+  - uid: Global.AggroTriggerBase`1.CheckShouldAggro
+    name: CheckShouldAggro
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AggroTriggerBase`1.CheckShouldAggro
+    name: CheckShouldAggro
+  - name: (
+  - name: )

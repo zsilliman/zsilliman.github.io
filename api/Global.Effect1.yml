@@ -1,0 +1,613 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Effect1
+  commentId: T:Global.Effect1
+  id: Effect1
+  parent: Global
+  children:
+  - Global.Effect1.aura
+  - Global.Effect1.CloudParticleCustomData
+  - Global.Effect1.CloudParticles
+  - Global.Effect1.CloudParticleSystem
+  - Global.Effect1.EmitParticle(System.Int32)
+  - Global.Effect1.EmitRibbon(System.Int32)
+  - Global.Effect1.ParticlesClustersPerSecond
+  - Global.Effect1.ParticlesPerHundredUnits
+  - Global.Effect1.ParticleUpdate
+  - Global.Effect1.RibbonParticles
+  - Global.Effect1.RibbonParticleSystem
+  langs:
+  - csharp
+  - vb
+  name: Effect1
+  nameWithType: Effect1
+  fullName: Effect1
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Effect1
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class Effect1 : MonoBehaviour'
+    content.vb: Public Class Effect1 Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.Effect1.aura
+  commentId: F:Global.Effect1.aura
+  id: aura
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: aura
+  nameWithType: Effect1.aura
+  fullName: Effect1.aura
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: aura
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Aura aura
+    return:
+      type: Global.Aura
+    content.vb: Public aura As Aura
+- uid: Global.Effect1.ParticlesClustersPerSecond
+  commentId: F:Global.Effect1.ParticlesClustersPerSecond
+  id: ParticlesClustersPerSecond
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: ParticlesClustersPerSecond
+  nameWithType: Effect1.ParticlesClustersPerSecond
+  fullName: Effect1.ParticlesClustersPerSecond
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ParticlesClustersPerSecond
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float ParticlesClustersPerSecond
+    return:
+      type: System.Single
+    content.vb: Public ParticlesClustersPerSecond As Single
+- uid: Global.Effect1.ParticlesPerHundredUnits
+  commentId: F:Global.Effect1.ParticlesPerHundredUnits
+  id: ParticlesPerHundredUnits
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: ParticlesPerHundredUnits
+  nameWithType: Effect1.ParticlesPerHundredUnits
+  fullName: Effect1.ParticlesPerHundredUnits
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ParticlesPerHundredUnits
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float ParticlesPerHundredUnits
+    return:
+      type: System.Single
+    content.vb: Public ParticlesPerHundredUnits As Single
+- uid: Global.Effect1.CloudParticleSystem
+  commentId: F:Global.Effect1.CloudParticleSystem
+  id: CloudParticleSystem
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: CloudParticleSystem
+  nameWithType: Effect1.CloudParticleSystem
+  fullName: Effect1.CloudParticleSystem
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CloudParticleSystem
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ParticleSystem CloudParticleSystem
+    return:
+      type: UnityEngine.ParticleSystem
+    content.vb: Public CloudParticleSystem As ParticleSystem
+- uid: Global.Effect1.RibbonParticleSystem
+  commentId: F:Global.Effect1.RibbonParticleSystem
+  id: RibbonParticleSystem
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: RibbonParticleSystem
+  nameWithType: Effect1.RibbonParticleSystem
+  fullName: Effect1.RibbonParticleSystem
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RibbonParticleSystem
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ParticleSystem RibbonParticleSystem
+    return:
+      type: UnityEngine.ParticleSystem
+    content.vb: Public RibbonParticleSystem As ParticleSystem
+- uid: Global.Effect1.CloudParticles
+  commentId: F:Global.Effect1.CloudParticles
+  id: CloudParticles
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: CloudParticles
+  nameWithType: Effect1.CloudParticles
+  fullName: Effect1.CloudParticles
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CloudParticles
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected ParticleSystem.Particle[] CloudParticles
+    return:
+      type: UnityEngine.ParticleSystem.Particle[]
+    content.vb: Protected CloudParticles As ParticleSystem.Particle()
+- uid: Global.Effect1.RibbonParticles
+  commentId: F:Global.Effect1.RibbonParticles
+  id: RibbonParticles
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: RibbonParticles
+  nameWithType: Effect1.RibbonParticles
+  fullName: Effect1.RibbonParticles
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RibbonParticles
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected ParticleSystem.Particle[] RibbonParticles
+    return:
+      type: UnityEngine.ParticleSystem.Particle[]
+    content.vb: Protected RibbonParticles As ParticleSystem.Particle()
+- uid: Global.Effect1.CloudParticleCustomData
+  commentId: F:Global.Effect1.CloudParticleCustomData
+  id: CloudParticleCustomData
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: CloudParticleCustomData
+  nameWithType: Effect1.CloudParticleCustomData
+  fullName: Effect1.CloudParticleCustomData
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CloudParticleCustomData
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<Vector4> CloudParticleCustomData
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector4}
+    content.vb: Protected CloudParticleCustomData As List(Of Vector4)
+- uid: Global.Effect1.ParticleUpdate
+  commentId: M:Global.Effect1.ParticleUpdate
+  id: ParticleUpdate
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: ParticleUpdate()
+  nameWithType: Effect1.ParticleUpdate()
+  fullName: Effect1.ParticleUpdate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ParticleUpdate
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ParticleUpdate()
+    content.vb: Public Sub ParticleUpdate()
+  overload: Global.Effect1.ParticleUpdate*
+- uid: Global.Effect1.EmitParticle(System.Int32)
+  commentId: M:Global.Effect1.EmitParticle(System.Int32)
+  id: EmitParticle(System.Int32)
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: EmitParticle(int)
+  nameWithType: Effect1.EmitParticle(int)
+  fullName: Effect1.EmitParticle(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EmitParticle
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void EmitParticle(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+    content.vb: Public Sub EmitParticle(count As Integer)
+  overload: Global.Effect1.EmitParticle*
+  nameWithType.vb: Effect1.EmitParticle(Integer)
+  fullName.vb: Effect1.EmitParticle(Integer)
+  name.vb: EmitParticle(Integer)
+- uid: Global.Effect1.EmitRibbon(System.Int32)
+  commentId: M:Global.Effect1.EmitRibbon(System.Int32)
+  id: EmitRibbon(System.Int32)
+  parent: Global.Effect1
+  langs:
+  - csharp
+  - vb
+  name: EmitRibbon(int)
+  nameWithType: Effect1.EmitRibbon(int)
+  fullName: Effect1.EmitRibbon(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EmitRibbon
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/Effects/Effect1/Effect1.cs
+    startLine: 129
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void EmitRibbon(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+    content.vb: Public Sub EmitRibbon(count As Integer)
+  overload: Global.Effect1.EmitRibbon*
+  nameWithType.vb: Effect1.EmitRibbon(Integer)
+  fullName.vb: Effect1.EmitRibbon(Integer)
+  name.vb: EmitRibbon(Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Aura
+  commentId: T:Global.Aura
+  name: Aura
+  nameWithType: Aura
+  fullName: Aura
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.ParticleSystem
+  commentId: T:UnityEngine.ParticleSystem
+  parent: UnityEngine
+  isExternal: true
+  name: ParticleSystem
+  nameWithType: ParticleSystem
+  fullName: UnityEngine.ParticleSystem
+- uid: UnityEngine.ParticleSystem.Particle[]
+  isExternal: true
+  name: Particle[]
+  nameWithType: ParticleSystem.Particle[]
+  fullName: UnityEngine.ParticleSystem.Particle[]
+  nameWithType.vb: ParticleSystem.Particle()
+  fullName.vb: UnityEngine.ParticleSystem.Particle()
+  name.vb: Particle()
+  spec.csharp:
+  - uid: UnityEngine.ParticleSystem.Particle
+    name: Particle
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.ParticleSystem.Particle
+    name: Particle
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{UnityEngine.Vector4}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector4}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector4>
+  nameWithType: List<Vector4>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector4>
+  nameWithType.vb: List(Of Vector4)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector4)
+  name.vb: List(Of Vector4)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.Effect1.ParticleUpdate*
+  commentId: Overload:Global.Effect1.ParticleUpdate
+  name: ParticleUpdate
+  nameWithType: Effect1.ParticleUpdate
+  fullName: Effect1.ParticleUpdate
+- uid: Global.Effect1.EmitParticle*
+  commentId: Overload:Global.Effect1.EmitParticle
+  name: EmitParticle
+  nameWithType: Effect1.EmitParticle
+  fullName: Effect1.EmitParticle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Effect1.EmitRibbon*
+  commentId: Overload:Global.Effect1.EmitRibbon
+  name: EmitRibbon
+  nameWithType: Effect1.EmitRibbon
+  fullName: Effect1.EmitRibbon

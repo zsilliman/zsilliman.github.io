@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SurfacePoint
+  commentId: T:Global.SurfacePoint
+  id: SurfacePoint
+  parent: Global
+  children:
+  - Global.SurfacePoint.#ctor(UnityEngine.Vector3,System.Int32)
+  - Global.SurfacePoint.index
+  - Global.SurfacePoint.IntersectBoxCollider2D(UnityEngine.BoxCollider2D)
+  - Global.SurfacePoint.vertex
+  langs:
+  - csharp
+  - vb
+  name: SurfacePoint
+  nameWithType: SurfacePoint
+  fullName: SurfacePoint
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SurfacePoint
+    path: ../Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class SurfacePoint
+    content.vb: Public Class SurfacePoint
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SurfacePoint.vertex
+  commentId: P:Global.SurfacePoint.vertex
+  id: vertex
+  parent: Global.SurfacePoint
+  langs:
+  - csharp
+  - vb
+  name: vertex
+  nameWithType: SurfacePoint.vertex
+  fullName: SurfacePoint.vertex
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: vertex
+    path: ../Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector3 vertex { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property vertex As Vector3
+  overload: Global.SurfacePoint.vertex*
+- uid: Global.SurfacePoint.index
+  commentId: P:Global.SurfacePoint.index
+  id: index
+  parent: Global.SurfacePoint
+  langs:
+  - csharp
+  - vb
+  name: index
+  nameWithType: SurfacePoint.index
+  fullName: SurfacePoint.index
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: index
+    path: ../Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int index { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property index As Integer
+  overload: Global.SurfacePoint.index*
+- uid: Global.SurfacePoint.#ctor(UnityEngine.Vector3,System.Int32)
+  commentId: M:Global.SurfacePoint.#ctor(UnityEngine.Vector3,System.Int32)
+  id: '#ctor(UnityEngine.Vector3,System.Int32)'
+  parent: Global.SurfacePoint
+  langs:
+  - csharp
+  - vb
+  name: SurfacePoint(Vector3, int)
+  nameWithType: SurfacePoint.SurfacePoint(Vector3, int)
+  fullName: SurfacePoint.SurfacePoint(UnityEngine.Vector3, int)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public SurfacePoint(Vector3 vertex, int index)
+    parameters:
+    - id: vertex
+      type: UnityEngine.Vector3
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub New(vertex As Vector3, index As Integer)
+  overload: Global.SurfacePoint.#ctor*
+  nameWithType.vb: SurfacePoint.New(Vector3, Integer)
+  fullName.vb: SurfacePoint.New(UnityEngine.Vector3, Integer)
+  name.vb: New(Vector3, Integer)
+- uid: Global.SurfacePoint.IntersectBoxCollider2D(UnityEngine.BoxCollider2D)
+  commentId: M:Global.SurfacePoint.IntersectBoxCollider2D(UnityEngine.BoxCollider2D)
+  id: IntersectBoxCollider2D(UnityEngine.BoxCollider2D)
+  parent: Global.SurfacePoint
+  langs:
+  - csharp
+  - vb
+  name: IntersectBoxCollider2D(BoxCollider2D)
+  nameWithType: SurfacePoint.IntersectBoxCollider2D(BoxCollider2D)
+  fullName: SurfacePoint.IntersectBoxCollider2D(UnityEngine.BoxCollider2D)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntersectBoxCollider2D
+    path: ../Assets/Objects & Components/World/Weather/Water/SurfacePoint.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IntersectBoxCollider2D(BoxCollider2D collider)
+    parameters:
+    - id: collider
+      type: UnityEngine.BoxCollider2D
+    return:
+      type: System.Boolean
+    content.vb: Public Function IntersectBoxCollider2D(collider As BoxCollider2D) As Boolean
+  overload: Global.SurfacePoint.IntersectBoxCollider2D*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.SurfacePoint.vertex*
+  commentId: Overload:Global.SurfacePoint.vertex
+  name: vertex
+  nameWithType: SurfacePoint.vertex
+  fullName: SurfacePoint.vertex
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.SurfacePoint.index*
+  commentId: Overload:Global.SurfacePoint.index
+  name: index
+  nameWithType: SurfacePoint.index
+  fullName: SurfacePoint.index
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.SurfacePoint.#ctor*
+  commentId: Overload:Global.SurfacePoint.#ctor
+  name: SurfacePoint
+  nameWithType: SurfacePoint.SurfacePoint
+  fullName: SurfacePoint.SurfacePoint
+  nameWithType.vb: SurfacePoint.New
+  fullName.vb: SurfacePoint.New
+  name.vb: New
+- uid: Global.SurfacePoint.IntersectBoxCollider2D*
+  commentId: Overload:Global.SurfacePoint.IntersectBoxCollider2D
+  name: IntersectBoxCollider2D
+  nameWithType: SurfacePoint.IntersectBoxCollider2D
+  fullName: SurfacePoint.IntersectBoxCollider2D
+- uid: UnityEngine.BoxCollider2D
+  commentId: T:UnityEngine.BoxCollider2D
+  parent: UnityEngine
+  isExternal: true
+  name: BoxCollider2D
+  nameWithType: BoxCollider2D
+  fullName: UnityEngine.BoxCollider2D
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

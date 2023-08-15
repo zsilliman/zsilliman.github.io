@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.NarrativeUIManager
+  commentId: T:Global.NarrativeUIManager
+  id: NarrativeUIManager
+  parent: Global
+  children:
+  - Global.NarrativeUIManager.MiddleNarrativeText
+  - Global.NarrativeUIManager.QuoteNarrativeText
+  - Global.NarrativeUIManager.UpperNarrativeText
+  langs:
+  - csharp
+  - vb
+  name: NarrativeUIManager
+  nameWithType: NarrativeUIManager
+  fullName: NarrativeUIManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/OLD/NarrativeUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NarrativeUIManager
+    path: ../Assets/Objects & Components/UI/Ingame/OLD/NarrativeUIManager.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class NarrativeUIManager : MonoBehaviour'
+    content.vb: Public Class NarrativeUIManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.NarrativeUIManager.UpperNarrativeText
+  commentId: F:Global.NarrativeUIManager.UpperNarrativeText
+  id: UpperNarrativeText
+  parent: Global.NarrativeUIManager
+  langs:
+  - csharp
+  - vb
+  name: UpperNarrativeText
+  nameWithType: NarrativeUIManager.UpperNarrativeText
+  fullName: NarrativeUIManager.UpperNarrativeText
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/OLD/NarrativeUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpperNarrativeText
+    path: ../Assets/Objects & Components/UI/Ingame/OLD/NarrativeUIManager.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject UpperNarrativeText
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public UpperNarrativeText As GameObject
+- uid: Global.NarrativeUIManager.MiddleNarrativeText
+  commentId: F:Global.NarrativeUIManager.MiddleNarrativeText
+  id: MiddleNarrativeText
+  parent: Global.NarrativeUIManager
+  langs:
+  - csharp
+  - vb
+  name: MiddleNarrativeText
+  nameWithType: NarrativeUIManager.MiddleNarrativeText
+  fullName: NarrativeUIManager.MiddleNarrativeText
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/OLD/NarrativeUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MiddleNarrativeText
+    path: ../Assets/Objects & Components/UI/Ingame/OLD/NarrativeUIManager.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject MiddleNarrativeText
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public MiddleNarrativeText As GameObject
+- uid: Global.NarrativeUIManager.QuoteNarrativeText
+  commentId: F:Global.NarrativeUIManager.QuoteNarrativeText
+  id: QuoteNarrativeText
+  parent: Global.NarrativeUIManager
+  langs:
+  - csharp
+  - vb
+  name: QuoteNarrativeText
+  nameWithType: NarrativeUIManager.QuoteNarrativeText
+  fullName: NarrativeUIManager.QuoteNarrativeText
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/OLD/NarrativeUIManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: QuoteNarrativeText
+    path: ../Assets/Objects & Components/UI/Ingame/OLD/NarrativeUIManager.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject QuoteNarrativeText
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public QuoteNarrativeText As GameObject
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject

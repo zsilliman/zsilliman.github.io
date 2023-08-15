@@ -1,0 +1,1239 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AggroTrigger
+  commentId: T:Global.AggroTrigger
+  id: AggroTrigger
+  parent: Global
+  children:
+  - Global.AggroTrigger.AggroType
+  - Global.AggroTrigger.BoundsMax
+  - Global.AggroTrigger.BoundsMin
+  - Global.AggroTrigger.Distance
+  - Global.AggroTrigger.DrawGizmos(ModularEnemy)
+  - Global.AggroTrigger.EntityTrigger
+  - Global.AggroTrigger.EntityType
+  - Global.AggroTrigger.IntervalSeconds
+  - Global.AggroTrigger.OnPlayerDash
+  - Global.AggroTrigger.OnPlayerDoubleJump
+  - Global.AggroTrigger.OnPlayerSingleJump
+  - Global.AggroTrigger.OnPlayerWallJump
+  - Global.AggroTrigger.OnRestart
+  - Global.AggroTrigger.RegisterTriggerCallback(IntObject.Action)
+  - Global.AggroTrigger.RequireVisibility
+  - Global.AggroTrigger.Start(ModularEnemy)
+  - Global.AggroTrigger.TriggerOnEnter
+  - Global.AggroTrigger.TriggerOnExit
+  - Global.AggroTrigger.TriggerOnFar
+  - Global.AggroTrigger.TriggerOnNear
+  - Global.AggroTrigger.Update
+  langs:
+  - csharp
+  - vb
+  name: AggroTrigger
+  nameWithType: AggroTrigger
+  fullName: AggroTrigger
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AggroTrigger
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class AggroTrigger : ModularEnemy.EnemyBehaviorInterface
+    content.vb: >-
+      <Serializable>
+
+      Public Class AggroTrigger Inherits ModularEnemy.EnemyBehaviorInterface
+  inheritance:
+  - System.Object
+  - Global.ModularEnemy.EnemyBehaviorInterface
+  inheritedMembers:
+  - Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  - Global.ModularEnemy.EnemyBehaviorInterface.self
+  - Global.ModularEnemy.EnemyBehaviorInterface.Started
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.AggroTrigger.AggroType
+  commentId: F:Global.AggroTrigger.AggroType
+  id: AggroType
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: AggroType
+  nameWithType: AggroTrigger.AggroType
+  fullName: AggroTrigger.AggroType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AggroType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public AggroTrigger.AggroTriggerType AggroType
+    return:
+      type: Global.AggroTrigger.AggroTriggerType
+    content.vb: Public AggroType As AggroTrigger.AggroTriggerType
+- uid: Global.AggroTrigger.Distance
+  commentId: F:Global.AggroTrigger.Distance
+  id: Distance
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: AggroTrigger.Distance
+  fullName: AggroTrigger.Distance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Distance
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 1)]
+
+      public float Distance
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("AggroType", 1)>
+
+      Public Distance As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 1
+- uid: Global.AggroTrigger.TriggerOnNear
+  commentId: F:Global.AggroTrigger.TriggerOnNear
+  id: TriggerOnNear
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: TriggerOnNear
+  nameWithType: AggroTrigger.TriggerOnNear
+  fullName: AggroTrigger.TriggerOnNear
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerOnNear
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 1)]
+
+      public bool TriggerOnNear
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", 1)>
+
+      Public TriggerOnNear As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 1
+- uid: Global.AggroTrigger.TriggerOnFar
+  commentId: F:Global.AggroTrigger.TriggerOnFar
+  id: TriggerOnFar
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: TriggerOnFar
+  nameWithType: AggroTrigger.TriggerOnFar
+  fullName: AggroTrigger.TriggerOnFar
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerOnFar
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 1)]
+
+      public bool TriggerOnFar
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", 1)>
+
+      Public TriggerOnFar As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 1
+- uid: Global.AggroTrigger.RequireVisibility
+  commentId: F:Global.AggroTrigger.RequireVisibility
+  id: RequireVisibility
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: RequireVisibility
+  nameWithType: AggroTrigger.RequireVisibility
+  fullName: AggroTrigger.RequireVisibility
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RequireVisibility
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 1)]
+
+      [Tooltip("Only used if TriggerOnNear is set to true")]
+
+      public bool RequireVisibility
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", 1)>
+
+      <Tooltip("Only used if TriggerOnNear is set to true")>
+
+      Public RequireVisibility As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 1
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Only used if TriggerOnNear is set to true
+- uid: Global.AggroTrigger.IntervalSeconds
+  commentId: F:Global.AggroTrigger.IntervalSeconds
+  id: IntervalSeconds
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: IntervalSeconds
+  nameWithType: AggroTrigger.IntervalSeconds
+  fullName: AggroTrigger.IntervalSeconds
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntervalSeconds
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 2)]
+
+      [Tooltip("Note that the Z coordinate is not used")]
+
+      public int IntervalSeconds
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ConditionalShow("AggroType", 2)>
+
+      <Tooltip("Note that the Z coordinate is not used")>
+
+      Public IntervalSeconds As Integer
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 2
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Note that the Z coordinate is not used
+- uid: Global.AggroTrigger.BoundsMin
+  commentId: F:Global.AggroTrigger.BoundsMin
+  id: BoundsMin
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: BoundsMin
+  nameWithType: AggroTrigger.BoundsMin
+  fullName: AggroTrigger.BoundsMin
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsMin
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 6)]
+
+      [DraggablePoint(DraggablePointSpace.Section)]
+
+      public Vector2Int BoundsMin
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <ConditionalShow("AggroType", 6)>
+
+      <DraggablePoint(DraggablePointSpace.Section)>
+
+      Public BoundsMin As Vector2Int
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 6
+  - type: Global.DraggablePoint
+    ctor: Global.DraggablePoint.#ctor(DraggablePointSpace)
+    arguments:
+    - type: Global.DraggablePointSpace
+      value: 2
+- uid: Global.AggroTrigger.BoundsMax
+  commentId: F:Global.AggroTrigger.BoundsMax
+  id: BoundsMax
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: BoundsMax
+  nameWithType: AggroTrigger.BoundsMax
+  fullName: AggroTrigger.BoundsMax
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsMax
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 6)]
+
+      [DraggablePoint(DraggablePointSpace.Section)]
+
+      public Vector2Int BoundsMax
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <ConditionalShow("AggroType", 6)>
+
+      <DraggablePoint(DraggablePointSpace.Section)>
+
+      Public BoundsMax As Vector2Int
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 6
+  - type: Global.DraggablePoint
+    ctor: Global.DraggablePoint.#ctor(DraggablePointSpace)
+    arguments:
+    - type: Global.DraggablePointSpace
+      value: 2
+- uid: Global.AggroTrigger.EntityTrigger
+  commentId: F:Global.AggroTrigger.EntityTrigger
+  id: EntityTrigger
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: EntityTrigger
+  nameWithType: AggroTrigger.EntityTrigger
+  fullName: AggroTrigger.EntityTrigger
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EntityTrigger
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 3)]
+
+      public IntTrigger EntityTrigger
+    return:
+      type: Global.IntTrigger
+    content.vb: >-
+      <ConditionalShow("AggroType", 3)>
+
+      Public EntityTrigger As IntTrigger
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 3
+- uid: Global.AggroTrigger.EntityType
+  commentId: F:Global.AggroTrigger.EntityType
+  id: EntityType
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: EntityType
+  nameWithType: AggroTrigger.EntityType
+  fullName: AggroTrigger.EntityType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EntityType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 3)]
+
+      public AggroTrigger.TriggerEntityType EntityType
+    return:
+      type: Global.AggroTrigger.TriggerEntityType
+    content.vb: >-
+      <ConditionalShow("AggroType", 3)>
+
+      Public EntityType As AggroTrigger.TriggerEntityType
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 3
+- uid: Global.AggroTrigger.TriggerOnEnter
+  commentId: F:Global.AggroTrigger.TriggerOnEnter
+  id: TriggerOnEnter
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: TriggerOnEnter
+  nameWithType: AggroTrigger.TriggerOnEnter
+  fullName: AggroTrigger.TriggerOnEnter
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerOnEnter
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", new int[] { 3, 6 })]
+
+      public bool TriggerOnEnter
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", New Integer() { 3, 6 })>
+
+      Public TriggerOnEnter As Boolean
+- uid: Global.AggroTrigger.TriggerOnExit
+  commentId: F:Global.AggroTrigger.TriggerOnExit
+  id: TriggerOnExit
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: TriggerOnExit
+  nameWithType: AggroTrigger.TriggerOnExit
+  fullName: AggroTrigger.TriggerOnExit
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerOnExit
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", new int[] { 3, 6 })]
+
+      public bool TriggerOnExit
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", New Integer() { 3, 6 })>
+
+      Public TriggerOnExit As Boolean
+- uid: Global.AggroTrigger.OnPlayerDash
+  commentId: F:Global.AggroTrigger.OnPlayerDash
+  id: OnPlayerDash
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerDash
+  nameWithType: AggroTrigger.OnPlayerDash
+  fullName: AggroTrigger.OnPlayerDash
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnPlayerDash
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 4)]
+
+      public bool OnPlayerDash
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", 4)>
+
+      Public OnPlayerDash As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 4
+- uid: Global.AggroTrigger.OnPlayerSingleJump
+  commentId: F:Global.AggroTrigger.OnPlayerSingleJump
+  id: OnPlayerSingleJump
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerSingleJump
+  nameWithType: AggroTrigger.OnPlayerSingleJump
+  fullName: AggroTrigger.OnPlayerSingleJump
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnPlayerSingleJump
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 4)]
+
+      public bool OnPlayerSingleJump
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", 4)>
+
+      Public OnPlayerSingleJump As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 4
+- uid: Global.AggroTrigger.OnPlayerDoubleJump
+  commentId: F:Global.AggroTrigger.OnPlayerDoubleJump
+  id: OnPlayerDoubleJump
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerDoubleJump
+  nameWithType: AggroTrigger.OnPlayerDoubleJump
+  fullName: AggroTrigger.OnPlayerDoubleJump
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnPlayerDoubleJump
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 4)]
+
+      public bool OnPlayerDoubleJump
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", 4)>
+
+      Public OnPlayerDoubleJump As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 4
+- uid: Global.AggroTrigger.OnPlayerWallJump
+  commentId: F:Global.AggroTrigger.OnPlayerWallJump
+  id: OnPlayerWallJump
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerWallJump
+  nameWithType: AggroTrigger.OnPlayerWallJump
+  fullName: AggroTrigger.OnPlayerWallJump
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnPlayerWallJump
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("AggroType", 4)]
+
+      public bool OnPlayerWallJump
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("AggroType", 4)>
+
+      Public OnPlayerWallJump As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: AggroType
+    - type: System.Int32
+      value: 4
+- uid: Global.AggroTrigger.Start(ModularEnemy)
+  commentId: M:Global.AggroTrigger.Start(ModularEnemy)
+  id: Start(ModularEnemy)
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: Start(ModularEnemy)
+  nameWithType: AggroTrigger.Start(ModularEnemy)
+  fullName: AggroTrigger.Start(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Start(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub Start(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  overload: Global.AggroTrigger.Start*
+- uid: Global.AggroTrigger.Update
+  commentId: M:Global.AggroTrigger.Update
+  id: Update
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: AggroTrigger.Update()
+  fullName: AggroTrigger.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 101
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  overload: Global.AggroTrigger.Update*
+- uid: Global.AggroTrigger.RegisterTriggerCallback(IntObject.Action)
+  commentId: M:Global.AggroTrigger.RegisterTriggerCallback(IntObject.Action)
+  id: RegisterTriggerCallback(IntObject.Action)
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: RegisterTriggerCallback(Action)
+  nameWithType: AggroTrigger.RegisterTriggerCallback(IntObject.Action)
+  fullName: AggroTrigger.RegisterTriggerCallback(IntObject.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterTriggerCallback
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 151
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterTriggerCallback(IntObject.Action callback)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    content.vb: Public Sub RegisterTriggerCallback(callback As IntObject.Action)
+  overload: Global.AggroTrigger.RegisterTriggerCallback*
+- uid: Global.AggroTrigger.DrawGizmos(ModularEnemy)
+  commentId: M:Global.AggroTrigger.DrawGizmos(ModularEnemy)
+  id: DrawGizmos(ModularEnemy)
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: AggroTrigger.DrawGizmos(ModularEnemy)
+  fullName: AggroTrigger.DrawGizmos(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawGizmos
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 156
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void DrawGizmos(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub DrawGizmos(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  overload: Global.AggroTrigger.DrawGizmos*
+- uid: Global.AggroTrigger.OnRestart
+  commentId: M:Global.AggroTrigger.OnRestart
+  id: OnRestart
+  parent: Global.AggroTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnRestart()
+  nameWithType: AggroTrigger.OnRestart()
+  fullName: AggroTrigger.OnRestart()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnRestart
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 169
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnRestart()
+    content.vb: Public Overrides Sub OnRestart()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  overload: Global.AggroTrigger.OnRestart*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ModularEnemy.EnemyBehaviorInterface
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterface
+  name: ModularEnemy.EnemyBehaviorInterface
+  nameWithType: ModularEnemy.EnemyBehaviorInterface
+  fullName: ModularEnemy.EnemyBehaviorInterface
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: ShowGizmos
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  fullName: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.self
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.self
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: self
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.self
+  fullName: ModularEnemy.EnemyBehaviorInterface.self
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Started
+  commentId: P:Global.ModularEnemy.EnemyBehaviorInterface.Started
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Started
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Started
+  fullName: ModularEnemy.EnemyBehaviorInterface.Started
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  isExternal: true
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AggroTrigger.AggroTriggerType
+  commentId: T:Global.AggroTrigger.AggroTriggerType
+  name: AggroTrigger.AggroTriggerType
+  nameWithType: AggroTrigger.AggroTriggerType
+  fullName: AggroTrigger.AggroTriggerType
+  spec.csharp:
+  - uid: Global.AggroTrigger
+    name: AggroTrigger
+  - name: .
+  - uid: Global.AggroTrigger.AggroTriggerType
+    name: AggroTriggerType
+  spec.vb:
+  - uid: Global.AggroTrigger
+    name: AggroTrigger
+  - name: .
+  - uid: Global.AggroTrigger.AggroTriggerType
+    name: AggroTriggerType
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.IntTrigger
+  commentId: T:Global.IntTrigger
+  name: IntTrigger
+  nameWithType: IntTrigger
+  fullName: IntTrigger
+- uid: Global.AggroTrigger.TriggerEntityType
+  commentId: T:Global.AggroTrigger.TriggerEntityType
+  name: AggroTrigger.TriggerEntityType
+  nameWithType: AggroTrigger.TriggerEntityType
+  fullName: AggroTrigger.TriggerEntityType
+  spec.csharp:
+  - uid: Global.AggroTrigger
+    name: AggroTrigger
+  - name: .
+  - uid: Global.AggroTrigger.TriggerEntityType
+    name: TriggerEntityType
+  spec.vb:
+  - uid: Global.AggroTrigger
+    name: AggroTrigger
+  - name: .
+  - uid: Global.AggroTrigger.TriggerEntityType
+    name: TriggerEntityType
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Start(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.AggroTrigger.Start*
+  commentId: Overload:Global.AggroTrigger.Start
+  name: Start
+  nameWithType: AggroTrigger.Start
+  fullName: AggroTrigger.Start
+- uid: Global.ModularEnemy
+  commentId: T:Global.ModularEnemy
+  name: ModularEnemy
+  nameWithType: ModularEnemy
+  fullName: ModularEnemy
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Update
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Update()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Update()
+  fullName: ModularEnemy.EnemyBehaviorInterface.Update()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.AggroTrigger.Update*
+  commentId: Overload:Global.AggroTrigger.Update
+  name: Update
+  nameWithType: AggroTrigger.Update
+  fullName: AggroTrigger.Update
+- uid: Global.AggroTrigger.RegisterTriggerCallback*
+  commentId: Overload:Global.AggroTrigger.RegisterTriggerCallback
+  name: RegisterTriggerCallback
+  nameWithType: AggroTrigger.RegisterTriggerCallback
+  fullName: AggroTrigger.RegisterTriggerCallback
+- uid: Global.IntObject.Action
+  commentId: T:Global.IntObject.Action
+  name: IntObject.Action
+  nameWithType: IntObject.Action
+  fullName: IntObject.Action
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.AggroTrigger.DrawGizmos*
+  commentId: Overload:Global.AggroTrigger.DrawGizmos
+  name: DrawGizmos
+  nameWithType: AggroTrigger.DrawGizmos
+  fullName: AggroTrigger.DrawGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnRestart()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.AggroTrigger.OnRestart*
+  commentId: Overload:Global.AggroTrigger.OnRestart
+  name: OnRestart
+  nameWithType: AggroTrigger.OnRestart
+  fullName: AggroTrigger.OnRestart

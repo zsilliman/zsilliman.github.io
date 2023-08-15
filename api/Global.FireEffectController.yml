@@ -1,0 +1,856 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FireEffectController
+  commentId: T:Global.FireEffectController
+  id: FireEffectController
+  parent: Global
+  children:
+  - Global.FireEffectController.AdditiveFireEffect
+  - Global.FireEffectController.AdditiveMaterial
+  - Global.FireEffectController.AlphaBlendMaterial
+  - Global.FireEffectController.BaseFireEffect
+  - Global.FireEffectController.BlinkGradient
+  - Global.FireEffectController.Burst(WeaponController.WeaponType)
+  - Global.FireEffectController.Disable
+  - Global.FireEffectController.Enable
+  - Global.FireEffectController.FireTrailEffect
+  - Global.FireEffectController.InvisibilityGradient
+  - Global.FireEffectController.MeleeGradient
+  - Global.FireEffectController.NoDashGradient
+  - Global.FireEffectController.RangedGradient
+  - Global.FireEffectController.SendBehindPlayer(System.Int32,System.Int32)
+  - Global.FireEffectController.SendInFrontOfPlayer(System.Int32,System.Int32)
+  - Global.FireEffectController.SetFireColorFromWeapon(WeaponController.WeaponType,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: FireEffectController
+  nameWithType: FireEffectController
+  fullName: FireEffectController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FireEffectController
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class FireEffectController : MonoBehaviour, HoldableObject'
+    content.vb: Public Class FireEffectController Inherits MonoBehaviour Implements HoldableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  implements:
+  - Global.HoldableObject
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.FireEffectController.BaseFireEffect
+  commentId: F:Global.FireEffectController.BaseFireEffect
+  id: BaseFireEffect
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: BaseFireEffect
+  nameWithType: FireEffectController.BaseFireEffect
+  fullName: FireEffectController.BaseFireEffect
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BaseFireEffect
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Particle Systems")]
+
+      public ParticleSystem BaseFireEffect
+    return:
+      type: UnityEngine.ParticleSystem
+    content.vb: >-
+      <Header("Particle Systems")>
+
+      Public BaseFireEffect As ParticleSystem
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Particle Systems
+- uid: Global.FireEffectController.AdditiveFireEffect
+  commentId: F:Global.FireEffectController.AdditiveFireEffect
+  id: AdditiveFireEffect
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: AdditiveFireEffect
+  nameWithType: FireEffectController.AdditiveFireEffect
+  fullName: FireEffectController.AdditiveFireEffect
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AdditiveFireEffect
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ParticleSystem AdditiveFireEffect
+    return:
+      type: UnityEngine.ParticleSystem
+    content.vb: Public AdditiveFireEffect As ParticleSystem
+- uid: Global.FireEffectController.FireTrailEffect
+  commentId: F:Global.FireEffectController.FireTrailEffect
+  id: FireTrailEffect
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: FireTrailEffect
+  nameWithType: FireEffectController.FireTrailEffect
+  fullName: FireEffectController.FireTrailEffect
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FireTrailEffect
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ParticleSystem FireTrailEffect
+    return:
+      type: UnityEngine.ParticleSystem
+    content.vb: Public FireTrailEffect As ParticleSystem
+- uid: Global.FireEffectController.AdditiveMaterial
+  commentId: F:Global.FireEffectController.AdditiveMaterial
+  id: AdditiveMaterial
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: AdditiveMaterial
+  nameWithType: FireEffectController.AdditiveMaterial
+  fullName: FireEffectController.AdditiveMaterial
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AdditiveMaterial
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Materials")]
+
+      public Material AdditiveMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: >-
+      <Header("Materials")>
+
+      Public AdditiveMaterial As Material
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Materials
+- uid: Global.FireEffectController.AlphaBlendMaterial
+  commentId: F:Global.FireEffectController.AlphaBlendMaterial
+  id: AlphaBlendMaterial
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: AlphaBlendMaterial
+  nameWithType: FireEffectController.AlphaBlendMaterial
+  fullName: FireEffectController.AlphaBlendMaterial
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AlphaBlendMaterial
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Material AlphaBlendMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: Public AlphaBlendMaterial As Material
+- uid: Global.FireEffectController.MeleeGradient
+  commentId: F:Global.FireEffectController.MeleeGradient
+  id: MeleeGradient
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: MeleeGradient
+  nameWithType: FireEffectController.MeleeGradient
+  fullName: FireEffectController.MeleeGradient
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MeleeGradient
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Weapon Glow Colors")]
+
+      public Gradient MeleeGradient
+    return:
+      type: UnityEngine.Gradient
+    content.vb: >-
+      <Header("Weapon Glow Colors")>
+
+      Public MeleeGradient As Gradient
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Weapon Glow Colors
+- uid: Global.FireEffectController.RangedGradient
+  commentId: F:Global.FireEffectController.RangedGradient
+  id: RangedGradient
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: RangedGradient
+  nameWithType: FireEffectController.RangedGradient
+  fullName: FireEffectController.RangedGradient
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RangedGradient
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Gradient RangedGradient
+    return:
+      type: UnityEngine.Gradient
+    content.vb: Public RangedGradient As Gradient
+- uid: Global.FireEffectController.BlinkGradient
+  commentId: F:Global.FireEffectController.BlinkGradient
+  id: BlinkGradient
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: BlinkGradient
+  nameWithType: FireEffectController.BlinkGradient
+  fullName: FireEffectController.BlinkGradient
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlinkGradient
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Gradient BlinkGradient
+    return:
+      type: UnityEngine.Gradient
+    content.vb: Public BlinkGradient As Gradient
+- uid: Global.FireEffectController.InvisibilityGradient
+  commentId: F:Global.FireEffectController.InvisibilityGradient
+  id: InvisibilityGradient
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: InvisibilityGradient
+  nameWithType: FireEffectController.InvisibilityGradient
+  fullName: FireEffectController.InvisibilityGradient
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InvisibilityGradient
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Gradient InvisibilityGradient
+    return:
+      type: UnityEngine.Gradient
+    content.vb: Public InvisibilityGradient As Gradient
+- uid: Global.FireEffectController.NoDashGradient
+  commentId: F:Global.FireEffectController.NoDashGradient
+  id: NoDashGradient
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: NoDashGradient
+  nameWithType: FireEffectController.NoDashGradient
+  fullName: FireEffectController.NoDashGradient
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NoDashGradient
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Gradient NoDashGradient
+    return:
+      type: UnityEngine.Gradient
+    content.vb: Public NoDashGradient As Gradient
+- uid: Global.FireEffectController.Burst(WeaponController.WeaponType)
+  commentId: M:Global.FireEffectController.Burst(WeaponController.WeaponType)
+  id: Burst(WeaponController.WeaponType)
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: Burst(WeaponType)
+  nameWithType: FireEffectController.Burst(WeaponController.WeaponType)
+  fullName: FireEffectController.Burst(WeaponController.WeaponType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Burst
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Burst(WeaponController.WeaponType weaponType)
+    parameters:
+    - id: weaponType
+      type: Global.WeaponController.WeaponType
+    content.vb: Public Sub Burst(weaponType As WeaponController.WeaponType)
+  overload: Global.FireEffectController.Burst*
+- uid: Global.FireEffectController.SetFireColorFromWeapon(WeaponController.WeaponType,System.Boolean)
+  commentId: M:Global.FireEffectController.SetFireColorFromWeapon(WeaponController.WeaponType,System.Boolean)
+  id: SetFireColorFromWeapon(WeaponController.WeaponType,System.Boolean)
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: SetFireColorFromWeapon(WeaponType, bool)
+  nameWithType: FireEffectController.SetFireColorFromWeapon(WeaponController.WeaponType, bool)
+  fullName: FireEffectController.SetFireColorFromWeapon(WeaponController.WeaponType, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetFireColorFromWeapon
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetFireColorFromWeapon(WeaponController.WeaponType weaponType, bool IsFireColorEnabled)
+    parameters:
+    - id: weaponType
+      type: Global.WeaponController.WeaponType
+    - id: IsFireColorEnabled
+      type: System.Boolean
+    content.vb: Public Sub SetFireColorFromWeapon(weaponType As WeaponController.WeaponType, IsFireColorEnabled As Boolean)
+  overload: Global.FireEffectController.SetFireColorFromWeapon*
+  nameWithType.vb: FireEffectController.SetFireColorFromWeapon(WeaponController.WeaponType, Boolean)
+  fullName.vb: FireEffectController.SetFireColorFromWeapon(WeaponController.WeaponType, Boolean)
+  name.vb: SetFireColorFromWeapon(WeaponType, Boolean)
+- uid: Global.FireEffectController.SendBehindPlayer(System.Int32,System.Int32)
+  commentId: M:Global.FireEffectController.SendBehindPlayer(System.Int32,System.Int32)
+  id: SendBehindPlayer(System.Int32,System.Int32)
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: SendBehindPlayer(int, int)
+  nameWithType: FireEffectController.SendBehindPlayer(int, int)
+  fullName: FireEffectController.SendBehindPlayer(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SendBehindPlayer
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SendBehindPlayer(int SortingLayerID, int SortingLayerOrder)
+    parameters:
+    - id: SortingLayerID
+      type: System.Int32
+    - id: SortingLayerOrder
+      type: System.Int32
+    content.vb: Public Sub SendBehindPlayer(SortingLayerID As Integer, SortingLayerOrder As Integer)
+  overload: Global.FireEffectController.SendBehindPlayer*
+  implements:
+  - Global.HoldableObject.SendBehindPlayer(System.Int32,System.Int32)
+  nameWithType.vb: FireEffectController.SendBehindPlayer(Integer, Integer)
+  fullName.vb: FireEffectController.SendBehindPlayer(Integer, Integer)
+  name.vb: SendBehindPlayer(Integer, Integer)
+- uid: Global.FireEffectController.SendInFrontOfPlayer(System.Int32,System.Int32)
+  commentId: M:Global.FireEffectController.SendInFrontOfPlayer(System.Int32,System.Int32)
+  id: SendInFrontOfPlayer(System.Int32,System.Int32)
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: SendInFrontOfPlayer(int, int)
+  nameWithType: FireEffectController.SendInFrontOfPlayer(int, int)
+  fullName: FireEffectController.SendInFrontOfPlayer(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SendInFrontOfPlayer
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 120
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SendInFrontOfPlayer(int SortingLayerID, int SortingLayerOrder)
+    parameters:
+    - id: SortingLayerID
+      type: System.Int32
+    - id: SortingLayerOrder
+      type: System.Int32
+    content.vb: Public Sub SendInFrontOfPlayer(SortingLayerID As Integer, SortingLayerOrder As Integer)
+  overload: Global.FireEffectController.SendInFrontOfPlayer*
+  implements:
+  - Global.HoldableObject.SendInFrontOfPlayer(System.Int32,System.Int32)
+  nameWithType.vb: FireEffectController.SendInFrontOfPlayer(Integer, Integer)
+  fullName.vb: FireEffectController.SendInFrontOfPlayer(Integer, Integer)
+  name.vb: SendInFrontOfPlayer(Integer, Integer)
+- uid: Global.FireEffectController.Enable
+  commentId: M:Global.FireEffectController.Enable
+  id: Enable
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: Enable()
+  nameWithType: FireEffectController.Enable()
+  fullName: FireEffectController.Enable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Enable
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 139
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Enable()
+    content.vb: Public Sub Enable()
+  overload: Global.FireEffectController.Enable*
+  implements:
+  - Global.HoldableObject.Enable
+- uid: Global.FireEffectController.Disable
+  commentId: M:Global.FireEffectController.Disable
+  id: Disable
+  parent: Global.FireEffectController
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: FireEffectController.Disable()
+  fullName: FireEffectController.Disable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Disable
+    path: ../Assets/Objects & Components/Entities/Player/Weapons/WeaponGlow/FireEffectController.cs
+    startLine: 152
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Disable()
+    content.vb: Public Sub Disable()
+  overload: Global.FireEffectController.Disable*
+  implements:
+  - Global.HoldableObject.Disable
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.HoldableObject
+  commentId: T:Global.HoldableObject
+  name: HoldableObject
+  nameWithType: HoldableObject
+  fullName: HoldableObject
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.ParticleSystem
+  commentId: T:UnityEngine.ParticleSystem
+  parent: UnityEngine
+  isExternal: true
+  name: ParticleSystem
+  nameWithType: ParticleSystem
+  fullName: UnityEngine.ParticleSystem
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEngine.Gradient
+  commentId: T:UnityEngine.Gradient
+  parent: UnityEngine
+  isExternal: true
+  name: Gradient
+  nameWithType: Gradient
+  fullName: UnityEngine.Gradient
+- uid: Global.FireEffectController.Burst*
+  commentId: Overload:Global.FireEffectController.Burst
+  name: Burst
+  nameWithType: FireEffectController.Burst
+  fullName: FireEffectController.Burst
+- uid: Global.WeaponController.WeaponType
+  commentId: T:Global.WeaponController.WeaponType
+  name: WeaponController.WeaponType
+  nameWithType: WeaponController.WeaponType
+  fullName: WeaponController.WeaponType
+  spec.csharp:
+  - uid: Global.WeaponController
+    name: WeaponController
+  - name: .
+  - uid: Global.WeaponController.WeaponType
+    name: WeaponType
+  spec.vb:
+  - uid: Global.WeaponController
+    name: WeaponController
+  - name: .
+  - uid: Global.WeaponController.WeaponType
+    name: WeaponType
+- uid: Global.FireEffectController.SetFireColorFromWeapon*
+  commentId: Overload:Global.FireEffectController.SetFireColorFromWeapon
+  name: SetFireColorFromWeapon
+  nameWithType: FireEffectController.SetFireColorFromWeapon
+  fullName: FireEffectController.SetFireColorFromWeapon
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.FireEffectController.SendBehindPlayer*
+  commentId: Overload:Global.FireEffectController.SendBehindPlayer
+  name: SendBehindPlayer
+  nameWithType: FireEffectController.SendBehindPlayer
+  fullName: FireEffectController.SendBehindPlayer
+- uid: Global.HoldableObject.SendBehindPlayer(System.Int32,System.Int32)
+  commentId: M:Global.HoldableObject.SendBehindPlayer(System.Int32,System.Int32)
+  parent: Global.HoldableObject
+  isExternal: true
+  name: SendBehindPlayer(int, int)
+  nameWithType: HoldableObject.SendBehindPlayer(int, int)
+  fullName: HoldableObject.SendBehindPlayer(int, int)
+  nameWithType.vb: HoldableObject.SendBehindPlayer(Integer, Integer)
+  fullName.vb: HoldableObject.SendBehindPlayer(Integer, Integer)
+  name.vb: SendBehindPlayer(Integer, Integer)
+  spec.csharp:
+  - uid: Global.HoldableObject.SendBehindPlayer(System.Int32,System.Int32)
+    name: SendBehindPlayer
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.HoldableObject.SendBehindPlayer(System.Int32,System.Int32)
+    name: SendBehindPlayer
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.FireEffectController.SendInFrontOfPlayer*
+  commentId: Overload:Global.FireEffectController.SendInFrontOfPlayer
+  name: SendInFrontOfPlayer
+  nameWithType: FireEffectController.SendInFrontOfPlayer
+  fullName: FireEffectController.SendInFrontOfPlayer
+- uid: Global.HoldableObject.SendInFrontOfPlayer(System.Int32,System.Int32)
+  commentId: M:Global.HoldableObject.SendInFrontOfPlayer(System.Int32,System.Int32)
+  parent: Global.HoldableObject
+  isExternal: true
+  name: SendInFrontOfPlayer(int, int)
+  nameWithType: HoldableObject.SendInFrontOfPlayer(int, int)
+  fullName: HoldableObject.SendInFrontOfPlayer(int, int)
+  nameWithType.vb: HoldableObject.SendInFrontOfPlayer(Integer, Integer)
+  fullName.vb: HoldableObject.SendInFrontOfPlayer(Integer, Integer)
+  name.vb: SendInFrontOfPlayer(Integer, Integer)
+  spec.csharp:
+  - uid: Global.HoldableObject.SendInFrontOfPlayer(System.Int32,System.Int32)
+    name: SendInFrontOfPlayer
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.HoldableObject.SendInFrontOfPlayer(System.Int32,System.Int32)
+    name: SendInFrontOfPlayer
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Global.FireEffectController.Enable*
+  commentId: Overload:Global.FireEffectController.Enable
+  name: Enable
+  nameWithType: FireEffectController.Enable
+  fullName: FireEffectController.Enable
+- uid: Global.HoldableObject.Enable
+  commentId: M:Global.HoldableObject.Enable
+  parent: Global.HoldableObject
+  name: Enable()
+  nameWithType: HoldableObject.Enable()
+  fullName: HoldableObject.Enable()
+  spec.csharp:
+  - uid: Global.HoldableObject.Enable
+    name: Enable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.HoldableObject.Enable
+    name: Enable
+  - name: (
+  - name: )
+- uid: Global.FireEffectController.Disable*
+  commentId: Overload:Global.FireEffectController.Disable
+  name: Disable
+  nameWithType: FireEffectController.Disable
+  fullName: FireEffectController.Disable
+- uid: Global.HoldableObject.Disable
+  commentId: M:Global.HoldableObject.Disable
+  parent: Global.HoldableObject
+  name: Disable()
+  nameWithType: HoldableObject.Disable()
+  fullName: HoldableObject.Disable()
+  spec.csharp:
+  - uid: Global.HoldableObject.Disable
+    name: Disable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.HoldableObject.Disable
+    name: Disable
+  - name: (
+  - name: )

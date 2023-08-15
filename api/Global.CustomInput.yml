@@ -1,0 +1,1146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomInput
+  commentId: T:Global.CustomInput
+  id: CustomInput
+  parent: Global
+  children:
+  - Global.CustomInput.AnyKeyDown
+  - Global.CustomInput.ApplyClampAndDeadZone(System.Single,System.Single,System.Single,System.Single)
+  - Global.CustomInput.AxisAccelleration
+  - Global.CustomInput.BlinkWeaponKey
+  - Global.CustomInput.DeadZone
+  - Global.CustomInput.DefenseWeaponKey
+  - Global.CustomInput.Enabled
+  - Global.CustomInput.GetHorizontalAxis
+  - Global.CustomInput.GetHorizontalAxisRaw
+  - Global.CustomInput.GetKey(System.String)
+  - Global.CustomInput.GetKeyDown(System.String)
+  - Global.CustomInput.GetKeyUp(System.String)
+  - Global.CustomInput.GetVerticalAxis
+  - Global.CustomInput.GetVerticalAxisRaw
+  - Global.CustomInput.Initialize(UnityEngine.InputSystem.PlayerInput)
+  - Global.CustomInput.IsRegisteringInGameInput
+  - Global.CustomInput.MeleeWeaponKey
+  - Global.CustomInput.RangedWeaponKey
+  - Global.CustomInput.ResetInput
+  - Global.CustomInput.ResetKeyMap
+  - Global.CustomInput.SetHorizontalAxisInput(System.Single)
+  - Global.CustomInput.SetVerticalAxisInput(System.Single)
+  - Global.CustomInput.SwitchActionMap(System.String)
+  - Global.CustomInput.Update
+  - Global.CustomInput.ZeroAxisInput
+  langs:
+  - csharp
+  - vb
+  name: CustomInput
+  nameWithType: CustomInput
+  fullName: CustomInput
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CustomInput
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class CustomInput
+    content.vb: Public Class CustomInput
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.CustomInput.Enabled
+  commentId: F:Global.CustomInput.Enabled
+  id: Enabled
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: CustomInput.Enabled
+  fullName: CustomInput.Enabled
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Enabled
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool Enabled
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Enabled As Boolean
+- uid: Global.CustomInput.AxisAccelleration
+  commentId: F:Global.CustomInput.AxisAccelleration
+  id: AxisAccelleration
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: AxisAccelleration
+  nameWithType: CustomInput.AxisAccelleration
+  fullName: CustomInput.AxisAccelleration
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AxisAccelleration
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float AxisAccelleration
+    return:
+      type: System.Single
+    content.vb: Public Shared AxisAccelleration As Single
+- uid: Global.CustomInput.MeleeWeaponKey
+  commentId: F:Global.CustomInput.MeleeWeaponKey
+  id: MeleeWeaponKey
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: MeleeWeaponKey
+  nameWithType: CustomInput.MeleeWeaponKey
+  fullName: CustomInput.MeleeWeaponKey
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MeleeWeaponKey
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static KeyCode MeleeWeaponKey
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public Shared MeleeWeaponKey As KeyCode
+- uid: Global.CustomInput.RangedWeaponKey
+  commentId: F:Global.CustomInput.RangedWeaponKey
+  id: RangedWeaponKey
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: RangedWeaponKey
+  nameWithType: CustomInput.RangedWeaponKey
+  fullName: CustomInput.RangedWeaponKey
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RangedWeaponKey
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static KeyCode RangedWeaponKey
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public Shared RangedWeaponKey As KeyCode
+- uid: Global.CustomInput.BlinkWeaponKey
+  commentId: F:Global.CustomInput.BlinkWeaponKey
+  id: BlinkWeaponKey
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: BlinkWeaponKey
+  nameWithType: CustomInput.BlinkWeaponKey
+  fullName: CustomInput.BlinkWeaponKey
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlinkWeaponKey
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static KeyCode BlinkWeaponKey
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public Shared BlinkWeaponKey As KeyCode
+- uid: Global.CustomInput.DefenseWeaponKey
+  commentId: F:Global.CustomInput.DefenseWeaponKey
+  id: DefenseWeaponKey
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: DefenseWeaponKey
+  nameWithType: CustomInput.DefenseWeaponKey
+  fullName: CustomInput.DefenseWeaponKey
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DefenseWeaponKey
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static KeyCode DefenseWeaponKey
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public Shared DefenseWeaponKey As KeyCode
+- uid: Global.CustomInput.DeadZone
+  commentId: F:Global.CustomInput.DeadZone
+  id: DeadZone
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: DeadZone
+  nameWithType: CustomInput.DeadZone
+  fullName: CustomInput.DeadZone
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DeadZone
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float DeadZone
+    return:
+      type: System.Single
+    content.vb: Public Shared DeadZone As Single
+- uid: Global.CustomInput.ResetKeyMap
+  commentId: F:Global.CustomInput.ResetKeyMap
+  id: ResetKeyMap
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: ResetKeyMap
+  nameWithType: CustomInput.ResetKeyMap
+  fullName: CustomInput.ResetKeyMap
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResetKeyMap
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Dictionary<string, bool> ResetKeyMap
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Boolean}
+    content.vb: Public Shared ResetKeyMap As Dictionary(Of String, Boolean)
+- uid: Global.CustomInput.Initialize(UnityEngine.InputSystem.PlayerInput)
+  commentId: M:Global.CustomInput.Initialize(UnityEngine.InputSystem.PlayerInput)
+  id: Initialize(UnityEngine.InputSystem.PlayerInput)
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: Initialize(PlayerInput)
+  nameWithType: CustomInput.Initialize(PlayerInput)
+  fullName: CustomInput.Initialize(UnityEngine.InputSystem.PlayerInput)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Initialize
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void Initialize(PlayerInput pInput)
+    parameters:
+    - id: pInput
+      type: UnityEngine.InputSystem.PlayerInput
+    content.vb: Public Shared Sub Initialize(pInput As PlayerInput)
+  overload: Global.CustomInput.Initialize*
+- uid: Global.CustomInput.SwitchActionMap(System.String)
+  commentId: M:Global.CustomInput.SwitchActionMap(System.String)
+  id: SwitchActionMap(System.String)
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: SwitchActionMap(string)
+  nameWithType: CustomInput.SwitchActionMap(string)
+  fullName: CustomInput.SwitchActionMap(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwitchActionMap
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void SwitchActionMap(string actionMapName)
+    parameters:
+    - id: actionMapName
+      type: System.String
+    content.vb: Public Shared Sub SwitchActionMap(actionMapName As String)
+  overload: Global.CustomInput.SwitchActionMap*
+  nameWithType.vb: CustomInput.SwitchActionMap(String)
+  fullName.vb: CustomInput.SwitchActionMap(String)
+  name.vb: SwitchActionMap(String)
+- uid: Global.CustomInput.IsRegisteringInGameInput
+  commentId: M:Global.CustomInput.IsRegisteringInGameInput
+  id: IsRegisteringInGameInput
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: IsRegisteringInGameInput()
+  nameWithType: CustomInput.IsRegisteringInGameInput()
+  fullName: CustomInput.IsRegisteringInGameInput()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsRegisteringInGameInput
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static bool IsRegisteringInGameInput()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsRegisteringInGameInput() As Boolean
+  overload: Global.CustomInput.IsRegisteringInGameInput*
+- uid: Global.CustomInput.ResetInput
+  commentId: M:Global.CustomInput.ResetInput
+  id: ResetInput
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: ResetInput()
+  nameWithType: CustomInput.ResetInput()
+  fullName: CustomInput.ResetInput()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResetInput
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void ResetInput()
+    content.vb: Public Shared Sub ResetInput()
+  overload: Global.CustomInput.ResetInput*
+- uid: Global.CustomInput.ApplyClampAndDeadZone(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.CustomInput.ApplyClampAndDeadZone(System.Single,System.Single,System.Single,System.Single)
+  id: ApplyClampAndDeadZone(System.Single,System.Single,System.Single,System.Single)
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: ApplyClampAndDeadZone(float, float, float, float)
+  nameWithType: CustomInput.ApplyClampAndDeadZone(float, float, float, float)
+  fullName: CustomInput.ApplyClampAndDeadZone(float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ApplyClampAndDeadZone
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float ApplyClampAndDeadZone(float val, float deadzone, float min, float max)
+    parameters:
+    - id: val
+      type: System.Single
+    - id: deadzone
+      type: System.Single
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function ApplyClampAndDeadZone(val As Single, deadzone As Single, min As Single, max As Single) As Single
+  overload: Global.CustomInput.ApplyClampAndDeadZone*
+  nameWithType.vb: CustomInput.ApplyClampAndDeadZone(Single, Single, Single, Single)
+  fullName.vb: CustomInput.ApplyClampAndDeadZone(Single, Single, Single, Single)
+  name.vb: ApplyClampAndDeadZone(Single, Single, Single, Single)
+- uid: Global.CustomInput.GetHorizontalAxisRaw
+  commentId: M:Global.CustomInput.GetHorizontalAxisRaw
+  id: GetHorizontalAxisRaw
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: GetHorizontalAxisRaw()
+  nameWithType: CustomInput.GetHorizontalAxisRaw()
+  fullName: CustomInput.GetHorizontalAxisRaw()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetHorizontalAxisRaw
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int GetHorizontalAxisRaw()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetHorizontalAxisRaw() As Integer
+  overload: Global.CustomInput.GetHorizontalAxisRaw*
+- uid: Global.CustomInput.GetHorizontalAxis
+  commentId: M:Global.CustomInput.GetHorizontalAxis
+  id: GetHorizontalAxis
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: GetHorizontalAxis()
+  nameWithType: CustomInput.GetHorizontalAxis()
+  fullName: CustomInput.GetHorizontalAxis()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetHorizontalAxis
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float GetHorizontalAxis()
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetHorizontalAxis() As Single
+  overload: Global.CustomInput.GetHorizontalAxis*
+- uid: Global.CustomInput.GetVerticalAxisRaw
+  commentId: M:Global.CustomInput.GetVerticalAxisRaw
+  id: GetVerticalAxisRaw
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: GetVerticalAxisRaw()
+  nameWithType: CustomInput.GetVerticalAxisRaw()
+  fullName: CustomInput.GetVerticalAxisRaw()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetVerticalAxisRaw
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 94
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int GetVerticalAxisRaw()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetVerticalAxisRaw() As Integer
+  overload: Global.CustomInput.GetVerticalAxisRaw*
+- uid: Global.CustomInput.GetVerticalAxis
+  commentId: M:Global.CustomInput.GetVerticalAxis
+  id: GetVerticalAxis
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: GetVerticalAxis()
+  nameWithType: CustomInput.GetVerticalAxis()
+  fullName: CustomInput.GetVerticalAxis()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetVerticalAxis
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 104
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float GetVerticalAxis()
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetVerticalAxis() As Single
+  overload: Global.CustomInput.GetVerticalAxis*
+- uid: Global.CustomInput.GetKeyUp(System.String)
+  commentId: M:Global.CustomInput.GetKeyUp(System.String)
+  id: GetKeyUp(System.String)
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: GetKeyUp(string)
+  nameWithType: CustomInput.GetKeyUp(string)
+  fullName: CustomInput.GetKeyUp(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetKeyUp
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 128
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturns true when user releases the key\n"
+  example: []
+  syntax:
+    content: public static bool GetKeyUp(string action)
+    parameters:
+    - id: action
+      type: System.String
+    return:
+      type: System.Boolean
+      description: Returns true when user releases the key
+    content.vb: Public Shared Function GetKeyUp(action As String) As Boolean
+  overload: Global.CustomInput.GetKeyUp*
+  nameWithType.vb: CustomInput.GetKeyUp(String)
+  fullName.vb: CustomInput.GetKeyUp(String)
+  name.vb: GetKeyUp(String)
+- uid: Global.CustomInput.GetKeyDown(System.String)
+  commentId: M:Global.CustomInput.GetKeyDown(System.String)
+  id: GetKeyDown(System.String)
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: GetKeyDown(string)
+  nameWithType: CustomInput.GetKeyDown(string)
+  fullName: CustomInput.GetKeyDown(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetKeyDown
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 143
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturns true when user first presses the key\n"
+  example: []
+  syntax:
+    content: public static bool GetKeyDown(string action)
+    parameters:
+    - id: action
+      type: System.String
+    return:
+      type: System.Boolean
+      description: Returns true when user first presses the key
+    content.vb: Public Shared Function GetKeyDown(action As String) As Boolean
+  overload: Global.CustomInput.GetKeyDown*
+  nameWithType.vb: CustomInput.GetKeyDown(String)
+  fullName.vb: CustomInput.GetKeyDown(String)
+  name.vb: GetKeyDown(String)
+- uid: Global.CustomInput.AnyKeyDown
+  commentId: M:Global.CustomInput.AnyKeyDown
+  id: AnyKeyDown
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: AnyKeyDown()
+  nameWithType: CustomInput.AnyKeyDown()
+  fullName: CustomInput.AnyKeyDown()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AnyKeyDown
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 159
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturns true on the frame that any key was pressed\n"
+  example: []
+  syntax:
+    content: public static bool AnyKeyDown()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function AnyKeyDown() As Boolean
+  overload: Global.CustomInput.AnyKeyDown*
+- uid: Global.CustomInput.GetKey(System.String)
+  commentId: M:Global.CustomInput.GetKey(System.String)
+  id: GetKey(System.String)
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: GetKey(string)
+  nameWithType: CustomInput.GetKey(string)
+  fullName: CustomInput.GetKey(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetKey
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 170
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturns true while the user is holding down the key\n"
+  example: []
+  syntax:
+    content: public static bool GetKey(string action)
+    parameters:
+    - id: action
+      type: System.String
+    return:
+      type: System.Boolean
+      description: Returns true while the user is holding down the key
+    content.vb: Public Shared Function GetKey(action As String) As Boolean
+  overload: Global.CustomInput.GetKey*
+  nameWithType.vb: CustomInput.GetKey(String)
+  fullName.vb: CustomInput.GetKey(String)
+  name.vb: GetKey(String)
+- uid: Global.CustomInput.ZeroAxisInput
+  commentId: M:Global.CustomInput.ZeroAxisInput
+  id: ZeroAxisInput
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: ZeroAxisInput()
+  nameWithType: CustomInput.ZeroAxisInput()
+  fullName: CustomInput.ZeroAxisInput()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ZeroAxisInput
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 185
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nSets the previous frame&apos;s axes (vertical and horizontal) to zero. This resets smoothing behavior to starting point.\n"
+  example: []
+  syntax:
+    content: public static void ZeroAxisInput()
+    content.vb: Public Shared Sub ZeroAxisInput()
+  overload: Global.CustomInput.ZeroAxisInput*
+- uid: Global.CustomInput.SetHorizontalAxisInput(System.Single)
+  commentId: M:Global.CustomInput.SetHorizontalAxisInput(System.Single)
+  id: SetHorizontalAxisInput(System.Single)
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: SetHorizontalAxisInput(float)
+  nameWithType: CustomInput.SetHorizontalAxisInput(float)
+  fullName: CustomInput.SetHorizontalAxisInput(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetHorizontalAxisInput
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 194
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nSets the previous frame&apos;s horizontal axis to zero. This continues the smoothing behavior from this new location\n"
+  example: []
+  syntax:
+    content: public static void SetHorizontalAxisInput(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    content.vb: Public Shared Sub SetHorizontalAxisInput(value As Single)
+  overload: Global.CustomInput.SetHorizontalAxisInput*
+  nameWithType.vb: CustomInput.SetHorizontalAxisInput(Single)
+  fullName.vb: CustomInput.SetHorizontalAxisInput(Single)
+  name.vb: SetHorizontalAxisInput(Single)
+- uid: Global.CustomInput.SetVerticalAxisInput(System.Single)
+  commentId: M:Global.CustomInput.SetVerticalAxisInput(System.Single)
+  id: SetVerticalAxisInput(System.Single)
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: SetVerticalAxisInput(float)
+  nameWithType: CustomInput.SetVerticalAxisInput(float)
+  fullName: CustomInput.SetVerticalAxisInput(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetVerticalAxisInput
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 202
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nSets the previous frame&apos;s vertical axis to zero. This continues the smoothing behavior from this new location\n"
+  example: []
+  syntax:
+    content: public static void SetVerticalAxisInput(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    content.vb: Public Shared Sub SetVerticalAxisInput(value As Single)
+  overload: Global.CustomInput.SetVerticalAxisInput*
+  nameWithType.vb: CustomInput.SetVerticalAxisInput(Single)
+  fullName.vb: CustomInput.SetVerticalAxisInput(Single)
+  name.vb: SetVerticalAxisInput(Single)
+- uid: Global.CustomInput.Update
+  commentId: M:Global.CustomInput.Update
+  id: Update
+  parent: Global.CustomInput
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: CustomInput.Update()
+  fullName: CustomInput.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Input/CustomInput.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Framework/Input/CustomInput.cs
+    startLine: 207
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void Update()
+    content.vb: Public Shared Sub Update()
+  overload: Global.CustomInput.Update*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections.Generic.Dictionary{System.String,System.Boolean}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<string, bool>
+  nameWithType: Dictionary<string, bool>
+  fullName: System.Collections.Generic.Dictionary<string, bool>
+  nameWithType.vb: Dictionary(Of String, Boolean)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Boolean)
+  name.vb: Dictionary(Of String, Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.CustomInput.Initialize*
+  commentId: Overload:Global.CustomInput.Initialize
+  name: Initialize
+  nameWithType: CustomInput.Initialize
+  fullName: CustomInput.Initialize
+- uid: UnityEngine.InputSystem.PlayerInput
+  commentId: T:UnityEngine.InputSystem.PlayerInput
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: PlayerInput
+  nameWithType: PlayerInput
+  fullName: UnityEngine.InputSystem.PlayerInput
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: Global.CustomInput.SwitchActionMap*
+  commentId: Overload:Global.CustomInput.SwitchActionMap
+  name: SwitchActionMap
+  nameWithType: CustomInput.SwitchActionMap
+  fullName: CustomInput.SwitchActionMap
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.CustomInput.IsRegisteringInGameInput*
+  commentId: Overload:Global.CustomInput.IsRegisteringInGameInput
+  name: IsRegisteringInGameInput
+  nameWithType: CustomInput.IsRegisteringInGameInput
+  fullName: CustomInput.IsRegisteringInGameInput
+- uid: Global.CustomInput.ResetInput*
+  commentId: Overload:Global.CustomInput.ResetInput
+  name: ResetInput
+  nameWithType: CustomInput.ResetInput
+  fullName: CustomInput.ResetInput
+- uid: Global.CustomInput.ApplyClampAndDeadZone*
+  commentId: Overload:Global.CustomInput.ApplyClampAndDeadZone
+  name: ApplyClampAndDeadZone
+  nameWithType: CustomInput.ApplyClampAndDeadZone
+  fullName: CustomInput.ApplyClampAndDeadZone
+- uid: Global.CustomInput.GetHorizontalAxisRaw*
+  commentId: Overload:Global.CustomInput.GetHorizontalAxisRaw
+  name: GetHorizontalAxisRaw
+  nameWithType: CustomInput.GetHorizontalAxisRaw
+  fullName: CustomInput.GetHorizontalAxisRaw
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.CustomInput.GetHorizontalAxis*
+  commentId: Overload:Global.CustomInput.GetHorizontalAxis
+  name: GetHorizontalAxis
+  nameWithType: CustomInput.GetHorizontalAxis
+  fullName: CustomInput.GetHorizontalAxis
+- uid: Global.CustomInput.GetVerticalAxisRaw*
+  commentId: Overload:Global.CustomInput.GetVerticalAxisRaw
+  name: GetVerticalAxisRaw
+  nameWithType: CustomInput.GetVerticalAxisRaw
+  fullName: CustomInput.GetVerticalAxisRaw
+- uid: Global.CustomInput.GetVerticalAxis*
+  commentId: Overload:Global.CustomInput.GetVerticalAxis
+  name: GetVerticalAxis
+  nameWithType: CustomInput.GetVerticalAxis
+  fullName: CustomInput.GetVerticalAxis
+- uid: Global.CustomInput.GetKeyUp*
+  commentId: Overload:Global.CustomInput.GetKeyUp
+  name: GetKeyUp
+  nameWithType: CustomInput.GetKeyUp
+  fullName: CustomInput.GetKeyUp
+- uid: Global.CustomInput.GetKeyDown*
+  commentId: Overload:Global.CustomInput.GetKeyDown
+  name: GetKeyDown
+  nameWithType: CustomInput.GetKeyDown
+  fullName: CustomInput.GetKeyDown
+- uid: Global.CustomInput.AnyKeyDown*
+  commentId: Overload:Global.CustomInput.AnyKeyDown
+  name: AnyKeyDown
+  nameWithType: CustomInput.AnyKeyDown
+  fullName: CustomInput.AnyKeyDown
+- uid: Global.CustomInput.GetKey*
+  commentId: Overload:Global.CustomInput.GetKey
+  name: GetKey
+  nameWithType: CustomInput.GetKey
+  fullName: CustomInput.GetKey
+- uid: Global.CustomInput.ZeroAxisInput*
+  commentId: Overload:Global.CustomInput.ZeroAxisInput
+  name: ZeroAxisInput
+  nameWithType: CustomInput.ZeroAxisInput
+  fullName: CustomInput.ZeroAxisInput
+- uid: Global.CustomInput.SetHorizontalAxisInput*
+  commentId: Overload:Global.CustomInput.SetHorizontalAxisInput
+  name: SetHorizontalAxisInput
+  nameWithType: CustomInput.SetHorizontalAxisInput
+  fullName: CustomInput.SetHorizontalAxisInput
+- uid: Global.CustomInput.SetVerticalAxisInput*
+  commentId: Overload:Global.CustomInput.SetVerticalAxisInput
+  name: SetVerticalAxisInput
+  nameWithType: CustomInput.SetVerticalAxisInput
+  fullName: CustomInput.SetVerticalAxisInput
+- uid: Global.CustomInput.Update*
+  commentId: Overload:Global.CustomInput.Update
+  name: Update
+  nameWithType: CustomInput.Update
+  fullName: CustomInput.Update

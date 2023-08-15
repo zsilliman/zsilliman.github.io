@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TriggerInteractionCondition
+  commentId: T:Global.TriggerInteractionCondition
+  id: TriggerInteractionCondition
+  parent: Global
+  children:
+  - Global.TriggerInteractionCondition.OnTriggerEnter(IntActor)
+  - Global.TriggerInteractionCondition.OnTriggerExit(IntActor)
+  - Global.TriggerInteractionCondition.RequireGroundedWhenTriggered
+  - Global.TriggerInteractionCondition.SetupCondition(Interactable)
+  - Global.TriggerInteractionCondition.TriggerOnEnter
+  - Global.TriggerInteractionCondition.TriggerOnLeave
+  langs:
+  - csharp
+  - vb
+  name: TriggerInteractionCondition
+  nameWithType: TriggerInteractionCondition
+  fullName: TriggerInteractionCondition
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerInteractionCondition
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class TriggerInteractionCondition : Interactable.InteractionCondition
+    content.vb: >-
+      <Serializable>
+
+      Public Class TriggerInteractionCondition Inherits Interactable.InteractionCondition
+  inheritance:
+  - System.Object
+  - Global.Interactable.InteractionCondition
+  inheritedMembers:
+  - Global.Interactable.InteractionCondition.interactable
+  - Global.Interactable.InteractionCondition.InvokeOnConditionMet
+  - Global.Interactable.InteractionCondition.UpdateCondition
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.TriggerInteractionCondition.TriggerOnEnter
+  commentId: F:Global.TriggerInteractionCondition.TriggerOnEnter
+  id: TriggerOnEnter
+  parent: Global.TriggerInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: TriggerOnEnter
+  nameWithType: TriggerInteractionCondition.TriggerOnEnter
+  fullName: TriggerInteractionCondition.TriggerOnEnter
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerOnEnter
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Trigger Interaction Condition")]
+
+      [SerializeField]
+
+      public bool TriggerOnEnter
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Trigger Interaction Condition")>
+
+      <SerializeField>
+
+      Public TriggerOnEnter As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Trigger Interaction Condition
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.TriggerInteractionCondition.TriggerOnLeave
+  commentId: F:Global.TriggerInteractionCondition.TriggerOnLeave
+  id: TriggerOnLeave
+  parent: Global.TriggerInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: TriggerOnLeave
+  nameWithType: TriggerInteractionCondition.TriggerOnLeave
+  fullName: TriggerInteractionCondition.TriggerOnLeave
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerOnLeave
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public bool TriggerOnLeave
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      Public TriggerOnLeave As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.TriggerInteractionCondition.RequireGroundedWhenTriggered
+  commentId: F:Global.TriggerInteractionCondition.RequireGroundedWhenTriggered
+  id: RequireGroundedWhenTriggered
+  parent: Global.TriggerInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: RequireGroundedWhenTriggered
+  nameWithType: TriggerInteractionCondition.RequireGroundedWhenTriggered
+  fullName: TriggerInteractionCondition.RequireGroundedWhenTriggered
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RequireGroundedWhenTriggered
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public bool RequireGroundedWhenTriggered
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      Public RequireGroundedWhenTriggered As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.TriggerInteractionCondition.SetupCondition(Interactable)
+  commentId: M:Global.TriggerInteractionCondition.SetupCondition(Interactable)
+  id: SetupCondition(Interactable)
+  parent: Global.TriggerInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: SetupCondition(Interactable)
+  nameWithType: TriggerInteractionCondition.SetupCondition(Interactable)
+  fullName: TriggerInteractionCondition.SetupCondition(Interactable)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetupCondition
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void SetupCondition(Interactable interactable)
+    parameters:
+    - id: interactable
+      type: Global.Interactable
+    content.vb: Public Overrides Sub SetupCondition(interactable As Interactable)
+  overridden: Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+  overload: Global.TriggerInteractionCondition.SetupCondition*
+- uid: Global.TriggerInteractionCondition.OnTriggerEnter(IntActor)
+  commentId: M:Global.TriggerInteractionCondition.OnTriggerEnter(IntActor)
+  id: OnTriggerEnter(IntActor)
+  parent: Global.TriggerInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: OnTriggerEnter(IntActor)
+  nameWithType: TriggerInteractionCondition.OnTriggerEnter(IntActor)
+  fullName: TriggerInteractionCondition.OnTriggerEnter(IntActor)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnTriggerEnter
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnTriggerEnter(IntActor actor)
+    parameters:
+    - id: actor
+      type: Global.IntActor
+    content.vb: Public Sub OnTriggerEnter(actor As IntActor)
+  overload: Global.TriggerInteractionCondition.OnTriggerEnter*
+- uid: Global.TriggerInteractionCondition.OnTriggerExit(IntActor)
+  commentId: M:Global.TriggerInteractionCondition.OnTriggerExit(IntActor)
+  id: OnTriggerExit(IntActor)
+  parent: Global.TriggerInteractionCondition
+  langs:
+  - csharp
+  - vb
+  name: OnTriggerExit(IntActor)
+  nameWithType: TriggerInteractionCondition.OnTriggerExit(IntActor)
+  fullName: TriggerInteractionCondition.OnTriggerExit(IntActor)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnTriggerExit
+    path: ../Assets/Objects & Components/World/Interactable/Conditions/TriggerInteractionCondition.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnTriggerExit(IntActor actor)
+    parameters:
+    - id: actor
+      type: Global.IntActor
+    content.vb: Public Sub OnTriggerExit(actor As IntActor)
+  overload: Global.TriggerInteractionCondition.OnTriggerExit*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.Interactable.InteractionCondition
+  commentId: T:Global.Interactable.InteractionCondition
+  name: Interactable.InteractionCondition
+  nameWithType: Interactable.InteractionCondition
+  fullName: Interactable.InteractionCondition
+  spec.csharp:
+  - uid: Global.Interactable
+    name: Interactable
+  - name: .
+  - uid: Global.Interactable.InteractionCondition
+    name: InteractionCondition
+  spec.vb:
+  - uid: Global.Interactable
+    name: Interactable
+  - name: .
+  - uid: Global.Interactable.InteractionCondition
+    name: InteractionCondition
+- uid: Global.Interactable.InteractionCondition.interactable
+  commentId: F:Global.Interactable.InteractionCondition.interactable
+  parent: Global.Interactable.InteractionCondition
+  name: interactable
+  nameWithType: Interactable.InteractionCondition.interactable
+  fullName: Interactable.InteractionCondition.interactable
+- uid: Global.Interactable.InteractionCondition.InvokeOnConditionMet
+  commentId: M:Global.Interactable.InteractionCondition.InvokeOnConditionMet
+  parent: Global.Interactable.InteractionCondition
+  name: InvokeOnConditionMet()
+  nameWithType: Interactable.InteractionCondition.InvokeOnConditionMet()
+  fullName: Interactable.InteractionCondition.InvokeOnConditionMet()
+  spec.csharp:
+  - uid: Global.Interactable.InteractionCondition.InvokeOnConditionMet
+    name: InvokeOnConditionMet
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Interactable.InteractionCondition.InvokeOnConditionMet
+    name: InvokeOnConditionMet
+  - name: (
+  - name: )
+- uid: Global.Interactable.InteractionCondition.UpdateCondition
+  commentId: M:Global.Interactable.InteractionCondition.UpdateCondition
+  parent: Global.Interactable.InteractionCondition
+  name: UpdateCondition()
+  nameWithType: Interactable.InteractionCondition.UpdateCondition()
+  fullName: Interactable.InteractionCondition.UpdateCondition()
+  spec.csharp:
+  - uid: Global.Interactable.InteractionCondition.UpdateCondition
+    name: UpdateCondition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Interactable.InteractionCondition.UpdateCondition
+    name: UpdateCondition
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+  commentId: M:Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+  parent: Global.Interactable.InteractionCondition
+  name: SetupCondition(Interactable)
+  nameWithType: Interactable.InteractionCondition.SetupCondition(Interactable)
+  fullName: Interactable.InteractionCondition.SetupCondition(Interactable)
+  spec.csharp:
+  - uid: Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+    name: SetupCondition
+  - name: (
+  - uid: Global.Interactable
+    name: Interactable
+  - name: )
+  spec.vb:
+  - uid: Global.Interactable.InteractionCondition.SetupCondition(Interactable)
+    name: SetupCondition
+  - name: (
+  - uid: Global.Interactable
+    name: Interactable
+  - name: )
+- uid: Global.TriggerInteractionCondition.SetupCondition*
+  commentId: Overload:Global.TriggerInteractionCondition.SetupCondition
+  name: SetupCondition
+  nameWithType: TriggerInteractionCondition.SetupCondition
+  fullName: TriggerInteractionCondition.SetupCondition
+- uid: Global.Interactable
+  commentId: T:Global.Interactable
+  name: Interactable
+  nameWithType: Interactable
+  fullName: Interactable
+- uid: Global.TriggerInteractionCondition.OnTriggerEnter*
+  commentId: Overload:Global.TriggerInteractionCondition.OnTriggerEnter
+  name: OnTriggerEnter
+  nameWithType: TriggerInteractionCondition.OnTriggerEnter
+  fullName: TriggerInteractionCondition.OnTriggerEnter
+- uid: Global.IntActor
+  commentId: T:Global.IntActor
+  name: IntActor
+  nameWithType: IntActor
+  fullName: IntActor
+- uid: Global.TriggerInteractionCondition.OnTriggerExit*
+  commentId: Overload:Global.TriggerInteractionCondition.OnTriggerExit
+  name: OnTriggerExit
+  nameWithType: TriggerInteractionCondition.OnTriggerExit
+  fullName: TriggerInteractionCondition.OnTriggerExit

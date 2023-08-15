@@ -1,0 +1,435 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ToastController
+  commentId: T:Global.ToastController
+  id: ToastController
+  parent: Global
+  children:
+  - Global.ToastController.background
+  - Global.ToastController.displayTime
+  - Global.ToastController.Hide
+  - Global.ToastController.Instance
+  - Global.ToastController.padding
+  - Global.ToastController.ShowTip(System.String)
+  - Global.ToastController.tipText
+  langs:
+  - csharp
+  - vb
+  name: ToastController
+  nameWithType: ToastController
+  fullName: ToastController
+  type: Class
+  source:
+    remote:
+      path: Assets/ToastController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ToastController
+    path: ../Assets/ToastController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class ToastController : MonoBehaviour'
+    content.vb: Public Class ToastController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ToastController.Instance
+  commentId: P:Global.ToastController.Instance
+  id: Instance
+  parent: Global.ToastController
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ToastController.Instance
+  fullName: ToastController.Instance
+  type: Property
+  source:
+    remote:
+      path: Assets/ToastController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Instance
+    path: ../Assets/ToastController.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static ToastController Instance { get; }
+    parameters: []
+    return:
+      type: Global.ToastController
+    content.vb: Public Shared Property Instance As ToastController
+  overload: Global.ToastController.Instance*
+- uid: Global.ToastController.tipText
+  commentId: F:Global.ToastController.tipText
+  id: tipText
+  parent: Global.ToastController
+  langs:
+  - csharp
+  - vb
+  name: tipText
+  nameWithType: ToastController.tipText
+  fullName: ToastController.tipText
+  type: Field
+  source:
+    remote:
+      path: Assets/ToastController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: tipText
+    path: ../Assets/ToastController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TextMeshProUGUI tipText
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public tipText As TextMeshProUGUI
+- uid: Global.ToastController.background
+  commentId: F:Global.ToastController.background
+  id: background
+  parent: Global.ToastController
+  langs:
+  - csharp
+  - vb
+  name: background
+  nameWithType: ToastController.background
+  fullName: ToastController.background
+  type: Field
+  source:
+    remote:
+      path: Assets/ToastController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: background
+    path: ../Assets/ToastController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Image background
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public background As Image
+- uid: Global.ToastController.padding
+  commentId: F:Global.ToastController.padding
+  id: padding
+  parent: Global.ToastController
+  langs:
+  - csharp
+  - vb
+  name: padding
+  nameWithType: ToastController.padding
+  fullName: ToastController.padding
+  type: Field
+  source:
+    remote:
+      path: Assets/ToastController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: padding
+    path: ../Assets/ToastController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 padding
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public padding As Vector2
+- uid: Global.ToastController.displayTime
+  commentId: F:Global.ToastController.displayTime
+  id: displayTime
+  parent: Global.ToastController
+  langs:
+  - csharp
+  - vb
+  name: displayTime
+  nameWithType: ToastController.displayTime
+  fullName: ToastController.displayTime
+  type: Field
+  source:
+    remote:
+      path: Assets/ToastController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: displayTime
+    path: ../Assets/ToastController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float displayTime
+    return:
+      type: System.Single
+    content.vb: Public displayTime As Single
+- uid: Global.ToastController.ShowTip(System.String)
+  commentId: M:Global.ToastController.ShowTip(System.String)
+  id: ShowTip(System.String)
+  parent: Global.ToastController
+  langs:
+  - csharp
+  - vb
+  name: ShowTip(string)
+  nameWithType: ToastController.ShowTip(string)
+  fullName: ToastController.ShowTip(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/ToastController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ShowTip
+    path: ../Assets/ToastController.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ShowTip(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub ShowTip(message As String)
+  overload: Global.ToastController.ShowTip*
+  nameWithType.vb: ToastController.ShowTip(String)
+  fullName.vb: ToastController.ShowTip(String)
+  name.vb: ShowTip(String)
+- uid: Global.ToastController.Hide
+  commentId: M:Global.ToastController.Hide
+  id: Hide
+  parent: Global.ToastController
+  langs:
+  - csharp
+  - vb
+  name: Hide()
+  nameWithType: ToastController.Hide()
+  fullName: ToastController.Hide()
+  type: Method
+  source:
+    remote:
+      path: Assets/ToastController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Hide
+    path: ../Assets/ToastController.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Hide()
+    content.vb: Public Sub Hide()
+  overload: Global.ToastController.Hide*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ToastController.Instance*
+  commentId: Overload:Global.ToastController.Instance
+  name: Instance
+  nameWithType: ToastController.Instance
+  fullName: ToastController.Instance
+- uid: Global.ToastController
+  commentId: T:Global.ToastController
+  name: ToastController
+  nameWithType: ToastController
+  fullName: ToastController
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  isExternal: true
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.ToastController.ShowTip*
+  commentId: Overload:Global.ToastController.ShowTip
+  name: ShowTip
+  nameWithType: ToastController.ShowTip
+  fullName: ToastController.ShowTip
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.ToastController.Hide*
+  commentId: Overload:Global.ToastController.Hide
+  name: Hide
+  nameWithType: ToastController.Hide
+  fullName: ToastController.Hide

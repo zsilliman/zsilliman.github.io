@@ -1,0 +1,291 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MultiEaseMovement.EaseEndpoint
+  commentId: T:Global.MultiEaseMovement.EaseEndpoint
+  id: MultiEaseMovement.EaseEndpoint
+  parent: Global
+  children:
+  - Global.MultiEaseMovement.EaseEndpoint.Duration
+  - Global.MultiEaseMovement.EaseEndpoint.Freeze
+  - Global.MultiEaseMovement.EaseEndpoint.Function
+  - Global.MultiEaseMovement.EaseEndpoint.Radius
+  langs:
+  - csharp
+  - vb
+  name: MultiEaseMovement.EaseEndpoint
+  nameWithType: MultiEaseMovement.EaseEndpoint
+  fullName: MultiEaseMovement.EaseEndpoint
+  type: Struct
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseEndpoint
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct MultiEaseMovement.EaseEndpoint
+    content.vb: >-
+      <Serializable>
+
+      Public Structure MultiEaseMovement.EaseEndpoint
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.MultiEaseMovement.EaseEndpoint.Freeze
+  commentId: F:Global.MultiEaseMovement.EaseEndpoint.Freeze
+  id: Freeze
+  parent: Global.MultiEaseMovement.EaseEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Freeze
+  nameWithType: MultiEaseMovement.EaseEndpoint.Freeze
+  fullName: MultiEaseMovement.EaseEndpoint.Freeze
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Freeze
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool Freeze
+    return:
+      type: System.Boolean
+    content.vb: Public Freeze As Boolean
+- uid: Global.MultiEaseMovement.EaseEndpoint.Radius
+  commentId: F:Global.MultiEaseMovement.EaseEndpoint.Radius
+  id: Radius
+  parent: Global.MultiEaseMovement.EaseEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: MultiEaseMovement.EaseEndpoint.Radius
+  fullName: MultiEaseMovement.EaseEndpoint.Radius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Radius
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("Freeze", 0)]
+
+      public int Radius
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ConditionalShow("Freeze", 0)>
+
+      Public Radius As Integer
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Freeze
+    - type: System.Int32
+      value: 0
+- uid: Global.MultiEaseMovement.EaseEndpoint.Function
+  commentId: F:Global.MultiEaseMovement.EaseEndpoint.Function
+  id: Function
+  parent: Global.MultiEaseMovement.EaseEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Function
+  nameWithType: MultiEaseMovement.EaseEndpoint.Function
+  fullName: MultiEaseMovement.EaseEndpoint.Function
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Function
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("Freeze", 0)]
+
+      public EasingFunction.Ease Function
+    return:
+      type: Global.EasingFunction.Ease
+    content.vb: >-
+      <ConditionalShow("Freeze", 0)>
+
+      Public [Function] As EasingFunction.Ease
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Freeze
+    - type: System.Int32
+      value: 0
+- uid: Global.MultiEaseMovement.EaseEndpoint.Duration
+  commentId: F:Global.MultiEaseMovement.EaseEndpoint.Duration
+  id: Duration
+  parent: Global.MultiEaseMovement.EaseEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: MultiEaseMovement.EaseEndpoint.Duration
+  fullName: MultiEaseMovement.EaseEndpoint.Duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Duration
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/MultiEaseMovement.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Duration
+    return:
+      type: System.Single
+    content.vb: Public Duration As Single
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.EasingFunction.Ease
+  commentId: T:Global.EasingFunction.Ease
+  name: EasingFunction.Ease
+  nameWithType: EasingFunction.Ease
+  fullName: EasingFunction.Ease
+  spec.csharp:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+  spec.vb:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

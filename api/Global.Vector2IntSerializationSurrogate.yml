@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Vector2IntSerializationSurrogate
+  commentId: T:Global.Vector2IntSerializationSurrogate
+  id: Vector2IntSerializationSurrogate
+  parent: Global
+  children:
+  - Global.Vector2IntSerializationSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - Global.Vector2IntSerializationSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)
+  langs:
+  - csharp
+  - vb
+  name: Vector2IntSerializationSurrogate
+  nameWithType: Vector2IntSerializationSurrogate
+  fullName: Vector2IntSerializationSurrogate
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationSurrogates/Vector2IntSerializationSurrogate.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Vector2IntSerializationSurrogate
+    path: ../Assets/Objects & Components/SaveGame/SerializationSurrogates/Vector2IntSerializationSurrogate.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class Vector2IntSerializationSurrogate
+    content.vb: Public Class Vector2IntSerializationSurrogate
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.Vector2IntSerializationSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Global.Vector2IntSerializationSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Global.Vector2IntSerializationSurrogate
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(object, SerializationInfo, StreamingContext)
+  nameWithType: Vector2IntSerializationSurrogate.GetObjectData(object, SerializationInfo, StreamingContext)
+  fullName: Vector2IntSerializationSurrogate.GetObjectData(object, System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationSurrogates/Vector2IntSerializationSurrogate.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetObjectData
+    path: ../Assets/Objects & Components/SaveGame/SerializationSurrogates/Vector2IntSerializationSurrogate.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void GetObjectData(object obj, SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+    content.vb: Public Sub GetObjectData(obj As Object, info As SerializationInfo, context As StreamingContext)
+  overload: Global.Vector2IntSerializationSurrogate.GetObjectData*
+  nameWithType.vb: Vector2IntSerializationSurrogate.GetObjectData(Object, SerializationInfo, StreamingContext)
+  fullName.vb: Vector2IntSerializationSurrogate.GetObjectData(Object, System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: GetObjectData(Object, SerializationInfo, StreamingContext)
+- uid: Global.Vector2IntSerializationSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)
+  commentId: M:Global.Vector2IntSerializationSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)
+  id: SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)
+  parent: Global.Vector2IntSerializationSurrogate
+  langs:
+  - csharp
+  - vb
+  name: SetObjectData(object, SerializationInfo, StreamingContext, ISurrogateSelector)
+  nameWithType: Vector2IntSerializationSurrogate.SetObjectData(object, SerializationInfo, StreamingContext, ISurrogateSelector)
+  fullName: Vector2IntSerializationSurrogate.SetObjectData(object, System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext, System.Runtime.Serialization.ISurrogateSelector)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/SaveGame/SerializationSurrogates/Vector2IntSerializationSurrogate.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetObjectData
+    path: ../Assets/Objects & Components/SaveGame/SerializationSurrogates/Vector2IntSerializationSurrogate.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public object SetObjectData(object obj, SerializationInfo info, StreamingContext context, ISurrogateSelector selector)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+    - id: selector
+      type: System.Runtime.Serialization.ISurrogateSelector
+    return:
+      type: System.Object
+    content.vb: Public Function SetObjectData(obj As Object, info As SerializationInfo, context As StreamingContext, selector As ISurrogateSelector) As Object
+  overload: Global.Vector2IntSerializationSurrogate.SetObjectData*
+  nameWithType.vb: Vector2IntSerializationSurrogate.SetObjectData(Object, SerializationInfo, StreamingContext, ISurrogateSelector)
+  fullName.vb: Vector2IntSerializationSurrogate.SetObjectData(Object, System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext, System.Runtime.Serialization.ISurrogateSelector)
+  name.vb: SetObjectData(Object, SerializationInfo, StreamingContext, ISurrogateSelector)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Vector2IntSerializationSurrogate.GetObjectData*
+  commentId: Overload:Global.Vector2IntSerializationSurrogate.GetObjectData
+  name: GetObjectData
+  nameWithType: Vector2IntSerializationSurrogate.GetObjectData
+  fullName: Vector2IntSerializationSurrogate.GetObjectData
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+- uid: Global.Vector2IntSerializationSurrogate.SetObjectData*
+  commentId: Overload:Global.Vector2IntSerializationSurrogate.SetObjectData
+  name: SetObjectData
+  nameWithType: Vector2IntSerializationSurrogate.SetObjectData
+  fullName: Vector2IntSerializationSurrogate.SetObjectData
+- uid: System.Runtime.Serialization.ISurrogateSelector
+  commentId: T:System.Runtime.Serialization.ISurrogateSelector
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: ISurrogateSelector
+  nameWithType: ISurrogateSelector
+  fullName: System.Runtime.Serialization.ISurrogateSelector

@@ -1,0 +1,328 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralSectionGenerator.EntranceProps
+  commentId: T:Global.ProceduralSectionGenerator.EntranceProps
+  id: ProceduralSectionGenerator.EntranceProps
+  parent: Global
+  children:
+  - Global.ProceduralSectionGenerator.EntranceProps.EntranceAlignment
+  - Global.ProceduralSectionGenerator.EntranceProps.EntranceHeightRange
+  - Global.ProceduralSectionGenerator.EntranceProps.EntranceSide
+  - Global.ProceduralSectionGenerator.EntranceProps.MakeCopy
+  langs:
+  - csharp
+  - vb
+  name: ProceduralSectionGenerator.EntranceProps
+  nameWithType: ProceduralSectionGenerator.EntranceProps
+  fullName: ProceduralSectionGenerator.EntranceProps
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EntranceProps
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class ProceduralSectionGenerator.EntranceProps
+    content.vb: >-
+      <Serializable>
+
+      Public Class ProceduralSectionGenerator.EntranceProps
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.ProceduralSectionGenerator.EntranceProps.EntranceAlignment
+  commentId: F:Global.ProceduralSectionGenerator.EntranceProps.EntranceAlignment
+  id: EntranceAlignment
+  parent: Global.ProceduralSectionGenerator.EntranceProps
+  langs:
+  - csharp
+  - vb
+  name: EntranceAlignment
+  nameWithType: ProceduralSectionGenerator.EntranceProps.EntranceAlignment
+  fullName: ProceduralSectionGenerator.EntranceProps.EntranceAlignment
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EntranceAlignment
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public ProceduralSectionGenerator.EntranceAlignmentRule EntranceAlignment
+    return:
+      type: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+    content.vb: >-
+      <SerializeField>
+
+      Public EntranceAlignment As ProceduralSectionGenerator.EntranceAlignmentRule
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.ProceduralSectionGenerator.EntranceProps.EntranceHeightRange
+  commentId: F:Global.ProceduralSectionGenerator.EntranceProps.EntranceHeightRange
+  id: EntranceHeightRange
+  parent: Global.ProceduralSectionGenerator.EntranceProps
+  langs:
+  - csharp
+  - vb
+  name: EntranceHeightRange
+  nameWithType: ProceduralSectionGenerator.EntranceProps.EntranceHeightRange
+  fullName: ProceduralSectionGenerator.EntranceProps.EntranceHeightRange
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EntranceHeightRange
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public Vector2Int EntranceHeightRange
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <SerializeField>
+
+      Public EntranceHeightRange As Vector2Int
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.ProceduralSectionGenerator.EntranceProps.EntranceSide
+  commentId: F:Global.ProceduralSectionGenerator.EntranceProps.EntranceSide
+  id: EntranceSide
+  parent: Global.ProceduralSectionGenerator.EntranceProps
+  langs:
+  - csharp
+  - vb
+  name: EntranceSide
+  nameWithType: ProceduralSectionGenerator.EntranceProps.EntranceSide
+  fullName: ProceduralSectionGenerator.EntranceProps.EntranceSide
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EntranceSide
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public IntMath.Direction EntranceSide
+    return:
+      type: Global.IntMath.Direction
+    content.vb: >-
+      <SerializeField>
+
+      Public EntranceSide As IntMath.Direction
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: Global.ProceduralSectionGenerator.EntranceProps.MakeCopy
+  commentId: M:Global.ProceduralSectionGenerator.EntranceProps.MakeCopy
+  id: MakeCopy
+  parent: Global.ProceduralSectionGenerator.EntranceProps
+  langs:
+  - csharp
+  - vb
+  name: MakeCopy()
+  nameWithType: ProceduralSectionGenerator.EntranceProps.MakeCopy()
+  fullName: ProceduralSectionGenerator.EntranceProps.MakeCopy()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MakeCopy
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ProceduralSectionGenerator.EntranceProps MakeCopy()
+    return:
+      type: Global.ProceduralSectionGenerator.EntranceProps
+    content.vb: Public Function MakeCopy() As ProceduralSectionGenerator.EntranceProps
+  overload: Global.ProceduralSectionGenerator.EntranceProps.MakeCopy*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  commentId: T:Global.ProceduralSectionGenerator.EntranceAlignmentRule
+  name: ProceduralSectionGenerator.EntranceAlignmentRule
+  nameWithType: ProceduralSectionGenerator.EntranceAlignmentRule
+  fullName: ProceduralSectionGenerator.EntranceAlignmentRule
+  spec.csharp:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+    name: EntranceAlignmentRule
+  spec.vb:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.EntranceAlignmentRule
+    name: EntranceAlignmentRule
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.IntMath.Direction
+  commentId: T:Global.IntMath.Direction
+  name: IntMath.Direction
+  nameWithType: IntMath.Direction
+  fullName: IntMath.Direction
+  spec.csharp:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Direction
+    name: Direction
+  spec.vb:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Direction
+    name: Direction
+- uid: Global.ProceduralSectionGenerator.EntranceProps.MakeCopy*
+  commentId: Overload:Global.ProceduralSectionGenerator.EntranceProps.MakeCopy
+  name: MakeCopy
+  nameWithType: ProceduralSectionGenerator.EntranceProps.MakeCopy
+  fullName: ProceduralSectionGenerator.EntranceProps.MakeCopy
+- uid: Global.ProceduralSectionGenerator.EntranceProps
+  commentId: T:Global.ProceduralSectionGenerator.EntranceProps
+  name: ProceduralSectionGenerator.EntranceProps
+  nameWithType: ProceduralSectionGenerator.EntranceProps
+  fullName: ProceduralSectionGenerator.EntranceProps
+  spec.csharp:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.EntranceProps
+    name: EntranceProps
+  spec.vb:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.EntranceProps
+    name: EntranceProps

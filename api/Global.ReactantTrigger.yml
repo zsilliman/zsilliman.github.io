@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ReactantTrigger
+  commentId: T:Global.ReactantTrigger
+  id: ReactantTrigger
+  parent: Global
+  children:
+  - Global.ReactantTrigger.ContainsActor
+  - Global.ReactantTrigger.OnReact
+  - Global.ReactantTrigger.reactant
+  - Global.ReactantTrigger.TriggerCondition
+  langs:
+  - csharp
+  - vb
+  name: ReactantTrigger
+  nameWithType: ReactantTrigger
+  fullName: ReactantTrigger
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ReactantTrigger
+    path: ../Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nYou must add a IntTrigger to this gameobject that it can reference\nThere is no OnExit Functionality. Only onstart\n"
+  example: []
+  syntax:
+    content: 'public class ReactantTrigger : NarrativeTrigger'
+    content.vb: Public Class ReactantTrigger Inherits NarrativeTrigger
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.NarrativeTrigger
+  inheritedMembers:
+  - Global.NarrativeTrigger.Name
+  - Global.NarrativeTrigger.PollEnabled
+  - Global.NarrativeTrigger.TriggerOnStart
+  - Global.NarrativeTrigger.TriggerOnEnd
+  - Global.NarrativeTrigger.StartActions
+  - Global.NarrativeTrigger.EndActions
+  - Global.NarrativeTrigger.LastFrameCondition
+  - Global.NarrativeTrigger.TriggerStartCount
+  - Global.NarrativeTrigger.TriggerEndCount
+  - Global.NarrativeTrigger.AddTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  - Global.NarrativeTrigger.AddTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  - Global.NarrativeTrigger.RemoveTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  - Global.NarrativeTrigger.RemoveTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  - Global.NarrativeTrigger.InvokeTriggerStart
+  - Global.NarrativeTrigger.InvokeTriggerEnd
+  - Global.NarrativeTrigger.Poll
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ReactantTrigger.reactant
+  commentId: F:Global.ReactantTrigger.reactant
+  id: reactant
+  parent: Global.ReactantTrigger
+  langs:
+  - csharp
+  - vb
+  name: reactant
+  nameWithType: ReactantTrigger.reactant
+  fullName: ReactantTrigger.reactant
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: reactant
+    path: ../Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Interactable reactant
+    return:
+      type: Global.Interactable
+    content.vb: Protected reactant As Interactable
+- uid: Global.ReactantTrigger.ContainsActor
+  commentId: F:Global.ReactantTrigger.ContainsActor
+  id: ContainsActor
+  parent: Global.ReactantTrigger
+  langs:
+  - csharp
+  - vb
+  name: ContainsActor
+  nameWithType: ReactantTrigger.ContainsActor
+  fullName: ReactantTrigger.ContainsActor
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ContainsActor
+    path: ../Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool ContainsActor
+    return:
+      type: System.Boolean
+    content.vb: Protected ContainsActor As Boolean
+- uid: Global.ReactantTrigger.OnReact
+  commentId: M:Global.ReactantTrigger.OnReact
+  id: OnReact
+  parent: Global.ReactantTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnReact()
+  nameWithType: ReactantTrigger.OnReact()
+  fullName: ReactantTrigger.OnReact()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnReact
+    path: ../Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnReact()
+    content.vb: Public Sub OnReact()
+  overload: Global.ReactantTrigger.OnReact*
+- uid: Global.ReactantTrigger.TriggerCondition
+  commentId: M:Global.ReactantTrigger.TriggerCondition
+  id: TriggerCondition
+  parent: Global.ReactantTrigger
+  langs:
+  - csharp
+  - vb
+  name: TriggerCondition()
+  nameWithType: ReactantTrigger.TriggerCondition()
+  fullName: ReactantTrigger.TriggerCondition()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerCondition
+    path: ../Assets/Objects & Components/UI/Ingame/Triggers/ReactantTrigger.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool TriggerCondition()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function TriggerCondition() As Boolean
+  overridden: Global.NarrativeTrigger.TriggerCondition
+  overload: Global.ReactantTrigger.TriggerCondition*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.NarrativeTrigger
+  commentId: T:Global.NarrativeTrigger
+  name: NarrativeTrigger
+  nameWithType: NarrativeTrigger
+  fullName: NarrativeTrigger
+- uid: Global.NarrativeTrigger.Name
+  commentId: F:Global.NarrativeTrigger.Name
+  parent: Global.NarrativeTrigger
+  name: Name
+  nameWithType: NarrativeTrigger.Name
+  fullName: NarrativeTrigger.Name
+- uid: Global.NarrativeTrigger.PollEnabled
+  commentId: P:Global.NarrativeTrigger.PollEnabled
+  parent: Global.NarrativeTrigger
+  name: PollEnabled
+  nameWithType: NarrativeTrigger.PollEnabled
+  fullName: NarrativeTrigger.PollEnabled
+- uid: Global.NarrativeTrigger.TriggerOnStart
+  commentId: F:Global.NarrativeTrigger.TriggerOnStart
+  parent: Global.NarrativeTrigger
+  name: TriggerOnStart
+  nameWithType: NarrativeTrigger.TriggerOnStart
+  fullName: NarrativeTrigger.TriggerOnStart
+- uid: Global.NarrativeTrigger.TriggerOnEnd
+  commentId: F:Global.NarrativeTrigger.TriggerOnEnd
+  parent: Global.NarrativeTrigger
+  name: TriggerOnEnd
+  nameWithType: NarrativeTrigger.TriggerOnEnd
+  fullName: NarrativeTrigger.TriggerOnEnd
+- uid: Global.NarrativeTrigger.StartActions
+  commentId: F:Global.NarrativeTrigger.StartActions
+  parent: Global.NarrativeTrigger
+  name: StartActions
+  nameWithType: NarrativeTrigger.StartActions
+  fullName: NarrativeTrigger.StartActions
+- uid: Global.NarrativeTrigger.EndActions
+  commentId: F:Global.NarrativeTrigger.EndActions
+  parent: Global.NarrativeTrigger
+  name: EndActions
+  nameWithType: NarrativeTrigger.EndActions
+  fullName: NarrativeTrigger.EndActions
+- uid: Global.NarrativeTrigger.LastFrameCondition
+  commentId: F:Global.NarrativeTrigger.LastFrameCondition
+  parent: Global.NarrativeTrigger
+  name: LastFrameCondition
+  nameWithType: NarrativeTrigger.LastFrameCondition
+  fullName: NarrativeTrigger.LastFrameCondition
+- uid: Global.NarrativeTrigger.TriggerStartCount
+  commentId: F:Global.NarrativeTrigger.TriggerStartCount
+  parent: Global.NarrativeTrigger
+  name: TriggerStartCount
+  nameWithType: NarrativeTrigger.TriggerStartCount
+  fullName: NarrativeTrigger.TriggerStartCount
+- uid: Global.NarrativeTrigger.TriggerEndCount
+  commentId: F:Global.NarrativeTrigger.TriggerEndCount
+  parent: Global.NarrativeTrigger
+  name: TriggerEndCount
+  nameWithType: NarrativeTrigger.TriggerEndCount
+  fullName: NarrativeTrigger.TriggerEndCount
+- uid: Global.NarrativeTrigger.AddTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  commentId: M:Global.NarrativeTrigger.AddTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  parent: Global.NarrativeTrigger
+  name: AddTriggerStartAction(TriggerDelegate)
+  nameWithType: NarrativeTrigger.AddTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  fullName: NarrativeTrigger.AddTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  spec.csharp:
+  - uid: Global.NarrativeTrigger.AddTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+    name: AddTriggerStartAction
+  - name: (
+  - uid: Global.NarrativeTrigger.TriggerDelegate
+    name: TriggerDelegate
+  - name: )
+  spec.vb:
+  - uid: Global.NarrativeTrigger.AddTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+    name: AddTriggerStartAction
+  - name: (
+  - uid: Global.NarrativeTrigger.TriggerDelegate
+    name: TriggerDelegate
+  - name: )
+- uid: Global.NarrativeTrigger.AddTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  commentId: M:Global.NarrativeTrigger.AddTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  parent: Global.NarrativeTrigger
+  name: AddTriggerEndAction(TriggerDelegate)
+  nameWithType: NarrativeTrigger.AddTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  fullName: NarrativeTrigger.AddTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  spec.csharp:
+  - uid: Global.NarrativeTrigger.AddTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+    name: AddTriggerEndAction
+  - name: (
+  - uid: Global.NarrativeTrigger.TriggerDelegate
+    name: TriggerDelegate
+  - name: )
+  spec.vb:
+  - uid: Global.NarrativeTrigger.AddTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+    name: AddTriggerEndAction
+  - name: (
+  - uid: Global.NarrativeTrigger.TriggerDelegate
+    name: TriggerDelegate
+  - name: )
+- uid: Global.NarrativeTrigger.RemoveTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  commentId: M:Global.NarrativeTrigger.RemoveTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  parent: Global.NarrativeTrigger
+  name: RemoveTriggerStartAction(TriggerDelegate)
+  nameWithType: NarrativeTrigger.RemoveTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  fullName: NarrativeTrigger.RemoveTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+  spec.csharp:
+  - uid: Global.NarrativeTrigger.RemoveTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+    name: RemoveTriggerStartAction
+  - name: (
+  - uid: Global.NarrativeTrigger.TriggerDelegate
+    name: TriggerDelegate
+  - name: )
+  spec.vb:
+  - uid: Global.NarrativeTrigger.RemoveTriggerStartAction(NarrativeTrigger.TriggerDelegate)
+    name: RemoveTriggerStartAction
+  - name: (
+  - uid: Global.NarrativeTrigger.TriggerDelegate
+    name: TriggerDelegate
+  - name: )
+- uid: Global.NarrativeTrigger.RemoveTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  commentId: M:Global.NarrativeTrigger.RemoveTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  parent: Global.NarrativeTrigger
+  name: RemoveTriggerEndAction(TriggerDelegate)
+  nameWithType: NarrativeTrigger.RemoveTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  fullName: NarrativeTrigger.RemoveTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+  spec.csharp:
+  - uid: Global.NarrativeTrigger.RemoveTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+    name: RemoveTriggerEndAction
+  - name: (
+  - uid: Global.NarrativeTrigger.TriggerDelegate
+    name: TriggerDelegate
+  - name: )
+  spec.vb:
+  - uid: Global.NarrativeTrigger.RemoveTriggerEndAction(NarrativeTrigger.TriggerDelegate)
+    name: RemoveTriggerEndAction
+  - name: (
+  - uid: Global.NarrativeTrigger.TriggerDelegate
+    name: TriggerDelegate
+  - name: )
+- uid: Global.NarrativeTrigger.InvokeTriggerStart
+  commentId: M:Global.NarrativeTrigger.InvokeTriggerStart
+  parent: Global.NarrativeTrigger
+  name: InvokeTriggerStart()
+  nameWithType: NarrativeTrigger.InvokeTriggerStart()
+  fullName: NarrativeTrigger.InvokeTriggerStart()
+  spec.csharp:
+  - uid: Global.NarrativeTrigger.InvokeTriggerStart
+    name: InvokeTriggerStart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NarrativeTrigger.InvokeTriggerStart
+    name: InvokeTriggerStart
+  - name: (
+  - name: )
+- uid: Global.NarrativeTrigger.InvokeTriggerEnd
+  commentId: M:Global.NarrativeTrigger.InvokeTriggerEnd
+  parent: Global.NarrativeTrigger
+  name: InvokeTriggerEnd()
+  nameWithType: NarrativeTrigger.InvokeTriggerEnd()
+  fullName: NarrativeTrigger.InvokeTriggerEnd()
+  spec.csharp:
+  - uid: Global.NarrativeTrigger.InvokeTriggerEnd
+    name: InvokeTriggerEnd
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NarrativeTrigger.InvokeTriggerEnd
+    name: InvokeTriggerEnd
+  - name: (
+  - name: )
+- uid: Global.NarrativeTrigger.Poll
+  commentId: M:Global.NarrativeTrigger.Poll
+  parent: Global.NarrativeTrigger
+  name: Poll()
+  nameWithType: NarrativeTrigger.Poll()
+  fullName: NarrativeTrigger.Poll()
+  spec.csharp:
+  - uid: Global.NarrativeTrigger.Poll
+    name: Poll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NarrativeTrigger.Poll
+    name: Poll
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Interactable
+  commentId: T:Global.Interactable
+  name: Interactable
+  nameWithType: Interactable
+  fullName: Interactable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.ReactantTrigger.OnReact*
+  commentId: Overload:Global.ReactantTrigger.OnReact
+  name: OnReact
+  nameWithType: ReactantTrigger.OnReact
+  fullName: ReactantTrigger.OnReact
+- uid: Global.NarrativeTrigger.TriggerCondition
+  commentId: M:Global.NarrativeTrigger.TriggerCondition
+  parent: Global.NarrativeTrigger
+  name: TriggerCondition()
+  nameWithType: NarrativeTrigger.TriggerCondition()
+  fullName: NarrativeTrigger.TriggerCondition()
+  spec.csharp:
+  - uid: Global.NarrativeTrigger.TriggerCondition
+    name: TriggerCondition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NarrativeTrigger.TriggerCondition
+    name: TriggerCondition
+  - name: (
+  - name: )
+- uid: Global.ReactantTrigger.TriggerCondition*
+  commentId: Overload:Global.ReactantTrigger.TriggerCondition
+  name: TriggerCondition
+  nameWithType: ReactantTrigger.TriggerCondition
+  fullName: ReactantTrigger.TriggerCondition

@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Aura.AuraDischargeOption
+  commentId: T:Global.Aura.AuraDischargeOption
+  id: Aura.AuraDischargeOption
+  parent: Global
+  children:
+  - Global.Aura.AuraDischargeOption.DischargeMultiple
+  - Global.Aura.AuraDischargeOption.DischargeOnce
+  langs:
+  - csharp
+  - vb
+  name: Aura.AuraDischargeOption
+  nameWithType: Aura.AuraDischargeOption
+  fullName: Aura.AuraDischargeOption
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/Aura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraDischargeOption
+    path: ../Assets/Objects & Components/Entities/Auras/Aura.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum Aura.AuraDischargeOption
+    content.vb: Public Enum Aura.AuraDischargeOption
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.Aura.AuraDischargeOption.DischargeOnce
+  commentId: F:Global.Aura.AuraDischargeOption.DischargeOnce
+  id: DischargeOnce
+  parent: Global.Aura.AuraDischargeOption
+  langs:
+  - csharp
+  - vb
+  name: DischargeOnce
+  nameWithType: Aura.AuraDischargeOption.DischargeOnce
+  fullName: Aura.AuraDischargeOption.DischargeOnce
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/Aura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DischargeOnce
+    path: ../Assets/Objects & Components/Entities/Auras/Aura.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: DischargeOnce = 0
+    return:
+      type: Global.Aura.AuraDischargeOption
+- uid: Global.Aura.AuraDischargeOption.DischargeMultiple
+  commentId: F:Global.Aura.AuraDischargeOption.DischargeMultiple
+  id: DischargeMultiple
+  parent: Global.Aura.AuraDischargeOption
+  langs:
+  - csharp
+  - vb
+  name: DischargeMultiple
+  nameWithType: Aura.AuraDischargeOption.DischargeMultiple
+  fullName: Aura.AuraDischargeOption.DischargeMultiple
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/Aura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DischargeMultiple
+    path: ../Assets/Objects & Components/Entities/Auras/Aura.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: DischargeMultiple = 1
+    return:
+      type: Global.Aura.AuraDischargeOption
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.Aura.AuraDischargeOption
+  commentId: T:Global.Aura.AuraDischargeOption
+  name: Aura.AuraDischargeOption
+  nameWithType: Aura.AuraDischargeOption
+  fullName: Aura.AuraDischargeOption
+  spec.csharp:
+  - uid: Global.Aura
+    name: Aura
+  - name: .
+  - uid: Global.Aura.AuraDischargeOption
+    name: AuraDischargeOption
+  spec.vb:
+  - uid: Global.Aura
+    name: Aura
+  - name: .
+  - uid: Global.Aura.AuraDischargeOption
+    name: AuraDischargeOption

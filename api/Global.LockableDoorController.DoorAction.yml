@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LockableDoorController.DoorAction
+  commentId: T:Global.LockableDoorController.DoorAction
+  id: LockableDoorController.DoorAction
+  parent: Global
+  children:
+  - Global.LockableDoorController.DoorAction.Close
+  - Global.LockableDoorController.DoorAction.Open
+  langs:
+  - csharp
+  - vb
+  name: LockableDoorController.DoorAction
+  nameWithType: LockableDoorController.DoorAction
+  fullName: LockableDoorController.DoorAction
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DoorAction
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum LockableDoorController.DoorAction
+    content.vb: Public Enum LockableDoorController.DoorAction
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LockableDoorController.DoorAction.Open
+  commentId: F:Global.LockableDoorController.DoorAction.Open
+  id: Open
+  parent: Global.LockableDoorController.DoorAction
+  langs:
+  - csharp
+  - vb
+  name: Open
+  nameWithType: LockableDoorController.DoorAction.Open
+  fullName: LockableDoorController.DoorAction.Open
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Open
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Open = 0
+    return:
+      type: Global.LockableDoorController.DoorAction
+- uid: Global.LockableDoorController.DoorAction.Close
+  commentId: F:Global.LockableDoorController.DoorAction.Close
+  id: Close
+  parent: Global.LockableDoorController.DoorAction
+  langs:
+  - csharp
+  - vb
+  name: Close
+  nameWithType: LockableDoorController.DoorAction.Close
+  fullName: LockableDoorController.DoorAction.Close
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Close
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/LockableDoorController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Close = 1
+    return:
+      type: Global.LockableDoorController.DoorAction
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.LockableDoorController.DoorAction
+  commentId: T:Global.LockableDoorController.DoorAction
+  name: LockableDoorController.DoorAction
+  nameWithType: LockableDoorController.DoorAction
+  fullName: LockableDoorController.DoorAction
+  spec.csharp:
+  - uid: Global.LockableDoorController
+    name: LockableDoorController
+  - name: .
+  - uid: Global.LockableDoorController.DoorAction
+    name: DoorAction
+  spec.vb:
+  - uid: Global.LockableDoorController
+    name: LockableDoorController
+  - name: .
+  - uid: Global.LockableDoorController.DoorAction
+    name: DoorAction

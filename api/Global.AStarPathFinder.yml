@@ -1,0 +1,762 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AStarPathFinder
+  commentId: T:Global.AStarPathFinder
+  id: AStarPathFinder
+  parent: Global
+  children:
+  - Global.AStarPathFinder.BoundsSize
+  - Global.AStarPathFinder.DebugDraw
+  - Global.AStarPathFinder.DestIndex
+  - Global.AStarPathFinder.GetPath(System.Collections.Generic.Stack{UnityEngine.Vector2Int})
+  - Global.AStarPathFinder.hFunc
+  - Global.AStarPathFinder.Initialize(AStarPathFinder.BlockedFunc,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  - Global.AStarPathFinder.isUnBlocked
+  - Global.AStarPathFinder.IsValidIndex(UnityEngine.Vector2Int)
+  - Global.AStarPathFinder.IsWithinBounds(UnityEngine.Vector2Int)
+  - Global.AStarPathFinder.MaxBound
+  - Global.AStarPathFinder.MaxIterations
+  - Global.AStarPathFinder.MinBound
+  - Global.AStarPathFinder.SetDebugDrawFunction(AStarPathFinder.DebugDrawTile)
+  - Global.AStarPathFinder.SetHeuristicFunction(AStarPathFinder.Heuristic)
+  - Global.AStarPathFinder.SourceIndex
+  langs:
+  - csharp
+  - vb
+  name: AStarPathFinder
+  nameWithType: AStarPathFinder
+  fullName: AStarPathFinder
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AStarPathFinder
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class AStarPathFinder
+    content.vb: Public Class AStarPathFinder
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AStarPathFinder.isUnBlocked
+  commentId: F:Global.AStarPathFinder.isUnBlocked
+  id: isUnBlocked
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: isUnBlocked
+  nameWithType: AStarPathFinder.isUnBlocked
+  fullName: AStarPathFinder.isUnBlocked
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: isUnBlocked
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected AStarPathFinder.BlockedFunc isUnBlocked
+    return:
+      type: Global.AStarPathFinder.BlockedFunc
+    content.vb: Protected isUnBlocked As AStarPathFinder.BlockedFunc
+- uid: Global.AStarPathFinder.DebugDraw
+  commentId: F:Global.AStarPathFinder.DebugDraw
+  id: DebugDraw
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: DebugDraw
+  nameWithType: AStarPathFinder.DebugDraw
+  fullName: AStarPathFinder.DebugDraw
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugDraw
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected AStarPathFinder.DebugDrawTile DebugDraw
+    return:
+      type: Global.AStarPathFinder.DebugDrawTile
+    content.vb: Protected DebugDraw As AStarPathFinder.DebugDrawTile
+- uid: Global.AStarPathFinder.MinBound
+  commentId: F:Global.AStarPathFinder.MinBound
+  id: MinBound
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: MinBound
+  nameWithType: AStarPathFinder.MinBound
+  fullName: AStarPathFinder.MinBound
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MinBound
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Vector2Int MinBound
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Protected MinBound As Vector2Int
+- uid: Global.AStarPathFinder.MaxBound
+  commentId: F:Global.AStarPathFinder.MaxBound
+  id: MaxBound
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: MaxBound
+  nameWithType: AStarPathFinder.MaxBound
+  fullName: AStarPathFinder.MaxBound
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxBound
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Vector2Int MaxBound
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Protected MaxBound As Vector2Int
+- uid: Global.AStarPathFinder.SourceIndex
+  commentId: F:Global.AStarPathFinder.SourceIndex
+  id: SourceIndex
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: SourceIndex
+  nameWithType: AStarPathFinder.SourceIndex
+  fullName: AStarPathFinder.SourceIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SourceIndex
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Vector2Int SourceIndex
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Protected SourceIndex As Vector2Int
+- uid: Global.AStarPathFinder.DestIndex
+  commentId: F:Global.AStarPathFinder.DestIndex
+  id: DestIndex
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: DestIndex
+  nameWithType: AStarPathFinder.DestIndex
+  fullName: AStarPathFinder.DestIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DestIndex
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Vector2Int DestIndex
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Protected DestIndex As Vector2Int
+- uid: Global.AStarPathFinder.BoundsSize
+  commentId: F:Global.AStarPathFinder.BoundsSize
+  id: BoundsSize
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: BoundsSize
+  nameWithType: AStarPathFinder.BoundsSize
+  fullName: AStarPathFinder.BoundsSize
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundsSize
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Vector2Int BoundsSize
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Protected BoundsSize As Vector2Int
+- uid: Global.AStarPathFinder.MaxIterations
+  commentId: F:Global.AStarPathFinder.MaxIterations
+  id: MaxIterations
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: MaxIterations
+  nameWithType: AStarPathFinder.MaxIterations
+  fullName: AStarPathFinder.MaxIterations
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxIterations
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected int MaxIterations
+    return:
+      type: System.Int32
+    content.vb: Protected MaxIterations As Integer
+- uid: Global.AStarPathFinder.hFunc
+  commentId: F:Global.AStarPathFinder.hFunc
+  id: hFunc
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: hFunc
+  nameWithType: AStarPathFinder.hFunc
+  fullName: AStarPathFinder.hFunc
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: hFunc
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected AStarPathFinder.Heuristic hFunc
+    return:
+      type: Global.AStarPathFinder.Heuristic
+    content.vb: Protected hFunc As AStarPathFinder.Heuristic
+- uid: Global.AStarPathFinder.Initialize(AStarPathFinder.BlockedFunc,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  commentId: M:Global.AStarPathFinder.Initialize(AStarPathFinder.BlockedFunc,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  id: Initialize(AStarPathFinder.BlockedFunc,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: Initialize(BlockedFunc, Vector2Int, Vector2Int, Vector2Int, Vector2Int, int)
+  nameWithType: AStarPathFinder.Initialize(AStarPathFinder.BlockedFunc, Vector2Int, Vector2Int, Vector2Int, Vector2Int, int)
+  fullName: AStarPathFinder.Initialize(AStarPathFinder.BlockedFunc, UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Initialize
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Initialize(AStarPathFinder.BlockedFunc isUnBlocked, Vector2Int minBound, Vector2Int maxBound, Vector2Int source, Vector2Int dest, int MaxIterations = 200)
+    parameters:
+    - id: isUnBlocked
+      type: Global.AStarPathFinder.BlockedFunc
+    - id: minBound
+      type: UnityEngine.Vector2Int
+    - id: maxBound
+      type: UnityEngine.Vector2Int
+    - id: source
+      type: UnityEngine.Vector2Int
+    - id: dest
+      type: UnityEngine.Vector2Int
+    - id: MaxIterations
+      type: System.Int32
+    content.vb: Public Sub Initialize(isUnBlocked As AStarPathFinder.BlockedFunc, minBound As Vector2Int, maxBound As Vector2Int, source As Vector2Int, dest As Vector2Int, MaxIterations As Integer = 200)
+  overload: Global.AStarPathFinder.Initialize*
+  nameWithType.vb: AStarPathFinder.Initialize(AStarPathFinder.BlockedFunc, Vector2Int, Vector2Int, Vector2Int, Vector2Int, Integer)
+  fullName.vb: AStarPathFinder.Initialize(AStarPathFinder.BlockedFunc, UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int, Integer)
+  name.vb: Initialize(BlockedFunc, Vector2Int, Vector2Int, Vector2Int, Vector2Int, Integer)
+- uid: Global.AStarPathFinder.SetHeuristicFunction(AStarPathFinder.Heuristic)
+  commentId: M:Global.AStarPathFinder.SetHeuristicFunction(AStarPathFinder.Heuristic)
+  id: SetHeuristicFunction(AStarPathFinder.Heuristic)
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: SetHeuristicFunction(Heuristic)
+  nameWithType: AStarPathFinder.SetHeuristicFunction(AStarPathFinder.Heuristic)
+  fullName: AStarPathFinder.SetHeuristicFunction(AStarPathFinder.Heuristic)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetHeuristicFunction
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetHeuristicFunction(AStarPathFinder.Heuristic hFunc)
+    parameters:
+    - id: hFunc
+      type: Global.AStarPathFinder.Heuristic
+    content.vb: Public Sub SetHeuristicFunction(hFunc As AStarPathFinder.Heuristic)
+  overload: Global.AStarPathFinder.SetHeuristicFunction*
+- uid: Global.AStarPathFinder.SetDebugDrawFunction(AStarPathFinder.DebugDrawTile)
+  commentId: M:Global.AStarPathFinder.SetDebugDrawFunction(AStarPathFinder.DebugDrawTile)
+  id: SetDebugDrawFunction(AStarPathFinder.DebugDrawTile)
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: SetDebugDrawFunction(DebugDrawTile)
+  nameWithType: AStarPathFinder.SetDebugDrawFunction(AStarPathFinder.DebugDrawTile)
+  fullName: AStarPathFinder.SetDebugDrawFunction(AStarPathFinder.DebugDrawTile)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetDebugDrawFunction
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetDebugDrawFunction(AStarPathFinder.DebugDrawTile debugDrawTile)
+    parameters:
+    - id: debugDrawTile
+      type: Global.AStarPathFinder.DebugDrawTile
+    content.vb: Public Sub SetDebugDrawFunction(debugDrawTile As AStarPathFinder.DebugDrawTile)
+  overload: Global.AStarPathFinder.SetDebugDrawFunction*
+- uid: Global.AStarPathFinder.IsWithinBounds(UnityEngine.Vector2Int)
+  commentId: M:Global.AStarPathFinder.IsWithinBounds(UnityEngine.Vector2Int)
+  id: IsWithinBounds(UnityEngine.Vector2Int)
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: IsWithinBounds(Vector2Int)
+  nameWithType: AStarPathFinder.IsWithinBounds(Vector2Int)
+  fullName: AStarPathFinder.IsWithinBounds(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsWithinBounds
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturns whether the index is within the specified bounds\n"
+  example: []
+  syntax:
+    content: public bool IsWithinBounds(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+      description: ''
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsWithinBounds(index As Vector2Int) As Boolean
+  overload: Global.AStarPathFinder.IsWithinBounds*
+- uid: Global.AStarPathFinder.IsValidIndex(UnityEngine.Vector2Int)
+  commentId: M:Global.AStarPathFinder.IsValidIndex(UnityEngine.Vector2Int)
+  id: IsValidIndex(UnityEngine.Vector2Int)
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: IsValidIndex(Vector2Int)
+  nameWithType: AStarPathFinder.IsValidIndex(Vector2Int)
+  fullName: AStarPathFinder.IsValidIndex(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsValidIndex
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool IsValidIndex(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Protected Function IsValidIndex(index As Vector2Int) As Boolean
+  overload: Global.AStarPathFinder.IsValidIndex*
+- uid: Global.AStarPathFinder.GetPath(System.Collections.Generic.Stack{UnityEngine.Vector2Int})
+  commentId: M:Global.AStarPathFinder.GetPath(System.Collections.Generic.Stack{UnityEngine.Vector2Int})
+  id: GetPath(System.Collections.Generic.Stack{UnityEngine.Vector2Int})
+  parent: Global.AStarPathFinder
+  langs:
+  - csharp
+  - vb
+  name: GetPath(Stack<Vector2Int>)
+  nameWithType: AStarPathFinder.GetPath(Stack<Vector2Int>)
+  fullName: AStarPathFinder.GetPath(System.Collections.Generic.Stack<UnityEngine.Vector2Int>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/AStarPathFinder.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetPath
+    path: ../Assets/Framework/Util/Math/AStarPathFinder.cs
+    startLine: 143
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool GetPath(Stack<Vector2Int> ResultPath)
+    parameters:
+    - id: ResultPath
+      type: System.Collections.Generic.Stack{UnityEngine.Vector2Int}
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetPath(ResultPath As Stack(Of Vector2Int)) As Boolean
+  overload: Global.AStarPathFinder.GetPath*
+  nameWithType.vb: AStarPathFinder.GetPath(Stack(Of Vector2Int))
+  fullName.vb: AStarPathFinder.GetPath(System.Collections.Generic.Stack(Of UnityEngine.Vector2Int))
+  name.vb: GetPath(Stack(Of Vector2Int))
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AStarPathFinder.BlockedFunc
+  commentId: T:Global.AStarPathFinder.BlockedFunc
+  name: AStarPathFinder.BlockedFunc
+  nameWithType: AStarPathFinder.BlockedFunc
+  fullName: AStarPathFinder.BlockedFunc
+  spec.csharp:
+  - uid: Global.AStarPathFinder
+    name: AStarPathFinder
+  - name: .
+  - uid: Global.AStarPathFinder.BlockedFunc
+    name: BlockedFunc
+  spec.vb:
+  - uid: Global.AStarPathFinder
+    name: AStarPathFinder
+  - name: .
+  - uid: Global.AStarPathFinder.BlockedFunc
+    name: BlockedFunc
+- uid: Global.AStarPathFinder.DebugDrawTile
+  commentId: T:Global.AStarPathFinder.DebugDrawTile
+  name: AStarPathFinder.DebugDrawTile
+  nameWithType: AStarPathFinder.DebugDrawTile
+  fullName: AStarPathFinder.DebugDrawTile
+  spec.csharp:
+  - uid: Global.AStarPathFinder
+    name: AStarPathFinder
+  - name: .
+  - uid: Global.AStarPathFinder.DebugDrawTile
+    name: DebugDrawTile
+  spec.vb:
+  - uid: Global.AStarPathFinder
+    name: AStarPathFinder
+  - name: .
+  - uid: Global.AStarPathFinder.DebugDrawTile
+    name: DebugDrawTile
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.AStarPathFinder.Heuristic
+  commentId: T:Global.AStarPathFinder.Heuristic
+  name: AStarPathFinder.Heuristic
+  nameWithType: AStarPathFinder.Heuristic
+  fullName: AStarPathFinder.Heuristic
+  spec.csharp:
+  - uid: Global.AStarPathFinder
+    name: AStarPathFinder
+  - name: .
+  - uid: Global.AStarPathFinder.Heuristic
+    name: Heuristic
+  spec.vb:
+  - uid: Global.AStarPathFinder
+    name: AStarPathFinder
+  - name: .
+  - uid: Global.AStarPathFinder.Heuristic
+    name: Heuristic
+- uid: Global.AStarPathFinder.Initialize*
+  commentId: Overload:Global.AStarPathFinder.Initialize
+  name: Initialize
+  nameWithType: AStarPathFinder.Initialize
+  fullName: AStarPathFinder.Initialize
+- uid: Global.AStarPathFinder.SetHeuristicFunction*
+  commentId: Overload:Global.AStarPathFinder.SetHeuristicFunction
+  name: SetHeuristicFunction
+  nameWithType: AStarPathFinder.SetHeuristicFunction
+  fullName: AStarPathFinder.SetHeuristicFunction
+- uid: Global.AStarPathFinder.SetDebugDrawFunction*
+  commentId: Overload:Global.AStarPathFinder.SetDebugDrawFunction
+  name: SetDebugDrawFunction
+  nameWithType: AStarPathFinder.SetDebugDrawFunction
+  fullName: AStarPathFinder.SetDebugDrawFunction
+- uid: Global.AStarPathFinder.IsWithinBounds*
+  commentId: Overload:Global.AStarPathFinder.IsWithinBounds
+  name: IsWithinBounds
+  nameWithType: AStarPathFinder.IsWithinBounds
+  fullName: AStarPathFinder.IsWithinBounds
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.AStarPathFinder.IsValidIndex*
+  commentId: Overload:Global.AStarPathFinder.IsValidIndex
+  name: IsValidIndex
+  nameWithType: AStarPathFinder.IsValidIndex
+  fullName: AStarPathFinder.IsValidIndex
+- uid: Global.AStarPathFinder.GetPath*
+  commentId: Overload:Global.AStarPathFinder.GetPath
+  name: GetPath
+  nameWithType: AStarPathFinder.GetPath
+  fullName: AStarPathFinder.GetPath
+- uid: System.Collections.Generic.Stack{UnityEngine.Vector2Int}
+  commentId: T:System.Collections.Generic.Stack{UnityEngine.Vector2Int}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Stack`1
+  name: Stack<Vector2Int>
+  nameWithType: Stack<Vector2Int>
+  fullName: System.Collections.Generic.Stack<UnityEngine.Vector2Int>
+  nameWithType.vb: Stack(Of Vector2Int)
+  fullName.vb: System.Collections.Generic.Stack(Of UnityEngine.Vector2Int)
+  name.vb: Stack(Of Vector2Int)
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Stack`1
+  commentId: T:System.Collections.Generic.Stack`1
+  isExternal: true
+  name: Stack<T>
+  nameWithType: Stack<T>
+  fullName: System.Collections.Generic.Stack<T>
+  nameWithType.vb: Stack(Of T)
+  fullName.vb: System.Collections.Generic.Stack(Of T)
+  name.vb: Stack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true

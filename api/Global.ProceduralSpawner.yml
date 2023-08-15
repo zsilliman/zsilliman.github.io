@@ -1,0 +1,355 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralSpawner
+  commentId: T:Global.ProceduralSpawner
+  id: ProceduralSpawner
+  parent: Global
+  children:
+  - Global.ProceduralSpawner.AnyEnemyPrefabs
+  - Global.ProceduralSpawner.EnemiesToSpawn
+  - Global.ProceduralSpawner.FlyingEnemyPrefabs
+  - Global.ProceduralSpawner.GroundEnemyPrefabs
+  langs:
+  - csharp
+  - vb
+  name: ProceduralSpawner
+  nameWithType: ProceduralSpawner
+  fullName: ProceduralSpawner
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ProceduralSpawner
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class ProceduralSpawner : MonoBehaviour'
+    content.vb: Public Class ProceduralSpawner Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ProceduralSpawner.GroundEnemyPrefabs
+  commentId: F:Global.ProceduralSpawner.GroundEnemyPrefabs
+  id: GroundEnemyPrefabs
+  parent: Global.ProceduralSpawner
+  langs:
+  - csharp
+  - vb
+  name: GroundEnemyPrefabs
+  nameWithType: ProceduralSpawner.GroundEnemyPrefabs
+  fullName: ProceduralSpawner.GroundEnemyPrefabs
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GroundEnemyPrefabs
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<ProceduralSpawner.PrefabWithWeight> GroundEnemyPrefabs
+    return:
+      type: System.Collections.Generic.List{ProceduralSpawner.PrefabWithWeight}
+    content.vb: Public GroundEnemyPrefabs As List(Of ProceduralSpawner.PrefabWithWeight)
+- uid: Global.ProceduralSpawner.FlyingEnemyPrefabs
+  commentId: F:Global.ProceduralSpawner.FlyingEnemyPrefabs
+  id: FlyingEnemyPrefabs
+  parent: Global.ProceduralSpawner
+  langs:
+  - csharp
+  - vb
+  name: FlyingEnemyPrefabs
+  nameWithType: ProceduralSpawner.FlyingEnemyPrefabs
+  fullName: ProceduralSpawner.FlyingEnemyPrefabs
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FlyingEnemyPrefabs
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<ProceduralSpawner.PrefabWithWeight> FlyingEnemyPrefabs
+    return:
+      type: System.Collections.Generic.List{ProceduralSpawner.PrefabWithWeight}
+    content.vb: Public FlyingEnemyPrefabs As List(Of ProceduralSpawner.PrefabWithWeight)
+- uid: Global.ProceduralSpawner.AnyEnemyPrefabs
+  commentId: F:Global.ProceduralSpawner.AnyEnemyPrefabs
+  id: AnyEnemyPrefabs
+  parent: Global.ProceduralSpawner
+  langs:
+  - csharp
+  - vb
+  name: AnyEnemyPrefabs
+  nameWithType: ProceduralSpawner.AnyEnemyPrefabs
+  fullName: ProceduralSpawner.AnyEnemyPrefabs
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AnyEnemyPrefabs
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<ProceduralSpawner.PrefabWithWeight> AnyEnemyPrefabs
+    return:
+      type: System.Collections.Generic.List{ProceduralSpawner.PrefabWithWeight}
+    content.vb: Public AnyEnemyPrefabs As List(Of ProceduralSpawner.PrefabWithWeight)
+- uid: Global.ProceduralSpawner.EnemiesToSpawn
+  commentId: F:Global.ProceduralSpawner.EnemiesToSpawn
+  id: EnemiesToSpawn
+  parent: Global.ProceduralSpawner
+  langs:
+  - csharp
+  - vb
+  name: EnemiesToSpawn
+  nameWithType: ProceduralSpawner.EnemiesToSpawn
+  fullName: ProceduralSpawner.EnemiesToSpawn
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EnemiesToSpawn
+    path: ../Assets/Objects & Components/World/Section/Spawning/ProceduralSpawner.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int EnemiesToSpawn
+    return:
+      type: System.Int32
+    content.vb: Public EnemiesToSpawn As Integer
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Collections.Generic.List{ProceduralSpawner.PrefabWithWeight}
+  commentId: T:System.Collections.Generic.List{ProceduralSpawner.PrefabWithWeight}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ProceduralSpawner.PrefabWithWeight>
+  nameWithType: List<ProceduralSpawner.PrefabWithWeight>
+  fullName: System.Collections.Generic.List<ProceduralSpawner.PrefabWithWeight>
+  nameWithType.vb: List(Of ProceduralSpawner.PrefabWithWeight)
+  fullName.vb: System.Collections.Generic.List(Of ProceduralSpawner.PrefabWithWeight)
+  name.vb: List(Of ProceduralSpawner.PrefabWithWeight)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.ProceduralSpawner
+    name: ProceduralSpawner
+  - name: .
+  - uid: Global.ProceduralSpawner.PrefabWithWeight
+    name: PrefabWithWeight
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ProceduralSpawner
+    name: ProceduralSpawner
+  - name: .
+  - uid: Global.ProceduralSpawner.PrefabWithWeight
+    name: PrefabWithWeight
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

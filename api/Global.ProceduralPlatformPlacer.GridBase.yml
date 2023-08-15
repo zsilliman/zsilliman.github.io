@@ -1,0 +1,601 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralPlatformPlacer.GridBase
+  commentId: T:Global.ProceduralPlatformPlacer.GridBase
+  id: ProceduralPlatformPlacer.GridBase
+  parent: Global
+  children:
+  - Global.ProceduralPlatformPlacer.GridBase.CellToTilemapIndices(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  - Global.ProceduralPlatformPlacer.GridBase.CellToWorldRect(UnityEngine.Vector2,UnityEngine.Vector2Int,System.Single)
+  - Global.ProceduralPlatformPlacer.GridBase.CellValues
+  - Global.ProceduralPlatformPlacer.GridBase.ColumnCount
+  - Global.ProceduralPlatformPlacer.GridBase.GetCellValue(UnityEngine.Vector2Int)
+  - Global.ProceduralPlatformPlacer.GridBase.IsCellEmpty(UnityEngine.Vector2Int)
+  - Global.ProceduralPlatformPlacer.GridBase.IsCellInBounds(UnityEngine.Vector2Int)
+  - Global.ProceduralPlatformPlacer.GridBase.IsCellSolid(UnityEngine.Vector2Int)
+  - Global.ProceduralPlatformPlacer.GridBase.IsCellValueNegative(UnityEngine.Vector2Int)
+  - Global.ProceduralPlatformPlacer.GridBase.RowCount
+  - Global.ProceduralPlatformPlacer.GridBase.SetCellValue(UnityEngine.Vector2Int,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ProceduralPlatformPlacer.GridBase
+  nameWithType: ProceduralPlatformPlacer.GridBase
+  fullName: ProceduralPlatformPlacer.GridBase
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GridBase
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public abstract class ProceduralPlatformPlacer.GridBase
+    content.vb: Public MustInherit Class ProceduralPlatformPlacer.GridBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Global.ProceduralPlatformPlacer.EvenGrid
+  - Global.ProceduralPlatformPlacer.UnevenGrid
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ProceduralPlatformPlacer.GridBase.CellValues
+  commentId: F:Global.ProceduralPlatformPlacer.GridBase.CellValues
+  id: CellValues
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: CellValues
+  nameWithType: ProceduralPlatformPlacer.GridBase.CellValues
+  fullName: ProceduralPlatformPlacer.GridBase.CellValues
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CellValues
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int[,] CellValues
+    return:
+      type: System.Int32[,]
+    content.vb: Public CellValues As Integer(,)
+- uid: Global.ProceduralPlatformPlacer.GridBase.ColumnCount
+  commentId: P:Global.ProceduralPlatformPlacer.GridBase.ColumnCount
+  id: ColumnCount
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: ColumnCount
+  nameWithType: ProceduralPlatformPlacer.GridBase.ColumnCount
+  fullName: ProceduralPlatformPlacer.GridBase.ColumnCount
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ColumnCount
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int ColumnCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ColumnCount As Integer
+  overload: Global.ProceduralPlatformPlacer.GridBase.ColumnCount*
+- uid: Global.ProceduralPlatformPlacer.GridBase.RowCount
+  commentId: P:Global.ProceduralPlatformPlacer.GridBase.RowCount
+  id: RowCount
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: RowCount
+  nameWithType: ProceduralPlatformPlacer.GridBase.RowCount
+  fullName: ProceduralPlatformPlacer.GridBase.RowCount
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RowCount
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int RowCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RowCount As Integer
+  overload: Global.ProceduralPlatformPlacer.GridBase.RowCount*
+- uid: Global.ProceduralPlatformPlacer.GridBase.IsCellInBounds(UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralPlatformPlacer.GridBase.IsCellInBounds(UnityEngine.Vector2Int)
+  id: IsCellInBounds(UnityEngine.Vector2Int)
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: IsCellInBounds(Vector2Int)
+  nameWithType: ProceduralPlatformPlacer.GridBase.IsCellInBounds(Vector2Int)
+  fullName: ProceduralPlatformPlacer.GridBase.IsCellInBounds(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsCellInBounds
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsCellInBounds(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCellInBounds(index As Vector2Int) As Boolean
+  overload: Global.ProceduralPlatformPlacer.GridBase.IsCellInBounds*
+- uid: Global.ProceduralPlatformPlacer.GridBase.IsCellEmpty(UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralPlatformPlacer.GridBase.IsCellEmpty(UnityEngine.Vector2Int)
+  id: IsCellEmpty(UnityEngine.Vector2Int)
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: IsCellEmpty(Vector2Int)
+  nameWithType: ProceduralPlatformPlacer.GridBase.IsCellEmpty(Vector2Int)
+  fullName: ProceduralPlatformPlacer.GridBase.IsCellEmpty(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsCellEmpty
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsCellEmpty(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCellEmpty(index As Vector2Int) As Boolean
+  overload: Global.ProceduralPlatformPlacer.GridBase.IsCellEmpty*
+- uid: Global.ProceduralPlatformPlacer.GridBase.IsCellSolid(UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralPlatformPlacer.GridBase.IsCellSolid(UnityEngine.Vector2Int)
+  id: IsCellSolid(UnityEngine.Vector2Int)
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: IsCellSolid(Vector2Int)
+  nameWithType: ProceduralPlatformPlacer.GridBase.IsCellSolid(Vector2Int)
+  fullName: ProceduralPlatformPlacer.GridBase.IsCellSolid(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsCellSolid
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsCellSolid(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCellSolid(index As Vector2Int) As Boolean
+  overload: Global.ProceduralPlatformPlacer.GridBase.IsCellSolid*
+- uid: Global.ProceduralPlatformPlacer.GridBase.GetCellValue(UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralPlatformPlacer.GridBase.GetCellValue(UnityEngine.Vector2Int)
+  id: GetCellValue(UnityEngine.Vector2Int)
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: GetCellValue(Vector2Int)
+  nameWithType: ProceduralPlatformPlacer.GridBase.GetCellValue(Vector2Int)
+  fullName: ProceduralPlatformPlacer.GridBase.GetCellValue(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetCellValue
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int GetCellValue(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Int32
+    content.vb: Public Function GetCellValue(index As Vector2Int) As Integer
+  overload: Global.ProceduralPlatformPlacer.GridBase.GetCellValue*
+- uid: Global.ProceduralPlatformPlacer.GridBase.IsCellValueNegative(UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralPlatformPlacer.GridBase.IsCellValueNegative(UnityEngine.Vector2Int)
+  id: IsCellValueNegative(UnityEngine.Vector2Int)
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: IsCellValueNegative(Vector2Int)
+  nameWithType: ProceduralPlatformPlacer.GridBase.IsCellValueNegative(Vector2Int)
+  fullName: ProceduralPlatformPlacer.GridBase.IsCellValueNegative(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsCellValueNegative
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsCellValueNegative(Vector2Int index)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCellValueNegative(index As Vector2Int) As Boolean
+  overload: Global.ProceduralPlatformPlacer.GridBase.IsCellValueNegative*
+- uid: Global.ProceduralPlatformPlacer.GridBase.SetCellValue(UnityEngine.Vector2Int,System.Int32)
+  commentId: M:Global.ProceduralPlatformPlacer.GridBase.SetCellValue(UnityEngine.Vector2Int,System.Int32)
+  id: SetCellValue(UnityEngine.Vector2Int,System.Int32)
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: SetCellValue(Vector2Int, int)
+  nameWithType: ProceduralPlatformPlacer.GridBase.SetCellValue(Vector2Int, int)
+  fullName: ProceduralPlatformPlacer.GridBase.SetCellValue(UnityEngine.Vector2Int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetCellValue
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetCellValue(Vector2Int index, int value)
+    parameters:
+    - id: index
+      type: UnityEngine.Vector2Int
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub SetCellValue(index As Vector2Int, value As Integer)
+  overload: Global.ProceduralPlatformPlacer.GridBase.SetCellValue*
+  nameWithType.vb: ProceduralPlatformPlacer.GridBase.SetCellValue(Vector2Int, Integer)
+  fullName.vb: ProceduralPlatformPlacer.GridBase.SetCellValue(UnityEngine.Vector2Int, Integer)
+  name.vb: SetCellValue(Vector2Int, Integer)
+- uid: Global.ProceduralPlatformPlacer.GridBase.CellToTilemapIndices(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  commentId: M:Global.ProceduralPlatformPlacer.GridBase.CellToTilemapIndices(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  id: CellToTilemapIndices(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: CellToTilemapIndices(Vector2Int, Vector2Int)
+  nameWithType: ProceduralPlatformPlacer.GridBase.CellToTilemapIndices(Vector2Int, Vector2Int)
+  fullName: ProceduralPlatformPlacer.GridBase.CellToTilemapIndices(UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CellToTilemapIndices
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public abstract RectInt CellToTilemapIndices(Vector2Int tilemap_tile_offset, Vector2Int index)
+    parameters:
+    - id: tilemap_tile_offset
+      type: UnityEngine.Vector2Int
+    - id: index
+      type: UnityEngine.Vector2Int
+    return:
+      type: UnityEngine.RectInt
+    content.vb: Public MustOverride Function CellToTilemapIndices(tilemap_tile_offset As Vector2Int, index As Vector2Int) As RectInt
+  overload: Global.ProceduralPlatformPlacer.GridBase.CellToTilemapIndices*
+- uid: Global.ProceduralPlatformPlacer.GridBase.CellToWorldRect(UnityEngine.Vector2,UnityEngine.Vector2Int,System.Single)
+  commentId: M:Global.ProceduralPlatformPlacer.GridBase.CellToWorldRect(UnityEngine.Vector2,UnityEngine.Vector2Int,System.Single)
+  id: CellToWorldRect(UnityEngine.Vector2,UnityEngine.Vector2Int,System.Single)
+  parent: Global.ProceduralPlatformPlacer.GridBase
+  langs:
+  - csharp
+  - vb
+  name: CellToWorldRect(Vector2, Vector2Int, float)
+  nameWithType: ProceduralPlatformPlacer.GridBase.CellToWorldRect(Vector2, Vector2Int, float)
+  fullName: ProceduralPlatformPlacer.GridBase.CellToWorldRect(UnityEngine.Vector2, UnityEngine.Vector2Int, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CellToWorldRect
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public abstract Rect CellToWorldRect(Vector2 origin, Vector2Int index, float cellsize = 32)
+    parameters:
+    - id: origin
+      type: UnityEngine.Vector2
+    - id: index
+      type: UnityEngine.Vector2Int
+    - id: cellsize
+      type: System.Single
+    return:
+      type: UnityEngine.Rect
+    content.vb: Public MustOverride Function CellToWorldRect(origin As Vector2, index As Vector2Int, cellsize As Single = 32) As Rect
+  overload: Global.ProceduralPlatformPlacer.GridBase.CellToWorldRect*
+  nameWithType.vb: ProceduralPlatformPlacer.GridBase.CellToWorldRect(Vector2, Vector2Int, Single)
+  fullName.vb: ProceduralPlatformPlacer.GridBase.CellToWorldRect(UnityEngine.Vector2, UnityEngine.Vector2Int, Single)
+  name.vb: CellToWorldRect(Vector2, Vector2Int, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32[,]
+  isExternal: true
+  name: int[,]
+  nameWithType: int[,]
+  fullName: int[,]
+  nameWithType.vb: Integer(,)
+  fullName.vb: Integer(,)
+  name.vb: Integer(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: )
+- uid: Global.ProceduralPlatformPlacer.GridBase.ColumnCount*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.ColumnCount
+  name: ColumnCount
+  nameWithType: ProceduralPlatformPlacer.GridBase.ColumnCount
+  fullName: ProceduralPlatformPlacer.GridBase.ColumnCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ProceduralPlatformPlacer.GridBase.RowCount*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.RowCount
+  name: RowCount
+  nameWithType: ProceduralPlatformPlacer.GridBase.RowCount
+  fullName: ProceduralPlatformPlacer.GridBase.RowCount
+- uid: Global.ProceduralPlatformPlacer.GridBase.IsCellInBounds*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.IsCellInBounds
+  name: IsCellInBounds
+  nameWithType: ProceduralPlatformPlacer.GridBase.IsCellInBounds
+  fullName: ProceduralPlatformPlacer.GridBase.IsCellInBounds
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ProceduralPlatformPlacer.GridBase.IsCellEmpty*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.IsCellEmpty
+  name: IsCellEmpty
+  nameWithType: ProceduralPlatformPlacer.GridBase.IsCellEmpty
+  fullName: ProceduralPlatformPlacer.GridBase.IsCellEmpty
+- uid: Global.ProceduralPlatformPlacer.GridBase.IsCellSolid*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.IsCellSolid
+  name: IsCellSolid
+  nameWithType: ProceduralPlatformPlacer.GridBase.IsCellSolid
+  fullName: ProceduralPlatformPlacer.GridBase.IsCellSolid
+- uid: Global.ProceduralPlatformPlacer.GridBase.GetCellValue*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.GetCellValue
+  name: GetCellValue
+  nameWithType: ProceduralPlatformPlacer.GridBase.GetCellValue
+  fullName: ProceduralPlatformPlacer.GridBase.GetCellValue
+- uid: Global.ProceduralPlatformPlacer.GridBase.IsCellValueNegative*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.IsCellValueNegative
+  name: IsCellValueNegative
+  nameWithType: ProceduralPlatformPlacer.GridBase.IsCellValueNegative
+  fullName: ProceduralPlatformPlacer.GridBase.IsCellValueNegative
+- uid: Global.ProceduralPlatformPlacer.GridBase.SetCellValue*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.SetCellValue
+  name: SetCellValue
+  nameWithType: ProceduralPlatformPlacer.GridBase.SetCellValue
+  fullName: ProceduralPlatformPlacer.GridBase.SetCellValue
+- uid: Global.ProceduralPlatformPlacer.GridBase.CellToTilemapIndices*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.CellToTilemapIndices
+  name: CellToTilemapIndices
+  nameWithType: ProceduralPlatformPlacer.GridBase.CellToTilemapIndices
+  fullName: ProceduralPlatformPlacer.GridBase.CellToTilemapIndices
+- uid: UnityEngine.RectInt
+  commentId: T:UnityEngine.RectInt
+  parent: UnityEngine
+  isExternal: true
+  name: RectInt
+  nameWithType: RectInt
+  fullName: UnityEngine.RectInt
+- uid: Global.ProceduralPlatformPlacer.GridBase.CellToWorldRect*
+  commentId: Overload:Global.ProceduralPlatformPlacer.GridBase.CellToWorldRect
+  name: CellToWorldRect
+  nameWithType: ProceduralPlatformPlacer.GridBase.CellToWorldRect
+  fullName: ProceduralPlatformPlacer.GridBase.CellToWorldRect
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect

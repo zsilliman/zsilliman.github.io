@@ -1,0 +1,383 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BeamMovementController
+  commentId: T:Global.BeamMovementController
+  id: BeamMovementController
+  parent: Global
+  children:
+  - Global.BeamMovementController.ResetObject
+  - Global.BeamMovementController.Start
+  - Global.BeamMovementController.Update
+  langs:
+  - csharp
+  - vb
+  name: BeamMovementController
+  nameWithType: BeamMovementController
+  fullName: BeamMovementController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/BeamMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BeamMovementController
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/BeamMovementController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class BeamMovementController : AuraMovementController<BeamMovementController.BeamProperties>'
+    content.vb: Public Class BeamMovementController Inherits AuraMovementController(Of BeamMovementController.BeamProperties)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraMovementController{BeamMovementController.BeamProperties}
+  inheritedMembers:
+  - Global.AuraMovementController{BeamMovementController.BeamProperties}.Properties
+  - Global.AuraMovementController{BeamMovementController.BeamProperties}.auraCreator
+  - Global.AuraMovementController{BeamMovementController.BeamProperties}.auraComponent
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.BeamMovementController.Start
+  commentId: M:Global.BeamMovementController.Start
+  id: Start
+  parent: Global.BeamMovementController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: BeamMovementController.Start()
+  fullName: BeamMovementController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/BeamMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/BeamMovementController.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.BeamMovementController.Start*
+- uid: Global.BeamMovementController.Update
+  commentId: M:Global.BeamMovementController.Update
+  id: Update
+  parent: Global.BeamMovementController
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: BeamMovementController.Update()
+  fullName: BeamMovementController.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/BeamMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/BeamMovementController.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Update()
+    content.vb: Protected Sub Update()
+  overload: Global.BeamMovementController.Update*
+- uid: Global.BeamMovementController.ResetObject
+  commentId: M:Global.BeamMovementController.ResetObject
+  id: ResetObject
+  parent: Global.BeamMovementController
+  langs:
+  - csharp
+  - vb
+  name: ResetObject()
+  nameWithType: BeamMovementController.ResetObject()
+  fullName: BeamMovementController.ResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/BeamMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResetObject
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/BeamMovementController.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void ResetObject()
+    content.vb: Public Overrides Sub ResetObject()
+  overridden: Global.AuraMovementController{BeamMovementController.BeamProperties}.ResetObject
+  overload: Global.BeamMovementController.ResetObject*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraMovementController{BeamMovementController.BeamProperties}
+  commentId: T:Global.AuraMovementController{BeamMovementController.BeamProperties}
+  definition: Global.AuraMovementController`1
+  name: AuraMovementController<BeamMovementController.BeamProperties>
+  nameWithType: AuraMovementController<BeamMovementController.BeamProperties>
+  fullName: AuraMovementController<BeamMovementController.BeamProperties>
+  nameWithType.vb: AuraMovementController(Of BeamMovementController.BeamProperties)
+  fullName.vb: AuraMovementController(Of BeamMovementController.BeamProperties)
+  name.vb: AuraMovementController(Of BeamMovementController.BeamProperties)
+  spec.csharp:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: <
+  - uid: Global.BeamMovementController
+    name: BeamMovementController
+  - name: .
+  - uid: Global.BeamMovementController.BeamProperties
+    name: BeamProperties
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.BeamMovementController
+    name: BeamMovementController
+  - name: .
+  - uid: Global.BeamMovementController.BeamProperties
+    name: BeamProperties
+  - name: )
+- uid: Global.AuraMovementController{BeamMovementController.BeamProperties}.Properties
+  commentId: F:Global.AuraMovementController{BeamMovementController.BeamProperties}.Properties
+  parent: Global.AuraMovementController{BeamMovementController.BeamProperties}
+  definition: Global.AuraMovementController`1.Properties
+  name: Properties
+  nameWithType: AuraMovementController<BeamMovementController.BeamProperties>.Properties
+  fullName: AuraMovementController<BeamMovementController.BeamProperties>.Properties
+  nameWithType.vb: AuraMovementController(Of BeamMovementController.BeamProperties).Properties
+  fullName.vb: AuraMovementController(Of BeamMovementController.BeamProperties).Properties
+- uid: Global.AuraMovementController{BeamMovementController.BeamProperties}.auraCreator
+  commentId: F:Global.AuraMovementController{BeamMovementController.BeamProperties}.auraCreator
+  parent: Global.AuraMovementController{BeamMovementController.BeamProperties}
+  definition: Global.AuraMovementController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraMovementController<BeamMovementController.BeamProperties>.auraCreator
+  fullName: AuraMovementController<BeamMovementController.BeamProperties>.auraCreator
+  nameWithType.vb: AuraMovementController(Of BeamMovementController.BeamProperties).auraCreator
+  fullName.vb: AuraMovementController(Of BeamMovementController.BeamProperties).auraCreator
+- uid: Global.AuraMovementController{BeamMovementController.BeamProperties}.auraComponent
+  commentId: F:Global.AuraMovementController{BeamMovementController.BeamProperties}.auraComponent
+  parent: Global.AuraMovementController{BeamMovementController.BeamProperties}
+  definition: Global.AuraMovementController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraMovementController<BeamMovementController.BeamProperties>.auraComponent
+  fullName: AuraMovementController<BeamMovementController.BeamProperties>.auraComponent
+  nameWithType.vb: AuraMovementController(Of BeamMovementController.BeamProperties).auraComponent
+  fullName.vb: AuraMovementController(Of BeamMovementController.BeamProperties).auraComponent
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraMovementController`1
+  commentId: T:Global.AuraMovementController`1
+  name: AuraMovementController<T>
+  nameWithType: AuraMovementController<T>
+  fullName: AuraMovementController<T>
+  nameWithType.vb: AuraMovementController(Of T)
+  fullName.vb: AuraMovementController(Of T)
+  name.vb: AuraMovementController(Of T)
+  spec.csharp:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraMovementController`1.Properties
+  commentId: F:Global.AuraMovementController`1.Properties
+  name: Properties
+  nameWithType: AuraMovementController<T>.Properties
+  fullName: AuraMovementController<T>.Properties
+  nameWithType.vb: AuraMovementController(Of T).Properties
+  fullName.vb: AuraMovementController(Of T).Properties
+- uid: Global.AuraMovementController`1.auraCreator
+  commentId: F:Global.AuraMovementController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraMovementController<T>.auraCreator
+  fullName: AuraMovementController<T>.auraCreator
+  nameWithType.vb: AuraMovementController(Of T).auraCreator
+  fullName.vb: AuraMovementController(Of T).auraCreator
+- uid: Global.AuraMovementController`1.auraComponent
+  commentId: F:Global.AuraMovementController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraMovementController<T>.auraComponent
+  fullName: AuraMovementController<T>.auraComponent
+  nameWithType.vb: AuraMovementController(Of T).auraComponent
+  fullName.vb: AuraMovementController(Of T).auraComponent
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.BeamMovementController.Start*
+  commentId: Overload:Global.BeamMovementController.Start
+  name: Start
+  nameWithType: BeamMovementController.Start
+  fullName: BeamMovementController.Start
+- uid: Global.BeamMovementController.Update*
+  commentId: Overload:Global.BeamMovementController.Update
+  name: Update
+  nameWithType: BeamMovementController.Update
+  fullName: BeamMovementController.Update
+- uid: Global.AuraMovementController{BeamMovementController.BeamProperties}.ResetObject
+  commentId: M:Global.AuraMovementController{BeamMovementController.BeamProperties}.ResetObject
+  parent: Global.AuraMovementController{BeamMovementController.BeamProperties}
+  definition: Global.AuraMovementController`1.ResetObject
+  name: ResetObject()
+  nameWithType: AuraMovementController<BeamMovementController.BeamProperties>.ResetObject()
+  fullName: AuraMovementController<BeamMovementController.BeamProperties>.ResetObject()
+  nameWithType.vb: AuraMovementController(Of BeamMovementController.BeamProperties).ResetObject()
+  fullName.vb: AuraMovementController(Of BeamMovementController.BeamProperties).ResetObject()
+  spec.csharp:
+  - uid: Global.AuraMovementController{BeamMovementController.BeamProperties}.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController{BeamMovementController.BeamProperties}.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+- uid: Global.BeamMovementController.ResetObject*
+  commentId: Overload:Global.BeamMovementController.ResetObject
+  name: ResetObject
+  nameWithType: BeamMovementController.ResetObject
+  fullName: BeamMovementController.ResetObject
+- uid: Global.AuraMovementController`1.ResetObject
+  commentId: M:Global.AuraMovementController`1.ResetObject
+  name: ResetObject()
+  nameWithType: AuraMovementController<T>.ResetObject()
+  fullName: AuraMovementController<T>.ResetObject()
+  nameWithType.vb: AuraMovementController(Of T).ResetObject()
+  fullName.vb: AuraMovementController(Of T).ResetObject()
+  spec.csharp:
+  - uid: Global.AuraMovementController`1.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController`1.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )

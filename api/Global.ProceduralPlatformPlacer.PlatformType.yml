@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralPlatformPlacer.PlatformType
+  commentId: T:Global.ProceduralPlatformPlacer.PlatformType
+  id: ProceduralPlatformPlacer.PlatformType
+  parent: Global
+  children:
+  - Global.ProceduralPlatformPlacer.PlatformType.Block
+  - Global.ProceduralPlatformPlacer.PlatformType.L
+  - Global.ProceduralPlatformPlacer.PlatformType.Line
+  langs:
+  - csharp
+  - vb
+  name: ProceduralPlatformPlacer.PlatformType
+  nameWithType: ProceduralPlatformPlacer.PlatformType
+  fullName: ProceduralPlatformPlacer.PlatformType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlatformType
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum ProceduralPlatformPlacer.PlatformType
+    content.vb: Public Enum ProceduralPlatformPlacer.PlatformType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ProceduralPlatformPlacer.PlatformType.L
+  commentId: F:Global.ProceduralPlatformPlacer.PlatformType.L
+  id: L
+  parent: Global.ProceduralPlatformPlacer.PlatformType
+  langs:
+  - csharp
+  - vb
+  name: L
+  nameWithType: ProceduralPlatformPlacer.PlatformType.L
+  fullName: ProceduralPlatformPlacer.PlatformType.L
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: L
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: L = 0
+    return:
+      type: Global.ProceduralPlatformPlacer.PlatformType
+- uid: Global.ProceduralPlatformPlacer.PlatformType.Line
+  commentId: F:Global.ProceduralPlatformPlacer.PlatformType.Line
+  id: Line
+  parent: Global.ProceduralPlatformPlacer.PlatformType
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: ProceduralPlatformPlacer.PlatformType.Line
+  fullName: ProceduralPlatformPlacer.PlatformType.Line
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Line
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Line = 1
+    return:
+      type: Global.ProceduralPlatformPlacer.PlatformType
+- uid: Global.ProceduralPlatformPlacer.PlatformType.Block
+  commentId: F:Global.ProceduralPlatformPlacer.PlatformType.Block
+  id: Block
+  parent: Global.ProceduralPlatformPlacer.PlatformType
+  langs:
+  - csharp
+  - vb
+  name: Block
+  nameWithType: ProceduralPlatformPlacer.PlatformType.Block
+  fullName: ProceduralPlatformPlacer.PlatformType.Block
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Block
+    path: ../Assets/Framework/Procedural Generation/ProceduralPlatformPlacer.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Block = 2
+    return:
+      type: Global.ProceduralPlatformPlacer.PlatformType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ProceduralPlatformPlacer.PlatformType
+  commentId: T:Global.ProceduralPlatformPlacer.PlatformType
+  name: ProceduralPlatformPlacer.PlatformType
+  nameWithType: ProceduralPlatformPlacer.PlatformType
+  fullName: ProceduralPlatformPlacer.PlatformType
+  spec.csharp:
+  - uid: Global.ProceduralPlatformPlacer
+    name: ProceduralPlatformPlacer
+  - name: .
+  - uid: Global.ProceduralPlatformPlacer.PlatformType
+    name: PlatformType
+  spec.vb:
+  - uid: Global.ProceduralPlatformPlacer
+    name: ProceduralPlatformPlacer
+  - name: .
+  - uid: Global.ProceduralPlatformPlacer.PlatformType
+    name: PlatformType

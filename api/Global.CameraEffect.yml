@@ -1,0 +1,374 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CameraEffect
+  commentId: T:Global.CameraEffect
+  id: CameraEffect
+  parent: Global
+  children:
+  - Global.CameraEffect.Duration
+  - Global.CameraEffect.GetTimeRemaining
+  - Global.CameraEffect.OnFinished
+  - Global.CameraEffect.OnReset
+  - Global.CameraEffect.Reset
+  - Global.CameraEffect.t
+  - Global.CameraEffect.UpdateEffect
+  langs:
+  - csharp
+  - vb
+  name: CameraEffect
+  nameWithType: CameraEffect
+  fullName: CameraEffect
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CameraEffect
+    path: ../Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public abstract class CameraEffect : MonoBehaviour'
+    content.vb: Public MustInherit Class CameraEffect Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - Global.CameraShake
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.CameraEffect.Duration
+  commentId: F:Global.CameraEffect.Duration
+  id: Duration
+  parent: Global.CameraEffect
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: CameraEffect.Duration
+  fullName: CameraEffect.Duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Duration
+    path: ../Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Duration
+    return:
+      type: System.Single
+    content.vb: Public Duration As Single
+- uid: Global.CameraEffect.t
+  commentId: F:Global.CameraEffect.t
+  id: t
+  parent: Global.CameraEffect
+  langs:
+  - csharp
+  - vb
+  name: t
+  nameWithType: CameraEffect.t
+  fullName: CameraEffect.t
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: t
+    path: ../Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float t
+    return:
+      type: System.Single
+    content.vb: Protected t As Single
+- uid: Global.CameraEffect.UpdateEffect
+  commentId: M:Global.CameraEffect.UpdateEffect
+  id: UpdateEffect
+  parent: Global.CameraEffect
+  langs:
+  - csharp
+  - vb
+  name: UpdateEffect()
+  nameWithType: CameraEffect.UpdateEffect()
+  fullName: CameraEffect.UpdateEffect()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateEffect
+    path: ../Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected abstract void UpdateEffect()
+    content.vb: Protected MustOverride Sub UpdateEffect()
+  overload: Global.CameraEffect.UpdateEffect*
+- uid: Global.CameraEffect.OnFinished
+  commentId: M:Global.CameraEffect.OnFinished
+  id: OnFinished
+  parent: Global.CameraEffect
+  langs:
+  - csharp
+  - vb
+  name: OnFinished()
+  nameWithType: CameraEffect.OnFinished()
+  fullName: CameraEffect.OnFinished()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnFinished
+    path: ../Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected abstract void OnFinished()
+    content.vb: Protected MustOverride Sub OnFinished()
+  overload: Global.CameraEffect.OnFinished*
+- uid: Global.CameraEffect.OnReset
+  commentId: M:Global.CameraEffect.OnReset
+  id: OnReset
+  parent: Global.CameraEffect
+  langs:
+  - csharp
+  - vb
+  name: OnReset()
+  nameWithType: CameraEffect.OnReset()
+  fullName: CameraEffect.OnReset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnReset
+    path: ../Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected abstract void OnReset()
+    content.vb: Protected MustOverride Sub OnReset()
+  overload: Global.CameraEffect.OnReset*
+- uid: Global.CameraEffect.Reset
+  commentId: M:Global.CameraEffect.Reset
+  id: Reset
+  parent: Global.CameraEffect
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: CameraEffect.Reset()
+  fullName: CameraEffect.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Reset
+    path: ../Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: Global.CameraEffect.Reset*
+- uid: Global.CameraEffect.GetTimeRemaining
+  commentId: M:Global.CameraEffect.GetTimeRemaining
+  id: GetTimeRemaining
+  parent: Global.CameraEffect
+  langs:
+  - csharp
+  - vb
+  name: GetTimeRemaining()
+  nameWithType: CameraEffect.GetTimeRemaining()
+  fullName: CameraEffect.GetTimeRemaining()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetTimeRemaining
+    path: ../Assets/Objects & Components/Camera/Effects/CameraEffect.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float GetTimeRemaining()
+    return:
+      type: System.Single
+    content.vb: Public Function GetTimeRemaining() As Single
+  overload: Global.CameraEffect.GetTimeRemaining*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.CameraEffect.UpdateEffect*
+  commentId: Overload:Global.CameraEffect.UpdateEffect
+  name: UpdateEffect
+  nameWithType: CameraEffect.UpdateEffect
+  fullName: CameraEffect.UpdateEffect
+- uid: Global.CameraEffect.OnFinished*
+  commentId: Overload:Global.CameraEffect.OnFinished
+  name: OnFinished
+  nameWithType: CameraEffect.OnFinished
+  fullName: CameraEffect.OnFinished
+- uid: Global.CameraEffect.OnReset*
+  commentId: Overload:Global.CameraEffect.OnReset
+  name: OnReset
+  nameWithType: CameraEffect.OnReset
+  fullName: CameraEffect.OnReset
+- uid: Global.CameraEffect.Reset*
+  commentId: Overload:Global.CameraEffect.Reset
+  name: Reset
+  nameWithType: CameraEffect.Reset
+  fullName: CameraEffect.Reset
+- uid: Global.CameraEffect.GetTimeRemaining*
+  commentId: Overload:Global.CameraEffect.GetTimeRemaining
+  name: GetTimeRemaining
+  nameWithType: CameraEffect.GetTimeRemaining
+  fullName: CameraEffect.GetTimeRemaining

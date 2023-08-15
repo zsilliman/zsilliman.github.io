@@ -1,0 +1,255 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MiniChargeMovementProperties
+  commentId: T:Global.MiniChargeMovementProperties
+  id: MiniChargeMovementProperties
+  parent: Global
+  children:
+  - Global.MiniChargeMovementProperties.AggressiveMiniCharge
+  - Global.MiniChargeMovementProperties.AttackMiniCharge
+  - Global.MiniChargeMovementProperties.CanFly
+  - Global.MiniChargeMovementProperties.IdleMiniCharge
+  langs:
+  - csharp
+  - vb
+  name: MiniChargeMovementProperties
+  nameWithType: MiniChargeMovementProperties
+  fullName: MiniChargeMovementProperties
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MiniChargeMovementProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class MiniChargeMovementProperties
+    content.vb: >-
+      <Serializable>
+
+      Public Class MiniChargeMovementProperties
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.MiniChargeMovementProperties.CanFly
+  commentId: F:Global.MiniChargeMovementProperties.CanFly
+  id: CanFly
+  parent: Global.MiniChargeMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: CanFly
+  nameWithType: MiniChargeMovementProperties.CanFly
+  fullName: MiniChargeMovementProperties.CanFly
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CanFly
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool CanFly
+    return:
+      type: System.Boolean
+    content.vb: Public CanFly As Boolean
+- uid: Global.MiniChargeMovementProperties.IdleMiniCharge
+  commentId: F:Global.MiniChargeMovementProperties.IdleMiniCharge
+  id: IdleMiniCharge
+  parent: Global.MiniChargeMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: IdleMiniCharge
+  nameWithType: MiniChargeMovementProperties.IdleMiniCharge
+  fullName: MiniChargeMovementProperties.IdleMiniCharge
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IdleMiniCharge
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public MiniChargeMovementController.MiniChargeProps IdleMiniCharge
+    return:
+      type: Global.MiniChargeMovementController.MiniChargeProps
+    content.vb: Public IdleMiniCharge As MiniChargeMovementController.MiniChargeProps
+- uid: Global.MiniChargeMovementProperties.AggressiveMiniCharge
+  commentId: F:Global.MiniChargeMovementProperties.AggressiveMiniCharge
+  id: AggressiveMiniCharge
+  parent: Global.MiniChargeMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: AggressiveMiniCharge
+  nameWithType: MiniChargeMovementProperties.AggressiveMiniCharge
+  fullName: MiniChargeMovementProperties.AggressiveMiniCharge
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AggressiveMiniCharge
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public MiniChargeMovementController.MiniChargeProps AggressiveMiniCharge
+    return:
+      type: Global.MiniChargeMovementController.MiniChargeProps
+    content.vb: Public AggressiveMiniCharge As MiniChargeMovementController.MiniChargeProps
+- uid: Global.MiniChargeMovementProperties.AttackMiniCharge
+  commentId: F:Global.MiniChargeMovementProperties.AttackMiniCharge
+  id: AttackMiniCharge
+  parent: Global.MiniChargeMovementProperties
+  langs:
+  - csharp
+  - vb
+  name: AttackMiniCharge
+  nameWithType: MiniChargeMovementProperties.AttackMiniCharge
+  fullName: MiniChargeMovementProperties.AttackMiniCharge
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AttackMiniCharge
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/MiniChargeMovementController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public MiniChargeMovementController.MiniChargeProps AttackMiniCharge
+    return:
+      type: Global.MiniChargeMovementController.MiniChargeProps
+    content.vb: Public AttackMiniCharge As MiniChargeMovementController.MiniChargeProps
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.MiniChargeMovementController.MiniChargeProps
+  commentId: T:Global.MiniChargeMovementController.MiniChargeProps
+  name: MiniChargeMovementController.MiniChargeProps
+  nameWithType: MiniChargeMovementController.MiniChargeProps
+  fullName: MiniChargeMovementController.MiniChargeProps
+  spec.csharp:
+  - uid: Global.MiniChargeMovementController
+    name: MiniChargeMovementController
+  - name: .
+  - uid: Global.MiniChargeMovementController.MiniChargeProps
+    name: MiniChargeProps
+  spec.vb:
+  - uid: Global.MiniChargeMovementController
+    name: MiniChargeMovementController
+  - name: .
+  - uid: Global.MiniChargeMovementController.MiniChargeProps
+    name: MiniChargeProps

@@ -1,0 +1,1032 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SwarmAuraController
+  commentId: T:Global.SwarmAuraController
+  id: SwarmAuraController
+  parent: Global
+  children:
+  - Global.SwarmAuraController.AccellerateVertex(System.Int32,UnityEngine.Vector2)
+  - Global.SwarmAuraController.auraRadius
+  - Global.SwarmAuraController.ComputeForceFromCenter(UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  - Global.SwarmAuraController.ComputeReturnForce(System.Int32)
+  - Global.SwarmAuraController.DampenVelocity(System.Int32)
+  - Global.SwarmAuraController.InitialPositions
+  - Global.SwarmAuraController.manager
+  - Global.SwarmAuraController.MarkedOverlapping
+  - Global.SwarmAuraController.MarkOverlappingVertex(System.Int32)
+  - Global.SwarmAuraController.Notify(DefaultNotificationType)
+  - Global.SwarmAuraController.SegmentsPerRadian
+  - Global.SwarmAuraController.SetInitialPositionsToCircle(UnityEngine.Vector2Int,System.Int32)
+  - Global.SwarmAuraController.Start
+  - Global.SwarmAuraController.Update
+  - Global.SwarmAuraController.VelocityRemainders
+  - Global.SwarmAuraController.VertexVelocities
+  - Global.SwarmAuraController.ZeroVelocity(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SwarmAuraController
+  nameWithType: SwarmAuraController
+  fullName: SwarmAuraController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SwarmAuraController
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class SwarmAuraController : AuraController<DefaultNotificationType>'
+    content.vb: Public Class SwarmAuraController Inherits AuraController(Of DefaultNotificationType)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraController{DefaultNotificationType}
+  inheritedMembers:
+  - Global.AuraController{DefaultNotificationType}.auraCreator
+  - Global.AuraController{DefaultNotificationType}.auraComponent
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SwarmAuraController.auraRadius
+  commentId: F:Global.SwarmAuraController.auraRadius
+  id: auraRadius
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: auraRadius
+  nameWithType: SwarmAuraController.auraRadius
+  fullName: SwarmAuraController.auraRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraRadius
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int auraRadius
+    return:
+      type: System.Int32
+    content.vb: Public auraRadius As Integer
+- uid: Global.SwarmAuraController.SegmentsPerRadian
+  commentId: F:Global.SwarmAuraController.SegmentsPerRadian
+  id: SegmentsPerRadian
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: SegmentsPerRadian
+  nameWithType: SwarmAuraController.SegmentsPerRadian
+  fullName: SwarmAuraController.SegmentsPerRadian
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SegmentsPerRadian
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float SegmentsPerRadian
+    return:
+      type: System.Single
+    content.vb: Public SegmentsPerRadian As Single
+- uid: Global.SwarmAuraController.manager
+  commentId: F:Global.SwarmAuraController.manager
+  id: manager
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: manager
+  nameWithType: SwarmAuraController.manager
+  fullName: SwarmAuraController.manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: manager
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public SwarmManager manager
+    return:
+      type: Global.SwarmManager
+    content.vb: Public manager As SwarmManager
+- uid: Global.SwarmAuraController.Notify(DefaultNotificationType)
+  commentId: M:Global.SwarmAuraController.Notify(DefaultNotificationType)
+  id: Notify(DefaultNotificationType)
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: Notify(DefaultNotificationType)
+  nameWithType: SwarmAuraController.Notify(DefaultNotificationType)
+  fullName: SwarmAuraController.Notify(DefaultNotificationType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Notify
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Notify(DefaultNotificationType notificationType)
+    parameters:
+    - id: notificationType
+      type: Global.DefaultNotificationType
+    content.vb: Public Overrides Sub Notify(notificationType As DefaultNotificationType)
+  overridden: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  overload: Global.SwarmAuraController.Notify*
+- uid: Global.SwarmAuraController.VertexVelocities
+  commentId: F:Global.SwarmAuraController.VertexVelocities
+  id: VertexVelocities
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: VertexVelocities
+  nameWithType: SwarmAuraController.VertexVelocities
+  fullName: SwarmAuraController.VertexVelocities
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: VertexVelocities
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<Vector2> VertexVelocities
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+    content.vb: Protected VertexVelocities As List(Of Vector2)
+- uid: Global.SwarmAuraController.VelocityRemainders
+  commentId: F:Global.SwarmAuraController.VelocityRemainders
+  id: VelocityRemainders
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: VelocityRemainders
+  nameWithType: SwarmAuraController.VelocityRemainders
+  fullName: SwarmAuraController.VelocityRemainders
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: VelocityRemainders
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<Vector2> VelocityRemainders
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+    content.vb: Protected VelocityRemainders As List(Of Vector2)
+- uid: Global.SwarmAuraController.InitialPositions
+  commentId: F:Global.SwarmAuraController.InitialPositions
+  id: InitialPositions
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: InitialPositions
+  nameWithType: SwarmAuraController.InitialPositions
+  fullName: SwarmAuraController.InitialPositions
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InitialPositions
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<Vector2Int> InitialPositions
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    content.vb: Protected InitialPositions As List(Of Vector2Int)
+- uid: Global.SwarmAuraController.MarkedOverlapping
+  commentId: F:Global.SwarmAuraController.MarkedOverlapping
+  id: MarkedOverlapping
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: MarkedOverlapping
+  nameWithType: SwarmAuraController.MarkedOverlapping
+  fullName: SwarmAuraController.MarkedOverlapping
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MarkedOverlapping
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<bool> MarkedOverlapping
+    return:
+      type: System.Collections.Generic.List{System.Boolean}
+    content.vb: Protected MarkedOverlapping As List(Of Boolean)
+- uid: Global.SwarmAuraController.Start
+  commentId: M:Global.SwarmAuraController.Start
+  id: Start
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: SwarmAuraController.Start()
+  fullName: SwarmAuraController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.SwarmAuraController.Start*
+- uid: Global.SwarmAuraController.ComputeForceFromCenter(UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  commentId: M:Global.SwarmAuraController.ComputeForceFromCenter(UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  id: ComputeForceFromCenter(UnityEngine.Vector2Int,UnityEngine.Vector2Int,System.Int32)
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: ComputeForceFromCenter(Vector2Int, Vector2Int, int)
+  nameWithType: SwarmAuraController.ComputeForceFromCenter(Vector2Int, Vector2Int, int)
+  fullName: SwarmAuraController.ComputeForceFromCenter(UnityEngine.Vector2Int, UnityEngine.Vector2Int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ComputeForceFromCenter
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 ComputeForceFromCenter(Vector2Int p, Vector2Int otherCenter, int otherRadius)
+    parameters:
+    - id: p
+      type: UnityEngine.Vector2Int
+    - id: otherCenter
+      type: UnityEngine.Vector2Int
+    - id: otherRadius
+      type: System.Int32
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Function ComputeForceFromCenter(p As Vector2Int, otherCenter As Vector2Int, otherRadius As Integer) As Vector2
+  overload: Global.SwarmAuraController.ComputeForceFromCenter*
+  nameWithType.vb: SwarmAuraController.ComputeForceFromCenter(Vector2Int, Vector2Int, Integer)
+  fullName.vb: SwarmAuraController.ComputeForceFromCenter(UnityEngine.Vector2Int, UnityEngine.Vector2Int, Integer)
+  name.vb: ComputeForceFromCenter(Vector2Int, Vector2Int, Integer)
+- uid: Global.SwarmAuraController.ComputeReturnForce(System.Int32)
+  commentId: M:Global.SwarmAuraController.ComputeReturnForce(System.Int32)
+  id: ComputeReturnForce(System.Int32)
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: ComputeReturnForce(int)
+  nameWithType: SwarmAuraController.ComputeReturnForce(int)
+  fullName: SwarmAuraController.ComputeReturnForce(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ComputeReturnForce
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 ComputeReturnForce(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Function ComputeReturnForce(index As Integer) As Vector2
+  overload: Global.SwarmAuraController.ComputeReturnForce*
+  nameWithType.vb: SwarmAuraController.ComputeReturnForce(Integer)
+  fullName.vb: SwarmAuraController.ComputeReturnForce(Integer)
+  name.vb: ComputeReturnForce(Integer)
+- uid: Global.SwarmAuraController.Update
+  commentId: M:Global.SwarmAuraController.Update
+  id: Update
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: SwarmAuraController.Update()
+  fullName: SwarmAuraController.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: Global.SwarmAuraController.Update*
+- uid: Global.SwarmAuraController.SetInitialPositionsToCircle(UnityEngine.Vector2Int,System.Int32)
+  commentId: M:Global.SwarmAuraController.SetInitialPositionsToCircle(UnityEngine.Vector2Int,System.Int32)
+  id: SetInitialPositionsToCircle(UnityEngine.Vector2Int,System.Int32)
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: SetInitialPositionsToCircle(Vector2Int, int)
+  nameWithType: SwarmAuraController.SetInitialPositionsToCircle(Vector2Int, int)
+  fullName: SwarmAuraController.SetInitialPositionsToCircle(UnityEngine.Vector2Int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetInitialPositionsToCircle
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetInitialPositionsToCircle(Vector2Int center, int radius)
+    parameters:
+    - id: center
+      type: UnityEngine.Vector2Int
+    - id: radius
+      type: System.Int32
+    content.vb: Public Sub SetInitialPositionsToCircle(center As Vector2Int, radius As Integer)
+  overload: Global.SwarmAuraController.SetInitialPositionsToCircle*
+  nameWithType.vb: SwarmAuraController.SetInitialPositionsToCircle(Vector2Int, Integer)
+  fullName.vb: SwarmAuraController.SetInitialPositionsToCircle(UnityEngine.Vector2Int, Integer)
+  name.vb: SetInitialPositionsToCircle(Vector2Int, Integer)
+- uid: Global.SwarmAuraController.AccellerateVertex(System.Int32,UnityEngine.Vector2)
+  commentId: M:Global.SwarmAuraController.AccellerateVertex(System.Int32,UnityEngine.Vector2)
+  id: AccellerateVertex(System.Int32,UnityEngine.Vector2)
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: AccellerateVertex(int, Vector2)
+  nameWithType: SwarmAuraController.AccellerateVertex(int, Vector2)
+  fullName: SwarmAuraController.AccellerateVertex(int, UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AccellerateVertex
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AccellerateVertex(int index, Vector2 accelleration)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: accelleration
+      type: UnityEngine.Vector2
+    content.vb: Public Sub AccellerateVertex(index As Integer, accelleration As Vector2)
+  overload: Global.SwarmAuraController.AccellerateVertex*
+  nameWithType.vb: SwarmAuraController.AccellerateVertex(Integer, Vector2)
+  fullName.vb: SwarmAuraController.AccellerateVertex(Integer, UnityEngine.Vector2)
+  name.vb: AccellerateVertex(Integer, Vector2)
+- uid: Global.SwarmAuraController.DampenVelocity(System.Int32)
+  commentId: M:Global.SwarmAuraController.DampenVelocity(System.Int32)
+  id: DampenVelocity(System.Int32)
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: DampenVelocity(int)
+  nameWithType: SwarmAuraController.DampenVelocity(int)
+  fullName: SwarmAuraController.DampenVelocity(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DampenVelocity
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DampenVelocity(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub DampenVelocity(index As Integer)
+  overload: Global.SwarmAuraController.DampenVelocity*
+  nameWithType.vb: SwarmAuraController.DampenVelocity(Integer)
+  fullName.vb: SwarmAuraController.DampenVelocity(Integer)
+  name.vb: DampenVelocity(Integer)
+- uid: Global.SwarmAuraController.ZeroVelocity(System.Int32)
+  commentId: M:Global.SwarmAuraController.ZeroVelocity(System.Int32)
+  id: ZeroVelocity(System.Int32)
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: ZeroVelocity(int)
+  nameWithType: SwarmAuraController.ZeroVelocity(int)
+  fullName: SwarmAuraController.ZeroVelocity(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ZeroVelocity
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ZeroVelocity(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub ZeroVelocity(index As Integer)
+  overload: Global.SwarmAuraController.ZeroVelocity*
+  nameWithType.vb: SwarmAuraController.ZeroVelocity(Integer)
+  fullName.vb: SwarmAuraController.ZeroVelocity(Integer)
+  name.vb: ZeroVelocity(Integer)
+- uid: Global.SwarmAuraController.MarkOverlappingVertex(System.Int32)
+  commentId: M:Global.SwarmAuraController.MarkOverlappingVertex(System.Int32)
+  id: MarkOverlappingVertex(System.Int32)
+  parent: Global.SwarmAuraController
+  langs:
+  - csharp
+  - vb
+  name: MarkOverlappingVertex(int)
+  nameWithType: SwarmAuraController.MarkOverlappingVertex(int)
+  fullName: SwarmAuraController.MarkOverlappingVertex(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MarkOverlappingVertex
+    path: ../Assets/Objects & Components/Entities/Enemies/Lake Enemies/Swarm/SwarmAuraController.cs
+    startLine: 93
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void MarkOverlappingVertex(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub MarkOverlappingVertex(index As Integer)
+  overload: Global.SwarmAuraController.MarkOverlappingVertex*
+  nameWithType.vb: SwarmAuraController.MarkOverlappingVertex(Integer)
+  fullName.vb: SwarmAuraController.MarkOverlappingVertex(Integer)
+  name.vb: MarkOverlappingVertex(Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraController{DefaultNotificationType}
+  commentId: T:Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1
+  name: AuraController<DefaultNotificationType>
+  nameWithType: AuraController<DefaultNotificationType>
+  fullName: AuraController<DefaultNotificationType>
+  nameWithType.vb: AuraController(Of DefaultNotificationType)
+  fullName.vb: AuraController(Of DefaultNotificationType)
+  name.vb: AuraController(Of DefaultNotificationType)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+- uid: Global.AuraController{DefaultNotificationType}.auraCreator
+  commentId: F:Global.AuraController{DefaultNotificationType}.auraCreator
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<DefaultNotificationType>.auraCreator
+  fullName: AuraController<DefaultNotificationType>.auraCreator
+  nameWithType.vb: AuraController(Of DefaultNotificationType).auraCreator
+  fullName.vb: AuraController(Of DefaultNotificationType).auraCreator
+- uid: Global.AuraController{DefaultNotificationType}.auraComponent
+  commentId: F:Global.AuraController{DefaultNotificationType}.auraComponent
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<DefaultNotificationType>.auraComponent
+  fullName: AuraController<DefaultNotificationType>.auraComponent
+  nameWithType.vb: AuraController(Of DefaultNotificationType).auraComponent
+  fullName.vb: AuraController(Of DefaultNotificationType).auraComponent
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraController`1
+  commentId: T:Global.AuraController`1
+  name: AuraController<T>
+  nameWithType: AuraController<T>
+  fullName: AuraController<T>
+  nameWithType.vb: AuraController(Of T)
+  fullName.vb: AuraController(Of T)
+  name.vb: AuraController(Of T)
+  spec.csharp:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraController`1
+    name: AuraController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraController`1.auraCreator
+  commentId: F:Global.AuraController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraController<T>.auraCreator
+  fullName: AuraController<T>.auraCreator
+  nameWithType.vb: AuraController(Of T).auraCreator
+  fullName.vb: AuraController(Of T).auraCreator
+- uid: Global.AuraController`1.auraComponent
+  commentId: F:Global.AuraController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraController<T>.auraComponent
+  fullName: AuraController<T>.auraComponent
+  nameWithType.vb: AuraController(Of T).auraComponent
+  fullName.vb: AuraController(Of T).auraComponent
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.SwarmManager
+  commentId: T:Global.SwarmManager
+  name: SwarmManager
+  nameWithType: SwarmManager
+  fullName: SwarmManager
+- uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  commentId: M:Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+  parent: Global.AuraController{DefaultNotificationType}
+  definition: Global.AuraController`1.Notify(`0)
+  name: Notify(DefaultNotificationType)
+  nameWithType: AuraController<DefaultNotificationType>.Notify(DefaultNotificationType)
+  fullName: AuraController<DefaultNotificationType>.Notify(DefaultNotificationType)
+  nameWithType.vb: AuraController(Of DefaultNotificationType).Notify(DefaultNotificationType)
+  fullName.vb: AuraController(Of DefaultNotificationType).Notify(DefaultNotificationType)
+  spec.csharp:
+  - uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+    name: Notify
+  - name: (
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController{DefaultNotificationType}.Notify(DefaultNotificationType)
+    name: Notify
+  - name: (
+  - uid: Global.DefaultNotificationType
+    name: DefaultNotificationType
+  - name: )
+- uid: Global.SwarmAuraController.Notify*
+  commentId: Overload:Global.SwarmAuraController.Notify
+  name: Notify
+  nameWithType: SwarmAuraController.Notify
+  fullName: SwarmAuraController.Notify
+- uid: Global.DefaultNotificationType
+  commentId: T:Global.DefaultNotificationType
+  name: DefaultNotificationType
+  nameWithType: DefaultNotificationType
+  fullName: DefaultNotificationType
+- uid: Global.AuraController`1.Notify(`0)
+  commentId: M:Global.AuraController`1.Notify(`0)
+  name: Notify(T)
+  nameWithType: AuraController<T>.Notify(T)
+  fullName: AuraController<T>.Notify(T)
+  nameWithType.vb: AuraController(Of T).Notify(T)
+  fullName.vb: AuraController(Of T).Notify(T)
+  spec.csharp:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.AuraController`1.Notify(`0)
+    name: Notify
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List{UnityEngine.Vector2}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector2>
+  nameWithType: List<Vector2>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2>
+  nameWithType.vb: List(Of Vector2)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2)
+  name.vb: List(Of Vector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Collections.Generic.List{UnityEngine.Vector2Int}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2Int}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector2Int>
+  nameWithType: List<Vector2Int>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2Int>
+  nameWithType.vb: List(Of Vector2Int)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2Int)
+  name.vb: List(Of Vector2Int)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List{System.Boolean}
+  commentId: T:System.Collections.Generic.List{System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<bool>
+  nameWithType: List<bool>
+  fullName: System.Collections.Generic.List<bool>
+  nameWithType.vb: List(Of Boolean)
+  fullName.vb: System.Collections.Generic.List(Of Boolean)
+  name.vb: List(Of Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.SwarmAuraController.Start*
+  commentId: Overload:Global.SwarmAuraController.Start
+  name: Start
+  nameWithType: SwarmAuraController.Start
+  fullName: SwarmAuraController.Start
+- uid: Global.SwarmAuraController.ComputeForceFromCenter*
+  commentId: Overload:Global.SwarmAuraController.ComputeForceFromCenter
+  name: ComputeForceFromCenter
+  nameWithType: SwarmAuraController.ComputeForceFromCenter
+  fullName: SwarmAuraController.ComputeForceFromCenter
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.SwarmAuraController.ComputeReturnForce*
+  commentId: Overload:Global.SwarmAuraController.ComputeReturnForce
+  name: ComputeReturnForce
+  nameWithType: SwarmAuraController.ComputeReturnForce
+  fullName: SwarmAuraController.ComputeReturnForce
+- uid: Global.SwarmAuraController.Update*
+  commentId: Overload:Global.SwarmAuraController.Update
+  name: Update
+  nameWithType: SwarmAuraController.Update
+  fullName: SwarmAuraController.Update
+- uid: Global.SwarmAuraController.SetInitialPositionsToCircle*
+  commentId: Overload:Global.SwarmAuraController.SetInitialPositionsToCircle
+  name: SetInitialPositionsToCircle
+  nameWithType: SwarmAuraController.SetInitialPositionsToCircle
+  fullName: SwarmAuraController.SetInitialPositionsToCircle
+- uid: Global.SwarmAuraController.AccellerateVertex*
+  commentId: Overload:Global.SwarmAuraController.AccellerateVertex
+  name: AccellerateVertex
+  nameWithType: SwarmAuraController.AccellerateVertex
+  fullName: SwarmAuraController.AccellerateVertex
+- uid: Global.SwarmAuraController.DampenVelocity*
+  commentId: Overload:Global.SwarmAuraController.DampenVelocity
+  name: DampenVelocity
+  nameWithType: SwarmAuraController.DampenVelocity
+  fullName: SwarmAuraController.DampenVelocity
+- uid: Global.SwarmAuraController.ZeroVelocity*
+  commentId: Overload:Global.SwarmAuraController.ZeroVelocity
+  name: ZeroVelocity
+  nameWithType: SwarmAuraController.ZeroVelocity
+  fullName: SwarmAuraController.ZeroVelocity
+- uid: Global.SwarmAuraController.MarkOverlappingVertex*
+  commentId: Overload:Global.SwarmAuraController.MarkOverlappingVertex
+  name: MarkOverlappingVertex
+  nameWithType: SwarmAuraController.MarkOverlappingVertex
+  fullName: SwarmAuraController.MarkOverlappingVertex

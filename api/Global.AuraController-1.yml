@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraController`1
+  commentId: T:Global.AuraController`1
+  id: AuraController`1
+  parent: Global
+  children:
+  - Global.AuraController`1.auraComponent
+  - Global.AuraController`1.auraCreator
+  - Global.AuraController`1.Notify(`0)
+  - Global.AuraController`1.Start
+  langs:
+  - csharp
+  - vb
+  name: AuraController<T>
+  nameWithType: AuraController<T>
+  fullName: AuraController<T>
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraController
+    path: ../Assets/Objects & Components/Entities/Auras/AuraController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ExecuteInEditMode]
+
+      public abstract class AuraController<T> : MonoBehaviour
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <ExecuteInEditMode>
+
+      Public MustInherit Class AuraController(Of T) Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - Global.ArcAuraController
+  - Global.CircleAuraController
+  - Global.EasingAuraController
+  - Global.EyeBallSightController
+  - Global.HerdAuraController
+  - Global.PostAuraController
+  - Global.ProjectileAuraController
+  - Global.RadialAuraController
+  - Global.RangedAuraController
+  - Global.RippleAuraController
+  - Global.ScreamerAuraController
+  - Global.SemiLobeAuraController
+  - Global.StaticAuraController
+  - Global.StillCircleAuraController
+  - Global.SwarmAuraController
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEngine.ExecuteInEditMode
+    ctor: UnityEngine.ExecuteInEditMode.#ctor
+    arguments: []
+  nameWithType.vb: AuraController(Of T)
+  fullName.vb: AuraController(Of T)
+  name.vb: AuraController(Of T)
+- uid: Global.AuraController`1.auraCreator
+  commentId: F:Global.AuraController`1.auraCreator
+  id: auraCreator
+  parent: Global.AuraController`1
+  langs:
+  - csharp
+  - vb
+  name: auraCreator
+  nameWithType: AuraController<T>.auraCreator
+  fullName: AuraController<T>.auraCreator
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraCreator
+    path: ../Assets/Objects & Components/Entities/Auras/AuraController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThe GameObject that spawned this aura/controls it\n"
+  example: []
+  syntax:
+    content: public GameObject auraCreator
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public auraCreator As GameObject
+  nameWithType.vb: AuraController(Of T).auraCreator
+  fullName.vb: AuraController(Of T).auraCreator
+- uid: Global.AuraController`1.auraComponent
+  commentId: F:Global.AuraController`1.auraComponent
+  id: auraComponent
+  parent: Global.AuraController`1
+  langs:
+  - csharp
+  - vb
+  name: auraComponent
+  nameWithType: AuraController<T>.auraComponent
+  fullName: AuraController<T>.auraComponent
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraComponent
+    path: ../Assets/Objects & Components/Entities/Auras/AuraController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Aura auraComponent
+    return:
+      type: Global.Aura
+    content.vb: Public auraComponent As Aura
+  nameWithType.vb: AuraController(Of T).auraComponent
+  fullName.vb: AuraController(Of T).auraComponent
+- uid: Global.AuraController`1.Start
+  commentId: M:Global.AuraController`1.Start
+  id: Start
+  parent: Global.AuraController`1
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: AuraController<T>.Start()
+  fullName: AuraController<T>.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Auras/AuraController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.AuraController`1.Start*
+  nameWithType.vb: AuraController(Of T).Start()
+  fullName.vb: AuraController(Of T).Start()
+- uid: Global.AuraController`1.Notify(`0)
+  commentId: M:Global.AuraController`1.Notify(`0)
+  id: Notify(`0)
+  parent: Global.AuraController`1
+  langs:
+  - csharp
+  - vb
+  name: Notify(T)
+  nameWithType: AuraController<T>.Notify(T)
+  fullName: AuraController<T>.Notify(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Notify
+    path: ../Assets/Objects & Components/Entities/Auras/AuraController.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nSend notification to and from this aura to notify it of any property changes\n"
+  example: []
+  syntax:
+    content: public abstract void Notify(T notificationType)
+    parameters:
+    - id: notificationType
+      type: '{T}'
+    content.vb: Public MustOverride Sub Notify(notificationType As T)
+  overload: Global.AuraController`1.Notify*
+  nameWithType.vb: AuraController(Of T).Notify(T)
+  fullName.vb: AuraController(Of T).Notify(T)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.Aura
+  commentId: T:Global.Aura
+  name: Aura
+  nameWithType: Aura
+  fullName: Aura
+- uid: Global.AuraController`1.Start*
+  commentId: Overload:Global.AuraController`1.Start
+  name: Start
+  nameWithType: AuraController<T>.Start
+  fullName: AuraController<T>.Start
+  nameWithType.vb: AuraController(Of T).Start
+  fullName.vb: AuraController(Of T).Start
+- uid: Global.AuraController`1.Notify*
+  commentId: Overload:Global.AuraController`1.Notify
+  name: Notify
+  nameWithType: AuraController<T>.Notify
+  fullName: AuraController<T>.Notify
+  nameWithType.vb: AuraController(Of T).Notify
+  fullName.vb: AuraController(Of T).Notify
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

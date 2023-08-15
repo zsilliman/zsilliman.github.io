@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.EffectController
+  commentId: T:Global.EffectController
+  id: EffectController
+  parent: Global
+  children:
+  - Global.EffectController.AddShakeEffect(System.Single,System.Single,System.Single)
+  - Global.EffectController.EmptySpaceColor
+  - Global.EffectController.EmptySpaceMat
+  - Global.EffectController.EndAllShockwaves
+  - Global.EffectController.EndShockwave(System.String)
+  - Global.EffectController.EndShockwave(UnityEngine.GameObject)
+  - Global.EffectController.Instance
+  - Global.EffectController.rendererData
+  - Global.EffectController.ShockwaveMat
+  - Global.EffectController.StartShockwave(UnityEngine.GameObject,UnityEngine.Vector2)
+  - Global.EffectController.UpdateShockwaves
+  langs:
+  - csharp
+  - vb
+  name: EffectController
+  nameWithType: EffectController
+  fullName: EffectController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EffectController
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class EffectController : MonoBehaviour'
+    content.vb: Public Class EffectController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.EffectController.Instance
+  commentId: F:Global.EffectController.Instance
+  id: Instance
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: EffectController.Instance
+  fullName: EffectController.Instance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Instance
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static EffectController Instance
+    return:
+      type: Global.EffectController
+    content.vb: Public Shared Instance As EffectController
+- uid: Global.EffectController.ShockwaveMat
+  commentId: F:Global.EffectController.ShockwaveMat
+  id: ShockwaveMat
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: ShockwaveMat
+  nameWithType: EffectController.ShockwaveMat
+  fullName: EffectController.ShockwaveMat
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ShockwaveMat
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Material ShockwaveMat
+    return:
+      type: UnityEngine.Material
+    content.vb: Public ShockwaveMat As Material
+- uid: Global.EffectController.EmptySpaceMat
+  commentId: F:Global.EffectController.EmptySpaceMat
+  id: EmptySpaceMat
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: EmptySpaceMat
+  nameWithType: EffectController.EmptySpaceMat
+  fullName: EffectController.EmptySpaceMat
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EmptySpaceMat
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Material EmptySpaceMat
+    return:
+      type: UnityEngine.Material
+    content.vb: Public EmptySpaceMat As Material
+- uid: Global.EffectController.EmptySpaceColor
+  commentId: F:Global.EffectController.EmptySpaceColor
+  id: EmptySpaceColor
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: EmptySpaceColor
+  nameWithType: EffectController.EmptySpaceColor
+  fullName: EffectController.EmptySpaceColor
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EmptySpaceColor
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Color EmptySpaceColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public EmptySpaceColor As Color
+- uid: Global.EffectController.rendererData
+  commentId: F:Global.EffectController.rendererData
+  id: rendererData
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: rendererData
+  nameWithType: EffectController.rendererData
+  fullName: EffectController.rendererData
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: rendererData
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UniversalRendererData rendererData
+    return:
+      type: UnityEngine.Rendering.Universal.UniversalRendererData
+    content.vb: Public rendererData As UniversalRendererData
+- uid: Global.EffectController.AddShakeEffect(System.Single,System.Single,System.Single)
+  commentId: M:Global.EffectController.AddShakeEffect(System.Single,System.Single,System.Single)
+  id: AddShakeEffect(System.Single,System.Single,System.Single)
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: AddShakeEffect(float, float, float)
+  nameWithType: EffectController.AddShakeEffect(float, float, float)
+  fullName: EffectController.AddShakeEffect(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddShakeEffect
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddShakeEffect(float ShakeAmount, float Duration, float TimeBetweenShakes)
+    parameters:
+    - id: ShakeAmount
+      type: System.Single
+    - id: Duration
+      type: System.Single
+    - id: TimeBetweenShakes
+      type: System.Single
+    content.vb: Public Sub AddShakeEffect(ShakeAmount As Single, Duration As Single, TimeBetweenShakes As Single)
+  overload: Global.EffectController.AddShakeEffect*
+  nameWithType.vb: EffectController.AddShakeEffect(Single, Single, Single)
+  fullName.vb: EffectController.AddShakeEffect(Single, Single, Single)
+  name.vb: AddShakeEffect(Single, Single, Single)
+- uid: Global.EffectController.StartShockwave(UnityEngine.GameObject,UnityEngine.Vector2)
+  commentId: M:Global.EffectController.StartShockwave(UnityEngine.GameObject,UnityEngine.Vector2)
+  id: StartShockwave(UnityEngine.GameObject,UnityEngine.Vector2)
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: StartShockwave(GameObject, Vector2)
+  nameWithType: EffectController.StartShockwave(GameObject, Vector2)
+  fullName: EffectController.StartShockwave(UnityEngine.GameObject, UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StartShockwave
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void StartShockwave(GameObject go, Vector2 WorldPosition)
+    parameters:
+    - id: go
+      type: UnityEngine.GameObject
+    - id: WorldPosition
+      type: UnityEngine.Vector2
+    content.vb: Public Sub StartShockwave(go As GameObject, WorldPosition As Vector2)
+  overload: Global.EffectController.StartShockwave*
+- uid: Global.EffectController.UpdateShockwaves
+  commentId: M:Global.EffectController.UpdateShockwaves
+  id: UpdateShockwaves
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: UpdateShockwaves()
+  nameWithType: EffectController.UpdateShockwaves()
+  fullName: EffectController.UpdateShockwaves()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateShockwaves
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UpdateShockwaves()
+    content.vb: Public Sub UpdateShockwaves()
+  overload: Global.EffectController.UpdateShockwaves*
+- uid: Global.EffectController.EndShockwave(System.String)
+  commentId: M:Global.EffectController.EndShockwave(System.String)
+  id: EndShockwave(System.String)
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: EndShockwave(string)
+  nameWithType: EffectController.EndShockwave(string)
+  fullName: EffectController.EndShockwave(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EndShockwave
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 101
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void EndShockwave(string propID)
+    parameters:
+    - id: propID
+      type: System.String
+    content.vb: Public Sub EndShockwave(propID As String)
+  overload: Global.EffectController.EndShockwave*
+  nameWithType.vb: EffectController.EndShockwave(String)
+  fullName.vb: EffectController.EndShockwave(String)
+  name.vb: EndShockwave(String)
+- uid: Global.EffectController.EndShockwave(UnityEngine.GameObject)
+  commentId: M:Global.EffectController.EndShockwave(UnityEngine.GameObject)
+  id: EndShockwave(UnityEngine.GameObject)
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: EndShockwave(GameObject)
+  nameWithType: EffectController.EndShockwave(GameObject)
+  fullName: EffectController.EndShockwave(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EndShockwave
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void EndShockwave(GameObject go)
+    parameters:
+    - id: go
+      type: UnityEngine.GameObject
+    content.vb: Public Sub EndShockwave(go As GameObject)
+  overload: Global.EffectController.EndShockwave*
+- uid: Global.EffectController.EndAllShockwaves
+  commentId: M:Global.EffectController.EndAllShockwaves
+  id: EndAllShockwaves
+  parent: Global.EffectController
+  langs:
+  - csharp
+  - vb
+  name: EndAllShockwaves()
+  nameWithType: EffectController.EndAllShockwaves()
+  fullName: EffectController.EndAllShockwaves()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/EffectController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EndAllShockwaves
+    path: ../Assets/Objects & Components/Camera/Effects/EffectController.cs
+    startLine: 123
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void EndAllShockwaves()
+    content.vb: Public Sub EndAllShockwaves()
+  overload: Global.EffectController.EndAllShockwaves*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.EffectController
+  commentId: T:Global.EffectController
+  name: EffectController
+  nameWithType: EffectController
+  fullName: EffectController
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine.Rendering.Universal.UniversalRendererData
+  commentId: T:UnityEngine.Rendering.Universal.UniversalRendererData
+  parent: UnityEngine.Rendering.Universal
+  isExternal: true
+  name: UniversalRendererData
+  nameWithType: UniversalRendererData
+  fullName: UnityEngine.Rendering.Universal.UniversalRendererData
+- uid: UnityEngine.Rendering.Universal
+  commentId: N:UnityEngine.Rendering.Universal
+  isExternal: true
+  name: UnityEngine.Rendering.Universal
+  nameWithType: UnityEngine.Rendering.Universal
+  fullName: UnityEngine.Rendering.Universal
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering
+    name: Rendering
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering.Universal
+    name: Universal
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering
+    name: Rendering
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering.Universal
+    name: Universal
+    isExternal: true
+- uid: Global.EffectController.AddShakeEffect*
+  commentId: Overload:Global.EffectController.AddShakeEffect
+  name: AddShakeEffect
+  nameWithType: EffectController.AddShakeEffect
+  fullName: EffectController.AddShakeEffect
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.EffectController.StartShockwave*
+  commentId: Overload:Global.EffectController.StartShockwave
+  name: StartShockwave
+  nameWithType: EffectController.StartShockwave
+  fullName: EffectController.StartShockwave
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.EffectController.UpdateShockwaves*
+  commentId: Overload:Global.EffectController.UpdateShockwaves
+  name: UpdateShockwaves
+  nameWithType: EffectController.UpdateShockwaves
+  fullName: EffectController.UpdateShockwaves
+- uid: Global.EffectController.EndShockwave*
+  commentId: Overload:Global.EffectController.EndShockwave
+  name: EndShockwave
+  nameWithType: EffectController.EndShockwave
+  fullName: EffectController.EndShockwave
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.EffectController.EndAllShockwaves*
+  commentId: Overload:Global.EffectController.EndAllShockwaves
+  name: EndAllShockwaves
+  nameWithType: EffectController.EndAllShockwaves
+  fullName: EffectController.EndAllShockwaves

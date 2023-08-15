@@ -1,0 +1,431 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomAnimator
+  commentId: T:Global.CustomAnimator
+  id: CustomAnimator
+  parent: Global
+  children:
+  - Global.CustomAnimator.#ctor(CustomAnimator.AnimLoop)
+  - Global.CustomAnimator.Duration
+  - Global.CustomAnimator.F
+  - Global.CustomAnimator.Playing
+  - Global.CustomAnimator.Start
+  - Global.CustomAnimator.Start(System.Single)
+  - Global.CustomAnimator.Stop
+  - Global.CustomAnimator.t
+  - Global.CustomAnimator.Update(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: CustomAnimator
+  nameWithType: CustomAnimator
+  fullName: CustomAnimator
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CustomAnimator
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class CustomAnimator
+    content.vb: Public Class CustomAnimator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.CustomAnimator.Playing
+  commentId: F:Global.CustomAnimator.Playing
+  id: Playing
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: Playing
+  nameWithType: CustomAnimator.Playing
+  fullName: CustomAnimator.Playing
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Playing
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool Playing
+    return:
+      type: System.Boolean
+    content.vb: Protected Playing As Boolean
+- uid: Global.CustomAnimator.t
+  commentId: F:Global.CustomAnimator.t
+  id: t
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: t
+  nameWithType: CustomAnimator.t
+  fullName: CustomAnimator.t
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: t
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float t
+    return:
+      type: System.Single
+    content.vb: Protected t As Single
+- uid: Global.CustomAnimator.Duration
+  commentId: F:Global.CustomAnimator.Duration
+  id: Duration
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: CustomAnimator.Duration
+  fullName: CustomAnimator.Duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Duration
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float Duration
+    return:
+      type: System.Single
+    content.vb: Protected Duration As Single
+- uid: Global.CustomAnimator.F
+  commentId: F:Global.CustomAnimator.F
+  id: F
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: F
+  nameWithType: CustomAnimator.F
+  fullName: CustomAnimator.F
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: F
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected CustomAnimator.AnimLoop F
+    return:
+      type: Global.CustomAnimator.AnimLoop
+    content.vb: Protected F As CustomAnimator.AnimLoop
+- uid: Global.CustomAnimator.#ctor(CustomAnimator.AnimLoop)
+  commentId: M:Global.CustomAnimator.#ctor(CustomAnimator.AnimLoop)
+  id: '#ctor(CustomAnimator.AnimLoop)'
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: CustomAnimator(AnimLoop)
+  nameWithType: CustomAnimator.CustomAnimator(CustomAnimator.AnimLoop)
+  fullName: CustomAnimator.CustomAnimator(CustomAnimator.AnimLoop)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public CustomAnimator(CustomAnimator.AnimLoop f)
+    parameters:
+    - id: f
+      type: Global.CustomAnimator.AnimLoop
+    content.vb: Public Sub New(f As CustomAnimator.AnimLoop)
+  overload: Global.CustomAnimator.#ctor*
+  nameWithType.vb: CustomAnimator.New(CustomAnimator.AnimLoop)
+  fullName.vb: CustomAnimator.New(CustomAnimator.AnimLoop)
+  name.vb: New(AnimLoop)
+- uid: Global.CustomAnimator.Start
+  commentId: M:Global.CustomAnimator.Start
+  id: Start
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: CustomAnimator.Start()
+  fullName: CustomAnimator.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: Global.CustomAnimator.Start*
+- uid: Global.CustomAnimator.Start(System.Single)
+  commentId: M:Global.CustomAnimator.Start(System.Single)
+  id: Start(System.Single)
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: Start(float)
+  nameWithType: CustomAnimator.Start(float)
+  fullName: CustomAnimator.Start(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Start(float duration)
+    parameters:
+    - id: duration
+      type: System.Single
+    content.vb: Public Sub Start(duration As Single)
+  overload: Global.CustomAnimator.Start*
+  nameWithType.vb: CustomAnimator.Start(Single)
+  fullName.vb: CustomAnimator.Start(Single)
+  name.vb: Start(Single)
+- uid: Global.CustomAnimator.Update(System.Single)
+  commentId: M:Global.CustomAnimator.Update(System.Single)
+  id: Update(System.Single)
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: Update(float)
+  nameWithType: CustomAnimator.Update(float)
+  fullName: CustomAnimator.Update(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Update(float deltaTime)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    content.vb: Public Sub Update(deltaTime As Single)
+  overload: Global.CustomAnimator.Update*
+  nameWithType.vb: CustomAnimator.Update(Single)
+  fullName.vb: CustomAnimator.Update(Single)
+  name.vb: Update(Single)
+- uid: Global.CustomAnimator.Stop
+  commentId: M:Global.CustomAnimator.Stop
+  id: Stop
+  parent: Global.CustomAnimator
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: CustomAnimator.Stop()
+  fullName: CustomAnimator.Stop()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomAnimator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Stop
+    path: ../Assets/Framework/Util/CustomAnimator.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: Global.CustomAnimator.Stop*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.CustomAnimator.AnimLoop
+  commentId: T:Global.CustomAnimator.AnimLoop
+  name: CustomAnimator.AnimLoop
+  nameWithType: CustomAnimator.AnimLoop
+  fullName: CustomAnimator.AnimLoop
+  spec.csharp:
+  - uid: Global.CustomAnimator
+    name: CustomAnimator
+  - name: .
+  - uid: Global.CustomAnimator.AnimLoop
+    name: AnimLoop
+  spec.vb:
+  - uid: Global.CustomAnimator
+    name: CustomAnimator
+  - name: .
+  - uid: Global.CustomAnimator.AnimLoop
+    name: AnimLoop
+- uid: Global.CustomAnimator.#ctor*
+  commentId: Overload:Global.CustomAnimator.#ctor
+  name: CustomAnimator
+  nameWithType: CustomAnimator.CustomAnimator
+  fullName: CustomAnimator.CustomAnimator
+  nameWithType.vb: CustomAnimator.New
+  fullName.vb: CustomAnimator.New
+  name.vb: New
+- uid: Global.CustomAnimator.Start*
+  commentId: Overload:Global.CustomAnimator.Start
+  name: Start
+  nameWithType: CustomAnimator.Start
+  fullName: CustomAnimator.Start
+- uid: Global.CustomAnimator.Update*
+  commentId: Overload:Global.CustomAnimator.Update
+  name: Update
+  nameWithType: CustomAnimator.Update
+  fullName: CustomAnimator.Update
+- uid: Global.CustomAnimator.Stop*
+  commentId: Overload:Global.CustomAnimator.Stop
+  name: Stop
+  nameWithType: CustomAnimator.Stop
+  fullName: CustomAnimator.Stop

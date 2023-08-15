@@ -1,0 +1,679 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MeshAnimation
+  commentId: T:Global.MeshAnimation
+  id: MeshAnimation
+  parent: Global
+  children:
+  - Global.MeshAnimation.#ctor(System.String,UnityEngine.Mesh,System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3})
+  - Global.MeshAnimation.currentVertices
+  - Global.MeshAnimation.endVertices
+  - Global.MeshAnimation.initialVertices
+  - Global.MeshAnimation.mesh
+  - Global.MeshAnimation.PlayUpdate(System.Single)
+  - Global.MeshAnimation.TimeToTransition
+  langs:
+  - csharp
+  - vb
+  name: MeshAnimation
+  nameWithType: MeshAnimation
+  fullName: MeshAnimation
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Animations/Mesh/MeshAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MeshAnimation
+    path: ../Assets/Framework/Animations/Mesh/MeshAnimation.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class MeshAnimation : CustomAnimation'
+    content.vb: Public Class MeshAnimation Inherits CustomAnimation
+  inheritance:
+  - System.Object
+  - Global.CustomAnimation
+  inheritedMembers:
+  - Global.CustomAnimation.Name
+  - Global.CustomAnimation.Loop
+  - Global.CustomAnimation.t
+  - Global.CustomAnimation.state
+  - Global.CustomAnimation.endCallback
+  - Global.CustomAnimation.Play
+  - Global.CustomAnimation.Pause
+  - Global.CustomAnimation.Resume
+  - Global.CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  - Global.CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  - Global.CustomAnimation.PauseUpdate
+  - Global.CustomAnimation.UpdateAnimation
+  - Global.CustomAnimation.GetState
+  - Global.CustomAnimation.Finish
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.MeshAnimation.initialVertices
+  commentId: F:Global.MeshAnimation.initialVertices
+  id: initialVertices
+  parent: Global.MeshAnimation
+  langs:
+  - csharp
+  - vb
+  name: initialVertices
+  nameWithType: MeshAnimation.initialVertices
+  fullName: MeshAnimation.initialVertices
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/Mesh/MeshAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: initialVertices
+    path: ../Assets/Framework/Animations/Mesh/MeshAnimation.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<Vector3> initialVertices
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public initialVertices As List(Of Vector3)
+- uid: Global.MeshAnimation.endVertices
+  commentId: F:Global.MeshAnimation.endVertices
+  id: endVertices
+  parent: Global.MeshAnimation
+  langs:
+  - csharp
+  - vb
+  name: endVertices
+  nameWithType: MeshAnimation.endVertices
+  fullName: MeshAnimation.endVertices
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/Mesh/MeshAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: endVertices
+    path: ../Assets/Framework/Animations/Mesh/MeshAnimation.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<Vector3> endVertices
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public endVertices As List(Of Vector3)
+- uid: Global.MeshAnimation.currentVertices
+  commentId: F:Global.MeshAnimation.currentVertices
+  id: currentVertices
+  parent: Global.MeshAnimation
+  langs:
+  - csharp
+  - vb
+  name: currentVertices
+  nameWithType: MeshAnimation.currentVertices
+  fullName: MeshAnimation.currentVertices
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/Mesh/MeshAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: currentVertices
+    path: ../Assets/Framework/Animations/Mesh/MeshAnimation.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<Vector3> currentVertices
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public currentVertices As List(Of Vector3)
+- uid: Global.MeshAnimation.TimeToTransition
+  commentId: F:Global.MeshAnimation.TimeToTransition
+  id: TimeToTransition
+  parent: Global.MeshAnimation
+  langs:
+  - csharp
+  - vb
+  name: TimeToTransition
+  nameWithType: MeshAnimation.TimeToTransition
+  fullName: MeshAnimation.TimeToTransition
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/Mesh/MeshAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TimeToTransition
+    path: ../Assets/Framework/Animations/Mesh/MeshAnimation.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float TimeToTransition
+    return:
+      type: System.Single
+    content.vb: Public TimeToTransition As Single
+- uid: Global.MeshAnimation.mesh
+  commentId: F:Global.MeshAnimation.mesh
+  id: mesh
+  parent: Global.MeshAnimation
+  langs:
+  - csharp
+  - vb
+  name: mesh
+  nameWithType: MeshAnimation.mesh
+  fullName: MeshAnimation.mesh
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/Mesh/MeshAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: mesh
+    path: ../Assets/Framework/Animations/Mesh/MeshAnimation.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Mesh mesh
+    return:
+      type: UnityEngine.Mesh
+    content.vb: Public mesh As Mesh
+- uid: Global.MeshAnimation.#ctor(System.String,UnityEngine.Mesh,System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3})
+  commentId: M:Global.MeshAnimation.#ctor(System.String,UnityEngine.Mesh,System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3})
+  id: '#ctor(System.String,UnityEngine.Mesh,System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3})'
+  parent: Global.MeshAnimation
+  langs:
+  - csharp
+  - vb
+  name: MeshAnimation(string, Mesh, List<Vector3>, List<Vector3>)
+  nameWithType: MeshAnimation.MeshAnimation(string, Mesh, List<Vector3>, List<Vector3>)
+  fullName: MeshAnimation.MeshAnimation(string, UnityEngine.Mesh, System.Collections.Generic.List<UnityEngine.Vector3>, System.Collections.Generic.List<UnityEngine.Vector3>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Animations/Mesh/MeshAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Animations/Mesh/MeshAnimation.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public MeshAnimation(string name, Mesh mesh, List<Vector3> initialVertices, List<Vector3> endVertices)
+    parameters:
+    - id: name
+      type: System.String
+    - id: mesh
+      type: UnityEngine.Mesh
+    - id: initialVertices
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    - id: endVertices
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public Sub New(name As String, mesh As Mesh, initialVertices As List(Of Vector3), endVertices As List(Of Vector3))
+  overload: Global.MeshAnimation.#ctor*
+  nameWithType.vb: MeshAnimation.New(String, Mesh, List(Of Vector3), List(Of Vector3))
+  fullName.vb: MeshAnimation.New(String, UnityEngine.Mesh, System.Collections.Generic.List(Of UnityEngine.Vector3), System.Collections.Generic.List(Of UnityEngine.Vector3))
+  name.vb: New(String, Mesh, List(Of Vector3), List(Of Vector3))
+- uid: Global.MeshAnimation.PlayUpdate(System.Single)
+  commentId: M:Global.MeshAnimation.PlayUpdate(System.Single)
+  id: PlayUpdate(System.Single)
+  parent: Global.MeshAnimation
+  langs:
+  - csharp
+  - vb
+  name: PlayUpdate(float)
+  nameWithType: MeshAnimation.PlayUpdate(float)
+  fullName: MeshAnimation.PlayUpdate(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Animations/Mesh/MeshAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayUpdate
+    path: ../Assets/Framework/Animations/Mesh/MeshAnimation.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected override void PlayUpdate(float t)
+    parameters:
+    - id: t
+      type: System.Single
+    content.vb: Protected Overrides Sub PlayUpdate(t As Single)
+  overridden: Global.CustomAnimation.PlayUpdate(System.Single)
+  overload: Global.MeshAnimation.PlayUpdate*
+  nameWithType.vb: MeshAnimation.PlayUpdate(Single)
+  fullName.vb: MeshAnimation.PlayUpdate(Single)
+  name.vb: PlayUpdate(Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.CustomAnimation
+  commentId: T:Global.CustomAnimation
+  name: CustomAnimation
+  nameWithType: CustomAnimation
+  fullName: CustomAnimation
+- uid: Global.CustomAnimation.Name
+  commentId: F:Global.CustomAnimation.Name
+  parent: Global.CustomAnimation
+  name: Name
+  nameWithType: CustomAnimation.Name
+  fullName: CustomAnimation.Name
+- uid: Global.CustomAnimation.Loop
+  commentId: F:Global.CustomAnimation.Loop
+  parent: Global.CustomAnimation
+  name: Loop
+  nameWithType: CustomAnimation.Loop
+  fullName: CustomAnimation.Loop
+- uid: Global.CustomAnimation.t
+  commentId: F:Global.CustomAnimation.t
+  parent: Global.CustomAnimation
+  name: t
+  nameWithType: CustomAnimation.t
+  fullName: CustomAnimation.t
+- uid: Global.CustomAnimation.state
+  commentId: F:Global.CustomAnimation.state
+  parent: Global.CustomAnimation
+  name: state
+  nameWithType: CustomAnimation.state
+  fullName: CustomAnimation.state
+- uid: Global.CustomAnimation.endCallback
+  commentId: F:Global.CustomAnimation.endCallback
+  parent: Global.CustomAnimation
+  name: endCallback
+  nameWithType: CustomAnimation.endCallback
+  fullName: CustomAnimation.endCallback
+- uid: Global.CustomAnimation.Play
+  commentId: M:Global.CustomAnimation.Play
+  parent: Global.CustomAnimation
+  name: Play()
+  nameWithType: CustomAnimation.Play()
+  fullName: CustomAnimation.Play()
+  spec.csharp:
+  - uid: Global.CustomAnimation.Play
+    name: Play
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.Play
+    name: Play
+  - name: (
+  - name: )
+- uid: Global.CustomAnimation.Pause
+  commentId: M:Global.CustomAnimation.Pause
+  parent: Global.CustomAnimation
+  name: Pause()
+  nameWithType: CustomAnimation.Pause()
+  fullName: CustomAnimation.Pause()
+  spec.csharp:
+  - uid: Global.CustomAnimation.Pause
+    name: Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.Pause
+    name: Pause
+  - name: (
+  - name: )
+- uid: Global.CustomAnimation.Resume
+  commentId: M:Global.CustomAnimation.Resume
+  parent: Global.CustomAnimation
+  name: Resume()
+  nameWithType: CustomAnimation.Resume()
+  fullName: CustomAnimation.Resume()
+  spec.csharp:
+  - uid: Global.CustomAnimation.Resume
+    name: Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.Resume
+    name: Resume
+  - name: (
+  - name: )
+- uid: Global.CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  commentId: M:Global.CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  parent: Global.CustomAnimation
+  name: AddAnimationEndCallback(AnimationCallback)
+  nameWithType: CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  fullName: CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+  spec.csharp:
+  - uid: Global.CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+    name: AddAnimationEndCallback
+  - name: (
+  - uid: Global.CustomAnimation.AnimationCallback
+    name: AnimationCallback
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.AddAnimationEndCallback(CustomAnimation.AnimationCallback)
+    name: AddAnimationEndCallback
+  - name: (
+  - uid: Global.CustomAnimation.AnimationCallback
+    name: AnimationCallback
+  - name: )
+- uid: Global.CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  commentId: M:Global.CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  parent: Global.CustomAnimation
+  name: RemoveAnimationEndCallback(AnimationCallback)
+  nameWithType: CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  fullName: CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+  spec.csharp:
+  - uid: Global.CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+    name: RemoveAnimationEndCallback
+  - name: (
+  - uid: Global.CustomAnimation.AnimationCallback
+    name: AnimationCallback
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.RemoveAnimationEndCallback(CustomAnimation.AnimationCallback)
+    name: RemoveAnimationEndCallback
+  - name: (
+  - uid: Global.CustomAnimation.AnimationCallback
+    name: AnimationCallback
+  - name: )
+- uid: Global.CustomAnimation.PauseUpdate
+  commentId: M:Global.CustomAnimation.PauseUpdate
+  parent: Global.CustomAnimation
+  name: PauseUpdate()
+  nameWithType: CustomAnimation.PauseUpdate()
+  fullName: CustomAnimation.PauseUpdate()
+  spec.csharp:
+  - uid: Global.CustomAnimation.PauseUpdate
+    name: PauseUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.PauseUpdate
+    name: PauseUpdate
+  - name: (
+  - name: )
+- uid: Global.CustomAnimation.UpdateAnimation
+  commentId: M:Global.CustomAnimation.UpdateAnimation
+  parent: Global.CustomAnimation
+  name: UpdateAnimation()
+  nameWithType: CustomAnimation.UpdateAnimation()
+  fullName: CustomAnimation.UpdateAnimation()
+  spec.csharp:
+  - uid: Global.CustomAnimation.UpdateAnimation
+    name: UpdateAnimation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.UpdateAnimation
+    name: UpdateAnimation
+  - name: (
+  - name: )
+- uid: Global.CustomAnimation.GetState
+  commentId: M:Global.CustomAnimation.GetState
+  parent: Global.CustomAnimation
+  name: GetState()
+  nameWithType: CustomAnimation.GetState()
+  fullName: CustomAnimation.GetState()
+  spec.csharp:
+  - uid: Global.CustomAnimation.GetState
+    name: GetState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.GetState
+    name: GetState
+  - name: (
+  - name: )
+- uid: Global.CustomAnimation.Finish
+  commentId: M:Global.CustomAnimation.Finish
+  parent: Global.CustomAnimation
+  name: Finish()
+  nameWithType: CustomAnimation.Finish()
+  fullName: CustomAnimation.Finish()
+  spec.csharp:
+  - uid: Global.CustomAnimation.Finish
+    name: Finish
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.Finish
+    name: Finish
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.MeshAnimation.#ctor*
+  commentId: Overload:Global.MeshAnimation.#ctor
+  name: MeshAnimation
+  nameWithType: MeshAnimation.MeshAnimation
+  fullName: MeshAnimation.MeshAnimation
+  nameWithType.vb: MeshAnimation.New
+  fullName.vb: MeshAnimation.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.CustomAnimation.PlayUpdate(System.Single)
+  commentId: M:Global.CustomAnimation.PlayUpdate(System.Single)
+  parent: Global.CustomAnimation
+  isExternal: true
+  name: PlayUpdate(float)
+  nameWithType: CustomAnimation.PlayUpdate(float)
+  fullName: CustomAnimation.PlayUpdate(float)
+  nameWithType.vb: CustomAnimation.PlayUpdate(Single)
+  fullName.vb: CustomAnimation.PlayUpdate(Single)
+  name.vb: PlayUpdate(Single)
+  spec.csharp:
+  - uid: Global.CustomAnimation.PlayUpdate(System.Single)
+    name: PlayUpdate
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CustomAnimation.PlayUpdate(System.Single)
+    name: PlayUpdate
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: Global.MeshAnimation.PlayUpdate*
+  commentId: Overload:Global.MeshAnimation.PlayUpdate
+  name: PlayUpdate
+  nameWithType: MeshAnimation.PlayUpdate
+  fullName: MeshAnimation.PlayUpdate

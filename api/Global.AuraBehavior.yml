@@ -1,0 +1,1851 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraBehavior
+  commentId: T:Global.AuraBehavior
+  id: AuraBehavior
+  parent: Global
+  children:
+  - Global.AuraBehavior.ArcEndAngle
+  - Global.AuraBehavior.ArcStartAngle
+  - Global.AuraBehavior.AttachedToEntity
+  - Global.AuraBehavior.aura
+  - Global.AuraBehavior.AuraOriginOffset
+  - Global.AuraBehavior.AuraRadius
+  - Global.AuraBehavior.auraType
+  - Global.AuraBehavior.automerge
+  - Global.AuraBehavior.controller
+  - Global.AuraBehavior.DischargeOption
+  - Global.AuraBehavior.DrawGizmos(ModularEnemy)
+  - Global.AuraBehavior.Duration
+  - Global.AuraBehavior.EaseProps
+  - Global.AuraBehavior.end
+  - Global.AuraBehavior.EndState
+  - Global.AuraBehavior.IndicatorDuration
+  - Global.AuraBehavior.IsBlackAura
+  - Global.AuraBehavior.KillAura
+  - Global.AuraBehavior.MergeEnabled
+  - Global.AuraBehavior.movementType
+  - Global.AuraBehavior.OnEndStateLeave(ModularEnemy.ModularEnemyState,ModularEnemy.ModularEnemyState)
+  - Global.AuraBehavior.OnResetObject(ModularEnemy)
+  - Global.AuraBehavior.OnRestart
+  - Global.AuraBehavior.OnStartStateEnter(ModularEnemy.ModularEnemyState,ModularEnemy.ModularEnemyState)
+  - Global.AuraBehavior.OrbitProps
+  - Global.AuraBehavior.ProjectileProps
+  - Global.AuraBehavior.registered
+  - Global.AuraBehavior.SpawnAura
+  - Global.AuraBehavior.spawnType
+  - Global.AuraBehavior.SpawnWithIndicator
+  - Global.AuraBehavior.start
+  - Global.AuraBehavior.Start(ModularEnemy)
+  - Global.AuraBehavior.started
+  - Global.AuraBehavior.StartState
+  - Global.AuraBehavior.t
+  - Global.AuraBehavior.Update
+  - Global.AuraBehavior.UseSpriteFlipX
+  - Global.AuraBehavior.XWeight
+  langs:
+  - csharp
+  - vb
+  name: AuraBehavior
+  nameWithType: AuraBehavior
+  fullName: AuraBehavior
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraBehavior
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class AuraBehavior : ModularEnemy.EnemyBehaviorInterface
+    content.vb: >-
+      <Serializable>
+
+      Public Class AuraBehavior Inherits ModularEnemy.EnemyBehaviorInterface
+  inheritance:
+  - System.Object
+  - Global.ModularEnemy.EnemyBehaviorInterface
+  inheritedMembers:
+  - Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  - Global.ModularEnemy.EnemyBehaviorInterface.self
+  - Global.ModularEnemy.EnemyBehaviorInterface.Started
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.AuraBehavior.spawnType
+  commentId: F:Global.AuraBehavior.spawnType
+  id: spawnType
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: spawnType
+  nameWithType: AuraBehavior.spawnType
+  fullName: AuraBehavior.spawnType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: spawnType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Aura Spawn Behavior")]
+
+      public AuraBehavior.AuraSpawnType spawnType
+    return:
+      type: Global.AuraBehavior.AuraSpawnType
+    content.vb: >-
+      <Header("Aura Spawn Behavior")>
+
+      Public spawnType As AuraBehavior.AuraSpawnType
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura Spawn Behavior
+- uid: Global.AuraBehavior.StartState
+  commentId: F:Global.AuraBehavior.StartState
+  id: StartState
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: StartState
+  nameWithType: AuraBehavior.StartState
+  fullName: AuraBehavior.StartState
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StartState
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("spawnType", new int[] { 2, 3 })]
+
+      public ModularEnemy.ModularEnemyState StartState
+    return:
+      type: Global.ModularEnemy.ModularEnemyState
+    content.vb: >-
+      <ConditionalShow("spawnType", New Integer() { 2, 3 })>
+
+      Public StartState As ModularEnemy.ModularEnemyState
+- uid: Global.AuraBehavior.Duration
+  commentId: F:Global.AuraBehavior.Duration
+  id: Duration
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: AuraBehavior.Duration
+  fullName: AuraBehavior.Duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Duration
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("spawnType", 2)]
+
+      public float Duration
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("spawnType", 2)>
+
+      Public Duration As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: spawnType
+    - type: System.Int32
+      value: 2
+- uid: Global.AuraBehavior.EndState
+  commentId: F:Global.AuraBehavior.EndState
+  id: EndState
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: EndState
+  nameWithType: AuraBehavior.EndState
+  fullName: AuraBehavior.EndState
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EndState
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("spawnType", 3)]
+
+      public ModularEnemy.ModularEnemyState EndState
+    return:
+      type: Global.ModularEnemy.ModularEnemyState
+    content.vb: >-
+      <ConditionalShow("spawnType", 3)>
+
+      Public EndState As ModularEnemy.ModularEnemyState
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: spawnType
+    - type: System.Int32
+      value: 3
+- uid: Global.AuraBehavior.AttachedToEntity
+  commentId: F:Global.AuraBehavior.AttachedToEntity
+  id: AttachedToEntity
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: AttachedToEntity
+  nameWithType: AuraBehavior.AttachedToEntity
+  fullName: AuraBehavior.AttachedToEntity
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AttachedToEntity
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool AttachedToEntity
+    return:
+      type: System.Boolean
+    content.vb: Public AttachedToEntity As Boolean
+- uid: Global.AuraBehavior.SpawnWithIndicator
+  commentId: F:Global.AuraBehavior.SpawnWithIndicator
+  id: SpawnWithIndicator
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: SpawnWithIndicator
+  nameWithType: AuraBehavior.SpawnWithIndicator
+  fullName: AuraBehavior.SpawnWithIndicator
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnWithIndicator
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool SpawnWithIndicator
+    return:
+      type: System.Boolean
+    content.vb: Public SpawnWithIndicator As Boolean
+- uid: Global.AuraBehavior.IndicatorDuration
+  commentId: F:Global.AuraBehavior.IndicatorDuration
+  id: IndicatorDuration
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: IndicatorDuration
+  nameWithType: AuraBehavior.IndicatorDuration
+  fullName: AuraBehavior.IndicatorDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IndicatorDuration
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("SpawnWithIndicator", 1)]
+
+      public float IndicatorDuration
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("SpawnWithIndicator", 1)>
+
+      Public IndicatorDuration As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: SpawnWithIndicator
+    - type: System.Int32
+      value: 1
+- uid: Global.AuraBehavior.movementType
+  commentId: F:Global.AuraBehavior.movementType
+  id: movementType
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: movementType
+  nameWithType: AuraBehavior.movementType
+  fullName: AuraBehavior.movementType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: movementType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("AuraMovementBehavior")]
+
+      public AuraMovementType movementType
+    return:
+      type: Global.AuraMovementType
+    content.vb: >-
+      <Header("AuraMovementBehavior")>
+
+      Public movementType As AuraMovementType
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AuraMovementBehavior
+- uid: Global.AuraBehavior.OrbitProps
+  commentId: F:Global.AuraBehavior.OrbitProps
+  id: OrbitProps
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: OrbitProps
+  nameWithType: AuraBehavior.OrbitProps
+  fullName: AuraBehavior.OrbitProps
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OrbitProps
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("movementType", 1)]
+
+      public OrbitMovementController.OrbitMovementProperties OrbitProps
+    return:
+      type: Global.OrbitMovementController.OrbitMovementProperties
+    content.vb: >-
+      <ConditionalShow("movementType", 1)>
+
+      Public OrbitProps As OrbitMovementController.OrbitMovementProperties
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: movementType
+    - type: System.Int32
+      value: 1
+- uid: Global.AuraBehavior.EaseProps
+  commentId: F:Global.AuraBehavior.EaseProps
+  id: EaseProps
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: EaseProps
+  nameWithType: AuraBehavior.EaseProps
+  fullName: AuraBehavior.EaseProps
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseProps
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("movementType", 2)]
+
+      public MultiEaseMovement.MultiEaseProperties EaseProps
+    return:
+      type: Global.MultiEaseMovement.MultiEaseProperties
+    content.vb: >-
+      <ConditionalShow("movementType", 2)>
+
+      Public EaseProps As MultiEaseMovement.MultiEaseProperties
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: movementType
+    - type: System.Int32
+      value: 2
+- uid: Global.AuraBehavior.ProjectileProps
+  commentId: F:Global.AuraBehavior.ProjectileProps
+  id: ProjectileProps
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: ProjectileProps
+  nameWithType: AuraBehavior.ProjectileProps
+  fullName: AuraBehavior.ProjectileProps
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ProjectileProps
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("movementType", 3)]
+
+      public AuraProjectileMovementBase.AuraProjectileProperties ProjectileProps
+    return:
+      type: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    content.vb: >-
+      <ConditionalShow("movementType", 3)>
+
+      Public ProjectileProps As AuraProjectileMovementBase.AuraProjectileProperties
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: movementType
+    - type: System.Int32
+      value: 3
+- uid: Global.AuraBehavior.auraType
+  commentId: F:Global.AuraBehavior.auraType
+  id: auraType
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: auraType
+  nameWithType: AuraBehavior.auraType
+  fullName: AuraBehavior.auraType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auraType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Aura Shape")]
+
+      public AuraShapeController.AuraType auraType
+    return:
+      type: Global.AuraShapeController.AuraType
+    content.vb: >-
+      <Header("Aura Shape")>
+
+      Public auraType As AuraShapeController.AuraType
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura Shape
+- uid: Global.AuraBehavior.AuraOriginOffset
+  commentId: F:Global.AuraBehavior.AuraOriginOffset
+  id: AuraOriginOffset
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: AuraOriginOffset
+  nameWithType: AuraBehavior.AuraOriginOffset
+  fullName: AuraBehavior.AuraOriginOffset
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraOriginOffset
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Add an offset to the origin/pivot point of the aura")]
+
+      public Vector2Int AuraOriginOffset
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <Tooltip("Add an offset to the origin/pivot point of the aura")>
+
+      Public AuraOriginOffset As Vector2Int
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Add an offset to the origin/pivot point of the aura
+- uid: Global.AuraBehavior.IsBlackAura
+  commentId: F:Global.AuraBehavior.IsBlackAura
+  id: IsBlackAura
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: IsBlackAura
+  nameWithType: AuraBehavior.IsBlackAura
+  fullName: AuraBehavior.IsBlackAura
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsBlackAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsBlackAura
+    return:
+      type: System.Boolean
+    content.vb: Public IsBlackAura As Boolean
+- uid: Global.AuraBehavior.start
+  commentId: F:Global.AuraBehavior.start
+  id: start
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: start
+  nameWithType: AuraBehavior.start
+  fullName: AuraBehavior.start
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("auraType", 0)]
+
+      public Vector2Int start
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <ConditionalShow("auraType", 0)>
+
+      Public start As Vector2Int
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: auraType
+    - type: System.Int32
+      value: 0
+- uid: Global.AuraBehavior.end
+  commentId: F:Global.AuraBehavior.end
+  id: end
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: end
+  nameWithType: AuraBehavior.end
+  fullName: AuraBehavior.end
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: end
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("auraType", 0)]
+
+      public Vector2Int end
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <ConditionalShow("auraType", 0)>
+
+      Public [end] As Vector2Int
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: auraType
+    - type: System.Int32
+      value: 0
+- uid: Global.AuraBehavior.AuraRadius
+  commentId: F:Global.AuraBehavior.AuraRadius
+  id: AuraRadius
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: AuraRadius
+  nameWithType: AuraBehavior.AuraRadius
+  fullName: AuraBehavior.AuraRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraRadius
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("auraType", new int[] { 1, 4, 3, 5, 2 })]
+
+      public int AuraRadius
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ConditionalShow("auraType", New Integer() { 1, 4, 3, 5, 2 })>
+
+      Public AuraRadius As Integer
+- uid: Global.AuraBehavior.ArcStartAngle
+  commentId: F:Global.AuraBehavior.ArcStartAngle
+  id: ArcStartAngle
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: ArcStartAngle
+  nameWithType: AuraBehavior.ArcStartAngle
+  fullName: AuraBehavior.ArcStartAngle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ArcStartAngle
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("auraType", 2)]
+
+      [Tooltip("Angle is in degrees")]
+
+      public float ArcStartAngle
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("auraType", 2)>
+
+      <Tooltip("Angle is in degrees")>
+
+      Public ArcStartAngle As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: auraType
+    - type: System.Int32
+      value: 2
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Angle is in degrees
+- uid: Global.AuraBehavior.ArcEndAngle
+  commentId: F:Global.AuraBehavior.ArcEndAngle
+  id: ArcEndAngle
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: ArcEndAngle
+  nameWithType: AuraBehavior.ArcEndAngle
+  fullName: AuraBehavior.ArcEndAngle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ArcEndAngle
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("auraType", 2)]
+
+      [Tooltip("Angle is in degrees")]
+
+      public float ArcEndAngle
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("auraType", 2)>
+
+      <Tooltip("Angle is in degrees")>
+
+      Public ArcEndAngle As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: auraType
+    - type: System.Int32
+      value: 2
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Angle is in degrees
+- uid: Global.AuraBehavior.UseSpriteFlipX
+  commentId: F:Global.AuraBehavior.UseSpriteFlipX
+  id: UseSpriteFlipX
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: UseSpriteFlipX
+  nameWithType: AuraBehavior.UseSpriteFlipX
+  fullName: AuraBehavior.UseSpriteFlipX
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UseSpriteFlipX
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("auraType", 2)]
+
+      [Tooltip("Whether to flip about the X axis when sprite flips")]
+
+      public bool UseSpriteFlipX
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("auraType", 2)>
+
+      <Tooltip("Whether to flip about the X axis when sprite flips")>
+
+      Public UseSpriteFlipX As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: auraType
+    - type: System.Int32
+      value: 2
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Whether to flip about the X axis when sprite flips
+- uid: Global.AuraBehavior.XWeight
+  commentId: F:Global.AuraBehavior.XWeight
+  id: XWeight
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: XWeight
+  nameWithType: AuraBehavior.XWeight
+  fullName: AuraBehavior.XWeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: XWeight
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("auraType", 5)]
+
+      public float XWeight
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("auraType", 5)>
+
+      Public XWeight As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: auraType
+    - type: System.Int32
+      value: 5
+- uid: Global.AuraBehavior.MergeEnabled
+  commentId: F:Global.AuraBehavior.MergeEnabled
+  id: MergeEnabled
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: MergeEnabled
+  nameWithType: AuraBehavior.MergeEnabled
+  fullName: AuraBehavior.MergeEnabled
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MergeEnabled
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool MergeEnabled
+    return:
+      type: System.Boolean
+    content.vb: Public MergeEnabled As Boolean
+- uid: Global.AuraBehavior.DischargeOption
+  commentId: F:Global.AuraBehavior.DischargeOption
+  id: DischargeOption
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: DischargeOption
+  nameWithType: AuraBehavior.DischargeOption
+  fullName: AuraBehavior.DischargeOption
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DischargeOption
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Aura.AuraDischargeOption DischargeOption
+    return:
+      type: Global.Aura.AuraDischargeOption
+    content.vb: Public DischargeOption As Aura.AuraDischargeOption
+- uid: Global.AuraBehavior.aura
+  commentId: F:Global.AuraBehavior.aura
+  id: aura
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: aura
+  nameWithType: AuraBehavior.aura
+  fullName: AuraBehavior.aura
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: aura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected GameObject aura
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Protected aura As GameObject
+- uid: Global.AuraBehavior.automerge
+  commentId: F:Global.AuraBehavior.automerge
+  id: automerge
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: automerge
+  nameWithType: AuraBehavior.automerge
+  fullName: AuraBehavior.automerge
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: automerge
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected AutoMergeAura automerge
+    return:
+      type: Global.AutoMergeAura
+    content.vb: Protected automerge As AutoMergeAura
+- uid: Global.AuraBehavior.controller
+  commentId: F:Global.AuraBehavior.controller
+  id: controller
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: controller
+  nameWithType: AuraBehavior.controller
+  fullName: AuraBehavior.controller
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: controller
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected AuraShapeController controller
+    return:
+      type: Global.AuraShapeController
+    content.vb: Protected controller As AuraShapeController
+- uid: Global.AuraBehavior.t
+  commentId: F:Global.AuraBehavior.t
+  id: t
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: t
+  nameWithType: AuraBehavior.t
+  fullName: AuraBehavior.t
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: t
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float t
+    return:
+      type: System.Single
+    content.vb: Protected t As Single
+- uid: Global.AuraBehavior.started
+  commentId: F:Global.AuraBehavior.started
+  id: started
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: started
+  nameWithType: AuraBehavior.started
+  fullName: AuraBehavior.started
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: started
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool started
+    return:
+      type: System.Boolean
+    content.vb: Protected started As Boolean
+- uid: Global.AuraBehavior.registered
+  commentId: F:Global.AuraBehavior.registered
+  id: registered
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: registered
+  nameWithType: AuraBehavior.registered
+  fullName: AuraBehavior.registered
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: registered
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool registered
+    return:
+      type: System.Boolean
+    content.vb: Protected registered As Boolean
+- uid: Global.AuraBehavior.DrawGizmos(ModularEnemy)
+  commentId: M:Global.AuraBehavior.DrawGizmos(ModularEnemy)
+  id: DrawGizmos(ModularEnemy)
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: AuraBehavior.DrawGizmos(ModularEnemy)
+  fullName: AuraBehavior.DrawGizmos(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawGizmos
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void DrawGizmos(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub DrawGizmos(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  overload: Global.AuraBehavior.DrawGizmos*
+- uid: Global.AuraBehavior.Start(ModularEnemy)
+  commentId: M:Global.AuraBehavior.Start(ModularEnemy)
+  id: Start(ModularEnemy)
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: Start(ModularEnemy)
+  nameWithType: AuraBehavior.Start(ModularEnemy)
+  fullName: AuraBehavior.Start(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 126
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Start(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub Start(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  overload: Global.AuraBehavior.Start*
+- uid: Global.AuraBehavior.OnResetObject(ModularEnemy)
+  commentId: M:Global.AuraBehavior.OnResetObject(ModularEnemy)
+  id: OnResetObject(ModularEnemy)
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject(ModularEnemy)
+  nameWithType: AuraBehavior.OnResetObject(ModularEnemy)
+  fullName: AuraBehavior.OnResetObject(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 148
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub OnResetObject(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  overload: Global.AuraBehavior.OnResetObject*
+- uid: Global.AuraBehavior.OnRestart
+  commentId: M:Global.AuraBehavior.OnRestart
+  id: OnRestart
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnRestart()
+  nameWithType: AuraBehavior.OnRestart()
+  fullName: AuraBehavior.OnRestart()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnRestart
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 164
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnRestart()
+    content.vb: Public Overrides Sub OnRestart()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  overload: Global.AuraBehavior.OnRestart*
+- uid: Global.AuraBehavior.Update
+  commentId: M:Global.AuraBehavior.Update
+  id: Update
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: AuraBehavior.Update()
+  fullName: AuraBehavior.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 170
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  overload: Global.AuraBehavior.Update*
+- uid: Global.AuraBehavior.OnStartStateEnter(ModularEnemy.ModularEnemyState,ModularEnemy.ModularEnemyState)
+  commentId: M:Global.AuraBehavior.OnStartStateEnter(ModularEnemy.ModularEnemyState,ModularEnemy.ModularEnemyState)
+  id: OnStartStateEnter(ModularEnemy.ModularEnemyState,ModularEnemy.ModularEnemyState)
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnStartStateEnter(ModularEnemyState, ModularEnemyState)
+  nameWithType: AuraBehavior.OnStartStateEnter(ModularEnemy.ModularEnemyState, ModularEnemy.ModularEnemyState)
+  fullName: AuraBehavior.OnStartStateEnter(ModularEnemy.ModularEnemyState, ModularEnemy.ModularEnemyState)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnStartStateEnter
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 200
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void OnStartStateEnter(ModularEnemy.ModularEnemyState from, ModularEnemy.ModularEnemyState to)
+    parameters:
+    - id: from
+      type: Global.ModularEnemy.ModularEnemyState
+    - id: to
+      type: Global.ModularEnemy.ModularEnemyState
+    content.vb: Protected Sub OnStartStateEnter(from As ModularEnemy.ModularEnemyState, [to] As ModularEnemy.ModularEnemyState)
+  overload: Global.AuraBehavior.OnStartStateEnter*
+- uid: Global.AuraBehavior.OnEndStateLeave(ModularEnemy.ModularEnemyState,ModularEnemy.ModularEnemyState)
+  commentId: M:Global.AuraBehavior.OnEndStateLeave(ModularEnemy.ModularEnemyState,ModularEnemy.ModularEnemyState)
+  id: OnEndStateLeave(ModularEnemy.ModularEnemyState,ModularEnemy.ModularEnemyState)
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnEndStateLeave(ModularEnemyState, ModularEnemyState)
+  nameWithType: AuraBehavior.OnEndStateLeave(ModularEnemy.ModularEnemyState, ModularEnemy.ModularEnemyState)
+  fullName: AuraBehavior.OnEndStateLeave(ModularEnemy.ModularEnemyState, ModularEnemy.ModularEnemyState)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnEndStateLeave
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 210
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void OnEndStateLeave(ModularEnemy.ModularEnemyState from, ModularEnemy.ModularEnemyState to)
+    parameters:
+    - id: from
+      type: Global.ModularEnemy.ModularEnemyState
+    - id: to
+      type: Global.ModularEnemy.ModularEnemyState
+    content.vb: Protected Sub OnEndStateLeave(from As ModularEnemy.ModularEnemyState, [to] As ModularEnemy.ModularEnemyState)
+  overload: Global.AuraBehavior.OnEndStateLeave*
+- uid: Global.AuraBehavior.SpawnAura
+  commentId: M:Global.AuraBehavior.SpawnAura
+  id: SpawnAura
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: SpawnAura()
+  nameWithType: AuraBehavior.SpawnAura()
+  fullName: AuraBehavior.SpawnAura()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 219
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void SpawnAura()
+    content.vb: Protected Sub SpawnAura()
+  overload: Global.AuraBehavior.SpawnAura*
+- uid: Global.AuraBehavior.KillAura
+  commentId: M:Global.AuraBehavior.KillAura
+  id: KillAura
+  parent: Global.AuraBehavior
+  langs:
+  - csharp
+  - vb
+  name: KillAura()
+  nameWithType: AuraBehavior.KillAura()
+  fullName: AuraBehavior.KillAura()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: KillAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 293
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void KillAura()
+    content.vb: Protected Sub KillAura()
+  overload: Global.AuraBehavior.KillAura*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ModularEnemy.EnemyBehaviorInterface
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterface
+  name: ModularEnemy.EnemyBehaviorInterface
+  nameWithType: ModularEnemy.EnemyBehaviorInterface
+  fullName: ModularEnemy.EnemyBehaviorInterface
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: ShowGizmos
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  fullName: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.self
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.self
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: self
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.self
+  fullName: ModularEnemy.EnemyBehaviorInterface.self
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Started
+  commentId: P:Global.ModularEnemy.EnemyBehaviorInterface.Started
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Started
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Started
+  fullName: ModularEnemy.EnemyBehaviorInterface.Started
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  isExternal: true
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AuraBehavior.AuraSpawnType
+  commentId: T:Global.AuraBehavior.AuraSpawnType
+  name: AuraBehavior.AuraSpawnType
+  nameWithType: AuraBehavior.AuraSpawnType
+  fullName: AuraBehavior.AuraSpawnType
+  spec.csharp:
+  - uid: Global.AuraBehavior
+    name: AuraBehavior
+  - name: .
+  - uid: Global.AuraBehavior.AuraSpawnType
+    name: AuraSpawnType
+  spec.vb:
+  - uid: Global.AuraBehavior
+    name: AuraBehavior
+  - name: .
+  - uid: Global.AuraBehavior.AuraSpawnType
+    name: AuraSpawnType
+- uid: Global.ModularEnemy.ModularEnemyState
+  commentId: T:Global.ModularEnemy.ModularEnemyState
+  name: ModularEnemy.ModularEnemyState
+  nameWithType: ModularEnemy.ModularEnemyState
+  fullName: ModularEnemy.ModularEnemyState
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.ModularEnemyState
+    name: ModularEnemyState
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.ModularEnemyState
+    name: ModularEnemyState
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.AuraMovementType
+  commentId: T:Global.AuraMovementType
+  name: AuraMovementType
+  nameWithType: AuraMovementType
+  fullName: AuraMovementType
+- uid: Global.OrbitMovementController.OrbitMovementProperties
+  commentId: T:Global.OrbitMovementController.OrbitMovementProperties
+  name: OrbitMovementController.OrbitMovementProperties
+  nameWithType: OrbitMovementController.OrbitMovementProperties
+  fullName: OrbitMovementController.OrbitMovementProperties
+  spec.csharp:
+  - uid: Global.OrbitMovementController
+    name: OrbitMovementController
+  - name: .
+  - uid: Global.OrbitMovementController.OrbitMovementProperties
+    name: OrbitMovementProperties
+  spec.vb:
+  - uid: Global.OrbitMovementController
+    name: OrbitMovementController
+  - name: .
+  - uid: Global.OrbitMovementController.OrbitMovementProperties
+    name: OrbitMovementProperties
+- uid: Global.MultiEaseMovement.MultiEaseProperties
+  commentId: T:Global.MultiEaseMovement.MultiEaseProperties
+  name: MultiEaseMovement.MultiEaseProperties
+  nameWithType: MultiEaseMovement.MultiEaseProperties
+  fullName: MultiEaseMovement.MultiEaseProperties
+  spec.csharp:
+  - uid: Global.MultiEaseMovement
+    name: MultiEaseMovement
+  - name: .
+  - uid: Global.MultiEaseMovement.MultiEaseProperties
+    name: MultiEaseProperties
+  spec.vb:
+  - uid: Global.MultiEaseMovement
+    name: MultiEaseMovement
+  - name: .
+  - uid: Global.MultiEaseMovement.MultiEaseProperties
+    name: MultiEaseProperties
+- uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+  commentId: T:Global.AuraProjectileMovementBase.AuraProjectileProperties
+  name: AuraProjectileMovementBase.AuraProjectileProperties
+  nameWithType: AuraProjectileMovementBase.AuraProjectileProperties
+  fullName: AuraProjectileMovementBase.AuraProjectileProperties
+  spec.csharp:
+  - uid: Global.AuraProjectileMovementBase
+    name: AuraProjectileMovementBase
+  - name: .
+  - uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    name: AuraProjectileProperties
+  spec.vb:
+  - uid: Global.AuraProjectileMovementBase
+    name: AuraProjectileMovementBase
+  - name: .
+  - uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    name: AuraProjectileProperties
+- uid: Global.AuraShapeController.AuraType
+  commentId: T:Global.AuraShapeController.AuraType
+  name: AuraShapeController.AuraType
+  nameWithType: AuraShapeController.AuraType
+  fullName: AuraShapeController.AuraType
+  spec.csharp:
+  - uid: Global.AuraShapeController
+    name: AuraShapeController
+  - name: .
+  - uid: Global.AuraShapeController.AuraType
+    name: AuraType
+  spec.vb:
+  - uid: Global.AuraShapeController
+    name: AuraShapeController
+  - name: .
+  - uid: Global.AuraShapeController.AuraType
+    name: AuraType
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Aura.AuraDischargeOption
+  commentId: T:Global.Aura.AuraDischargeOption
+  name: Aura.AuraDischargeOption
+  nameWithType: Aura.AuraDischargeOption
+  fullName: Aura.AuraDischargeOption
+  spec.csharp:
+  - uid: Global.Aura
+    name: Aura
+  - name: .
+  - uid: Global.Aura.AuraDischargeOption
+    name: AuraDischargeOption
+  spec.vb:
+  - uid: Global.Aura
+    name: Aura
+  - name: .
+  - uid: Global.Aura.AuraDischargeOption
+    name: AuraDischargeOption
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.AutoMergeAura
+  commentId: T:Global.AutoMergeAura
+  name: AutoMergeAura
+  nameWithType: AutoMergeAura
+  fullName: AutoMergeAura
+- uid: Global.AuraShapeController
+  commentId: T:Global.AuraShapeController
+  name: AuraShapeController
+  nameWithType: AuraShapeController
+  fullName: AuraShapeController
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.AuraBehavior.DrawGizmos*
+  commentId: Overload:Global.AuraBehavior.DrawGizmos
+  name: DrawGizmos
+  nameWithType: AuraBehavior.DrawGizmos
+  fullName: AuraBehavior.DrawGizmos
+- uid: Global.ModularEnemy
+  commentId: T:Global.ModularEnemy
+  name: ModularEnemy
+  nameWithType: ModularEnemy
+  fullName: ModularEnemy
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Start(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.AuraBehavior.Start*
+  commentId: Overload:Global.AuraBehavior.Start
+  name: Start
+  nameWithType: AuraBehavior.Start
+  fullName: AuraBehavior.Start
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.AuraBehavior.OnResetObject*
+  commentId: Overload:Global.AuraBehavior.OnResetObject
+  name: OnResetObject
+  nameWithType: AuraBehavior.OnResetObject
+  fullName: AuraBehavior.OnResetObject
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnRestart()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.AuraBehavior.OnRestart*
+  commentId: Overload:Global.AuraBehavior.OnRestart
+  name: OnRestart
+  nameWithType: AuraBehavior.OnRestart
+  fullName: AuraBehavior.OnRestart
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Update
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Update()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Update()
+  fullName: ModularEnemy.EnemyBehaviorInterface.Update()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.AuraBehavior.Update*
+  commentId: Overload:Global.AuraBehavior.Update
+  name: Update
+  nameWithType: AuraBehavior.Update
+  fullName: AuraBehavior.Update
+- uid: Global.AuraBehavior.OnStartStateEnter*
+  commentId: Overload:Global.AuraBehavior.OnStartStateEnter
+  name: OnStartStateEnter
+  nameWithType: AuraBehavior.OnStartStateEnter
+  fullName: AuraBehavior.OnStartStateEnter
+- uid: Global.AuraBehavior.OnEndStateLeave*
+  commentId: Overload:Global.AuraBehavior.OnEndStateLeave
+  name: OnEndStateLeave
+  nameWithType: AuraBehavior.OnEndStateLeave
+  fullName: AuraBehavior.OnEndStateLeave
+- uid: Global.AuraBehavior.SpawnAura*
+  commentId: Overload:Global.AuraBehavior.SpawnAura
+  name: SpawnAura
+  nameWithType: AuraBehavior.SpawnAura
+  fullName: AuraBehavior.SpawnAura
+- uid: Global.AuraBehavior.KillAura*
+  commentId: Overload:Global.AuraBehavior.KillAura
+  name: KillAura
+  nameWithType: AuraBehavior.KillAura
+  fullName: AuraBehavior.KillAura

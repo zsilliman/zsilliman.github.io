@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MovableWindow
+  commentId: T:Global.MovableWindow
+  id: MovableWindow
+  parent: Global
+  children:
+  - Global.MovableWindow.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  - Global.MovableWindow.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  - Global.MovableWindow.windowToMove
+  langs:
+  - csharp
+  - vb
+  name: MovableWindow
+  nameWithType: MovableWindow
+  fullName: MovableWindow
+  type: Class
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/MovableWindow.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MovableWindow
+    path: ../Assets/User Interface/Inventory/MovableWindow.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class MovableWindow : MonoBehaviour'
+    content.vb: Public Class MovableWindow Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.MovableWindow.windowToMove
+  commentId: F:Global.MovableWindow.windowToMove
+  id: windowToMove
+  parent: Global.MovableWindow
+  langs:
+  - csharp
+  - vb
+  name: windowToMove
+  nameWithType: MovableWindow.windowToMove
+  fullName: MovableWindow.windowToMove
+  type: Field
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/MovableWindow.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: windowToMove
+    path: ../Assets/User Interface/Inventory/MovableWindow.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject windowToMove
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public windowToMove As GameObject
+- uid: Global.MovableWindow.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:Global.MovableWindow.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  parent: Global.MovableWindow
+  langs:
+  - csharp
+  - vb
+  name: OnPointerDown(PointerEventData)
+  nameWithType: MovableWindow.OnPointerDown(PointerEventData)
+  fullName: MovableWindow.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/MovableWindow.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnPointerDown
+    path: ../Assets/User Interface/Inventory/MovableWindow.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnPointerDown(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnPointerDown(eventData As PointerEventData)
+  overload: Global.MovableWindow.OnPointerDown*
+- uid: Global.MovableWindow.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:Global.MovableWindow.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: Global.MovableWindow
+  langs:
+  - csharp
+  - vb
+  name: OnDrag(PointerEventData)
+  nameWithType: MovableWindow.OnDrag(PointerEventData)
+  fullName: MovableWindow.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/User Interface/Inventory/MovableWindow.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnDrag
+    path: ../Assets/User Interface/Inventory/MovableWindow.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnDrag(eventData As PointerEventData)
+  overload: Global.MovableWindow.OnDrag*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.MovableWindow.OnPointerDown*
+  commentId: Overload:Global.MovableWindow.OnPointerDown
+  name: OnPointerDown
+  nameWithType: MovableWindow.OnPointerDown
+  fullName: MovableWindow.OnPointerDown
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+- uid: Global.MovableWindow.OnDrag*
+  commentId: Overload:Global.MovableWindow.OnDrag
+  name: OnDrag
+  nameWithType: MovableWindow.OnDrag
+  fullName: MovableWindow.OnDrag

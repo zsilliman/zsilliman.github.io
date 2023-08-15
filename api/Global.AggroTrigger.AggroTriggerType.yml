@@ -1,0 +1,294 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AggroTrigger.AggroTriggerType
+  commentId: T:Global.AggroTrigger.AggroTriggerType
+  id: AggroTrigger.AggroTriggerType
+  parent: Global
+  children:
+  - Global.AggroTrigger.AggroTriggerType.Always
+  - Global.AggroTrigger.AggroTriggerType.Bounds
+  - Global.AggroTrigger.AggroTriggerType.Never
+  - Global.AggroTrigger.AggroTriggerType.OnInterval
+  - Global.AggroTrigger.AggroTriggerType.OnPlayerAction
+  - Global.AggroTrigger.AggroTriggerType.OnTrigger
+  - Global.AggroTrigger.AggroTriggerType.Proximity
+  langs:
+  - csharp
+  - vb
+  name: AggroTrigger.AggroTriggerType
+  nameWithType: AggroTrigger.AggroTriggerType
+  fullName: AggroTrigger.AggroTriggerType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AggroTriggerType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum AggroTrigger.AggroTriggerType
+    content.vb: Public Enum AggroTrigger.AggroTriggerType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AggroTrigger.AggroTriggerType.Never
+  commentId: F:Global.AggroTrigger.AggroTriggerType.Never
+  id: Never
+  parent: Global.AggroTrigger.AggroTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Never
+  nameWithType: AggroTrigger.AggroTriggerType.Never
+  fullName: AggroTrigger.AggroTriggerType.Never
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Never
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Never = 0
+    return:
+      type: Global.AggroTrigger.AggroTriggerType
+- uid: Global.AggroTrigger.AggroTriggerType.Proximity
+  commentId: F:Global.AggroTrigger.AggroTriggerType.Proximity
+  id: Proximity
+  parent: Global.AggroTrigger.AggroTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Proximity
+  nameWithType: AggroTrigger.AggroTriggerType.Proximity
+  fullName: AggroTrigger.AggroTriggerType.Proximity
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Proximity
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Proximity = 1
+    return:
+      type: Global.AggroTrigger.AggroTriggerType
+- uid: Global.AggroTrigger.AggroTriggerType.OnInterval
+  commentId: F:Global.AggroTrigger.AggroTriggerType.OnInterval
+  id: OnInterval
+  parent: Global.AggroTrigger.AggroTriggerType
+  langs:
+  - csharp
+  - vb
+  name: OnInterval
+  nameWithType: AggroTrigger.AggroTriggerType.OnInterval
+  fullName: AggroTrigger.AggroTriggerType.OnInterval
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInterval
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: OnInterval = 2
+    return:
+      type: Global.AggroTrigger.AggroTriggerType
+- uid: Global.AggroTrigger.AggroTriggerType.OnTrigger
+  commentId: F:Global.AggroTrigger.AggroTriggerType.OnTrigger
+  id: OnTrigger
+  parent: Global.AggroTrigger.AggroTriggerType
+  langs:
+  - csharp
+  - vb
+  name: OnTrigger
+  nameWithType: AggroTrigger.AggroTriggerType.OnTrigger
+  fullName: AggroTrigger.AggroTriggerType.OnTrigger
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnTrigger
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: OnTrigger = 3
+    return:
+      type: Global.AggroTrigger.AggroTriggerType
+- uid: Global.AggroTrigger.AggroTriggerType.OnPlayerAction
+  commentId: F:Global.AggroTrigger.AggroTriggerType.OnPlayerAction
+  id: OnPlayerAction
+  parent: Global.AggroTrigger.AggroTriggerType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerAction
+  nameWithType: AggroTrigger.AggroTriggerType.OnPlayerAction
+  fullName: AggroTrigger.AggroTriggerType.OnPlayerAction
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnPlayerAction
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: OnPlayerAction = 4
+    return:
+      type: Global.AggroTrigger.AggroTriggerType
+- uid: Global.AggroTrigger.AggroTriggerType.Always
+  commentId: F:Global.AggroTrigger.AggroTriggerType.Always
+  id: Always
+  parent: Global.AggroTrigger.AggroTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Always
+  nameWithType: AggroTrigger.AggroTriggerType.Always
+  fullName: AggroTrigger.AggroTriggerType.Always
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Always
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Always = 5
+    return:
+      type: Global.AggroTrigger.AggroTriggerType
+- uid: Global.AggroTrigger.AggroTriggerType.Bounds
+  commentId: F:Global.AggroTrigger.AggroTriggerType.Bounds
+  id: Bounds
+  parent: Global.AggroTrigger.AggroTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Bounds
+  nameWithType: AggroTrigger.AggroTriggerType.Bounds
+  fullName: AggroTrigger.AggroTriggerType.Bounds
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Bounds
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/AggroTrigger/AggroTrigger.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Bounds = 6
+    return:
+      type: Global.AggroTrigger.AggroTriggerType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AggroTrigger.AggroTriggerType
+  commentId: T:Global.AggroTrigger.AggroTriggerType
+  name: AggroTrigger.AggroTriggerType
+  nameWithType: AggroTrigger.AggroTriggerType
+  fullName: AggroTrigger.AggroTriggerType
+  spec.csharp:
+  - uid: Global.AggroTrigger
+    name: AggroTrigger
+  - name: .
+  - uid: Global.AggroTrigger.AggroTriggerType
+    name: AggroTriggerType
+  spec.vb:
+  - uid: Global.AggroTrigger
+    name: AggroTrigger
+  - name: .
+  - uid: Global.AggroTrigger.AggroTriggerType
+    name: AggroTriggerType

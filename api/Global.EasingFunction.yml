@@ -1,0 +1,3207 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.EasingFunction
+  commentId: T:Global.EasingFunction
+  id: EasingFunction
+  parent: Global
+  children:
+  - Global.EasingFunction.ComposedEasingFunctions(System.Single,System.Single,EasingFunction.Ease,EasingFunction.Ease,System.Single,System.Single)
+  - Global.EasingFunction.Ease2D(EasingFunction.Ease,UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  - Global.EasingFunction.Ease3D(EasingFunction.Ease,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  - Global.EasingFunction.EaseInBack(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInBackD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInBounce(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInBounceD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInCirc(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInCircD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInCubic(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInCubicD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInElastic(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInElasticD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInExpo(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInExpoD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutBack(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutBackD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutBounce(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutBounceD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutCirc(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutCircD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutCubic(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutCubicD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutElastic(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutElasticD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutExpo(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutExpoD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutQuad(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutQuadD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutQuart(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutQuartD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutQuint(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutQuintD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutSine(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInOutSineD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInQuad(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInQuadD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInQuart(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInQuartD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInQuint(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInQuintD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInSine(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseInSineD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutBack(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutBackD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutBounce(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutBounceD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutCirc(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutCircD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutCubic(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutCubicD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutElastic(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutElasticCustom(System.Single,System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutElasticD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutExpo(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutExpoD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutQuad(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutQuadD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutQuart(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutQuartD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutQuint(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutQuintD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutSine(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.EaseOutSineD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.GetEasingFunction(EasingFunction.Ease)
+  - Global.EasingFunction.GetEasingFunctionDerivative(EasingFunction.Ease)
+  - Global.EasingFunction.Linear(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.LinearD(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.Spring(System.Single,System.Single,System.Single)
+  - Global.EasingFunction.SpringD(System.Single,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: EasingFunction
+  nameWithType: EasingFunction
+  fullName: EasingFunction
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EasingFunction
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static class EasingFunction
+    content.vb: Public Module EasingFunction
+  inheritance:
+  - System.Object
+- uid: Global.EasingFunction.ComposedEasingFunctions(System.Single,System.Single,EasingFunction.Ease,EasingFunction.Ease,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.ComposedEasingFunctions(System.Single,System.Single,EasingFunction.Ease,EasingFunction.Ease,System.Single,System.Single)
+  id: ComposedEasingFunctions(System.Single,System.Single,EasingFunction.Ease,EasingFunction.Ease,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: ComposedEasingFunctions(float, float, Ease, Ease, float, float)
+  nameWithType: EasingFunction.ComposedEasingFunctions(float, float, EasingFunction.Ease, EasingFunction.Ease, float, float)
+  fullName: EasingFunction.ComposedEasingFunctions(float, float, EasingFunction.Ease, EasingFunction.Ease, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ComposedEasingFunctions
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 110
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static float ComposedEasingFunctions(float start, float end, EasingFunction.Ease grow, EasingFunction.Ease shrink, float t, float peak_t = 0.5)
+    parameters:
+    - id: start
+      type: System.Single
+      description: Value when t=0
+    - id: end
+      type: System.Single
+      description: Value when t=peak_t i.e. value to interpolate to
+    - id: grow
+      type: Global.EasingFunction.Ease
+      description: Easing function used to go from start to end
+    - id: shrink
+      type: Global.EasingFunction.Ease
+      description: Easing function used to go from end to start
+    - id: t
+      type: System.Single
+      description: t value from [0,1]
+    - id: peak_t
+      type: System.Single
+      description: midpoint where &apos;end&apos; value is reached. Defaults to t=0.5
+    return:
+      type: System.Single
+      description: interpolated value
+    content.vb: Public Shared Function ComposedEasingFunctions(start As Single, [end] As Single, grow As EasingFunction.Ease, shrink As EasingFunction.Ease, t As Single, peak_t As Single = 0.5) As Single
+  overload: Global.EasingFunction.ComposedEasingFunctions*
+  nameWithType.vb: EasingFunction.ComposedEasingFunctions(Single, Single, EasingFunction.Ease, EasingFunction.Ease, Single, Single)
+  fullName.vb: EasingFunction.ComposedEasingFunctions(Single, Single, EasingFunction.Ease, EasingFunction.Ease, Single, Single)
+  name.vb: ComposedEasingFunctions(Single, Single, Ease, Ease, Single, Single)
+- uid: Global.EasingFunction.Linear(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.Linear(System.Single,System.Single,System.Single)
+  id: Linear(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: Linear(float, float, float)
+  nameWithType: EasingFunction.Linear(float, float, float)
+  fullName: EasingFunction.Linear(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Linear
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 128
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float Linear(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Linear(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.Linear*
+  nameWithType.vb: EasingFunction.Linear(Single, Single, Single)
+  fullName.vb: EasingFunction.Linear(Single, Single, Single)
+  name.vb: Linear(Single, Single, Single)
+- uid: Global.EasingFunction.Spring(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.Spring(System.Single,System.Single,System.Single)
+  id: Spring(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: Spring(float, float, float)
+  nameWithType: EasingFunction.Spring(float, float, float)
+  fullName: EasingFunction.Spring(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Spring
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 133
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float Spring(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Spring(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.Spring*
+  nameWithType.vb: EasingFunction.Spring(Single, Single, Single)
+  fullName.vb: EasingFunction.Spring(Single, Single, Single)
+  name.vb: Spring(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInQuad(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInQuad(System.Single,System.Single,System.Single)
+  id: EaseInQuad(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuad(float, float, float)
+  nameWithType: EasingFunction.EaseInQuad(float, float, float)
+  fullName: EasingFunction.EaseInQuad(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuad
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 140
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInQuad(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInQuad(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInQuad*
+  nameWithType.vb: EasingFunction.EaseInQuad(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInQuad(Single, Single, Single)
+  name.vb: EaseInQuad(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutQuad(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutQuad(System.Single,System.Single,System.Single)
+  id: EaseOutQuad(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuad(float, float, float)
+  nameWithType: EasingFunction.EaseOutQuad(float, float, float)
+  fullName: EasingFunction.EaseOutQuad(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuad
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 146
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutQuad(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutQuad(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutQuad*
+  nameWithType.vb: EasingFunction.EaseOutQuad(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutQuad(Single, Single, Single)
+  name.vb: EaseOutQuad(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutQuad(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutQuad(System.Single,System.Single,System.Single)
+  id: EaseInOutQuad(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuad(float, float, float)
+  nameWithType: EasingFunction.EaseInOutQuad(float, float, float)
+  fullName: EasingFunction.EaseInOutQuad(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuad
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 152
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutQuad(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutQuad(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutQuad*
+  nameWithType.vb: EasingFunction.EaseInOutQuad(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutQuad(Single, Single, Single)
+  name.vb: EaseInOutQuad(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInCubic(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInCubic(System.Single,System.Single,System.Single)
+  id: EaseInCubic(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInCubic(float, float, float)
+  nameWithType: EasingFunction.EaseInCubic(float, float, float)
+  fullName: EasingFunction.EaseInCubic(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInCubic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 161
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInCubic(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInCubic(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInCubic*
+  nameWithType.vb: EasingFunction.EaseInCubic(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInCubic(Single, Single, Single)
+  name.vb: EaseInCubic(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutCubic(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutCubic(System.Single,System.Single,System.Single)
+  id: EaseOutCubic(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutCubic(float, float, float)
+  nameWithType: EasingFunction.EaseOutCubic(float, float, float)
+  fullName: EasingFunction.EaseOutCubic(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutCubic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 167
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutCubic(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutCubic(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutCubic*
+  nameWithType.vb: EasingFunction.EaseOutCubic(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutCubic(Single, Single, Single)
+  name.vb: EaseOutCubic(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutCubic(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutCubic(System.Single,System.Single,System.Single)
+  id: EaseInOutCubic(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutCubic(float, float, float)
+  nameWithType: EasingFunction.EaseInOutCubic(float, float, float)
+  fullName: EasingFunction.EaseInOutCubic(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutCubic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 174
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutCubic(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutCubic(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutCubic*
+  nameWithType.vb: EasingFunction.EaseInOutCubic(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutCubic(Single, Single, Single)
+  name.vb: EaseInOutCubic(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInQuart(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInQuart(System.Single,System.Single,System.Single)
+  id: EaseInQuart(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuart(float, float, float)
+  nameWithType: EasingFunction.EaseInQuart(float, float, float)
+  fullName: EasingFunction.EaseInQuart(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuart
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 183
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInQuart(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInQuart(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInQuart*
+  nameWithType.vb: EasingFunction.EaseInQuart(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInQuart(Single, Single, Single)
+  name.vb: EaseInQuart(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutQuart(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutQuart(System.Single,System.Single,System.Single)
+  id: EaseOutQuart(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuart(float, float, float)
+  nameWithType: EasingFunction.EaseOutQuart(float, float, float)
+  fullName: EasingFunction.EaseOutQuart(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuart
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 189
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutQuart(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutQuart(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutQuart*
+  nameWithType.vb: EasingFunction.EaseOutQuart(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutQuart(Single, Single, Single)
+  name.vb: EaseOutQuart(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutQuart(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutQuart(System.Single,System.Single,System.Single)
+  id: EaseInOutQuart(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuart(float, float, float)
+  nameWithType: EasingFunction.EaseInOutQuart(float, float, float)
+  fullName: EasingFunction.EaseInOutQuart(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuart
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 196
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutQuart(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutQuart(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutQuart*
+  nameWithType.vb: EasingFunction.EaseInOutQuart(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutQuart(Single, Single, Single)
+  name.vb: EaseInOutQuart(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInQuint(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInQuint(System.Single,System.Single,System.Single)
+  id: EaseInQuint(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuint(float, float, float)
+  nameWithType: EasingFunction.EaseInQuint(float, float, float)
+  fullName: EasingFunction.EaseInQuint(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuint
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 205
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInQuint(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInQuint(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInQuint*
+  nameWithType.vb: EasingFunction.EaseInQuint(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInQuint(Single, Single, Single)
+  name.vb: EaseInQuint(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutQuint(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutQuint(System.Single,System.Single,System.Single)
+  id: EaseOutQuint(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuint(float, float, float)
+  nameWithType: EasingFunction.EaseOutQuint(float, float, float)
+  fullName: EasingFunction.EaseOutQuint(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuint
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 211
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutQuint(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutQuint(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutQuint*
+  nameWithType.vb: EasingFunction.EaseOutQuint(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutQuint(Single, Single, Single)
+  name.vb: EaseOutQuint(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutQuint(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutQuint(System.Single,System.Single,System.Single)
+  id: EaseInOutQuint(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuint(float, float, float)
+  nameWithType: EasingFunction.EaseInOutQuint(float, float, float)
+  fullName: EasingFunction.EaseInOutQuint(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuint
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 218
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutQuint(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutQuint(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutQuint*
+  nameWithType.vb: EasingFunction.EaseInOutQuint(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutQuint(Single, Single, Single)
+  name.vb: EaseInOutQuint(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInSine(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInSine(System.Single,System.Single,System.Single)
+  id: EaseInSine(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInSine(float, float, float)
+  nameWithType: EasingFunction.EaseInSine(float, float, float)
+  fullName: EasingFunction.EaseInSine(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInSine
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 227
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInSine(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInSine(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInSine*
+  nameWithType.vb: EasingFunction.EaseInSine(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInSine(Single, Single, Single)
+  name.vb: EaseInSine(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutSine(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutSine(System.Single,System.Single,System.Single)
+  id: EaseOutSine(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutSine(float, float, float)
+  nameWithType: EasingFunction.EaseOutSine(float, float, float)
+  fullName: EasingFunction.EaseOutSine(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutSine
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 233
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutSine(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutSine(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutSine*
+  nameWithType.vb: EasingFunction.EaseOutSine(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutSine(Single, Single, Single)
+  name.vb: EaseOutSine(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutSine(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutSine(System.Single,System.Single,System.Single)
+  id: EaseInOutSine(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutSine(float, float, float)
+  nameWithType: EasingFunction.EaseInOutSine(float, float, float)
+  fullName: EasingFunction.EaseInOutSine(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutSine
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 239
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutSine(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutSine(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutSine*
+  nameWithType.vb: EasingFunction.EaseInOutSine(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutSine(Single, Single, Single)
+  name.vb: EaseInOutSine(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInExpo(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInExpo(System.Single,System.Single,System.Single)
+  id: EaseInExpo(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInExpo(float, float, float)
+  nameWithType: EasingFunction.EaseInExpo(float, float, float)
+  fullName: EasingFunction.EaseInExpo(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInExpo
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 245
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInExpo(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInExpo(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInExpo*
+  nameWithType.vb: EasingFunction.EaseInExpo(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInExpo(Single, Single, Single)
+  name.vb: EaseInExpo(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutExpo(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutExpo(System.Single,System.Single,System.Single)
+  id: EaseOutExpo(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutExpo(float, float, float)
+  nameWithType: EasingFunction.EaseOutExpo(float, float, float)
+  fullName: EasingFunction.EaseOutExpo(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutExpo
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 251
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutExpo(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutExpo(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutExpo*
+  nameWithType.vb: EasingFunction.EaseOutExpo(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutExpo(Single, Single, Single)
+  name.vb: EaseOutExpo(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutExpo(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutExpo(System.Single,System.Single,System.Single)
+  id: EaseInOutExpo(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutExpo(float, float, float)
+  nameWithType: EasingFunction.EaseInOutExpo(float, float, float)
+  fullName: EasingFunction.EaseInOutExpo(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutExpo
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 257
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutExpo(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutExpo(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutExpo*
+  nameWithType.vb: EasingFunction.EaseInOutExpo(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutExpo(Single, Single, Single)
+  name.vb: EaseInOutExpo(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInCirc(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInCirc(System.Single,System.Single,System.Single)
+  id: EaseInCirc(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInCirc(float, float, float)
+  nameWithType: EasingFunction.EaseInCirc(float, float, float)
+  fullName: EasingFunction.EaseInCirc(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInCirc
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 266
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInCirc(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInCirc(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInCirc*
+  nameWithType.vb: EasingFunction.EaseInCirc(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInCirc(Single, Single, Single)
+  name.vb: EaseInCirc(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutCirc(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutCirc(System.Single,System.Single,System.Single)
+  id: EaseOutCirc(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutCirc(float, float, float)
+  nameWithType: EasingFunction.EaseOutCirc(float, float, float)
+  fullName: EasingFunction.EaseOutCirc(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutCirc
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 272
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutCirc(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutCirc(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutCirc*
+  nameWithType.vb: EasingFunction.EaseOutCirc(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutCirc(Single, Single, Single)
+  name.vb: EaseOutCirc(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutCirc(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutCirc(System.Single,System.Single,System.Single)
+  id: EaseInOutCirc(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutCirc(float, float, float)
+  nameWithType: EasingFunction.EaseInOutCirc(float, float, float)
+  fullName: EasingFunction.EaseInOutCirc(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutCirc
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 279
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutCirc(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutCirc(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutCirc*
+  nameWithType.vb: EasingFunction.EaseInOutCirc(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutCirc(Single, Single, Single)
+  name.vb: EaseInOutCirc(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInBounce(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInBounce(System.Single,System.Single,System.Single)
+  id: EaseInBounce(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInBounce(float, float, float)
+  nameWithType: EasingFunction.EaseInBounce(float, float, float)
+  fullName: EasingFunction.EaseInBounce(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInBounce
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 288
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInBounce(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInBounce(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInBounce*
+  nameWithType.vb: EasingFunction.EaseInBounce(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInBounce(Single, Single, Single)
+  name.vb: EaseInBounce(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutBounce(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutBounce(System.Single,System.Single,System.Single)
+  id: EaseOutBounce(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutBounce(float, float, float)
+  nameWithType: EasingFunction.EaseOutBounce(float, float, float)
+  fullName: EasingFunction.EaseOutBounce(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutBounce
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 295
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutBounce(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutBounce(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutBounce*
+  nameWithType.vb: EasingFunction.EaseOutBounce(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutBounce(Single, Single, Single)
+  name.vb: EaseOutBounce(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutBounce(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutBounce(System.Single,System.Single,System.Single)
+  id: EaseInOutBounce(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutBounce(float, float, float)
+  nameWithType: EasingFunction.EaseInOutBounce(float, float, float)
+  fullName: EasingFunction.EaseInOutBounce(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutBounce
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 320
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutBounce(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutBounce(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutBounce*
+  nameWithType.vb: EasingFunction.EaseInOutBounce(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutBounce(Single, Single, Single)
+  name.vb: EaseInOutBounce(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInBack(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInBack(System.Single,System.Single,System.Single)
+  id: EaseInBack(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInBack(float, float, float)
+  nameWithType: EasingFunction.EaseInBack(float, float, float)
+  fullName: EasingFunction.EaseInBack(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInBack
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 328
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInBack(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInBack(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInBack*
+  nameWithType.vb: EasingFunction.EaseInBack(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInBack(Single, Single, Single)
+  name.vb: EaseInBack(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutBack(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutBack(System.Single,System.Single,System.Single)
+  id: EaseOutBack(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutBack(float, float, float)
+  nameWithType: EasingFunction.EaseOutBack(float, float, float)
+  fullName: EasingFunction.EaseOutBack(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutBack
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 336
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutBack(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutBack(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutBack*
+  nameWithType.vb: EasingFunction.EaseOutBack(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutBack(Single, Single, Single)
+  name.vb: EaseOutBack(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutBack(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutBack(System.Single,System.Single,System.Single)
+  id: EaseInOutBack(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutBack(float, float, float)
+  nameWithType: EasingFunction.EaseInOutBack(float, float, float)
+  fullName: EasingFunction.EaseInOutBack(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutBack
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 344
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutBack(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutBack(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutBack*
+  nameWithType.vb: EasingFunction.EaseInOutBack(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutBack(Single, Single, Single)
+  name.vb: EaseInOutBack(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInElastic(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInElastic(System.Single,System.Single,System.Single)
+  id: EaseInElastic(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInElastic(float, float, float)
+  nameWithType: EasingFunction.EaseInElastic(float, float, float)
+  fullName: EasingFunction.EaseInElastic(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInElastic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 359
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInElastic(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInElastic(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInElastic*
+  nameWithType.vb: EasingFunction.EaseInElastic(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInElastic(Single, Single, Single)
+  name.vb: EaseInElastic(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutElastic(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutElastic(System.Single,System.Single,System.Single)
+  id: EaseOutElastic(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutElastic(float, float, float)
+  nameWithType: EasingFunction.EaseOutElastic(float, float, float)
+  fullName: EasingFunction.EaseOutElastic(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutElastic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 385
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutElastic(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutElastic(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutElastic*
+  nameWithType.vb: EasingFunction.EaseOutElastic(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutElastic(Single, Single, Single)
+  name.vb: EaseOutElastic(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutElasticCustom(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutElasticCustom(System.Single,System.Single,System.Single,System.Single)
+  id: EaseOutElasticCustom(System.Single,System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutElasticCustom(float, float, float, float)
+  nameWithType: EasingFunction.EaseOutElasticCustom(float, float, float, float)
+  fullName: EasingFunction.EaseOutElasticCustom(float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutElasticCustom
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 411
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutElasticCustom(float springTension, float start, float end, float value)
+    parameters:
+    - id: springTension
+      type: System.Single
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutElasticCustom(springTension As Single, start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutElasticCustom*
+  nameWithType.vb: EasingFunction.EaseOutElasticCustom(Single, Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutElasticCustom(Single, Single, Single, Single)
+  name.vb: EaseOutElasticCustom(Single, Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutElastic(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutElastic(System.Single,System.Single,System.Single)
+  id: EaseInOutElastic(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutElastic(float, float, float)
+  nameWithType: EasingFunction.EaseInOutElastic(float, float, float)
+  fullName: EasingFunction.EaseInOutElastic(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutElastic
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 426
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutElastic(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutElastic(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutElastic*
+  nameWithType.vb: EasingFunction.EaseInOutElastic(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutElastic(Single, Single, Single)
+  name.vb: EaseInOutElastic(Single, Single, Single)
+- uid: Global.EasingFunction.LinearD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.LinearD(System.Single,System.Single,System.Single)
+  id: LinearD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: LinearD(float, float, float)
+  nameWithType: EasingFunction.LinearD(float, float, float)
+  fullName: EasingFunction.LinearD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LinearD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 462
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float LinearD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function LinearD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.LinearD*
+  nameWithType.vb: EasingFunction.LinearD(Single, Single, Single)
+  fullName.vb: EasingFunction.LinearD(Single, Single, Single)
+  name.vb: LinearD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInQuadD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInQuadD(System.Single,System.Single,System.Single)
+  id: EaseInQuadD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuadD(float, float, float)
+  nameWithType: EasingFunction.EaseInQuadD(float, float, float)
+  fullName: EasingFunction.EaseInQuadD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuadD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 467
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInQuadD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInQuadD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInQuadD*
+  nameWithType.vb: EasingFunction.EaseInQuadD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInQuadD(Single, Single, Single)
+  name.vb: EaseInQuadD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutQuadD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutQuadD(System.Single,System.Single,System.Single)
+  id: EaseOutQuadD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuadD(float, float, float)
+  nameWithType: EasingFunction.EaseOutQuadD(float, float, float)
+  fullName: EasingFunction.EaseOutQuadD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuadD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 472
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutQuadD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutQuadD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutQuadD*
+  nameWithType.vb: EasingFunction.EaseOutQuadD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutQuadD(Single, Single, Single)
+  name.vb: EaseOutQuadD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutQuadD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutQuadD(System.Single,System.Single,System.Single)
+  id: EaseInOutQuadD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuadD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutQuadD(float, float, float)
+  fullName: EasingFunction.EaseInOutQuadD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuadD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 478
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutQuadD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutQuadD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutQuadD*
+  nameWithType.vb: EasingFunction.EaseInOutQuadD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutQuadD(Single, Single, Single)
+  name.vb: EaseInOutQuadD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInCubicD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInCubicD(System.Single,System.Single,System.Single)
+  id: EaseInCubicD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInCubicD(float, float, float)
+  nameWithType: EasingFunction.EaseInCubicD(float, float, float)
+  fullName: EasingFunction.EaseInCubicD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInCubicD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 493
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInCubicD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInCubicD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInCubicD*
+  nameWithType.vb: EasingFunction.EaseInCubicD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInCubicD(Single, Single, Single)
+  name.vb: EaseInCubicD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutCubicD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutCubicD(System.Single,System.Single,System.Single)
+  id: EaseOutCubicD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutCubicD(float, float, float)
+  nameWithType: EasingFunction.EaseOutCubicD(float, float, float)
+  fullName: EasingFunction.EaseOutCubicD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutCubicD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 498
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutCubicD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutCubicD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutCubicD*
+  nameWithType.vb: EasingFunction.EaseOutCubicD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutCubicD(Single, Single, Single)
+  name.vb: EaseOutCubicD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutCubicD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutCubicD(System.Single,System.Single,System.Single)
+  id: EaseInOutCubicD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutCubicD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutCubicD(float, float, float)
+  fullName: EasingFunction.EaseInOutCubicD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutCubicD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 505
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutCubicD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutCubicD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutCubicD*
+  nameWithType.vb: EasingFunction.EaseInOutCubicD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutCubicD(Single, Single, Single)
+  name.vb: EaseInOutCubicD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInQuartD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInQuartD(System.Single,System.Single,System.Single)
+  id: EaseInQuartD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuartD(float, float, float)
+  nameWithType: EasingFunction.EaseInQuartD(float, float, float)
+  fullName: EasingFunction.EaseInQuartD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuartD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 520
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInQuartD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInQuartD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInQuartD*
+  nameWithType.vb: EasingFunction.EaseInQuartD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInQuartD(Single, Single, Single)
+  name.vb: EaseInQuartD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutQuartD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutQuartD(System.Single,System.Single,System.Single)
+  id: EaseOutQuartD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuartD(float, float, float)
+  nameWithType: EasingFunction.EaseOutQuartD(float, float, float)
+  fullName: EasingFunction.EaseOutQuartD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuartD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 525
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutQuartD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutQuartD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutQuartD*
+  nameWithType.vb: EasingFunction.EaseOutQuartD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutQuartD(Single, Single, Single)
+  name.vb: EaseOutQuartD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutQuartD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutQuartD(System.Single,System.Single,System.Single)
+  id: EaseInOutQuartD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuartD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutQuartD(float, float, float)
+  fullName: EasingFunction.EaseInOutQuartD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuartD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 532
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutQuartD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutQuartD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutQuartD*
+  nameWithType.vb: EasingFunction.EaseInOutQuartD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutQuartD(Single, Single, Single)
+  name.vb: EaseInOutQuartD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInQuintD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInQuintD(System.Single,System.Single,System.Single)
+  id: EaseInQuintD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInQuintD(float, float, float)
+  nameWithType: EasingFunction.EaseInQuintD(float, float, float)
+  fullName: EasingFunction.EaseInQuintD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInQuintD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 547
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInQuintD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInQuintD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInQuintD*
+  nameWithType.vb: EasingFunction.EaseInQuintD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInQuintD(Single, Single, Single)
+  name.vb: EaseInQuintD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutQuintD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutQuintD(System.Single,System.Single,System.Single)
+  id: EaseOutQuintD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutQuintD(float, float, float)
+  nameWithType: EasingFunction.EaseOutQuintD(float, float, float)
+  fullName: EasingFunction.EaseOutQuintD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutQuintD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 552
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutQuintD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutQuintD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutQuintD*
+  nameWithType.vb: EasingFunction.EaseOutQuintD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutQuintD(Single, Single, Single)
+  name.vb: EaseOutQuintD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutQuintD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutQuintD(System.Single,System.Single,System.Single)
+  id: EaseInOutQuintD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutQuintD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutQuintD(float, float, float)
+  fullName: EasingFunction.EaseInOutQuintD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutQuintD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 559
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutQuintD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutQuintD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutQuintD*
+  nameWithType.vb: EasingFunction.EaseInOutQuintD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutQuintD(Single, Single, Single)
+  name.vb: EaseInOutQuintD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInSineD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInSineD(System.Single,System.Single,System.Single)
+  id: EaseInSineD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInSineD(float, float, float)
+  nameWithType: EasingFunction.EaseInSineD(float, float, float)
+  fullName: EasingFunction.EaseInSineD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInSineD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 574
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInSineD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInSineD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInSineD*
+  nameWithType.vb: EasingFunction.EaseInSineD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInSineD(Single, Single, Single)
+  name.vb: EaseInSineD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutSineD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutSineD(System.Single,System.Single,System.Single)
+  id: EaseOutSineD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutSineD(float, float, float)
+  nameWithType: EasingFunction.EaseOutSineD(float, float, float)
+  fullName: EasingFunction.EaseOutSineD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutSineD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 579
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutSineD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutSineD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutSineD*
+  nameWithType.vb: EasingFunction.EaseOutSineD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutSineD(Single, Single, Single)
+  name.vb: EaseOutSineD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutSineD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutSineD(System.Single,System.Single,System.Single)
+  id: EaseInOutSineD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutSineD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutSineD(float, float, float)
+  fullName: EasingFunction.EaseInOutSineD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutSineD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 585
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutSineD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutSineD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutSineD*
+  nameWithType.vb: EasingFunction.EaseInOutSineD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutSineD(Single, Single, Single)
+  name.vb: EaseInOutSineD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInExpoD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInExpoD(System.Single,System.Single,System.Single)
+  id: EaseInExpoD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInExpoD(float, float, float)
+  nameWithType: EasingFunction.EaseInExpoD(float, float, float)
+  fullName: EasingFunction.EaseInExpoD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInExpoD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 590
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInExpoD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInExpoD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInExpoD*
+  nameWithType.vb: EasingFunction.EaseInExpoD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInExpoD(Single, Single, Single)
+  name.vb: EaseInExpoD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutExpoD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutExpoD(System.Single,System.Single,System.Single)
+  id: EaseOutExpoD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutExpoD(float, float, float)
+  nameWithType: EasingFunction.EaseOutExpoD(float, float, float)
+  fullName: EasingFunction.EaseOutExpoD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutExpoD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 595
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutExpoD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutExpoD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutExpoD*
+  nameWithType.vb: EasingFunction.EaseOutExpoD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutExpoD(Single, Single, Single)
+  name.vb: EaseOutExpoD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutExpoD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutExpoD(System.Single,System.Single,System.Single)
+  id: EaseInOutExpoD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutExpoD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutExpoD(float, float, float)
+  fullName: EasingFunction.EaseInOutExpoD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutExpoD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 601
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutExpoD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutExpoD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutExpoD*
+  nameWithType.vb: EasingFunction.EaseInOutExpoD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutExpoD(Single, Single, Single)
+  name.vb: EaseInOutExpoD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInCircD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInCircD(System.Single,System.Single,System.Single)
+  id: EaseInCircD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInCircD(float, float, float)
+  nameWithType: EasingFunction.EaseInCircD(float, float, float)
+  fullName: EasingFunction.EaseInCircD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInCircD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 616
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInCircD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInCircD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInCircD*
+  nameWithType.vb: EasingFunction.EaseInCircD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInCircD(Single, Single, Single)
+  name.vb: EaseInCircD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutCircD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutCircD(System.Single,System.Single,System.Single)
+  id: EaseOutCircD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutCircD(float, float, float)
+  nameWithType: EasingFunction.EaseOutCircD(float, float, float)
+  fullName: EasingFunction.EaseOutCircD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutCircD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 621
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutCircD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutCircD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutCircD*
+  nameWithType.vb: EasingFunction.EaseOutCircD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutCircD(Single, Single, Single)
+  name.vb: EaseOutCircD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutCircD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutCircD(System.Single,System.Single,System.Single)
+  id: EaseInOutCircD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutCircD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutCircD(float, float, float)
+  fullName: EasingFunction.EaseInOutCircD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutCircD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 628
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutCircD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutCircD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutCircD*
+  nameWithType.vb: EasingFunction.EaseInOutCircD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutCircD(Single, Single, Single)
+  name.vb: EaseInOutCircD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInBounceD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInBounceD(System.Single,System.Single,System.Single)
+  id: EaseInBounceD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInBounceD(float, float, float)
+  nameWithType: EasingFunction.EaseInBounceD(float, float, float)
+  fullName: EasingFunction.EaseInBounceD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInBounceD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 643
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInBounceD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInBounceD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInBounceD*
+  nameWithType.vb: EasingFunction.EaseInBounceD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInBounceD(Single, Single, Single)
+  name.vb: EaseInBounceD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutBounceD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutBounceD(System.Single,System.Single,System.Single)
+  id: EaseOutBounceD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutBounceD(float, float, float)
+  nameWithType: EasingFunction.EaseOutBounceD(float, float, float)
+  fullName: EasingFunction.EaseOutBounceD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutBounceD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 651
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutBounceD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutBounceD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutBounceD*
+  nameWithType.vb: EasingFunction.EaseOutBounceD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutBounceD(Single, Single, Single)
+  name.vb: EaseOutBounceD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutBounceD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutBounceD(System.Single,System.Single,System.Single)
+  id: EaseInOutBounceD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutBounceD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutBounceD(float, float, float)
+  fullName: EasingFunction.EaseInOutBounceD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutBounceD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 677
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutBounceD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutBounceD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutBounceD*
+  nameWithType.vb: EasingFunction.EaseInOutBounceD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutBounceD(Single, Single, Single)
+  name.vb: EaseInOutBounceD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInBackD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInBackD(System.Single,System.Single,System.Single)
+  id: EaseInBackD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInBackD(float, float, float)
+  nameWithType: EasingFunction.EaseInBackD(float, float, float)
+  fullName: EasingFunction.EaseInBackD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInBackD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 692
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInBackD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInBackD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInBackD*
+  nameWithType.vb: EasingFunction.EaseInBackD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInBackD(Single, Single, Single)
+  name.vb: EaseInBackD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutBackD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutBackD(System.Single,System.Single,System.Single)
+  id: EaseOutBackD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutBackD(float, float, float)
+  nameWithType: EasingFunction.EaseOutBackD(float, float, float)
+  fullName: EasingFunction.EaseOutBackD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutBackD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 699
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutBackD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutBackD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutBackD*
+  nameWithType.vb: EasingFunction.EaseOutBackD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutBackD(Single, Single, Single)
+  name.vb: EaseOutBackD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutBackD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutBackD(System.Single,System.Single,System.Single)
+  id: EaseInOutBackD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutBackD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutBackD(float, float, float)
+  fullName: EasingFunction.EaseInOutBackD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutBackD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 708
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutBackD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutBackD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutBackD*
+  nameWithType.vb: EasingFunction.EaseInOutBackD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutBackD(Single, Single, Single)
+  name.vb: EaseInOutBackD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInElasticD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInElasticD(System.Single,System.Single,System.Single)
+  id: EaseInElasticD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInElasticD(float, float, float)
+  nameWithType: EasingFunction.EaseInElasticD(float, float, float)
+  fullName: EasingFunction.EaseInElasticD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInElasticD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 725
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInElasticD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInElasticD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInElasticD*
+  nameWithType.vb: EasingFunction.EaseInElasticD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInElasticD(Single, Single, Single)
+  name.vb: EaseInElasticD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseOutElasticD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseOutElasticD(System.Single,System.Single,System.Single)
+  id: EaseOutElasticD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseOutElasticD(float, float, float)
+  nameWithType: EasingFunction.EaseOutElasticD(float, float, float)
+  fullName: EasingFunction.EaseOutElasticD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseOutElasticD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 730
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseOutElasticD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseOutElasticD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseOutElasticD*
+  nameWithType.vb: EasingFunction.EaseOutElasticD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseOutElasticD(Single, Single, Single)
+  name.vb: EaseOutElasticD(Single, Single, Single)
+- uid: Global.EasingFunction.EaseInOutElasticD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.EaseInOutElasticD(System.Single,System.Single,System.Single)
+  id: EaseInOutElasticD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutElasticD(float, float, float)
+  nameWithType: EasingFunction.EaseInOutElasticD(float, float, float)
+  fullName: EasingFunction.EaseInOutElasticD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseInOutElasticD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 754
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float EaseInOutElasticD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function EaseInOutElasticD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.EaseInOutElasticD*
+  nameWithType.vb: EasingFunction.EaseInOutElasticD(Single, Single, Single)
+  fullName.vb: EasingFunction.EaseInOutElasticD(Single, Single, Single)
+  name.vb: EaseInOutElasticD(Single, Single, Single)
+- uid: Global.EasingFunction.SpringD(System.Single,System.Single,System.Single)
+  commentId: M:Global.EasingFunction.SpringD(System.Single,System.Single,System.Single)
+  id: SpringD(System.Single,System.Single,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: SpringD(float, float, float)
+  nameWithType: EasingFunction.SpringD(float, float, float)
+  fullName: EasingFunction.SpringD(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpringD
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 787
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float SpringD(float start, float end, float value)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: end
+      type: System.Single
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function SpringD(start As Single, [end] As Single, value As Single) As Single
+  overload: Global.EasingFunction.SpringD*
+  nameWithType.vb: EasingFunction.SpringD(Single, Single, Single)
+  fullName.vb: EasingFunction.SpringD(Single, Single, Single)
+  name.vb: SpringD(Single, Single, Single)
+- uid: Global.EasingFunction.GetEasingFunction(EasingFunction.Ease)
+  commentId: M:Global.EasingFunction.GetEasingFunction(EasingFunction.Ease)
+  id: GetEasingFunction(EasingFunction.Ease)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: GetEasingFunction(Ease)
+  nameWithType: EasingFunction.GetEasingFunction(EasingFunction.Ease)
+  fullName: EasingFunction.GetEasingFunction(EasingFunction.Ease)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetEasingFunction
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 811
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nReturns the function associated to the easingFunction enum. This value returned should be cached as it allocates memory\nto return.\n"
+  example: []
+  syntax:
+    content: public static EasingFunction.Function GetEasingFunction(EasingFunction.Ease easingFunction)
+    parameters:
+    - id: easingFunction
+      type: Global.EasingFunction.Ease
+      description: The enum associated with the easing function.
+    return:
+      type: Global.EasingFunction.Function
+      description: The easing function
+    content.vb: Public Shared Function GetEasingFunction(easingFunction As EasingFunction.Ease) As EasingFunction.Function
+  overload: Global.EasingFunction.GetEasingFunction*
+- uid: Global.EasingFunction.GetEasingFunctionDerivative(EasingFunction.Ease)
+  commentId: M:Global.EasingFunction.GetEasingFunctionDerivative(EasingFunction.Ease)
+  id: GetEasingFunctionDerivative(EasingFunction.Ease)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: GetEasingFunctionDerivative(Ease)
+  nameWithType: EasingFunction.GetEasingFunctionDerivative(EasingFunction.Ease)
+  fullName: EasingFunction.GetEasingFunctionDerivative(EasingFunction.Ease)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetEasingFunctionDerivative
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 982
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nGets the derivative function of the appropriate easing function. If you use an easing function for position then this\nfunction can get you the speed at a given time (normalized).\n"
+  example: []
+  syntax:
+    content: public static EasingFunction.Function GetEasingFunctionDerivative(EasingFunction.Ease easingFunction)
+    parameters:
+    - id: easingFunction
+      type: Global.EasingFunction.Ease
+      description: ''
+    return:
+      type: Global.EasingFunction.Function
+      description: The derivative function
+    content.vb: Public Shared Function GetEasingFunctionDerivative(easingFunction As EasingFunction.Ease) As EasingFunction.Function
+  overload: Global.EasingFunction.GetEasingFunctionDerivative*
+- uid: Global.EasingFunction.Ease2D(EasingFunction.Ease,UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  commentId: M:Global.EasingFunction.Ease2D(EasingFunction.Ease,UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  id: Ease2D(EasingFunction.Ease,UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: Ease2D(Ease, Vector2, Vector2, float)
+  nameWithType: EasingFunction.Ease2D(EasingFunction.Ease, Vector2, Vector2, float)
+  fullName: EasingFunction.Ease2D(EasingFunction.Ease, UnityEngine.Vector2, UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Ease2D
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 1147
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector2 Ease2D(EasingFunction.Ease easingFunction, Vector2 A, Vector2 B, float t)
+    parameters:
+    - id: easingFunction
+      type: Global.EasingFunction.Ease
+    - id: A
+      type: UnityEngine.Vector2
+    - id: B
+      type: UnityEngine.Vector2
+    - id: t
+      type: System.Single
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function Ease2D(easingFunction As EasingFunction.Ease, A As Vector2, B As Vector2, t As Single) As Vector2
+  overload: Global.EasingFunction.Ease2D*
+  nameWithType.vb: EasingFunction.Ease2D(EasingFunction.Ease, Vector2, Vector2, Single)
+  fullName.vb: EasingFunction.Ease2D(EasingFunction.Ease, UnityEngine.Vector2, UnityEngine.Vector2, Single)
+  name.vb: Ease2D(Ease, Vector2, Vector2, Single)
+- uid: Global.EasingFunction.Ease3D(EasingFunction.Ease,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  commentId: M:Global.EasingFunction.Ease3D(EasingFunction.Ease,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  id: Ease3D(EasingFunction.Ease,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  parent: Global.EasingFunction
+  langs:
+  - csharp
+  - vb
+  name: Ease3D(Ease, Vector3, Vector3, float)
+  nameWithType: EasingFunction.Ease3D(EasingFunction.Ease, Vector3, Vector3, float)
+  fullName: EasingFunction.Ease3D(EasingFunction.Ease, UnityEngine.Vector3, UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/EasingFunction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Ease3D
+    path: ../Assets/Framework/Util/Math/EasingFunction.cs
+    startLine: 1154
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Vector3 Ease3D(EasingFunction.Ease easingFunction, Vector3 A, Vector3 B, float t)
+    parameters:
+    - id: easingFunction
+      type: Global.EasingFunction.Ease
+    - id: A
+      type: UnityEngine.Vector3
+    - id: B
+      type: UnityEngine.Vector3
+    - id: t
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function Ease3D(easingFunction As EasingFunction.Ease, A As Vector3, B As Vector3, t As Single) As Vector3
+  overload: Global.EasingFunction.Ease3D*
+  nameWithType.vb: EasingFunction.Ease3D(EasingFunction.Ease, Vector3, Vector3, Single)
+  fullName.vb: EasingFunction.Ease3D(EasingFunction.Ease, UnityEngine.Vector3, UnityEngine.Vector3, Single)
+  name.vb: Ease3D(Ease, Vector3, Vector3, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.EasingFunction.ComposedEasingFunctions*
+  commentId: Overload:Global.EasingFunction.ComposedEasingFunctions
+  name: ComposedEasingFunctions
+  nameWithType: EasingFunction.ComposedEasingFunctions
+  fullName: EasingFunction.ComposedEasingFunctions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.EasingFunction.Ease
+  commentId: T:Global.EasingFunction.Ease
+  name: EasingFunction.Ease
+  nameWithType: EasingFunction.Ease
+  fullName: EasingFunction.Ease
+  spec.csharp:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+  spec.vb:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+- uid: Global.EasingFunction.Linear*
+  commentId: Overload:Global.EasingFunction.Linear
+  name: Linear
+  nameWithType: EasingFunction.Linear
+  fullName: EasingFunction.Linear
+- uid: Global.EasingFunction.Spring*
+  commentId: Overload:Global.EasingFunction.Spring
+  name: Spring
+  nameWithType: EasingFunction.Spring
+  fullName: EasingFunction.Spring
+- uid: Global.EasingFunction.EaseInQuad*
+  commentId: Overload:Global.EasingFunction.EaseInQuad
+  name: EaseInQuad
+  nameWithType: EasingFunction.EaseInQuad
+  fullName: EasingFunction.EaseInQuad
+- uid: Global.EasingFunction.EaseOutQuad*
+  commentId: Overload:Global.EasingFunction.EaseOutQuad
+  name: EaseOutQuad
+  nameWithType: EasingFunction.EaseOutQuad
+  fullName: EasingFunction.EaseOutQuad
+- uid: Global.EasingFunction.EaseInOutQuad*
+  commentId: Overload:Global.EasingFunction.EaseInOutQuad
+  name: EaseInOutQuad
+  nameWithType: EasingFunction.EaseInOutQuad
+  fullName: EasingFunction.EaseInOutQuad
+- uid: Global.EasingFunction.EaseInCubic*
+  commentId: Overload:Global.EasingFunction.EaseInCubic
+  name: EaseInCubic
+  nameWithType: EasingFunction.EaseInCubic
+  fullName: EasingFunction.EaseInCubic
+- uid: Global.EasingFunction.EaseOutCubic*
+  commentId: Overload:Global.EasingFunction.EaseOutCubic
+  name: EaseOutCubic
+  nameWithType: EasingFunction.EaseOutCubic
+  fullName: EasingFunction.EaseOutCubic
+- uid: Global.EasingFunction.EaseInOutCubic*
+  commentId: Overload:Global.EasingFunction.EaseInOutCubic
+  name: EaseInOutCubic
+  nameWithType: EasingFunction.EaseInOutCubic
+  fullName: EasingFunction.EaseInOutCubic
+- uid: Global.EasingFunction.EaseInQuart*
+  commentId: Overload:Global.EasingFunction.EaseInQuart
+  name: EaseInQuart
+  nameWithType: EasingFunction.EaseInQuart
+  fullName: EasingFunction.EaseInQuart
+- uid: Global.EasingFunction.EaseOutQuart*
+  commentId: Overload:Global.EasingFunction.EaseOutQuart
+  name: EaseOutQuart
+  nameWithType: EasingFunction.EaseOutQuart
+  fullName: EasingFunction.EaseOutQuart
+- uid: Global.EasingFunction.EaseInOutQuart*
+  commentId: Overload:Global.EasingFunction.EaseInOutQuart
+  name: EaseInOutQuart
+  nameWithType: EasingFunction.EaseInOutQuart
+  fullName: EasingFunction.EaseInOutQuart
+- uid: Global.EasingFunction.EaseInQuint*
+  commentId: Overload:Global.EasingFunction.EaseInQuint
+  name: EaseInQuint
+  nameWithType: EasingFunction.EaseInQuint
+  fullName: EasingFunction.EaseInQuint
+- uid: Global.EasingFunction.EaseOutQuint*
+  commentId: Overload:Global.EasingFunction.EaseOutQuint
+  name: EaseOutQuint
+  nameWithType: EasingFunction.EaseOutQuint
+  fullName: EasingFunction.EaseOutQuint
+- uid: Global.EasingFunction.EaseInOutQuint*
+  commentId: Overload:Global.EasingFunction.EaseInOutQuint
+  name: EaseInOutQuint
+  nameWithType: EasingFunction.EaseInOutQuint
+  fullName: EasingFunction.EaseInOutQuint
+- uid: Global.EasingFunction.EaseInSine*
+  commentId: Overload:Global.EasingFunction.EaseInSine
+  name: EaseInSine
+  nameWithType: EasingFunction.EaseInSine
+  fullName: EasingFunction.EaseInSine
+- uid: Global.EasingFunction.EaseOutSine*
+  commentId: Overload:Global.EasingFunction.EaseOutSine
+  name: EaseOutSine
+  nameWithType: EasingFunction.EaseOutSine
+  fullName: EasingFunction.EaseOutSine
+- uid: Global.EasingFunction.EaseInOutSine*
+  commentId: Overload:Global.EasingFunction.EaseInOutSine
+  name: EaseInOutSine
+  nameWithType: EasingFunction.EaseInOutSine
+  fullName: EasingFunction.EaseInOutSine
+- uid: Global.EasingFunction.EaseInExpo*
+  commentId: Overload:Global.EasingFunction.EaseInExpo
+  name: EaseInExpo
+  nameWithType: EasingFunction.EaseInExpo
+  fullName: EasingFunction.EaseInExpo
+- uid: Global.EasingFunction.EaseOutExpo*
+  commentId: Overload:Global.EasingFunction.EaseOutExpo
+  name: EaseOutExpo
+  nameWithType: EasingFunction.EaseOutExpo
+  fullName: EasingFunction.EaseOutExpo
+- uid: Global.EasingFunction.EaseInOutExpo*
+  commentId: Overload:Global.EasingFunction.EaseInOutExpo
+  name: EaseInOutExpo
+  nameWithType: EasingFunction.EaseInOutExpo
+  fullName: EasingFunction.EaseInOutExpo
+- uid: Global.EasingFunction.EaseInCirc*
+  commentId: Overload:Global.EasingFunction.EaseInCirc
+  name: EaseInCirc
+  nameWithType: EasingFunction.EaseInCirc
+  fullName: EasingFunction.EaseInCirc
+- uid: Global.EasingFunction.EaseOutCirc*
+  commentId: Overload:Global.EasingFunction.EaseOutCirc
+  name: EaseOutCirc
+  nameWithType: EasingFunction.EaseOutCirc
+  fullName: EasingFunction.EaseOutCirc
+- uid: Global.EasingFunction.EaseInOutCirc*
+  commentId: Overload:Global.EasingFunction.EaseInOutCirc
+  name: EaseInOutCirc
+  nameWithType: EasingFunction.EaseInOutCirc
+  fullName: EasingFunction.EaseInOutCirc
+- uid: Global.EasingFunction.EaseInBounce*
+  commentId: Overload:Global.EasingFunction.EaseInBounce
+  name: EaseInBounce
+  nameWithType: EasingFunction.EaseInBounce
+  fullName: EasingFunction.EaseInBounce
+- uid: Global.EasingFunction.EaseOutBounce*
+  commentId: Overload:Global.EasingFunction.EaseOutBounce
+  name: EaseOutBounce
+  nameWithType: EasingFunction.EaseOutBounce
+  fullName: EasingFunction.EaseOutBounce
+- uid: Global.EasingFunction.EaseInOutBounce*
+  commentId: Overload:Global.EasingFunction.EaseInOutBounce
+  name: EaseInOutBounce
+  nameWithType: EasingFunction.EaseInOutBounce
+  fullName: EasingFunction.EaseInOutBounce
+- uid: Global.EasingFunction.EaseInBack*
+  commentId: Overload:Global.EasingFunction.EaseInBack
+  name: EaseInBack
+  nameWithType: EasingFunction.EaseInBack
+  fullName: EasingFunction.EaseInBack
+- uid: Global.EasingFunction.EaseOutBack*
+  commentId: Overload:Global.EasingFunction.EaseOutBack
+  name: EaseOutBack
+  nameWithType: EasingFunction.EaseOutBack
+  fullName: EasingFunction.EaseOutBack
+- uid: Global.EasingFunction.EaseInOutBack*
+  commentId: Overload:Global.EasingFunction.EaseInOutBack
+  name: EaseInOutBack
+  nameWithType: EasingFunction.EaseInOutBack
+  fullName: EasingFunction.EaseInOutBack
+- uid: Global.EasingFunction.EaseInElastic*
+  commentId: Overload:Global.EasingFunction.EaseInElastic
+  name: EaseInElastic
+  nameWithType: EasingFunction.EaseInElastic
+  fullName: EasingFunction.EaseInElastic
+- uid: Global.EasingFunction.EaseOutElastic*
+  commentId: Overload:Global.EasingFunction.EaseOutElastic
+  name: EaseOutElastic
+  nameWithType: EasingFunction.EaseOutElastic
+  fullName: EasingFunction.EaseOutElastic
+- uid: Global.EasingFunction.EaseOutElasticCustom*
+  commentId: Overload:Global.EasingFunction.EaseOutElasticCustom
+  name: EaseOutElasticCustom
+  nameWithType: EasingFunction.EaseOutElasticCustom
+  fullName: EasingFunction.EaseOutElasticCustom
+- uid: Global.EasingFunction.EaseInOutElastic*
+  commentId: Overload:Global.EasingFunction.EaseInOutElastic
+  name: EaseInOutElastic
+  nameWithType: EasingFunction.EaseInOutElastic
+  fullName: EasingFunction.EaseInOutElastic
+- uid: Global.EasingFunction.LinearD*
+  commentId: Overload:Global.EasingFunction.LinearD
+  name: LinearD
+  nameWithType: EasingFunction.LinearD
+  fullName: EasingFunction.LinearD
+- uid: Global.EasingFunction.EaseInQuadD*
+  commentId: Overload:Global.EasingFunction.EaseInQuadD
+  name: EaseInQuadD
+  nameWithType: EasingFunction.EaseInQuadD
+  fullName: EasingFunction.EaseInQuadD
+- uid: Global.EasingFunction.EaseOutQuadD*
+  commentId: Overload:Global.EasingFunction.EaseOutQuadD
+  name: EaseOutQuadD
+  nameWithType: EasingFunction.EaseOutQuadD
+  fullName: EasingFunction.EaseOutQuadD
+- uid: Global.EasingFunction.EaseInOutQuadD*
+  commentId: Overload:Global.EasingFunction.EaseInOutQuadD
+  name: EaseInOutQuadD
+  nameWithType: EasingFunction.EaseInOutQuadD
+  fullName: EasingFunction.EaseInOutQuadD
+- uid: Global.EasingFunction.EaseInCubicD*
+  commentId: Overload:Global.EasingFunction.EaseInCubicD
+  name: EaseInCubicD
+  nameWithType: EasingFunction.EaseInCubicD
+  fullName: EasingFunction.EaseInCubicD
+- uid: Global.EasingFunction.EaseOutCubicD*
+  commentId: Overload:Global.EasingFunction.EaseOutCubicD
+  name: EaseOutCubicD
+  nameWithType: EasingFunction.EaseOutCubicD
+  fullName: EasingFunction.EaseOutCubicD
+- uid: Global.EasingFunction.EaseInOutCubicD*
+  commentId: Overload:Global.EasingFunction.EaseInOutCubicD
+  name: EaseInOutCubicD
+  nameWithType: EasingFunction.EaseInOutCubicD
+  fullName: EasingFunction.EaseInOutCubicD
+- uid: Global.EasingFunction.EaseInQuartD*
+  commentId: Overload:Global.EasingFunction.EaseInQuartD
+  name: EaseInQuartD
+  nameWithType: EasingFunction.EaseInQuartD
+  fullName: EasingFunction.EaseInQuartD
+- uid: Global.EasingFunction.EaseOutQuartD*
+  commentId: Overload:Global.EasingFunction.EaseOutQuartD
+  name: EaseOutQuartD
+  nameWithType: EasingFunction.EaseOutQuartD
+  fullName: EasingFunction.EaseOutQuartD
+- uid: Global.EasingFunction.EaseInOutQuartD*
+  commentId: Overload:Global.EasingFunction.EaseInOutQuartD
+  name: EaseInOutQuartD
+  nameWithType: EasingFunction.EaseInOutQuartD
+  fullName: EasingFunction.EaseInOutQuartD
+- uid: Global.EasingFunction.EaseInQuintD*
+  commentId: Overload:Global.EasingFunction.EaseInQuintD
+  name: EaseInQuintD
+  nameWithType: EasingFunction.EaseInQuintD
+  fullName: EasingFunction.EaseInQuintD
+- uid: Global.EasingFunction.EaseOutQuintD*
+  commentId: Overload:Global.EasingFunction.EaseOutQuintD
+  name: EaseOutQuintD
+  nameWithType: EasingFunction.EaseOutQuintD
+  fullName: EasingFunction.EaseOutQuintD
+- uid: Global.EasingFunction.EaseInOutQuintD*
+  commentId: Overload:Global.EasingFunction.EaseInOutQuintD
+  name: EaseInOutQuintD
+  nameWithType: EasingFunction.EaseInOutQuintD
+  fullName: EasingFunction.EaseInOutQuintD
+- uid: Global.EasingFunction.EaseInSineD*
+  commentId: Overload:Global.EasingFunction.EaseInSineD
+  name: EaseInSineD
+  nameWithType: EasingFunction.EaseInSineD
+  fullName: EasingFunction.EaseInSineD
+- uid: Global.EasingFunction.EaseOutSineD*
+  commentId: Overload:Global.EasingFunction.EaseOutSineD
+  name: EaseOutSineD
+  nameWithType: EasingFunction.EaseOutSineD
+  fullName: EasingFunction.EaseOutSineD
+- uid: Global.EasingFunction.EaseInOutSineD*
+  commentId: Overload:Global.EasingFunction.EaseInOutSineD
+  name: EaseInOutSineD
+  nameWithType: EasingFunction.EaseInOutSineD
+  fullName: EasingFunction.EaseInOutSineD
+- uid: Global.EasingFunction.EaseInExpoD*
+  commentId: Overload:Global.EasingFunction.EaseInExpoD
+  name: EaseInExpoD
+  nameWithType: EasingFunction.EaseInExpoD
+  fullName: EasingFunction.EaseInExpoD
+- uid: Global.EasingFunction.EaseOutExpoD*
+  commentId: Overload:Global.EasingFunction.EaseOutExpoD
+  name: EaseOutExpoD
+  nameWithType: EasingFunction.EaseOutExpoD
+  fullName: EasingFunction.EaseOutExpoD
+- uid: Global.EasingFunction.EaseInOutExpoD*
+  commentId: Overload:Global.EasingFunction.EaseInOutExpoD
+  name: EaseInOutExpoD
+  nameWithType: EasingFunction.EaseInOutExpoD
+  fullName: EasingFunction.EaseInOutExpoD
+- uid: Global.EasingFunction.EaseInCircD*
+  commentId: Overload:Global.EasingFunction.EaseInCircD
+  name: EaseInCircD
+  nameWithType: EasingFunction.EaseInCircD
+  fullName: EasingFunction.EaseInCircD
+- uid: Global.EasingFunction.EaseOutCircD*
+  commentId: Overload:Global.EasingFunction.EaseOutCircD
+  name: EaseOutCircD
+  nameWithType: EasingFunction.EaseOutCircD
+  fullName: EasingFunction.EaseOutCircD
+- uid: Global.EasingFunction.EaseInOutCircD*
+  commentId: Overload:Global.EasingFunction.EaseInOutCircD
+  name: EaseInOutCircD
+  nameWithType: EasingFunction.EaseInOutCircD
+  fullName: EasingFunction.EaseInOutCircD
+- uid: Global.EasingFunction.EaseInBounceD*
+  commentId: Overload:Global.EasingFunction.EaseInBounceD
+  name: EaseInBounceD
+  nameWithType: EasingFunction.EaseInBounceD
+  fullName: EasingFunction.EaseInBounceD
+- uid: Global.EasingFunction.EaseOutBounceD*
+  commentId: Overload:Global.EasingFunction.EaseOutBounceD
+  name: EaseOutBounceD
+  nameWithType: EasingFunction.EaseOutBounceD
+  fullName: EasingFunction.EaseOutBounceD
+- uid: Global.EasingFunction.EaseInOutBounceD*
+  commentId: Overload:Global.EasingFunction.EaseInOutBounceD
+  name: EaseInOutBounceD
+  nameWithType: EasingFunction.EaseInOutBounceD
+  fullName: EasingFunction.EaseInOutBounceD
+- uid: Global.EasingFunction.EaseInBackD*
+  commentId: Overload:Global.EasingFunction.EaseInBackD
+  name: EaseInBackD
+  nameWithType: EasingFunction.EaseInBackD
+  fullName: EasingFunction.EaseInBackD
+- uid: Global.EasingFunction.EaseOutBackD*
+  commentId: Overload:Global.EasingFunction.EaseOutBackD
+  name: EaseOutBackD
+  nameWithType: EasingFunction.EaseOutBackD
+  fullName: EasingFunction.EaseOutBackD
+- uid: Global.EasingFunction.EaseInOutBackD*
+  commentId: Overload:Global.EasingFunction.EaseInOutBackD
+  name: EaseInOutBackD
+  nameWithType: EasingFunction.EaseInOutBackD
+  fullName: EasingFunction.EaseInOutBackD
+- uid: Global.EasingFunction.EaseInElasticD*
+  commentId: Overload:Global.EasingFunction.EaseInElasticD
+  name: EaseInElasticD
+  nameWithType: EasingFunction.EaseInElasticD
+  fullName: EasingFunction.EaseInElasticD
+- uid: Global.EasingFunction.EaseOutElasticD*
+  commentId: Overload:Global.EasingFunction.EaseOutElasticD
+  name: EaseOutElasticD
+  nameWithType: EasingFunction.EaseOutElasticD
+  fullName: EasingFunction.EaseOutElasticD
+- uid: Global.EasingFunction.EaseInOutElasticD*
+  commentId: Overload:Global.EasingFunction.EaseInOutElasticD
+  name: EaseInOutElasticD
+  nameWithType: EasingFunction.EaseInOutElasticD
+  fullName: EasingFunction.EaseInOutElasticD
+- uid: Global.EasingFunction.SpringD*
+  commentId: Overload:Global.EasingFunction.SpringD
+  name: SpringD
+  nameWithType: EasingFunction.SpringD
+  fullName: EasingFunction.SpringD
+- uid: Global.EasingFunction.GetEasingFunction*
+  commentId: Overload:Global.EasingFunction.GetEasingFunction
+  name: GetEasingFunction
+  nameWithType: EasingFunction.GetEasingFunction
+  fullName: EasingFunction.GetEasingFunction
+- uid: Global.EasingFunction.Function
+  commentId: T:Global.EasingFunction.Function
+  name: EasingFunction.Function
+  nameWithType: EasingFunction.Function
+  fullName: EasingFunction.Function
+  spec.csharp:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Function
+    name: Function
+  spec.vb:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Function
+    name: Function
+- uid: Global.EasingFunction.GetEasingFunctionDerivative*
+  commentId: Overload:Global.EasingFunction.GetEasingFunctionDerivative
+  name: GetEasingFunctionDerivative
+  nameWithType: EasingFunction.GetEasingFunctionDerivative
+  fullName: EasingFunction.GetEasingFunctionDerivative
+- uid: Global.EasingFunction.Ease2D*
+  commentId: Overload:Global.EasingFunction.Ease2D
+  name: Ease2D
+  nameWithType: EasingFunction.Ease2D
+  fullName: EasingFunction.Ease2D
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.EasingFunction.Ease3D*
+  commentId: Overload:Global.EasingFunction.Ease3D
+  name: Ease3D
+  nameWithType: EasingFunction.Ease3D
+  fullName: EasingFunction.Ease3D
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3

@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraBehavior.AuraSpawnType
+  commentId: T:Global.AuraBehavior.AuraSpawnType
+  id: AuraBehavior.AuraSpawnType
+  parent: Global
+  children:
+  - Global.AuraBehavior.AuraSpawnType.None
+  - Global.AuraBehavior.AuraSpawnType.Persistent
+  - Global.AuraBehavior.AuraSpawnType.StateBased
+  - Global.AuraBehavior.AuraSpawnType.Timer
+  langs:
+  - csharp
+  - vb
+  name: AuraBehavior.AuraSpawnType
+  nameWithType: AuraBehavior.AuraSpawnType
+  fullName: AuraBehavior.AuraSpawnType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraSpawnType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum AuraBehavior.AuraSpawnType
+    content.vb: Public Enum AuraBehavior.AuraSpawnType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AuraBehavior.AuraSpawnType.None
+  commentId: F:Global.AuraBehavior.AuraSpawnType.None
+  id: None
+  parent: Global.AuraBehavior.AuraSpawnType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: AuraBehavior.AuraSpawnType.None
+  fullName: AuraBehavior.AuraSpawnType.None
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: None
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: None = 0
+    return:
+      type: Global.AuraBehavior.AuraSpawnType
+- uid: Global.AuraBehavior.AuraSpawnType.Persistent
+  commentId: F:Global.AuraBehavior.AuraSpawnType.Persistent
+  id: Persistent
+  parent: Global.AuraBehavior.AuraSpawnType
+  langs:
+  - csharp
+  - vb
+  name: Persistent
+  nameWithType: AuraBehavior.AuraSpawnType.Persistent
+  fullName: AuraBehavior.AuraSpawnType.Persistent
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Persistent
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Persistent = 1
+    return:
+      type: Global.AuraBehavior.AuraSpawnType
+- uid: Global.AuraBehavior.AuraSpawnType.Timer
+  commentId: F:Global.AuraBehavior.AuraSpawnType.Timer
+  id: Timer
+  parent: Global.AuraBehavior.AuraSpawnType
+  langs:
+  - csharp
+  - vb
+  name: Timer
+  nameWithType: AuraBehavior.AuraSpawnType.Timer
+  fullName: AuraBehavior.AuraSpawnType.Timer
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Timer
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Timer = 2
+    return:
+      type: Global.AuraBehavior.AuraSpawnType
+- uid: Global.AuraBehavior.AuraSpawnType.StateBased
+  commentId: F:Global.AuraBehavior.AuraSpawnType.StateBased
+  id: StateBased
+  parent: Global.AuraBehavior.AuraSpawnType
+  langs:
+  - csharp
+  - vb
+  name: StateBased
+  nameWithType: AuraBehavior.AuraSpawnType.StateBased
+  fullName: AuraBehavior.AuraSpawnType.StateBased
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StateBased
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Aura/AuraBehavior.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: StateBased = 3
+    return:
+      type: Global.AuraBehavior.AuraSpawnType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AuraBehavior.AuraSpawnType
+  commentId: T:Global.AuraBehavior.AuraSpawnType
+  name: AuraBehavior.AuraSpawnType
+  nameWithType: AuraBehavior.AuraSpawnType
+  fullName: AuraBehavior.AuraSpawnType
+  spec.csharp:
+  - uid: Global.AuraBehavior
+    name: AuraBehavior
+  - name: .
+  - uid: Global.AuraBehavior.AuraSpawnType
+    name: AuraSpawnType
+  spec.vb:
+  - uid: Global.AuraBehavior
+    name: AuraBehavior
+  - name: .
+  - uid: Global.AuraBehavior.AuraSpawnType
+    name: AuraSpawnType

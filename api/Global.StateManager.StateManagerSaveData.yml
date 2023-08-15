@@ -1,0 +1,154 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.StateManager.StateManagerSaveData
+  commentId: T:Global.StateManager.StateManagerSaveData
+  id: StateManager.StateManagerSaveData
+  parent: Global
+  children:
+  - Global.StateManager.StateManagerSaveData.VisitedStates
+  langs:
+  - csharp
+  - vb
+  name: StateManager.StateManagerSaveData
+  nameWithType: StateManager.StateManagerSaveData
+  fullName: StateManager.StateManagerSaveData
+  type: Struct
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/StateManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StateManagerSaveData
+    path: ../Assets/Objects & Components/GameState/StateManager.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct StateManager.StateManagerSaveData
+    content.vb: >-
+      <Serializable>
+
+      Public Structure StateManager.StateManagerSaveData
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.StateManager.StateManagerSaveData.VisitedStates
+  commentId: F:Global.StateManager.StateManagerSaveData.VisitedStates
+  id: VisitedStates
+  parent: Global.StateManager.StateManagerSaveData
+  langs:
+  - csharp
+  - vb
+  name: VisitedStates
+  nameWithType: StateManager.StateManagerSaveData.VisitedStates
+  fullName: StateManager.StateManagerSaveData.VisitedStates
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/GameState/StateManager.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: VisitedStates
+    path: ../Assets/Objects & Components/GameState/StateManager.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public AscendState[] VisitedStates
+    return:
+      type: Global.AscendState[]
+    content.vb: >-
+      <SerializeField>
+
+      Public VisitedStates As AscendState()
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AscendState[]
+  isExternal: true
+  name: AscendState[]
+  nameWithType: AscendState[]
+  fullName: AscendState[]
+  nameWithType.vb: AscendState()
+  fullName.vb: AscendState()
+  name.vb: AscendState()
+  spec.csharp:
+  - uid: Global.AscendState
+    name: AscendState
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.AscendState
+    name: AscendState
+  - name: (
+  - name: )

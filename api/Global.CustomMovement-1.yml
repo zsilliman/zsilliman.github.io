@@ -1,0 +1,630 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomMovement`1
+  commentId: T:Global.CustomMovement`1
+  id: CustomMovement`1
+  parent: Global
+  children:
+  - Global.CustomMovement`1.EndMovement
+  - Global.CustomMovement`1.enemy
+  - Global.CustomMovement`1.GetProperties
+  - Global.CustomMovement`1.IsActive
+  - Global.CustomMovement`1.properties
+  - Global.CustomMovement`1.Reset
+  - Global.CustomMovement`1.SetEnemy(IntEnemy)
+  - Global.CustomMovement`1.SetProperties(`0)
+  - Global.CustomMovement`1.StartMovement
+  - Global.CustomMovement`1.t
+  - Global.CustomMovement`1.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  langs:
+  - csharp
+  - vb
+  name: CustomMovement<T>
+  nameWithType: CustomMovement<T>
+  fullName: CustomMovement<T>
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CustomMovement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 154
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public abstract class CustomMovement<T>
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class CustomMovement(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Global.ChargeMovement
+  - Global.DipMovement
+  - Global.SwoopMovement
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  nameWithType.vb: CustomMovement(Of T)
+  fullName.vb: CustomMovement(Of T)
+  name.vb: CustomMovement(Of T)
+- uid: Global.CustomMovement`1.IsActive
+  commentId: P:Global.CustomMovement`1.IsActive
+  id: IsActive
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: CustomMovement<T>.IsActive
+  fullName: CustomMovement<T>.IsActive
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsActive
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 156
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsActive As Boolean
+  overload: Global.CustomMovement`1.IsActive*
+  nameWithType.vb: CustomMovement(Of T).IsActive
+  fullName.vb: CustomMovement(Of T).IsActive
+- uid: Global.CustomMovement`1.t
+  commentId: P:Global.CustomMovement`1.t
+  id: t
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: t
+  nameWithType: CustomMovement<T>.t
+  fullName: CustomMovement<T>.t
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: t
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 157
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float t { get; protected set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property t As Single
+  overload: Global.CustomMovement`1.t*
+  nameWithType.vb: CustomMovement(Of T).t
+  fullName.vb: CustomMovement(Of T).t
+- uid: Global.CustomMovement`1.enemy
+  commentId: F:Global.CustomMovement`1.enemy
+  id: enemy
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: enemy
+  nameWithType: CustomMovement<T>.enemy
+  fullName: CustomMovement<T>.enemy
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: enemy
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 158
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected IntEnemy enemy
+    return:
+      type: Global.IntEnemy
+    content.vb: Protected enemy As IntEnemy
+  nameWithType.vb: CustomMovement(Of T).enemy
+  fullName.vb: CustomMovement(Of T).enemy
+- uid: Global.CustomMovement`1.properties
+  commentId: F:Global.CustomMovement`1.properties
+  id: properties
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: properties
+  nameWithType: CustomMovement<T>.properties
+  fullName: CustomMovement<T>.properties
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: properties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 159
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected T properties
+    return:
+      type: '{T}'
+    content.vb: Protected properties As T
+  nameWithType.vb: CustomMovement(Of T).properties
+  fullName.vb: CustomMovement(Of T).properties
+- uid: Global.CustomMovement`1.SetEnemy(IntEnemy)
+  commentId: M:Global.CustomMovement`1.SetEnemy(IntEnemy)
+  id: SetEnemy(IntEnemy)
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: SetEnemy(IntEnemy)
+  nameWithType: CustomMovement<T>.SetEnemy(IntEnemy)
+  fullName: CustomMovement<T>.SetEnemy(IntEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetEnemy
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 161
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void SetEnemy(IntEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.IntEnemy
+    content.vb: Public Overridable Sub SetEnemy(enemy As IntEnemy)
+  overload: Global.CustomMovement`1.SetEnemy*
+  nameWithType.vb: CustomMovement(Of T).SetEnemy(IntEnemy)
+  fullName.vb: CustomMovement(Of T).SetEnemy(IntEnemy)
+- uid: Global.CustomMovement`1.SetProperties(`0)
+  commentId: M:Global.CustomMovement`1.SetProperties(`0)
+  id: SetProperties(`0)
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: SetProperties(T)
+  nameWithType: CustomMovement<T>.SetProperties(T)
+  fullName: CustomMovement<T>.SetProperties(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 166
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void SetProperties(T properties)
+    parameters:
+    - id: properties
+      type: '{T}'
+    content.vb: Public Overridable Sub SetProperties(properties As T)
+  overload: Global.CustomMovement`1.SetProperties*
+  nameWithType.vb: CustomMovement(Of T).SetProperties(T)
+  fullName.vb: CustomMovement(Of T).SetProperties(T)
+- uid: Global.CustomMovement`1.GetProperties
+  commentId: M:Global.CustomMovement`1.GetProperties
+  id: GetProperties
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: GetProperties()
+  nameWithType: CustomMovement<T>.GetProperties()
+  fullName: CustomMovement<T>.GetProperties()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 171
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual T GetProperties()
+    return:
+      type: '{T}'
+    content.vb: Public Overridable Function GetProperties() As T
+  overload: Global.CustomMovement`1.GetProperties*
+  nameWithType.vb: CustomMovement(Of T).GetProperties()
+  fullName.vb: CustomMovement(Of T).GetProperties()
+- uid: Global.CustomMovement`1.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  commentId: M:Global.CustomMovement`1.UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  id: UpdateMovement(System.Single,IntObject.Action,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateMovement(float, Action, SolidAction, SolidAction, ActorAction, TriggerAction)
+  nameWithType: CustomMovement<T>.UpdateMovement(float, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  fullName: CustomMovement<T>.UpdateMovement(float, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateMovement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 176
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void UpdateMovement(float deltaTime, IntObject.Action OnMovementEnd, IntObject.SolidAction OnCollideX, IntObject.SolidAction OnCollideY, IntObject.ActorAction OnOverlapActor, IntObject.TriggerAction OnOverlapTrigger)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    - id: OnMovementEnd
+      type: Global.IntObject.Action
+    - id: OnCollideX
+      type: Global.IntObject.SolidAction
+    - id: OnCollideY
+      type: Global.IntObject.SolidAction
+    - id: OnOverlapActor
+      type: Global.IntObject.ActorAction
+    - id: OnOverlapTrigger
+      type: Global.IntObject.TriggerAction
+    content.vb: Public Overridable Sub UpdateMovement(deltaTime As Single, OnMovementEnd As IntObject.Action, OnCollideX As IntObject.SolidAction, OnCollideY As IntObject.SolidAction, OnOverlapActor As IntObject.ActorAction, OnOverlapTrigger As IntObject.TriggerAction)
+  overload: Global.CustomMovement`1.UpdateMovement*
+  nameWithType.vb: CustomMovement(Of T).UpdateMovement(Single, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  fullName.vb: CustomMovement(Of T).UpdateMovement(Single, IntObject.Action, IntObject.SolidAction, IntObject.SolidAction, IntObject.ActorAction, IntObject.TriggerAction)
+  name.vb: UpdateMovement(Single, Action, SolidAction, SolidAction, ActorAction, TriggerAction)
+- uid: Global.CustomMovement`1.StartMovement
+  commentId: M:Global.CustomMovement`1.StartMovement
+  id: StartMovement
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: StartMovement()
+  nameWithType: CustomMovement<T>.StartMovement()
+  fullName: CustomMovement<T>.StartMovement()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StartMovement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 184
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected virtual void StartMovement()
+    content.vb: Protected Overridable Sub StartMovement()
+  overload: Global.CustomMovement`1.StartMovement*
+  nameWithType.vb: CustomMovement(Of T).StartMovement()
+  fullName.vb: CustomMovement(Of T).StartMovement()
+- uid: Global.CustomMovement`1.EndMovement
+  commentId: M:Global.CustomMovement`1.EndMovement
+  id: EndMovement
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: EndMovement()
+  nameWithType: CustomMovement<T>.EndMovement()
+  fullName: CustomMovement<T>.EndMovement()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EndMovement
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 192
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected virtual void EndMovement()
+    content.vb: Protected Overridable Sub EndMovement()
+  overload: Global.CustomMovement`1.EndMovement*
+  nameWithType.vb: CustomMovement(Of T).EndMovement()
+  fullName.vb: CustomMovement(Of T).EndMovement()
+- uid: Global.CustomMovement`1.Reset
+  commentId: M:Global.CustomMovement`1.Reset
+  id: Reset
+  parent: Global.CustomMovement`1
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: CustomMovement<T>.Reset()
+  fullName: CustomMovement<T>.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Reset
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/EnemyMovementController.cs
+    startLine: 200
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: Global.CustomMovement`1.Reset*
+  nameWithType.vb: CustomMovement(Of T).Reset()
+  fullName.vb: CustomMovement(Of T).Reset()
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.CustomMovement`1.IsActive*
+  commentId: Overload:Global.CustomMovement`1.IsActive
+  name: IsActive
+  nameWithType: CustomMovement<T>.IsActive
+  fullName: CustomMovement<T>.IsActive
+  nameWithType.vb: CustomMovement(Of T).IsActive
+  fullName.vb: CustomMovement(Of T).IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.CustomMovement`1.t*
+  commentId: Overload:Global.CustomMovement`1.t
+  name: t
+  nameWithType: CustomMovement<T>.t
+  fullName: CustomMovement<T>.t
+  nameWithType.vb: CustomMovement(Of T).t
+  fullName.vb: CustomMovement(Of T).t
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.IntEnemy
+  commentId: T:Global.IntEnemy
+  name: IntEnemy
+  nameWithType: IntEnemy
+  fullName: IntEnemy
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Global.CustomMovement`1.SetEnemy*
+  commentId: Overload:Global.CustomMovement`1.SetEnemy
+  name: SetEnemy
+  nameWithType: CustomMovement<T>.SetEnemy
+  fullName: CustomMovement<T>.SetEnemy
+  nameWithType.vb: CustomMovement(Of T).SetEnemy
+  fullName.vb: CustomMovement(Of T).SetEnemy
+- uid: Global.CustomMovement`1.SetProperties*
+  commentId: Overload:Global.CustomMovement`1.SetProperties
+  name: SetProperties
+  nameWithType: CustomMovement<T>.SetProperties
+  fullName: CustomMovement<T>.SetProperties
+  nameWithType.vb: CustomMovement(Of T).SetProperties
+  fullName.vb: CustomMovement(Of T).SetProperties
+- uid: Global.CustomMovement`1.GetProperties*
+  commentId: Overload:Global.CustomMovement`1.GetProperties
+  name: GetProperties
+  nameWithType: CustomMovement<T>.GetProperties
+  fullName: CustomMovement<T>.GetProperties
+  nameWithType.vb: CustomMovement(Of T).GetProperties
+  fullName.vb: CustomMovement(Of T).GetProperties
+- uid: Global.CustomMovement`1.UpdateMovement*
+  commentId: Overload:Global.CustomMovement`1.UpdateMovement
+  name: UpdateMovement
+  nameWithType: CustomMovement<T>.UpdateMovement
+  fullName: CustomMovement<T>.UpdateMovement
+  nameWithType.vb: CustomMovement(Of T).UpdateMovement
+  fullName.vb: CustomMovement(Of T).UpdateMovement
+- uid: Global.IntObject.Action
+  commentId: T:Global.IntObject.Action
+  name: IntObject.Action
+  nameWithType: IntObject.Action
+  fullName: IntObject.Action
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+- uid: Global.IntObject.SolidAction
+  commentId: T:Global.IntObject.SolidAction
+  name: IntObject.SolidAction
+  nameWithType: IntObject.SolidAction
+  fullName: IntObject.SolidAction
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.SolidAction
+    name: SolidAction
+- uid: Global.IntObject.ActorAction
+  commentId: T:Global.IntObject.ActorAction
+  name: IntObject.ActorAction
+  nameWithType: IntObject.ActorAction
+  fullName: IntObject.ActorAction
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.ActorAction
+    name: ActorAction
+- uid: Global.IntObject.TriggerAction
+  commentId: T:Global.IntObject.TriggerAction
+  name: IntObject.TriggerAction
+  nameWithType: IntObject.TriggerAction
+  fullName: IntObject.TriggerAction
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.TriggerAction
+    name: TriggerAction
+- uid: Global.CustomMovement`1.StartMovement*
+  commentId: Overload:Global.CustomMovement`1.StartMovement
+  name: StartMovement
+  nameWithType: CustomMovement<T>.StartMovement
+  fullName: CustomMovement<T>.StartMovement
+  nameWithType.vb: CustomMovement(Of T).StartMovement
+  fullName.vb: CustomMovement(Of T).StartMovement
+- uid: Global.CustomMovement`1.EndMovement*
+  commentId: Overload:Global.CustomMovement`1.EndMovement
+  name: EndMovement
+  nameWithType: CustomMovement<T>.EndMovement
+  fullName: CustomMovement<T>.EndMovement
+  nameWithType.vb: CustomMovement(Of T).EndMovement
+  fullName.vb: CustomMovement(Of T).EndMovement
+- uid: Global.CustomMovement`1.Reset*
+  commentId: Overload:Global.CustomMovement`1.Reset
+  name: Reset
+  nameWithType: CustomMovement<T>.Reset
+  fullName: CustomMovement<T>.Reset
+  nameWithType.vb: CustomMovement(Of T).Reset
+  fullName.vb: CustomMovement(Of T).Reset

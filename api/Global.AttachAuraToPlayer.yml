@@ -1,0 +1,425 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AttachAuraToPlayer
+  commentId: T:Global.AttachAuraToPlayer
+  id: AttachAuraToPlayer
+  parent: Global
+  children:
+  - Global.AttachAuraToPlayer.AddToAuraObject(UnityEngine.GameObject,AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  - Global.AttachAuraToPlayer.SetPlayer(Player)
+  langs:
+  - csharp
+  - vb
+  name: AttachAuraToPlayer
+  nameWithType: AttachAuraToPlayer
+  fullName: AttachAuraToPlayer
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AttachAuraToPlayer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AttachAuraToPlayer
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AttachAuraToPlayer.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class AttachAuraToPlayer : AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>'
+    content.vb: Public Class AttachAuraToPlayer Inherits AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}
+  inheritedMembers:
+  - Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.Properties
+  - Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.auraCreator
+  - Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.auraComponent
+  - Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.Start
+  - Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.ResetObject
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AttachAuraToPlayer.SetPlayer(Player)
+  commentId: M:Global.AttachAuraToPlayer.SetPlayer(Player)
+  id: SetPlayer(Player)
+  parent: Global.AttachAuraToPlayer
+  langs:
+  - csharp
+  - vb
+  name: SetPlayer(Player)
+  nameWithType: AttachAuraToPlayer.SetPlayer(Player)
+  fullName: AttachAuraToPlayer.SetPlayer(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AttachAuraToPlayer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetPlayer
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AttachAuraToPlayer.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetPlayer(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Sub SetPlayer(player As Player)
+  overload: Global.AttachAuraToPlayer.SetPlayer*
+- uid: Global.AttachAuraToPlayer.AddToAuraObject(UnityEngine.GameObject,AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  commentId: M:Global.AttachAuraToPlayer.AddToAuraObject(UnityEngine.GameObject,AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  id: AddToAuraObject(UnityEngine.GameObject,AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  parent: Global.AttachAuraToPlayer
+  langs:
+  - csharp
+  - vb
+  name: AddToAuraObject(GameObject, AttachAuraToPlayerProperties)
+  nameWithType: AttachAuraToPlayer.AddToAuraObject(GameObject, AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  fullName: AttachAuraToPlayer.AddToAuraObject(UnityEngine.GameObject, AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AttachAuraToPlayer.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddToAuraObject
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraMovement/AttachAuraToPlayer.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void AddToAuraObject(GameObject aura, AttachAuraToPlayer.AttachAuraToPlayerProperties props)
+    parameters:
+    - id: aura
+      type: UnityEngine.GameObject
+    - id: props
+      type: Global.AttachAuraToPlayer.AttachAuraToPlayerProperties
+    content.vb: Public Shared Sub AddToAuraObject(aura As GameObject, props As AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  overload: Global.AttachAuraToPlayer.AddToAuraObject*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}
+  commentId: T:Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}
+  definition: Global.AuraMovementController`1
+  name: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>
+  nameWithType: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>
+  fullName: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>
+  nameWithType.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  fullName.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  name.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties)
+  spec.csharp:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: <
+  - uid: Global.AttachAuraToPlayer
+    name: AttachAuraToPlayer
+  - name: .
+  - uid: Global.AttachAuraToPlayer.AttachAuraToPlayerProperties
+    name: AttachAuraToPlayerProperties
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.AttachAuraToPlayer
+    name: AttachAuraToPlayer
+  - name: .
+  - uid: Global.AttachAuraToPlayer.AttachAuraToPlayerProperties
+    name: AttachAuraToPlayerProperties
+  - name: )
+- uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.Properties
+  commentId: F:Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.Properties
+  parent: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}
+  definition: Global.AuraMovementController`1.Properties
+  name: Properties
+  nameWithType: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.Properties
+  fullName: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.Properties
+  nameWithType.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).Properties
+  fullName.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).Properties
+- uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.auraCreator
+  commentId: F:Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.auraCreator
+  parent: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}
+  definition: Global.AuraMovementController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.auraCreator
+  fullName: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.auraCreator
+  nameWithType.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).auraCreator
+  fullName.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).auraCreator
+- uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.auraComponent
+  commentId: F:Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.auraComponent
+  parent: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}
+  definition: Global.AuraMovementController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.auraComponent
+  fullName: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.auraComponent
+  nameWithType.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).auraComponent
+  fullName.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).auraComponent
+- uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.Start
+  commentId: M:Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.Start
+  parent: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}
+  definition: Global.AuraMovementController`1.Start
+  name: Start()
+  nameWithType: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.Start()
+  fullName: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.Start()
+  nameWithType.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).Start()
+  fullName.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).Start()
+  spec.csharp:
+  - uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.Start
+    name: Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.Start
+    name: Start
+  - name: (
+  - name: )
+- uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.ResetObject
+  commentId: M:Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.ResetObject
+  parent: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}
+  definition: Global.AuraMovementController`1.ResetObject
+  name: ResetObject()
+  nameWithType: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.ResetObject()
+  fullName: AuraMovementController<AttachAuraToPlayer.AttachAuraToPlayerProperties>.ResetObject()
+  nameWithType.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).ResetObject()
+  fullName.vb: AuraMovementController(Of AttachAuraToPlayer.AttachAuraToPlayerProperties).ResetObject()
+  spec.csharp:
+  - uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController{AttachAuraToPlayer.AttachAuraToPlayerProperties}.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraMovementController`1
+  commentId: T:Global.AuraMovementController`1
+  name: AuraMovementController<T>
+  nameWithType: AuraMovementController<T>
+  fullName: AuraMovementController<T>
+  nameWithType.vb: AuraMovementController(Of T)
+  fullName.vb: AuraMovementController(Of T)
+  name.vb: AuraMovementController(Of T)
+  spec.csharp:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraMovementController`1.Properties
+  commentId: F:Global.AuraMovementController`1.Properties
+  name: Properties
+  nameWithType: AuraMovementController<T>.Properties
+  fullName: AuraMovementController<T>.Properties
+  nameWithType.vb: AuraMovementController(Of T).Properties
+  fullName.vb: AuraMovementController(Of T).Properties
+- uid: Global.AuraMovementController`1.auraCreator
+  commentId: F:Global.AuraMovementController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraMovementController<T>.auraCreator
+  fullName: AuraMovementController<T>.auraCreator
+  nameWithType.vb: AuraMovementController(Of T).auraCreator
+  fullName.vb: AuraMovementController(Of T).auraCreator
+- uid: Global.AuraMovementController`1.auraComponent
+  commentId: F:Global.AuraMovementController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraMovementController<T>.auraComponent
+  fullName: AuraMovementController<T>.auraComponent
+  nameWithType.vb: AuraMovementController(Of T).auraComponent
+  fullName.vb: AuraMovementController(Of T).auraComponent
+- uid: Global.AuraMovementController`1.Start
+  commentId: M:Global.AuraMovementController`1.Start
+  name: Start()
+  nameWithType: AuraMovementController<T>.Start()
+  fullName: AuraMovementController<T>.Start()
+  nameWithType.vb: AuraMovementController(Of T).Start()
+  fullName.vb: AuraMovementController(Of T).Start()
+  spec.csharp:
+  - uid: Global.AuraMovementController`1.Start
+    name: Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController`1.Start
+    name: Start
+  - name: (
+  - name: )
+- uid: Global.AuraMovementController`1.ResetObject
+  commentId: M:Global.AuraMovementController`1.ResetObject
+  name: ResetObject()
+  nameWithType: AuraMovementController<T>.ResetObject()
+  fullName: AuraMovementController<T>.ResetObject()
+  nameWithType.vb: AuraMovementController(Of T).ResetObject()
+  fullName.vb: AuraMovementController(Of T).ResetObject()
+  spec.csharp:
+  - uid: Global.AuraMovementController`1.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController`1.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AttachAuraToPlayer.SetPlayer*
+  commentId: Overload:Global.AttachAuraToPlayer.SetPlayer
+  name: SetPlayer
+  nameWithType: AttachAuraToPlayer.SetPlayer
+  fullName: AttachAuraToPlayer.SetPlayer
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.AttachAuraToPlayer.AddToAuraObject*
+  commentId: Overload:Global.AttachAuraToPlayer.AddToAuraObject
+  name: AddToAuraObject
+  nameWithType: AttachAuraToPlayer.AddToAuraObject
+  fullName: AttachAuraToPlayer.AddToAuraObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.AttachAuraToPlayer.AttachAuraToPlayerProperties
+  commentId: T:Global.AttachAuraToPlayer.AttachAuraToPlayerProperties
+  name: AttachAuraToPlayer.AttachAuraToPlayerProperties
+  nameWithType: AttachAuraToPlayer.AttachAuraToPlayerProperties
+  fullName: AttachAuraToPlayer.AttachAuraToPlayerProperties
+  spec.csharp:
+  - uid: Global.AttachAuraToPlayer
+    name: AttachAuraToPlayer
+  - name: .
+  - uid: Global.AttachAuraToPlayer.AttachAuraToPlayerProperties
+    name: AttachAuraToPlayerProperties
+  spec.vb:
+  - uid: Global.AttachAuraToPlayer
+    name: AttachAuraToPlayer
+  - name: .
+  - uid: Global.AttachAuraToPlayer.AttachAuraToPlayerProperties
+    name: AttachAuraToPlayerProperties

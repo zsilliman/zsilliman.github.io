@@ -1,0 +1,819 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BendEffect
+  commentId: T:Global.BendEffect
+  id: BendEffect
+  parent: Global
+  children:
+  - Global.BendEffect.actor
+  - Global.BendEffect.DragScale
+  - Global.BendEffect.EaseFunction
+  - Global.BendEffect.filter
+  - Global.BendEffect.initialMeshBounds
+  - Global.BendEffect.initialVertices
+  - Global.BendEffect.LeftIndices
+  - Global.BendEffect.MaxPlayerSpeed
+  - Global.BendEffect.mesh
+  - Global.BendEffect.MinSpeed
+  - Global.BendEffect.MinWidth
+  - Global.BendEffect.RightIndices
+  - Global.BendEffect.RootHeight
+  - Global.BendEffect.StaticApproachRatio
+  - Global.BendEffect.UprightApproachRatio
+  - Global.BendEffect.vertices
+  - Global.BendEffect.vertObjects
+  langs:
+  - csharp
+  - vb
+  name: BendEffect
+  nameWithType: BendEffect
+  fullName: BendEffect
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BendEffect
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(MeshFilter))]
+
+      public class BendEffect : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(MeshFilter))>
+
+      Public Class BendEffect Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.BendEffect.actor
+  commentId: F:Global.BendEffect.actor
+  id: actor
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: actor
+  nameWithType: BendEffect.actor
+  fullName: BendEffect.actor
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: actor
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IntActor actor
+    return:
+      type: Global.IntActor
+    content.vb: Public actor As IntActor
+- uid: Global.BendEffect.StaticApproachRatio
+  commentId: F:Global.BendEffect.StaticApproachRatio
+  id: StaticApproachRatio
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: StaticApproachRatio
+  nameWithType: BendEffect.StaticApproachRatio
+  fullName: BendEffect.StaticApproachRatio
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StaticApproachRatio
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float StaticApproachRatio
+    return:
+      type: System.Single
+    content.vb: Public StaticApproachRatio As Single
+- uid: Global.BendEffect.UprightApproachRatio
+  commentId: F:Global.BendEffect.UprightApproachRatio
+  id: UprightApproachRatio
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: UprightApproachRatio
+  nameWithType: BendEffect.UprightApproachRatio
+  fullName: BendEffect.UprightApproachRatio
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UprightApproachRatio
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float UprightApproachRatio
+    return:
+      type: System.Single
+    content.vb: Public UprightApproachRatio As Single
+- uid: Global.BendEffect.MinSpeed
+  commentId: F:Global.BendEffect.MinSpeed
+  id: MinSpeed
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: MinSpeed
+  nameWithType: BendEffect.MinSpeed
+  fullName: BendEffect.MinSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MinSpeed
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float MinSpeed
+    return:
+      type: System.Single
+    content.vb: Public MinSpeed As Single
+- uid: Global.BendEffect.MaxPlayerSpeed
+  commentId: F:Global.BendEffect.MaxPlayerSpeed
+  id: MaxPlayerSpeed
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: MaxPlayerSpeed
+  nameWithType: BendEffect.MaxPlayerSpeed
+  fullName: BendEffect.MaxPlayerSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxPlayerSpeed
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float MaxPlayerSpeed
+    return:
+      type: System.Single
+    content.vb: Public MaxPlayerSpeed As Single
+- uid: Global.BendEffect.DragScale
+  commentId: F:Global.BendEffect.DragScale
+  id: DragScale
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: DragScale
+  nameWithType: BendEffect.DragScale
+  fullName: BendEffect.DragScale
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DragScale
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 DragScale
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public DragScale As Vector2
+- uid: Global.BendEffect.MinWidth
+  commentId: F:Global.BendEffect.MinWidth
+  id: MinWidth
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: MinWidth
+  nameWithType: BendEffect.MinWidth
+  fullName: BendEffect.MinWidth
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MinWidth
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float MinWidth
+    return:
+      type: System.Single
+    content.vb: Public MinWidth As Single
+- uid: Global.BendEffect.RootHeight
+  commentId: F:Global.BendEffect.RootHeight
+  id: RootHeight
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: RootHeight
+  nameWithType: BendEffect.RootHeight
+  fullName: BendEffect.RootHeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RootHeight
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float RootHeight
+    return:
+      type: System.Single
+    content.vb: Public RootHeight As Single
+- uid: Global.BendEffect.EaseFunction
+  commentId: F:Global.BendEffect.EaseFunction
+  id: EaseFunction
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: EaseFunction
+  nameWithType: BendEffect.EaseFunction
+  fullName: BendEffect.EaseFunction
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseFunction
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public EasingFunction.Ease EaseFunction
+    return:
+      type: Global.EasingFunction.Ease
+    content.vb: Public EaseFunction As EasingFunction.Ease
+- uid: Global.BendEffect.filter
+  commentId: F:Global.BendEffect.filter
+  id: filter
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: filter
+  nameWithType: BendEffect.filter
+  fullName: BendEffect.filter
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: filter
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected MeshFilter filter
+    return:
+      type: UnityEngine.MeshFilter
+    content.vb: Protected filter As MeshFilter
+- uid: Global.BendEffect.mesh
+  commentId: F:Global.BendEffect.mesh
+  id: mesh
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: mesh
+  nameWithType: BendEffect.mesh
+  fullName: BendEffect.mesh
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: mesh
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Mesh mesh
+    return:
+      type: UnityEngine.Mesh
+    content.vb: Protected mesh As Mesh
+- uid: Global.BendEffect.vertObjects
+  commentId: F:Global.BendEffect.vertObjects
+  id: vertObjects
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: vertObjects
+  nameWithType: BendEffect.vertObjects
+  fullName: BendEffect.vertObjects
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: vertObjects
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<BentVertex> vertObjects
+    return:
+      type: System.Collections.Generic.List{BentVertex}
+    content.vb: Protected vertObjects As List(Of BentVertex)
+- uid: Global.BendEffect.initialVertices
+  commentId: F:Global.BendEffect.initialVertices
+  id: initialVertices
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: initialVertices
+  nameWithType: BendEffect.initialVertices
+  fullName: BendEffect.initialVertices
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: initialVertices
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<Vector3> initialVertices
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Protected initialVertices As List(Of Vector3)
+- uid: Global.BendEffect.vertices
+  commentId: F:Global.BendEffect.vertices
+  id: vertices
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: vertices
+  nameWithType: BendEffect.vertices
+  fullName: BendEffect.vertices
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: vertices
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<Vector3> vertices
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Protected vertices As List(Of Vector3)
+- uid: Global.BendEffect.initialMeshBounds
+  commentId: F:Global.BendEffect.initialMeshBounds
+  id: initialMeshBounds
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: initialMeshBounds
+  nameWithType: BendEffect.initialMeshBounds
+  fullName: BendEffect.initialMeshBounds
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: initialMeshBounds
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Bounds initialMeshBounds
+    return:
+      type: UnityEngine.Bounds
+    content.vb: Protected initialMeshBounds As Bounds
+- uid: Global.BendEffect.LeftIndices
+  commentId: F:Global.BendEffect.LeftIndices
+  id: LeftIndices
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: LeftIndices
+  nameWithType: BendEffect.LeftIndices
+  fullName: BendEffect.LeftIndices
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LeftIndices
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected int[] LeftIndices
+    return:
+      type: System.Int32[]
+    content.vb: Protected LeftIndices As Integer()
+- uid: Global.BendEffect.RightIndices
+  commentId: F:Global.BendEffect.RightIndices
+  id: RightIndices
+  parent: Global.BendEffect
+  langs:
+  - csharp
+  - vb
+  name: RightIndices
+  nameWithType: BendEffect.RightIndices
+  fullName: BendEffect.RightIndices
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Effects/Bending/BendEffect.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RightIndices
+    path: ../Assets/Framework/Effects/Bending/BendEffect.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected int[] RightIndices
+    return:
+      type: System.Int32[]
+    content.vb: Protected RightIndices As Integer()
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.IntActor
+  commentId: T:Global.IntActor
+  name: IntActor
+  nameWithType: IntActor
+  fullName: IntActor
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.EasingFunction.Ease
+  commentId: T:Global.EasingFunction.Ease
+  name: EasingFunction.Ease
+  nameWithType: EasingFunction.Ease
+  fullName: EasingFunction.Ease
+  spec.csharp:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+  spec.vb:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+- uid: UnityEngine.MeshFilter
+  commentId: T:UnityEngine.MeshFilter
+  parent: UnityEngine
+  isExternal: true
+  name: MeshFilter
+  nameWithType: MeshFilter
+  fullName: UnityEngine.MeshFilter
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh
+- uid: System.Collections.Generic.List{BentVertex}
+  commentId: T:System.Collections.Generic.List{BentVertex}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<BentVertex>
+  nameWithType: List<BentVertex>
+  fullName: System.Collections.Generic.List<BentVertex>
+  nameWithType.vb: List(Of BentVertex)
+  fullName.vb: System.Collections.Generic.List(Of BentVertex)
+  name.vb: List(Of BentVertex)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.BentVertex
+    name: BentVertex
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.BentVertex
+    name: BentVertex
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Bounds
+  commentId: T:UnityEngine.Bounds
+  parent: UnityEngine
+  isExternal: true
+  name: Bounds
+  nameWithType: Bounds
+  fullName: UnityEngine.Bounds
+- uid: System.Int32[]
+  isExternal: true
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: (
+  - name: )

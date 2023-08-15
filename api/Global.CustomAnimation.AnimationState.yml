@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomAnimation.AnimationState
+  commentId: T:Global.CustomAnimation.AnimationState
+  id: CustomAnimation.AnimationState
+  parent: Global
+  children:
+  - Global.CustomAnimation.AnimationState.Ended
+  - Global.CustomAnimation.AnimationState.NotStarted
+  - Global.CustomAnimation.AnimationState.Paused
+  - Global.CustomAnimation.AnimationState.Playing
+  langs:
+  - csharp
+  - vb
+  name: CustomAnimation.AnimationState
+  nameWithType: CustomAnimation.AnimationState
+  fullName: CustomAnimation.AnimationState
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AnimationState
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum CustomAnimation.AnimationState
+    content.vb: Public Enum CustomAnimation.AnimationState
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.CustomAnimation.AnimationState.NotStarted
+  commentId: F:Global.CustomAnimation.AnimationState.NotStarted
+  id: NotStarted
+  parent: Global.CustomAnimation.AnimationState
+  langs:
+  - csharp
+  - vb
+  name: NotStarted
+  nameWithType: CustomAnimation.AnimationState.NotStarted
+  fullName: CustomAnimation.AnimationState.NotStarted
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NotStarted
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: NotStarted = 0
+    return:
+      type: Global.CustomAnimation.AnimationState
+- uid: Global.CustomAnimation.AnimationState.Playing
+  commentId: F:Global.CustomAnimation.AnimationState.Playing
+  id: Playing
+  parent: Global.CustomAnimation.AnimationState
+  langs:
+  - csharp
+  - vb
+  name: Playing
+  nameWithType: CustomAnimation.AnimationState.Playing
+  fullName: CustomAnimation.AnimationState.Playing
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Playing
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Playing = 1
+    return:
+      type: Global.CustomAnimation.AnimationState
+- uid: Global.CustomAnimation.AnimationState.Paused
+  commentId: F:Global.CustomAnimation.AnimationState.Paused
+  id: Paused
+  parent: Global.CustomAnimation.AnimationState
+  langs:
+  - csharp
+  - vb
+  name: Paused
+  nameWithType: CustomAnimation.AnimationState.Paused
+  fullName: CustomAnimation.AnimationState.Paused
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Paused
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Paused = 2
+    return:
+      type: Global.CustomAnimation.AnimationState
+- uid: Global.CustomAnimation.AnimationState.Ended
+  commentId: F:Global.CustomAnimation.AnimationState.Ended
+  id: Ended
+  parent: Global.CustomAnimation.AnimationState
+  langs:
+  - csharp
+  - vb
+  name: Ended
+  nameWithType: CustomAnimation.AnimationState.Ended
+  fullName: CustomAnimation.AnimationState.Ended
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Animations/CustomAnimation.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Ended
+    path: ../Assets/Framework/Animations/CustomAnimation.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Ended = 3
+    return:
+      type: Global.CustomAnimation.AnimationState
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.CustomAnimation.AnimationState
+  commentId: T:Global.CustomAnimation.AnimationState
+  name: CustomAnimation.AnimationState
+  nameWithType: CustomAnimation.AnimationState
+  fullName: CustomAnimation.AnimationState
+  spec.csharp:
+  - uid: Global.CustomAnimation
+    name: CustomAnimation
+  - name: .
+  - uid: Global.CustomAnimation.AnimationState
+    name: AnimationState
+  spec.vb:
+  - uid: Global.CustomAnimation
+    name: CustomAnimation
+  - name: .
+  - uid: Global.CustomAnimation.AnimationState
+    name: AnimationState

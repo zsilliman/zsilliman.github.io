@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProceduralSectionGenerator.SectionTerrainType
+  commentId: T:Global.ProceduralSectionGenerator.SectionTerrainType
+  id: ProceduralSectionGenerator.SectionTerrainType
+  parent: Global
+  children:
+  - Global.ProceduralSectionGenerator.SectionTerrainType.Islands
+  - Global.ProceduralSectionGenerator.SectionTerrainType.Plains
+  - Global.ProceduralSectionGenerator.SectionTerrainType.Village
+  langs:
+  - csharp
+  - vb
+  name: ProceduralSectionGenerator.SectionTerrainType
+  nameWithType: ProceduralSectionGenerator.SectionTerrainType
+  fullName: ProceduralSectionGenerator.SectionTerrainType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionTerrainType
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum ProceduralSectionGenerator.SectionTerrainType
+    content.vb: Public Enum ProceduralSectionGenerator.SectionTerrainType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.ProceduralSectionGenerator.SectionTerrainType.Plains
+  commentId: F:Global.ProceduralSectionGenerator.SectionTerrainType.Plains
+  id: Plains
+  parent: Global.ProceduralSectionGenerator.SectionTerrainType
+  langs:
+  - csharp
+  - vb
+  name: Plains
+  nameWithType: ProceduralSectionGenerator.SectionTerrainType.Plains
+  fullName: ProceduralSectionGenerator.SectionTerrainType.Plains
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Plains
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Plains = 0
+    return:
+      type: Global.ProceduralSectionGenerator.SectionTerrainType
+- uid: Global.ProceduralSectionGenerator.SectionTerrainType.Islands
+  commentId: F:Global.ProceduralSectionGenerator.SectionTerrainType.Islands
+  id: Islands
+  parent: Global.ProceduralSectionGenerator.SectionTerrainType
+  langs:
+  - csharp
+  - vb
+  name: Islands
+  nameWithType: ProceduralSectionGenerator.SectionTerrainType.Islands
+  fullName: ProceduralSectionGenerator.SectionTerrainType.Islands
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Islands
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Islands = 1
+    return:
+      type: Global.ProceduralSectionGenerator.SectionTerrainType
+- uid: Global.ProceduralSectionGenerator.SectionTerrainType.Village
+  commentId: F:Global.ProceduralSectionGenerator.SectionTerrainType.Village
+  id: Village
+  parent: Global.ProceduralSectionGenerator.SectionTerrainType
+  langs:
+  - csharp
+  - vb
+  name: Village
+  nameWithType: ProceduralSectionGenerator.SectionTerrainType.Village
+  fullName: ProceduralSectionGenerator.SectionTerrainType.Village
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Village
+    path: ../Assets/Framework/Procedural Generation/ProceduralSectionGenerator.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Village = 2
+    return:
+      type: Global.ProceduralSectionGenerator.SectionTerrainType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.ProceduralSectionGenerator.SectionTerrainType
+  commentId: T:Global.ProceduralSectionGenerator.SectionTerrainType
+  name: ProceduralSectionGenerator.SectionTerrainType
+  nameWithType: ProceduralSectionGenerator.SectionTerrainType
+  fullName: ProceduralSectionGenerator.SectionTerrainType
+  spec.csharp:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.SectionTerrainType
+    name: SectionTerrainType
+  spec.vb:
+  - uid: Global.ProceduralSectionGenerator
+    name: ProceduralSectionGenerator
+  - name: .
+  - uid: Global.ProceduralSectionGenerator.SectionTerrainType
+    name: SectionTerrainType

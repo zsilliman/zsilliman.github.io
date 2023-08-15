@@ -1,0 +1,551 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DipBehavior
+  commentId: T:Global.DipBehavior
+  id: DipBehavior
+  parent: Global
+  children:
+  - Global.DipBehavior.DipDuration
+  - Global.DipBehavior.DipTargetOffset
+  - Global.DipBehavior.DrawGizmos(ModularEnemy)
+  - Global.DipBehavior.Function
+  - Global.DipBehavior.OnRestart
+  - Global.DipBehavior.Start(ModularEnemy)
+  - Global.DipBehavior.Update
+  langs:
+  - csharp
+  - vb
+  name: DipBehavior
+  nameWithType: DipBehavior
+  fullName: DipBehavior
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DipBehavior
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class DipBehavior : ModularEnemy.EnemyBehaviorInterface
+    content.vb: >-
+      <Serializable>
+
+      Public Class DipBehavior Inherits ModularEnemy.EnemyBehaviorInterface
+  inheritance:
+  - System.Object
+  - Global.ModularEnemy.EnemyBehaviorInterface
+  inheritedMembers:
+  - Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  - Global.ModularEnemy.EnemyBehaviorInterface.self
+  - Global.ModularEnemy.EnemyBehaviorInterface.Started
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.DipBehavior.Function
+  commentId: F:Global.DipBehavior.Function
+  id: Function
+  parent: Global.DipBehavior
+  langs:
+  - csharp
+  - vb
+  name: Function
+  nameWithType: DipBehavior.Function
+  fullName: DipBehavior.Function
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Function
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public EasingFunction.Ease Function
+    return:
+      type: Global.EasingFunction.Ease
+    content.vb: Public [Function] As EasingFunction.Ease
+- uid: Global.DipBehavior.DipTargetOffset
+  commentId: F:Global.DipBehavior.DipTargetOffset
+  id: DipTargetOffset
+  parent: Global.DipBehavior
+  langs:
+  - csharp
+  - vb
+  name: DipTargetOffset
+  nameWithType: DipBehavior.DipTargetOffset
+  fullName: DipBehavior.DipTargetOffset
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DipTargetOffset
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 DipTargetOffset
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public DipTargetOffset As Vector2
+- uid: Global.DipBehavior.DipDuration
+  commentId: F:Global.DipBehavior.DipDuration
+  id: DipDuration
+  parent: Global.DipBehavior
+  langs:
+  - csharp
+  - vb
+  name: DipDuration
+  nameWithType: DipBehavior.DipDuration
+  fullName: DipBehavior.DipDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DipDuration
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float DipDuration
+    return:
+      type: System.Single
+    content.vb: Public DipDuration As Single
+- uid: Global.DipBehavior.DrawGizmos(ModularEnemy)
+  commentId: M:Global.DipBehavior.DrawGizmos(ModularEnemy)
+  id: DrawGizmos(ModularEnemy)
+  parent: Global.DipBehavior
+  langs:
+  - csharp
+  - vb
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: DipBehavior.DrawGizmos(ModularEnemy)
+  fullName: DipBehavior.DrawGizmos(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawGizmos
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void DrawGizmos(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub DrawGizmos(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  overload: Global.DipBehavior.DrawGizmos*
+- uid: Global.DipBehavior.Start(ModularEnemy)
+  commentId: M:Global.DipBehavior.Start(ModularEnemy)
+  id: Start(ModularEnemy)
+  parent: Global.DipBehavior
+  langs:
+  - csharp
+  - vb
+  name: Start(ModularEnemy)
+  nameWithType: DipBehavior.Start(ModularEnemy)
+  fullName: DipBehavior.Start(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Start(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub Start(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  overload: Global.DipBehavior.Start*
+- uid: Global.DipBehavior.OnRestart
+  commentId: M:Global.DipBehavior.OnRestart
+  id: OnRestart
+  parent: Global.DipBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnRestart()
+  nameWithType: DipBehavior.OnRestart()
+  fullName: DipBehavior.OnRestart()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnRestart
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnRestart()
+    content.vb: Public Overrides Sub OnRestart()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  overload: Global.DipBehavior.OnRestart*
+- uid: Global.DipBehavior.Update
+  commentId: M:Global.DipBehavior.Update
+  id: Update
+  parent: Global.DipBehavior
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: DipBehavior.Update()
+  fullName: DipBehavior.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DipBehavior.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  overload: Global.DipBehavior.Update*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ModularEnemy.EnemyBehaviorInterface
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterface
+  name: ModularEnemy.EnemyBehaviorInterface
+  nameWithType: ModularEnemy.EnemyBehaviorInterface
+  fullName: ModularEnemy.EnemyBehaviorInterface
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: ShowGizmos
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  fullName: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.self
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.self
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: self
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.self
+  fullName: ModularEnemy.EnemyBehaviorInterface.self
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Started
+  commentId: P:Global.ModularEnemy.EnemyBehaviorInterface.Started
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Started
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Started
+  fullName: ModularEnemy.EnemyBehaviorInterface.Started
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  isExternal: true
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.EasingFunction.Ease
+  commentId: T:Global.EasingFunction.Ease
+  name: EasingFunction.Ease
+  nameWithType: EasingFunction.Ease
+  fullName: EasingFunction.Ease
+  spec.csharp:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+  spec.vb:
+  - uid: Global.EasingFunction
+    name: EasingFunction
+  - name: .
+  - uid: Global.EasingFunction.Ease
+    name: Ease
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.DipBehavior.DrawGizmos*
+  commentId: Overload:Global.DipBehavior.DrawGizmos
+  name: DrawGizmos
+  nameWithType: DipBehavior.DrawGizmos
+  fullName: DipBehavior.DrawGizmos
+- uid: Global.ModularEnemy
+  commentId: T:Global.ModularEnemy
+  name: ModularEnemy
+  nameWithType: ModularEnemy
+  fullName: ModularEnemy
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Start(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.DipBehavior.Start*
+  commentId: Overload:Global.DipBehavior.Start
+  name: Start
+  nameWithType: DipBehavior.Start
+  fullName: DipBehavior.Start
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnRestart()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.DipBehavior.OnRestart*
+  commentId: Overload:Global.DipBehavior.OnRestart
+  name: OnRestart
+  nameWithType: DipBehavior.OnRestart
+  fullName: DipBehavior.OnRestart
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Update
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Update()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Update()
+  fullName: ModularEnemy.EnemyBehaviorInterface.Update()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.DipBehavior.Update*
+  commentId: Overload:Global.DipBehavior.Update
+  name: Update
+  nameWithType: DipBehavior.Update
+  fullName: DipBehavior.Update

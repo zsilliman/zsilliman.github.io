@@ -1,0 +1,1144 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.NudgeBehavior
+  commentId: T:Global.NudgeBehavior
+  id: NudgeBehavior
+  parent: Global
+  children:
+  - Global.NudgeBehavior.AccelPoint
+  - Global.NudgeBehavior.DecelPoint
+  - Global.NudgeBehavior.DrawGizmos(ModularEnemy)
+  - Global.NudgeBehavior.MaxNudgeCount
+  - Global.NudgeBehavior.NudgeCount
+  - Global.NudgeBehavior.NudgeDirectionNoiseIntensity
+  - Global.NudgeBehavior.NudgeDistance
+  - Global.NudgeBehavior.NudgeSpeed
+  - Global.NudgeBehavior.OnCollideX(IntSolid)
+  - Global.NudgeBehavior.OnCollideY(IntSolid)
+  - Global.NudgeBehavior.OnRestart
+  - Global.NudgeBehavior.RepelAcceleration
+  - Global.NudgeBehavior.RepelDistance
+  - Global.NudgeBehavior.RepelGround
+  - Global.NudgeBehavior.RepelGroundDistance
+  - Global.NudgeBehavior.RepelGroundIntensity
+  - Global.NudgeBehavior.RepelOtherActors
+  - Global.NudgeBehavior.Start(ModularEnemy)
+  - Global.NudgeBehavior.TriggerAtDistanceFromPlayer
+  - Global.NudgeBehavior.TriggerOnChargeCompleted
+  - Global.NudgeBehavior.Update
+  - Global.NudgeBehavior.WaitDuration
+  - Global.NudgeBehavior.Waiting
+  - Global.NudgeBehavior.waiting_t
+  langs:
+  - csharp
+  - vb
+  name: NudgeBehavior
+  nameWithType: NudgeBehavior
+  fullName: NudgeBehavior
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NudgeBehavior
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class NudgeBehavior : ModularEnemy.EnemyBehaviorInterface
+    content.vb: >-
+      <Serializable>
+
+      Public Class NudgeBehavior Inherits ModularEnemy.EnemyBehaviorInterface
+  inheritance:
+  - System.Object
+  - Global.ModularEnemy.EnemyBehaviorInterface
+  inheritedMembers:
+  - Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  - Global.ModularEnemy.EnemyBehaviorInterface.self
+  - Global.ModularEnemy.EnemyBehaviorInterface.Started
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.NudgeBehavior.MaxNudgeCount
+  commentId: F:Global.NudgeBehavior.MaxNudgeCount
+  id: MaxNudgeCount
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: MaxNudgeCount
+  nameWithType: NudgeBehavior.MaxNudgeCount
+  fullName: NudgeBehavior.MaxNudgeCount
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxNudgeCount
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("This can be disabled if set to any number less that 0, i.e. -1")]
+
+      public int MaxNudgeCount
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Tooltip("This can be disabled if set to any number less that 0, i.e. -1")>
+
+      Public MaxNudgeCount As Integer
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This can be disabled if set to any number less that 0, i.e. -1
+- uid: Global.NudgeBehavior.NudgeDistance
+  commentId: F:Global.NudgeBehavior.NudgeDistance
+  id: NudgeDistance
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: NudgeDistance
+  nameWithType: NudgeBehavior.NudgeDistance
+  fullName: NudgeBehavior.NudgeDistance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NudgeDistance
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float NudgeDistance
+    return:
+      type: System.Single
+    content.vb: Public NudgeDistance As Single
+- uid: Global.NudgeBehavior.NudgeSpeed
+  commentId: F:Global.NudgeBehavior.NudgeSpeed
+  id: NudgeSpeed
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: NudgeSpeed
+  nameWithType: NudgeBehavior.NudgeSpeed
+  fullName: NudgeBehavior.NudgeSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NudgeSpeed
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float NudgeSpeed
+    return:
+      type: System.Single
+    content.vb: Public NudgeSpeed As Single
+- uid: Global.NudgeBehavior.AccelPoint
+  commentId: F:Global.NudgeBehavior.AccelPoint
+  id: AccelPoint
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: AccelPoint
+  nameWithType: NudgeBehavior.AccelPoint
+  fullName: NudgeBehavior.AccelPoint
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AccelPoint
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Range(0, 1)]
+
+      public float AccelPoint
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(0, 1)>
+
+      Public AccelPoint As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: Global.NudgeBehavior.DecelPoint
+  commentId: F:Global.NudgeBehavior.DecelPoint
+  id: DecelPoint
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: DecelPoint
+  nameWithType: NudgeBehavior.DecelPoint
+  fullName: NudgeBehavior.DecelPoint
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DecelPoint
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Range(0, 1)]
+
+      public float DecelPoint
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(0, 1)>
+
+      Public DecelPoint As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: Global.NudgeBehavior.WaitDuration
+  commentId: F:Global.NudgeBehavior.WaitDuration
+  id: WaitDuration
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: WaitDuration
+  nameWithType: NudgeBehavior.WaitDuration
+  fullName: NudgeBehavior.WaitDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WaitDuration
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float WaitDuration
+    return:
+      type: System.Single
+    content.vb: Public WaitDuration As Single
+- uid: Global.NudgeBehavior.NudgeDirectionNoiseIntensity
+  commentId: F:Global.NudgeBehavior.NudgeDirectionNoiseIntensity
+  id: NudgeDirectionNoiseIntensity
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: NudgeDirectionNoiseIntensity
+  nameWithType: NudgeBehavior.NudgeDirectionNoiseIntensity
+  fullName: NudgeBehavior.NudgeDirectionNoiseIntensity
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NudgeDirectionNoiseIntensity
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float NudgeDirectionNoiseIntensity
+    return:
+      type: System.Single
+    content.vb: Public NudgeDirectionNoiseIntensity As Single
+- uid: Global.NudgeBehavior.TriggerAtDistanceFromPlayer
+  commentId: F:Global.NudgeBehavior.TriggerAtDistanceFromPlayer
+  id: TriggerAtDistanceFromPlayer
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: TriggerAtDistanceFromPlayer
+  nameWithType: NudgeBehavior.TriggerAtDistanceFromPlayer
+  fullName: NudgeBehavior.TriggerAtDistanceFromPlayer
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerAtDistanceFromPlayer
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float TriggerAtDistanceFromPlayer
+    return:
+      type: System.Single
+    content.vb: Public TriggerAtDistanceFromPlayer As Single
+- uid: Global.NudgeBehavior.RepelOtherActors
+  commentId: F:Global.NudgeBehavior.RepelOtherActors
+  id: RepelOtherActors
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: RepelOtherActors
+  nameWithType: NudgeBehavior.RepelOtherActors
+  fullName: NudgeBehavior.RepelOtherActors
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RepelOtherActors
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Repel")]
+
+      public bool RepelOtherActors
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Repel")>
+
+      Public RepelOtherActors As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Repel
+- uid: Global.NudgeBehavior.RepelDistance
+  commentId: F:Global.NudgeBehavior.RepelDistance
+  id: RepelDistance
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: RepelDistance
+  nameWithType: NudgeBehavior.RepelDistance
+  fullName: NudgeBehavior.RepelDistance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RepelDistance
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("RepelOtherActors", 1)]
+
+      public float RepelDistance
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("RepelOtherActors", 1)>
+
+      Public RepelDistance As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: RepelOtherActors
+    - type: System.Int32
+      value: 1
+- uid: Global.NudgeBehavior.RepelAcceleration
+  commentId: F:Global.NudgeBehavior.RepelAcceleration
+  id: RepelAcceleration
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: RepelAcceleration
+  nameWithType: NudgeBehavior.RepelAcceleration
+  fullName: NudgeBehavior.RepelAcceleration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RepelAcceleration
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("RepelOtherActors", 1)]
+
+      public float RepelAcceleration
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("RepelOtherActors", 1)>
+
+      Public RepelAcceleration As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: RepelOtherActors
+    - type: System.Int32
+      value: 1
+- uid: Global.NudgeBehavior.RepelGround
+  commentId: F:Global.NudgeBehavior.RepelGround
+  id: RepelGround
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: RepelGround
+  nameWithType: NudgeBehavior.RepelGround
+  fullName: NudgeBehavior.RepelGround
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RepelGround
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool RepelGround
+    return:
+      type: System.Boolean
+    content.vb: Public RepelGround As Boolean
+- uid: Global.NudgeBehavior.RepelGroundDistance
+  commentId: F:Global.NudgeBehavior.RepelGroundDistance
+  id: RepelGroundDistance
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: RepelGroundDistance
+  nameWithType: NudgeBehavior.RepelGroundDistance
+  fullName: NudgeBehavior.RepelGroundDistance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RepelGroundDistance
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("RepelGround", 1)]
+
+      public float RepelGroundDistance
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("RepelGround", 1)>
+
+      Public RepelGroundDistance As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: RepelGround
+    - type: System.Int32
+      value: 1
+- uid: Global.NudgeBehavior.RepelGroundIntensity
+  commentId: F:Global.NudgeBehavior.RepelGroundIntensity
+  id: RepelGroundIntensity
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: RepelGroundIntensity
+  nameWithType: NudgeBehavior.RepelGroundIntensity
+  fullName: NudgeBehavior.RepelGroundIntensity
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RepelGroundIntensity
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("RepelGround", 1)]
+
+      public float RepelGroundIntensity
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("RepelGround", 1)>
+
+      Public RepelGroundIntensity As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: RepelGround
+    - type: System.Int32
+      value: 1
+- uid: Global.NudgeBehavior.Waiting
+  commentId: F:Global.NudgeBehavior.Waiting
+  id: Waiting
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: Waiting
+  nameWithType: NudgeBehavior.Waiting
+  fullName: NudgeBehavior.Waiting
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Waiting
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool Waiting
+    return:
+      type: System.Boolean
+    content.vb: Protected Waiting As Boolean
+- uid: Global.NudgeBehavior.waiting_t
+  commentId: F:Global.NudgeBehavior.waiting_t
+  id: waiting_t
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: waiting_t
+  nameWithType: NudgeBehavior.waiting_t
+  fullName: NudgeBehavior.waiting_t
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: waiting_t
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float waiting_t
+    return:
+      type: System.Single
+    content.vb: Protected waiting_t As Single
+- uid: Global.NudgeBehavior.NudgeCount
+  commentId: F:Global.NudgeBehavior.NudgeCount
+  id: NudgeCount
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: NudgeCount
+  nameWithType: NudgeBehavior.NudgeCount
+  fullName: NudgeBehavior.NudgeCount
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NudgeCount
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected int NudgeCount
+    return:
+      type: System.Int32
+    content.vb: Protected NudgeCount As Integer
+- uid: Global.NudgeBehavior.TriggerOnChargeCompleted
+  commentId: F:Global.NudgeBehavior.TriggerOnChargeCompleted
+  id: TriggerOnChargeCompleted
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: TriggerOnChargeCompleted
+  nameWithType: NudgeBehavior.TriggerOnChargeCompleted
+  fullName: NudgeBehavior.TriggerOnChargeCompleted
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggerOnChargeCompleted
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool TriggerOnChargeCompleted
+    return:
+      type: System.Boolean
+    content.vb: Protected TriggerOnChargeCompleted As Boolean
+- uid: Global.NudgeBehavior.DrawGizmos(ModularEnemy)
+  commentId: M:Global.NudgeBehavior.DrawGizmos(ModularEnemy)
+  id: DrawGizmos(ModularEnemy)
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: NudgeBehavior.DrawGizmos(ModularEnemy)
+  fullName: NudgeBehavior.DrawGizmos(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawGizmos
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void DrawGizmos(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub DrawGizmos(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  overload: Global.NudgeBehavior.DrawGizmos*
+- uid: Global.NudgeBehavior.Start(ModularEnemy)
+  commentId: M:Global.NudgeBehavior.Start(ModularEnemy)
+  id: Start(ModularEnemy)
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: Start(ModularEnemy)
+  nameWithType: NudgeBehavior.Start(ModularEnemy)
+  fullName: NudgeBehavior.Start(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Start(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub Start(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  overload: Global.NudgeBehavior.Start*
+- uid: Global.NudgeBehavior.OnRestart
+  commentId: M:Global.NudgeBehavior.OnRestart
+  id: OnRestart
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnRestart()
+  nameWithType: NudgeBehavior.OnRestart()
+  fullName: NudgeBehavior.OnRestart()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnRestart
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnRestart()
+    content.vb: Public Overrides Sub OnRestart()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  overload: Global.NudgeBehavior.OnRestart*
+- uid: Global.NudgeBehavior.Update
+  commentId: M:Global.NudgeBehavior.Update
+  id: Update
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: NudgeBehavior.Update()
+  fullName: NudgeBehavior.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  overload: Global.NudgeBehavior.Update*
+- uid: Global.NudgeBehavior.OnCollideX(IntSolid)
+  commentId: M:Global.NudgeBehavior.OnCollideX(IntSolid)
+  id: OnCollideX(IntSolid)
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnCollideX(IntSolid)
+  nameWithType: NudgeBehavior.OnCollideX(IntSolid)
+  fullName: NudgeBehavior.OnCollideX(IntSolid)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnCollideX
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 143
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected virtual void OnCollideX(IntSolid solid)
+    parameters:
+    - id: solid
+      type: Global.IntSolid
+    content.vb: Protected Overridable Sub OnCollideX(solid As IntSolid)
+  overload: Global.NudgeBehavior.OnCollideX*
+- uid: Global.NudgeBehavior.OnCollideY(IntSolid)
+  commentId: M:Global.NudgeBehavior.OnCollideY(IntSolid)
+  id: OnCollideY(IntSolid)
+  parent: Global.NudgeBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnCollideY(IntSolid)
+  nameWithType: NudgeBehavior.OnCollideY(IntSolid)
+  fullName: NudgeBehavior.OnCollideY(IntSolid)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnCollideY
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/NudgeBehavior.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected virtual void OnCollideY(IntSolid solid)
+    parameters:
+    - id: solid
+      type: Global.IntSolid
+    content.vb: Protected Overridable Sub OnCollideY(solid As IntSolid)
+  overload: Global.NudgeBehavior.OnCollideY*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ModularEnemy.EnemyBehaviorInterface
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterface
+  name: ModularEnemy.EnemyBehaviorInterface
+  nameWithType: ModularEnemy.EnemyBehaviorInterface
+  fullName: ModularEnemy.EnemyBehaviorInterface
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: ShowGizmos
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  fullName: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.self
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.self
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: self
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.self
+  fullName: ModularEnemy.EnemyBehaviorInterface.self
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Started
+  commentId: P:Global.ModularEnemy.EnemyBehaviorInterface.Started
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Started
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Started
+  fullName: ModularEnemy.EnemyBehaviorInterface.Started
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  isExternal: true
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.NudgeBehavior.DrawGizmos*
+  commentId: Overload:Global.NudgeBehavior.DrawGizmos
+  name: DrawGizmos
+  nameWithType: NudgeBehavior.DrawGizmos
+  fullName: NudgeBehavior.DrawGizmos
+- uid: Global.ModularEnemy
+  commentId: T:Global.ModularEnemy
+  name: ModularEnemy
+  nameWithType: ModularEnemy
+  fullName: ModularEnemy
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Start(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.NudgeBehavior.Start*
+  commentId: Overload:Global.NudgeBehavior.Start
+  name: Start
+  nameWithType: NudgeBehavior.Start
+  fullName: NudgeBehavior.Start
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnRestart()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.NudgeBehavior.OnRestart*
+  commentId: Overload:Global.NudgeBehavior.OnRestart
+  name: OnRestart
+  nameWithType: NudgeBehavior.OnRestart
+  fullName: NudgeBehavior.OnRestart
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Update
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Update()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Update()
+  fullName: ModularEnemy.EnemyBehaviorInterface.Update()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.NudgeBehavior.Update*
+  commentId: Overload:Global.NudgeBehavior.Update
+  name: Update
+  nameWithType: NudgeBehavior.Update
+  fullName: NudgeBehavior.Update
+- uid: Global.NudgeBehavior.OnCollideX*
+  commentId: Overload:Global.NudgeBehavior.OnCollideX
+  name: OnCollideX
+  nameWithType: NudgeBehavior.OnCollideX
+  fullName: NudgeBehavior.OnCollideX
+- uid: Global.IntSolid
+  commentId: T:Global.IntSolid
+  name: IntSolid
+  nameWithType: IntSolid
+  fullName: IntSolid
+- uid: Global.NudgeBehavior.OnCollideY*
+  commentId: Overload:Global.NudgeBehavior.OnCollideY
+  name: OnCollideY
+  nameWithType: NudgeBehavior.OnCollideY
+  fullName: NudgeBehavior.OnCollideY

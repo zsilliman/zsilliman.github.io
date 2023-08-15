@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FogController
+  commentId: T:Global.FogController
+  id: FogController
+  parent: Global
+  children:
+  - Global.FogController.ApplyParams
+  - Global.FogController.BackgroundFogOffsetHeight
+  - Global.FogController.BackgroundFogSpeed
+  - Global.FogController.BackgroundSystem
+  - Global.FogController.FogSpeedVariance
+  - Global.FogController.ForegroundFogSpeed
+  - Global.FogController.ForegroundSystem
+  - Global.FogController.SetWindSpeed(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: FogController
+  nameWithType: FogController
+  fullName: FogController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FogController
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class FogController : WeatherController'
+    content.vb: Public Class FogController Inherits WeatherController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.WeatherController
+  inheritedMembers:
+  - Global.WeatherController.ContinuouslyUpdateParamsInEditor
+  - Global.WeatherController.WeatherEnabled
+  - Global.WeatherController.Intensity
+  - Global.WeatherController.EffectRegionSectionSpace
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.FogController.ForegroundFogSpeed
+  commentId: F:Global.FogController.ForegroundFogSpeed
+  id: ForegroundFogSpeed
+  parent: Global.FogController
+  langs:
+  - csharp
+  - vb
+  name: ForegroundFogSpeed
+  nameWithType: FogController.ForegroundFogSpeed
+  fullName: FogController.ForegroundFogSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ForegroundFogSpeed
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Fog Params")]
+
+      public float ForegroundFogSpeed
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Fog Params")>
+
+      Public ForegroundFogSpeed As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Fog Params
+- uid: Global.FogController.BackgroundFogSpeed
+  commentId: F:Global.FogController.BackgroundFogSpeed
+  id: BackgroundFogSpeed
+  parent: Global.FogController
+  langs:
+  - csharp
+  - vb
+  name: BackgroundFogSpeed
+  nameWithType: FogController.BackgroundFogSpeed
+  fullName: FogController.BackgroundFogSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BackgroundFogSpeed
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float BackgroundFogSpeed
+    return:
+      type: System.Single
+    content.vb: Public BackgroundFogSpeed As Single
+- uid: Global.FogController.FogSpeedVariance
+  commentId: F:Global.FogController.FogSpeedVariance
+  id: FogSpeedVariance
+  parent: Global.FogController
+  langs:
+  - csharp
+  - vb
+  name: FogSpeedVariance
+  nameWithType: FogController.FogSpeedVariance
+  fullName: FogController.FogSpeedVariance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FogSpeedVariance
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float FogSpeedVariance
+    return:
+      type: System.Single
+    content.vb: Public FogSpeedVariance As Single
+- uid: Global.FogController.BackgroundFogOffsetHeight
+  commentId: F:Global.FogController.BackgroundFogOffsetHeight
+  id: BackgroundFogOffsetHeight
+  parent: Global.FogController
+  langs:
+  - csharp
+  - vb
+  name: BackgroundFogOffsetHeight
+  nameWithType: FogController.BackgroundFogOffsetHeight
+  fullName: FogController.BackgroundFogOffsetHeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BackgroundFogOffsetHeight
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float BackgroundFogOffsetHeight
+    return:
+      type: System.Single
+    content.vb: Public BackgroundFogOffsetHeight As Single
+- uid: Global.FogController.BackgroundSystem
+  commentId: F:Global.FogController.BackgroundSystem
+  id: BackgroundSystem
+  parent: Global.FogController
+  langs:
+  - csharp
+  - vb
+  name: BackgroundSystem
+  nameWithType: FogController.BackgroundSystem
+  fullName: FogController.BackgroundSystem
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BackgroundSystem
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Fog Particle System References")]
+
+      public ParticleSystem BackgroundSystem
+    return:
+      type: UnityEngine.ParticleSystem
+    content.vb: >-
+      <Header("Fog Particle System References")>
+
+      Public BackgroundSystem As ParticleSystem
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Fog Particle System References
+- uid: Global.FogController.ForegroundSystem
+  commentId: F:Global.FogController.ForegroundSystem
+  id: ForegroundSystem
+  parent: Global.FogController
+  langs:
+  - csharp
+  - vb
+  name: ForegroundSystem
+  nameWithType: FogController.ForegroundSystem
+  fullName: FogController.ForegroundSystem
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ForegroundSystem
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ParticleSystem ForegroundSystem
+    return:
+      type: UnityEngine.ParticleSystem
+    content.vb: Public ForegroundSystem As ParticleSystem
+- uid: Global.FogController.SetWindSpeed(System.Single)
+  commentId: M:Global.FogController.SetWindSpeed(System.Single)
+  id: SetWindSpeed(System.Single)
+  parent: Global.FogController
+  langs:
+  - csharp
+  - vb
+  name: SetWindSpeed(float)
+  nameWithType: FogController.SetWindSpeed(float)
+  fullName: FogController.SetWindSpeed(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetWindSpeed
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void SetWindSpeed(float windSpeed)
+    parameters:
+    - id: windSpeed
+      type: System.Single
+    content.vb: Public Overrides Sub SetWindSpeed(windSpeed As Single)
+  overridden: Global.WeatherController.SetWindSpeed(System.Single)
+  overload: Global.FogController.SetWindSpeed*
+  nameWithType.vb: FogController.SetWindSpeed(Single)
+  fullName.vb: FogController.SetWindSpeed(Single)
+  name.vb: SetWindSpeed(Single)
+- uid: Global.FogController.ApplyParams
+  commentId: M:Global.FogController.ApplyParams
+  id: ApplyParams
+  parent: Global.FogController
+  langs:
+  - csharp
+  - vb
+  name: ApplyParams()
+  nameWithType: FogController.ApplyParams()
+  fullName: FogController.ApplyParams()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/Fog/FogController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ApplyParams
+    path: ../Assets/Objects & Components/World/Weather/Fog/FogController.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void ApplyParams()
+    content.vb: Public Overrides Sub ApplyParams()
+  overridden: Global.WeatherController.ApplyParams
+  overload: Global.FogController.ApplyParams*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.WeatherController
+  commentId: T:Global.WeatherController
+  name: WeatherController
+  nameWithType: WeatherController
+  fullName: WeatherController
+- uid: Global.WeatherController.ContinuouslyUpdateParamsInEditor
+  commentId: F:Global.WeatherController.ContinuouslyUpdateParamsInEditor
+  parent: Global.WeatherController
+  name: ContinuouslyUpdateParamsInEditor
+  nameWithType: WeatherController.ContinuouslyUpdateParamsInEditor
+  fullName: WeatherController.ContinuouslyUpdateParamsInEditor
+- uid: Global.WeatherController.WeatherEnabled
+  commentId: F:Global.WeatherController.WeatherEnabled
+  parent: Global.WeatherController
+  name: WeatherEnabled
+  nameWithType: WeatherController.WeatherEnabled
+  fullName: WeatherController.WeatherEnabled
+- uid: Global.WeatherController.Intensity
+  commentId: F:Global.WeatherController.Intensity
+  parent: Global.WeatherController
+  name: Intensity
+  nameWithType: WeatherController.Intensity
+  fullName: WeatherController.Intensity
+- uid: Global.WeatherController.EffectRegionSectionSpace
+  commentId: F:Global.WeatherController.EffectRegionSectionSpace
+  parent: Global.WeatherController
+  name: EffectRegionSectionSpace
+  nameWithType: WeatherController.EffectRegionSectionSpace
+  fullName: WeatherController.EffectRegionSectionSpace
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.ParticleSystem
+  commentId: T:UnityEngine.ParticleSystem
+  parent: UnityEngine
+  isExternal: true
+  name: ParticleSystem
+  nameWithType: ParticleSystem
+  fullName: UnityEngine.ParticleSystem
+- uid: Global.WeatherController.SetWindSpeed(System.Single)
+  commentId: M:Global.WeatherController.SetWindSpeed(System.Single)
+  parent: Global.WeatherController
+  isExternal: true
+  name: SetWindSpeed(float)
+  nameWithType: WeatherController.SetWindSpeed(float)
+  fullName: WeatherController.SetWindSpeed(float)
+  nameWithType.vb: WeatherController.SetWindSpeed(Single)
+  fullName.vb: WeatherController.SetWindSpeed(Single)
+  name.vb: SetWindSpeed(Single)
+  spec.csharp:
+  - uid: Global.WeatherController.SetWindSpeed(System.Single)
+    name: SetWindSpeed
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.WeatherController.SetWindSpeed(System.Single)
+    name: SetWindSpeed
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: Global.FogController.SetWindSpeed*
+  commentId: Overload:Global.FogController.SetWindSpeed
+  name: SetWindSpeed
+  nameWithType: FogController.SetWindSpeed
+  fullName: FogController.SetWindSpeed
+- uid: Global.WeatherController.ApplyParams
+  commentId: M:Global.WeatherController.ApplyParams
+  parent: Global.WeatherController
+  name: ApplyParams()
+  nameWithType: WeatherController.ApplyParams()
+  fullName: WeatherController.ApplyParams()
+  spec.csharp:
+  - uid: Global.WeatherController.ApplyParams
+    name: ApplyParams
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.WeatherController.ApplyParams
+    name: ApplyParams
+  - name: (
+  - name: )
+- uid: Global.FogController.ApplyParams*
+  commentId: Overload:Global.FogController.ApplyParams
+  name: ApplyParams
+  nameWithType: FogController.ApplyParams
+  fullName: FogController.ApplyParams

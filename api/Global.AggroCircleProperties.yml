@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AggroCircleProperties
+  commentId: T:Global.AggroCircleProperties
+  id: AggroCircleProperties
+  parent: Global
+  children:
+  - Global.AggroCircleProperties.CircleOriginRelative
+  - Global.AggroCircleProperties.DrawGizmos(IntObject)
+  - Global.AggroCircleProperties.Radius
+  langs:
+  - csharp
+  - vb
+  name: AggroCircleProperties
+  nameWithType: AggroCircleProperties
+  fullName: AggroCircleProperties
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AggroCircleProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 171
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class AggroCircleProperties : AggroPropertiesBase
+    content.vb: >-
+      <Serializable>
+
+      Public Class AggroCircleProperties Inherits AggroPropertiesBase
+  inheritance:
+  - System.Object
+  - Global.AggroPropertiesBase
+  inheritedMembers:
+  - Global.AggroPropertiesBase.RequireRayCastVisibility
+  - Global.AggroPropertiesBase.LimitRayCastToHorizontal
+  - Global.AggroPropertiesBase.AttachBoundsToEntity
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.AggroCircleProperties.CircleOriginRelative
+  commentId: F:Global.AggroCircleProperties.CircleOriginRelative
+  id: CircleOriginRelative
+  parent: Global.AggroCircleProperties
+  langs:
+  - csharp
+  - vb
+  name: CircleOriginRelative
+  nameWithType: AggroCircleProperties.CircleOriginRelative
+  fullName: AggroCircleProperties.CircleOriginRelative
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleOriginRelative
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 175
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [DraggablePoint(DraggablePointSpace.Local)]
+
+      public Vector2Int CircleOriginRelative
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <DraggablePoint(DraggablePointSpace.Local)>
+
+      Public CircleOriginRelative As Vector2Int
+  attributes:
+  - type: Global.DraggablePoint
+    ctor: Global.DraggablePoint.#ctor(DraggablePointSpace)
+    arguments:
+    - type: Global.DraggablePointSpace
+      value: 0
+- uid: Global.AggroCircleProperties.Radius
+  commentId: F:Global.AggroCircleProperties.Radius
+  id: Radius
+  parent: Global.AggroCircleProperties
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: AggroCircleProperties.Radius
+  fullName: AggroCircleProperties.Radius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Radius
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 176
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Radius
+    return:
+      type: System.Single
+    content.vb: Public Radius As Single
+- uid: Global.AggroCircleProperties.DrawGizmos(IntObject)
+  commentId: M:Global.AggroCircleProperties.DrawGizmos(IntObject)
+  id: DrawGizmos(IntObject)
+  parent: Global.AggroCircleProperties
+  langs:
+  - csharp
+  - vb
+  name: DrawGizmos(IntObject)
+  nameWithType: AggroCircleProperties.DrawGizmos(IntObject)
+  fullName: AggroCircleProperties.DrawGizmos(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawGizmos
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/AggroTrigger/AggroTrigger.cs
+    startLine: 178
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void DrawGizmos(IntObject self)
+    parameters:
+    - id: self
+      type: Global.IntObject
+    content.vb: Public Overrides Sub DrawGizmos(self As IntObject)
+  overridden: Global.AggroPropertiesBase.DrawGizmos(IntObject)
+  overload: Global.AggroCircleProperties.DrawGizmos*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AggroPropertiesBase
+  commentId: T:Global.AggroPropertiesBase
+  name: AggroPropertiesBase
+  nameWithType: AggroPropertiesBase
+  fullName: AggroPropertiesBase
+- uid: Global.AggroPropertiesBase.RequireRayCastVisibility
+  commentId: F:Global.AggroPropertiesBase.RequireRayCastVisibility
+  parent: Global.AggroPropertiesBase
+  name: RequireRayCastVisibility
+  nameWithType: AggroPropertiesBase.RequireRayCastVisibility
+  fullName: AggroPropertiesBase.RequireRayCastVisibility
+- uid: Global.AggroPropertiesBase.LimitRayCastToHorizontal
+  commentId: F:Global.AggroPropertiesBase.LimitRayCastToHorizontal
+  parent: Global.AggroPropertiesBase
+  name: LimitRayCastToHorizontal
+  nameWithType: AggroPropertiesBase.LimitRayCastToHorizontal
+  fullName: AggroPropertiesBase.LimitRayCastToHorizontal
+- uid: Global.AggroPropertiesBase.AttachBoundsToEntity
+  commentId: F:Global.AggroPropertiesBase.AttachBoundsToEntity
+  parent: Global.AggroPropertiesBase
+  name: AttachBoundsToEntity
+  nameWithType: AggroPropertiesBase.AttachBoundsToEntity
+  fullName: AggroPropertiesBase.AttachBoundsToEntity
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.AggroPropertiesBase.DrawGizmos(IntObject)
+  commentId: M:Global.AggroPropertiesBase.DrawGizmos(IntObject)
+  parent: Global.AggroPropertiesBase
+  name: DrawGizmos(IntObject)
+  nameWithType: AggroPropertiesBase.DrawGizmos(IntObject)
+  fullName: AggroPropertiesBase.DrawGizmos(IntObject)
+  spec.csharp:
+  - uid: Global.AggroPropertiesBase.DrawGizmos(IntObject)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+  spec.vb:
+  - uid: Global.AggroPropertiesBase.DrawGizmos(IntObject)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+- uid: Global.AggroCircleProperties.DrawGizmos*
+  commentId: Overload:Global.AggroCircleProperties.DrawGizmos
+  name: DrawGizmos
+  nameWithType: AggroCircleProperties.DrawGizmos
+  fullName: AggroCircleProperties.DrawGizmos
+- uid: Global.IntObject
+  commentId: T:Global.IntObject
+  name: IntObject
+  nameWithType: IntObject
+  fullName: IntObject

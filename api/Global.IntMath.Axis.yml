@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntMath.Axis
+  commentId: T:Global.IntMath.Axis
+  id: IntMath.Axis
+  parent: Global
+  children:
+  - Global.IntMath.Axis.XAxis
+  - Global.IntMath.Axis.YAxis
+  langs:
+  - csharp
+  - vb
+  name: IntMath.Axis
+  nameWithType: IntMath.Axis
+  fullName: IntMath.Axis
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Axis
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nEnum used to define an axis\n"
+  example: []
+  syntax:
+    content: public enum IntMath.Axis
+    content.vb: Public Enum IntMath.Axis
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.IntMath.Axis.XAxis
+  commentId: F:Global.IntMath.Axis.XAxis
+  id: XAxis
+  parent: Global.IntMath.Axis
+  langs:
+  - csharp
+  - vb
+  name: XAxis
+  nameWithType: IntMath.Axis.XAxis
+  fullName: IntMath.Axis.XAxis
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: XAxis
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: XAxis = 0
+    return:
+      type: Global.IntMath.Axis
+- uid: Global.IntMath.Axis.YAxis
+  commentId: F:Global.IntMath.Axis.YAxis
+  id: YAxis
+  parent: Global.IntMath.Axis
+  langs:
+  - csharp
+  - vb
+  name: YAxis
+  nameWithType: IntMath.Axis.YAxis
+  fullName: IntMath.Axis.YAxis
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: YAxis
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: YAxis = 1
+    return:
+      type: Global.IntMath.Axis
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.IntMath.Axis
+  commentId: T:Global.IntMath.Axis
+  name: IntMath.Axis
+  nameWithType: IntMath.Axis
+  fullName: IntMath.Axis
+  spec.csharp:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Axis
+    name: Axis
+  spec.vb:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Axis
+    name: Axis

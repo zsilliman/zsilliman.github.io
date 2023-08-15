@@ -1,0 +1,561 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SectionParallax
+  commentId: T:Global.SectionParallax
+  id: SectionParallax
+  parent: Global
+  children:
+  - Global.SectionParallax.BaseBackgroundMaterial
+  - Global.SectionParallax.CleanLayers
+  - Global.SectionParallax.FitRuleX
+  - Global.SectionParallax.FitRuleY
+  - Global.SectionParallax.InheritSettingsFrom(SectionParallax)
+  - Global.SectionParallax.Layers
+  - Global.SectionParallax.MaxDepth
+  - Global.SectionParallax.SpawnLayers
+  - Global.SectionParallax.UpdateLayerProps
+  langs:
+  - csharp
+  - vb
+  name: SectionParallax
+  nameWithType: SectionParallax
+  fullName: SectionParallax
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionParallax
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class SectionParallax : MonoBehaviour'
+    content.vb: Public Class SectionParallax Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SectionParallax.BaseBackgroundMaterial
+  commentId: F:Global.SectionParallax.BaseBackgroundMaterial
+  id: BaseBackgroundMaterial
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: BaseBackgroundMaterial
+  nameWithType: SectionParallax.BaseBackgroundMaterial
+  fullName: SectionParallax.BaseBackgroundMaterial
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BaseBackgroundMaterial
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Material")]
+
+      public Material BaseBackgroundMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: >-
+      <Header("Material")>
+
+      Public BaseBackgroundMaterial As Material
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Material
+- uid: Global.SectionParallax.MaxDepth
+  commentId: F:Global.SectionParallax.MaxDepth
+  id: MaxDepth
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: MaxDepth
+  nameWithType: SectionParallax.MaxDepth
+  fullName: SectionParallax.MaxDepth
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxDepth
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float MaxDepth
+    return:
+      type: System.Single
+    content.vb: Public MaxDepth As Single
+- uid: Global.SectionParallax.FitRuleX
+  commentId: F:Global.SectionParallax.FitRuleX
+  id: FitRuleX
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: FitRuleX
+  nameWithType: SectionParallax.FitRuleX
+  fullName: SectionParallax.FitRuleX
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FitRuleX
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Texture Fitting and Wrapping")]
+
+      public ParallaxLayerFitRule FitRuleX
+    return:
+      type: Global.ParallaxLayerFitRule
+    content.vb: >-
+      <Header("Texture Fitting and Wrapping")>
+
+      Public FitRuleX As ParallaxLayerFitRule
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Texture Fitting and Wrapping
+- uid: Global.SectionParallax.FitRuleY
+  commentId: F:Global.SectionParallax.FitRuleY
+  id: FitRuleY
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: FitRuleY
+  nameWithType: SectionParallax.FitRuleY
+  fullName: SectionParallax.FitRuleY
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FitRuleY
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ParallaxLayerFitRule FitRuleY
+    return:
+      type: Global.ParallaxLayerFitRule
+    content.vb: Public FitRuleY As ParallaxLayerFitRule
+- uid: Global.SectionParallax.Layers
+  commentId: F:Global.SectionParallax.Layers
+  id: Layers
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: Layers
+  nameWithType: SectionParallax.Layers
+  fullName: SectionParallax.Layers
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Layers
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Layers")]
+
+      public List<ParallaxLayer> Layers
+    return:
+      type: System.Collections.Generic.List{ParallaxLayer}
+    content.vb: >-
+      <Header("Layers")>
+
+      Public Layers As List(Of ParallaxLayer)
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Layers
+- uid: Global.SectionParallax.InheritSettingsFrom(SectionParallax)
+  commentId: M:Global.SectionParallax.InheritSettingsFrom(SectionParallax)
+  id: InheritSettingsFrom(SectionParallax)
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: InheritSettingsFrom(SectionParallax)
+  nameWithType: SectionParallax.InheritSettingsFrom(SectionParallax)
+  fullName: SectionParallax.InheritSettingsFrom(SectionParallax)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InheritSettingsFrom
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void InheritSettingsFrom(SectionParallax other)
+    parameters:
+    - id: other
+      type: Global.SectionParallax
+    content.vb: Public Sub InheritSettingsFrom(other As SectionParallax)
+  overload: Global.SectionParallax.InheritSettingsFrom*
+- uid: Global.SectionParallax.SpawnLayers
+  commentId: M:Global.SectionParallax.SpawnLayers
+  id: SpawnLayers
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: SpawnLayers()
+  nameWithType: SectionParallax.SpawnLayers()
+  fullName: SectionParallax.SpawnLayers()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SpawnLayers
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 84
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SpawnLayers()
+    content.vb: Public Sub SpawnLayers()
+  overload: Global.SectionParallax.SpawnLayers*
+- uid: Global.SectionParallax.UpdateLayerProps
+  commentId: M:Global.SectionParallax.UpdateLayerProps
+  id: UpdateLayerProps
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: UpdateLayerProps()
+  nameWithType: SectionParallax.UpdateLayerProps()
+  fullName: SectionParallax.UpdateLayerProps()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateLayerProps
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UpdateLayerProps()
+    content.vb: Public Sub UpdateLayerProps()
+  overload: Global.SectionParallax.UpdateLayerProps*
+- uid: Global.SectionParallax.CleanLayers
+  commentId: M:Global.SectionParallax.CleanLayers
+  id: CleanLayers
+  parent: Global.SectionParallax
+  langs:
+  - csharp
+  - vb
+  name: CleanLayers()
+  nameWithType: SectionParallax.CleanLayers()
+  fullName: SectionParallax.CleanLayers()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CleanLayers
+    path: ../Assets/Objects & Components/World/Section/Parallax/SectionParallax.cs
+    startLine: 132
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void CleanLayers()
+    content.vb: Public Sub CleanLayers()
+  overload: Global.SectionParallax.CleanLayers*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.ParallaxLayerFitRule
+  commentId: T:Global.ParallaxLayerFitRule
+  name: ParallaxLayerFitRule
+  nameWithType: ParallaxLayerFitRule
+  fullName: ParallaxLayerFitRule
+- uid: System.Collections.Generic.List{ParallaxLayer}
+  commentId: T:System.Collections.Generic.List{ParallaxLayer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ParallaxLayer>
+  nameWithType: List<ParallaxLayer>
+  fullName: System.Collections.Generic.List<ParallaxLayer>
+  nameWithType.vb: List(Of ParallaxLayer)
+  fullName.vb: System.Collections.Generic.List(Of ParallaxLayer)
+  name.vb: List(Of ParallaxLayer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.ParallaxLayer
+    name: ParallaxLayer
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ParallaxLayer
+    name: ParallaxLayer
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.SectionParallax.InheritSettingsFrom*
+  commentId: Overload:Global.SectionParallax.InheritSettingsFrom
+  name: InheritSettingsFrom
+  nameWithType: SectionParallax.InheritSettingsFrom
+  fullName: SectionParallax.InheritSettingsFrom
+- uid: Global.SectionParallax
+  commentId: T:Global.SectionParallax
+  name: SectionParallax
+  nameWithType: SectionParallax
+  fullName: SectionParallax
+- uid: Global.SectionParallax.SpawnLayers*
+  commentId: Overload:Global.SectionParallax.SpawnLayers
+  name: SpawnLayers
+  nameWithType: SectionParallax.SpawnLayers
+  fullName: SectionParallax.SpawnLayers
+- uid: Global.SectionParallax.UpdateLayerProps*
+  commentId: Overload:Global.SectionParallax.UpdateLayerProps
+  name: UpdateLayerProps
+  nameWithType: SectionParallax.UpdateLayerProps
+  fullName: SectionParallax.UpdateLayerProps
+- uid: Global.SectionParallax.CleanLayers*
+  commentId: Overload:Global.SectionParallax.CleanLayers
+  name: CleanLayers
+  nameWithType: SectionParallax.CleanLayers
+  fullName: SectionParallax.CleanLayers

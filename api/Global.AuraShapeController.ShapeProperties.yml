@@ -1,0 +1,530 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraShapeController.ShapeProperties
+  commentId: T:Global.AuraShapeController.ShapeProperties
+  id: AuraShapeController.ShapeProperties
+  parent: Global
+  children:
+  - Global.AuraShapeController.ShapeProperties.ArcEndAngle
+  - Global.AuraShapeController.ShapeProperties.ArcStartAngle
+  - Global.AuraShapeController.ShapeProperties.AuraOriginOffset
+  - Global.AuraShapeController.ShapeProperties.AuraRadius
+  - Global.AuraShapeController.ShapeProperties.end
+  - Global.AuraShapeController.ShapeProperties.FlipX
+  - Global.AuraShapeController.ShapeProperties.start
+  - Global.AuraShapeController.ShapeProperties.type
+  - Global.AuraShapeController.ShapeProperties.XWeight
+  langs:
+  - csharp
+  - vb
+  name: AuraShapeController.ShapeProperties
+  nameWithType: AuraShapeController.ShapeProperties
+  fullName: AuraShapeController.ShapeProperties
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ShapeProperties
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class AuraShapeController.ShapeProperties
+    content.vb: >-
+      <Serializable>
+
+      Public Class AuraShapeController.ShapeProperties
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.AuraShapeController.ShapeProperties.type
+  commentId: F:Global.AuraShapeController.ShapeProperties.type
+  id: type
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: type
+  nameWithType: AuraShapeController.ShapeProperties.type
+  fullName: AuraShapeController.ShapeProperties.type
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: type
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public AuraShapeController.AuraType type
+    return:
+      type: Global.AuraShapeController.AuraType
+    content.vb: Public type As AuraShapeController.AuraType
+- uid: Global.AuraShapeController.ShapeProperties.start
+  commentId: F:Global.AuraShapeController.ShapeProperties.start
+  id: start
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: start
+  nameWithType: AuraShapeController.ShapeProperties.start
+  fullName: AuraShapeController.ShapeProperties.start
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: start
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("type", 0)]
+
+      public Vector2Int start
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <ConditionalShow("type", 0)>
+
+      Public start As Vector2Int
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: type
+    - type: System.Int32
+      value: 0
+- uid: Global.AuraShapeController.ShapeProperties.end
+  commentId: F:Global.AuraShapeController.ShapeProperties.end
+  id: end
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: end
+  nameWithType: AuraShapeController.ShapeProperties.end
+  fullName: AuraShapeController.ShapeProperties.end
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: end
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("type", 0)]
+
+      public Vector2Int end
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <ConditionalShow("type", 0)>
+
+      Public [end] As Vector2Int
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: type
+    - type: System.Int32
+      value: 0
+- uid: Global.AuraShapeController.ShapeProperties.ArcStartAngle
+  commentId: F:Global.AuraShapeController.ShapeProperties.ArcStartAngle
+  id: ArcStartAngle
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: ArcStartAngle
+  nameWithType: AuraShapeController.ShapeProperties.ArcStartAngle
+  fullName: AuraShapeController.ShapeProperties.ArcStartAngle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ArcStartAngle
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("type", 2)]
+
+      public float ArcStartAngle
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("type", 2)>
+
+      Public ArcStartAngle As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: type
+    - type: System.Int32
+      value: 2
+- uid: Global.AuraShapeController.ShapeProperties.ArcEndAngle
+  commentId: F:Global.AuraShapeController.ShapeProperties.ArcEndAngle
+  id: ArcEndAngle
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: ArcEndAngle
+  nameWithType: AuraShapeController.ShapeProperties.ArcEndAngle
+  fullName: AuraShapeController.ShapeProperties.ArcEndAngle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ArcEndAngle
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("type", 2)]
+
+      public float ArcEndAngle
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("type", 2)>
+
+      Public ArcEndAngle As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: type
+    - type: System.Int32
+      value: 2
+- uid: Global.AuraShapeController.ShapeProperties.FlipX
+  commentId: F:Global.AuraShapeController.ShapeProperties.FlipX
+  id: FlipX
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: FlipX
+  nameWithType: AuraShapeController.ShapeProperties.FlipX
+  fullName: AuraShapeController.ShapeProperties.FlipX
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FlipX
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("type", 2)]
+
+      public bool FlipX
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ConditionalShow("type", 2)>
+
+      Public FlipX As Boolean
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: type
+    - type: System.Int32
+      value: 2
+- uid: Global.AuraShapeController.ShapeProperties.AuraRadius
+  commentId: F:Global.AuraShapeController.ShapeProperties.AuraRadius
+  id: AuraRadius
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: AuraRadius
+  nameWithType: AuraShapeController.ShapeProperties.AuraRadius
+  fullName: AuraShapeController.ShapeProperties.AuraRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraRadius
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("type", new int[] { 1, 4, 3, 5, 2 })]
+
+      public int AuraRadius
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ConditionalShow("type", New Integer() { 1, 4, 3, 5, 2 })>
+
+      Public AuraRadius As Integer
+- uid: Global.AuraShapeController.ShapeProperties.XWeight
+  commentId: F:Global.AuraShapeController.ShapeProperties.XWeight
+  id: XWeight
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: XWeight
+  nameWithType: AuraShapeController.ShapeProperties.XWeight
+  fullName: AuraShapeController.ShapeProperties.XWeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: XWeight
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("type", 5)]
+
+      public float XWeight
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("type", 5)>
+
+      Public XWeight As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: type
+    - type: System.Int32
+      value: 5
+- uid: Global.AuraShapeController.ShapeProperties.AuraOriginOffset
+  commentId: F:Global.AuraShapeController.ShapeProperties.AuraOriginOffset
+  id: AuraOriginOffset
+  parent: Global.AuraShapeController.ShapeProperties
+  langs:
+  - csharp
+  - vb
+  name: AuraOriginOffset
+  nameWithType: AuraShapeController.ShapeProperties.AuraOriginOffset
+  fullName: AuraShapeController.ShapeProperties.AuraOriginOffset
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AuraOriginOffset
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AuraShape/AuraShapeController.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Add an offset to the origin/pivot point of the aura")]
+
+      public Vector2Int AuraOriginOffset
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: >-
+      <Tooltip("Add an offset to the origin/pivot point of the aura")>
+
+      Public AuraOriginOffset As Vector2Int
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Add an offset to the origin/pivot point of the aura
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.AuraShapeController.AuraType
+  commentId: T:Global.AuraShapeController.AuraType
+  name: AuraShapeController.AuraType
+  nameWithType: AuraShapeController.AuraType
+  fullName: AuraShapeController.AuraType
+  spec.csharp:
+  - uid: Global.AuraShapeController
+    name: AuraShapeController
+  - name: .
+  - uid: Global.AuraShapeController.AuraType
+    name: AuraType
+  spec.vb:
+  - uid: Global.AuraShapeController
+    name: AuraShapeController
+  - name: .
+  - uid: Global.AuraShapeController.AuraType
+    name: AuraType
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

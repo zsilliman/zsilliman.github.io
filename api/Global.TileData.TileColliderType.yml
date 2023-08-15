@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TileData.TileColliderType
+  commentId: T:Global.TileData.TileColliderType
+  id: TileData.TileColliderType
+  parent: Global
+  children:
+  - Global.TileData.TileColliderType.Slope
+  - Global.TileData.TileColliderType.Tile
+  - Global.TileData.TileColliderType.TileWithPadding
+  langs:
+  - csharp
+  - vb
+  name: TileData.TileColliderType
+  nameWithType: TileData.TileColliderType
+  fullName: TileData.TileColliderType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Tilemap/TileData/TileData.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TileColliderType
+    path: ../Assets/Objects & Components/Tilemap/TileData/TileData.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum TileData.TileColliderType
+    content.vb: Public Enum TileData.TileColliderType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.TileData.TileColliderType.Tile
+  commentId: F:Global.TileData.TileColliderType.Tile
+  id: Tile
+  parent: Global.TileData.TileColliderType
+  langs:
+  - csharp
+  - vb
+  name: Tile
+  nameWithType: TileData.TileColliderType.Tile
+  fullName: TileData.TileColliderType.Tile
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Tilemap/TileData/TileData.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Tile
+    path: ../Assets/Objects & Components/Tilemap/TileData/TileData.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Tile = 0
+    return:
+      type: Global.TileData.TileColliderType
+- uid: Global.TileData.TileColliderType.TileWithPadding
+  commentId: F:Global.TileData.TileColliderType.TileWithPadding
+  id: TileWithPadding
+  parent: Global.TileData.TileColliderType
+  langs:
+  - csharp
+  - vb
+  name: TileWithPadding
+  nameWithType: TileData.TileColliderType.TileWithPadding
+  fullName: TileData.TileColliderType.TileWithPadding
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Tilemap/TileData/TileData.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TileWithPadding
+    path: ../Assets/Objects & Components/Tilemap/TileData/TileData.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: TileWithPadding = 1
+    return:
+      type: Global.TileData.TileColliderType
+- uid: Global.TileData.TileColliderType.Slope
+  commentId: F:Global.TileData.TileColliderType.Slope
+  id: Slope
+  parent: Global.TileData.TileColliderType
+  langs:
+  - csharp
+  - vb
+  name: Slope
+  nameWithType: TileData.TileColliderType.Slope
+  fullName: TileData.TileColliderType.Slope
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Tilemap/TileData/TileData.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Slope
+    path: ../Assets/Objects & Components/Tilemap/TileData/TileData.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Slope = 2
+    return:
+      type: Global.TileData.TileColliderType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.TileData.TileColliderType
+  commentId: T:Global.TileData.TileColliderType
+  name: TileData.TileColliderType
+  nameWithType: TileData.TileColliderType
+  fullName: TileData.TileColliderType
+  spec.csharp:
+  - uid: Global.TileData
+    name: TileData
+  - name: .
+  - uid: Global.TileData.TileColliderType
+    name: TileColliderType
+  spec.vb:
+  - uid: Global.TileData
+    name: TileData
+  - name: .
+  - uid: Global.TileData.TileColliderType
+    name: TileColliderType

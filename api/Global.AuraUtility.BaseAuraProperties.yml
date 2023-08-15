@@ -1,0 +1,295 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AuraUtility.BaseAuraProperties
+  commentId: T:Global.AuraUtility.BaseAuraProperties
+  id: AuraUtility.BaseAuraProperties
+  parent: Global
+  children:
+  - Global.AuraUtility.BaseAuraProperties.AutoMergeEnabled
+  - Global.AuraUtility.BaseAuraProperties.DestroyOnKill
+  - Global.AuraUtility.BaseAuraProperties.DischargeOption
+  - Global.AuraUtility.BaseAuraProperties.IndicatorDuration
+  - Global.AuraUtility.BaseAuraProperties.IsBlackAura
+  langs:
+  - csharp
+  - vb
+  name: AuraUtility.BaseAuraProperties
+  nameWithType: AuraUtility.BaseAuraProperties
+  fullName: AuraUtility.BaseAuraProperties
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BaseAuraProperties
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis class stores a number of configurations shared among all auras\n"
+  example: []
+  syntax:
+    content: public class AuraUtility.BaseAuraProperties
+    content.vb: Public Class AuraUtility.BaseAuraProperties
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AuraUtility.BaseAuraProperties.IndicatorDuration
+  commentId: F:Global.AuraUtility.BaseAuraProperties.IndicatorDuration
+  id: IndicatorDuration
+  parent: Global.AuraUtility.BaseAuraProperties
+  langs:
+  - csharp
+  - vb
+  name: IndicatorDuration
+  nameWithType: AuraUtility.BaseAuraProperties.IndicatorDuration
+  fullName: AuraUtility.BaseAuraProperties.IndicatorDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IndicatorDuration
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Duration of indicator when aura spawns
+  example: []
+  syntax:
+    content: public float IndicatorDuration
+    return:
+      type: System.Single
+    content.vb: Public IndicatorDuration As Single
+- uid: Global.AuraUtility.BaseAuraProperties.DestroyOnKill
+  commentId: F:Global.AuraUtility.BaseAuraProperties.DestroyOnKill
+  id: DestroyOnKill
+  parent: Global.AuraUtility.BaseAuraProperties
+  langs:
+  - csharp
+  - vb
+  name: DestroyOnKill
+  nameWithType: AuraUtility.BaseAuraProperties.DestroyOnKill
+  fullName: AuraUtility.BaseAuraProperties.DestroyOnKill
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DestroyOnKill
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nWhether to destroy the aura gameobject when killed. As opposed to simply disabling the gameobject when killed\n"
+  example: []
+  syntax:
+    content: public bool DestroyOnKill
+    return:
+      type: System.Boolean
+    content.vb: Public DestroyOnKill As Boolean
+- uid: Global.AuraUtility.BaseAuraProperties.AutoMergeEnabled
+  commentId: F:Global.AuraUtility.BaseAuraProperties.AutoMergeEnabled
+  id: AutoMergeEnabled
+  parent: Global.AuraUtility.BaseAuraProperties
+  langs:
+  - csharp
+  - vb
+  name: AutoMergeEnabled
+  nameWithType: AuraUtility.BaseAuraProperties.AutoMergeEnabled
+  fullName: AuraUtility.BaseAuraProperties.AutoMergeEnabled
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AutoMergeEnabled
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Whether to enable the aura merge. Should be false
+  example: []
+  syntax:
+    content: public bool AutoMergeEnabled
+    return:
+      type: System.Boolean
+    content.vb: Public AutoMergeEnabled As Boolean
+- uid: Global.AuraUtility.BaseAuraProperties.IsBlackAura
+  commentId: F:Global.AuraUtility.BaseAuraProperties.IsBlackAura
+  id: IsBlackAura
+  parent: Global.AuraUtility.BaseAuraProperties
+  langs:
+  - csharp
+  - vb
+  name: IsBlackAura
+  nameWithType: AuraUtility.BaseAuraProperties.IsBlackAura
+  fullName: AuraUtility.BaseAuraProperties.IsBlackAura
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsBlackAura
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Whether the aura is black
+  example: []
+  syntax:
+    content: public bool IsBlackAura
+    return:
+      type: System.Boolean
+    content.vb: Public IsBlackAura As Boolean
+- uid: Global.AuraUtility.BaseAuraProperties.DischargeOption
+  commentId: F:Global.AuraUtility.BaseAuraProperties.DischargeOption
+  id: DischargeOption
+  parent: Global.AuraUtility.BaseAuraProperties
+  langs:
+  - csharp
+  - vb
+  name: DischargeOption
+  nameWithType: AuraUtility.BaseAuraProperties.DischargeOption
+  fullName: AuraUtility.BaseAuraProperties.DischargeOption
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DischargeOption
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Auras/AuraUtility.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: Whether the aura should disappear after one dash interaction
+  example: []
+  syntax:
+    content: public Aura.AuraDischargeOption DischargeOption
+    return:
+      type: Global.Aura.AuraDischargeOption
+    content.vb: Public DischargeOption As Aura.AuraDischargeOption
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Aura.AuraDischargeOption
+  commentId: T:Global.Aura.AuraDischargeOption
+  name: Aura.AuraDischargeOption
+  nameWithType: Aura.AuraDischargeOption
+  fullName: Aura.AuraDischargeOption
+  spec.csharp:
+  - uid: Global.Aura
+    name: Aura
+  - name: .
+  - uid: Global.Aura.AuraDischargeOption
+    name: AuraDischargeOption
+  spec.vb:
+  - uid: Global.Aura
+    name: Aura
+  - name: .
+  - uid: Global.Aura.AuraDischargeOption
+    name: AuraDischargeOption

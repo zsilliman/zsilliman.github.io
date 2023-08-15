@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomConstants.Animations
+  commentId: T:Global.CustomConstants.Animations
+  id: CustomConstants.Animations
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CustomConstants.Animations
+  nameWithType: CustomConstants.Animations
+  fullName: CustomConstants.Animations
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomConstants.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Animations
+    path: ../Assets/Framework/Util/CustomConstants.cs
+    startLine: 116
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static class CustomConstants.Animations
+    content.vb: Public Module CustomConstants.Animations
+  inheritance:
+  - System.Object
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,343 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Blit.BlitSettings
+  commentId: T:Global.Blit.BlitSettings
+  id: Blit.BlitSettings
+  parent: Global
+  children:
+  - Global.Blit.BlitSettings.blitMaterial
+  - Global.Blit.BlitSettings.blitMaterialPassIndex
+  - Global.Blit.BlitSettings.destination
+  - Global.Blit.BlitSettings.Event
+  - Global.Blit.BlitSettings.textureId
+  langs:
+  - csharp
+  - vb
+  name: Blit.BlitSettings
+  nameWithType: Blit.BlitSettings
+  fullName: Blit.BlitSettings
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BlitSettings
+    path: ../Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Blit.BlitSettings
+    content.vb: >-
+      <Serializable>
+
+      Public Class Blit.BlitSettings
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.Blit.BlitSettings.Event
+  commentId: F:Global.Blit.BlitSettings.Event
+  id: Event
+  parent: Global.Blit.BlitSettings
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: Blit.BlitSettings.Event
+  fullName: Blit.BlitSettings.Event
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Event
+    path: ../Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RenderPassEvent Event
+    return:
+      type: UnityEngine.Rendering.Universal.RenderPassEvent
+    content.vb: Public [Event] As RenderPassEvent
+- uid: Global.Blit.BlitSettings.blitMaterial
+  commentId: F:Global.Blit.BlitSettings.blitMaterial
+  id: blitMaterial
+  parent: Global.Blit.BlitSettings
+  langs:
+  - csharp
+  - vb
+  name: blitMaterial
+  nameWithType: Blit.BlitSettings.blitMaterial
+  fullName: Blit.BlitSettings.blitMaterial
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: blitMaterial
+    path: ../Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Material blitMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: Public blitMaterial As Material
+- uid: Global.Blit.BlitSettings.blitMaterialPassIndex
+  commentId: F:Global.Blit.BlitSettings.blitMaterialPassIndex
+  id: blitMaterialPassIndex
+  parent: Global.Blit.BlitSettings
+  langs:
+  - csharp
+  - vb
+  name: blitMaterialPassIndex
+  nameWithType: Blit.BlitSettings.blitMaterialPassIndex
+  fullName: Blit.BlitSettings.blitMaterialPassIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: blitMaterialPassIndex
+    path: ../Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int blitMaterialPassIndex
+    return:
+      type: System.Int32
+    content.vb: Public blitMaterialPassIndex As Integer
+- uid: Global.Blit.BlitSettings.destination
+  commentId: F:Global.Blit.BlitSettings.destination
+  id: destination
+  parent: Global.Blit.BlitSettings
+  langs:
+  - csharp
+  - vb
+  name: destination
+  nameWithType: Blit.BlitSettings.destination
+  fullName: Blit.BlitSettings.destination
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: destination
+    path: ../Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Blit.Target destination
+    return:
+      type: Global.Blit.Target
+    content.vb: Public destination As Blit.Target
+- uid: Global.Blit.BlitSettings.textureId
+  commentId: F:Global.Blit.BlitSettings.textureId
+  id: textureId
+  parent: Global.Blit.BlitSettings
+  langs:
+  - csharp
+  - vb
+  name: textureId
+  nameWithType: Blit.BlitSettings.textureId
+  fullName: Blit.BlitSettings.textureId
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: textureId
+    path: ../Assets/Objects & Components/Camera/Effects/PostProcess/Blit.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public string textureId
+    return:
+      type: System.String
+    content.vb: Public textureId As String
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Rendering.Universal.RenderPassEvent
+  commentId: T:UnityEngine.Rendering.Universal.RenderPassEvent
+  parent: UnityEngine.Rendering.Universal
+  isExternal: true
+  name: RenderPassEvent
+  nameWithType: RenderPassEvent
+  fullName: UnityEngine.Rendering.Universal.RenderPassEvent
+- uid: UnityEngine.Rendering.Universal
+  commentId: N:UnityEngine.Rendering.Universal
+  isExternal: true
+  name: UnityEngine.Rendering.Universal
+  nameWithType: UnityEngine.Rendering.Universal
+  fullName: UnityEngine.Rendering.Universal
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering
+    name: Rendering
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering.Universal
+    name: Universal
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering
+    name: Rendering
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering.Universal
+    name: Universal
+    isExternal: true
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Blit.Target
+  commentId: T:Global.Blit.Target
+  name: Blit.Target
+  nameWithType: Blit.Target
+  fullName: Blit.Target
+  spec.csharp:
+  - uid: Global.Blit
+    name: Blit
+  - name: .
+  - uid: Global.Blit.Target
+    name: Target
+  spec.vb:
+  - uid: Global.Blit
+    name: Blit
+  - name: .
+  - uid: Global.Blit.Target
+    name: Target
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

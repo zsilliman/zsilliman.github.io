@@ -1,0 +1,2817 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AutoMergeAura
+  commentId: T:Global.AutoMergeAura
+  id: AutoMergeAura
+  parent: Global
+  children:
+  - Global.AutoMergeAura.AllowAutoMerge
+  - Global.AutoMergeAura.AttemptDischarge
+  - Global.AutoMergeAura.auras
+  - Global.AutoMergeAura.AutoMergeEnabled
+  - Global.AutoMergeAura.BoundingCircleRadius
+  - Global.AutoMergeAura.CallFunctionAfterDelay(IntObject.Action,System.Single)
+  - Global.AutoMergeAura.CircleRadius
+  - Global.AutoMergeAura.ContainsPoint(UnityEngine.Vector2Int)
+  - Global.AutoMergeAura.DischargeOption
+  - Global.AutoMergeAura.FlashAura(UnityEngine.Vector2)
+  - Global.AutoMergeAura.FlushVisibleVertices
+  - Global.AutoMergeAura.GetOriginalVertices
+  - Global.AutoMergeAura.GetOutlineRays
+  - Global.AutoMergeAura.GetRayIntersection(IntRay)
+  - Global.AutoMergeAura.GetRayIntersections(IntRay)
+  - Global.AutoMergeAura.indicatorDuration
+  - Global.AutoMergeAura.IsBlackAura
+  - Global.AutoMergeAura.IsCircle
+  - Global.AutoMergeAura.IsContainedInRect(UnityEngine.Rect)
+  - Global.AutoMergeAura.isIndicator
+  - Global.AutoMergeAura.Kill(System.Boolean)
+  - Global.AutoMergeAura.KillsPlayer
+  - Global.AutoMergeAura.originalClosed
+  - Global.AutoMergeAura.originalVertices
+  - Global.AutoMergeAura.Overlaps(IntObject,UnityEngine.Vector2Int)
+  - Global.AutoMergeAura.OverlapsAutoMergeAura(AutoMergeAura)
+  - Global.AutoMergeAura.RegisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  - Global.AutoMergeAura.ResetObject
+  - Global.AutoMergeAura.SetIsCircle(System.Boolean,System.Int32)
+  - Global.AutoMergeAura.SetShape(System.Collections.Generic.List{UnityEngine.Vector2Int})
+  - Global.AutoMergeAura.Start
+  - Global.AutoMergeAura.StartIndicator
+  - Global.AutoMergeAura.UnregisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  - Global.AutoMergeAura.Update
+  - Global.AutoMergeAura.useSpline
+  - Global.AutoMergeAura.useWorldSpace
+  langs:
+  - csharp
+  - vb
+  name: AutoMergeAura
+  nameWithType: AutoMergeAura
+  fullName: AutoMergeAura
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AutoMergeAura
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class AutoMergeAura : IntObject, ISavableObject<IntObjectSaveData>'
+    content.vb: Public Class AutoMergeAura Inherits IntObject Implements ISavableObject(Of IntObjectSaveData)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.IntObject
+  implements:
+  - Global.ISavableObject{IntObjectSaveData}
+  inheritedMembers:
+  - Global.IntObject.section
+  - Global.IntObject.state
+  - Global.IntObject.int_collider
+  - Global.IntObject.remainder
+  - Global.IntObject.StartPosition
+  - Global.IntObject.AttachedToPlayer
+  - Global.IntObject.IgnoredObjectsMap
+  - Global.IntObject.KilledCallback
+  - Global.IntObject.Position
+  - Global.IntObject.GetStartWorldPosition
+  - Global.IntObject.collider_type
+  - Global.IntObject.MarkedForKill
+  - Global.IntObject.ObjectID
+  - Global.IntObject.DestroyOnKill
+  - Global.IntObject.RespawnBehavior
+  - Global.IntObject.Status
+  - Global.IntObject.InitialStatus
+  - Global.IntObject.SaveObject
+  - Global.IntObject.IsInSetPiece
+  - Global.IntObject.Awake
+  - Global.IntObject.Init
+  - Global.IntObject.FindIntColliderState(System.Int32)
+  - Global.IntObject.GetLocalGameStates
+  - Global.IntObject.RegisterSelf
+  - Global.IntObject.UnregisterSelf
+  - Global.IntObject.RegisterKilledCallback(IntObject.Action)
+  - Global.IntObject.UnregisterKilledCallback(IntObject.Action)
+  - Global.IntObject.SetStatus(ObjectStatus)
+  - Global.IntObject.OnKill(System.Boolean)
+  - Global.IntObject.Kill
+  - Global.IntObject.Kill(System.Single)
+  - Global.IntObject.Kill(System.Boolean,System.Single)
+  - Global.IntObject.IgnoreObjectCollisions(IntObject,System.Single)
+  - Global.IntObject.SleepObject
+  - Global.IntObject.OptimizeSleepObject
+  - Global.IntObject.WakeObject
+  - Global.IntObject.EnableObject
+  - Global.IntObject.DisableObject
+  - Global.IntObject.RespawnObject
+  - Global.IntObject.RecursiveSetCollidable(System.Boolean)
+  - Global.IntObject.SetColliderState(IntColliderState)
+  - Global.IntObject.Translate(UnityEngine.Vector2Int)
+  - Global.IntObject.Translate(UnityEngine.Vector2)
+  - Global.IntObject.SetPosition(UnityEngine.Vector2Int)
+  - Global.IntObject.SetCollidable(System.Boolean)
+  - Global.IntObject.GetCollidable
+  - Global.IntObject.GetCollider
+  - Global.IntObject.GetColliderState
+  - Global.IntObject.Overlaps(IntObject)
+  - Global.IntObject.RayCast(IntRay)
+  - Global.IntObject.CollideAt(System.Collections.Generic.List{IntSolid},UnityEngine.Vector2Int)
+  - Global.IntObject.CollideAt(System.Collections.Generic.List{IntActor},UnityEngine.Vector2Int)
+  - Global.IntObject.CollideAt(System.Collections.Generic.List{IntTrigger},UnityEngine.Vector2Int)
+  - Global.IntObject.OnDrawGizmos
+  - Global.IntObject.LoadObjectSaveData(IntObjectSaveData)
+  - Global.IntObject.GetObjectSaveData
+  - Global.IntObject.OnPostLoadSaveFile
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.AutoMergeAura.IsBlackAura
+  commentId: F:Global.AutoMergeAura.IsBlackAura
+  id: IsBlackAura
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: IsBlackAura
+  nameWithType: AutoMergeAura.IsBlackAura
+  fullName: AutoMergeAura.IsBlackAura
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsBlackAura
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsBlackAura
+    return:
+      type: System.Boolean
+    content.vb: Public IsBlackAura As Boolean
+- uid: Global.AutoMergeAura.originalVertices
+  commentId: F:Global.AutoMergeAura.originalVertices
+  id: originalVertices
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: originalVertices
+  nameWithType: AutoMergeAura.originalVertices
+  fullName: AutoMergeAura.originalVertices
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: originalVertices
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<AutoMergeAura.OriginalVertex> originalVertices
+    return:
+      type: System.Collections.Generic.List{AutoMergeAura.OriginalVertex}
+    content.vb: Protected originalVertices As List(Of AutoMergeAura.OriginalVertex)
+- uid: Global.AutoMergeAura.auras
+  commentId: F:Global.AutoMergeAura.auras
+  id: auras
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: auras
+  nameWithType: AutoMergeAura.auras
+  fullName: AutoMergeAura.auras
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auras
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<Aura> auras
+    return:
+      type: System.Collections.Generic.List{Aura}
+    content.vb: Protected auras As List(Of Aura)
+- uid: Global.AutoMergeAura.AutoMergeEnabled
+  commentId: F:Global.AutoMergeAura.AutoMergeEnabled
+  id: AutoMergeEnabled
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: AutoMergeEnabled
+  nameWithType: AutoMergeAura.AutoMergeEnabled
+  fullName: AutoMergeAura.AutoMergeEnabled
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AutoMergeEnabled
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool AutoMergeEnabled
+    return:
+      type: System.Boolean
+    content.vb: Public AutoMergeEnabled As Boolean
+- uid: Global.AutoMergeAura.KillsPlayer
+  commentId: F:Global.AutoMergeAura.KillsPlayer
+  id: KillsPlayer
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: KillsPlayer
+  nameWithType: AutoMergeAura.KillsPlayer
+  fullName: AutoMergeAura.KillsPlayer
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: KillsPlayer
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool KillsPlayer
+    return:
+      type: System.Boolean
+    content.vb: Public KillsPlayer As Boolean
+- uid: Global.AutoMergeAura.originalClosed
+  commentId: P:Global.AutoMergeAura.originalClosed
+  id: originalClosed
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: originalClosed
+  nameWithType: AutoMergeAura.originalClosed
+  fullName: AutoMergeAura.originalClosed
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: originalClosed
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool originalClosed { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property originalClosed As Boolean
+  overload: Global.AutoMergeAura.originalClosed*
+- uid: Global.AutoMergeAura.useSpline
+  commentId: P:Global.AutoMergeAura.useSpline
+  id: useSpline
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: useSpline
+  nameWithType: AutoMergeAura.useSpline
+  fullName: AutoMergeAura.useSpline
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: useSpline
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool useSpline { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property useSpline As Boolean
+  overload: Global.AutoMergeAura.useSpline*
+- uid: Global.AutoMergeAura.useWorldSpace
+  commentId: F:Global.AutoMergeAura.useWorldSpace
+  id: useWorldSpace
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: useWorldSpace
+  nameWithType: AutoMergeAura.useWorldSpace
+  fullName: AutoMergeAura.useWorldSpace
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: useWorldSpace
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool useWorldSpace
+    return:
+      type: System.Boolean
+    content.vb: Public useWorldSpace As Boolean
+- uid: Global.AutoMergeAura.isIndicator
+  commentId: F:Global.AutoMergeAura.isIndicator
+  id: isIndicator
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: isIndicator
+  nameWithType: AutoMergeAura.isIndicator
+  fullName: AutoMergeAura.isIndicator
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: isIndicator
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool isIndicator
+    return:
+      type: System.Boolean
+    content.vb: Public isIndicator As Boolean
+- uid: Global.AutoMergeAura.indicatorDuration
+  commentId: F:Global.AutoMergeAura.indicatorDuration
+  id: indicatorDuration
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: indicatorDuration
+  nameWithType: AutoMergeAura.indicatorDuration
+  fullName: AutoMergeAura.indicatorDuration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: indicatorDuration
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("isIndicator", 1)]
+
+      public float indicatorDuration
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("isIndicator", 1)>
+
+      Public indicatorDuration As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: isIndicator
+    - type: System.Int32
+      value: 1
+- uid: Global.AutoMergeAura.DischargeOption
+  commentId: F:Global.AutoMergeAura.DischargeOption
+  id: DischargeOption
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: DischargeOption
+  nameWithType: AutoMergeAura.DischargeOption
+  fullName: AutoMergeAura.DischargeOption
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DischargeOption
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Aura.AuraDischargeOption DischargeOption
+    return:
+      type: Global.Aura.AuraDischargeOption
+    content.vb: Public DischargeOption As Aura.AuraDischargeOption
+- uid: Global.AutoMergeAura.IsCircle
+  commentId: F:Global.AutoMergeAura.IsCircle
+  id: IsCircle
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: IsCircle
+  nameWithType: AutoMergeAura.IsCircle
+  fullName: AutoMergeAura.IsCircle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsCircle
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool IsCircle
+    return:
+      type: System.Boolean
+    content.vb: Protected IsCircle As Boolean
+- uid: Global.AutoMergeAura.CircleRadius
+  commentId: F:Global.AutoMergeAura.CircleRadius
+  id: CircleRadius
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: CircleRadius
+  nameWithType: AutoMergeAura.CircleRadius
+  fullName: AutoMergeAura.CircleRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CircleRadius
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected int CircleRadius
+    return:
+      type: System.Int32
+    content.vb: Protected CircleRadius As Integer
+- uid: Global.AutoMergeAura.BoundingCircleRadius
+  commentId: F:Global.AutoMergeAura.BoundingCircleRadius
+  id: BoundingCircleRadius
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: BoundingCircleRadius
+  nameWithType: AutoMergeAura.BoundingCircleRadius
+  fullName: AutoMergeAura.BoundingCircleRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BoundingCircleRadius
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected float BoundingCircleRadius
+    return:
+      type: System.Single
+    content.vb: Protected BoundingCircleRadius As Single
+- uid: Global.AutoMergeAura.AllowAutoMerge
+  commentId: P:Global.AutoMergeAura.AllowAutoMerge
+  id: AllowAutoMerge
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: AllowAutoMerge
+  nameWithType: AutoMergeAura.AllowAutoMerge
+  fullName: AutoMergeAura.AllowAutoMerge
+  type: Property
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AllowAutoMerge
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool AllowAutoMerge { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property AllowAutoMerge As Boolean
+  overload: Global.AutoMergeAura.AllowAutoMerge*
+- uid: Global.AutoMergeAura.Start
+  commentId: M:Global.AutoMergeAura.Start
+  id: Start
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: AutoMergeAura.Start()
+  fullName: AutoMergeAura.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.AutoMergeAura.Start*
+- uid: Global.AutoMergeAura.RegisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  commentId: M:Global.AutoMergeAura.RegisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  id: RegisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: RegisterPlayerTriggerCallback(TriggerCallback)
+  nameWithType: AutoMergeAura.RegisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  fullName: AutoMergeAura.RegisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterPlayerTriggerCallback
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterPlayerTriggerCallback(IntTrigger.TriggerCallback callback)
+    parameters:
+    - id: callback
+      type: Global.IntTrigger.TriggerCallback
+    content.vb: Public Sub RegisterPlayerTriggerCallback(callback As IntTrigger.TriggerCallback)
+  overload: Global.AutoMergeAura.RegisterPlayerTriggerCallback*
+- uid: Global.AutoMergeAura.UnregisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  commentId: M:Global.AutoMergeAura.UnregisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  id: UnregisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: UnregisterPlayerTriggerCallback(TriggerCallback)
+  nameWithType: AutoMergeAura.UnregisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  fullName: AutoMergeAura.UnregisterPlayerTriggerCallback(IntTrigger.TriggerCallback)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnregisterPlayerTriggerCallback
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnregisterPlayerTriggerCallback(IntTrigger.TriggerCallback callback)
+    parameters:
+    - id: callback
+      type: Global.IntTrigger.TriggerCallback
+    content.vb: Public Sub UnregisterPlayerTriggerCallback(callback As IntTrigger.TriggerCallback)
+  overload: Global.AutoMergeAura.UnregisterPlayerTriggerCallback*
+- uid: Global.AutoMergeAura.ResetObject
+  commentId: M:Global.AutoMergeAura.ResetObject
+  id: ResetObject
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: ResetObject()
+  nameWithType: AutoMergeAura.ResetObject()
+  fullName: AutoMergeAura.ResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResetObject
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void ResetObject()
+    content.vb: Public Overrides Sub ResetObject()
+  overridden: Global.IntObject.ResetObject
+  overload: Global.AutoMergeAura.ResetObject*
+- uid: Global.AutoMergeAura.IsContainedInRect(UnityEngine.Rect)
+  commentId: M:Global.AutoMergeAura.IsContainedInRect(UnityEngine.Rect)
+  id: IsContainedInRect(UnityEngine.Rect)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: IsContainedInRect(Rect)
+  nameWithType: AutoMergeAura.IsContainedInRect(Rect)
+  fullName: AutoMergeAura.IsContainedInRect(UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsContainedInRect
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsContainedInRect(Rect rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.Rect
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsContainedInRect(rect As Rect) As Boolean
+  overridden: Global.IntObject.IsContainedInRect(UnityEngine.Rect)
+  overload: Global.AutoMergeAura.IsContainedInRect*
+- uid: Global.AutoMergeAura.AttemptDischarge
+  commentId: M:Global.AutoMergeAura.AttemptDischarge
+  id: AttemptDischarge
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: AttemptDischarge()
+  nameWithType: AutoMergeAura.AttemptDischarge()
+  fullName: AutoMergeAura.AttemptDischarge()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AttemptDischarge
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AttemptDischarge()
+    content.vb: Public Sub AttemptDischarge()
+  overload: Global.AutoMergeAura.AttemptDischarge*
+- uid: Global.AutoMergeAura.StartIndicator
+  commentId: M:Global.AutoMergeAura.StartIndicator
+  id: StartIndicator
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: StartIndicator()
+  nameWithType: AutoMergeAura.StartIndicator()
+  fullName: AutoMergeAura.StartIndicator()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: StartIndicator
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 126
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void StartIndicator()
+    content.vb: Public Sub StartIndicator()
+  overload: Global.AutoMergeAura.StartIndicator*
+- uid: Global.AutoMergeAura.FlashAura(UnityEngine.Vector2)
+  commentId: M:Global.AutoMergeAura.FlashAura(UnityEngine.Vector2)
+  id: FlashAura(UnityEngine.Vector2)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: FlashAura(Vector2)
+  nameWithType: AutoMergeAura.FlashAura(Vector2)
+  fullName: AutoMergeAura.FlashAura(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FlashAura
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 142
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void FlashAura(Vector2 WorldPosition)
+    parameters:
+    - id: WorldPosition
+      type: UnityEngine.Vector2
+    content.vb: Public Sub FlashAura(WorldPosition As Vector2)
+  overload: Global.AutoMergeAura.FlashAura*
+- uid: Global.AutoMergeAura.GetOriginalVertices
+  commentId: M:Global.AutoMergeAura.GetOriginalVertices
+  id: GetOriginalVertices
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: GetOriginalVertices()
+  nameWithType: AutoMergeAura.GetOriginalVertices()
+  fullName: AutoMergeAura.GetOriginalVertices()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetOriginalVertices
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<AutoMergeAura.OriginalVertex> GetOriginalVertices()
+    return:
+      type: System.Collections.Generic.List{AutoMergeAura.OriginalVertex}
+    content.vb: Public Function GetOriginalVertices() As List(Of AutoMergeAura.OriginalVertex)
+  overload: Global.AutoMergeAura.GetOriginalVertices*
+- uid: Global.AutoMergeAura.SetShape(System.Collections.Generic.List{UnityEngine.Vector2Int})
+  commentId: M:Global.AutoMergeAura.SetShape(System.Collections.Generic.List{UnityEngine.Vector2Int})
+  id: SetShape(System.Collections.Generic.List{UnityEngine.Vector2Int})
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: SetShape(List<Vector2Int>)
+  nameWithType: AutoMergeAura.SetShape(List<Vector2Int>)
+  fullName: AutoMergeAura.SetShape(System.Collections.Generic.List<UnityEngine.Vector2Int>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetShape
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 155
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetShape(List<Vector2Int> shape)
+    parameters:
+    - id: shape
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    content.vb: Public Sub SetShape(shape As List(Of Vector2Int))
+  overload: Global.AutoMergeAura.SetShape*
+  nameWithType.vb: AutoMergeAura.SetShape(List(Of Vector2Int))
+  fullName.vb: AutoMergeAura.SetShape(System.Collections.Generic.List(Of UnityEngine.Vector2Int))
+  name.vb: SetShape(List(Of Vector2Int))
+- uid: Global.AutoMergeAura.SetIsCircle(System.Boolean,System.Int32)
+  commentId: M:Global.AutoMergeAura.SetIsCircle(System.Boolean,System.Int32)
+  id: SetIsCircle(System.Boolean,System.Int32)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: SetIsCircle(bool, int)
+  nameWithType: AutoMergeAura.SetIsCircle(bool, int)
+  fullName: AutoMergeAura.SetIsCircle(bool, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetIsCircle
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 169
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetIsCircle(bool isCircle, int radius)
+    parameters:
+    - id: isCircle
+      type: System.Boolean
+    - id: radius
+      type: System.Int32
+    content.vb: Public Sub SetIsCircle(isCircle As Boolean, radius As Integer)
+  overload: Global.AutoMergeAura.SetIsCircle*
+  nameWithType.vb: AutoMergeAura.SetIsCircle(Boolean, Integer)
+  fullName.vb: AutoMergeAura.SetIsCircle(Boolean, Integer)
+  name.vb: SetIsCircle(Boolean, Integer)
+- uid: Global.AutoMergeAura.FlushVisibleVertices
+  commentId: M:Global.AutoMergeAura.FlushVisibleVertices
+  id: FlushVisibleVertices
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: FlushVisibleVertices()
+  nameWithType: AutoMergeAura.FlushVisibleVertices()
+  fullName: AutoMergeAura.FlushVisibleVertices()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FlushVisibleVertices
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 269
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void FlushVisibleVertices()
+    content.vb: Public Sub FlushVisibleVertices()
+  overload: Global.AutoMergeAura.FlushVisibleVertices*
+- uid: Global.AutoMergeAura.Update
+  commentId: M:Global.AutoMergeAura.Update
+  id: Update
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: AutoMergeAura.Update()
+  fullName: AutoMergeAura.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 369
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Update()
+    content.vb: Protected Sub Update()
+  overload: Global.AutoMergeAura.Update*
+- uid: Global.AutoMergeAura.ContainsPoint(UnityEngine.Vector2Int)
+  commentId: M:Global.AutoMergeAura.ContainsPoint(UnityEngine.Vector2Int)
+  id: ContainsPoint(UnityEngine.Vector2Int)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: ContainsPoint(Vector2Int)
+  nameWithType: AutoMergeAura.ContainsPoint(Vector2Int)
+  fullName: AutoMergeAura.ContainsPoint(UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ContainsPoint
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 513
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool ContainsPoint(Vector2Int point)
+    parameters:
+    - id: point
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Protected Function ContainsPoint(point As Vector2Int) As Boolean
+  overload: Global.AutoMergeAura.ContainsPoint*
+- uid: Global.AutoMergeAura.OverlapsAutoMergeAura(AutoMergeAura)
+  commentId: M:Global.AutoMergeAura.OverlapsAutoMergeAura(AutoMergeAura)
+  id: OverlapsAutoMergeAura(AutoMergeAura)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: OverlapsAutoMergeAura(AutoMergeAura)
+  nameWithType: AutoMergeAura.OverlapsAutoMergeAura(AutoMergeAura)
+  fullName: AutoMergeAura.OverlapsAutoMergeAura(AutoMergeAura)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverlapsAutoMergeAura
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 529
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected bool OverlapsAutoMergeAura(AutoMergeAura other)
+    parameters:
+    - id: other
+      type: Global.AutoMergeAura
+    return:
+      type: System.Boolean
+    content.vb: Protected Function OverlapsAutoMergeAura(other As AutoMergeAura) As Boolean
+  overload: Global.AutoMergeAura.OverlapsAutoMergeAura*
+- uid: Global.AutoMergeAura.Overlaps(IntObject,UnityEngine.Vector2Int)
+  commentId: M:Global.AutoMergeAura.Overlaps(IntObject,UnityEngine.Vector2Int)
+  id: Overlaps(IntObject,UnityEngine.Vector2Int)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: Overlaps(IntObject, Vector2Int)
+  nameWithType: AutoMergeAura.Overlaps(IntObject, Vector2Int)
+  fullName: AutoMergeAura.Overlaps(IntObject, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Overlaps
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 541
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool Overlaps(IntObject other, Vector2Int dPos)
+    parameters:
+    - id: other
+      type: Global.IntObject
+    - id: dPos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Overlaps(other As IntObject, dPos As Vector2Int) As Boolean
+  overridden: Global.IntObject.Overlaps(IntObject,UnityEngine.Vector2Int)
+  overload: Global.AutoMergeAura.Overlaps*
+- uid: Global.AutoMergeAura.GetOutlineRays
+  commentId: M:Global.AutoMergeAura.GetOutlineRays
+  id: GetOutlineRays
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: GetOutlineRays()
+  nameWithType: AutoMergeAura.GetOutlineRays()
+  fullName: AutoMergeAura.GetOutlineRays()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetOutlineRays
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 551
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<IntRay> GetOutlineRays()
+    return:
+      type: System.Collections.Generic.List{IntRay}
+    content.vb: Public Function GetOutlineRays() As List(Of IntRay)
+  overload: Global.AutoMergeAura.GetOutlineRays*
+- uid: Global.AutoMergeAura.GetRayIntersection(IntRay)
+  commentId: M:Global.AutoMergeAura.GetRayIntersection(IntRay)
+  id: GetRayIntersection(IntRay)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: GetRayIntersection(IntRay)
+  nameWithType: AutoMergeAura.GetRayIntersection(IntRay)
+  fullName: AutoMergeAura.GetRayIntersection(IntRay)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetRayIntersection
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 574
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected AutoMergeAura.AuraIntersection GetRayIntersection(IntRay ray)
+    parameters:
+    - id: ray
+      type: Global.IntRay
+    return:
+      type: Global.AutoMergeAura.AuraIntersection
+    content.vb: Protected Function GetRayIntersection(ray As IntRay) As AutoMergeAura.AuraIntersection
+  overload: Global.AutoMergeAura.GetRayIntersection*
+- uid: Global.AutoMergeAura.GetRayIntersections(IntRay)
+  commentId: M:Global.AutoMergeAura.GetRayIntersections(IntRay)
+  id: GetRayIntersections(IntRay)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: GetRayIntersections(IntRay)
+  nameWithType: AutoMergeAura.GetRayIntersections(IntRay)
+  fullName: AutoMergeAura.GetRayIntersections(IntRay)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetRayIntersections
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 597
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected List<AutoMergeAura.AuraIntersection> GetRayIntersections(IntRay ray)
+    parameters:
+    - id: ray
+      type: Global.IntRay
+    return:
+      type: System.Collections.Generic.List{AutoMergeAura.AuraIntersection}
+    content.vb: Protected Function GetRayIntersections(ray As IntRay) As List(Of AutoMergeAura.AuraIntersection)
+  overload: Global.AutoMergeAura.GetRayIntersections*
+- uid: Global.AutoMergeAura.Kill(System.Boolean)
+  commentId: M:Global.AutoMergeAura.Kill(System.Boolean)
+  id: Kill(System.Boolean)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: Kill(bool)
+  nameWithType: AutoMergeAura.Kill(bool)
+  fullName: AutoMergeAura.Kill(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Kill
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 618
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Kill(bool isAnimated = true)
+    parameters:
+    - id: isAnimated
+      type: System.Boolean
+    content.vb: Public Sub Kill(isAnimated As Boolean = True)
+  overload: Global.AutoMergeAura.Kill*
+  nameWithType.vb: AutoMergeAura.Kill(Boolean)
+  fullName.vb: AutoMergeAura.Kill(Boolean)
+  name.vb: Kill(Boolean)
+- uid: Global.AutoMergeAura.CallFunctionAfterDelay(IntObject.Action,System.Single)
+  commentId: M:Global.AutoMergeAura.CallFunctionAfterDelay(IntObject.Action,System.Single)
+  id: CallFunctionAfterDelay(IntObject.Action,System.Single)
+  parent: Global.AutoMergeAura
+  langs:
+  - csharp
+  - vb
+  name: CallFunctionAfterDelay(Action, float)
+  nameWithType: AutoMergeAura.CallFunctionAfterDelay(IntObject.Action, float)
+  fullName: AutoMergeAura.CallFunctionAfterDelay(IntObject.Action, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CallFunctionAfterDelay
+    path: ../Assets/Objects & Components/Entities/Auras/AuraMerging/AutoMergeAura.cs
+    startLine: 644
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void CallFunctionAfterDelay(IntObject.Action func, float time)
+    parameters:
+    - id: func
+      type: Global.IntObject.Action
+    - id: time
+      type: System.Single
+    content.vb: Public Sub CallFunctionAfterDelay(func As IntObject.Action, time As Single)
+  overload: Global.AutoMergeAura.CallFunctionAfterDelay*
+  nameWithType.vb: AutoMergeAura.CallFunctionAfterDelay(IntObject.Action, Single)
+  fullName.vb: AutoMergeAura.CallFunctionAfterDelay(IntObject.Action, Single)
+  name.vb: CallFunctionAfterDelay(Action, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.IntObject
+  commentId: T:Global.IntObject
+  name: IntObject
+  nameWithType: IntObject
+  fullName: IntObject
+- uid: Global.ISavableObject{IntObjectSaveData}
+  commentId: T:Global.ISavableObject{IntObjectSaveData}
+  definition: Global.ISavableObject`1
+  name: ISavableObject<IntObjectSaveData>
+  nameWithType: ISavableObject<IntObjectSaveData>
+  fullName: ISavableObject<IntObjectSaveData>
+  nameWithType.vb: ISavableObject(Of IntObjectSaveData)
+  fullName.vb: ISavableObject(Of IntObjectSaveData)
+  name.vb: ISavableObject(Of IntObjectSaveData)
+  spec.csharp:
+  - uid: Global.ISavableObject`1
+    name: ISavableObject
+  - name: <
+  - uid: Global.IntObjectSaveData
+    name: IntObjectSaveData
+  - name: '>'
+  spec.vb:
+  - uid: Global.ISavableObject`1
+    name: ISavableObject
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntObjectSaveData
+    name: IntObjectSaveData
+  - name: )
+- uid: Global.IntObject.section
+  commentId: P:Global.IntObject.section
+  parent: Global.IntObject
+  name: section
+  nameWithType: IntObject.section
+  fullName: IntObject.section
+- uid: Global.IntObject.state
+  commentId: P:Global.IntObject.state
+  parent: Global.IntObject
+  name: state
+  nameWithType: IntObject.state
+  fullName: IntObject.state
+- uid: Global.IntObject.int_collider
+  commentId: F:Global.IntObject.int_collider
+  parent: Global.IntObject
+  name: int_collider
+  nameWithType: IntObject.int_collider
+  fullName: IntObject.int_collider
+- uid: Global.IntObject.remainder
+  commentId: F:Global.IntObject.remainder
+  parent: Global.IntObject
+  name: remainder
+  nameWithType: IntObject.remainder
+  fullName: IntObject.remainder
+- uid: Global.IntObject.StartPosition
+  commentId: F:Global.IntObject.StartPosition
+  parent: Global.IntObject
+  name: StartPosition
+  nameWithType: IntObject.StartPosition
+  fullName: IntObject.StartPosition
+- uid: Global.IntObject.AttachedToPlayer
+  commentId: F:Global.IntObject.AttachedToPlayer
+  parent: Global.IntObject
+  name: AttachedToPlayer
+  nameWithType: IntObject.AttachedToPlayer
+  fullName: IntObject.AttachedToPlayer
+- uid: Global.IntObject.IgnoredObjectsMap
+  commentId: F:Global.IntObject.IgnoredObjectsMap
+  parent: Global.IntObject
+  name: IgnoredObjectsMap
+  nameWithType: IntObject.IgnoredObjectsMap
+  fullName: IntObject.IgnoredObjectsMap
+- uid: Global.IntObject.KilledCallback
+  commentId: F:Global.IntObject.KilledCallback
+  parent: Global.IntObject
+  name: KilledCallback
+  nameWithType: IntObject.KilledCallback
+  fullName: IntObject.KilledCallback
+- uid: Global.IntObject.Position
+  commentId: P:Global.IntObject.Position
+  parent: Global.IntObject
+  name: Position
+  nameWithType: IntObject.Position
+  fullName: IntObject.Position
+- uid: Global.IntObject.GetStartWorldPosition
+  commentId: P:Global.IntObject.GetStartWorldPosition
+  parent: Global.IntObject
+  name: GetStartWorldPosition
+  nameWithType: IntObject.GetStartWorldPosition
+  fullName: IntObject.GetStartWorldPosition
+- uid: Global.IntObject.collider_type
+  commentId: P:Global.IntObject.collider_type
+  parent: Global.IntObject
+  name: collider_type
+  nameWithType: IntObject.collider_type
+  fullName: IntObject.collider_type
+- uid: Global.IntObject.MarkedForKill
+  commentId: P:Global.IntObject.MarkedForKill
+  parent: Global.IntObject
+  name: MarkedForKill
+  nameWithType: IntObject.MarkedForKill
+  fullName: IntObject.MarkedForKill
+- uid: Global.IntObject.ObjectID
+  commentId: F:Global.IntObject.ObjectID
+  parent: Global.IntObject
+  name: ObjectID
+  nameWithType: IntObject.ObjectID
+  fullName: IntObject.ObjectID
+- uid: Global.IntObject.DestroyOnKill
+  commentId: F:Global.IntObject.DestroyOnKill
+  parent: Global.IntObject
+  name: DestroyOnKill
+  nameWithType: IntObject.DestroyOnKill
+  fullName: IntObject.DestroyOnKill
+- uid: Global.IntObject.RespawnBehavior
+  commentId: F:Global.IntObject.RespawnBehavior
+  parent: Global.IntObject
+  name: RespawnBehavior
+  nameWithType: IntObject.RespawnBehavior
+  fullName: IntObject.RespawnBehavior
+- uid: Global.IntObject.Status
+  commentId: F:Global.IntObject.Status
+  parent: Global.IntObject
+  name: Status
+  nameWithType: IntObject.Status
+  fullName: IntObject.Status
+- uid: Global.IntObject.InitialStatus
+  commentId: F:Global.IntObject.InitialStatus
+  parent: Global.IntObject
+  name: InitialStatus
+  nameWithType: IntObject.InitialStatus
+  fullName: IntObject.InitialStatus
+- uid: Global.IntObject.SaveObject
+  commentId: F:Global.IntObject.SaveObject
+  parent: Global.IntObject
+  name: SaveObject
+  nameWithType: IntObject.SaveObject
+  fullName: IntObject.SaveObject
+- uid: Global.IntObject.IsInSetPiece
+  commentId: P:Global.IntObject.IsInSetPiece
+  parent: Global.IntObject
+  name: IsInSetPiece
+  nameWithType: IntObject.IsInSetPiece
+  fullName: IntObject.IsInSetPiece
+- uid: Global.IntObject.Awake
+  commentId: M:Global.IntObject.Awake
+  parent: Global.IntObject
+  name: Awake()
+  nameWithType: IntObject.Awake()
+  fullName: IntObject.Awake()
+  spec.csharp:
+  - uid: Global.IntObject.Awake
+    name: Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Awake
+    name: Awake
+  - name: (
+  - name: )
+- uid: Global.IntObject.Init
+  commentId: M:Global.IntObject.Init
+  parent: Global.IntObject
+  name: Init()
+  nameWithType: IntObject.Init()
+  fullName: IntObject.Init()
+  spec.csharp:
+  - uid: Global.IntObject.Init
+    name: Init
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Init
+    name: Init
+  - name: (
+  - name: )
+- uid: Global.IntObject.FindIntColliderState(System.Int32)
+  commentId: M:Global.IntObject.FindIntColliderState(System.Int32)
+  parent: Global.IntObject
+  isExternal: true
+  name: FindIntColliderState(int)
+  nameWithType: IntObject.FindIntColliderState(int)
+  fullName: IntObject.FindIntColliderState(int)
+  nameWithType.vb: IntObject.FindIntColliderState(Integer)
+  fullName.vb: IntObject.FindIntColliderState(Integer)
+  name.vb: FindIntColliderState(Integer)
+  spec.csharp:
+  - uid: Global.IntObject.FindIntColliderState(System.Int32)
+    name: FindIntColliderState
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.FindIntColliderState(System.Int32)
+    name: FindIntColliderState
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.GetLocalGameStates
+  commentId: M:Global.IntObject.GetLocalGameStates
+  parent: Global.IntObject
+  name: GetLocalGameStates()
+  nameWithType: IntObject.GetLocalGameStates()
+  fullName: IntObject.GetLocalGameStates()
+  spec.csharp:
+  - uid: Global.IntObject.GetLocalGameStates
+    name: GetLocalGameStates
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.GetLocalGameStates
+    name: GetLocalGameStates
+  - name: (
+  - name: )
+- uid: Global.IntObject.RegisterSelf
+  commentId: M:Global.IntObject.RegisterSelf
+  parent: Global.IntObject
+  name: RegisterSelf()
+  nameWithType: IntObject.RegisterSelf()
+  fullName: IntObject.RegisterSelf()
+  spec.csharp:
+  - uid: Global.IntObject.RegisterSelf
+    name: RegisterSelf
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.RegisterSelf
+    name: RegisterSelf
+  - name: (
+  - name: )
+- uid: Global.IntObject.UnregisterSelf
+  commentId: M:Global.IntObject.UnregisterSelf
+  parent: Global.IntObject
+  name: UnregisterSelf()
+  nameWithType: IntObject.UnregisterSelf()
+  fullName: IntObject.UnregisterSelf()
+  spec.csharp:
+  - uid: Global.IntObject.UnregisterSelf
+    name: UnregisterSelf
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.UnregisterSelf
+    name: UnregisterSelf
+  - name: (
+  - name: )
+- uid: Global.IntObject.RegisterKilledCallback(IntObject.Action)
+  commentId: M:Global.IntObject.RegisterKilledCallback(IntObject.Action)
+  parent: Global.IntObject
+  name: RegisterKilledCallback(Action)
+  nameWithType: IntObject.RegisterKilledCallback(IntObject.Action)
+  fullName: IntObject.RegisterKilledCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.IntObject.RegisterKilledCallback(IntObject.Action)
+    name: RegisterKilledCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.RegisterKilledCallback(IntObject.Action)
+    name: RegisterKilledCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.IntObject.UnregisterKilledCallback(IntObject.Action)
+  commentId: M:Global.IntObject.UnregisterKilledCallback(IntObject.Action)
+  parent: Global.IntObject
+  name: UnregisterKilledCallback(Action)
+  nameWithType: IntObject.UnregisterKilledCallback(IntObject.Action)
+  fullName: IntObject.UnregisterKilledCallback(IntObject.Action)
+  spec.csharp:
+  - uid: Global.IntObject.UnregisterKilledCallback(IntObject.Action)
+    name: UnregisterKilledCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.UnregisterKilledCallback(IntObject.Action)
+    name: UnregisterKilledCallback
+  - name: (
+  - uid: Global.IntObject.Action
+    name: Action
+  - name: )
+- uid: Global.IntObject.SetStatus(ObjectStatus)
+  commentId: M:Global.IntObject.SetStatus(ObjectStatus)
+  parent: Global.IntObject
+  name: SetStatus(ObjectStatus)
+  nameWithType: IntObject.SetStatus(ObjectStatus)
+  fullName: IntObject.SetStatus(ObjectStatus)
+  spec.csharp:
+  - uid: Global.IntObject.SetStatus(ObjectStatus)
+    name: SetStatus
+  - name: (
+  - uid: Global.ObjectStatus
+    name: ObjectStatus
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.SetStatus(ObjectStatus)
+    name: SetStatus
+  - name: (
+  - uid: Global.ObjectStatus
+    name: ObjectStatus
+  - name: )
+- uid: Global.IntObject.OnKill(System.Boolean)
+  commentId: M:Global.IntObject.OnKill(System.Boolean)
+  parent: Global.IntObject
+  isExternal: true
+  name: OnKill(bool)
+  nameWithType: IntObject.OnKill(bool)
+  fullName: IntObject.OnKill(bool)
+  nameWithType.vb: IntObject.OnKill(Boolean)
+  fullName.vb: IntObject.OnKill(Boolean)
+  name.vb: OnKill(Boolean)
+  spec.csharp:
+  - uid: Global.IntObject.OnKill(System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.OnKill(System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.Kill
+  commentId: M:Global.IntObject.Kill
+  parent: Global.IntObject
+  name: Kill()
+  nameWithType: IntObject.Kill()
+  fullName: IntObject.Kill()
+  spec.csharp:
+  - uid: Global.IntObject.Kill
+    name: Kill
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Kill
+    name: Kill
+  - name: (
+  - name: )
+- uid: Global.IntObject.Kill(System.Single)
+  commentId: M:Global.IntObject.Kill(System.Single)
+  parent: Global.IntObject
+  isExternal: true
+  name: Kill(float)
+  nameWithType: IntObject.Kill(float)
+  fullName: IntObject.Kill(float)
+  nameWithType.vb: IntObject.Kill(Single)
+  fullName.vb: IntObject.Kill(Single)
+  name.vb: Kill(Single)
+  spec.csharp:
+  - uid: Global.IntObject.Kill(System.Single)
+    name: Kill
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Kill(System.Single)
+    name: Kill
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.Kill(System.Boolean,System.Single)
+  commentId: M:Global.IntObject.Kill(System.Boolean,System.Single)
+  parent: Global.IntObject
+  isExternal: true
+  name: Kill(bool, float)
+  nameWithType: IntObject.Kill(bool, float)
+  fullName: IntObject.Kill(bool, float)
+  nameWithType.vb: IntObject.Kill(Boolean, Single)
+  fullName.vb: IntObject.Kill(Boolean, Single)
+  name.vb: Kill(Boolean, Single)
+  spec.csharp:
+  - uid: Global.IntObject.Kill(System.Boolean,System.Single)
+    name: Kill
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Kill(System.Boolean,System.Single)
+    name: Kill
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.IgnoreObjectCollisions(IntObject,System.Single)
+  commentId: M:Global.IntObject.IgnoreObjectCollisions(IntObject,System.Single)
+  parent: Global.IntObject
+  isExternal: true
+  name: IgnoreObjectCollisions(IntObject, float)
+  nameWithType: IntObject.IgnoreObjectCollisions(IntObject, float)
+  fullName: IntObject.IgnoreObjectCollisions(IntObject, float)
+  nameWithType.vb: IntObject.IgnoreObjectCollisions(IntObject, Single)
+  fullName.vb: IntObject.IgnoreObjectCollisions(IntObject, Single)
+  name.vb: IgnoreObjectCollisions(IntObject, Single)
+  spec.csharp:
+  - uid: Global.IntObject.IgnoreObjectCollisions(IntObject,System.Single)
+    name: IgnoreObjectCollisions
+  - name: (
+  - uid: Global.IntObject
+    name: IntObject
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.IgnoreObjectCollisions(IntObject,System.Single)
+    name: IgnoreObjectCollisions
+  - name: (
+  - uid: Global.IntObject
+    name: IntObject
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.SleepObject
+  commentId: M:Global.IntObject.SleepObject
+  parent: Global.IntObject
+  name: SleepObject()
+  nameWithType: IntObject.SleepObject()
+  fullName: IntObject.SleepObject()
+  spec.csharp:
+  - uid: Global.IntObject.SleepObject
+    name: SleepObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.SleepObject
+    name: SleepObject
+  - name: (
+  - name: )
+- uid: Global.IntObject.OptimizeSleepObject
+  commentId: M:Global.IntObject.OptimizeSleepObject
+  parent: Global.IntObject
+  name: OptimizeSleepObject()
+  nameWithType: IntObject.OptimizeSleepObject()
+  fullName: IntObject.OptimizeSleepObject()
+  spec.csharp:
+  - uid: Global.IntObject.OptimizeSleepObject
+    name: OptimizeSleepObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.OptimizeSleepObject
+    name: OptimizeSleepObject
+  - name: (
+  - name: )
+- uid: Global.IntObject.WakeObject
+  commentId: M:Global.IntObject.WakeObject
+  parent: Global.IntObject
+  name: WakeObject()
+  nameWithType: IntObject.WakeObject()
+  fullName: IntObject.WakeObject()
+  spec.csharp:
+  - uid: Global.IntObject.WakeObject
+    name: WakeObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.WakeObject
+    name: WakeObject
+  - name: (
+  - name: )
+- uid: Global.IntObject.EnableObject
+  commentId: M:Global.IntObject.EnableObject
+  parent: Global.IntObject
+  name: EnableObject()
+  nameWithType: IntObject.EnableObject()
+  fullName: IntObject.EnableObject()
+  spec.csharp:
+  - uid: Global.IntObject.EnableObject
+    name: EnableObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.EnableObject
+    name: EnableObject
+  - name: (
+  - name: )
+- uid: Global.IntObject.DisableObject
+  commentId: M:Global.IntObject.DisableObject
+  parent: Global.IntObject
+  name: DisableObject()
+  nameWithType: IntObject.DisableObject()
+  fullName: IntObject.DisableObject()
+  spec.csharp:
+  - uid: Global.IntObject.DisableObject
+    name: DisableObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.DisableObject
+    name: DisableObject
+  - name: (
+  - name: )
+- uid: Global.IntObject.RespawnObject
+  commentId: M:Global.IntObject.RespawnObject
+  parent: Global.IntObject
+  name: RespawnObject()
+  nameWithType: IntObject.RespawnObject()
+  fullName: IntObject.RespawnObject()
+  spec.csharp:
+  - uid: Global.IntObject.RespawnObject
+    name: RespawnObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.RespawnObject
+    name: RespawnObject
+  - name: (
+  - name: )
+- uid: Global.IntObject.RecursiveSetCollidable(System.Boolean)
+  commentId: M:Global.IntObject.RecursiveSetCollidable(System.Boolean)
+  parent: Global.IntObject
+  isExternal: true
+  name: RecursiveSetCollidable(bool)
+  nameWithType: IntObject.RecursiveSetCollidable(bool)
+  fullName: IntObject.RecursiveSetCollidable(bool)
+  nameWithType.vb: IntObject.RecursiveSetCollidable(Boolean)
+  fullName.vb: IntObject.RecursiveSetCollidable(Boolean)
+  name.vb: RecursiveSetCollidable(Boolean)
+  spec.csharp:
+  - uid: Global.IntObject.RecursiveSetCollidable(System.Boolean)
+    name: RecursiveSetCollidable
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.RecursiveSetCollidable(System.Boolean)
+    name: RecursiveSetCollidable
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.SetColliderState(IntColliderState)
+  commentId: M:Global.IntObject.SetColliderState(IntColliderState)
+  parent: Global.IntObject
+  name: SetColliderState(IntColliderState)
+  nameWithType: IntObject.SetColliderState(IntColliderState)
+  fullName: IntObject.SetColliderState(IntColliderState)
+  spec.csharp:
+  - uid: Global.IntObject.SetColliderState(IntColliderState)
+    name: SetColliderState
+  - name: (
+  - uid: Global.IntColliderState
+    name: IntColliderState
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.SetColliderState(IntColliderState)
+    name: SetColliderState
+  - name: (
+  - uid: Global.IntColliderState
+    name: IntColliderState
+  - name: )
+- uid: Global.IntObject.Translate(UnityEngine.Vector2Int)
+  commentId: M:Global.IntObject.Translate(UnityEngine.Vector2Int)
+  parent: Global.IntObject
+  isExternal: true
+  name: Translate(Vector2Int)
+  nameWithType: IntObject.Translate(Vector2Int)
+  fullName: IntObject.Translate(UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntObject.Translate(UnityEngine.Vector2Int)
+    name: Translate
+  - name: (
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Translate(UnityEngine.Vector2Int)
+    name: Translate
+  - name: (
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.Translate(UnityEngine.Vector2)
+  commentId: M:Global.IntObject.Translate(UnityEngine.Vector2)
+  parent: Global.IntObject
+  isExternal: true
+  name: Translate(Vector2)
+  nameWithType: IntObject.Translate(Vector2)
+  fullName: IntObject.Translate(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.IntObject.Translate(UnityEngine.Vector2)
+    name: Translate
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Translate(UnityEngine.Vector2)
+    name: Translate
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.SetPosition(UnityEngine.Vector2Int)
+  commentId: M:Global.IntObject.SetPosition(UnityEngine.Vector2Int)
+  parent: Global.IntObject
+  isExternal: true
+  name: SetPosition(Vector2Int)
+  nameWithType: IntObject.SetPosition(Vector2Int)
+  fullName: IntObject.SetPosition(UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntObject.SetPosition(UnityEngine.Vector2Int)
+    name: SetPosition
+  - name: (
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.SetPosition(UnityEngine.Vector2Int)
+    name: SetPosition
+  - name: (
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.SetCollidable(System.Boolean)
+  commentId: M:Global.IntObject.SetCollidable(System.Boolean)
+  parent: Global.IntObject
+  isExternal: true
+  name: SetCollidable(bool)
+  nameWithType: IntObject.SetCollidable(bool)
+  fullName: IntObject.SetCollidable(bool)
+  nameWithType.vb: IntObject.SetCollidable(Boolean)
+  fullName.vb: IntObject.SetCollidable(Boolean)
+  name.vb: SetCollidable(Boolean)
+  spec.csharp:
+  - uid: Global.IntObject.SetCollidable(System.Boolean)
+    name: SetCollidable
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.SetCollidable(System.Boolean)
+    name: SetCollidable
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.GetCollidable
+  commentId: M:Global.IntObject.GetCollidable
+  parent: Global.IntObject
+  name: GetCollidable()
+  nameWithType: IntObject.GetCollidable()
+  fullName: IntObject.GetCollidable()
+  spec.csharp:
+  - uid: Global.IntObject.GetCollidable
+    name: GetCollidable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.GetCollidable
+    name: GetCollidable
+  - name: (
+  - name: )
+- uid: Global.IntObject.GetCollider
+  commentId: M:Global.IntObject.GetCollider
+  parent: Global.IntObject
+  name: GetCollider()
+  nameWithType: IntObject.GetCollider()
+  fullName: IntObject.GetCollider()
+  spec.csharp:
+  - uid: Global.IntObject.GetCollider
+    name: GetCollider
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.GetCollider
+    name: GetCollider
+  - name: (
+  - name: )
+- uid: Global.IntObject.GetColliderState
+  commentId: M:Global.IntObject.GetColliderState
+  parent: Global.IntObject
+  name: GetColliderState()
+  nameWithType: IntObject.GetColliderState()
+  fullName: IntObject.GetColliderState()
+  spec.csharp:
+  - uid: Global.IntObject.GetColliderState
+    name: GetColliderState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.GetColliderState
+    name: GetColliderState
+  - name: (
+  - name: )
+- uid: Global.IntObject.Overlaps(IntObject)
+  commentId: M:Global.IntObject.Overlaps(IntObject)
+  parent: Global.IntObject
+  name: Overlaps(IntObject)
+  nameWithType: IntObject.Overlaps(IntObject)
+  fullName: IntObject.Overlaps(IntObject)
+  spec.csharp:
+  - uid: Global.IntObject.Overlaps(IntObject)
+    name: Overlaps
+  - name: (
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Overlaps(IntObject)
+    name: Overlaps
+  - name: (
+  - uid: Global.IntObject
+    name: IntObject
+  - name: )
+- uid: Global.IntObject.RayCast(IntRay)
+  commentId: M:Global.IntObject.RayCast(IntRay)
+  parent: Global.IntObject
+  name: RayCast(IntRay)
+  nameWithType: IntObject.RayCast(IntRay)
+  fullName: IntObject.RayCast(IntRay)
+  spec.csharp:
+  - uid: Global.IntObject.RayCast(IntRay)
+    name: RayCast
+  - name: (
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.RayCast(IntRay)
+    name: RayCast
+  - name: (
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+- uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntSolid},UnityEngine.Vector2Int)
+  commentId: M:Global.IntObject.CollideAt(System.Collections.Generic.List{IntSolid},UnityEngine.Vector2Int)
+  parent: Global.IntObject
+  isExternal: true
+  name: CollideAt(List<IntSolid>, Vector2Int)
+  nameWithType: IntObject.CollideAt(List<IntSolid>, Vector2Int)
+  fullName: IntObject.CollideAt(System.Collections.Generic.List<IntSolid>, UnityEngine.Vector2Int)
+  nameWithType.vb: IntObject.CollideAt(List(Of IntSolid), Vector2Int)
+  fullName.vb: IntObject.CollideAt(System.Collections.Generic.List(Of IntSolid), UnityEngine.Vector2Int)
+  name.vb: CollideAt(List(Of IntSolid), Vector2Int)
+  spec.csharp:
+  - uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntSolid},UnityEngine.Vector2Int)
+    name: CollideAt
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntSolid},UnityEngine.Vector2Int)
+    name: CollideAt
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntActor},UnityEngine.Vector2Int)
+  commentId: M:Global.IntObject.CollideAt(System.Collections.Generic.List{IntActor},UnityEngine.Vector2Int)
+  parent: Global.IntObject
+  isExternal: true
+  name: CollideAt(List<IntActor>, Vector2Int)
+  nameWithType: IntObject.CollideAt(List<IntActor>, Vector2Int)
+  fullName: IntObject.CollideAt(System.Collections.Generic.List<IntActor>, UnityEngine.Vector2Int)
+  nameWithType.vb: IntObject.CollideAt(List(Of IntActor), Vector2Int)
+  fullName.vb: IntObject.CollideAt(System.Collections.Generic.List(Of IntActor), UnityEngine.Vector2Int)
+  name.vb: CollideAt(List(Of IntActor), Vector2Int)
+  spec.csharp:
+  - uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntActor},UnityEngine.Vector2Int)
+    name: CollideAt
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntActor
+    name: IntActor
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntActor},UnityEngine.Vector2Int)
+    name: CollideAt
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntTrigger},UnityEngine.Vector2Int)
+  commentId: M:Global.IntObject.CollideAt(System.Collections.Generic.List{IntTrigger},UnityEngine.Vector2Int)
+  parent: Global.IntObject
+  isExternal: true
+  name: CollideAt(List<IntTrigger>, Vector2Int)
+  nameWithType: IntObject.CollideAt(List<IntTrigger>, Vector2Int)
+  fullName: IntObject.CollideAt(System.Collections.Generic.List<IntTrigger>, UnityEngine.Vector2Int)
+  nameWithType.vb: IntObject.CollideAt(List(Of IntTrigger), Vector2Int)
+  fullName.vb: IntObject.CollideAt(System.Collections.Generic.List(Of IntTrigger), UnityEngine.Vector2Int)
+  name.vb: CollideAt(List(Of IntTrigger), Vector2Int)
+  spec.csharp:
+  - uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntTrigger},UnityEngine.Vector2Int)
+    name: CollideAt
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.CollideAt(System.Collections.Generic.List{IntTrigger},UnityEngine.Vector2Int)
+    name: CollideAt
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.IntObject.OnDrawGizmos
+  commentId: M:Global.IntObject.OnDrawGizmos
+  parent: Global.IntObject
+  name: OnDrawGizmos()
+  nameWithType: IntObject.OnDrawGizmos()
+  fullName: IntObject.OnDrawGizmos()
+  spec.csharp:
+  - uid: Global.IntObject.OnDrawGizmos
+    name: OnDrawGizmos
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.OnDrawGizmos
+    name: OnDrawGizmos
+  - name: (
+  - name: )
+- uid: Global.IntObject.LoadObjectSaveData(IntObjectSaveData)
+  commentId: M:Global.IntObject.LoadObjectSaveData(IntObjectSaveData)
+  parent: Global.IntObject
+  name: LoadObjectSaveData(IntObjectSaveData)
+  nameWithType: IntObject.LoadObjectSaveData(IntObjectSaveData)
+  fullName: IntObject.LoadObjectSaveData(IntObjectSaveData)
+  spec.csharp:
+  - uid: Global.IntObject.LoadObjectSaveData(IntObjectSaveData)
+    name: LoadObjectSaveData
+  - name: (
+  - uid: Global.IntObjectSaveData
+    name: IntObjectSaveData
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.LoadObjectSaveData(IntObjectSaveData)
+    name: LoadObjectSaveData
+  - name: (
+  - uid: Global.IntObjectSaveData
+    name: IntObjectSaveData
+  - name: )
+- uid: Global.IntObject.GetObjectSaveData
+  commentId: M:Global.IntObject.GetObjectSaveData
+  parent: Global.IntObject
+  name: GetObjectSaveData()
+  nameWithType: IntObject.GetObjectSaveData()
+  fullName: IntObject.GetObjectSaveData()
+  spec.csharp:
+  - uid: Global.IntObject.GetObjectSaveData
+    name: GetObjectSaveData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.GetObjectSaveData
+    name: GetObjectSaveData
+  - name: (
+  - name: )
+- uid: Global.IntObject.OnPostLoadSaveFile
+  commentId: M:Global.IntObject.OnPostLoadSaveFile
+  parent: Global.IntObject
+  name: OnPostLoadSaveFile()
+  nameWithType: IntObject.OnPostLoadSaveFile()
+  fullName: IntObject.OnPostLoadSaveFile()
+  spec.csharp:
+  - uid: Global.IntObject.OnPostLoadSaveFile
+    name: OnPostLoadSaveFile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.OnPostLoadSaveFile
+    name: OnPostLoadSaveFile
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ISavableObject`1
+  commentId: T:Global.ISavableObject`1
+  name: ISavableObject<T>
+  nameWithType: ISavableObject<T>
+  fullName: ISavableObject<T>
+  nameWithType.vb: ISavableObject(Of T)
+  fullName.vb: ISavableObject(Of T)
+  name.vb: ISavableObject(Of T)
+  spec.csharp:
+  - uid: Global.ISavableObject`1
+    name: ISavableObject
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.ISavableObject`1
+    name: ISavableObject
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{AutoMergeAura.OriginalVertex}
+  commentId: T:System.Collections.Generic.List{AutoMergeAura.OriginalVertex}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AutoMergeAura.OriginalVertex>
+  nameWithType: List<AutoMergeAura.OriginalVertex>
+  fullName: System.Collections.Generic.List<AutoMergeAura.OriginalVertex>
+  nameWithType.vb: List(Of AutoMergeAura.OriginalVertex)
+  fullName.vb: System.Collections.Generic.List(Of AutoMergeAura.OriginalVertex)
+  name.vb: List(Of AutoMergeAura.OriginalVertex)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.AutoMergeAura
+    name: AutoMergeAura
+  - name: .
+  - uid: Global.AutoMergeAura.OriginalVertex
+    name: OriginalVertex
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.AutoMergeAura
+    name: AutoMergeAura
+  - name: .
+  - uid: Global.AutoMergeAura.OriginalVertex
+    name: OriginalVertex
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Collections.Generic.List{Aura}
+  commentId: T:System.Collections.Generic.List{Aura}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Aura>
+  nameWithType: List<Aura>
+  fullName: System.Collections.Generic.List<Aura>
+  nameWithType.vb: List(Of Aura)
+  fullName.vb: System.Collections.Generic.List(Of Aura)
+  name.vb: List(Of Aura)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Aura
+    name: Aura
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Aura
+    name: Aura
+  - name: )
+- uid: Global.AutoMergeAura.originalClosed*
+  commentId: Overload:Global.AutoMergeAura.originalClosed
+  name: originalClosed
+  nameWithType: AutoMergeAura.originalClosed
+  fullName: AutoMergeAura.originalClosed
+- uid: Global.AutoMergeAura.useSpline*
+  commentId: Overload:Global.AutoMergeAura.useSpline
+  name: useSpline
+  nameWithType: AutoMergeAura.useSpline
+  fullName: AutoMergeAura.useSpline
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.Aura.AuraDischargeOption
+  commentId: T:Global.Aura.AuraDischargeOption
+  name: Aura.AuraDischargeOption
+  nameWithType: Aura.AuraDischargeOption
+  fullName: Aura.AuraDischargeOption
+  spec.csharp:
+  - uid: Global.Aura
+    name: Aura
+  - name: .
+  - uid: Global.Aura.AuraDischargeOption
+    name: AuraDischargeOption
+  spec.vb:
+  - uid: Global.Aura
+    name: Aura
+  - name: .
+  - uid: Global.Aura.AuraDischargeOption
+    name: AuraDischargeOption
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.AutoMergeAura.AllowAutoMerge*
+  commentId: Overload:Global.AutoMergeAura.AllowAutoMerge
+  name: AllowAutoMerge
+  nameWithType: AutoMergeAura.AllowAutoMerge
+  fullName: AutoMergeAura.AllowAutoMerge
+- uid: Global.AutoMergeAura.Start*
+  commentId: Overload:Global.AutoMergeAura.Start
+  name: Start
+  nameWithType: AutoMergeAura.Start
+  fullName: AutoMergeAura.Start
+- uid: Global.AutoMergeAura.RegisterPlayerTriggerCallback*
+  commentId: Overload:Global.AutoMergeAura.RegisterPlayerTriggerCallback
+  name: RegisterPlayerTriggerCallback
+  nameWithType: AutoMergeAura.RegisterPlayerTriggerCallback
+  fullName: AutoMergeAura.RegisterPlayerTriggerCallback
+- uid: Global.IntTrigger.TriggerCallback
+  commentId: T:Global.IntTrigger.TriggerCallback
+  name: IntTrigger.TriggerCallback
+  nameWithType: IntTrigger.TriggerCallback
+  fullName: IntTrigger.TriggerCallback
+  spec.csharp:
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: .
+  - uid: Global.IntTrigger.TriggerCallback
+    name: TriggerCallback
+  spec.vb:
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: .
+  - uid: Global.IntTrigger.TriggerCallback
+    name: TriggerCallback
+- uid: Global.AutoMergeAura.UnregisterPlayerTriggerCallback*
+  commentId: Overload:Global.AutoMergeAura.UnregisterPlayerTriggerCallback
+  name: UnregisterPlayerTriggerCallback
+  nameWithType: AutoMergeAura.UnregisterPlayerTriggerCallback
+  fullName: AutoMergeAura.UnregisterPlayerTriggerCallback
+- uid: Global.IntObject.ResetObject
+  commentId: M:Global.IntObject.ResetObject
+  parent: Global.IntObject
+  name: ResetObject()
+  nameWithType: IntObject.ResetObject()
+  fullName: IntObject.ResetObject()
+  spec.csharp:
+  - uid: Global.IntObject.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+- uid: Global.AutoMergeAura.ResetObject*
+  commentId: Overload:Global.AutoMergeAura.ResetObject
+  name: ResetObject
+  nameWithType: AutoMergeAura.ResetObject
+  fullName: AutoMergeAura.ResetObject
+- uid: Global.IntObject.IsContainedInRect(UnityEngine.Rect)
+  commentId: M:Global.IntObject.IsContainedInRect(UnityEngine.Rect)
+  parent: Global.IntObject
+  isExternal: true
+  name: IsContainedInRect(Rect)
+  nameWithType: IntObject.IsContainedInRect(Rect)
+  fullName: IntObject.IsContainedInRect(UnityEngine.Rect)
+  spec.csharp:
+  - uid: Global.IntObject.IsContainedInRect(UnityEngine.Rect)
+    name: IsContainedInRect
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.IsContainedInRect(UnityEngine.Rect)
+    name: IsContainedInRect
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+- uid: Global.AutoMergeAura.IsContainedInRect*
+  commentId: Overload:Global.AutoMergeAura.IsContainedInRect
+  name: IsContainedInRect
+  nameWithType: AutoMergeAura.IsContainedInRect
+  fullName: AutoMergeAura.IsContainedInRect
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: Global.AutoMergeAura.AttemptDischarge*
+  commentId: Overload:Global.AutoMergeAura.AttemptDischarge
+  name: AttemptDischarge
+  nameWithType: AutoMergeAura.AttemptDischarge
+  fullName: AutoMergeAura.AttemptDischarge
+- uid: Global.AutoMergeAura.StartIndicator*
+  commentId: Overload:Global.AutoMergeAura.StartIndicator
+  name: StartIndicator
+  nameWithType: AutoMergeAura.StartIndicator
+  fullName: AutoMergeAura.StartIndicator
+- uid: Global.AutoMergeAura.FlashAura*
+  commentId: Overload:Global.AutoMergeAura.FlashAura
+  name: FlashAura
+  nameWithType: AutoMergeAura.FlashAura
+  fullName: AutoMergeAura.FlashAura
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.AutoMergeAura.GetOriginalVertices*
+  commentId: Overload:Global.AutoMergeAura.GetOriginalVertices
+  name: GetOriginalVertices
+  nameWithType: AutoMergeAura.GetOriginalVertices
+  fullName: AutoMergeAura.GetOriginalVertices
+- uid: Global.AutoMergeAura.SetShape*
+  commentId: Overload:Global.AutoMergeAura.SetShape
+  name: SetShape
+  nameWithType: AutoMergeAura.SetShape
+  fullName: AutoMergeAura.SetShape
+- uid: System.Collections.Generic.List{UnityEngine.Vector2Int}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2Int}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector2Int>
+  nameWithType: List<Vector2Int>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2Int>
+  nameWithType.vb: List(Of Vector2Int)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2Int)
+  name.vb: List(Of Vector2Int)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.AutoMergeAura.SetIsCircle*
+  commentId: Overload:Global.AutoMergeAura.SetIsCircle
+  name: SetIsCircle
+  nameWithType: AutoMergeAura.SetIsCircle
+  fullName: AutoMergeAura.SetIsCircle
+- uid: Global.AutoMergeAura.FlushVisibleVertices*
+  commentId: Overload:Global.AutoMergeAura.FlushVisibleVertices
+  name: FlushVisibleVertices
+  nameWithType: AutoMergeAura.FlushVisibleVertices
+  fullName: AutoMergeAura.FlushVisibleVertices
+- uid: Global.AutoMergeAura.Update*
+  commentId: Overload:Global.AutoMergeAura.Update
+  name: Update
+  nameWithType: AutoMergeAura.Update
+  fullName: AutoMergeAura.Update
+- uid: Global.AutoMergeAura.ContainsPoint*
+  commentId: Overload:Global.AutoMergeAura.ContainsPoint
+  name: ContainsPoint
+  nameWithType: AutoMergeAura.ContainsPoint
+  fullName: AutoMergeAura.ContainsPoint
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: Global.AutoMergeAura.OverlapsAutoMergeAura*
+  commentId: Overload:Global.AutoMergeAura.OverlapsAutoMergeAura
+  name: OverlapsAutoMergeAura
+  nameWithType: AutoMergeAura.OverlapsAutoMergeAura
+  fullName: AutoMergeAura.OverlapsAutoMergeAura
+- uid: Global.AutoMergeAura
+  commentId: T:Global.AutoMergeAura
+  name: AutoMergeAura
+  nameWithType: AutoMergeAura
+  fullName: AutoMergeAura
+- uid: Global.IntObject.Overlaps(IntObject,UnityEngine.Vector2Int)
+  commentId: M:Global.IntObject.Overlaps(IntObject,UnityEngine.Vector2Int)
+  parent: Global.IntObject
+  isExternal: true
+  name: Overlaps(IntObject, Vector2Int)
+  nameWithType: IntObject.Overlaps(IntObject, Vector2Int)
+  fullName: IntObject.Overlaps(IntObject, UnityEngine.Vector2Int)
+  spec.csharp:
+  - uid: Global.IntObject.Overlaps(IntObject,UnityEngine.Vector2Int)
+    name: Overlaps
+  - name: (
+  - uid: Global.IntObject
+    name: IntObject
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IntObject.Overlaps(IntObject,UnityEngine.Vector2Int)
+    name: Overlaps
+  - name: (
+  - uid: Global.IntObject
+    name: IntObject
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: )
+- uid: Global.AutoMergeAura.Overlaps*
+  commentId: Overload:Global.AutoMergeAura.Overlaps
+  name: Overlaps
+  nameWithType: AutoMergeAura.Overlaps
+  fullName: AutoMergeAura.Overlaps
+- uid: Global.AutoMergeAura.GetOutlineRays*
+  commentId: Overload:Global.AutoMergeAura.GetOutlineRays
+  name: GetOutlineRays
+  nameWithType: AutoMergeAura.GetOutlineRays
+  fullName: AutoMergeAura.GetOutlineRays
+- uid: System.Collections.Generic.List{IntRay}
+  commentId: T:System.Collections.Generic.List{IntRay}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IntRay>
+  nameWithType: List<IntRay>
+  fullName: System.Collections.Generic.List<IntRay>
+  nameWithType.vb: List(Of IntRay)
+  fullName.vb: System.Collections.Generic.List(Of IntRay)
+  name.vb: List(Of IntRay)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntRay
+    name: IntRay
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntRay
+    name: IntRay
+  - name: )
+- uid: Global.AutoMergeAura.GetRayIntersection*
+  commentId: Overload:Global.AutoMergeAura.GetRayIntersection
+  name: GetRayIntersection
+  nameWithType: AutoMergeAura.GetRayIntersection
+  fullName: AutoMergeAura.GetRayIntersection
+- uid: Global.IntRay
+  commentId: T:Global.IntRay
+  name: IntRay
+  nameWithType: IntRay
+  fullName: IntRay
+- uid: Global.AutoMergeAura.AuraIntersection
+  commentId: T:Global.AutoMergeAura.AuraIntersection
+  name: AutoMergeAura.AuraIntersection
+  nameWithType: AutoMergeAura.AuraIntersection
+  fullName: AutoMergeAura.AuraIntersection
+  spec.csharp:
+  - uid: Global.AutoMergeAura
+    name: AutoMergeAura
+  - name: .
+  - uid: Global.AutoMergeAura.AuraIntersection
+    name: AuraIntersection
+  spec.vb:
+  - uid: Global.AutoMergeAura
+    name: AutoMergeAura
+  - name: .
+  - uid: Global.AutoMergeAura.AuraIntersection
+    name: AuraIntersection
+- uid: Global.AutoMergeAura.GetRayIntersections*
+  commentId: Overload:Global.AutoMergeAura.GetRayIntersections
+  name: GetRayIntersections
+  nameWithType: AutoMergeAura.GetRayIntersections
+  fullName: AutoMergeAura.GetRayIntersections
+- uid: System.Collections.Generic.List{AutoMergeAura.AuraIntersection}
+  commentId: T:System.Collections.Generic.List{AutoMergeAura.AuraIntersection}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AutoMergeAura.AuraIntersection>
+  nameWithType: List<AutoMergeAura.AuraIntersection>
+  fullName: System.Collections.Generic.List<AutoMergeAura.AuraIntersection>
+  nameWithType.vb: List(Of AutoMergeAura.AuraIntersection)
+  fullName.vb: System.Collections.Generic.List(Of AutoMergeAura.AuraIntersection)
+  name.vb: List(Of AutoMergeAura.AuraIntersection)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.AutoMergeAura
+    name: AutoMergeAura
+  - name: .
+  - uid: Global.AutoMergeAura.AuraIntersection
+    name: AuraIntersection
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.AutoMergeAura
+    name: AutoMergeAura
+  - name: .
+  - uid: Global.AutoMergeAura.AuraIntersection
+    name: AuraIntersection
+  - name: )
+- uid: Global.AutoMergeAura.Kill*
+  commentId: Overload:Global.AutoMergeAura.Kill
+  name: Kill
+  nameWithType: AutoMergeAura.Kill
+  fullName: AutoMergeAura.Kill
+- uid: Global.AutoMergeAura.CallFunctionAfterDelay*
+  commentId: Overload:Global.AutoMergeAura.CallFunctionAfterDelay
+  name: CallFunctionAfterDelay
+  nameWithType: AutoMergeAura.CallFunctionAfterDelay
+  fullName: AutoMergeAura.CallFunctionAfterDelay
+- uid: Global.IntObject.Action
+  commentId: T:Global.IntObject.Action
+  name: IntObject.Action
+  nameWithType: IntObject.Action
+  fullName: IntObject.Action
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action

@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.HopMovementController.HopMovementState
+  commentId: T:Global.HopMovementController.HopMovementState
+  id: HopMovementController.HopMovementState
+  parent: Global
+  children:
+  - Global.HopMovementController.HopMovementState.Charging
+  - Global.HopMovementController.HopMovementState.GoTo
+  - Global.HopMovementController.HopMovementState.Hopping
+  - Global.HopMovementController.HopMovementState.Idle
+  langs:
+  - csharp
+  - vb
+  name: HopMovementController.HopMovementState
+  nameWithType: HopMovementController.HopMovementState
+  fullName: HopMovementController.HopMovementState
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: HopMovementState
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum HopMovementController.HopMovementState
+    content.vb: Public Enum HopMovementController.HopMovementState
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.HopMovementController.HopMovementState.Idle
+  commentId: F:Global.HopMovementController.HopMovementState.Idle
+  id: Idle
+  parent: Global.HopMovementController.HopMovementState
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: HopMovementController.HopMovementState.Idle
+  fullName: HopMovementController.HopMovementState.Idle
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Idle
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Idle = 0
+    return:
+      type: Global.HopMovementController.HopMovementState
+- uid: Global.HopMovementController.HopMovementState.Charging
+  commentId: F:Global.HopMovementController.HopMovementState.Charging
+  id: Charging
+  parent: Global.HopMovementController.HopMovementState
+  langs:
+  - csharp
+  - vb
+  name: Charging
+  nameWithType: HopMovementController.HopMovementState.Charging
+  fullName: HopMovementController.HopMovementState.Charging
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Charging
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Charging = 1
+    return:
+      type: Global.HopMovementController.HopMovementState
+- uid: Global.HopMovementController.HopMovementState.GoTo
+  commentId: F:Global.HopMovementController.HopMovementState.GoTo
+  id: GoTo
+  parent: Global.HopMovementController.HopMovementState
+  langs:
+  - csharp
+  - vb
+  name: GoTo
+  nameWithType: HopMovementController.HopMovementState.GoTo
+  fullName: HopMovementController.HopMovementState.GoTo
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GoTo
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: GoTo = 2
+    return:
+      type: Global.HopMovementController.HopMovementState
+- uid: Global.HopMovementController.HopMovementState.Hopping
+  commentId: F:Global.HopMovementController.HopMovementState.Hopping
+  id: Hopping
+  parent: Global.HopMovementController.HopMovementState
+  langs:
+  - csharp
+  - vb
+  name: Hopping
+  nameWithType: HopMovementController.HopMovementState.Hopping
+  fullName: HopMovementController.HopMovementState.Hopping
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Hopping
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/HopMovementController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Hopping = 3
+    return:
+      type: Global.HopMovementController.HopMovementState
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.HopMovementController.HopMovementState
+  commentId: T:Global.HopMovementController.HopMovementState
+  name: HopMovementController.HopMovementState
+  nameWithType: HopMovementController.HopMovementState
+  fullName: HopMovementController.HopMovementState
+  spec.csharp:
+  - uid: Global.HopMovementController
+    name: HopMovementController
+  - name: .
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState
+  spec.vb:
+  - uid: Global.HopMovementController
+    name: HopMovementController
+  - name: .
+  - uid: Global.HopMovementController.HopMovementState
+    name: HopMovementState

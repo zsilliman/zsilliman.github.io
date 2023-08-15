@@ -1,0 +1,355 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SectionWeatherController
+  commentId: T:Global.SectionWeatherController
+  id: SectionWeatherController
+  parent: Global
+  children:
+  - Global.SectionWeatherController.Fog
+  - Global.SectionWeatherController.FogHeight
+  - Global.SectionWeatherController.FogIntensity
+  - Global.SectionWeatherController.FogOffsetY
+  - Global.SectionWeatherController.Rain
+  - Global.SectionWeatherController.RainIntensity
+  - Global.SectionWeatherController.WindSpeed
+  langs:
+  - csharp
+  - vb
+  name: SectionWeatherController
+  nameWithType: SectionWeatherController
+  fullName: SectionWeatherController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionWeatherController
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class SectionWeatherController : MonoBehaviour'
+    content.vb: Public Class SectionWeatherController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SectionWeatherController.Fog
+  commentId: F:Global.SectionWeatherController.Fog
+  id: Fog
+  parent: Global.SectionWeatherController
+  langs:
+  - csharp
+  - vb
+  name: Fog
+  nameWithType: SectionWeatherController.Fog
+  fullName: SectionWeatherController.Fog
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Fog
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public FogController Fog
+    return:
+      type: Global.FogController
+    content.vb: Public Fog As FogController
+- uid: Global.SectionWeatherController.Rain
+  commentId: F:Global.SectionWeatherController.Rain
+  id: Rain
+  parent: Global.SectionWeatherController
+  langs:
+  - csharp
+  - vb
+  name: Rain
+  nameWithType: SectionWeatherController.Rain
+  fullName: SectionWeatherController.Rain
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Rain
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RainController Rain
+    return:
+      type: Global.RainController
+    content.vb: Public Rain As RainController
+- uid: Global.SectionWeatherController.FogIntensity
+  commentId: F:Global.SectionWeatherController.FogIntensity
+  id: FogIntensity
+  parent: Global.SectionWeatherController
+  langs:
+  - csharp
+  - vb
+  name: FogIntensity
+  nameWithType: SectionWeatherController.FogIntensity
+  fullName: SectionWeatherController.FogIntensity
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FogIntensity
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public DynamicFloatParam FogIntensity
+    return:
+      type: Global.DynamicFloatParam
+    content.vb: Public FogIntensity As DynamicFloatParam
+- uid: Global.SectionWeatherController.RainIntensity
+  commentId: F:Global.SectionWeatherController.RainIntensity
+  id: RainIntensity
+  parent: Global.SectionWeatherController
+  langs:
+  - csharp
+  - vb
+  name: RainIntensity
+  nameWithType: SectionWeatherController.RainIntensity
+  fullName: SectionWeatherController.RainIntensity
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RainIntensity
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public DynamicFloatParam RainIntensity
+    return:
+      type: Global.DynamicFloatParam
+    content.vb: Public RainIntensity As DynamicFloatParam
+- uid: Global.SectionWeatherController.WindSpeed
+  commentId: F:Global.SectionWeatherController.WindSpeed
+  id: WindSpeed
+  parent: Global.SectionWeatherController
+  langs:
+  - csharp
+  - vb
+  name: WindSpeed
+  nameWithType: SectionWeatherController.WindSpeed
+  fullName: SectionWeatherController.WindSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WindSpeed
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public DynamicFloatParam WindSpeed
+    return:
+      type: Global.DynamicFloatParam
+    content.vb: Public WindSpeed As DynamicFloatParam
+- uid: Global.SectionWeatherController.FogHeight
+  commentId: F:Global.SectionWeatherController.FogHeight
+  id: FogHeight
+  parent: Global.SectionWeatherController
+  langs:
+  - csharp
+  - vb
+  name: FogHeight
+  nameWithType: SectionWeatherController.FogHeight
+  fullName: SectionWeatherController.FogHeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FogHeight
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public DynamicFloatParam FogHeight
+    return:
+      type: Global.DynamicFloatParam
+    content.vb: Public FogHeight As DynamicFloatParam
+- uid: Global.SectionWeatherController.FogOffsetY
+  commentId: F:Global.SectionWeatherController.FogOffsetY
+  id: FogOffsetY
+  parent: Global.SectionWeatherController
+  langs:
+  - csharp
+  - vb
+  name: FogOffsetY
+  nameWithType: SectionWeatherController.FogOffsetY
+  fullName: SectionWeatherController.FogOffsetY
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FogOffsetY
+    path: ../Assets/Objects & Components/World/Weather/SectionWeatherController.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public DynamicFloatParam FogOffsetY
+    return:
+      type: Global.DynamicFloatParam
+    content.vb: Public FogOffsetY As DynamicFloatParam
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.FogController
+  commentId: T:Global.FogController
+  name: FogController
+  nameWithType: FogController
+  fullName: FogController
+- uid: Global.RainController
+  commentId: T:Global.RainController
+  name: RainController
+  nameWithType: RainController
+  fullName: RainController
+- uid: Global.DynamicFloatParam
+  commentId: T:Global.DynamicFloatParam
+  name: DynamicFloatParam
+  nameWithType: DynamicFloatParam
+  fullName: DynamicFloatParam

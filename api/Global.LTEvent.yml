@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LTEvent
+  commentId: T:Global.LTEvent
+  id: LTEvent
+  parent: Global
+  children:
+  - Global.LTEvent.#ctor(System.Int32,System.Object)
+  - Global.LTEvent.data
+  - Global.LTEvent.id
+  langs:
+  - csharp
+  - vb
+  name: LTEvent
+  nameWithType: LTEvent
+  fullName: LTEvent
+  type: Class
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LTEvent
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3840
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  example: []
+  syntax:
+    content: public class LTEvent
+    content.vb: Public Class LTEvent
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LTEvent.id
+  commentId: F:Global.LTEvent.id
+  id: id
+  parent: Global.LTEvent
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: LTEvent.id
+  fullName: LTEvent.id
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: id
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3841
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int id
+    return:
+      type: System.Int32
+    content.vb: Public id As Integer
+- uid: Global.LTEvent.data
+  commentId: F:Global.LTEvent.data
+  id: data
+  parent: Global.LTEvent
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: LTEvent.data
+  fullName: LTEvent.data
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: data
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3842
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public object data
+    return:
+      type: System.Object
+    content.vb: Public data As Object
+- uid: Global.LTEvent.#ctor(System.Int32,System.Object)
+  commentId: M:Global.LTEvent.#ctor(System.Int32,System.Object)
+  id: '#ctor(System.Int32,System.Object)'
+  parent: Global.LTEvent
+  langs:
+  - csharp
+  - vb
+  name: LTEvent(int, object)
+  nameWithType: LTEvent.LTEvent(int, object)
+  fullName: LTEvent.LTEvent(int, object)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 3844
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LTEvent(int id, object data)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: data
+      type: System.Object
+    content.vb: Public Sub New(id As Integer, data As Object)
+  overload: Global.LTEvent.#ctor*
+  nameWithType.vb: LTEvent.New(Integer, Object)
+  fullName.vb: LTEvent.New(Integer, Object)
+  name.vb: New(Integer, Object)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.LTEvent.#ctor*
+  commentId: Overload:Global.LTEvent.#ctor
+  name: LTEvent
+  nameWithType: LTEvent.LTEvent
+  fullName: LTEvent.LTEvent
+  nameWithType.vb: LTEvent.New
+  fullName.vb: LTEvent.New
+  name.vb: New

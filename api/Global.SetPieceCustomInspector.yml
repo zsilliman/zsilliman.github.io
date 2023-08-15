@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SetPieceCustomInspector
+  commentId: T:Global.SetPieceCustomInspector
+  id: SetPieceCustomInspector
+  parent: Global
+  children:
+  - Global.SetPieceCustomInspector.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: SetPieceCustomInspector
+  nameWithType: SetPieceCustomInspector
+  fullName: SetPieceCustomInspector
+  type: Class
+  source:
+    remote:
+      path: Assets/Editor/CustomInspectors/SetPieceCustomInspector.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetPieceCustomInspector
+    path: ../Assets/Editor/CustomInspectors/SetPieceCustomInspector.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: Global
+  syntax:
+    content: >-
+      [CustomEditor(typeof(SetPiece))]
+
+      public class SetPieceCustomInspector : Editor
+    content.vb: >-
+      <CustomEditor(GetType(SetPiece))>
+
+      Public Class SetPieceCustomInspector Inherits Editor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.Editor
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: UnityEditor.CustomEditor
+    ctor: UnityEditor.CustomEditor.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.SetPiece
+- uid: Global.SetPieceCustomInspector.OnInspectorGUI
+  commentId: M:Global.SetPieceCustomInspector.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: Global.SetPieceCustomInspector
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: SetPieceCustomInspector.OnInspectorGUI()
+  fullName: SetPieceCustomInspector.OnInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: Assets/Editor/CustomInspectors/SetPieceCustomInspector.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInspectorGUI
+    path: ../Assets/Editor/CustomInspectors/SetPieceCustomInspector.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: Global
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overridden: UnityEditor.Editor.OnInspectorGUI
+  overload: Global.SetPieceCustomInspector.OnInspectorGUI*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.Editor
+  commentId: T:UnityEditor.Editor
+  parent: UnityEditor
+  isExternal: true
+  name: Editor
+  nameWithType: Editor
+  fullName: UnityEditor.Editor
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEditor.Editor.OnInspectorGUI
+  commentId: M:UnityEditor.Editor.OnInspectorGUI
+  parent: UnityEditor.Editor
+  isExternal: true
+  name: OnInspectorGUI()
+  nameWithType: Editor.OnInspectorGUI()
+  fullName: UnityEditor.Editor.OnInspectorGUI()
+  spec.csharp:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Global.SetPieceCustomInspector.OnInspectorGUI*
+  commentId: Overload:Global.SetPieceCustomInspector.OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: SetPieceCustomInspector.OnInspectorGUI
+  fullName: SetPieceCustomInspector.OnInspectorGUI

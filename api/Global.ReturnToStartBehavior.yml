@@ -1,0 +1,930 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ReturnToStartBehavior
+  commentId: T:Global.ReturnToStartBehavior
+  id: ReturnToStartBehavior
+  parent: Global
+  children:
+  - Global.ReturnToStartBehavior.Acceleration
+  - Global.ReturnToStartBehavior.BunnyHop
+  - Global.ReturnToStartBehavior.BunnyHopGravityScale
+  - Global.ReturnToStartBehavior.BunnyHopHeight
+  - Global.ReturnToStartBehavior.BunnyHopStallTime
+  - Global.ReturnToStartBehavior.DelayReturnSeconds
+  - Global.ReturnToStartBehavior.DrawGizmos(ModularEnemy)
+  - Global.ReturnToStartBehavior.MaxJumpTileHeight
+  - Global.ReturnToStartBehavior.OnResetObject(ModularEnemy)
+  - Global.ReturnToStartBehavior.OnRestart
+  - Global.ReturnToStartBehavior.Speed
+  - Global.ReturnToStartBehavior.Start(ModularEnemy)
+  - Global.ReturnToStartBehavior.Update
+  - Global.ReturnToStartBehavior.UpdateBunnyHop
+  - Global.ReturnToStartBehavior.UpdateFlying
+  - Global.ReturnToStartBehavior.UpdateGrounded
+  langs:
+  - csharp
+  - vb
+  name: ReturnToStartBehavior
+  nameWithType: ReturnToStartBehavior
+  fullName: ReturnToStartBehavior
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ReturnToStartBehavior
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class ReturnToStartBehavior : ModularEnemy.EnemyBehaviorInterface
+    content.vb: >-
+      <Serializable>
+
+      Public Class ReturnToStartBehavior Inherits ModularEnemy.EnemyBehaviorInterface
+  inheritance:
+  - System.Object
+  - Global.ModularEnemy.EnemyBehaviorInterface
+  inheritedMembers:
+  - Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  - Global.ModularEnemy.EnemyBehaviorInterface.self
+  - Global.ModularEnemy.EnemyBehaviorInterface.Started
+  - Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.ReturnToStartBehavior.DelayReturnSeconds
+  commentId: F:Global.ReturnToStartBehavior.DelayReturnSeconds
+  id: DelayReturnSeconds
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: DelayReturnSeconds
+  nameWithType: ReturnToStartBehavior.DelayReturnSeconds
+  fullName: ReturnToStartBehavior.DelayReturnSeconds
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DelayReturnSeconds
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float DelayReturnSeconds
+    return:
+      type: System.Single
+    content.vb: Public DelayReturnSeconds As Single
+- uid: Global.ReturnToStartBehavior.Speed
+  commentId: F:Global.ReturnToStartBehavior.Speed
+  id: Speed
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: Speed
+  nameWithType: ReturnToStartBehavior.Speed
+  fullName: ReturnToStartBehavior.Speed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Speed
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Speed
+    return:
+      type: System.Single
+    content.vb: Public Speed As Single
+- uid: Global.ReturnToStartBehavior.Acceleration
+  commentId: F:Global.ReturnToStartBehavior.Acceleration
+  id: Acceleration
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: Acceleration
+  nameWithType: ReturnToStartBehavior.Acceleration
+  fullName: ReturnToStartBehavior.Acceleration
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Acceleration
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("BunnyHop", 0)]
+
+      public float Acceleration
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("BunnyHop", 0)>
+
+      Public Acceleration As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: BunnyHop
+    - type: System.Int32
+      value: 0
+- uid: Global.ReturnToStartBehavior.BunnyHop
+  commentId: F:Global.ReturnToStartBehavior.BunnyHop
+  id: BunnyHop
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: BunnyHop
+  nameWithType: ReturnToStartBehavior.BunnyHop
+  fullName: ReturnToStartBehavior.BunnyHop
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BunnyHop
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("Only relevent if CanFly is false")]
+
+      public bool BunnyHop
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("Only relevent if CanFly is false")>
+
+      Public BunnyHop As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Only relevent if CanFly is false
+- uid: Global.ReturnToStartBehavior.BunnyHopHeight
+  commentId: F:Global.ReturnToStartBehavior.BunnyHopHeight
+  id: BunnyHopHeight
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: BunnyHopHeight
+  nameWithType: ReturnToStartBehavior.BunnyHopHeight
+  fullName: ReturnToStartBehavior.BunnyHopHeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BunnyHopHeight
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("BunnyHop", 1)]
+
+      [Tooltip("Only relevent if CanFly is false")]
+
+      public float BunnyHopHeight
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("BunnyHop", 1)>
+
+      <Tooltip("Only relevent if CanFly is false")>
+
+      Public BunnyHopHeight As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: BunnyHop
+    - type: System.Int32
+      value: 1
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Only relevent if CanFly is false
+- uid: Global.ReturnToStartBehavior.BunnyHopGravityScale
+  commentId: F:Global.ReturnToStartBehavior.BunnyHopGravityScale
+  id: BunnyHopGravityScale
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: BunnyHopGravityScale
+  nameWithType: ReturnToStartBehavior.BunnyHopGravityScale
+  fullName: ReturnToStartBehavior.BunnyHopGravityScale
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BunnyHopGravityScale
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("BunnyHop", 1)]
+
+      [Tooltip("Scales how quickly the bunny descends and ascends when jumping. Only relevent if CanFly is false")]
+
+      public float BunnyHopGravityScale
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("BunnyHop", 1)>
+
+      <Tooltip("Scales how quickly the bunny descends and ascends when jumping. Only relevent if CanFly is false")>
+
+      Public BunnyHopGravityScale As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: BunnyHop
+    - type: System.Int32
+      value: 1
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Scales how quickly the bunny descends and ascends when jumping. Only relevent if CanFly is false
+- uid: Global.ReturnToStartBehavior.BunnyHopStallTime
+  commentId: F:Global.ReturnToStartBehavior.BunnyHopStallTime
+  id: BunnyHopStallTime
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: BunnyHopStallTime
+  nameWithType: ReturnToStartBehavior.BunnyHopStallTime
+  fullName: ReturnToStartBehavior.BunnyHopStallTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BunnyHopStallTime
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("BunnyHop", 1)]
+
+      [Tooltip("Bunny pauses between each hop. Only relevent if CanFly is false")]
+
+      public float BunnyHopStallTime
+    return:
+      type: System.Single
+    content.vb: >-
+      <ConditionalShow("BunnyHop", 1)>
+
+      <Tooltip("Bunny pauses between each hop. Only relevent if CanFly is false")>
+
+      Public BunnyHopStallTime As Single
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: BunnyHop
+    - type: System.Int32
+      value: 1
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Bunny pauses between each hop. Only relevent if CanFly is false
+- uid: Global.ReturnToStartBehavior.MaxJumpTileHeight
+  commentId: F:Global.ReturnToStartBehavior.MaxJumpTileHeight
+  id: MaxJumpTileHeight
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: MaxJumpTileHeight
+  nameWithType: ReturnToStartBehavior.MaxJumpTileHeight
+  fullName: ReturnToStartBehavior.MaxJumpTileHeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxJumpTileHeight
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("BunnyHop", 0)]
+
+      [Tooltip("Only relevent if CanFly is false")]
+
+      public int MaxJumpTileHeight
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ConditionalShow("BunnyHop", 0)>
+
+      <Tooltip("Only relevent if CanFly is false")>
+
+      Public MaxJumpTileHeight As Integer
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: BunnyHop
+    - type: System.Int32
+      value: 0
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Only relevent if CanFly is false
+- uid: Global.ReturnToStartBehavior.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ReturnToStartBehavior.DrawGizmos(ModularEnemy)
+  id: DrawGizmos(ModularEnemy)
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ReturnToStartBehavior.DrawGizmos(ModularEnemy)
+  fullName: ReturnToStartBehavior.DrawGizmos(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DrawGizmos
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void DrawGizmos(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub DrawGizmos(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  overload: Global.ReturnToStartBehavior.DrawGizmos*
+- uid: Global.ReturnToStartBehavior.OnRestart
+  commentId: M:Global.ReturnToStartBehavior.OnRestart
+  id: OnRestart
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnRestart()
+  nameWithType: ReturnToStartBehavior.OnRestart()
+  fullName: ReturnToStartBehavior.OnRestart()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnRestart
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnRestart()
+    content.vb: Public Overrides Sub OnRestart()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  overload: Global.ReturnToStartBehavior.OnRestart*
+- uid: Global.ReturnToStartBehavior.Start(ModularEnemy)
+  commentId: M:Global.ReturnToStartBehavior.Start(ModularEnemy)
+  id: Start(ModularEnemy)
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: Start(ModularEnemy)
+  nameWithType: ReturnToStartBehavior.Start(ModularEnemy)
+  fullName: ReturnToStartBehavior.Start(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Start(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub Start(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  overload: Global.ReturnToStartBehavior.Start*
+- uid: Global.ReturnToStartBehavior.OnResetObject(ModularEnemy)
+  commentId: M:Global.ReturnToStartBehavior.OnResetObject(ModularEnemy)
+  id: OnResetObject(ModularEnemy)
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ReturnToStartBehavior.OnResetObject(ModularEnemy)
+  fullName: ReturnToStartBehavior.OnResetObject(ModularEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject(ModularEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.ModularEnemy
+    content.vb: Public Overrides Sub OnResetObject(enemy As ModularEnemy)
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  overload: Global.ReturnToStartBehavior.OnResetObject*
+- uid: Global.ReturnToStartBehavior.Update
+  commentId: M:Global.ReturnToStartBehavior.Update
+  id: Update
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: ReturnToStartBehavior.Update()
+  fullName: ReturnToStartBehavior.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Update
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  overload: Global.ReturnToStartBehavior.Update*
+- uid: Global.ReturnToStartBehavior.UpdateFlying
+  commentId: M:Global.ReturnToStartBehavior.UpdateFlying
+  id: UpdateFlying
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: UpdateFlying()
+  nameWithType: ReturnToStartBehavior.UpdateFlying()
+  fullName: ReturnToStartBehavior.UpdateFlying()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateFlying
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 132
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void UpdateFlying()
+    content.vb: Protected Sub UpdateFlying()
+  overload: Global.ReturnToStartBehavior.UpdateFlying*
+- uid: Global.ReturnToStartBehavior.UpdateBunnyHop
+  commentId: M:Global.ReturnToStartBehavior.UpdateBunnyHop
+  id: UpdateBunnyHop
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: UpdateBunnyHop()
+  nameWithType: ReturnToStartBehavior.UpdateBunnyHop()
+  fullName: ReturnToStartBehavior.UpdateBunnyHop()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateBunnyHop
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 163
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void UpdateBunnyHop()
+    content.vb: Protected Sub UpdateBunnyHop()
+  overload: Global.ReturnToStartBehavior.UpdateBunnyHop*
+- uid: Global.ReturnToStartBehavior.UpdateGrounded
+  commentId: M:Global.ReturnToStartBehavior.UpdateGrounded
+  id: UpdateGrounded
+  parent: Global.ReturnToStartBehavior
+  langs:
+  - csharp
+  - vb
+  name: UpdateGrounded()
+  nameWithType: ReturnToStartBehavior.UpdateGrounded()
+  fullName: ReturnToStartBehavior.UpdateGrounded()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UpdateGrounded
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Prep/ReturnToStartBehavior.cs
+    startLine: 199
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void UpdateGrounded()
+    content.vb: Protected Sub UpdateGrounded()
+  overload: Global.ReturnToStartBehavior.UpdateGrounded*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ModularEnemy.EnemyBehaviorInterface
+  commentId: T:Global.ModularEnemy.EnemyBehaviorInterface
+  name: ModularEnemy.EnemyBehaviorInterface
+  nameWithType: ModularEnemy.EnemyBehaviorInterface
+  fullName: ModularEnemy.EnemyBehaviorInterface
+  spec.csharp:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+  spec.vb:
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: .
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface
+    name: EnemyBehaviorInterface
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: ShowGizmos
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+  fullName: ModularEnemy.EnemyBehaviorInterface.ShowGizmos
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.self
+  commentId: F:Global.ModularEnemy.EnemyBehaviorInterface.self
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: self
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.self
+  fullName: ModularEnemy.EnemyBehaviorInterface.self
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Started
+  commentId: P:Global.ModularEnemy.EnemyBehaviorInterface.Started
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Started
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Started
+  fullName: ModularEnemy.EnemyBehaviorInterface.Started
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  isExternal: true
+  name: OnKill(ModularEnemy, bool)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, bool)
+  nameWithType.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  fullName.vb: ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy, Boolean)
+  name.vb: OnKill(ModularEnemy, Boolean)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnKill(ModularEnemy,System.Boolean)
+    name: OnKill
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: DrawGizmos(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.DrawGizmos(ModularEnemy)
+    name: DrawGizmos
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ReturnToStartBehavior.DrawGizmos*
+  commentId: Overload:Global.ReturnToStartBehavior.DrawGizmos
+  name: DrawGizmos
+  nameWithType: ReturnToStartBehavior.DrawGizmos
+  fullName: ReturnToStartBehavior.DrawGizmos
+- uid: Global.ModularEnemy
+  commentId: T:Global.ModularEnemy
+  name: ModularEnemy
+  nameWithType: ModularEnemy
+  fullName: ModularEnemy
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnRestart()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnRestart()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnRestart
+    name: OnRestart
+  - name: (
+  - name: )
+- uid: Global.ReturnToStartBehavior.OnRestart*
+  commentId: Overload:Global.ReturnToStartBehavior.OnRestart
+  name: OnRestart
+  nameWithType: ReturnToStartBehavior.OnRestart
+  fullName: ReturnToStartBehavior.OnRestart
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Start(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Start(ModularEnemy)
+    name: Start
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ReturnToStartBehavior.Start*
+  commentId: Overload:Global.ReturnToStartBehavior.Start
+  name: Start
+  nameWithType: ReturnToStartBehavior.Start
+  fullName: ReturnToStartBehavior.Start
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: OnResetObject(ModularEnemy)
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  fullName: ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.OnResetObject(ModularEnemy)
+    name: OnResetObject
+  - name: (
+  - uid: Global.ModularEnemy
+    name: ModularEnemy
+  - name: )
+- uid: Global.ReturnToStartBehavior.OnResetObject*
+  commentId: Overload:Global.ReturnToStartBehavior.OnResetObject
+  name: OnResetObject
+  nameWithType: ReturnToStartBehavior.OnResetObject
+  fullName: ReturnToStartBehavior.OnResetObject
+- uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+  commentId: M:Global.ModularEnemy.EnemyBehaviorInterface.Update
+  parent: Global.ModularEnemy.EnemyBehaviorInterface
+  name: Update()
+  nameWithType: ModularEnemy.EnemyBehaviorInterface.Update()
+  fullName: ModularEnemy.EnemyBehaviorInterface.Update()
+  spec.csharp:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ModularEnemy.EnemyBehaviorInterface.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.ReturnToStartBehavior.Update*
+  commentId: Overload:Global.ReturnToStartBehavior.Update
+  name: Update
+  nameWithType: ReturnToStartBehavior.Update
+  fullName: ReturnToStartBehavior.Update
+- uid: Global.ReturnToStartBehavior.UpdateFlying*
+  commentId: Overload:Global.ReturnToStartBehavior.UpdateFlying
+  name: UpdateFlying
+  nameWithType: ReturnToStartBehavior.UpdateFlying
+  fullName: ReturnToStartBehavior.UpdateFlying
+- uid: Global.ReturnToStartBehavior.UpdateBunnyHop*
+  commentId: Overload:Global.ReturnToStartBehavior.UpdateBunnyHop
+  name: UpdateBunnyHop
+  nameWithType: ReturnToStartBehavior.UpdateBunnyHop
+  fullName: ReturnToStartBehavior.UpdateBunnyHop
+- uid: Global.ReturnToStartBehavior.UpdateGrounded*
+  commentId: Overload:Global.ReturnToStartBehavior.UpdateGrounded
+  name: UpdateGrounded
+  nameWithType: ReturnToStartBehavior.UpdateGrounded
+  fullName: ReturnToStartBehavior.UpdateGrounded

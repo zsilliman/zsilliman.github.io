@@ -1,0 +1,690 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SDOFSpring
+  commentId: T:Global.SDOFSpring
+  id: SDOFSpring
+  parent: Global
+  children:
+  - Global.SDOFSpring.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.SDOFSpring.ApplyUpdatedProperties
+  - Global.SDOFSpring.Arrived
+  - Global.SDOFSpring.DistanceEpsilon
+  - Global.SDOFSpring.MakeCriticalDampSpringVariableDamp(System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.SDOFSpring.MakeCriticalDampSpringVariableMass(System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.SDOFSpring.MakeCriticalDampSpringVariableSpringRate(System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.SDOFSpring.Origin
+  - Global.SDOFSpring.Position
+  - Global.SDOFSpring.RegisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  - Global.SDOFSpring.Reset
+  - Global.SDOFSpring.Simulate(System.Single)
+  - Global.SDOFSpring.UnregisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  - Global.SDOFSpring.VelocityEpsilon
+  langs:
+  - csharp
+  - vb
+  name: SDOFSpring
+  nameWithType: SDOFSpring
+  fullName: SDOFSpring
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SDOFSpring
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class SDOFSpring
+    content.vb: Public Class SDOFSpring
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SDOFSpring.Position
+  commentId: P:Global.SDOFSpring.Position
+  id: Position
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: SDOFSpring.Position
+  fullName: SDOFSpring.Position
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Position
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Position { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Position As Single
+  overload: Global.SDOFSpring.Position*
+- uid: Global.SDOFSpring.DistanceEpsilon
+  commentId: P:Global.SDOFSpring.DistanceEpsilon
+  id: DistanceEpsilon
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: DistanceEpsilon
+  nameWithType: SDOFSpring.DistanceEpsilon
+  fullName: SDOFSpring.DistanceEpsilon
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DistanceEpsilon
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float DistanceEpsilon { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DistanceEpsilon As Single
+  overload: Global.SDOFSpring.DistanceEpsilon*
+- uid: Global.SDOFSpring.VelocityEpsilon
+  commentId: P:Global.SDOFSpring.VelocityEpsilon
+  id: VelocityEpsilon
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: VelocityEpsilon
+  nameWithType: SDOFSpring.VelocityEpsilon
+  fullName: SDOFSpring.VelocityEpsilon
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: VelocityEpsilon
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float VelocityEpsilon { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property VelocityEpsilon As Single
+  overload: Global.SDOFSpring.VelocityEpsilon*
+- uid: Global.SDOFSpring.Arrived
+  commentId: P:Global.SDOFSpring.Arrived
+  id: Arrived
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: Arrived
+  nameWithType: SDOFSpring.Arrived
+  fullName: SDOFSpring.Arrived
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Arrived
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool Arrived { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Arrived As Boolean
+  overload: Global.SDOFSpring.Arrived*
+- uid: Global.SDOFSpring.Origin
+  commentId: P:Global.SDOFSpring.Origin
+  id: Origin
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: SDOFSpring.Origin
+  fullName: SDOFSpring.Origin
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Origin
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Origin { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Origin As Single
+  overload: Global.SDOFSpring.Origin*
+- uid: Global.SDOFSpring.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.SDOFSpring.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)'
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: SDOFSpring(float, float, float, float, float, float)
+  nameWithType: SDOFSpring.SDOFSpring(float, float, float, float, float, float)
+  fullName: SDOFSpring.SDOFSpring(float, float, float, float, float, float)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public SDOFSpring(float origin, float mass, float spring_rate, float damping_coefficient, float initial_offset, float initial_velocity)
+    parameters:
+    - id: origin
+      type: System.Single
+    - id: mass
+      type: System.Single
+    - id: spring_rate
+      type: System.Single
+    - id: damping_coefficient
+      type: System.Single
+    - id: initial_offset
+      type: System.Single
+    - id: initial_velocity
+      type: System.Single
+    content.vb: Public Sub New(origin As Single, mass As Single, spring_rate As Single, damping_coefficient As Single, initial_offset As Single, initial_velocity As Single)
+  overload: Global.SDOFSpring.#ctor*
+  nameWithType.vb: SDOFSpring.New(Single, Single, Single, Single, Single, Single)
+  fullName.vb: SDOFSpring.New(Single, Single, Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single, Single, Single)
+- uid: Global.SDOFSpring.ApplyUpdatedProperties
+  commentId: M:Global.SDOFSpring.ApplyUpdatedProperties
+  id: ApplyUpdatedProperties
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: ApplyUpdatedProperties()
+  nameWithType: SDOFSpring.ApplyUpdatedProperties()
+  fullName: SDOFSpring.ApplyUpdatedProperties()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ApplyUpdatedProperties
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ApplyUpdatedProperties()
+    content.vb: Public Sub ApplyUpdatedProperties()
+  overload: Global.SDOFSpring.ApplyUpdatedProperties*
+- uid: Global.SDOFSpring.RegisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  commentId: M:Global.SDOFSpring.RegisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  id: RegisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: RegisterArrivedCallback(SDOFSpringCallback)
+  nameWithType: SDOFSpring.RegisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  fullName: SDOFSpring.RegisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterArrivedCallback
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 121
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterArrivedCallback(SDOFSpring.SDOFSpringCallback callback)
+    parameters:
+    - id: callback
+      type: Global.SDOFSpring.SDOFSpringCallback
+    content.vb: Public Sub RegisterArrivedCallback(callback As SDOFSpring.SDOFSpringCallback)
+  overload: Global.SDOFSpring.RegisterArrivedCallback*
+- uid: Global.SDOFSpring.UnregisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  commentId: M:Global.SDOFSpring.UnregisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  id: UnregisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: UnregisterArrivedCallback(SDOFSpringCallback)
+  nameWithType: SDOFSpring.UnregisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  fullName: SDOFSpring.UnregisterArrivedCallback(SDOFSpring.SDOFSpringCallback)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnregisterArrivedCallback
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 126
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnregisterArrivedCallback(SDOFSpring.SDOFSpringCallback callback)
+    parameters:
+    - id: callback
+      type: Global.SDOFSpring.SDOFSpringCallback
+    content.vb: Public Sub UnregisterArrivedCallback(callback As SDOFSpring.SDOFSpringCallback)
+  overload: Global.SDOFSpring.UnregisterArrivedCallback*
+- uid: Global.SDOFSpring.MakeCriticalDampSpringVariableDamp(System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.SDOFSpring.MakeCriticalDampSpringVariableDamp(System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: MakeCriticalDampSpringVariableDamp(System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: MakeCriticalDampSpringVariableDamp(float, float, float, float, float)
+  nameWithType: SDOFSpring.MakeCriticalDampSpringVariableDamp(float, float, float, float, float)
+  fullName: SDOFSpring.MakeCriticalDampSpringVariableDamp(float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MakeCriticalDampSpringVariableDamp
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 131
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static SDOFSpring MakeCriticalDampSpringVariableDamp(float origin, float mass, float spring_rate, float initial_offset, float initial_velocity)
+    parameters:
+    - id: origin
+      type: System.Single
+    - id: mass
+      type: System.Single
+    - id: spring_rate
+      type: System.Single
+    - id: initial_offset
+      type: System.Single
+    - id: initial_velocity
+      type: System.Single
+    return:
+      type: Global.SDOFSpring
+    content.vb: Public Shared Function MakeCriticalDampSpringVariableDamp(origin As Single, mass As Single, spring_rate As Single, initial_offset As Single, initial_velocity As Single) As SDOFSpring
+  overload: Global.SDOFSpring.MakeCriticalDampSpringVariableDamp*
+  nameWithType.vb: SDOFSpring.MakeCriticalDampSpringVariableDamp(Single, Single, Single, Single, Single)
+  fullName.vb: SDOFSpring.MakeCriticalDampSpringVariableDamp(Single, Single, Single, Single, Single)
+  name.vb: MakeCriticalDampSpringVariableDamp(Single, Single, Single, Single, Single)
+- uid: Global.SDOFSpring.MakeCriticalDampSpringVariableMass(System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.SDOFSpring.MakeCriticalDampSpringVariableMass(System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: MakeCriticalDampSpringVariableMass(System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: MakeCriticalDampSpringVariableMass(float, float, float, float, float)
+  nameWithType: SDOFSpring.MakeCriticalDampSpringVariableMass(float, float, float, float, float)
+  fullName: SDOFSpring.MakeCriticalDampSpringVariableMass(float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MakeCriticalDampSpringVariableMass
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 137
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static SDOFSpring MakeCriticalDampSpringVariableMass(float origin, float spring_rate, float damping_coefficient, float initial_offset, float initial_velocity)
+    parameters:
+    - id: origin
+      type: System.Single
+    - id: spring_rate
+      type: System.Single
+    - id: damping_coefficient
+      type: System.Single
+    - id: initial_offset
+      type: System.Single
+    - id: initial_velocity
+      type: System.Single
+    return:
+      type: Global.SDOFSpring
+    content.vb: Public Shared Function MakeCriticalDampSpringVariableMass(origin As Single, spring_rate As Single, damping_coefficient As Single, initial_offset As Single, initial_velocity As Single) As SDOFSpring
+  overload: Global.SDOFSpring.MakeCriticalDampSpringVariableMass*
+  nameWithType.vb: SDOFSpring.MakeCriticalDampSpringVariableMass(Single, Single, Single, Single, Single)
+  fullName.vb: SDOFSpring.MakeCriticalDampSpringVariableMass(Single, Single, Single, Single, Single)
+  name.vb: MakeCriticalDampSpringVariableMass(Single, Single, Single, Single, Single)
+- uid: Global.SDOFSpring.MakeCriticalDampSpringVariableSpringRate(System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.SDOFSpring.MakeCriticalDampSpringVariableSpringRate(System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: MakeCriticalDampSpringVariableSpringRate(System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: MakeCriticalDampSpringVariableSpringRate(float, float, float, float, float)
+  nameWithType: SDOFSpring.MakeCriticalDampSpringVariableSpringRate(float, float, float, float, float)
+  fullName: SDOFSpring.MakeCriticalDampSpringVariableSpringRate(float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MakeCriticalDampSpringVariableSpringRate
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 144
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static SDOFSpring MakeCriticalDampSpringVariableSpringRate(float origin, float mass, float damping_coefficient, float initial_offset, float initial_velocity)
+    parameters:
+    - id: origin
+      type: System.Single
+    - id: mass
+      type: System.Single
+    - id: damping_coefficient
+      type: System.Single
+    - id: initial_offset
+      type: System.Single
+    - id: initial_velocity
+      type: System.Single
+    return:
+      type: Global.SDOFSpring
+    content.vb: Public Shared Function MakeCriticalDampSpringVariableSpringRate(origin As Single, mass As Single, damping_coefficient As Single, initial_offset As Single, initial_velocity As Single) As SDOFSpring
+  overload: Global.SDOFSpring.MakeCriticalDampSpringVariableSpringRate*
+  nameWithType.vb: SDOFSpring.MakeCriticalDampSpringVariableSpringRate(Single, Single, Single, Single, Single)
+  fullName.vb: SDOFSpring.MakeCriticalDampSpringVariableSpringRate(Single, Single, Single, Single, Single)
+  name.vb: MakeCriticalDampSpringVariableSpringRate(Single, Single, Single, Single, Single)
+- uid: Global.SDOFSpring.Simulate(System.Single)
+  commentId: M:Global.SDOFSpring.Simulate(System.Single)
+  id: Simulate(System.Single)
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: Simulate(float)
+  nameWithType: SDOFSpring.Simulate(float)
+  fullName: SDOFSpring.Simulate(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Simulate
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 151
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Simulate(float delta_t)
+    parameters:
+    - id: delta_t
+      type: System.Single
+    content.vb: Public Sub Simulate(delta_t As Single)
+  overload: Global.SDOFSpring.Simulate*
+  nameWithType.vb: SDOFSpring.Simulate(Single)
+  fullName.vb: SDOFSpring.Simulate(Single)
+  name.vb: Simulate(Single)
+- uid: Global.SDOFSpring.Reset
+  commentId: M:Global.SDOFSpring.Reset
+  id: Reset
+  parent: Global.SDOFSpring
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: SDOFSpring.Reset()
+  fullName: SDOFSpring.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/SpringDamping.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Reset
+    path: ../Assets/Framework/Util/Math/Movement/SpringDamping.cs
+    startLine: 177
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: Global.SDOFSpring.Reset*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.SDOFSpring.Position*
+  commentId: Overload:Global.SDOFSpring.Position
+  name: Position
+  nameWithType: SDOFSpring.Position
+  fullName: SDOFSpring.Position
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.SDOFSpring.DistanceEpsilon*
+  commentId: Overload:Global.SDOFSpring.DistanceEpsilon
+  name: DistanceEpsilon
+  nameWithType: SDOFSpring.DistanceEpsilon
+  fullName: SDOFSpring.DistanceEpsilon
+- uid: Global.SDOFSpring.VelocityEpsilon*
+  commentId: Overload:Global.SDOFSpring.VelocityEpsilon
+  name: VelocityEpsilon
+  nameWithType: SDOFSpring.VelocityEpsilon
+  fullName: SDOFSpring.VelocityEpsilon
+- uid: Global.SDOFSpring.Arrived*
+  commentId: Overload:Global.SDOFSpring.Arrived
+  name: Arrived
+  nameWithType: SDOFSpring.Arrived
+  fullName: SDOFSpring.Arrived
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.SDOFSpring.Origin*
+  commentId: Overload:Global.SDOFSpring.Origin
+  name: Origin
+  nameWithType: SDOFSpring.Origin
+  fullName: SDOFSpring.Origin
+- uid: Global.SDOFSpring.#ctor*
+  commentId: Overload:Global.SDOFSpring.#ctor
+  name: SDOFSpring
+  nameWithType: SDOFSpring.SDOFSpring
+  fullName: SDOFSpring.SDOFSpring
+  nameWithType.vb: SDOFSpring.New
+  fullName.vb: SDOFSpring.New
+  name.vb: New
+- uid: Global.SDOFSpring.ApplyUpdatedProperties*
+  commentId: Overload:Global.SDOFSpring.ApplyUpdatedProperties
+  name: ApplyUpdatedProperties
+  nameWithType: SDOFSpring.ApplyUpdatedProperties
+  fullName: SDOFSpring.ApplyUpdatedProperties
+- uid: Global.SDOFSpring.RegisterArrivedCallback*
+  commentId: Overload:Global.SDOFSpring.RegisterArrivedCallback
+  name: RegisterArrivedCallback
+  nameWithType: SDOFSpring.RegisterArrivedCallback
+  fullName: SDOFSpring.RegisterArrivedCallback
+- uid: Global.SDOFSpring.SDOFSpringCallback
+  commentId: T:Global.SDOFSpring.SDOFSpringCallback
+  name: SDOFSpring.SDOFSpringCallback
+  nameWithType: SDOFSpring.SDOFSpringCallback
+  fullName: SDOFSpring.SDOFSpringCallback
+  spec.csharp:
+  - uid: Global.SDOFSpring
+    name: SDOFSpring
+  - name: .
+  - uid: Global.SDOFSpring.SDOFSpringCallback
+    name: SDOFSpringCallback
+  spec.vb:
+  - uid: Global.SDOFSpring
+    name: SDOFSpring
+  - name: .
+  - uid: Global.SDOFSpring.SDOFSpringCallback
+    name: SDOFSpringCallback
+- uid: Global.SDOFSpring.UnregisterArrivedCallback*
+  commentId: Overload:Global.SDOFSpring.UnregisterArrivedCallback
+  name: UnregisterArrivedCallback
+  nameWithType: SDOFSpring.UnregisterArrivedCallback
+  fullName: SDOFSpring.UnregisterArrivedCallback
+- uid: Global.SDOFSpring.MakeCriticalDampSpringVariableDamp*
+  commentId: Overload:Global.SDOFSpring.MakeCriticalDampSpringVariableDamp
+  name: MakeCriticalDampSpringVariableDamp
+  nameWithType: SDOFSpring.MakeCriticalDampSpringVariableDamp
+  fullName: SDOFSpring.MakeCriticalDampSpringVariableDamp
+- uid: Global.SDOFSpring
+  commentId: T:Global.SDOFSpring
+  name: SDOFSpring
+  nameWithType: SDOFSpring
+  fullName: SDOFSpring
+- uid: Global.SDOFSpring.MakeCriticalDampSpringVariableMass*
+  commentId: Overload:Global.SDOFSpring.MakeCriticalDampSpringVariableMass
+  name: MakeCriticalDampSpringVariableMass
+  nameWithType: SDOFSpring.MakeCriticalDampSpringVariableMass
+  fullName: SDOFSpring.MakeCriticalDampSpringVariableMass
+- uid: Global.SDOFSpring.MakeCriticalDampSpringVariableSpringRate*
+  commentId: Overload:Global.SDOFSpring.MakeCriticalDampSpringVariableSpringRate
+  name: MakeCriticalDampSpringVariableSpringRate
+  nameWithType: SDOFSpring.MakeCriticalDampSpringVariableSpringRate
+  fullName: SDOFSpring.MakeCriticalDampSpringVariableSpringRate
+- uid: Global.SDOFSpring.Simulate*
+  commentId: Overload:Global.SDOFSpring.Simulate
+  name: Simulate
+  nameWithType: SDOFSpring.Simulate
+  fullName: SDOFSpring.Simulate
+- uid: Global.SDOFSpring.Reset*
+  commentId: Overload:Global.SDOFSpring.Reset
+  name: Reset
+  nameWithType: SDOFSpring.Reset
+  fullName: SDOFSpring.Reset

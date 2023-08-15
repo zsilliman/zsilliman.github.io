@@ -1,0 +1,2007 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntColliderState
+  commentId: T:Global.IntColliderState
+  id: IntColliderState
+  parent: Global
+  children:
+  - Global.IntColliderState._player
+  - Global.IntColliderState.actors
+  - Global.IntColliderState.Add(IntObject)
+  - Global.IntColliderState.AddActorUnsafe(IntActor)
+  - Global.IntColliderState.AddAuraUnsafe(AutoMergeAura)
+  - Global.IntColliderState.AddInteractableUnsafe(Interactable)
+  - Global.IntColliderState.AddSolidUnsafe(IntSolid)
+  - Global.IntColliderState.AddTriggerUnsafe(IntTrigger)
+  - Global.IntColliderState.AddUnsafe(IntObject)
+  - Global.IntColliderState.auras
+  - Global.IntColliderState.cameraController
+  - Global.IntColliderState.cameraEffectController
+  - Global.IntColliderState.DebugPrintActors
+  - Global.IntColliderState.DebugPrintInteractables
+  - Global.IntColliderState.DebugPrintRemoveQueue
+  - Global.IntColliderState.DebugPrintSolids
+  - Global.IntColliderState.DebugPrintTriggers
+  - Global.IntColliderState.GetCrumblingPlatforms(System.Collections.Generic.List{CrumblingPlatforms})
+  - Global.IntColliderState.GetSection
+  - Global.IntColliderState.GetSolidTilemap
+  - Global.IntColliderState.Gravity
+  - Global.IntColliderState.InstantDestroyObject(UnityEngine.GameObject)
+  - Global.IntColliderState.InstantRemove(IntObject)
+  - Global.IntColliderState.interactables
+  - Global.IntColliderState.IsInKillQueue(IntObject)
+  - Global.IntColliderState.KillObject(IntObject,System.Single)
+  - Global.IntColliderState.KillObject(IntObject)
+  - Global.IntColliderState.player
+  - Global.IntColliderState.RayCast(IntRay,IntColliderState.RayCastFilter,System.Boolean)
+  - Global.IntColliderState.RayCastFirst(IntRay,IntColliderState.RayCastFilter)
+  - Global.IntColliderState.Remove(IntObject)
+  - Global.IntColliderState.RemoveActorUnsafe(IntActor)
+  - Global.IntColliderState.RemoveAuraUnsafe(AutoMergeAura)
+  - Global.IntColliderState.RemoveInteractableUnsafe(Interactable)
+  - Global.IntColliderState.RemoveSolidUnsafe(IntSolid)
+  - Global.IntColliderState.RemoveTriggerUnsafe(IntTrigger)
+  - Global.IntColliderState.SleepObject(IntObject)
+  - Global.IntColliderState.solids
+  - Global.IntColliderState.SolidsAndPlayerFilter
+  - Global.IntColliderState.SolidsFilter
+  - Global.IntColliderState.TileSize
+  - Global.IntColliderState.triggers
+  - Global.IntColliderState.WakeObject(IntObject)
+  langs:
+  - csharp
+  - vb
+  name: IntColliderState
+  nameWithType: IntColliderState
+  fullName: IntColliderState
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IntColliderState
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class IntColliderState : MonoBehaviour'
+    content.vb: Public Class IntColliderState Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.IntColliderState.SolidsFilter
+  commentId: F:Global.IntColliderState.SolidsFilter
+  id: SolidsFilter
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: SolidsFilter
+  nameWithType: IntColliderState.SolidsFilter
+  fullName: IntColliderState.SolidsFilter
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SolidsFilter
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static IntColliderState.RayCastFilter SolidsFilter
+    return:
+      type: Global.IntColliderState.RayCastFilter
+    content.vb: Public Shared SolidsFilter As IntColliderState.RayCastFilter
+- uid: Global.IntColliderState.SolidsAndPlayerFilter
+  commentId: F:Global.IntColliderState.SolidsAndPlayerFilter
+  id: SolidsAndPlayerFilter
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: SolidsAndPlayerFilter
+  nameWithType: IntColliderState.SolidsAndPlayerFilter
+  fullName: IntColliderState.SolidsAndPlayerFilter
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SolidsAndPlayerFilter
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static IntColliderState.RayCastFilter SolidsAndPlayerFilter
+    return:
+      type: Global.IntColliderState.RayCastFilter
+    content.vb: Public Shared SolidsAndPlayerFilter As IntColliderState.RayCastFilter
+- uid: Global.IntColliderState._player
+  commentId: F:Global.IntColliderState._player
+  id: _player
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: _player
+  nameWithType: IntColliderState._player
+  fullName: IntColliderState._player
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: _player
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Player _player
+    return:
+      type: Global.Player
+    content.vb: Protected _player As Player
+- uid: Global.IntColliderState.player
+  commentId: P:Global.IntColliderState.player
+  id: player
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: player
+  nameWithType: IntColliderState.player
+  fullName: IntColliderState.player
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: player
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Player player { get; set; }
+    parameters: []
+    return:
+      type: Global.Player
+    content.vb: Public Property player As Player
+  overload: Global.IntColliderState.player*
+- uid: Global.IntColliderState.actors
+  commentId: P:Global.IntColliderState.actors
+  id: actors
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: actors
+  nameWithType: IntColliderState.actors
+  fullName: IntColliderState.actors
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: actors
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<IntActor> actors { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{IntActor}
+    content.vb: Public ReadOnly Property actors As List(Of IntActor)
+  overload: Global.IntColliderState.actors*
+- uid: Global.IntColliderState.solids
+  commentId: P:Global.IntColliderState.solids
+  id: solids
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: solids
+  nameWithType: IntColliderState.solids
+  fullName: IntColliderState.solids
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: solids
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<IntSolid> solids { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{IntSolid}
+    content.vb: Public ReadOnly Property solids As List(Of IntSolid)
+  overload: Global.IntColliderState.solids*
+- uid: Global.IntColliderState.triggers
+  commentId: P:Global.IntColliderState.triggers
+  id: triggers
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: triggers
+  nameWithType: IntColliderState.triggers
+  fullName: IntColliderState.triggers
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: triggers
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<IntTrigger> triggers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{IntTrigger}
+    content.vb: Public ReadOnly Property triggers As List(Of IntTrigger)
+  overload: Global.IntColliderState.triggers*
+- uid: Global.IntColliderState.interactables
+  commentId: P:Global.IntColliderState.interactables
+  id: interactables
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: interactables
+  nameWithType: IntColliderState.interactables
+  fullName: IntColliderState.interactables
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: interactables
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<Interactable> interactables { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Interactable}
+    content.vb: Public ReadOnly Property interactables As List(Of Interactable)
+  overload: Global.IntColliderState.interactables*
+- uid: Global.IntColliderState.auras
+  commentId: P:Global.IntColliderState.auras
+  id: auras
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: auras
+  nameWithType: IntColliderState.auras
+  fullName: IntColliderState.auras
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: auras
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<AutoMergeAura> auras { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{AutoMergeAura}
+    content.vb: Public ReadOnly Property auras As List(Of AutoMergeAura)
+  overload: Global.IntColliderState.auras*
+- uid: Global.IntColliderState.cameraController
+  commentId: P:Global.IntColliderState.cameraController
+  id: cameraController
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: cameraController
+  nameWithType: IntColliderState.cameraController
+  fullName: IntColliderState.cameraController
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: cameraController
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public FollowPlayer cameraController { get; }
+    parameters: []
+    return:
+      type: Global.FollowPlayer
+    content.vb: Public Property cameraController As FollowPlayer
+  overload: Global.IntColliderState.cameraController*
+- uid: Global.IntColliderState.cameraEffectController
+  commentId: P:Global.IntColliderState.cameraEffectController
+  id: cameraEffectController
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: cameraEffectController
+  nameWithType: IntColliderState.cameraEffectController
+  fullName: IntColliderState.cameraEffectController
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: cameraEffectController
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public EffectController cameraEffectController { get; }
+    parameters: []
+    return:
+      type: Global.EffectController
+    content.vb: Public Property cameraEffectController As EffectController
+  overload: Global.IntColliderState.cameraEffectController*
+- uid: Global.IntColliderState.Gravity
+  commentId: P:Global.IntColliderState.Gravity
+  id: Gravity
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: Gravity
+  nameWithType: IntColliderState.Gravity
+  fullName: IntColliderState.Gravity
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Gravity
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Gravity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Gravity As Single
+  overload: Global.IntColliderState.Gravity*
+- uid: Global.IntColliderState.TileSize
+  commentId: P:Global.IntColliderState.TileSize
+  id: TileSize
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: TileSize
+  nameWithType: IntColliderState.TileSize
+  fullName: IntColliderState.TileSize
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TileSize
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2Int TileSize { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Property TileSize As Vector2Int
+  overload: Global.IntColliderState.TileSize*
+- uid: Global.IntColliderState.GetSection
+  commentId: P:Global.IntColliderState.GetSection
+  id: GetSection
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: GetSection
+  nameWithType: IntColliderState.GetSection
+  fullName: IntColliderState.GetSection
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetSection
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Section GetSection { get; }
+    parameters: []
+    return:
+      type: Global.Section
+    content.vb: Public ReadOnly Property GetSection As Section
+  overload: Global.IntColliderState.GetSection*
+- uid: Global.IntColliderState.KillObject(IntObject)
+  commentId: M:Global.IntColliderState.KillObject(IntObject)
+  id: KillObject(IntObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: KillObject(IntObject)
+  nameWithType: IntColliderState.KillObject(IntObject)
+  fullName: IntColliderState.KillObject(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: KillObject
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 148
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void KillObject(IntObject obj)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+    content.vb: Public Sub KillObject(obj As IntObject)
+  overload: Global.IntColliderState.KillObject*
+- uid: Global.IntColliderState.SleepObject(IntObject)
+  commentId: M:Global.IntColliderState.SleepObject(IntObject)
+  id: SleepObject(IntObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: SleepObject(IntObject)
+  nameWithType: IntColliderState.SleepObject(IntObject)
+  fullName: IntColliderState.SleepObject(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SleepObject
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 159
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SleepObject(IntObject obj)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+    content.vb: Public Sub SleepObject(obj As IntObject)
+  overload: Global.IntColliderState.SleepObject*
+- uid: Global.IntColliderState.WakeObject(IntObject)
+  commentId: M:Global.IntColliderState.WakeObject(IntObject)
+  id: WakeObject(IntObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: WakeObject(IntObject)
+  nameWithType: IntColliderState.WakeObject(IntObject)
+  fullName: IntColliderState.WakeObject(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WakeObject
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 166
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void WakeObject(IntObject obj)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+    content.vb: Public Sub WakeObject(obj As IntObject)
+  overload: Global.IntColliderState.WakeObject*
+- uid: Global.IntColliderState.KillObject(IntObject,System.Single)
+  commentId: M:Global.IntColliderState.KillObject(IntObject,System.Single)
+  id: KillObject(IntObject,System.Single)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: KillObject(IntObject, float)
+  nameWithType: IntColliderState.KillObject(IntObject, float)
+  fullName: IntColliderState.KillObject(IntObject, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: KillObject
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 178
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nKill object after [time] seconds or on reset\n"
+  example: []
+  syntax:
+    content: public void KillObject(IntObject obj, float duration)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+      description: Object to kill
+    - id: duration
+      type: System.Single
+      description: Time in seconds to wait before kill
+    content.vb: Public Sub KillObject(obj As IntObject, duration As Single)
+  overload: Global.IntColliderState.KillObject*
+  nameWithType.vb: IntColliderState.KillObject(IntObject, Single)
+  fullName.vb: IntColliderState.KillObject(IntObject, Single)
+  name.vb: KillObject(IntObject, Single)
+- uid: Global.IntColliderState.IsInKillQueue(IntObject)
+  commentId: M:Global.IntColliderState.IsInKillQueue(IntObject)
+  id: IsInKillQueue(IntObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: IsInKillQueue(IntObject)
+  nameWithType: IntColliderState.IsInKillQueue(IntObject)
+  fullName: IntColliderState.IsInKillQueue(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInKillQueue
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 193
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsInKillQueue(IntObject obj)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsInKillQueue(obj As IntObject) As Boolean
+  overload: Global.IntColliderState.IsInKillQueue*
+- uid: Global.IntColliderState.InstantDestroyObject(UnityEngine.GameObject)
+  commentId: M:Global.IntColliderState.InstantDestroyObject(UnityEngine.GameObject)
+  id: InstantDestroyObject(UnityEngine.GameObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: InstantDestroyObject(GameObject)
+  nameWithType: IntColliderState.InstantDestroyObject(GameObject)
+  fullName: IntColliderState.InstantDestroyObject(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InstantDestroyObject
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 198
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void InstantDestroyObject(GameObject obj)
+    parameters:
+    - id: obj
+      type: UnityEngine.GameObject
+    content.vb: Public Sub InstantDestroyObject(obj As GameObject)
+  overload: Global.IntColliderState.InstantDestroyObject*
+- uid: Global.IntColliderState.Add(IntObject)
+  commentId: M:Global.IntColliderState.Add(IntObject)
+  id: Add(IntObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: Add(IntObject)
+  nameWithType: IntColliderState.Add(IntObject)
+  fullName: IntColliderState.Add(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Add
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 223
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Add(IntObject obj)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+    content.vb: Public Sub Add(obj As IntObject)
+  overload: Global.IntColliderState.Add*
+- uid: Global.IntColliderState.AddUnsafe(IntObject)
+  commentId: M:Global.IntColliderState.AddUnsafe(IntObject)
+  id: AddUnsafe(IntObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: AddUnsafe(IntObject)
+  nameWithType: IntColliderState.AddUnsafe(IntObject)
+  fullName: IntColliderState.AddUnsafe(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 228
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddUnsafe(IntObject obj)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+    content.vb: Public Sub AddUnsafe(obj As IntObject)
+  overload: Global.IntColliderState.AddUnsafe*
+- uid: Global.IntColliderState.Remove(IntObject)
+  commentId: M:Global.IntColliderState.Remove(IntObject)
+  id: Remove(IntObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: Remove(IntObject)
+  nameWithType: IntColliderState.Remove(IntObject)
+  fullName: IntColliderState.Remove(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Remove
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 242
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Remove(IntObject obj)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+    content.vb: Public Sub Remove(obj As IntObject)
+  overload: Global.IntColliderState.Remove*
+- uid: Global.IntColliderState.InstantRemove(IntObject)
+  commentId: M:Global.IntColliderState.InstantRemove(IntObject)
+  id: InstantRemove(IntObject)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: InstantRemove(IntObject)
+  nameWithType: IntColliderState.InstantRemove(IntObject)
+  fullName: IntColliderState.InstantRemove(IntObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: InstantRemove
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 247
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void InstantRemove(IntObject obj)
+    parameters:
+    - id: obj
+      type: Global.IntObject
+    content.vb: Public Sub InstantRemove(obj As IntObject)
+  overload: Global.IntColliderState.InstantRemove*
+- uid: Global.IntColliderState.AddActorUnsafe(IntActor)
+  commentId: M:Global.IntColliderState.AddActorUnsafe(IntActor)
+  id: AddActorUnsafe(IntActor)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: AddActorUnsafe(IntActor)
+  nameWithType: IntColliderState.AddActorUnsafe(IntActor)
+  fullName: IntColliderState.AddActorUnsafe(IntActor)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddActorUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 261
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddActorUnsafe(IntActor actor)
+    parameters:
+    - id: actor
+      type: Global.IntActor
+    content.vb: Public Sub AddActorUnsafe(actor As IntActor)
+  overload: Global.IntColliderState.AddActorUnsafe*
+- uid: Global.IntColliderState.RemoveActorUnsafe(IntActor)
+  commentId: M:Global.IntColliderState.RemoveActorUnsafe(IntActor)
+  id: RemoveActorUnsafe(IntActor)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: RemoveActorUnsafe(IntActor)
+  nameWithType: IntColliderState.RemoveActorUnsafe(IntActor)
+  fullName: IntColliderState.RemoveActorUnsafe(IntActor)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RemoveActorUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 269
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RemoveActorUnsafe(IntActor actor)
+    parameters:
+    - id: actor
+      type: Global.IntActor
+    content.vb: Public Sub RemoveActorUnsafe(actor As IntActor)
+  overload: Global.IntColliderState.RemoveActorUnsafe*
+- uid: Global.IntColliderState.AddSolidUnsafe(IntSolid)
+  commentId: M:Global.IntColliderState.AddSolidUnsafe(IntSolid)
+  id: AddSolidUnsafe(IntSolid)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: AddSolidUnsafe(IntSolid)
+  nameWithType: IntColliderState.AddSolidUnsafe(IntSolid)
+  fullName: IntColliderState.AddSolidUnsafe(IntSolid)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddSolidUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 279
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddSolidUnsafe(IntSolid solid)
+    parameters:
+    - id: solid
+      type: Global.IntSolid
+    content.vb: Public Sub AddSolidUnsafe(solid As IntSolid)
+  overload: Global.IntColliderState.AddSolidUnsafe*
+- uid: Global.IntColliderState.RemoveSolidUnsafe(IntSolid)
+  commentId: M:Global.IntColliderState.RemoveSolidUnsafe(IntSolid)
+  id: RemoveSolidUnsafe(IntSolid)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: RemoveSolidUnsafe(IntSolid)
+  nameWithType: IntColliderState.RemoveSolidUnsafe(IntSolid)
+  fullName: IntColliderState.RemoveSolidUnsafe(IntSolid)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RemoveSolidUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 289
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RemoveSolidUnsafe(IntSolid solid)
+    parameters:
+    - id: solid
+      type: Global.IntSolid
+    content.vb: Public Sub RemoveSolidUnsafe(solid As IntSolid)
+  overload: Global.IntColliderState.RemoveSolidUnsafe*
+- uid: Global.IntColliderState.AddTriggerUnsafe(IntTrigger)
+  commentId: M:Global.IntColliderState.AddTriggerUnsafe(IntTrigger)
+  id: AddTriggerUnsafe(IntTrigger)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: AddTriggerUnsafe(IntTrigger)
+  nameWithType: IntColliderState.AddTriggerUnsafe(IntTrigger)
+  fullName: IntColliderState.AddTriggerUnsafe(IntTrigger)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddTriggerUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 295
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddTriggerUnsafe(IntTrigger trigger)
+    parameters:
+    - id: trigger
+      type: Global.IntTrigger
+    content.vb: Public Sub AddTriggerUnsafe(trigger As IntTrigger)
+  overload: Global.IntColliderState.AddTriggerUnsafe*
+- uid: Global.IntColliderState.RemoveTriggerUnsafe(IntTrigger)
+  commentId: M:Global.IntColliderState.RemoveTriggerUnsafe(IntTrigger)
+  id: RemoveTriggerUnsafe(IntTrigger)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: RemoveTriggerUnsafe(IntTrigger)
+  nameWithType: IntColliderState.RemoveTriggerUnsafe(IntTrigger)
+  fullName: IntColliderState.RemoveTriggerUnsafe(IntTrigger)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RemoveTriggerUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 301
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RemoveTriggerUnsafe(IntTrigger trigger)
+    parameters:
+    - id: trigger
+      type: Global.IntTrigger
+    content.vb: Public Sub RemoveTriggerUnsafe(trigger As IntTrigger)
+  overload: Global.IntColliderState.RemoveTriggerUnsafe*
+- uid: Global.IntColliderState.AddInteractableUnsafe(Interactable)
+  commentId: M:Global.IntColliderState.AddInteractableUnsafe(Interactable)
+  id: AddInteractableUnsafe(Interactable)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: AddInteractableUnsafe(Interactable)
+  nameWithType: IntColliderState.AddInteractableUnsafe(Interactable)
+  fullName: IntColliderState.AddInteractableUnsafe(Interactable)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddInteractableUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 307
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddInteractableUnsafe(Interactable interactable)
+    parameters:
+    - id: interactable
+      type: Global.Interactable
+    content.vb: Public Sub AddInteractableUnsafe(interactable As Interactable)
+  overload: Global.IntColliderState.AddInteractableUnsafe*
+- uid: Global.IntColliderState.RemoveInteractableUnsafe(Interactable)
+  commentId: M:Global.IntColliderState.RemoveInteractableUnsafe(Interactable)
+  id: RemoveInteractableUnsafe(Interactable)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: RemoveInteractableUnsafe(Interactable)
+  nameWithType: IntColliderState.RemoveInteractableUnsafe(Interactable)
+  fullName: IntColliderState.RemoveInteractableUnsafe(Interactable)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RemoveInteractableUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 321
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RemoveInteractableUnsafe(Interactable interactable)
+    parameters:
+    - id: interactable
+      type: Global.Interactable
+    content.vb: Public Sub RemoveInteractableUnsafe(interactable As Interactable)
+  overload: Global.IntColliderState.RemoveInteractableUnsafe*
+- uid: Global.IntColliderState.AddAuraUnsafe(AutoMergeAura)
+  commentId: M:Global.IntColliderState.AddAuraUnsafe(AutoMergeAura)
+  id: AddAuraUnsafe(AutoMergeAura)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: AddAuraUnsafe(AutoMergeAura)
+  nameWithType: IntColliderState.AddAuraUnsafe(AutoMergeAura)
+  fullName: IntColliderState.AddAuraUnsafe(AutoMergeAura)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AddAuraUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 327
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddAuraUnsafe(AutoMergeAura aura)
+    parameters:
+    - id: aura
+      type: Global.AutoMergeAura
+    content.vb: Public Sub AddAuraUnsafe(aura As AutoMergeAura)
+  overload: Global.IntColliderState.AddAuraUnsafe*
+- uid: Global.IntColliderState.RemoveAuraUnsafe(AutoMergeAura)
+  commentId: M:Global.IntColliderState.RemoveAuraUnsafe(AutoMergeAura)
+  id: RemoveAuraUnsafe(AutoMergeAura)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: RemoveAuraUnsafe(AutoMergeAura)
+  nameWithType: IntColliderState.RemoveAuraUnsafe(AutoMergeAura)
+  fullName: IntColliderState.RemoveAuraUnsafe(AutoMergeAura)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RemoveAuraUnsafe
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 333
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RemoveAuraUnsafe(AutoMergeAura aura)
+    parameters:
+    - id: aura
+      type: Global.AutoMergeAura
+    content.vb: Public Sub RemoveAuraUnsafe(aura As AutoMergeAura)
+  overload: Global.IntColliderState.RemoveAuraUnsafe*
+- uid: Global.IntColliderState.GetSolidTilemap
+  commentId: M:Global.IntColliderState.GetSolidTilemap
+  id: GetSolidTilemap
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: GetSolidTilemap()
+  nameWithType: IntColliderState.GetSolidTilemap()
+  fullName: IntColliderState.GetSolidTilemap()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetSolidTilemap
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 339
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TilemapIntCollider GetSolidTilemap()
+    return:
+      type: Global.TilemapIntCollider
+    content.vb: Public Function GetSolidTilemap() As TilemapIntCollider
+  overload: Global.IntColliderState.GetSolidTilemap*
+- uid: Global.IntColliderState.GetCrumblingPlatforms(System.Collections.Generic.List{CrumblingPlatforms})
+  commentId: M:Global.IntColliderState.GetCrumblingPlatforms(System.Collections.Generic.List{CrumblingPlatforms})
+  id: GetCrumblingPlatforms(System.Collections.Generic.List{CrumblingPlatforms})
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: GetCrumblingPlatforms(List<CrumblingPlatforms>)
+  nameWithType: IntColliderState.GetCrumblingPlatforms(List<CrumblingPlatforms>)
+  fullName: IntColliderState.GetCrumblingPlatforms(System.Collections.Generic.List<CrumblingPlatforms>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GetCrumblingPlatforms
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 344
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void GetCrumblingPlatforms(List<CrumblingPlatforms> arr)
+    parameters:
+    - id: arr
+      type: System.Collections.Generic.List{CrumblingPlatforms}
+    content.vb: Public Sub GetCrumblingPlatforms(arr As List(Of CrumblingPlatforms))
+  overload: Global.IntColliderState.GetCrumblingPlatforms*
+  nameWithType.vb: IntColliderState.GetCrumblingPlatforms(List(Of CrumblingPlatforms))
+  fullName.vb: IntColliderState.GetCrumblingPlatforms(System.Collections.Generic.List(Of CrumblingPlatforms))
+  name.vb: GetCrumblingPlatforms(List(Of CrumblingPlatforms))
+- uid: Global.IntColliderState.RayCastFirst(IntRay,IntColliderState.RayCastFilter)
+  commentId: M:Global.IntColliderState.RayCastFirst(IntRay,IntColliderState.RayCastFilter)
+  id: RayCastFirst(IntRay,IntColliderState.RayCastFilter)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: RayCastFirst(IntRay, RayCastFilter)
+  nameWithType: IntColliderState.RayCastFirst(IntRay, IntColliderState.RayCastFilter)
+  fullName: IntColliderState.RayCastFirst(IntRay, IntColliderState.RayCastFilter)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RayCastFirst
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 366
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Intersection RayCastFirst(IntRay ray, IntColliderState.RayCastFilter filter)
+    parameters:
+    - id: ray
+      type: Global.IntRay
+    - id: filter
+      type: Global.IntColliderState.RayCastFilter
+    return:
+      type: Global.Intersection
+    content.vb: Public Function RayCastFirst(ray As IntRay, filter As IntColliderState.RayCastFilter) As Intersection
+  overload: Global.IntColliderState.RayCastFirst*
+- uid: Global.IntColliderState.RayCast(IntRay,IntColliderState.RayCastFilter,System.Boolean)
+  commentId: M:Global.IntColliderState.RayCast(IntRay,IntColliderState.RayCastFilter,System.Boolean)
+  id: RayCast(IntRay,IntColliderState.RayCastFilter,System.Boolean)
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: RayCast(IntRay, RayCastFilter, bool)
+  nameWithType: IntColliderState.RayCast(IntRay, IntColliderState.RayCastFilter, bool)
+  fullName: IntColliderState.RayCast(IntRay, IntColliderState.RayCastFilter, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RayCast
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 383
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public List<Intersection> RayCast(IntRay ray, IntColliderState.RayCastFilter filter, bool first = false)
+    parameters:
+    - id: ray
+      type: Global.IntRay
+      description: ''
+    - id: filter
+      type: Global.IntColliderState.RayCastFilter
+      description: ''
+    - id: first
+      type: System.Boolean
+      description: If set to true, does not guarantee any order for the intersections, only that index 0 is the first
+    return:
+      type: System.Collections.Generic.List{Intersection}
+      description: ''
+    content.vb: Public Function RayCast(ray As IntRay, filter As IntColliderState.RayCastFilter, first As Boolean = False) As List(Of Intersection)
+  overload: Global.IntColliderState.RayCast*
+  nameWithType.vb: IntColliderState.RayCast(IntRay, IntColliderState.RayCastFilter, Boolean)
+  fullName.vb: IntColliderState.RayCast(IntRay, IntColliderState.RayCastFilter, Boolean)
+  name.vb: RayCast(IntRay, RayCastFilter, Boolean)
+- uid: Global.IntColliderState.DebugPrintActors
+  commentId: M:Global.IntColliderState.DebugPrintActors
+  id: DebugPrintActors
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: DebugPrintActors()
+  nameWithType: IntColliderState.DebugPrintActors()
+  fullName: IntColliderState.DebugPrintActors()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugPrintActors
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 467
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugPrintActors()
+    content.vb: Public Sub DebugPrintActors()
+  overload: Global.IntColliderState.DebugPrintActors*
+- uid: Global.IntColliderState.DebugPrintTriggers
+  commentId: M:Global.IntColliderState.DebugPrintTriggers
+  id: DebugPrintTriggers
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: DebugPrintTriggers()
+  nameWithType: IntColliderState.DebugPrintTriggers()
+  fullName: IntColliderState.DebugPrintTriggers()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugPrintTriggers
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 482
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugPrintTriggers()
+    content.vb: Public Sub DebugPrintTriggers()
+  overload: Global.IntColliderState.DebugPrintTriggers*
+- uid: Global.IntColliderState.DebugPrintSolids
+  commentId: M:Global.IntColliderState.DebugPrintSolids
+  id: DebugPrintSolids
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: DebugPrintSolids()
+  nameWithType: IntColliderState.DebugPrintSolids()
+  fullName: IntColliderState.DebugPrintSolids()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugPrintSolids
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 498
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugPrintSolids()
+    content.vb: Public Sub DebugPrintSolids()
+  overload: Global.IntColliderState.DebugPrintSolids*
+- uid: Global.IntColliderState.DebugPrintInteractables
+  commentId: M:Global.IntColliderState.DebugPrintInteractables
+  id: DebugPrintInteractables
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: DebugPrintInteractables()
+  nameWithType: IntColliderState.DebugPrintInteractables()
+  fullName: IntColliderState.DebugPrintInteractables()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugPrintInteractables
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 514
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugPrintInteractables()
+    content.vb: Public Sub DebugPrintInteractables()
+  overload: Global.IntColliderState.DebugPrintInteractables*
+- uid: Global.IntColliderState.DebugPrintRemoveQueue
+  commentId: M:Global.IntColliderState.DebugPrintRemoveQueue
+  id: DebugPrintRemoveQueue
+  parent: Global.IntColliderState
+  langs:
+  - csharp
+  - vb
+  name: DebugPrintRemoveQueue()
+  nameWithType: IntColliderState.DebugPrintRemoveQueue()
+  fullName: IntColliderState.DebugPrintRemoveQueue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Physics/Objects/IntColliderState.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DebugPrintRemoveQueue
+    path: ../Assets/Framework/Physics/Objects/IntColliderState.cs
+    startLine: 530
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DebugPrintRemoveQueue()
+    content.vb: Public Sub DebugPrintRemoveQueue()
+  overload: Global.IntColliderState.DebugPrintRemoveQueue*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.IntColliderState.RayCastFilter
+  commentId: T:Global.IntColliderState.RayCastFilter
+  name: IntColliderState.RayCastFilter
+  nameWithType: IntColliderState.RayCastFilter
+  fullName: IntColliderState.RayCastFilter
+  spec.csharp:
+  - uid: Global.IntColliderState
+    name: IntColliderState
+  - name: .
+  - uid: Global.IntColliderState.RayCastFilter
+    name: RayCastFilter
+  spec.vb:
+  - uid: Global.IntColliderState
+    name: IntColliderState
+  - name: .
+  - uid: Global.IntColliderState.RayCastFilter
+    name: RayCastFilter
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.IntColliderState.player*
+  commentId: Overload:Global.IntColliderState.player
+  name: player
+  nameWithType: IntColliderState.player
+  fullName: IntColliderState.player
+- uid: Global.IntColliderState.actors*
+  commentId: Overload:Global.IntColliderState.actors
+  name: actors
+  nameWithType: IntColliderState.actors
+  fullName: IntColliderState.actors
+- uid: System.Collections.Generic.List{IntActor}
+  commentId: T:System.Collections.Generic.List{IntActor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IntActor>
+  nameWithType: List<IntActor>
+  fullName: System.Collections.Generic.List<IntActor>
+  nameWithType.vb: List(Of IntActor)
+  fullName.vb: System.Collections.Generic.List(Of IntActor)
+  name.vb: List(Of IntActor)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntActor
+    name: IntActor
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.IntColliderState.solids*
+  commentId: Overload:Global.IntColliderState.solids
+  name: solids
+  nameWithType: IntColliderState.solids
+  fullName: IntColliderState.solids
+- uid: System.Collections.Generic.List{IntSolid}
+  commentId: T:System.Collections.Generic.List{IntSolid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IntSolid>
+  nameWithType: List<IntSolid>
+  fullName: System.Collections.Generic.List<IntSolid>
+  nameWithType.vb: List(Of IntSolid)
+  fullName.vb: System.Collections.Generic.List(Of IntSolid)
+  name.vb: List(Of IntSolid)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntSolid
+    name: IntSolid
+  - name: )
+- uid: Global.IntColliderState.triggers*
+  commentId: Overload:Global.IntColliderState.triggers
+  name: triggers
+  nameWithType: IntColliderState.triggers
+  fullName: IntColliderState.triggers
+- uid: System.Collections.Generic.List{IntTrigger}
+  commentId: T:System.Collections.Generic.List{IntTrigger}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IntTrigger>
+  nameWithType: List<IntTrigger>
+  fullName: System.Collections.Generic.List<IntTrigger>
+  nameWithType.vb: List(Of IntTrigger)
+  fullName.vb: System.Collections.Generic.List(Of IntTrigger)
+  name.vb: List(Of IntTrigger)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IntTrigger
+    name: IntTrigger
+  - name: )
+- uid: Global.IntColliderState.interactables*
+  commentId: Overload:Global.IntColliderState.interactables
+  name: interactables
+  nameWithType: IntColliderState.interactables
+  fullName: IntColliderState.interactables
+- uid: System.Collections.Generic.List{Interactable}
+  commentId: T:System.Collections.Generic.List{Interactable}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Interactable>
+  nameWithType: List<Interactable>
+  fullName: System.Collections.Generic.List<Interactable>
+  nameWithType.vb: List(Of Interactable)
+  fullName.vb: System.Collections.Generic.List(Of Interactable)
+  name.vb: List(Of Interactable)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Interactable
+    name: Interactable
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Interactable
+    name: Interactable
+  - name: )
+- uid: Global.IntColliderState.auras*
+  commentId: Overload:Global.IntColliderState.auras
+  name: auras
+  nameWithType: IntColliderState.auras
+  fullName: IntColliderState.auras
+- uid: System.Collections.Generic.List{AutoMergeAura}
+  commentId: T:System.Collections.Generic.List{AutoMergeAura}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AutoMergeAura>
+  nameWithType: List<AutoMergeAura>
+  fullName: System.Collections.Generic.List<AutoMergeAura>
+  nameWithType.vb: List(Of AutoMergeAura)
+  fullName.vb: System.Collections.Generic.List(Of AutoMergeAura)
+  name.vb: List(Of AutoMergeAura)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.AutoMergeAura
+    name: AutoMergeAura
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.AutoMergeAura
+    name: AutoMergeAura
+  - name: )
+- uid: Global.IntColliderState.cameraController*
+  commentId: Overload:Global.IntColliderState.cameraController
+  name: cameraController
+  nameWithType: IntColliderState.cameraController
+  fullName: IntColliderState.cameraController
+- uid: Global.FollowPlayer
+  commentId: T:Global.FollowPlayer
+  name: FollowPlayer
+  nameWithType: FollowPlayer
+  fullName: FollowPlayer
+- uid: Global.IntColliderState.cameraEffectController*
+  commentId: Overload:Global.IntColliderState.cameraEffectController
+  name: cameraEffectController
+  nameWithType: IntColliderState.cameraEffectController
+  fullName: IntColliderState.cameraEffectController
+- uid: Global.EffectController
+  commentId: T:Global.EffectController
+  name: EffectController
+  nameWithType: EffectController
+  fullName: EffectController
+- uid: Global.IntColliderState.Gravity*
+  commentId: Overload:Global.IntColliderState.Gravity
+  name: Gravity
+  nameWithType: IntColliderState.Gravity
+  fullName: IntColliderState.Gravity
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.IntColliderState.TileSize*
+  commentId: Overload:Global.IntColliderState.TileSize
+  name: TileSize
+  nameWithType: IntColliderState.TileSize
+  fullName: IntColliderState.TileSize
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: Global.IntColliderState.GetSection*
+  commentId: Overload:Global.IntColliderState.GetSection
+  name: GetSection
+  nameWithType: IntColliderState.GetSection
+  fullName: IntColliderState.GetSection
+- uid: Global.Section
+  commentId: T:Global.Section
+  name: Section
+  nameWithType: Section
+  fullName: Section
+- uid: Global.IntColliderState.KillObject*
+  commentId: Overload:Global.IntColliderState.KillObject
+  name: KillObject
+  nameWithType: IntColliderState.KillObject
+  fullName: IntColliderState.KillObject
+- uid: Global.IntObject
+  commentId: T:Global.IntObject
+  name: IntObject
+  nameWithType: IntObject
+  fullName: IntObject
+- uid: Global.IntColliderState.SleepObject*
+  commentId: Overload:Global.IntColliderState.SleepObject
+  name: SleepObject
+  nameWithType: IntColliderState.SleepObject
+  fullName: IntColliderState.SleepObject
+- uid: Global.IntColliderState.WakeObject*
+  commentId: Overload:Global.IntColliderState.WakeObject
+  name: WakeObject
+  nameWithType: IntColliderState.WakeObject
+  fullName: IntColliderState.WakeObject
+- uid: Global.IntColliderState.IsInKillQueue*
+  commentId: Overload:Global.IntColliderState.IsInKillQueue
+  name: IsInKillQueue
+  nameWithType: IntColliderState.IsInKillQueue
+  fullName: IntColliderState.IsInKillQueue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.IntColliderState.InstantDestroyObject*
+  commentId: Overload:Global.IntColliderState.InstantDestroyObject
+  name: InstantDestroyObject
+  nameWithType: IntColliderState.InstantDestroyObject
+  fullName: IntColliderState.InstantDestroyObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.IntColliderState.Add*
+  commentId: Overload:Global.IntColliderState.Add
+  name: Add
+  nameWithType: IntColliderState.Add
+  fullName: IntColliderState.Add
+- uid: Global.IntColliderState.AddUnsafe*
+  commentId: Overload:Global.IntColliderState.AddUnsafe
+  name: AddUnsafe
+  nameWithType: IntColliderState.AddUnsafe
+  fullName: IntColliderState.AddUnsafe
+- uid: Global.IntColliderState.Remove*
+  commentId: Overload:Global.IntColliderState.Remove
+  name: Remove
+  nameWithType: IntColliderState.Remove
+  fullName: IntColliderState.Remove
+- uid: Global.IntColliderState.InstantRemove*
+  commentId: Overload:Global.IntColliderState.InstantRemove
+  name: InstantRemove
+  nameWithType: IntColliderState.InstantRemove
+  fullName: IntColliderState.InstantRemove
+- uid: Global.IntColliderState.AddActorUnsafe*
+  commentId: Overload:Global.IntColliderState.AddActorUnsafe
+  name: AddActorUnsafe
+  nameWithType: IntColliderState.AddActorUnsafe
+  fullName: IntColliderState.AddActorUnsafe
+- uid: Global.IntActor
+  commentId: T:Global.IntActor
+  name: IntActor
+  nameWithType: IntActor
+  fullName: IntActor
+- uid: Global.IntColliderState.RemoveActorUnsafe*
+  commentId: Overload:Global.IntColliderState.RemoveActorUnsafe
+  name: RemoveActorUnsafe
+  nameWithType: IntColliderState.RemoveActorUnsafe
+  fullName: IntColliderState.RemoveActorUnsafe
+- uid: Global.IntColliderState.AddSolidUnsafe*
+  commentId: Overload:Global.IntColliderState.AddSolidUnsafe
+  name: AddSolidUnsafe
+  nameWithType: IntColliderState.AddSolidUnsafe
+  fullName: IntColliderState.AddSolidUnsafe
+- uid: Global.IntSolid
+  commentId: T:Global.IntSolid
+  name: IntSolid
+  nameWithType: IntSolid
+  fullName: IntSolid
+- uid: Global.IntColliderState.RemoveSolidUnsafe*
+  commentId: Overload:Global.IntColliderState.RemoveSolidUnsafe
+  name: RemoveSolidUnsafe
+  nameWithType: IntColliderState.RemoveSolidUnsafe
+  fullName: IntColliderState.RemoveSolidUnsafe
+- uid: Global.IntColliderState.AddTriggerUnsafe*
+  commentId: Overload:Global.IntColliderState.AddTriggerUnsafe
+  name: AddTriggerUnsafe
+  nameWithType: IntColliderState.AddTriggerUnsafe
+  fullName: IntColliderState.AddTriggerUnsafe
+- uid: Global.IntTrigger
+  commentId: T:Global.IntTrigger
+  name: IntTrigger
+  nameWithType: IntTrigger
+  fullName: IntTrigger
+- uid: Global.IntColliderState.RemoveTriggerUnsafe*
+  commentId: Overload:Global.IntColliderState.RemoveTriggerUnsafe
+  name: RemoveTriggerUnsafe
+  nameWithType: IntColliderState.RemoveTriggerUnsafe
+  fullName: IntColliderState.RemoveTriggerUnsafe
+- uid: Global.IntColliderState.AddInteractableUnsafe*
+  commentId: Overload:Global.IntColliderState.AddInteractableUnsafe
+  name: AddInteractableUnsafe
+  nameWithType: IntColliderState.AddInteractableUnsafe
+  fullName: IntColliderState.AddInteractableUnsafe
+- uid: Global.Interactable
+  commentId: T:Global.Interactable
+  name: Interactable
+  nameWithType: Interactable
+  fullName: Interactable
+- uid: Global.IntColliderState.RemoveInteractableUnsafe*
+  commentId: Overload:Global.IntColliderState.RemoveInteractableUnsafe
+  name: RemoveInteractableUnsafe
+  nameWithType: IntColliderState.RemoveInteractableUnsafe
+  fullName: IntColliderState.RemoveInteractableUnsafe
+- uid: Global.IntColliderState.AddAuraUnsafe*
+  commentId: Overload:Global.IntColliderState.AddAuraUnsafe
+  name: AddAuraUnsafe
+  nameWithType: IntColliderState.AddAuraUnsafe
+  fullName: IntColliderState.AddAuraUnsafe
+- uid: Global.AutoMergeAura
+  commentId: T:Global.AutoMergeAura
+  name: AutoMergeAura
+  nameWithType: AutoMergeAura
+  fullName: AutoMergeAura
+- uid: Global.IntColliderState.RemoveAuraUnsafe*
+  commentId: Overload:Global.IntColliderState.RemoveAuraUnsafe
+  name: RemoveAuraUnsafe
+  nameWithType: IntColliderState.RemoveAuraUnsafe
+  fullName: IntColliderState.RemoveAuraUnsafe
+- uid: Global.IntColliderState.GetSolidTilemap*
+  commentId: Overload:Global.IntColliderState.GetSolidTilemap
+  name: GetSolidTilemap
+  nameWithType: IntColliderState.GetSolidTilemap
+  fullName: IntColliderState.GetSolidTilemap
+- uid: Global.TilemapIntCollider
+  commentId: T:Global.TilemapIntCollider
+  name: TilemapIntCollider
+  nameWithType: TilemapIntCollider
+  fullName: TilemapIntCollider
+- uid: Global.IntColliderState.GetCrumblingPlatforms*
+  commentId: Overload:Global.IntColliderState.GetCrumblingPlatforms
+  name: GetCrumblingPlatforms
+  nameWithType: IntColliderState.GetCrumblingPlatforms
+  fullName: IntColliderState.GetCrumblingPlatforms
+- uid: System.Collections.Generic.List{CrumblingPlatforms}
+  commentId: T:System.Collections.Generic.List{CrumblingPlatforms}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<CrumblingPlatforms>
+  nameWithType: List<CrumblingPlatforms>
+  fullName: System.Collections.Generic.List<CrumblingPlatforms>
+  nameWithType.vb: List(Of CrumblingPlatforms)
+  fullName.vb: System.Collections.Generic.List(Of CrumblingPlatforms)
+  name.vb: List(Of CrumblingPlatforms)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.CrumblingPlatforms
+    name: CrumblingPlatforms
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.CrumblingPlatforms
+    name: CrumblingPlatforms
+  - name: )
+- uid: Global.IntColliderState.RayCastFirst*
+  commentId: Overload:Global.IntColliderState.RayCastFirst
+  name: RayCastFirst
+  nameWithType: IntColliderState.RayCastFirst
+  fullName: IntColliderState.RayCastFirst
+- uid: Global.IntRay
+  commentId: T:Global.IntRay
+  name: IntRay
+  nameWithType: IntRay
+  fullName: IntRay
+- uid: Global.Intersection
+  commentId: T:Global.Intersection
+  name: Intersection
+  nameWithType: Intersection
+  fullName: Intersection
+- uid: Global.IntColliderState.RayCast*
+  commentId: Overload:Global.IntColliderState.RayCast
+  name: RayCast
+  nameWithType: IntColliderState.RayCast
+  fullName: IntColliderState.RayCast
+- uid: System.Collections.Generic.List{Intersection}
+  commentId: T:System.Collections.Generic.List{Intersection}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Intersection>
+  nameWithType: List<Intersection>
+  fullName: System.Collections.Generic.List<Intersection>
+  nameWithType.vb: List(Of Intersection)
+  fullName.vb: System.Collections.Generic.List(Of Intersection)
+  name.vb: List(Of Intersection)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Intersection
+    name: Intersection
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Intersection
+    name: Intersection
+  - name: )
+- uid: Global.IntColliderState.DebugPrintActors*
+  commentId: Overload:Global.IntColliderState.DebugPrintActors
+  name: DebugPrintActors
+  nameWithType: IntColliderState.DebugPrintActors
+  fullName: IntColliderState.DebugPrintActors
+- uid: Global.IntColliderState.DebugPrintTriggers*
+  commentId: Overload:Global.IntColliderState.DebugPrintTriggers
+  name: DebugPrintTriggers
+  nameWithType: IntColliderState.DebugPrintTriggers
+  fullName: IntColliderState.DebugPrintTriggers
+- uid: Global.IntColliderState.DebugPrintSolids*
+  commentId: Overload:Global.IntColliderState.DebugPrintSolids
+  name: DebugPrintSolids
+  nameWithType: IntColliderState.DebugPrintSolids
+  fullName: IntColliderState.DebugPrintSolids
+- uid: Global.IntColliderState.DebugPrintInteractables*
+  commentId: Overload:Global.IntColliderState.DebugPrintInteractables
+  name: DebugPrintInteractables
+  nameWithType: IntColliderState.DebugPrintInteractables
+  fullName: IntColliderState.DebugPrintInteractables
+- uid: Global.IntColliderState.DebugPrintRemoveQueue*
+  commentId: Overload:Global.IntColliderState.DebugPrintRemoveQueue
+  name: DebugPrintRemoveQueue
+  nameWithType: IntColliderState.DebugPrintRemoveQueue
+  fullName: IntColliderState.DebugPrintRemoveQueue

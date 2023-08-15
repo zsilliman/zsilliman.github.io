@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SectionResetTrigger
+  commentId: T:Global.SectionResetTrigger
+  id: SectionResetTrigger
+  parent: Global
+  children:
+  - Global.SectionResetTrigger.ExitSection
+  - Global.SectionResetTrigger.PlayerMajorDeath
+  - Global.SectionResetTrigger.PlayerMinorDeath
+  langs:
+  - csharp
+  - vb
+  name: SectionResetTrigger
+  nameWithType: SectionResetTrigger
+  fullName: SectionResetTrigger
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SectionResetTrigger
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum SectionResetTrigger
+    content.vb: Public Enum SectionResetTrigger
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.SectionResetTrigger.ExitSection
+  commentId: F:Global.SectionResetTrigger.ExitSection
+  id: ExitSection
+  parent: Global.SectionResetTrigger
+  langs:
+  - csharp
+  - vb
+  name: ExitSection
+  nameWithType: SectionResetTrigger.ExitSection
+  fullName: SectionResetTrigger.ExitSection
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ExitSection
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: ExitSection = 0
+    return:
+      type: Global.SectionResetTrigger
+- uid: Global.SectionResetTrigger.PlayerMinorDeath
+  commentId: F:Global.SectionResetTrigger.PlayerMinorDeath
+  id: PlayerMinorDeath
+  parent: Global.SectionResetTrigger
+  langs:
+  - csharp
+  - vb
+  name: PlayerMinorDeath
+  nameWithType: SectionResetTrigger.PlayerMinorDeath
+  fullName: SectionResetTrigger.PlayerMinorDeath
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerMinorDeath
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: PlayerMinorDeath = 1
+    return:
+      type: Global.SectionResetTrigger
+- uid: Global.SectionResetTrigger.PlayerMajorDeath
+  commentId: F:Global.SectionResetTrigger.PlayerMajorDeath
+  id: PlayerMajorDeath
+  parent: Global.SectionResetTrigger
+  langs:
+  - csharp
+  - vb
+  name: PlayerMajorDeath
+  nameWithType: SectionResetTrigger.PlayerMajorDeath
+  fullName: SectionResetTrigger.PlayerMajorDeath
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/Section.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerMajorDeath
+    path: ../Assets/Objects & Components/World/Section/Section.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: PlayerMajorDeath = 2
+    return:
+      type: Global.SectionResetTrigger
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.SectionResetTrigger
+  commentId: T:Global.SectionResetTrigger
+  name: SectionResetTrigger
+  nameWithType: SectionResetTrigger
+  fullName: SectionResetTrigger

@@ -1,0 +1,740 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerResourceController
+  commentId: T:Global.PlayerResourceController
+  id: PlayerResourceController
+  parent: Global
+  children:
+  - Global.PlayerResourceController.IsInteractionActive
+  - Global.PlayerResourceController.IsInteractionFinished
+  - Global.PlayerResourceController.NewResource
+  - Global.PlayerResourceController.OnAllInteractionsCompleted
+  - Global.PlayerResourceController.OnInteract
+  - Global.PlayerResourceController.OnInteractionTriggerEnter(Player)
+  - Global.PlayerResourceController.OnInteractionTriggerExit(Player)
+  - Global.PlayerResourceController.OnResetObject
+  - Global.PlayerResourceController.ResourceAction
+  - Global.PlayerResourceController.Start
+  - Global.PlayerResourceController.Trophy
+  langs:
+  - csharp
+  - vb
+  name: PlayerResourceController
+  nameWithType: PlayerResourceController
+  fullName: PlayerResourceController
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PlayerResourceController
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class PlayerResourceController : InteractionController'
+    content.vb: Public Class PlayerResourceController Inherits InteractionController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.InteractionController
+  inheritedMembers:
+  - Global.InteractionController.interactable
+  - Global.InteractionController.WaitForOtherControllers
+  - Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  - Global.InteractionController.OnTriggerExitCallback(IntActor)
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.PlayerResourceController.ResourceAction
+  commentId: F:Global.PlayerResourceController.ResourceAction
+  id: ResourceAction
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: ResourceAction
+  nameWithType: PlayerResourceController.ResourceAction
+  fullName: PlayerResourceController.ResourceAction
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: ResourceAction
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public PlayerResourceController.PlayerResourceAction ResourceAction
+    return:
+      type: Global.PlayerResourceController.PlayerResourceAction
+    content.vb: Public ResourceAction As PlayerResourceController.PlayerResourceAction
+- uid: Global.PlayerResourceController.NewResource
+  commentId: F:Global.PlayerResourceController.NewResource
+  id: NewResource
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: NewResource
+  nameWithType: PlayerResourceController.NewResource
+  fullName: PlayerResourceController.NewResource
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: NewResource
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public PlayerResource NewResource
+    return:
+      type: Global.PlayerResource
+    content.vb: Public NewResource As PlayerResource
+- uid: Global.PlayerResourceController.Trophy
+  commentId: F:Global.PlayerResourceController.Trophy
+  id: Trophy
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: Trophy
+  nameWithType: PlayerResourceController.Trophy
+  fullName: PlayerResourceController.Trophy
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Trophy
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [ConditionalShow("NewResource", 14)]
+
+      public BossTrophy Trophy
+    return:
+      type: Global.BossTrophy
+    content.vb: >-
+      <ConditionalShow("NewResource", 14)>
+
+      Public Trophy As BossTrophy
+  attributes:
+  - type: Global.ConditionalShowAttribute
+    ctor: Global.ConditionalShowAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: NewResource
+    - type: System.Int32
+      value: 14
+- uid: Global.PlayerResourceController.Start
+  commentId: M:Global.PlayerResourceController.Start
+  id: Start
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: PlayerResourceController.Start()
+  fullName: PlayerResourceController.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.PlayerResourceController.Start*
+- uid: Global.PlayerResourceController.OnAllInteractionsCompleted
+  commentId: M:Global.PlayerResourceController.OnAllInteractionsCompleted
+  id: OnAllInteractionsCompleted
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: OnAllInteractionsCompleted()
+  nameWithType: PlayerResourceController.OnAllInteractionsCompleted()
+  fullName: PlayerResourceController.OnAllInteractionsCompleted()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnAllInteractionsCompleted
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnAllInteractionsCompleted()
+    content.vb: Public Overrides Sub OnAllInteractionsCompleted()
+  overridden: Global.InteractionController.OnAllInteractionsCompleted
+  overload: Global.PlayerResourceController.OnAllInteractionsCompleted*
+- uid: Global.PlayerResourceController.OnInteract
+  commentId: M:Global.PlayerResourceController.OnInteract
+  id: OnInteract
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: OnInteract()
+  nameWithType: PlayerResourceController.OnInteract()
+  fullName: PlayerResourceController.OnInteract()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteract
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteract()
+    content.vb: Public Overrides Sub OnInteract()
+  overridden: Global.InteractionController.OnInteract
+  overload: Global.PlayerResourceController.OnInteract*
+- uid: Global.PlayerResourceController.OnResetObject
+  commentId: M:Global.PlayerResourceController.OnResetObject
+  id: OnResetObject
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: OnResetObject()
+  nameWithType: PlayerResourceController.OnResetObject()
+  fullName: PlayerResourceController.OnResetObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnResetObject
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnResetObject()
+    content.vb: Public Overrides Sub OnResetObject()
+  overridden: Global.InteractionController.OnResetObject
+  overload: Global.PlayerResourceController.OnResetObject*
+- uid: Global.PlayerResourceController.IsInteractionActive
+  commentId: M:Global.PlayerResourceController.IsInteractionActive
+  id: IsInteractionActive
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionActive()
+  nameWithType: PlayerResourceController.IsInteractionActive()
+  fullName: PlayerResourceController.IsInteractionActive()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionActive
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionActive()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionActive() As Boolean
+  overridden: Global.InteractionController.IsInteractionActive
+  overload: Global.PlayerResourceController.IsInteractionActive*
+- uid: Global.PlayerResourceController.IsInteractionFinished
+  commentId: M:Global.PlayerResourceController.IsInteractionFinished
+  id: IsInteractionFinished
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: IsInteractionFinished()
+  nameWithType: PlayerResourceController.IsInteractionFinished()
+  fullName: PlayerResourceController.IsInteractionFinished()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: IsInteractionFinished
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override bool IsInteractionFinished()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsInteractionFinished() As Boolean
+  overridden: Global.InteractionController.IsInteractionFinished
+  overload: Global.PlayerResourceController.IsInteractionFinished*
+- uid: Global.PlayerResourceController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.PlayerResourceController.OnInteractionTriggerEnter(Player)
+  id: OnInteractionTriggerEnter(Player)
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: PlayerResourceController.OnInteractionTriggerEnter(Player)
+  fullName: PlayerResourceController.OnInteractionTriggerEnter(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerEnter
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerEnter(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerEnter(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  overload: Global.PlayerResourceController.OnInteractionTriggerEnter*
+- uid: Global.PlayerResourceController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.PlayerResourceController.OnInteractionTriggerExit(Player)
+  id: OnInteractionTriggerExit(Player)
+  parent: Global.PlayerResourceController
+  langs:
+  - csharp
+  - vb
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: PlayerResourceController.OnInteractionTriggerExit(Player)
+  fullName: PlayerResourceController.OnInteractionTriggerExit(Player)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnInteractionTriggerExit
+    path: ../Assets/Objects & Components/World/Interactable/Controllers/PlayerResourceController.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void OnInteractionTriggerExit(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+    content.vb: Public Overrides Sub OnInteractionTriggerExit(player As Player)
+  overridden: Global.InteractionController.OnInteractionTriggerExit(Player)
+  overload: Global.PlayerResourceController.OnInteractionTriggerExit*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.InteractionController
+  commentId: T:Global.InteractionController
+  name: InteractionController
+  nameWithType: InteractionController
+  fullName: InteractionController
+- uid: Global.InteractionController.interactable
+  commentId: F:Global.InteractionController.interactable
+  parent: Global.InteractionController
+  name: interactable
+  nameWithType: InteractionController.interactable
+  fullName: InteractionController.interactable
+- uid: Global.InteractionController.WaitForOtherControllers
+  commentId: F:Global.InteractionController.WaitForOtherControllers
+  parent: Global.InteractionController
+  name: WaitForOtherControllers
+  nameWithType: InteractionController.WaitForOtherControllers
+  fullName: InteractionController.WaitForOtherControllers
+- uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerEnterCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerEnterCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerEnterCallback(IntActor)
+  fullName: InteractionController.OnTriggerEnterCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerEnterCallback(IntActor)
+    name: OnTriggerEnterCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+  commentId: M:Global.InteractionController.OnTriggerExitCallback(IntActor)
+  parent: Global.InteractionController
+  name: OnTriggerExitCallback(IntActor)
+  nameWithType: InteractionController.OnTriggerExitCallback(IntActor)
+  fullName: InteractionController.OnTriggerExitCallback(IntActor)
+  spec.csharp:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnTriggerExitCallback(IntActor)
+    name: OnTriggerExitCallback
+  - name: (
+  - uid: Global.IntActor
+    name: IntActor
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.PlayerResourceController.PlayerResourceAction
+  commentId: T:Global.PlayerResourceController.PlayerResourceAction
+  name: PlayerResourceController.PlayerResourceAction
+  nameWithType: PlayerResourceController.PlayerResourceAction
+  fullName: PlayerResourceController.PlayerResourceAction
+  spec.csharp:
+  - uid: Global.PlayerResourceController
+    name: PlayerResourceController
+  - name: .
+  - uid: Global.PlayerResourceController.PlayerResourceAction
+    name: PlayerResourceAction
+  spec.vb:
+  - uid: Global.PlayerResourceController
+    name: PlayerResourceController
+  - name: .
+  - uid: Global.PlayerResourceController.PlayerResourceAction
+    name: PlayerResourceAction
+- uid: Global.PlayerResource
+  commentId: T:Global.PlayerResource
+  name: PlayerResource
+  nameWithType: PlayerResource
+  fullName: PlayerResource
+- uid: Global.BossTrophy
+  commentId: T:Global.BossTrophy
+  name: BossTrophy
+  nameWithType: BossTrophy
+  fullName: BossTrophy
+- uid: Global.PlayerResourceController.Start*
+  commentId: Overload:Global.PlayerResourceController.Start
+  name: Start
+  nameWithType: PlayerResourceController.Start
+  fullName: PlayerResourceController.Start
+- uid: Global.InteractionController.OnAllInteractionsCompleted
+  commentId: M:Global.InteractionController.OnAllInteractionsCompleted
+  parent: Global.InteractionController
+  name: OnAllInteractionsCompleted()
+  nameWithType: InteractionController.OnAllInteractionsCompleted()
+  fullName: InteractionController.OnAllInteractionsCompleted()
+  spec.csharp:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnAllInteractionsCompleted
+    name: OnAllInteractionsCompleted
+  - name: (
+  - name: )
+- uid: Global.PlayerResourceController.OnAllInteractionsCompleted*
+  commentId: Overload:Global.PlayerResourceController.OnAllInteractionsCompleted
+  name: OnAllInteractionsCompleted
+  nameWithType: PlayerResourceController.OnAllInteractionsCompleted
+  fullName: PlayerResourceController.OnAllInteractionsCompleted
+- uid: Global.InteractionController.OnInteract
+  commentId: M:Global.InteractionController.OnInteract
+  parent: Global.InteractionController
+  name: OnInteract()
+  nameWithType: InteractionController.OnInteract()
+  fullName: InteractionController.OnInteract()
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteract
+    name: OnInteract
+  - name: (
+  - name: )
+- uid: Global.PlayerResourceController.OnInteract*
+  commentId: Overload:Global.PlayerResourceController.OnInteract
+  name: OnInteract
+  nameWithType: PlayerResourceController.OnInteract
+  fullName: PlayerResourceController.OnInteract
+- uid: Global.InteractionController.OnResetObject
+  commentId: M:Global.InteractionController.OnResetObject
+  parent: Global.InteractionController
+  name: OnResetObject()
+  nameWithType: InteractionController.OnResetObject()
+  fullName: InteractionController.OnResetObject()
+  spec.csharp:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnResetObject
+    name: OnResetObject
+  - name: (
+  - name: )
+- uid: Global.PlayerResourceController.OnResetObject*
+  commentId: Overload:Global.PlayerResourceController.OnResetObject
+  name: OnResetObject
+  nameWithType: PlayerResourceController.OnResetObject
+  fullName: PlayerResourceController.OnResetObject
+- uid: Global.InteractionController.IsInteractionActive
+  commentId: M:Global.InteractionController.IsInteractionActive
+  parent: Global.InteractionController
+  name: IsInteractionActive()
+  nameWithType: InteractionController.IsInteractionActive()
+  fullName: InteractionController.IsInteractionActive()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionActive
+    name: IsInteractionActive
+  - name: (
+  - name: )
+- uid: Global.PlayerResourceController.IsInteractionActive*
+  commentId: Overload:Global.PlayerResourceController.IsInteractionActive
+  name: IsInteractionActive
+  nameWithType: PlayerResourceController.IsInteractionActive
+  fullName: PlayerResourceController.IsInteractionActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.InteractionController.IsInteractionFinished
+  commentId: M:Global.InteractionController.IsInteractionFinished
+  parent: Global.InteractionController
+  name: IsInteractionFinished()
+  nameWithType: InteractionController.IsInteractionFinished()
+  fullName: InteractionController.IsInteractionFinished()
+  spec.csharp:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.IsInteractionFinished
+    name: IsInteractionFinished
+  - name: (
+  - name: )
+- uid: Global.PlayerResourceController.IsInteractionFinished*
+  commentId: Overload:Global.PlayerResourceController.IsInteractionFinished
+  name: IsInteractionFinished
+  nameWithType: PlayerResourceController.IsInteractionFinished
+  fullName: PlayerResourceController.IsInteractionFinished
+- uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerEnter(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerEnter(Player)
+  nameWithType: InteractionController.OnInteractionTriggerEnter(Player)
+  fullName: InteractionController.OnInteractionTriggerEnter(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerEnter(Player)
+    name: OnInteractionTriggerEnter
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.PlayerResourceController.OnInteractionTriggerEnter*
+  commentId: Overload:Global.PlayerResourceController.OnInteractionTriggerEnter
+  name: OnInteractionTriggerEnter
+  nameWithType: PlayerResourceController.OnInteractionTriggerEnter
+  fullName: PlayerResourceController.OnInteractionTriggerEnter
+- uid: Global.Player
+  commentId: T:Global.Player
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+  commentId: M:Global.InteractionController.OnInteractionTriggerExit(Player)
+  parent: Global.InteractionController
+  name: OnInteractionTriggerExit(Player)
+  nameWithType: InteractionController.OnInteractionTriggerExit(Player)
+  fullName: InteractionController.OnInteractionTriggerExit(Player)
+  spec.csharp:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Global.InteractionController.OnInteractionTriggerExit(Player)
+    name: OnInteractionTriggerExit
+  - name: (
+  - uid: Global.Player
+    name: Player
+  - name: )
+- uid: Global.PlayerResourceController.OnInteractionTriggerExit*
+  commentId: Overload:Global.PlayerResourceController.OnInteractionTriggerExit
+  name: OnInteractionTriggerExit
+  nameWithType: PlayerResourceController.OnInteractionTriggerExit
+  fullName: PlayerResourceController.OnInteractionTriggerExit

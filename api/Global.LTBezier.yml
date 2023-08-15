@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LTBezier
+  commentId: T:Global.LTBezier
+  id: LTBezier
+  parent: Global
+  children:
+  - Global.LTBezier.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  - Global.LTBezier.length
+  - Global.LTBezier.point(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: LTBezier
+  nameWithType: LTBezier
+  fullName: LTBezier
+  type: Class
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LTBezier
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2881
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class LTBezier
+    content.vb: Public Class LTBezier
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LTBezier.length
+  commentId: F:Global.LTBezier.length
+  id: length
+  parent: Global.LTBezier
+  langs:
+  - csharp
+  - vb
+  name: length
+  nameWithType: LTBezier.length
+  fullName: LTBezier.length
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: length
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2882
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float length
+    return:
+      type: System.Single
+    content.vb: Public length As Single
+- uid: Global.LTBezier.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  commentId: M:Global.LTBezier.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  id: '#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)'
+  parent: Global.LTBezier
+  langs:
+  - csharp
+  - vb
+  name: LTBezier(Vector3, Vector3, Vector3, Vector3, float)
+  nameWithType: LTBezier.LTBezier(Vector3, Vector3, Vector3, Vector3, float)
+  fullName: LTBezier.LTBezier(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3, float)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2891
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LTBezier(Vector3 a, Vector3 b, Vector3 c, Vector3 d, float precision)
+    parameters:
+    - id: a
+      type: UnityEngine.Vector3
+    - id: b
+      type: UnityEngine.Vector3
+    - id: c
+      type: UnityEngine.Vector3
+    - id: d
+      type: UnityEngine.Vector3
+    - id: precision
+      type: System.Single
+    content.vb: Public Sub New(a As Vector3, b As Vector3, c As Vector3, d As Vector3, precision As Single)
+  overload: Global.LTBezier.#ctor*
+  nameWithType.vb: LTBezier.New(Vector3, Vector3, Vector3, Vector3, Single)
+  fullName.vb: LTBezier.New(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3, Single)
+  name.vb: New(Vector3, Vector3, Vector3, Vector3, Single)
+- uid: Global.LTBezier.point(System.Single)
+  commentId: M:Global.LTBezier.point(System.Single)
+  id: point(System.Single)
+  parent: Global.LTBezier
+  langs:
+  - csharp
+  - vb
+  name: point(float)
+  nameWithType: LTBezier.point(float)
+  fullName: LTBezier.point(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanTween.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: point
+    path: ../Assets/LeanTween/Framework/LeanTween.cs
+    startLine: 2938
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector3 point(float t)
+    parameters:
+    - id: t
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function point(t As Single) As Vector3
+  overload: Global.LTBezier.point*
+  nameWithType.vb: LTBezier.point(Single)
+  fullName.vb: LTBezier.point(Single)
+  name.vb: point(Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.LTBezier.#ctor*
+  commentId: Overload:Global.LTBezier.#ctor
+  name: LTBezier
+  nameWithType: LTBezier.LTBezier
+  fullName: LTBezier.LTBezier
+  nameWithType.vb: LTBezier.New
+  fullName.vb: LTBezier.New
+  name.vb: New
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.LTBezier.point*
+  commentId: Overload:Global.LTBezier.point
+  name: point
+  nameWithType: LTBezier.point
+  fullName: LTBezier.point

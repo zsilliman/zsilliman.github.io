@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DraggablePointSpace
+  commentId: T:Global.DraggablePointSpace
+  id: DraggablePointSpace
+  parent: Global
+  children:
+  - Global.DraggablePointSpace.Local
+  - Global.DraggablePointSpace.Section
+  - Global.DraggablePointSpace.World
+  langs:
+  - csharp
+  - vb
+  name: DraggablePointSpace
+  nameWithType: DraggablePointSpace
+  fullName: DraggablePointSpace
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomEditor/DraggablePoints.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DraggablePointSpace
+    path: ../Assets/Framework/Util/CustomEditor/DraggablePoints.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum DraggablePointSpace
+    content.vb: Public Enum DraggablePointSpace
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.DraggablePointSpace.Local
+  commentId: F:Global.DraggablePointSpace.Local
+  id: Local
+  parent: Global.DraggablePointSpace
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: DraggablePointSpace.Local
+  fullName: DraggablePointSpace.Local
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomEditor/DraggablePoints.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Local
+    path: ../Assets/Framework/Util/CustomEditor/DraggablePoints.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Local = 0
+    return:
+      type: Global.DraggablePointSpace
+- uid: Global.DraggablePointSpace.World
+  commentId: F:Global.DraggablePointSpace.World
+  id: World
+  parent: Global.DraggablePointSpace
+  langs:
+  - csharp
+  - vb
+  name: World
+  nameWithType: DraggablePointSpace.World
+  fullName: DraggablePointSpace.World
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomEditor/DraggablePoints.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: World
+    path: ../Assets/Framework/Util/CustomEditor/DraggablePoints.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: World = 1
+    return:
+      type: Global.DraggablePointSpace
+- uid: Global.DraggablePointSpace.Section
+  commentId: F:Global.DraggablePointSpace.Section
+  id: Section
+  parent: Global.DraggablePointSpace
+  langs:
+  - csharp
+  - vb
+  name: Section
+  nameWithType: DraggablePointSpace.Section
+  fullName: DraggablePointSpace.Section
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/CustomEditor/DraggablePoints.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Section
+    path: ../Assets/Framework/Util/CustomEditor/DraggablePoints.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Section = 2
+    return:
+      type: Global.DraggablePointSpace
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.DraggablePointSpace
+  commentId: T:Global.DraggablePointSpace
+  name: DraggablePointSpace
+  nameWithType: DraggablePointSpace
+  fullName: DraggablePointSpace

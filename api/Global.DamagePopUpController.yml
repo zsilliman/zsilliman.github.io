@@ -1,0 +1,301 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DamagePopUpController
+  commentId: T:Global.DamagePopUpController
+  id: DamagePopUpController
+  parent: Global
+  children:
+  - Global.DamagePopUpController.animator
+  - Global.DamagePopUpController.AutoSetSize
+  - Global.DamagePopUpController.SetColor(UnityEngine.Color)
+  - Global.DamagePopUpController.SetText(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DamagePopUpController
+  nameWithType: DamagePopUpController
+  fullName: DamagePopUpController
+  type: Class
+  source:
+    remote:
+      path: Assets/DamagePopUpController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: DamagePopUpController
+    path: ../Assets/DamagePopUpController.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class DamagePopUpController : MonoBehaviour'
+    content.vb: Public Class DamagePopUpController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.DamagePopUpController.animator
+  commentId: F:Global.DamagePopUpController.animator
+  id: animator
+  parent: Global.DamagePopUpController
+  langs:
+  - csharp
+  - vb
+  name: animator
+  nameWithType: DamagePopUpController.animator
+  fullName: DamagePopUpController.animator
+  type: Field
+  source:
+    remote:
+      path: Assets/DamagePopUpController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: animator
+    path: ../Assets/DamagePopUpController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Animator animator
+    return:
+      type: UnityEngine.Animator
+    content.vb: Public animator As Animator
+- uid: Global.DamagePopUpController.SetText(System.String)
+  commentId: M:Global.DamagePopUpController.SetText(System.String)
+  id: SetText(System.String)
+  parent: Global.DamagePopUpController
+  langs:
+  - csharp
+  - vb
+  name: SetText(string)
+  nameWithType: DamagePopUpController.SetText(string)
+  fullName: DamagePopUpController.SetText(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/DamagePopUpController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetText
+    path: ../Assets/DamagePopUpController.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetText(string text)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Public Sub SetText(text As String)
+  overload: Global.DamagePopUpController.SetText*
+  nameWithType.vb: DamagePopUpController.SetText(String)
+  fullName.vb: DamagePopUpController.SetText(String)
+  name.vb: SetText(String)
+- uid: Global.DamagePopUpController.SetColor(UnityEngine.Color)
+  commentId: M:Global.DamagePopUpController.SetColor(UnityEngine.Color)
+  id: SetColor(UnityEngine.Color)
+  parent: Global.DamagePopUpController
+  langs:
+  - csharp
+  - vb
+  name: SetColor(Color)
+  nameWithType: DamagePopUpController.SetColor(Color)
+  fullName: DamagePopUpController.SetColor(UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Assets/DamagePopUpController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SetColor
+    path: ../Assets/DamagePopUpController.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetColor(Color color)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Sub SetColor(color As Color)
+  overload: Global.DamagePopUpController.SetColor*
+- uid: Global.DamagePopUpController.AutoSetSize
+  commentId: M:Global.DamagePopUpController.AutoSetSize
+  id: AutoSetSize
+  parent: Global.DamagePopUpController
+  langs:
+  - csharp
+  - vb
+  name: AutoSetSize()
+  nameWithType: DamagePopUpController.AutoSetSize()
+  fullName: DamagePopUpController.AutoSetSize()
+  type: Method
+  source:
+    remote:
+      path: Assets/DamagePopUpController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AutoSetSize
+    path: ../Assets/DamagePopUpController.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AutoSetSize()
+    content.vb: Public Sub AutoSetSize()
+  overload: Global.DamagePopUpController.AutoSetSize*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: Global.DamagePopUpController.SetText*
+  commentId: Overload:Global.DamagePopUpController.SetText
+  name: SetText
+  nameWithType: DamagePopUpController.SetText
+  fullName: DamagePopUpController.SetText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.DamagePopUpController.SetColor*
+  commentId: Overload:Global.DamagePopUpController.SetColor
+  name: SetColor
+  nameWithType: DamagePopUpController.SetColor
+  fullName: DamagePopUpController.SetColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: Global.DamagePopUpController.AutoSetSize*
+  commentId: Overload:Global.DamagePopUpController.AutoSetSize
+  name: AutoSetSize
+  nameWithType: DamagePopUpController.AutoSetSize
+  fullName: DamagePopUpController.AutoSetSize

@@ -1,0 +1,689 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LeanAudio
+  commentId: T:Global.LeanAudio
+  id: LeanAudio
+  parent: Global
+  children:
+  - Global.LeanAudio.createAudio(UnityEngine.AnimationCurve,UnityEngine.AnimationCurve,LeanAudioOptions)
+  - Global.LeanAudio.createAudioStream(UnityEngine.AnimationCurve,UnityEngine.AnimationCurve,LeanAudioOptions)
+  - Global.LeanAudio.generateAudioFromCurve(UnityEngine.AnimationCurve,System.Int32)
+  - Global.LeanAudio.generatedWaveDistances
+  - Global.LeanAudio.generatedWaveDistancesCount
+  - Global.LeanAudio.MIN_FREQEUNCY_PERIOD
+  - Global.LeanAudio.options
+  - Global.LeanAudio.play(UnityEngine.AudioClip,System.Single)
+  - Global.LeanAudio.play(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single)
+  - Global.LeanAudio.play(UnityEngine.AudioClip,UnityEngine.Vector3)
+  - Global.LeanAudio.play(UnityEngine.AudioClip)
+  - Global.LeanAudio.playClipAt(UnityEngine.AudioClip,UnityEngine.Vector3)
+  - Global.LeanAudio.printOutAudioClip(UnityEngine.AudioClip,UnityEngine.AnimationCurve@,System.Single)
+  - Global.LeanAudio.PROCESSING_ITERATIONS_MAX
+  langs:
+  - csharp
+  - vb
+  name: LeanAudio
+  nameWithType: LeanAudio
+  fullName: LeanAudio
+  type: Class
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LeanAudio
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  example: []
+  syntax:
+    content: public class LeanAudio
+    content.vb: Public Class LeanAudio
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.LeanAudio.MIN_FREQEUNCY_PERIOD
+  commentId: F:Global.LeanAudio.MIN_FREQEUNCY_PERIOD
+  id: MIN_FREQEUNCY_PERIOD
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: MIN_FREQEUNCY_PERIOD
+  nameWithType: LeanAudio.MIN_FREQEUNCY_PERIOD
+  fullName: LeanAudio.MIN_FREQEUNCY_PERIOD
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MIN_FREQEUNCY_PERIOD
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float MIN_FREQEUNCY_PERIOD
+    return:
+      type: System.Single
+    content.vb: Public Shared MIN_FREQEUNCY_PERIOD As Single
+- uid: Global.LeanAudio.PROCESSING_ITERATIONS_MAX
+  commentId: F:Global.LeanAudio.PROCESSING_ITERATIONS_MAX
+  id: PROCESSING_ITERATIONS_MAX
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: PROCESSING_ITERATIONS_MAX
+  nameWithType: LeanAudio.PROCESSING_ITERATIONS_MAX
+  fullName: LeanAudio.PROCESSING_ITERATIONS_MAX
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: PROCESSING_ITERATIONS_MAX
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int PROCESSING_ITERATIONS_MAX
+    return:
+      type: System.Int32
+    content.vb: Public Shared PROCESSING_ITERATIONS_MAX As Integer
+- uid: Global.LeanAudio.generatedWaveDistances
+  commentId: F:Global.LeanAudio.generatedWaveDistances
+  id: generatedWaveDistances
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: generatedWaveDistances
+  nameWithType: LeanAudio.generatedWaveDistances
+  fullName: LeanAudio.generatedWaveDistances
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: generatedWaveDistances
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static float[] generatedWaveDistances
+    return:
+      type: System.Single[]
+    content.vb: Public Shared generatedWaveDistances As Single()
+- uid: Global.LeanAudio.generatedWaveDistancesCount
+  commentId: F:Global.LeanAudio.generatedWaveDistancesCount
+  id: generatedWaveDistancesCount
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: generatedWaveDistancesCount
+  nameWithType: LeanAudio.generatedWaveDistancesCount
+  fullName: LeanAudio.generatedWaveDistancesCount
+  type: Field
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: generatedWaveDistancesCount
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static int generatedWaveDistancesCount
+    return:
+      type: System.Int32
+    content.vb: Public Shared generatedWaveDistancesCount As Integer
+- uid: Global.LeanAudio.options
+  commentId: M:Global.LeanAudio.options
+  id: options
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: options()
+  nameWithType: LeanAudio.options()
+  fullName: LeanAudio.options()
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: options
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static LeanAudioOptions options()
+    return:
+      type: Global.LeanAudioOptions
+    content.vb: Public Shared Function options() As LeanAudioOptions
+  overload: Global.LeanAudio.options*
+- uid: Global.LeanAudio.createAudioStream(UnityEngine.AnimationCurve,UnityEngine.AnimationCurve,LeanAudioOptions)
+  commentId: M:Global.LeanAudio.createAudioStream(UnityEngine.AnimationCurve,UnityEngine.AnimationCurve,LeanAudioOptions)
+  id: createAudioStream(UnityEngine.AnimationCurve,UnityEngine.AnimationCurve,LeanAudioOptions)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: createAudioStream(AnimationCurve, AnimationCurve, LeanAudioOptions)
+  nameWithType: LeanAudio.createAudioStream(AnimationCurve, AnimationCurve, LeanAudioOptions)
+  fullName: LeanAudio.createAudioStream(UnityEngine.AnimationCurve, UnityEngine.AnimationCurve, LeanAudioOptions)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: createAudioStream
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static LeanAudioStream createAudioStream(AnimationCurve volume, AnimationCurve frequency, LeanAudioOptions options = null)
+    parameters:
+    - id: volume
+      type: UnityEngine.AnimationCurve
+    - id: frequency
+      type: UnityEngine.AnimationCurve
+    - id: options
+      type: Global.LeanAudioOptions
+    return:
+      type: Global.LeanAudioStream
+    content.vb: Public Shared Function createAudioStream(volume As AnimationCurve, frequency As AnimationCurve, options As LeanAudioOptions = Nothing) As LeanAudioStream
+  overload: Global.LeanAudio.createAudioStream*
+- uid: Global.LeanAudio.createAudio(UnityEngine.AnimationCurve,UnityEngine.AnimationCurve,LeanAudioOptions)
+  commentId: M:Global.LeanAudio.createAudio(UnityEngine.AnimationCurve,UnityEngine.AnimationCurve,LeanAudioOptions)
+  id: createAudio(UnityEngine.AnimationCurve,UnityEngine.AnimationCurve,LeanAudioOptions)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: createAudio(AnimationCurve, AnimationCurve, LeanAudioOptions)
+  nameWithType: LeanAudio.createAudio(AnimationCurve, AnimationCurve, LeanAudioOptions)
+  fullName: LeanAudio.createAudio(UnityEngine.AnimationCurve, UnityEngine.AnimationCurve, LeanAudioOptions)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: createAudio
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AudioClip createAudio(AnimationCurve volume, AnimationCurve frequency, LeanAudioOptions options = null)
+    parameters:
+    - id: volume
+      type: UnityEngine.AnimationCurve
+    - id: frequency
+      type: UnityEngine.AnimationCurve
+    - id: options
+      type: Global.LeanAudioOptions
+    return:
+      type: UnityEngine.AudioClip
+    content.vb: Public Shared Function createAudio(volume As AnimationCurve, frequency As AnimationCurve, options As LeanAudioOptions = Nothing) As AudioClip
+  overload: Global.LeanAudio.createAudio*
+- uid: Global.LeanAudio.generateAudioFromCurve(UnityEngine.AnimationCurve,System.Int32)
+  commentId: M:Global.LeanAudio.generateAudioFromCurve(UnityEngine.AnimationCurve,System.Int32)
+  id: generateAudioFromCurve(UnityEngine.AnimationCurve,System.Int32)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: generateAudioFromCurve(AnimationCurve, int)
+  nameWithType: LeanAudio.generateAudioFromCurve(AnimationCurve, int)
+  fullName: LeanAudio.generateAudioFromCurve(UnityEngine.AnimationCurve, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: generateAudioFromCurve
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 241
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AudioClip generateAudioFromCurve(AnimationCurve curve, int frequencyRate = 44100)
+    parameters:
+    - id: curve
+      type: UnityEngine.AnimationCurve
+    - id: frequencyRate
+      type: System.Int32
+    return:
+      type: UnityEngine.AudioClip
+    content.vb: Public Shared Function generateAudioFromCurve(curve As AnimationCurve, frequencyRate As Integer = 44100) As AudioClip
+  overload: Global.LeanAudio.generateAudioFromCurve*
+  nameWithType.vb: LeanAudio.generateAudioFromCurve(AnimationCurve, Integer)
+  fullName.vb: LeanAudio.generateAudioFromCurve(UnityEngine.AnimationCurve, Integer)
+  name.vb: generateAudioFromCurve(AnimationCurve, Integer)
+- uid: Global.LeanAudio.play(UnityEngine.AudioClip,System.Single)
+  commentId: M:Global.LeanAudio.play(UnityEngine.AudioClip,System.Single)
+  id: play(UnityEngine.AudioClip,System.Single)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: play(AudioClip, float)
+  nameWithType: LeanAudio.play(AudioClip, float)
+  fullName: LeanAudio.play(UnityEngine.AudioClip, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: play
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 265
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AudioSource play(AudioClip audio, float volume)
+    parameters:
+    - id: audio
+      type: UnityEngine.AudioClip
+    - id: volume
+      type: System.Single
+    return:
+      type: UnityEngine.AudioSource
+    content.vb: Public Shared Function play(audio As AudioClip, volume As Single) As AudioSource
+  overload: Global.LeanAudio.play*
+  nameWithType.vb: LeanAudio.play(AudioClip, Single)
+  fullName.vb: LeanAudio.play(UnityEngine.AudioClip, Single)
+  name.vb: play(AudioClip, Single)
+- uid: Global.LeanAudio.play(UnityEngine.AudioClip)
+  commentId: M:Global.LeanAudio.play(UnityEngine.AudioClip)
+  id: play(UnityEngine.AudioClip)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: play(AudioClip)
+  nameWithType: LeanAudio.play(AudioClip)
+  fullName: LeanAudio.play(UnityEngine.AudioClip)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: play
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 271
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AudioSource play(AudioClip audio)
+    parameters:
+    - id: audio
+      type: UnityEngine.AudioClip
+    return:
+      type: UnityEngine.AudioSource
+    content.vb: Public Shared Function play(audio As AudioClip) As AudioSource
+  overload: Global.LeanAudio.play*
+- uid: Global.LeanAudio.play(UnityEngine.AudioClip,UnityEngine.Vector3)
+  commentId: M:Global.LeanAudio.play(UnityEngine.AudioClip,UnityEngine.Vector3)
+  id: play(UnityEngine.AudioClip,UnityEngine.Vector3)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: play(AudioClip, Vector3)
+  nameWithType: LeanAudio.play(AudioClip, Vector3)
+  fullName: LeanAudio.play(UnityEngine.AudioClip, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: play
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 275
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AudioSource play(AudioClip audio, Vector3 pos)
+    parameters:
+    - id: audio
+      type: UnityEngine.AudioClip
+    - id: pos
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.AudioSource
+    content.vb: Public Shared Function play(audio As AudioClip, pos As Vector3) As AudioSource
+  overload: Global.LeanAudio.play*
+- uid: Global.LeanAudio.play(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single)
+  commentId: M:Global.LeanAudio.play(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single)
+  id: play(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: play(AudioClip, Vector3, float)
+  nameWithType: LeanAudio.play(AudioClip, Vector3, float)
+  fullName: LeanAudio.play(UnityEngine.AudioClip, UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: play
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 279
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AudioSource play(AudioClip audio, Vector3 pos, float volume)
+    parameters:
+    - id: audio
+      type: UnityEngine.AudioClip
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: volume
+      type: System.Single
+    return:
+      type: UnityEngine.AudioSource
+    content.vb: Public Shared Function play(audio As AudioClip, pos As Vector3, volume As Single) As AudioSource
+  overload: Global.LeanAudio.play*
+  nameWithType.vb: LeanAudio.play(AudioClip, Vector3, Single)
+  fullName.vb: LeanAudio.play(UnityEngine.AudioClip, UnityEngine.Vector3, Single)
+  name.vb: play(AudioClip, Vector3, Single)
+- uid: Global.LeanAudio.playClipAt(UnityEngine.AudioClip,UnityEngine.Vector3)
+  commentId: M:Global.LeanAudio.playClipAt(UnityEngine.AudioClip,UnityEngine.Vector3)
+  id: playClipAt(UnityEngine.AudioClip,UnityEngine.Vector3)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: playClipAt(AudioClip, Vector3)
+  nameWithType: LeanAudio.playClipAt(AudioClip, Vector3)
+  fullName: LeanAudio.playClipAt(UnityEngine.AudioClip, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: playClipAt
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 289
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static AudioSource playClipAt(AudioClip clip, Vector3 pos)
+    parameters:
+    - id: clip
+      type: UnityEngine.AudioClip
+    - id: pos
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.AudioSource
+    content.vb: Public Shared Function playClipAt(clip As AudioClip, pos As Vector3) As AudioSource
+  overload: Global.LeanAudio.playClipAt*
+- uid: Global.LeanAudio.printOutAudioClip(UnityEngine.AudioClip,UnityEngine.AnimationCurve@,System.Single)
+  commentId: M:Global.LeanAudio.printOutAudioClip(UnityEngine.AudioClip,UnityEngine.AnimationCurve@,System.Single)
+  id: printOutAudioClip(UnityEngine.AudioClip,UnityEngine.AnimationCurve@,System.Single)
+  parent: Global.LeanAudio
+  langs:
+  - csharp
+  - vb
+  name: printOutAudioClip(AudioClip, ref AnimationCurve, float)
+  nameWithType: LeanAudio.printOutAudioClip(AudioClip, ref AnimationCurve, float)
+  fullName: LeanAudio.printOutAudioClip(UnityEngine.AudioClip, ref UnityEngine.AnimationCurve, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/LeanTween/Framework/LeanAudio.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: printOutAudioClip
+    path: ../Assets/LeanTween/Framework/LeanAudio.cs
+    startLine: 299
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static void printOutAudioClip(AudioClip audioClip, ref AnimationCurve curve, float scaleX = 1)
+    parameters:
+    - id: audioClip
+      type: UnityEngine.AudioClip
+    - id: curve
+      type: UnityEngine.AnimationCurve
+    - id: scaleX
+      type: System.Single
+    content.vb: Public Shared Sub printOutAudioClip(audioClip As AudioClip, curve As AnimationCurve, scaleX As Single = 1)
+  overload: Global.LeanAudio.printOutAudioClip*
+  nameWithType.vb: LeanAudio.printOutAudioClip(AudioClip, AnimationCurve, Single)
+  fullName.vb: LeanAudio.printOutAudioClip(UnityEngine.AudioClip, UnityEngine.AnimationCurve, Single)
+  name.vb: printOutAudioClip(AudioClip, AnimationCurve, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single[]
+  isExternal: true
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Global.LeanAudio.options*
+  commentId: Overload:Global.LeanAudio.options
+  name: options
+  nameWithType: LeanAudio.options
+  fullName: LeanAudio.options
+- uid: Global.LeanAudioOptions
+  commentId: T:Global.LeanAudioOptions
+  name: LeanAudioOptions
+  nameWithType: LeanAudioOptions
+  fullName: LeanAudioOptions
+- uid: Global.LeanAudio.createAudioStream*
+  commentId: Overload:Global.LeanAudio.createAudioStream
+  name: createAudioStream
+  nameWithType: LeanAudio.createAudioStream
+  fullName: LeanAudio.createAudioStream
+- uid: UnityEngine.AnimationCurve
+  commentId: T:UnityEngine.AnimationCurve
+  parent: UnityEngine
+  isExternal: true
+  name: AnimationCurve
+  nameWithType: AnimationCurve
+  fullName: UnityEngine.AnimationCurve
+- uid: Global.LeanAudioStream
+  commentId: T:Global.LeanAudioStream
+  name: LeanAudioStream
+  nameWithType: LeanAudioStream
+  fullName: LeanAudioStream
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.LeanAudio.createAudio*
+  commentId: Overload:Global.LeanAudio.createAudio
+  name: createAudio
+  nameWithType: LeanAudio.createAudio
+  fullName: LeanAudio.createAudio
+- uid: UnityEngine.AudioClip
+  commentId: T:UnityEngine.AudioClip
+  parent: UnityEngine
+  isExternal: true
+  name: AudioClip
+  nameWithType: AudioClip
+  fullName: UnityEngine.AudioClip
+- uid: Global.LeanAudio.generateAudioFromCurve*
+  commentId: Overload:Global.LeanAudio.generateAudioFromCurve
+  name: generateAudioFromCurve
+  nameWithType: LeanAudio.generateAudioFromCurve
+  fullName: LeanAudio.generateAudioFromCurve
+- uid: Global.LeanAudio.play*
+  commentId: Overload:Global.LeanAudio.play
+  name: play
+  nameWithType: LeanAudio.play
+  fullName: LeanAudio.play
+- uid: UnityEngine.AudioSource
+  commentId: T:UnityEngine.AudioSource
+  parent: UnityEngine
+  isExternal: true
+  name: AudioSource
+  nameWithType: AudioSource
+  fullName: UnityEngine.AudioSource
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: Global.LeanAudio.playClipAt*
+  commentId: Overload:Global.LeanAudio.playClipAt
+  name: playClipAt
+  nameWithType: LeanAudio.playClipAt
+  fullName: LeanAudio.playClipAt
+- uid: Global.LeanAudio.printOutAudioClip*
+  commentId: Overload:Global.LeanAudio.printOutAudioClip
+  name: printOutAudioClip
+  nameWithType: LeanAudio.printOutAudioClip
+  fullName: LeanAudio.printOutAudioClip

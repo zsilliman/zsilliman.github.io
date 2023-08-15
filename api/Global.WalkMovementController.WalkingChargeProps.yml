@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.WalkMovementController.WalkingChargeProps
+  commentId: T:Global.WalkMovementController.WalkingChargeProps
+  id: WalkMovementController.WalkingChargeProps
+  parent: Global
+  children:
+  - Global.WalkMovementController.WalkingChargeProps.accelTime
+  - Global.WalkMovementController.WalkingChargeProps.decelTime
+  - Global.WalkMovementController.WalkingChargeProps.distance
+  - Global.WalkMovementController.WalkingChargeProps.speed
+  langs:
+  - csharp
+  - vb
+  name: WalkMovementController.WalkingChargeProps
+  nameWithType: WalkMovementController.WalkingChargeProps
+  fullName: WalkMovementController.WalkingChargeProps
+  type: Struct
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: WalkingChargeProps
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct WalkMovementController.WalkingChargeProps
+    content.vb: >-
+      <Serializable>
+
+      Public Structure WalkMovementController.WalkingChargeProps
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.WalkMovementController.WalkingChargeProps.distance
+  commentId: F:Global.WalkMovementController.WalkingChargeProps.distance
+  id: distance
+  parent: Global.WalkMovementController.WalkingChargeProps
+  langs:
+  - csharp
+  - vb
+  name: distance
+  nameWithType: WalkMovementController.WalkingChargeProps.distance
+  fullName: WalkMovementController.WalkingChargeProps.distance
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: distance
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float distance
+    return:
+      type: System.Single
+    content.vb: Public distance As Single
+- uid: Global.WalkMovementController.WalkingChargeProps.speed
+  commentId: F:Global.WalkMovementController.WalkingChargeProps.speed
+  id: speed
+  parent: Global.WalkMovementController.WalkingChargeProps
+  langs:
+  - csharp
+  - vb
+  name: speed
+  nameWithType: WalkMovementController.WalkingChargeProps.speed
+  fullName: WalkMovementController.WalkingChargeProps.speed
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: speed
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float speed
+    return:
+      type: System.Single
+    content.vb: Public speed As Single
+- uid: Global.WalkMovementController.WalkingChargeProps.accelTime
+  commentId: F:Global.WalkMovementController.WalkingChargeProps.accelTime
+  id: accelTime
+  parent: Global.WalkMovementController.WalkingChargeProps
+  langs:
+  - csharp
+  - vb
+  name: accelTime
+  nameWithType: WalkMovementController.WalkingChargeProps.accelTime
+  fullName: WalkMovementController.WalkingChargeProps.accelTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: accelTime
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float accelTime
+    return:
+      type: System.Single
+    content.vb: Public accelTime As Single
+- uid: Global.WalkMovementController.WalkingChargeProps.decelTime
+  commentId: F:Global.WalkMovementController.WalkingChargeProps.decelTime
+  id: decelTime
+  parent: Global.WalkMovementController.WalkingChargeProps
+  langs:
+  - csharp
+  - vb
+  name: decelTime
+  nameWithType: WalkMovementController.WalkingChargeProps.decelTime
+  fullName: WalkMovementController.WalkingChargeProps.decelTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: decelTime
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float decelTime
+    return:
+      type: System.Single
+    content.vb: Public decelTime As Single
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

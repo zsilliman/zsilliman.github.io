@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DetonateBehavior.SeekType
+  commentId: T:Global.DetonateBehavior.SeekType
+  id: DetonateBehavior.SeekType
+  parent: Global
+  children:
+  - Global.DetonateBehavior.SeekType.FollowPlayer
+  - Global.DetonateBehavior.SeekType.Random
+  langs:
+  - csharp
+  - vb
+  name: DetonateBehavior.SeekType
+  nameWithType: DetonateBehavior.SeekType
+  fullName: DetonateBehavior.SeekType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DetonateBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: SeekType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DetonateBehavior.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum DetonateBehavior.SeekType
+    content.vb: Public Enum DetonateBehavior.SeekType
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.DetonateBehavior.SeekType.Random
+  commentId: F:Global.DetonateBehavior.SeekType.Random
+  id: Random
+  parent: Global.DetonateBehavior.SeekType
+  langs:
+  - csharp
+  - vb
+  name: Random
+  nameWithType: DetonateBehavior.SeekType.Random
+  fullName: DetonateBehavior.SeekType.Random
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DetonateBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Random
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DetonateBehavior.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Random = 0
+    return:
+      type: Global.DetonateBehavior.SeekType
+- uid: Global.DetonateBehavior.SeekType.FollowPlayer
+  commentId: F:Global.DetonateBehavior.SeekType.FollowPlayer
+  id: FollowPlayer
+  parent: Global.DetonateBehavior.SeekType
+  langs:
+  - csharp
+  - vb
+  name: FollowPlayer
+  nameWithType: DetonateBehavior.SeekType.FollowPlayer
+  fullName: DetonateBehavior.SeekType.FollowPlayer
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DetonateBehavior.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: FollowPlayer
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Behaviors/Attack/DetonateBehavior.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: FollowPlayer = 1
+    return:
+      type: Global.DetonateBehavior.SeekType
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.DetonateBehavior.SeekType
+  commentId: T:Global.DetonateBehavior.SeekType
+  name: DetonateBehavior.SeekType
+  nameWithType: DetonateBehavior.SeekType
+  fullName: DetonateBehavior.SeekType
+  spec.csharp:
+  - uid: Global.DetonateBehavior
+    name: DetonateBehavior
+  - name: .
+  - uid: Global.DetonateBehavior.SeekType
+    name: SeekType
+  spec.vb:
+  - uid: Global.DetonateBehavior
+    name: DetonateBehavior
+  - name: .
+  - uid: Global.DetonateBehavior.SeekType
+    name: SeekType

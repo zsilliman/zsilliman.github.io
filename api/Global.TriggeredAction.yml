@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TriggeredAction
+  commentId: T:Global.TriggeredAction
+  id: TriggeredAction
+  parent: Global
+  children:
+  - Global.TriggeredAction.OnEnter(Section,Section)
+  - Global.TriggeredAction.OnExit(Section,Section)
+  - Global.TriggeredAction.OnSafeEnter(Section)
+  langs:
+  - csharp
+  - vb
+  name: TriggeredAction
+  nameWithType: TriggeredAction
+  fullName: TriggeredAction
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/TriggeredAction/TriggeredAction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: TriggeredAction
+    path: ../Assets/Objects & Components/World/Section/TriggeredAction/TriggeredAction.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public abstract class TriggeredAction : MonoBehaviour'
+    content.vb: Public MustInherit Class TriggeredAction Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - Global.AddPlayerAbilities
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.TriggeredAction.OnEnter(Section,Section)
+  commentId: M:Global.TriggeredAction.OnEnter(Section,Section)
+  id: OnEnter(Section,Section)
+  parent: Global.TriggeredAction
+  langs:
+  - csharp
+  - vb
+  name: OnEnter(Section, Section)
+  nameWithType: TriggeredAction.OnEnter(Section, Section)
+  fullName: TriggeredAction.OnEnter(Section, Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/TriggeredAction/TriggeredAction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnEnter
+    path: ../Assets/Objects & Components/World/Section/TriggeredAction/TriggeredAction.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void OnEnter(Section from, Section to)
+    parameters:
+    - id: from
+      type: Global.Section
+    - id: to
+      type: Global.Section
+    content.vb: Public Overridable Sub OnEnter(from As Section, [to] As Section)
+  overload: Global.TriggeredAction.OnEnter*
+- uid: Global.TriggeredAction.OnSafeEnter(Section)
+  commentId: M:Global.TriggeredAction.OnSafeEnter(Section)
+  id: OnSafeEnter(Section)
+  parent: Global.TriggeredAction
+  langs:
+  - csharp
+  - vb
+  name: OnSafeEnter(Section)
+  nameWithType: TriggeredAction.OnSafeEnter(Section)
+  fullName: TriggeredAction.OnSafeEnter(Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/TriggeredAction/TriggeredAction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnSafeEnter
+    path: ../Assets/Objects & Components/World/Section/TriggeredAction/TriggeredAction.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void OnSafeEnter(Section to)
+    parameters:
+    - id: to
+      type: Global.Section
+    content.vb: Public Overridable Sub OnSafeEnter([to] As Section)
+  overload: Global.TriggeredAction.OnSafeEnter*
+- uid: Global.TriggeredAction.OnExit(Section,Section)
+  commentId: M:Global.TriggeredAction.OnExit(Section,Section)
+  id: OnExit(Section,Section)
+  parent: Global.TriggeredAction
+  langs:
+  - csharp
+  - vb
+  name: OnExit(Section, Section)
+  nameWithType: TriggeredAction.OnExit(Section, Section)
+  fullName: TriggeredAction.OnExit(Section, Section)
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/World/Section/TriggeredAction/TriggeredAction.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OnExit
+    path: ../Assets/Objects & Components/World/Section/TriggeredAction/TriggeredAction.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void OnExit(Section from, Section to)
+    parameters:
+    - id: from
+      type: Global.Section
+    - id: to
+      type: Global.Section
+    content.vb: Public Overridable Sub OnExit(from As Section, [to] As Section)
+  overload: Global.TriggeredAction.OnExit*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.TriggeredAction.OnEnter*
+  commentId: Overload:Global.TriggeredAction.OnEnter
+  name: OnEnter
+  nameWithType: TriggeredAction.OnEnter
+  fullName: TriggeredAction.OnEnter
+- uid: Global.Section
+  commentId: T:Global.Section
+  name: Section
+  nameWithType: Section
+  fullName: Section
+- uid: Global.TriggeredAction.OnSafeEnter*
+  commentId: Overload:Global.TriggeredAction.OnSafeEnter
+  name: OnSafeEnter
+  nameWithType: TriggeredAction.OnSafeEnter
+  fullName: TriggeredAction.OnSafeEnter
+- uid: Global.TriggeredAction.OnExit*
+  commentId: Overload:Global.TriggeredAction.OnExit
+  name: OnExit
+  nameWithType: TriggeredAction.OnExit
+  fullName: TriggeredAction.OnExit

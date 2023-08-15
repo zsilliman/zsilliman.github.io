@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BeamAuraProjectile
+  commentId: T:Global.BeamAuraProjectile
+  id: BeamAuraProjectile
+  parent: Global
+  children:
+  - Global.BeamAuraProjectile.BeamEndLocation
+  - Global.BeamAuraProjectile.EaseType
+  - Global.BeamAuraProjectile.MaxGrowLength
+  - Global.BeamAuraProjectile.Start
+  langs:
+  - csharp
+  - vb
+  name: BeamAuraProjectile
+  nameWithType: BeamAuraProjectile
+  fullName: BeamAuraProjectile
+  type: Class
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BeamAuraProjectile
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class BeamAuraProjectile : AuraProjectileMovementBase'
+    content.vb: Public Class BeamAuraProjectile Inherits AuraProjectileMovementBase
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}
+  - Global.AuraProjectileMovementBase
+  inheritedMembers:
+  - Global.AuraProjectileMovementBase.shapeController
+  - Global.AuraProjectileMovementBase.lifetime_t
+  - Global.AuraProjectileMovementBase.ClipDirection(AuraProjectileMovementBase.AxisClipType,UnityEngine.Vector2)
+  - Global.AuraProjectileMovementBase.Update
+  - Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.Properties
+  - Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.auraCreator
+  - Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.auraComponent
+  - Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.ResetObject
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.BeamAuraProjectile.MaxGrowLength
+  commentId: F:Global.BeamAuraProjectile.MaxGrowLength
+  id: MaxGrowLength
+  parent: Global.BeamAuraProjectile
+  langs:
+  - csharp
+  - vb
+  name: MaxGrowLength
+  nameWithType: BeamAuraProjectile.MaxGrowLength
+  fullName: BeamAuraProjectile.MaxGrowLength
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxGrowLength
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float MaxGrowLength
+    return:
+      type: System.Single
+    content.vb: Public MaxGrowLength As Single
+- uid: Global.BeamAuraProjectile.EaseType
+  commentId: F:Global.BeamAuraProjectile.EaseType
+  id: EaseType
+  parent: Global.BeamAuraProjectile
+  langs:
+  - csharp
+  - vb
+  name: EaseType
+  nameWithType: BeamAuraProjectile.EaseType
+  fullName: BeamAuraProjectile.EaseType
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EaseType
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LeanTweenType EaseType
+    return:
+      type: Global.LeanTweenType
+    content.vb: Public EaseType As LeanTweenType
+- uid: Global.BeamAuraProjectile.BeamEndLocation
+  commentId: F:Global.BeamAuraProjectile.BeamEndLocation
+  id: BeamEndLocation
+  parent: Global.BeamAuraProjectile
+  langs:
+  - csharp
+  - vb
+  name: BeamEndLocation
+  nameWithType: BeamAuraProjectile.BeamEndLocation
+  fullName: BeamAuraProjectile.BeamEndLocation
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: BeamEndLocation
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected Vector2 BeamEndLocation
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Protected BeamEndLocation As Vector2
+- uid: Global.BeamAuraProjectile.Start
+  commentId: M:Global.BeamAuraProjectile.Start
+  id: Start
+  parent: Global.BeamAuraProjectile
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: BeamAuraProjectile.Start()
+  fullName: BeamAuraProjectile.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Start
+    path: ../Assets/Objects & Components/Entities/Enemies/Modular/Modules/Projectiles/Projectiles/Beam/BeamAuraProjectile.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: protected void Start()
+    content.vb: Protected Sub Start()
+  overload: Global.BeamAuraProjectile.Start*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}
+  commentId: T:Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}
+  definition: Global.AuraMovementController`1
+  name: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>
+  nameWithType: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>
+  fullName: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>
+  nameWithType.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties)
+  fullName.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties)
+  name.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties)
+  spec.csharp:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: <
+  - uid: Global.AuraProjectileMovementBase
+    name: AuraProjectileMovementBase
+  - name: .
+  - uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    name: AuraProjectileProperties
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.AuraProjectileMovementBase
+    name: AuraProjectileMovementBase
+  - name: .
+  - uid: Global.AuraProjectileMovementBase.AuraProjectileProperties
+    name: AuraProjectileProperties
+  - name: )
+- uid: Global.AuraProjectileMovementBase
+  commentId: T:Global.AuraProjectileMovementBase
+  name: AuraProjectileMovementBase
+  nameWithType: AuraProjectileMovementBase
+  fullName: AuraProjectileMovementBase
+- uid: Global.AuraProjectileMovementBase.shapeController
+  commentId: F:Global.AuraProjectileMovementBase.shapeController
+  parent: Global.AuraProjectileMovementBase
+  name: shapeController
+  nameWithType: AuraProjectileMovementBase.shapeController
+  fullName: AuraProjectileMovementBase.shapeController
+- uid: Global.AuraProjectileMovementBase.lifetime_t
+  commentId: F:Global.AuraProjectileMovementBase.lifetime_t
+  parent: Global.AuraProjectileMovementBase
+  name: lifetime_t
+  nameWithType: AuraProjectileMovementBase.lifetime_t
+  fullName: AuraProjectileMovementBase.lifetime_t
+- uid: Global.AuraProjectileMovementBase.ClipDirection(AuraProjectileMovementBase.AxisClipType,UnityEngine.Vector2)
+  commentId: M:Global.AuraProjectileMovementBase.ClipDirection(AuraProjectileMovementBase.AxisClipType,UnityEngine.Vector2)
+  parent: Global.AuraProjectileMovementBase
+  isExternal: true
+  name: ClipDirection(AxisClipType, Vector2)
+  nameWithType: AuraProjectileMovementBase.ClipDirection(AuraProjectileMovementBase.AxisClipType, Vector2)
+  fullName: AuraProjectileMovementBase.ClipDirection(AuraProjectileMovementBase.AxisClipType, UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.AuraProjectileMovementBase.ClipDirection(AuraProjectileMovementBase.AxisClipType,UnityEngine.Vector2)
+    name: ClipDirection
+  - name: (
+  - uid: Global.AuraProjectileMovementBase.AxisClipType
+    name: AxisClipType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.AuraProjectileMovementBase.ClipDirection(AuraProjectileMovementBase.AxisClipType,UnityEngine.Vector2)
+    name: ClipDirection
+  - name: (
+  - uid: Global.AuraProjectileMovementBase.AxisClipType
+    name: AxisClipType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.AuraProjectileMovementBase.Update
+  commentId: M:Global.AuraProjectileMovementBase.Update
+  parent: Global.AuraProjectileMovementBase
+  name: Update()
+  nameWithType: AuraProjectileMovementBase.Update()
+  fullName: AuraProjectileMovementBase.Update()
+  spec.csharp:
+  - uid: Global.AuraProjectileMovementBase.Update
+    name: Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraProjectileMovementBase.Update
+    name: Update
+  - name: (
+  - name: )
+- uid: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.Properties
+  commentId: F:Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.Properties
+  parent: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}
+  definition: Global.AuraMovementController`1.Properties
+  name: Properties
+  nameWithType: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>.Properties
+  fullName: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>.Properties
+  nameWithType.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties).Properties
+  fullName.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties).Properties
+- uid: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.auraCreator
+  commentId: F:Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.auraCreator
+  parent: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}
+  definition: Global.AuraMovementController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>.auraCreator
+  fullName: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>.auraCreator
+  nameWithType.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties).auraCreator
+  fullName.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties).auraCreator
+- uid: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.auraComponent
+  commentId: F:Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.auraComponent
+  parent: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}
+  definition: Global.AuraMovementController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>.auraComponent
+  fullName: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>.auraComponent
+  nameWithType.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties).auraComponent
+  fullName.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties).auraComponent
+- uid: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.ResetObject
+  commentId: M:Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.ResetObject
+  parent: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}
+  definition: Global.AuraMovementController`1.ResetObject
+  name: ResetObject()
+  nameWithType: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>.ResetObject()
+  fullName: AuraMovementController<AuraProjectileMovementBase.AuraProjectileProperties>.ResetObject()
+  nameWithType.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties).ResetObject()
+  fullName.vb: AuraMovementController(Of AuraProjectileMovementBase.AuraProjectileProperties).ResetObject()
+  spec.csharp:
+  - uid: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController{AuraProjectileMovementBase.AuraProjectileProperties}.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.AuraMovementController`1
+  commentId: T:Global.AuraMovementController`1
+  name: AuraMovementController<T>
+  nameWithType: AuraMovementController<T>
+  fullName: AuraMovementController<T>
+  nameWithType.vb: AuraMovementController(Of T)
+  fullName.vb: AuraMovementController(Of T)
+  name.vb: AuraMovementController(Of T)
+  spec.csharp:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.AuraMovementController`1
+    name: AuraMovementController
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.AuraMovementController`1.Properties
+  commentId: F:Global.AuraMovementController`1.Properties
+  name: Properties
+  nameWithType: AuraMovementController<T>.Properties
+  fullName: AuraMovementController<T>.Properties
+  nameWithType.vb: AuraMovementController(Of T).Properties
+  fullName.vb: AuraMovementController(Of T).Properties
+- uid: Global.AuraMovementController`1.auraCreator
+  commentId: F:Global.AuraMovementController`1.auraCreator
+  name: auraCreator
+  nameWithType: AuraMovementController<T>.auraCreator
+  fullName: AuraMovementController<T>.auraCreator
+  nameWithType.vb: AuraMovementController(Of T).auraCreator
+  fullName.vb: AuraMovementController(Of T).auraCreator
+- uid: Global.AuraMovementController`1.auraComponent
+  commentId: F:Global.AuraMovementController`1.auraComponent
+  name: auraComponent
+  nameWithType: AuraMovementController<T>.auraComponent
+  fullName: AuraMovementController<T>.auraComponent
+  nameWithType.vb: AuraMovementController(Of T).auraComponent
+  fullName.vb: AuraMovementController(Of T).auraComponent
+- uid: Global.AuraMovementController`1.ResetObject
+  commentId: M:Global.AuraMovementController`1.ResetObject
+  name: ResetObject()
+  nameWithType: AuraMovementController<T>.ResetObject()
+  fullName: AuraMovementController<T>.ResetObject()
+  nameWithType.vb: AuraMovementController(Of T).ResetObject()
+  fullName.vb: AuraMovementController(Of T).ResetObject()
+  spec.csharp:
+  - uid: Global.AuraMovementController`1.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AuraMovementController`1.ResetObject
+    name: ResetObject
+  - name: (
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.LeanTweenType
+  commentId: T:Global.LeanTweenType
+  name: LeanTweenType
+  nameWithType: LeanTweenType
+  fullName: LeanTweenType
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.BeamAuraProjectile.Start*
+  commentId: Overload:Global.BeamAuraProjectile.Start
+  name: Start
+  nameWithType: BeamAuraProjectile.Start
+  fullName: BeamAuraProjectile.Start

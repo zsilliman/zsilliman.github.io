@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntMath.Operation
+  commentId: T:Global.IntMath.Operation
+  id: IntMath.Operation
+  parent: Global
+  children:
+  - Global.IntMath.Operation.EqualTo
+  - Global.IntMath.Operation.GreaterThan
+  - Global.IntMath.Operation.GreaterThanEqualTo
+  - Global.IntMath.Operation.LessThan
+  - Global.IntMath.Operation.LessThanEqualTo
+  langs:
+  - csharp
+  - vb
+  name: IntMath.Operation
+  nameWithType: IntMath.Operation
+  fullName: IntMath.Operation
+  type: Enum
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Operation
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nEnum used to define equality operations\n"
+  example: []
+  syntax:
+    content: public enum IntMath.Operation
+    content.vb: Public Enum IntMath.Operation
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.IntMath.Operation.GreaterThan
+  commentId: F:Global.IntMath.Operation.GreaterThan
+  id: GreaterThan
+  parent: Global.IntMath.Operation
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan
+  nameWithType: IntMath.Operation.GreaterThan
+  fullName: IntMath.Operation.GreaterThan
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GreaterThan
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: GreaterThan = 0
+    return:
+      type: Global.IntMath.Operation
+- uid: Global.IntMath.Operation.LessThan
+  commentId: F:Global.IntMath.Operation.LessThan
+  id: LessThan
+  parent: Global.IntMath.Operation
+  langs:
+  - csharp
+  - vb
+  name: LessThan
+  nameWithType: IntMath.Operation.LessThan
+  fullName: IntMath.Operation.LessThan
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LessThan
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: LessThan = 1
+    return:
+      type: Global.IntMath.Operation
+- uid: Global.IntMath.Operation.GreaterThanEqualTo
+  commentId: F:Global.IntMath.Operation.GreaterThanEqualTo
+  id: GreaterThanEqualTo
+  parent: Global.IntMath.Operation
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanEqualTo
+  nameWithType: IntMath.Operation.GreaterThanEqualTo
+  fullName: IntMath.Operation.GreaterThanEqualTo
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: GreaterThanEqualTo
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: GreaterThanEqualTo = 2
+    return:
+      type: Global.IntMath.Operation
+- uid: Global.IntMath.Operation.LessThanEqualTo
+  commentId: F:Global.IntMath.Operation.LessThanEqualTo
+  id: LessThanEqualTo
+  parent: Global.IntMath.Operation
+  langs:
+  - csharp
+  - vb
+  name: LessThanEqualTo
+  nameWithType: IntMath.Operation.LessThanEqualTo
+  fullName: IntMath.Operation.LessThanEqualTo
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: LessThanEqualTo
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: LessThanEqualTo = 3
+    return:
+      type: Global.IntMath.Operation
+- uid: Global.IntMath.Operation.EqualTo
+  commentId: F:Global.IntMath.Operation.EqualTo
+  id: EqualTo
+  parent: Global.IntMath.Operation
+  langs:
+  - csharp
+  - vb
+  name: EqualTo
+  nameWithType: IntMath.Operation.EqualTo
+  fullName: IntMath.Operation.EqualTo
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/IntMath.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: EqualTo
+    path: ../Assets/Framework/Util/Math/IntMath.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EqualTo = 4
+    return:
+      type: Global.IntMath.Operation
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: Global.IntMath.Operation
+  commentId: T:Global.IntMath.Operation
+  name: IntMath.Operation
+  nameWithType: IntMath.Operation
+  fullName: IntMath.Operation
+  spec.csharp:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Operation
+    name: Operation
+  spec.vb:
+  - uid: Global.IntMath
+    name: IntMath
+  - name: .
+  - uid: Global.IntMath.Operation
+    name: Operation

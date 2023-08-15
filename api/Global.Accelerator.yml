@@ -1,0 +1,569 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Accelerator
+  commentId: T:Global.Accelerator
+  id: Accelerator
+  parent: Global
+  children:
+  - Global.Accelerator.#ctor
+  - Global.Accelerator.#ctor(System.Single,System.Single)
+  - Global.Accelerator.AccelerateToPosition(IntObject.Action,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.Accelerator.AccelerateToPosition(System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Global.Accelerator.AccelerateToVelocity(System.Single,System.Single,System.Single)
+  - Global.Accelerator.Acceleration
+  - Global.Accelerator.MaxSpeed
+  - Global.Accelerator.OverrideCurrentVelocity(System.Single)
+  - Global.Accelerator.RegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  - Global.Accelerator.UnRegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  - Global.Accelerator.Velocity
+  langs:
+  - csharp
+  - vb
+  name: Accelerator
+  nameWithType: Accelerator
+  fullName: Accelerator
+  type: Class
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Accelerator
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Accelerator
+    content.vb: >-
+      <Serializable>
+
+      Public Class Accelerator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.Accelerator.MaxSpeed
+  commentId: F:Global.Accelerator.MaxSpeed
+  id: MaxSpeed
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: MaxSpeed
+  nameWithType: Accelerator.MaxSpeed
+  fullName: Accelerator.MaxSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: MaxSpeed
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float MaxSpeed
+    return:
+      type: System.Single
+    content.vb: Public MaxSpeed As Single
+- uid: Global.Accelerator.Acceleration
+  commentId: F:Global.Accelerator.Acceleration
+  id: Acceleration
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: Acceleration
+  nameWithType: Accelerator.Acceleration
+  fullName: Accelerator.Acceleration
+  type: Field
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Acceleration
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Acceleration
+    return:
+      type: System.Single
+    content.vb: Public Acceleration As Single
+- uid: Global.Accelerator.#ctor
+  commentId: M:Global.Accelerator.#ctor
+  id: '#ctor'
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: Accelerator()
+  nameWithType: Accelerator.Accelerator()
+  fullName: Accelerator.Accelerator()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Accelerator()
+    content.vb: Public Sub New()
+  overload: Global.Accelerator.#ctor*
+  nameWithType.vb: Accelerator.New()
+  fullName.vb: Accelerator.New()
+  name.vb: New()
+- uid: Global.Accelerator.#ctor(System.Single,System.Single)
+  commentId: M:Global.Accelerator.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: Accelerator(float, float)
+  nameWithType: Accelerator.Accelerator(float, float)
+  fullName: Accelerator.Accelerator(float, float)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: .ctor
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Accelerator(float Acceleration, float MaxSpeed)
+    parameters:
+    - id: Acceleration
+      type: System.Single
+    - id: MaxSpeed
+      type: System.Single
+    content.vb: Public Sub New(Acceleration As Single, MaxSpeed As Single)
+  overload: Global.Accelerator.#ctor*
+  nameWithType.vb: Accelerator.New(Single, Single)
+  fullName.vb: Accelerator.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: Global.Accelerator.RegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  commentId: M:Global.Accelerator.RegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  id: RegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: RegisterArrivedCallback(AcceleratorCallback)
+  nameWithType: Accelerator.RegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  fullName: Accelerator.RegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: RegisterArrivedCallback
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RegisterArrivedCallback(Accelerator.AcceleratorCallback callback)
+    parameters:
+    - id: callback
+      type: Global.Accelerator.AcceleratorCallback
+    content.vb: Public Sub RegisterArrivedCallback(callback As Accelerator.AcceleratorCallback)
+  overload: Global.Accelerator.RegisterArrivedCallback*
+- uid: Global.Accelerator.UnRegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  commentId: M:Global.Accelerator.UnRegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  id: UnRegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: UnRegisterArrivedCallback(AcceleratorCallback)
+  nameWithType: Accelerator.UnRegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  fullName: Accelerator.UnRegisterArrivedCallback(Accelerator.AcceleratorCallback)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: UnRegisterArrivedCallback
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void UnRegisterArrivedCallback(Accelerator.AcceleratorCallback callback)
+    parameters:
+    - id: callback
+      type: Global.Accelerator.AcceleratorCallback
+    content.vb: Public Sub UnRegisterArrivedCallback(callback As Accelerator.AcceleratorCallback)
+  overload: Global.Accelerator.UnRegisterArrivedCallback*
+- uid: Global.Accelerator.Velocity
+  commentId: P:Global.Accelerator.Velocity
+  id: Velocity
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: Accelerator.Velocity
+  fullName: Accelerator.Velocity
+  type: Property
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: Velocity
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float Velocity { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Velocity As Single
+  overload: Global.Accelerator.Velocity*
+- uid: Global.Accelerator.OverrideCurrentVelocity(System.Single)
+  commentId: M:Global.Accelerator.OverrideCurrentVelocity(System.Single)
+  id: OverrideCurrentVelocity(System.Single)
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: OverrideCurrentVelocity(float)
+  nameWithType: Accelerator.OverrideCurrentVelocity(float)
+  fullName: Accelerator.OverrideCurrentVelocity(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: OverrideCurrentVelocity
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OverrideCurrentVelocity(float velocity)
+    parameters:
+    - id: velocity
+      type: System.Single
+    content.vb: Public Sub OverrideCurrentVelocity(velocity As Single)
+  overload: Global.Accelerator.OverrideCurrentVelocity*
+  nameWithType.vb: Accelerator.OverrideCurrentVelocity(Single)
+  fullName.vb: Accelerator.OverrideCurrentVelocity(Single)
+  name.vb: OverrideCurrentVelocity(Single)
+- uid: Global.Accelerator.AccelerateToVelocity(System.Single,System.Single,System.Single)
+  commentId: M:Global.Accelerator.AccelerateToVelocity(System.Single,System.Single,System.Single)
+  id: AccelerateToVelocity(System.Single,System.Single,System.Single)
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: AccelerateToVelocity(float, float, float)
+  nameWithType: Accelerator.AccelerateToVelocity(float, float, float)
+  fullName: Accelerator.AccelerateToVelocity(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AccelerateToVelocity
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float AccelerateToVelocity(float desired_velocity, float delta_time, float epsilon = 1)
+    parameters:
+    - id: desired_velocity
+      type: System.Single
+    - id: delta_time
+      type: System.Single
+    - id: epsilon
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function AccelerateToVelocity(desired_velocity As Single, delta_time As Single, epsilon As Single = 1) As Single
+  overload: Global.Accelerator.AccelerateToVelocity*
+  nameWithType.vb: Accelerator.AccelerateToVelocity(Single, Single, Single)
+  fullName.vb: Accelerator.AccelerateToVelocity(Single, Single, Single)
+  name.vb: AccelerateToVelocity(Single, Single, Single)
+- uid: Global.Accelerator.AccelerateToPosition(System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.Accelerator.AccelerateToPosition(System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: AccelerateToPosition(System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: AccelerateToPosition(float, float, float, float, float)
+  nameWithType: Accelerator.AccelerateToPosition(float, float, float, float, float)
+  fullName: Accelerator.AccelerateToPosition(float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AccelerateToPosition
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float AccelerateToPosition(float current_position, float desired_position, float delta_time, float VelocityEpsilon = 1, float PositionEpsilon = 5)
+    parameters:
+    - id: current_position
+      type: System.Single
+    - id: desired_position
+      type: System.Single
+    - id: delta_time
+      type: System.Single
+    - id: VelocityEpsilon
+      type: System.Single
+    - id: PositionEpsilon
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function AccelerateToPosition(current_position As Single, desired_position As Single, delta_time As Single, VelocityEpsilon As Single = 1, PositionEpsilon As Single = 5) As Single
+  overload: Global.Accelerator.AccelerateToPosition*
+  nameWithType.vb: Accelerator.AccelerateToPosition(Single, Single, Single, Single, Single)
+  fullName.vb: Accelerator.AccelerateToPosition(Single, Single, Single, Single, Single)
+  name.vb: AccelerateToPosition(Single, Single, Single, Single, Single)
+- uid: Global.Accelerator.AccelerateToPosition(IntObject.Action,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Global.Accelerator.AccelerateToPosition(IntObject.Action,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: AccelerateToPosition(IntObject.Action,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Global.Accelerator
+  langs:
+  - csharp
+  - vb
+  name: AccelerateToPosition(Action, float, float, float, float, float)
+  nameWithType: Accelerator.AccelerateToPosition(IntObject.Action, float, float, float, float, float)
+  fullName: Accelerator.AccelerateToPosition(IntObject.Action, float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Framework/Util/Math/Movement/Accelerator.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: AccelerateToPosition
+    path: ../Assets/Framework/Util/Math/Movement/Accelerator.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float AccelerateToPosition(IntObject.Action callback, float current_position, float desired_position, float delta_time, float VelocityEpsilon = 1, float PositionEpsilon = 5)
+    parameters:
+    - id: callback
+      type: Global.IntObject.Action
+    - id: current_position
+      type: System.Single
+    - id: desired_position
+      type: System.Single
+    - id: delta_time
+      type: System.Single
+    - id: VelocityEpsilon
+      type: System.Single
+    - id: PositionEpsilon
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function AccelerateToPosition(callback As IntObject.Action, current_position As Single, desired_position As Single, delta_time As Single, VelocityEpsilon As Single = 1, PositionEpsilon As Single = 5) As Single
+  overload: Global.Accelerator.AccelerateToPosition*
+  nameWithType.vb: Accelerator.AccelerateToPosition(IntObject.Action, Single, Single, Single, Single, Single)
+  fullName.vb: Accelerator.AccelerateToPosition(IntObject.Action, Single, Single, Single, Single, Single)
+  name.vb: AccelerateToPosition(Action, Single, Single, Single, Single, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.Accelerator.#ctor*
+  commentId: Overload:Global.Accelerator.#ctor
+  name: Accelerator
+  nameWithType: Accelerator.Accelerator
+  fullName: Accelerator.Accelerator
+  nameWithType.vb: Accelerator.New
+  fullName.vb: Accelerator.New
+  name.vb: New
+- uid: Global.Accelerator.RegisterArrivedCallback*
+  commentId: Overload:Global.Accelerator.RegisterArrivedCallback
+  name: RegisterArrivedCallback
+  nameWithType: Accelerator.RegisterArrivedCallback
+  fullName: Accelerator.RegisterArrivedCallback
+- uid: Global.Accelerator.AcceleratorCallback
+  commentId: T:Global.Accelerator.AcceleratorCallback
+  name: Accelerator.AcceleratorCallback
+  nameWithType: Accelerator.AcceleratorCallback
+  fullName: Accelerator.AcceleratorCallback
+  spec.csharp:
+  - uid: Global.Accelerator
+    name: Accelerator
+  - name: .
+  - uid: Global.Accelerator.AcceleratorCallback
+    name: AcceleratorCallback
+  spec.vb:
+  - uid: Global.Accelerator
+    name: Accelerator
+  - name: .
+  - uid: Global.Accelerator.AcceleratorCallback
+    name: AcceleratorCallback
+- uid: Global.Accelerator.UnRegisterArrivedCallback*
+  commentId: Overload:Global.Accelerator.UnRegisterArrivedCallback
+  name: UnRegisterArrivedCallback
+  nameWithType: Accelerator.UnRegisterArrivedCallback
+  fullName: Accelerator.UnRegisterArrivedCallback
+- uid: Global.Accelerator.Velocity*
+  commentId: Overload:Global.Accelerator.Velocity
+  name: Velocity
+  nameWithType: Accelerator.Velocity
+  fullName: Accelerator.Velocity
+- uid: Global.Accelerator.OverrideCurrentVelocity*
+  commentId: Overload:Global.Accelerator.OverrideCurrentVelocity
+  name: OverrideCurrentVelocity
+  nameWithType: Accelerator.OverrideCurrentVelocity
+  fullName: Accelerator.OverrideCurrentVelocity
+- uid: Global.Accelerator.AccelerateToVelocity*
+  commentId: Overload:Global.Accelerator.AccelerateToVelocity
+  name: AccelerateToVelocity
+  nameWithType: Accelerator.AccelerateToVelocity
+  fullName: Accelerator.AccelerateToVelocity
+- uid: Global.Accelerator.AccelerateToPosition*
+  commentId: Overload:Global.Accelerator.AccelerateToPosition
+  name: AccelerateToPosition
+  nameWithType: Accelerator.AccelerateToPosition
+  fullName: Accelerator.AccelerateToPosition
+- uid: Global.IntObject.Action
+  commentId: T:Global.IntObject.Action
+  name: IntObject.Action
+  nameWithType: IntObject.Action
+  fullName: IntObject.Action
+  spec.csharp:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action
+  spec.vb:
+  - uid: Global.IntObject
+    name: IntObject
+  - name: .
+  - uid: Global.IntObject.Action
+    name: Action

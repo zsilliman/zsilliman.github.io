@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IntEnemy.JumpInfo
+  commentId: T:Global.IntEnemy.JumpInfo
+  id: IntEnemy.JumpInfo
+  parent: Global
+  children:
+  - Global.IntEnemy.JumpInfo.CanJump
+  - Global.IntEnemy.JumpInfo.JumpTileHeight
+  langs:
+  - csharp
+  - vb
+  name: IntEnemy.JumpInfo
+  nameWithType: IntEnemy.JumpInfo
+  fullName: IntEnemy.JumpInfo
+  type: Struct
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/IntEnemy.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: JumpInfo
+    path: ../Assets/Objects & Components/Entities/Enemies/IntEnemy.cs
+    startLine: 499
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public struct IntEnemy.JumpInfo
+    content.vb: Public Structure IntEnemy.JumpInfo
+  extensionMethods:
+  - System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+- uid: Global.IntEnemy.JumpInfo.CanJump
+  commentId: F:Global.IntEnemy.JumpInfo.CanJump
+  id: CanJump
+  parent: Global.IntEnemy.JumpInfo
+  langs:
+  - csharp
+  - vb
+  name: CanJump
+  nameWithType: IntEnemy.JumpInfo.CanJump
+  fullName: IntEnemy.JumpInfo.CanJump
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/IntEnemy.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: CanJump
+    path: ../Assets/Objects & Components/Entities/Enemies/IntEnemy.cs
+    startLine: 501
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool CanJump
+    return:
+      type: System.Boolean
+    content.vb: Public CanJump As Boolean
+- uid: Global.IntEnemy.JumpInfo.JumpTileHeight
+  commentId: F:Global.IntEnemy.JumpInfo.JumpTileHeight
+  id: JumpTileHeight
+  parent: Global.IntEnemy.JumpInfo
+  langs:
+  - csharp
+  - vb
+  name: JumpTileHeight
+  nameWithType: IntEnemy.JumpInfo.JumpTileHeight
+  fullName: IntEnemy.JumpInfo.JumpTileHeight
+  type: Field
+  source:
+    remote:
+      path: Assets/Objects & Components/Entities/Enemies/IntEnemy.cs
+      branch: master
+      repo: https://github.com/zsilliman/Ascend.git
+    id: JumpTileHeight
+    path: ../Assets/Objects & Components/Entities/Enemies/IntEnemy.cs
+    startLine: 502
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int JumpTileHeight
+    return:
+      type: System.Int32
+    content.vb: Public JumpTileHeight As Integer
+references:
+- uid: Global
+- uid: System.Object.Global.ReflectionExtensions.ToStringWithQuotes
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  parent: Global.ReflectionExtensions
+  definition: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  commentId: M:Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+  isExternal: true
+  name: ToStringWithQuotes(object)
+  nameWithType: ReflectionExtensions.ToStringWithQuotes(object)
+  fullName: ReflectionExtensions.ToStringWithQuotes(object)
+  nameWithType.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  fullName.vb: ReflectionExtensions.ToStringWithQuotes(Object)
+  name.vb: ToStringWithQuotes(Object)
+  spec.csharp:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.ReflectionExtensions.ToStringWithQuotes(System.Object)
+    name: ToStringWithQuotes
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Global.ReflectionExtensions
+  commentId: T:Global.ReflectionExtensions
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: ReflectionExtensions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
