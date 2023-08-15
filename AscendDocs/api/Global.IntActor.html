@@ -162,6 +162,9 @@
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SaveObject">IntObject.SaveObject</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsInSetPiece">IntObject.IsInSetPiece</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_Start">IntObject.Start()</a>
     </div>
     <div>
@@ -184,6 +187,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_UnregisterKilledCallback_IntObject_Action_">IntObject.UnregisterKilledCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsContainedInRect_UnityEngine_Rect_">IntObject.IsContainedInRect(Rect)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_Update">IntObject.Update()</a>
@@ -211,6 +217,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SleepObject">IntObject.SleepObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_OptimizeSleepObject">IntObject.OptimizeSleepObject()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_WakeObject">IntObject.WakeObject()</a>
@@ -347,7 +356,36 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_OnTakeDamageCallback.md&amp;value=---%0Auid%3A%20Global.IntActor.OnTakeDamageCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Global_IntActor_OnTakeDamageCallback" data-uid="Global.IntActor.OnTakeDamageCallback">OnTakeDamageCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IntObject.Action OnTakeDamageCallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.IntObject.html">IntObject</a>.<a class="xref" href="Global.IntObject.Action.html">Action</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -385,6 +423,36 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_activeWater.md&amp;value=---%0Auid%3A%20Global.IntActor.activeWater%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L333">View Source</a>
+  </span>
+  <a id="Global_IntActor_activeWater_" data-uid="Global.IntActor.activeWater*"></a>
+  <h4 id="Global_IntActor_activeWater" data-uid="Global.IntActor.activeWater">activeWater</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WaterComponent activeWater { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.WaterComponent.html">WaterComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_Bottom.md&amp;value=---%0Auid%3A%20Global.IntActor.Bottom%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -415,10 +483,40 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_IsInWater.md&amp;value=---%0Auid%3A%20Global.IntActor.IsInWater%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L355">View Source</a>
+  </span>
+  <a id="Global_IntActor_IsInWater_" data-uid="Global.IntActor.IsInWater*"></a>
+  <h4 id="Global_IntActor_IsInWater" data-uid="Global.IntActor.IsInWater">IsInWater</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInWater { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_IsRidingFlatSurface.md&amp;value=---%0Auid%3A%20Global.IntActor.IsRidingFlatSurface%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L25">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L27">View Source</a>
   </span>
   <a id="Global_IntActor_IsRidingFlatSurface_" data-uid="Global.IntActor.IsRidingFlatSurface*"></a>
   <h4 id="Global_IntActor_IsRidingFlatSurface" data-uid="Global.IntActor.IsRidingFlatSurface">IsRidingFlatSurface</h4>
@@ -438,7 +536,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -478,7 +576,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_RidingNormal.md&amp;value=---%0Auid%3A%20Global.IntActor.RidingNormal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L24">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L26">View Source</a>
   </span>
   <a id="Global_IntActor_RidingNormal_" data-uid="Global.IntActor.RidingNormal*"></a>
   <h4 id="Global_IntActor_RidingNormal" data-uid="Global.IntActor.RidingNormal">RidingNormal</h4>
@@ -508,7 +606,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_RidingSolid.md&amp;value=---%0Auid%3A%20Global.IntActor.RidingSolid%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L22">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L24">View Source</a>
   </span>
   <a id="Global_IntActor_RidingSolid_" data-uid="Global.IntActor.RidingSolid*"></a>
   <h4 id="Global_IntActor_RidingSolid" data-uid="Global.IntActor.RidingSolid">RidingSolid</h4>
@@ -538,7 +636,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_RidingTangent.md&amp;value=---%0Auid%3A%20Global.IntActor.RidingTangent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L23">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L25">View Source</a>
   </span>
   <a id="Global_IntActor_RidingTangent_" data-uid="Global.IntActor.RidingTangent*"></a>
   <h4 id="Global_IntActor_RidingTangent" data-uid="Global.IntActor.RidingTangent">RidingTangent</h4>
@@ -660,7 +758,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ApplyWind_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Global.IntActor.ApplyWind(UnityEngine.Vector2)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L306">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L371">View Source</a>
   </span>
   <a id="Global_IntActor_ApplyWind_" data-uid="Global.IntActor.ApplyWind*"></a>
   <h4 id="Global_IntActor_ApplyWind_UnityEngine_Vector2_" data-uid="Global.IntActor.ApplyWind(UnityEngine.Vector2)">ApplyWind(Vector2)</h4>
@@ -692,7 +790,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_Awake.md&amp;value=---%0Auid%3A%20Global.IntActor.Awake%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L27">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L29">View Source</a>
   </span>
   <a id="Global_IntActor_Awake_" data-uid="Global.IntActor.Awake*"></a>
   <h4 id="Global_IntActor_Awake" data-uid="Global.IntActor.Awake">Awake()</h4>
@@ -707,7 +805,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_CheckActorInteractableCollisions.md&amp;value=---%0Auid%3A%20Global.IntActor.CheckActorInteractableCollisions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L739">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L812">View Source</a>
   </span>
   <a id="Global_IntActor_CheckActorInteractableCollisions_" data-uid="Global.IntActor.CheckActorInteractableCollisions*"></a>
   <h4 id="Global_IntActor_CheckActorInteractableCollisions" data-uid="Global.IntActor.CheckActorInteractableCollisions">CheckActorInteractableCollisions()</h4>
@@ -722,7 +820,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_CheckActorTriggerCollisions_IntObject_ActorAction_IntObject_TriggerAction_.md&amp;value=---%0Auid%3A%20Global.IntActor.CheckActorTriggerCollisions(IntObject.ActorAction%2CIntObject.TriggerAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L659">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L732">View Source</a>
   </span>
   <a id="Global_IntActor_CheckActorTriggerCollisions_" data-uid="Global.IntActor.CheckActorTriggerCollisions*"></a>
   <h4 id="Global_IntActor_CheckActorTriggerCollisions_IntObject_ActorAction_IntObject_TriggerAction_" data-uid="Global.IntActor.CheckActorTriggerCollisions(IntObject.ActorAction,IntObject.TriggerAction)">CheckActorTriggerCollisions(ActorAction, TriggerAction)</h4>
@@ -759,7 +857,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_CheckGrounded.md&amp;value=---%0Auid%3A%20Global.IntActor.CheckGrounded%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L246">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L268">View Source</a>
   </span>
   <a id="Global_IntActor_CheckGrounded_" data-uid="Global.IntActor.CheckGrounded*"></a>
   <h4 id="Global_IntActor_CheckGrounded" data-uid="Global.IntActor.CheckGrounded">CheckGrounded()</h4>
@@ -779,7 +877,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -789,7 +887,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_CheckOnWall.md&amp;value=---%0Auid%3A%20Global.IntActor.CheckOnWall%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L284">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L310">View Source</a>
   </span>
   <a id="Global_IntActor_CheckOnWall_" data-uid="Global.IntActor.CheckOnWall*"></a>
   <h4 id="Global_IntActor_CheckOnWall" data-uid="Global.IntActor.CheckOnWall">CheckOnWall()</h4>
@@ -819,7 +917,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ComplexMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_System_Int32_.md&amp;value=---%0Auid%3A%20Global.IntActor.ComplexMove(UnityEngine.Vector2%2CIntObject.SolidAction%2CIntObject.SolidAction%2CIntObject.ActorAction%2CIntObject.TriggerAction%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L778">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L851">View Source</a>
   </span>
   <a id="Global_IntActor_ComplexMove_" data-uid="Global.IntActor.ComplexMove*"></a>
   <h4 id="Global_IntActor_ComplexMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_System_Int32_" data-uid="Global.IntActor.ComplexMove(UnityEngine.Vector2,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction,System.Int32)">ComplexMove(Vector2, SolidAction, SolidAction, ActorAction, TriggerAction, int)</h4>
@@ -876,7 +974,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_DropDownOneWay.md&amp;value=---%0Auid%3A%20Global.IntActor.DropDownOneWay%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L295">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L321">View Source</a>
   </span>
   <a id="Global_IntActor_DropDownOneWay_" data-uid="Global.IntActor.DropDownOneWay*"></a>
   <h4 id="Global_IntActor_DropDownOneWay" data-uid="Global.IntActor.DropDownOneWay">DropDownOneWay()</h4>
@@ -891,7 +989,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_EfficientMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_.md&amp;value=---%0Auid%3A%20Global.IntActor.EfficientMove(UnityEngine.Vector2%2CIntObject.SolidAction%2CIntObject.SolidAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L410">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L483">View Source</a>
   </span>
   <a id="Global_IntActor_EfficientMove_" data-uid="Global.IntActor.EfficientMove*"></a>
   <h4 id="Global_IntActor_EfficientMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_" data-uid="Global.IntActor.EfficientMove(UnityEngine.Vector2,IntObject.SolidAction,IntObject.SolidAction)">EfficientMove(Vector2, SolidAction, SolidAction)</h4>
@@ -930,10 +1028,25 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_EnsureAABBIntColliderSet.md&amp;value=---%0Auid%3A%20Global.IntActor.EnsureAABBIntColliderSet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L56">View Source</a>
+  </span>
+  <a id="Global_IntActor_EnsureAABBIntColliderSet_" data-uid="Global.IntActor.EnsureAABBIntColliderSet*"></a>
+  <h4 id="Global_IntActor_EnsureAABBIntColliderSet" data-uid="Global.IntActor.EnsureAABBIntColliderSet">EnsureAABBIntColliderSet()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureAABBIntColliderSet()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_GetAABBIntCollider.md&amp;value=---%0Auid%3A%20Global.IntActor.GetAABBIntCollider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L45">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L47">View Source</a>
   </span>
   <a id="Global_IntActor_GetAABBIntCollider_" data-uid="Global.IntActor.GetAABBIntCollider*"></a>
   <h4 id="Global_IntActor_GetAABBIntCollider" data-uid="Global.IntActor.GetAABBIntCollider">GetAABBIntCollider()</h4>
@@ -963,7 +1076,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_GetCollisionMapValue_IntObject_.md&amp;value=---%0Auid%3A%20Global.IntActor.GetCollisionMapValue(IntObject)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L227">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L249">View Source</a>
   </span>
   <a id="Global_IntActor_GetCollisionMapValue_" data-uid="Global.IntActor.GetCollisionMapValue*"></a>
   <h4 id="Global_IntActor_GetCollisionMapValue_IntObject_" data-uid="Global.IntActor.GetCollisionMapValue(IntObject)">GetCollisionMapValue(IntObject)</h4>
@@ -1012,7 +1125,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_GetEffectiveVelocity_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Global.IntActor.GetEffectiveVelocity(UnityEngine.Vector2)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L74">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L84">View Source</a>
   </span>
   <a id="Global_IntActor_GetEffectiveVelocity_" data-uid="Global.IntActor.GetEffectiveVelocity*"></a>
   <h4 id="Global_IntActor_GetEffectiveVelocity_UnityEngine_Vector2_" data-uid="Global.IntActor.GetEffectiveVelocity(UnityEngine.Vector2)">GetEffectiveVelocity(Vector2)</h4>
@@ -1059,7 +1172,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_getIntersectParameters_System_Int32_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Global.IntActor.getIntersectParameters(System.Int32%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L594">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L667">View Source</a>
   </span>
   <a id="Global_IntActor_getIntersectParameters_" data-uid="Global.IntActor.getIntersectParameters*"></a>
   <h4 id="Global_IntActor_getIntersectParameters_System_Int32_System_Single_System_Single_System_Single_" data-uid="Global.IntActor.getIntersectParameters(System.Int32,System.Single,System.Single,System.Single)">getIntersectParameters(int, float, float, float)</h4>
@@ -1118,10 +1231,87 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_GetSubmergedPercentage.md&amp;value=---%0Auid%3A%20Global.IntActor.GetSubmergedPercentage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L335">View Source</a>
+  </span>
+  <a id="Global_IntActor_GetSubmergedPercentage_" data-uid="Global.IntActor.GetSubmergedPercentage*"></a>
+  <h4 id="Global_IntActor_GetSubmergedPercentage" data-uid="Global.IntActor.GetSubmergedPercentage">GetSubmergedPercentage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSubmergedPercentage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_GetSubmergedPercentage_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.IntActor.GetSubmergedPercentage(UnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L340">View Source</a>
+  </span>
+  <a id="Global_IntActor_GetSubmergedPercentage_" data-uid="Global.IntActor.GetSubmergedPercentage*"></a>
+  <h4 id="Global_IntActor_GetSubmergedPercentage_UnityEngine_Vector2Int_" data-uid="Global.IntActor.GetSubmergedPercentage(UnityEngine.Vector2Int)">GetSubmergedPercentage(Vector2Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSubmergedPercentage(Vector2Int dPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">dPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_GetVelocity.md&amp;value=---%0Auid%3A%20Global.IntActor.GetVelocity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L244">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L266">View Source</a>
   </span>
   <a id="Global_IntActor_GetVelocity_" data-uid="Global.IntActor.GetVelocity*"></a>
   <h4 id="Global_IntActor_GetVelocity" data-uid="Global.IntActor.GetVelocity">GetVelocity()</h4>
@@ -1151,7 +1341,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_GroundActor.md&amp;value=---%0Auid%3A%20Global.IntActor.GroundActor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L268">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L291">View Source</a>
   </span>
   <a id="Global_IntActor_GroundActor_" data-uid="Global.IntActor.GroundActor*"></a>
   <h4 id="Global_IntActor_GroundActor" data-uid="Global.IntActor.GroundActor">GroundActor()</h4>
@@ -1171,7 +1361,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1181,7 +1371,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_IsRiding_IntSolid_.md&amp;value=---%0Auid%3A%20Global.IntActor.IsRiding(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L54">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L64">View Source</a>
   </span>
   <a id="Global_IntActor_IsRiding_" data-uid="Global.IntActor.IsRiding*"></a>
   <h4 id="Global_IntActor_IsRiding_IntSolid_" data-uid="Global.IntActor.IsRiding(IntSolid)">IsRiding(IntSolid)</h4>
@@ -1218,7 +1408,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1228,7 +1418,7 @@ public class IntActor : IntObject, ISavableObject&lt;IntObjectSaveData&gt;</code
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_IsTouchingWall_IntSolid_.md&amp;value=---%0Auid%3A%20Global.IntActor.IsTouchingWall(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L106">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L116">View Source</a>
   </span>
   <a id="Global_IntActor_IsTouchingWall_" data-uid="Global.IntActor.IsTouchingWall*"></a>
   <h4 id="Global_IntActor_IsTouchingWall_IntSolid_" data-uid="Global.IntActor.IsTouchingWall(IntSolid)">IsTouchingWall(IntSolid)</h4>
@@ -1277,7 +1467,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_IsWalkingFlatOrUphill_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Global.IntActor.IsWalkingFlatOrUphill(UnityEngine.Vector2)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L65">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L75">View Source</a>
   </span>
   <a id="Global_IntActor_IsWalkingFlatOrUphill_" data-uid="Global.IntActor.IsWalkingFlatOrUphill*"></a>
   <h4 id="Global_IntActor_IsWalkingFlatOrUphill_UnityEngine_Vector2_" data-uid="Global.IntActor.IsWalkingFlatOrUphill(UnityEngine.Vector2)">IsWalkingFlatOrUphill(Vector2)</h4>
@@ -1314,7 +1504,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1324,7 +1514,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ManualInit.md&amp;value=---%0Auid%3A%20Global.IntActor.ManualInit%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L36">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L38">View Source</a>
   </span>
   <a id="Global_IntActor_ManualInit_" data-uid="Global.IntActor.ManualInit*"></a>
   <h4 id="Global_IntActor_ManualInit" data-uid="Global.IntActor.ManualInit">ManualInit()</h4>
@@ -1339,7 +1529,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_MoveX_System_Single_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_.md&amp;value=---%0Auid%3A%20Global.IntActor.MoveX(System.Single%2CIntObject.SolidAction%2CIntObject.ActorAction%2CIntObject.TriggerAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L452">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L525">View Source</a>
   </span>
   <a id="Global_IntActor_MoveX_" data-uid="Global.IntActor.MoveX*"></a>
   <h4 id="Global_IntActor_MoveX_System_Single_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_" data-uid="Global.IntActor.MoveX(System.Single,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)">MoveX(float, SolidAction, ActorAction, TriggerAction)</h4>
@@ -1386,7 +1576,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_MoveY_System_Single_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_.md&amp;value=---%0Auid%3A%20Global.IntActor.MoveY(System.Single%2CIntObject.SolidAction%2CIntObject.ActorAction%2CIntObject.TriggerAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L523">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L596">View Source</a>
   </span>
   <a id="Global_IntActor_MoveY_" data-uid="Global.IntActor.MoveY*"></a>
   <h4 id="Global_IntActor_MoveY_System_Single_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_" data-uid="Global.IntActor.MoveY(System.Single,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)">MoveY(float, SolidAction, ActorAction, TriggerAction)</h4>
@@ -1433,7 +1623,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_NotifyObjectKilled_IntObject_.md&amp;value=---%0Auid%3A%20Global.IntActor.NotifyObjectKilled(IntObject)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L621">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L694">View Source</a>
   </span>
   <a id="Global_IntActor_NotifyObjectKilled_" data-uid="Global.IntActor.NotifyObjectKilled*"></a>
   <h4 id="Global_IntActor_NotifyObjectKilled_IntObject_" data-uid="Global.IntActor.NotifyObjectKilled(IntObject)">NotifyObjectKilled(IntObject)</h4>
@@ -1465,7 +1655,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_OnActor_IntActor_.md&amp;value=---%0Auid%3A%20Global.IntActor.OnActor(IntActor)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L242">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L264">View Source</a>
   </span>
   <a id="Global_IntActor_OnActor_" data-uid="Global.IntActor.OnActor*"></a>
   <h4 id="Global_IntActor_OnActor_IntActor_" data-uid="Global.IntActor.OnActor(IntActor)">OnActor(IntActor)</h4>
@@ -1494,10 +1684,79 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_OnEnterWater_WaterComponent_System_Single_.md&amp;value=---%0Auid%3A%20Global.IntActor.OnEnterWater(WaterComponent%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L357">View Source</a>
+  </span>
+  <a id="Global_IntActor_OnEnterWater_" data-uid="Global.IntActor.OnEnterWater*"></a>
+  <h4 id="Global_IntActor_OnEnterWater_WaterComponent_System_Single_" data-uid="Global.IntActor.OnEnterWater(WaterComponent,System.Single)">OnEnterWater(WaterComponent, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEnterWater(WaterComponent water, float dampingFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.WaterComponent.html">WaterComponent</a></td>
+        <td><span class="parametername">water</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">dampingFactor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_OnExitWater_WaterComponent_.md&amp;value=---%0Auid%3A%20Global.IntActor.OnExitWater(WaterComponent)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L363">View Source</a>
+  </span>
+  <a id="Global_IntActor_OnExitWater_" data-uid="Global.IntActor.OnExitWater*"></a>
+  <h4 id="Global_IntActor_OnExitWater_WaterComponent_" data-uid="Global.IntActor.OnExitWater(WaterComponent)">OnExitWater(WaterComponent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnExitWater(WaterComponent water)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.WaterComponent.html">WaterComponent</a></td>
+        <td><span class="parametername">water</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_OnSpike_IntSolid_.md&amp;value=---%0Auid%3A%20Global.IntActor.OnSpike(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L627">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L700">View Source</a>
   </span>
   <a id="Global_IntActor_OnSpike_" data-uid="Global.IntActor.OnSpike*"></a>
   <h4 id="Global_IntActor_OnSpike_IntSolid_" data-uid="Global.IntActor.OnSpike(IntSolid)">OnSpike(IntSolid)</h4>
@@ -1529,7 +1788,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_OnTakeDamage_System_Int32_.md&amp;value=---%0Auid%3A%20Global.IntActor.OnTakeDamage(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L147">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L167">View Source</a>
   </span>
   <a id="Global_IntActor_OnTakeDamage_" data-uid="Global.IntActor.OnTakeDamage*"></a>
   <h4 id="Global_IntActor_OnTakeDamage_System_Int32_" data-uid="Global.IntActor.OnTakeDamage(System.Int32)">OnTakeDamage(int)</h4>
@@ -1561,7 +1820,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_OnTriggerEnd_IntTrigger_.md&amp;value=---%0Auid%3A%20Global.IntActor.OnTriggerEnd(IntTrigger)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L240">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L262">View Source</a>
   </span>
   <a id="Global_IntActor_OnTriggerEnd_" data-uid="Global.IntActor.OnTriggerEnd*"></a>
   <h4 id="Global_IntActor_OnTriggerEnd_IntTrigger_" data-uid="Global.IntActor.OnTriggerEnd(IntTrigger)">OnTriggerEnd(IntTrigger)</h4>
@@ -1593,7 +1852,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_OnTriggerStart_IntTrigger_.md&amp;value=---%0Auid%3A%20Global.IntActor.OnTriggerStart(IntTrigger)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L238">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L260">View Source</a>
   </span>
   <a id="Global_IntActor_OnTriggerStart_" data-uid="Global.IntActor.OnTriggerStart*"></a>
   <h4 id="Global_IntActor_OnTriggerStart_IntTrigger_" data-uid="Global.IntActor.OnTriggerStart(IntTrigger)">OnTriggerStart(IntTrigger)</h4>
@@ -1622,10 +1881,42 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_RegisterOnTakeDamageCallback_IntObject_Action_.md&amp;value=---%0Auid%3A%20Global.IntActor.RegisterOnTakeDamageCallback(IntObject.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L157">View Source</a>
+  </span>
+  <a id="Global_IntActor_RegisterOnTakeDamageCallback_" data-uid="Global.IntActor.RegisterOnTakeDamageCallback*"></a>
+  <h4 id="Global_IntActor_RegisterOnTakeDamageCallback_IntObject_Action_" data-uid="Global.IntActor.RegisterOnTakeDamageCallback(IntObject.Action)">RegisterOnTakeDamageCallback(Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterOnTakeDamageCallback(IntObject.Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.IntObject.html">IntObject</a>.<a class="xref" href="Global.IntObject.Action.html">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_RemoveWind.md&amp;value=---%0Auid%3A%20Global.IntActor.RemoveWind%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L311">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L376">View Source</a>
   </span>
   <a id="Global_IntActor_RemoveWind_" data-uid="Global.IntActor.RemoveWind*"></a>
   <h4 id="Global_IntActor_RemoveWind" data-uid="Global.IntActor.RemoveWind">RemoveWind()</h4>
@@ -1640,7 +1931,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ResetActorCollisionMap.md&amp;value=---%0Auid%3A%20Global.IntActor.ResetActorCollisionMap%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L175">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L197">View Source</a>
   </span>
   <a id="Global_IntActor_ResetActorCollisionMap_" data-uid="Global.IntActor.ResetActorCollisionMap*"></a>
   <h4 id="Global_IntActor_ResetActorCollisionMap" data-uid="Global.IntActor.ResetActorCollisionMap">ResetActorCollisionMap()</h4>
@@ -1655,7 +1946,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ResetAuraCollisionMap.md&amp;value=---%0Auid%3A%20Global.IntActor.ResetAuraCollisionMap%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L157">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L179">View Source</a>
   </span>
   <a id="Global_IntActor_ResetAuraCollisionMap_" data-uid="Global.IntActor.ResetAuraCollisionMap*"></a>
   <h4 id="Global_IntActor_ResetAuraCollisionMap" data-uid="Global.IntActor.ResetAuraCollisionMap">ResetAuraCollisionMap()</h4>
@@ -1670,7 +1961,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ResetCollisionMap.md&amp;value=---%0Auid%3A%20Global.IntActor.ResetCollisionMap%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L193">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L215">View Source</a>
   </span>
   <a id="Global_IntActor_ResetCollisionMap_" data-uid="Global.IntActor.ResetCollisionMap*"></a>
   <h4 id="Global_IntActor_ResetCollisionMap" data-uid="Global.IntActor.ResetCollisionMap">ResetCollisionMap()</h4>
@@ -1685,7 +1976,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ResetCollisionsAfterTime_IntObject_System_Single_.md&amp;value=---%0Auid%3A%20Global.IntActor.ResetCollisionsAfterTime(IntObject%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L204">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L226">View Source</a>
   </span>
   <a id="Global_IntActor_ResetCollisionsAfterTime_" data-uid="Global.IntActor.ResetCollisionsAfterTime*"></a>
   <h4 id="Global_IntActor_ResetCollisionsAfterTime_IntObject_System_Single_" data-uid="Global.IntActor.ResetCollisionsAfterTime(IntObject,System.Single)">ResetCollisionsAfterTime(IntObject, float)</h4>
@@ -1722,7 +2013,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ResolvePosition_UnityEngine_Vector2_System_Single_System_Int32_System_Boolean_System_Boolean_IntObject_ActorAction_IntObject_TriggerAction_.md&amp;value=---%0Auid%3A%20Global.IntActor.ResolvePosition(UnityEngine.Vector2%2CSystem.Single%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean%2CIntObject.ActorAction%2CIntObject.TriggerAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L327">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L392">View Source</a>
   </span>
   <a id="Global_IntActor_ResolvePosition_" data-uid="Global.IntActor.ResolvePosition*"></a>
   <h4 id="Global_IntActor_ResolvePosition_UnityEngine_Vector2_System_Single_System_Int32_System_Boolean_System_Boolean_IntObject_ActorAction_IntObject_TriggerAction_" data-uid="Global.IntActor.ResolvePosition(UnityEngine.Vector2,System.Single,System.Int32,System.Boolean,System.Boolean,IntObject.ActorAction,IntObject.TriggerAction)">ResolvePosition(Vector2, float, int, bool, bool, ActorAction, TriggerAction)</h4>
@@ -1758,12 +2049,12 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">solidsOnly</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">checkCollisions</span></td>
         <td><p>Whether to check actor and trigger collisions</p>
 </td>
@@ -1790,7 +2081,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Whether the player's position was able to be resolved</p>
 </td>
       </tr>
@@ -1801,7 +2092,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_ResolvePositionNoSlide_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.IntActor.ResolvePositionNoSlide(UnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L392">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L461">View Source</a>
   </span>
   <a id="Global_IntActor_ResolvePositionNoSlide_" data-uid="Global.IntActor.ResolvePositionNoSlide*"></a>
   <h4 id="Global_IntActor_ResolvePositionNoSlide_UnityEngine_Vector2Int_" data-uid="Global.IntActor.ResolvePositionNoSlide(UnityEngine.Vector2Int)">ResolvePositionNoSlide(Vector2Int)</h4>
@@ -1839,7 +2130,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1849,7 +2140,7 @@ and IntMath.Direction.Right if on the right.If not on a wall it will return IntM
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_SetCollisionMapValue_IntObject_System_Boolean_.md&amp;value=---%0Auid%3A%20Global.IntActor.SetCollisionMapValue(IntObject%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L215">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L237">View Source</a>
   </span>
   <a id="Global_IntActor_SetCollisionMapValue_" data-uid="Global.IntActor.SetCollisionMapValue*"></a>
   <h4 id="Global_IntActor_SetCollisionMapValue_IntObject_System_Boolean_" data-uid="Global.IntActor.SetCollisionMapValue(IntObject,System.Boolean)">SetCollisionMapValue(IntObject, bool)</h4>
@@ -1878,7 +2169,7 @@ This is usually used to reset OnTriggerEnter, so it will be called on the next f
 </td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">val</span></td>
         <td><p>Whether the actor is colliding with the object</p>
 </td>
@@ -1890,7 +2181,7 @@ This is usually used to reset OnTriggerEnter, so it will be called on the next f
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_SimpleMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_.md&amp;value=---%0Auid%3A%20Global.IntActor.SimpleMove(UnityEngine.Vector2%2CIntObject.SolidAction%2CIntObject.SolidAction%2CIntObject.ActorAction%2CIntObject.TriggerAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L772">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L845">View Source</a>
   </span>
   <a id="Global_IntActor_SimpleMove_" data-uid="Global.IntActor.SimpleMove*"></a>
   <h4 id="Global_IntActor_SimpleMove_UnityEngine_Vector2_IntObject_SolidAction_IntObject_SolidAction_IntObject_ActorAction_IntObject_TriggerAction_" data-uid="Global.IntActor.SimpleMove(UnityEngine.Vector2,IntObject.SolidAction,IntObject.SolidAction,IntObject.ActorAction,IntObject.TriggerAction)">SimpleMove(Vector2, SolidAction, SolidAction, ActorAction, TriggerAction)</h4>
@@ -1942,7 +2233,7 @@ This is usually used to reset OnTriggerEnter, so it will be called on the next f
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_SlantMove_UnityEngine_Vector2_IntObject_ActorAction_IntObject_TriggerAction_.md&amp;value=---%0Auid%3A%20Global.IntActor.SlantMove(UnityEngine.Vector2%2CIntObject.ActorAction%2CIntObject.TriggerAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L632">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L705">View Source</a>
   </span>
   <a id="Global_IntActor_SlantMove_" data-uid="Global.IntActor.SlantMove*"></a>
   <h4 id="Global_IntActor_SlantMove_UnityEngine_Vector2_IntObject_ActorAction_IntObject_TriggerAction_" data-uid="Global.IntActor.SlantMove(UnityEngine.Vector2,IntObject.ActorAction,IntObject.TriggerAction)">SlantMove(Vector2, ActorAction, TriggerAction)</h4>
@@ -1984,7 +2275,7 @@ This is usually used to reset OnTriggerEnter, so it will be called on the next f
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_SolidContainsPoint_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.IntActor.SolidContainsPoint(UnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L136">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L146">View Source</a>
   </span>
   <a id="Global_IntActor_SolidContainsPoint_" data-uid="Global.IntActor.SolidContainsPoint*"></a>
   <h4 id="Global_IntActor_SolidContainsPoint_UnityEngine_Vector2Int_" data-uid="Global.IntActor.SolidContainsPoint(UnityEngine.Vector2Int)">SolidContainsPoint(Vector2Int)</h4>
@@ -2021,7 +2312,7 @@ This is usually used to reset OnTriggerEnter, so it will be called on the next f
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2031,7 +2322,7 @@ This is usually used to reset OnTriggerEnter, so it will be called on the next f
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_Squish_IntSolid_.md&amp;value=---%0Auid%3A%20Global.IntActor.Squish(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L236">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L258">View Source</a>
   </span>
   <a id="Global_IntActor_Squish_" data-uid="Global.IntActor.Squish*"></a>
   <h4 id="Global_IntActor_Squish_IntSolid_" data-uid="Global.IntActor.Squish(IntSolid)">Squish(IntSolid)</h4>
@@ -2060,18 +2351,18 @@ This is usually used to reset OnTriggerEnter, so it will be called on the next f
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_TakeDamage_System_Int32_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Global.IntActor.TakeDamage(System.Int32%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_TakeDamage_System_Int32_System_Boolean_System_Boolean_DamageType_.md&amp;value=---%0Auid%3A%20Global.IntActor.TakeDamage(System.Int32%2CSystem.Boolean%2CSystem.Boolean%2CDamageType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L149">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L171">View Source</a>
   </span>
   <a id="Global_IntActor_TakeDamage_" data-uid="Global.IntActor.TakeDamage*"></a>
-  <h4 id="Global_IntActor_TakeDamage_System_Int32_System_Boolean_System_Boolean_" data-uid="Global.IntActor.TakeDamage(System.Int32,System.Boolean,System.Boolean)">TakeDamage(int, bool, bool)</h4>
+  <h4 id="Global_IntActor_TakeDamage_System_Int32_System_Boolean_System_Boolean_DamageType_" data-uid="Global.IntActor.TakeDamage(System.Int32,System.Boolean,System.Boolean,DamageType)">TakeDamage(int, bool, bool, DamageType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void TakeDamage(int amount, bool force = false, bool Respawn = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void TakeDamage(int amount, bool force = false, bool Respawn = false, DamageType damageType = DamageType.Impact)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2089,13 +2380,50 @@ This is usually used to reset OnTriggerEnter, so it will be called on the next f
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">force</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">Respawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Global.DamageType.html">DamageType</a></td>
+        <td><span class="parametername">damageType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_IntActor_UnregisterOnTakeDamageCallback_IntObject_Action_.md&amp;value=---%0Auid%3A%20Global.IntActor.UnregisterOnTakeDamageCallback(IntObject.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Framework/Physics/Objects/IntActor.cs/#L162">View Source</a>
+  </span>
+  <a id="Global_IntActor_UnregisterOnTakeDamageCallback_" data-uid="Global.IntActor.UnregisterOnTakeDamageCallback*"></a>
+  <h4 id="Global_IntActor_UnregisterOnTakeDamageCallback_IntObject_Action_" data-uid="Global.IntActor.UnregisterOnTakeDamageCallback(IntObject.Action)">UnregisterOnTakeDamageCallback(Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterOnTakeDamageCallback(IntObject.Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.IntObject.html">IntObject</a>.<a class="xref" href="Global.IntObject.Action.html">Action</a></td>
+        <td><span class="parametername">action</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -101,11 +101,15 @@
     <div><a class="xref" href="Global.ISavableObject-1.html">ISavableObject</a>&lt;<a class="xref" href="Global.IntObjectSaveData.html">IntObjectSaveData</a>&gt;</div>
     <div><a class="xref" href="Global.IEntity.html">IEntity</a></div>
     <div><a class="xref" href="Global.ICollectableInterface.html">ICollectableInterface</a></div>
+    <div><a class="xref" href="Global.ISpawnable.html">ISpawnable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_AlwaysDrawGizmos">IntEnemy.AlwaysDrawGizmos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_EnemyUIEnabled">IntEnemy.EnemyUIEnabled</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_MaxDropTileDistance">IntEnemy.MaxDropTileDistance</a>
@@ -132,6 +136,12 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_MaxFallSpeed">IntEnemy.MaxFallSpeed</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_POISON_DISPEL_TIMER">IntEnemy.POISON_DISPEL_TIMER</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_POISON_PROC_TIMER">IntEnemy.POISON_PROC_TIMER</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_tilemap">IntEnemy.tilemap</a>
     </div>
     <div>
@@ -144,6 +154,9 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_IsAlive">IntEnemy.IsAlive</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SpawnProperties">IntEnemy.SpawnProperties</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_CanRepelEnemy">IntEnemy.CanRepelEnemy()</a>
     </div>
     <div>
@@ -153,10 +166,19 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpInitialVelocity_System_Single_System_Single_">IntEnemy.ComputeJumpInitialVelocity(float, float)</a>
     </div>
     <div>
-      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_TakeDamage_System_Int32_System_Boolean_System_Boolean_">IntEnemy.TakeDamage(int, bool, bool)</a>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpHangTimeFromVelocity_System_Single_System_Single_">IntEnemy.ComputeJumpHangTimeFromVelocity(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpHangTimeFromHeight_System_Single_System_Single_">IntEnemy.ComputeJumpHangTimeFromHeight(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_TakeDamage_System_Int32_System_Boolean_System_Boolean_DamageType_">IntEnemy.TakeDamage(int, bool, bool, DamageType)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SetCurrentShieldHealth_System_Int32_">IntEnemy.SetCurrentShieldHealth(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SetPoisoned_System_Int32_">IntEnemy.SetPoisoned(int)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ResetObject">IntEnemy.ResetObject()</a>
@@ -172,6 +194,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_IsCollected">IntEnemy.IsCollected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_StaticMoveUpdate">IntEnemy.StaticMoveUpdate()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpriteFlip_System_Boolean_System_Boolean_">IntEnemy.GetSpriteFlip(bool, bool)</a>
@@ -228,10 +253,25 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GizmosDrawTileVision">IntEnemy.GizmosDrawTileVision()</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GizmosDrawRequiredSpace">IntEnemy.GizmosDrawRequiredSpace()</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawGizmosSelected">IntEnemy.OnDrawGizmosSelected()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawGizmos">IntEnemy.OnDrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpawnProperties">IntEnemy.GetSpawnProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnLocalSpaceSpawnBoundsSet_UnityEngine_Vector2Int_UnityEngine_Vector2Int_">IntEnemy.OnLocalSpaceSpawnBoundsSet(Vector2Int, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ResolveSpawnLocation">IntEnemy.ResolveSpawnLocation()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpawnLocationFromBounds_UnityEngine_Vector3_UnityEngine_Vector3_">IntEnemy.GetSpawnLocationFromBounds(Vector3, Vector3)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_HurtBySpike">IntActor.HurtBySpike</a>
@@ -258,6 +298,9 @@
       <a class="xref" href="Global.IntActor.html#Global_IntActor_WindInfluence">IntActor.WindInfluence</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTakeDamageCallback">IntActor.OnTakeDamageCallback</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_RidingSolid">IntActor.RidingSolid</a>
     </div>
     <div>
@@ -279,6 +322,9 @@
       <a class="xref" href="Global.IntActor.html#Global_IntActor_GetAABBIntCollider">IntActor.GetAABBIntCollider()</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_EnsureAABBIntColliderSet">IntActor.EnsureAABBIntColliderSet()</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_IsRiding_IntSolid_">IntActor.IsRiding(IntSolid)</a>
     </div>
     <div>
@@ -292,6 +338,12 @@
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_SolidContainsPoint_UnityEngine_Vector2Int_">IntActor.SolidContainsPoint(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_RegisterOnTakeDamageCallback_IntObject_Action_">IntActor.RegisterOnTakeDamageCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_UnregisterOnTakeDamageCallback_IntObject_Action_">IntActor.UnregisterOnTakeDamageCallback(IntObject.Action)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTakeDamage_System_Int32_">IntActor.OnTakeDamage(int)</a>
@@ -337,6 +389,24 @@
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_DropDownOneWay">IntActor.DropDownOneWay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_activeWater">IntActor.activeWater</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetSubmergedPercentage">IntActor.GetSubmergedPercentage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetSubmergedPercentage_UnityEngine_Vector2Int_">IntActor.GetSubmergedPercentage(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_IsInWater">IntActor.IsInWater</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnEnterWater_WaterComponent_System_Single_">IntActor.OnEnterWater(WaterComponent, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnExitWater_WaterComponent_">IntActor.OnExitWater(WaterComponent)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_ApplyWind_UnityEngine_Vector2_">IntActor.ApplyWind(Vector2)</a>
@@ -435,6 +505,9 @@
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SaveObject">IntObject.SaveObject</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsInSetPiece">IntObject.IsInSetPiece</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_Init">IntObject.Init()</a>
     </div>
     <div>
@@ -454,6 +527,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_UnregisterKilledCallback_IntObject_Action_">IntObject.UnregisterKilledCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsContainedInRect_UnityEngine_Rect_">IntObject.IsContainedInRect(Rect)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SetStatus_ObjectStatus_">IntObject.SetStatus(ObjectStatus)</a>
@@ -478,6 +554,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SleepObject">IntObject.SleepObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_OptimizeSleepObject">IntObject.OptimizeSleepObject()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_WakeObject">IntObject.WakeObject()</a>
@@ -552,7 +631,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
-public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity, ICollectableInterface</code></pre>
+public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity, ICollectableInterface, ISpawnable</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -581,35 +660,6 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Animator.html">Animator</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_aura.md&amp;value=---%0Auid%3A%20Global.Wisp1.aura%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L19">View Source</a>
-  </span>
-  <h4 id="Global_Wisp1_aura" data-uid="Global.Wisp1.aura">aura</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GameObject aura</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -735,7 +785,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_BobHeight.md&amp;value=---%0Auid%3A%20Global.Wisp1.BobHeight%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L22">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L21">View Source</a>
   </span>
   <h4 id="Global_Wisp1_BobHeight" data-uid="Global.Wisp1.BobHeight">BobHeight</h4>
   <div class="markdown level1 summary"></div>
@@ -764,7 +814,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_BobSpeed.md&amp;value=---%0Auid%3A%20Global.Wisp1.BobSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L23">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L22">View Source</a>
   </span>
   <h4 id="Global_Wisp1_BobSpeed" data-uid="Global.Wisp1.BobSpeed">BobSpeed</h4>
   <div class="markdown level1 summary"></div>
@@ -793,7 +843,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_offset_t.md&amp;value=---%0Auid%3A%20Global.Wisp1.offset_t%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L24">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L23">View Source</a>
   </span>
   <h4 id="Global_Wisp1_offset_t" data-uid="Global.Wisp1.offset_t">offset_t</h4>
   <div class="markdown level1 summary"></div>
@@ -882,7 +932,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_Animate.md&amp;value=---%0Auid%3A%20Global.Wisp1.Animate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L97">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L90">View Source</a>
   </span>
   <a id="Global_Wisp1_Animate_" data-uid="Global.Wisp1.Animate*"></a>
   <h4 id="Global_Wisp1_Animate" data-uid="Global.Wisp1.Animate">Animate()</h4>
@@ -916,7 +966,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_OnCollideX_IntSolid_.md&amp;value=---%0Auid%3A%20Global.Wisp1.OnCollideX(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L116">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L109">View Source</a>
   </span>
   <a id="Global_Wisp1_OnCollideX_" data-uid="Global.Wisp1.OnCollideX*"></a>
   <h4 id="Global_Wisp1_OnCollideX_IntSolid_" data-uid="Global.Wisp1.OnCollideX(IntSolid)">OnCollideX(IntSolid)</h4>
@@ -948,7 +998,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_OnCollideY_IntSolid_.md&amp;value=---%0Auid%3A%20Global.Wisp1.OnCollideY(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L121">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L114">View Source</a>
   </span>
   <a id="Global_Wisp1_OnCollideY_" data-uid="Global.Wisp1.OnCollideY*"></a>
   <h4 id="Global_Wisp1_OnCollideY_IntSolid_" data-uid="Global.Wisp1.OnCollideY(IntSolid)">OnCollideY(IntSolid)</h4>
@@ -977,27 +1027,27 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_OnDrawDebugAuras.md&amp;value=---%0Auid%3A%20Global.Wisp1.OnDrawDebugAuras%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_OnDrawDebugGizmos.md&amp;value=---%0Auid%3A%20Global.Wisp1.OnDrawDebugGizmos%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L38">View Source</a>
   </span>
-  <a id="Global_Wisp1_OnDrawDebugAuras_" data-uid="Global.Wisp1.OnDrawDebugAuras*"></a>
-  <h4 id="Global_Wisp1_OnDrawDebugAuras" data-uid="Global.Wisp1.OnDrawDebugAuras">OnDrawDebugAuras()</h4>
+  <a id="Global_Wisp1_OnDrawDebugGizmos_" data-uid="Global.Wisp1.OnDrawDebugGizmos*"></a>
+  <h4 id="Global_Wisp1_OnDrawDebugGizmos" data-uid="Global.Wisp1.OnDrawDebugGizmos">OnDrawDebugGizmos()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnDrawDebugAuras()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnDrawDebugGizmos()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawDebugAuras">IntEnemy.OnDrawDebugAuras()</a></div>
+  <div><a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawDebugGizmos">IntEnemy.OnDrawDebugGizmos()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_OnTrigger_IntTrigger_.md&amp;value=---%0Auid%3A%20Global.Wisp1.OnTrigger(IntTrigger)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L126">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L119">View Source</a>
   </span>
   <a id="Global_Wisp1_OnTrigger_" data-uid="Global.Wisp1.OnTrigger*"></a>
   <h4 id="Global_Wisp1_OnTrigger_IntTrigger_" data-uid="Global.Wisp1.OnTrigger(IntTrigger)">OnTrigger(IntTrigger)</h4>
@@ -1029,7 +1079,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_PostInputUpdate.md&amp;value=---%0Auid%3A%20Global.Wisp1.PostInputUpdate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L88">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L81">View Source</a>
   </span>
   <a id="Global_Wisp1_PostInputUpdate_" data-uid="Global.Wisp1.PostInputUpdate*"></a>
   <h4 id="Global_Wisp1_PostInputUpdate" data-uid="Global.Wisp1.PostInputUpdate">PostInputUpdate()</h4>
@@ -1046,7 +1096,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_PreInputUpdate.md&amp;value=---%0Auid%3A%20Global.Wisp1.PreInputUpdate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L76">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L69">View Source</a>
   </span>
   <a id="Global_Wisp1_PreInputUpdate_" data-uid="Global.Wisp1.PreInputUpdate*"></a>
   <h4 id="Global_Wisp1_PreInputUpdate" data-uid="Global.Wisp1.PreInputUpdate">PreInputUpdate()</h4>
@@ -1110,7 +1160,7 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Wisp1_UpdateInput.md&amp;value=---%0Auid%3A%20Global.Wisp1.UpdateInput%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L84">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Wisp/Wisp 1/Wisp1.cs/#L77">View Source</a>
   </span>
   <a id="Global_Wisp1_UpdateInput_" data-uid="Global.Wisp1.UpdateInput*"></a>
   <h4 id="Global_Wisp1_UpdateInput" data-uid="Global.Wisp1.UpdateInput">UpdateInput()</h4>
@@ -1132,6 +1182,9 @@ public class Wisp1 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity,
   </div>
   <div>
       <a class="xref" href="Global.ICollectableInterface.html">ICollectableInterface</a>
+  </div>
+  <div>
+      <a class="xref" href="Global.ISpawnable.html">ISpawnable</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

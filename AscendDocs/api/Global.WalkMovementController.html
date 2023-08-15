@@ -126,6 +126,9 @@
       <a class="xref" href="Global.EnemyMovementController-2.html#Global_EnemyMovementController_2_Initialize_IntEnemy_">EnemyMovementController&lt;WalkMovementProperties, WalkMovementController.WalkingMovementState&gt;.Initialize(IntEnemy)</a>
     </div>
     <div>
+      <a class="xref" href="Global.EnemyMovementController-2.html#Global_EnemyMovementController_2_GetTimeInState">EnemyMovementController&lt;WalkMovementProperties, WalkMovementController.WalkingMovementState&gt;.GetTimeInState()</a>
+    </div>
+    <div>
       <a class="xref" href="Global.EnemyMovementController-2.html#Global_EnemyMovementController_2_Update">EnemyMovementController&lt;WalkMovementProperties, WalkMovementController.WalkingMovementState&gt;.Update()</a>
     </div>
     <div>
@@ -199,6 +202,66 @@
     <pre><code class="lang-csharp hljs">[Serializable]
 public class WalkMovementController : EnemyMovementController&lt;WalkMovementProperties, WalkMovementController.WalkingMovementState&gt;</code></pre>
   </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_PATROL_EPSILON.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.PATROL_EPSILON%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L16">View Source</a>
+  </span>
+  <h4 id="Global_WalkMovementController_PATROL_EPSILON" data-uid="Global.WalkMovementController.PATROL_EPSILON">PATROL_EPSILON</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float PATROL_EPSILON = 25</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_PATROL_FLIP_COOLDOWN.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.PATROL_FLIP_COOLDOWN%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Global_WalkMovementController_PATROL_FLIP_COOLDOWN" data-uid="Global.WalkMovementController.PATROL_FLIP_COOLDOWN">PATROL_FLIP_COOLDOWN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float PATROL_FLIP_COOLDOWN = 0.5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -206,7 +269,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_Charge_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.Charge(UnityEngine.Vector2)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L108">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L124">View Source</a>
   </span>
   <a id="Global_WalkMovementController_Charge_" data-uid="Global.WalkMovementController.Charge*"></a>
   <h4 id="Global_WalkMovementController_Charge_UnityEngine_Vector2_" data-uid="Global.WalkMovementController.Charge(UnityEngine.Vector2)">Charge(Vector2)</h4>
@@ -238,7 +301,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_GetEdgeXCallback.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.GetEdgeXCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L165">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L217">View Source</a>
   </span>
   <a id="Global_WalkMovementController_GetEdgeXCallback_" data-uid="Global.WalkMovementController.GetEdgeXCallback*"></a>
   <h4 id="Global_WalkMovementController_GetEdgeXCallback" data-uid="Global.WalkMovementController.GetEdgeXCallback">GetEdgeXCallback()</h4>
@@ -268,7 +331,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_GetJumpCallback.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.GetJumpCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L180">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L232">View Source</a>
   </span>
   <a id="Global_WalkMovementController_GetJumpCallback_" data-uid="Global.WalkMovementController.GetJumpCallback*"></a>
   <h4 id="Global_WalkMovementController_GetJumpCallback" data-uid="Global.WalkMovementController.GetJumpCallback">GetJumpCallback()</h4>
@@ -298,7 +361,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_GoTo_System_Single_System_Boolean_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.GoTo(System.Single%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L102">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L118">View Source</a>
   </span>
   <a id="Global_WalkMovementController_GoTo_" data-uid="Global.WalkMovementController.GoTo*"></a>
   <h4 id="Global_WalkMovementController_GoTo_System_Single_System_Boolean_" data-uid="Global.WalkMovementController.GoTo(System.Single,System.Boolean)">GoTo(float, bool)</h4>
@@ -324,7 +387,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">AllowJump</span></td>
         <td></td>
       </tr>
@@ -335,7 +398,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_Idle.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.Idle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L91">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L100">View Source</a>
   </span>
   <a id="Global_WalkMovementController_Idle_" data-uid="Global.WalkMovementController.Idle*"></a>
   <h4 id="Global_WalkMovementController_Idle" data-uid="Global.WalkMovementController.Idle">Idle()</h4>
@@ -350,7 +413,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_Initialize_IntEnemy_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.Initialize(IntEnemy)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L36">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L41">View Source</a>
   </span>
   <a id="Global_WalkMovementController_Initialize_" data-uid="Global.WalkMovementController.Initialize*"></a>
   <h4 id="Global_WalkMovementController_Initialize_IntEnemy_" data-uid="Global.WalkMovementController.Initialize(IntEnemy)">Initialize(IntEnemy)</h4>
@@ -384,7 +447,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_Move_System_Single_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.Move(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L96">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L112">View Source</a>
   </span>
   <a id="Global_WalkMovementController_Move_" data-uid="Global.WalkMovementController.Move*"></a>
   <h4 id="Global_WalkMovementController_Move_System_Single_" data-uid="Global.WalkMovementController.Move(System.Single)">Move(float)</h4>
@@ -413,10 +476,47 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_Patrol_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.Patrol(System.Single%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L105">View Source</a>
+  </span>
+  <a id="Global_WalkMovementController_Patrol_" data-uid="Global.WalkMovementController.Patrol*"></a>
+  <h4 id="Global_WalkMovementController_Patrol_System_Single_System_Single_" data-uid="Global.WalkMovementController.Patrol(System.Single,System.Single)">Patrol(float, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Patrol(float LeftWorldBoundsX, float RightWorldBoundsX)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">LeftWorldBoundsX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">RightWorldBoundsX</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_RegisterEdgeXCallback_IntObject_Action_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.RegisterEdgeXCallback(IntObject.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L155">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L207">View Source</a>
   </span>
   <a id="Global_WalkMovementController_RegisterEdgeXCallback_" data-uid="Global.WalkMovementController.RegisterEdgeXCallback*"></a>
   <h4 id="Global_WalkMovementController_RegisterEdgeXCallback_IntObject_Action_" data-uid="Global.WalkMovementController.RegisterEdgeXCallback(IntObject.Action)">RegisterEdgeXCallback(Action)</h4>
@@ -448,7 +548,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_RegisterJumpCallback_IntObject_Action_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.RegisterJumpCallback(IntObject.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L170">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L222">View Source</a>
   </span>
   <a id="Global_WalkMovementController_RegisterJumpCallback_" data-uid="Global.WalkMovementController.RegisterJumpCallback*"></a>
   <h4 id="Global_WalkMovementController_RegisterJumpCallback_IntObject_Action_" data-uid="Global.WalkMovementController.RegisterJumpCallback(IntObject.Action)">RegisterJumpCallback(Action)</h4>
@@ -480,7 +580,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_RegisterOnLandCallback_IntObject_Action_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.RegisterOnLandCallback(IntObject.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L188">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L240">View Source</a>
   </span>
   <a id="Global_WalkMovementController_RegisterOnLandCallback_" data-uid="Global.WalkMovementController.RegisterOnLandCallback*"></a>
   <h4 id="Global_WalkMovementController_RegisterOnLandCallback_IntObject_Action_" data-uid="Global.WalkMovementController.RegisterOnLandCallback(IntObject.Action)">RegisterOnLandCallback(Action)</h4>
@@ -512,7 +612,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_UnegisterOnLandCallback_IntObject_Action_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.UnegisterOnLandCallback(IntObject.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L193">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L245">View Source</a>
   </span>
   <a id="Global_WalkMovementController_UnegisterOnLandCallback_" data-uid="Global.WalkMovementController.UnegisterOnLandCallback*"></a>
   <h4 id="Global_WalkMovementController_UnegisterOnLandCallback_IntObject_Action_" data-uid="Global.WalkMovementController.UnegisterOnLandCallback(IntObject.Action)">UnegisterOnLandCallback(Action)</h4>
@@ -544,7 +644,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_UnregisterEdgeXCallback_IntObject_Action_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.UnregisterEdgeXCallback(IntObject.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L160">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L212">View Source</a>
   </span>
   <a id="Global_WalkMovementController_UnregisterEdgeXCallback_" data-uid="Global.WalkMovementController.UnregisterEdgeXCallback*"></a>
   <h4 id="Global_WalkMovementController_UnregisterEdgeXCallback_IntObject_Action_" data-uid="Global.WalkMovementController.UnregisterEdgeXCallback(IntObject.Action)">UnregisterEdgeXCallback(Action)</h4>
@@ -576,7 +676,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_UnregisterJumpCallback_IntObject_Action_.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.UnregisterJumpCallback(IntObject.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L175">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L227">View Source</a>
   </span>
   <a id="Global_WalkMovementController_UnregisterJumpCallback_" data-uid="Global.WalkMovementController.UnregisterJumpCallback*"></a>
   <h4 id="Global_WalkMovementController_UnregisterJumpCallback_IntObject_Action_" data-uid="Global.WalkMovementController.UnregisterJumpCallback(IntObject.Action)">UnregisterJumpCallback(Action)</h4>
@@ -608,7 +708,7 @@ public class WalkMovementController : EnemyMovementController&lt;WalkMovementPro
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WalkMovementController_Update.md&amp;value=---%0Auid%3A%20Global.WalkMovementController.Update%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L72">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Modular/Modules/Movement/WalkMovementController.cs/#L78">View Source</a>
   </span>
   <a id="Global_WalkMovementController_Update_" data-uid="Global.WalkMovementController.Update*"></a>
   <h4 id="Global_WalkMovementController_Update" data-uid="Global.WalkMovementController.Update">Update()</h4>

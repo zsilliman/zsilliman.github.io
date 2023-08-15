@@ -104,11 +104,15 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <div><a class="xref" href="Global.ISavableObject-1.html">ISavableObject</a>&lt;<a class="xref" href="Global.IntObjectSaveData.html">IntObjectSaveData</a>&gt;</div>
     <div><a class="xref" href="Global.IEntity.html">IEntity</a></div>
     <div><a class="xref" href="Global.ICollectableInterface.html">ICollectableInterface</a></div>
+    <div><a class="xref" href="Global.ISpawnable.html">ISpawnable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_AlwaysDrawGizmos">IntEnemy.AlwaysDrawGizmos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_EnemyUIEnabled">IntEnemy.EnemyUIEnabled</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_MaxDropTileDistance">IntEnemy.MaxDropTileDistance</a>
@@ -135,6 +139,12 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_MaxFallSpeed">IntEnemy.MaxFallSpeed</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_POISON_DISPEL_TIMER">IntEnemy.POISON_DISPEL_TIMER</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_POISON_PROC_TIMER">IntEnemy.POISON_PROC_TIMER</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_tilemap">IntEnemy.tilemap</a>
     </div>
     <div>
@@ -147,6 +157,9 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_IsAlive">IntEnemy.IsAlive</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SpawnProperties">IntEnemy.SpawnProperties</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_CanRepelEnemy">IntEnemy.CanRepelEnemy()</a>
     </div>
     <div>
@@ -156,10 +169,19 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpInitialVelocity_System_Single_System_Single_">IntEnemy.ComputeJumpInitialVelocity(float, float)</a>
     </div>
     <div>
-      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_TakeDamage_System_Int32_System_Boolean_System_Boolean_">IntEnemy.TakeDamage(int, bool, bool)</a>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpHangTimeFromVelocity_System_Single_System_Single_">IntEnemy.ComputeJumpHangTimeFromVelocity(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpHangTimeFromHeight_System_Single_System_Single_">IntEnemy.ComputeJumpHangTimeFromHeight(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_TakeDamage_System_Int32_System_Boolean_System_Boolean_DamageType_">IntEnemy.TakeDamage(int, bool, bool, DamageType)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SetCurrentShieldHealth_System_Int32_">IntEnemy.SetCurrentShieldHealth(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SetPoisoned_System_Int32_">IntEnemy.SetPoisoned(int)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSightRayOrigin">IntEnemy.GetSightRayOrigin()</a>
@@ -172,6 +194,9 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_IsCollected">IntEnemy.IsCollected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_StaticMoveUpdate">IntEnemy.StaticMoveUpdate()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpriteFlip_System_Boolean_System_Boolean_">IntEnemy.GetSpriteFlip(bool, bool)</a>
@@ -228,10 +253,25 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GizmosDrawTileVision">IntEnemy.GizmosDrawTileVision()</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GizmosDrawRequiredSpace">IntEnemy.GizmosDrawRequiredSpace()</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawGizmosSelected">IntEnemy.OnDrawGizmosSelected()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawGizmos">IntEnemy.OnDrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpawnProperties">IntEnemy.GetSpawnProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnLocalSpaceSpawnBoundsSet_UnityEngine_Vector2Int_UnityEngine_Vector2Int_">IntEnemy.OnLocalSpaceSpawnBoundsSet(Vector2Int, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ResolveSpawnLocation">IntEnemy.ResolveSpawnLocation()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpawnLocationFromBounds_UnityEngine_Vector3_UnityEngine_Vector3_">IntEnemy.GetSpawnLocationFromBounds(Vector3, Vector3)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_HurtBySpike">IntActor.HurtBySpike</a>
@@ -258,6 +298,9 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_WindInfluence">IntActor.WindInfluence</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTakeDamageCallback">IntActor.OnTakeDamageCallback</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_RidingSolid">IntActor.RidingSolid</a>
     </div>
     <div>
@@ -279,6 +322,9 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_GetAABBIntCollider">IntActor.GetAABBIntCollider()</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_EnsureAABBIntColliderSet">IntActor.EnsureAABBIntColliderSet()</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_IsRiding_IntSolid_">IntActor.IsRiding(IntSolid)</a>
     </div>
     <div>
@@ -292,6 +338,12 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_SolidContainsPoint_UnityEngine_Vector2Int_">IntActor.SolidContainsPoint(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_RegisterOnTakeDamageCallback_IntObject_Action_">IntActor.RegisterOnTakeDamageCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_UnregisterOnTakeDamageCallback_IntObject_Action_">IntActor.UnregisterOnTakeDamageCallback(IntObject.Action)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTakeDamage_System_Int32_">IntActor.OnTakeDamage(int)</a>
@@ -337,6 +389,24 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_DropDownOneWay">IntActor.DropDownOneWay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_activeWater">IntActor.activeWater</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetSubmergedPercentage">IntActor.GetSubmergedPercentage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetSubmergedPercentage_UnityEngine_Vector2Int_">IntActor.GetSubmergedPercentage(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_IsInWater">IntActor.IsInWater</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnEnterWater_WaterComponent_System_Single_">IntActor.OnEnterWater(WaterComponent, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnExitWater_WaterComponent_">IntActor.OnExitWater(WaterComponent)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_ApplyWind_UnityEngine_Vector2_">IntActor.ApplyWind(Vector2)</a>
@@ -435,6 +505,9 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SaveObject">IntObject.SaveObject</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsInSetPiece">IntObject.IsInSetPiece</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_Init">IntObject.Init()</a>
     </div>
     <div>
@@ -454,6 +527,9 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_UnregisterKilledCallback_IntObject_Action_">IntObject.UnregisterKilledCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsContainedInRect_UnityEngine_Rect_">IntObject.IsContainedInRect(Rect)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SetStatus_ObjectStatus_">IntObject.SetStatus(ObjectStatus)</a>
@@ -478,6 +554,9 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SleepObject">IntObject.SleepObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_OptimizeSleepObject">IntObject.OptimizeSleepObject()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_WakeObject">IntObject.WakeObject()</a>
@@ -550,7 +629,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
   <h5 id="Global_Burd2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Burd2 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity, ICollectableInterface</code></pre>
+    <pre><code class="lang-csharp hljs">public class Burd2 : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity, ICollectableInterface, ISpawnable</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -559,7 +638,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_animator.md&amp;value=---%0Auid%3A%20Global.Burd2.animator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L56">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L57">View Source</a>
   </span>
   <h4 id="Global_Burd2_animator" data-uid="Global.Burd2.animator">animator</h4>
   <div class="markdown level1 summary"></div>
@@ -588,7 +667,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_ApproxChargeDistance.md&amp;value=---%0Auid%3A%20Global.Burd2.ApproxChargeDistance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L38">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L39">View Source</a>
   </span>
   <h4 id="Global_Burd2_ApproxChargeDistance" data-uid="Global.Burd2.ApproxChargeDistance">ApproxChargeDistance</h4>
   <div class="markdown level1 summary"></div>
@@ -617,7 +696,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_AuraEaseFunction.md&amp;value=---%0Auid%3A%20Global.Burd2.AuraEaseFunction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L45">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L46">View Source</a>
   </span>
   <h4 id="Global_Burd2_AuraEaseFunction" data-uid="Global.Burd2.AuraEaseFunction">AuraEaseFunction</h4>
   <div class="markdown level1 summary"></div>
@@ -646,7 +725,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_AuraEndRadius.md&amp;value=---%0Auid%3A%20Global.Burd2.AuraEndRadius%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L44">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L45">View Source</a>
   </span>
   <h4 id="Global_Burd2_AuraEndRadius" data-uid="Global.Burd2.AuraEndRadius">AuraEndRadius</h4>
   <div class="markdown level1 summary"></div>
@@ -675,7 +754,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_AuraExpandTime.md&amp;value=---%0Auid%3A%20Global.Burd2.AuraExpandTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L46">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L47">View Source</a>
   </span>
   <h4 id="Global_Burd2_AuraExpandTime" data-uid="Global.Burd2.AuraExpandTime">AuraExpandTime</h4>
   <div class="markdown level1 summary"></div>
@@ -704,7 +783,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_AuraMaterial.md&amp;value=---%0Auid%3A%20Global.Burd2.AuraMaterial%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L48">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L49">View Source</a>
   </span>
   <h4 id="Global_Burd2_AuraMaterial" data-uid="Global.Burd2.AuraMaterial">AuraMaterial</h4>
   <div class="markdown level1 summary"></div>
@@ -733,7 +812,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_auras.md&amp;value=---%0Auid%3A%20Global.Burd2.auras%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L58">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L59">View Source</a>
   </span>
   <h4 id="Global_Burd2_auras" data-uid="Global.Burd2.auras">auras</h4>
   <div class="markdown level1 summary"></div>
@@ -762,7 +841,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_AuraSegmentsPerRadian.md&amp;value=---%0Auid%3A%20Global.Burd2.AuraSegmentsPerRadian%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L47">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L48">View Source</a>
   </span>
   <h4 id="Global_Burd2_AuraSegmentsPerRadian" data-uid="Global.Burd2.AuraSegmentsPerRadian">AuraSegmentsPerRadian</h4>
   <div class="markdown level1 summary"></div>
@@ -791,7 +870,7 @@ The screamer has a cooldown after a charge (if it does not hit a wall)</p>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_AuraStartRadius.md&amp;value=---%0Auid%3A%20Global.Burd2.AuraStartRadius%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L43">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L44">View Source</a>
   </span>
   <h4 id="Global_Burd2_AuraStartRadius" data-uid="Global.Burd2.AuraStartRadius">AuraStartRadius</h4>
   <div class="markdown level1 summary"></div>
@@ -821,7 +900,7 @@ public int AuraStartRadius</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Burd2AuraID.md&amp;value=---%0Auid%3A%20Global.Burd2.Burd2AuraID%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L17">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L18">View Source</a>
   </span>
   <h4 id="Global_Burd2_Burd2AuraID" data-uid="Global.Burd2.Burd2AuraID">Burd2AuraID</h4>
   <div class="markdown level1 summary"></div>
@@ -850,7 +929,7 @@ public int AuraStartRadius</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_ChargeDirection.md&amp;value=---%0Auid%3A%20Global.Burd2.ChargeDirection%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L342">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L344">View Source</a>
   </span>
   <h4 id="Global_Burd2_ChargeDirection" data-uid="Global.Burd2.ChargeDirection">ChargeDirection</h4>
   <div class="markdown level1 summary"></div>
@@ -879,7 +958,7 @@ public int AuraStartRadius</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_ChargeSpeed.md&amp;value=---%0Auid%3A%20Global.Burd2.ChargeSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L39">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L40">View Source</a>
   </span>
   <h4 id="Global_Burd2_ChargeSpeed" data-uid="Global.Burd2.ChargeSpeed">ChargeSpeed</h4>
   <div class="markdown level1 summary"></div>
@@ -908,7 +987,7 @@ public int AuraStartRadius</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_CooldownTime.md&amp;value=---%0Auid%3A%20Global.Burd2.CooldownTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L40">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L41">View Source</a>
   </span>
   <h4 id="Global_Burd2_CooldownTime" data-uid="Global.Burd2.CooldownTime">CooldownTime</h4>
   <div class="markdown level1 summary"></div>
@@ -937,7 +1016,7 @@ public int AuraStartRadius</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_distTravelled.md&amp;value=---%0Auid%3A%20Global.Burd2.distTravelled%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L343">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L345">View Source</a>
   </span>
   <h4 id="Global_Burd2_distTravelled" data-uid="Global.Burd2.distTravelled">distTravelled</h4>
   <div class="markdown level1 summary"></div>
@@ -966,7 +1045,7 @@ public int AuraStartRadius</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_DriftSpeed.md&amp;value=---%0Auid%3A%20Global.Burd2.DriftSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L34">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L35">View Source</a>
   </span>
   <h4 id="Global_Burd2_DriftSpeed" data-uid="Global.Burd2.DriftSpeed">DriftSpeed</h4>
   <div class="markdown level1 summary"></div>
@@ -995,7 +1074,7 @@ public int AuraStartRadius</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_IdleBobHeight.md&amp;value=---%0Auid%3A%20Global.Burd2.IdleBobHeight%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L22">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L23">View Source</a>
   </span>
   <h4 id="Global_Burd2_IdleBobHeight" data-uid="Global.Burd2.IdleBobHeight">IdleBobHeight</h4>
   <div class="markdown level1 summary"></div>
@@ -1024,7 +1103,7 @@ public int AuraStartRadius</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_IdleBobSpeed.md&amp;value=---%0Auid%3A%20Global.Burd2.IdleBobSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L21">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L22">View Source</a>
   </span>
   <h4 id="Global_Burd2_IdleBobSpeed" data-uid="Global.Burd2.IdleBobSpeed">IdleBobSpeed</h4>
   <div class="markdown level1 summary"></div>
@@ -1054,7 +1133,7 @@ public float IdleBobSpeed</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_lastNoiseVal.md&amp;value=---%0Auid%3A%20Global.Burd2.lastNoiseVal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L54">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L55">View Source</a>
   </span>
   <h4 id="Global_Burd2_lastNoiseVal" data-uid="Global.Burd2.lastNoiseVal">lastNoiseVal</h4>
   <div class="markdown level1 summary"></div>
@@ -1083,7 +1162,7 @@ public float IdleBobSpeed</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_noise_t.md&amp;value=---%0Auid%3A%20Global.Burd2.noise_t%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L53">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L54">View Source</a>
   </span>
   <h4 id="Global_Burd2_noise_t" data-uid="Global.Burd2.noise_t">noise_t</h4>
   <div class="markdown level1 summary"></div>
@@ -1112,7 +1191,7 @@ public float IdleBobSpeed</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_NoiseScale.md&amp;value=---%0Auid%3A%20Global.Burd2.NoiseScale%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L51">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L52">View Source</a>
   </span>
   <h4 id="Global_Burd2_NoiseScale" data-uid="Global.Burd2.NoiseScale">NoiseScale</h4>
   <div class="markdown level1 summary"></div>
@@ -1141,7 +1220,7 @@ public float IdleBobSpeed</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_NoiseSpeed.md&amp;value=---%0Auid%3A%20Global.Burd2.NoiseSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L52">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L53">View Source</a>
   </span>
   <h4 id="Global_Burd2_NoiseSpeed" data-uid="Global.Burd2.NoiseSpeed">NoiseSpeed</h4>
   <div class="markdown level1 summary"></div>
@@ -1170,7 +1249,7 @@ public float IdleBobSpeed</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_offset_t.md&amp;value=---%0Auid%3A%20Global.Burd2.offset_t%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L299">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L301">View Source</a>
   </span>
   <h4 id="Global_Burd2_offset_t" data-uid="Global.Burd2.offset_t">offset_t</h4>
   <div class="markdown level1 summary"></div>
@@ -1199,7 +1278,7 @@ public float IdleBobSpeed</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_PreferredHeight.md&amp;value=---%0Auid%3A%20Global.Burd2.PreferredHeight%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L33">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L34">View Source</a>
   </span>
   <h4 id="Global_Burd2_PreferredHeight" data-uid="Global.Burd2.PreferredHeight">PreferredHeight</h4>
   <div class="markdown level1 summary"></div>
@@ -1229,7 +1308,7 @@ public float PreferredHeight</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_rayFilter.md&amp;value=---%0Auid%3A%20Global.Burd2.rayFilter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L59">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L60">View Source</a>
   </span>
   <h4 id="Global_Burd2_rayFilter" data-uid="Global.Burd2.rayFilter">rayFilter</h4>
   <div class="markdown level1 summary"></div>
@@ -1258,7 +1337,7 @@ public float PreferredHeight</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_ShakeOffDistance.md&amp;value=---%0Auid%3A%20Global.Burd2.ShakeOffDistance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L30">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L31">View Source</a>
   </span>
   <h4 id="Global_Burd2_ShakeOffDistance" data-uid="Global.Burd2.ShakeOffDistance">ShakeOffDistance</h4>
   <div class="markdown level1 summary"></div>
@@ -1287,7 +1366,7 @@ public float PreferredHeight</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_SightDistance.md&amp;value=---%0Auid%3A%20Global.Burd2.SightDistance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L29">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L30">View Source</a>
   </span>
   <h4 id="Global_Burd2_SightDistance" data-uid="Global.Burd2.SightDistance">SightDistance</h4>
   <div class="markdown level1 summary"></div>
@@ -1316,7 +1395,7 @@ public float PreferredHeight</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Speed.md&amp;value=---%0Auid%3A%20Global.Burd2.Speed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L28">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L29">View Source</a>
   </span>
   <h4 id="Global_Burd2_Speed" data-uid="Global.Burd2.Speed">Speed</h4>
   <div class="markdown level1 summary"></div>
@@ -1346,7 +1425,7 @@ public float Speed</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_sprite.md&amp;value=---%0Auid%3A%20Global.Burd2.sprite%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L57">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L58">View Source</a>
   </span>
   <h4 id="Global_Burd2_sprite" data-uid="Global.Burd2.sprite">sprite</h4>
   <div class="markdown level1 summary"></div>
@@ -1375,7 +1454,7 @@ public float Speed</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_TargetDistFromPlayer.md&amp;value=---%0Auid%3A%20Global.Burd2.TargetDistFromPlayer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L25">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L26">View Source</a>
   </span>
   <h4 id="Global_Burd2_TargetDistFromPlayer" data-uid="Global.Burd2.TargetDistFromPlayer">TargetDistFromPlayer</h4>
   <div class="markdown level1 summary"></div>
@@ -1405,7 +1484,7 @@ public float TargetDistFromPlayer</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_WarmupTime.md&amp;value=---%0Auid%3A%20Global.Burd2.WarmupTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L37">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L38">View Source</a>
   </span>
   <h4 id="Global_Burd2_WarmupTime" data-uid="Global.Burd2.WarmupTime">WarmupTime</h4>
   <div class="markdown level1 summary"></div>
@@ -1437,7 +1516,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Animate.md&amp;value=---%0Auid%3A%20Global.Burd2.Animate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L275">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L277">View Source</a>
   </span>
   <a id="Global_Burd2_Animate_" data-uid="Global.Burd2.Animate*"></a>
   <h4 id="Global_Burd2_Animate" data-uid="Global.Burd2.Animate">Animate()</h4>
@@ -1454,7 +1533,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Charge.md&amp;value=---%0Auid%3A%20Global.Burd2.Charge%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L344">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L346">View Source</a>
   </span>
   <a id="Global_Burd2_Charge_" data-uid="Global.Burd2.Charge*"></a>
   <h4 id="Global_Burd2_Charge" data-uid="Global.Burd2.Charge">Charge()</h4>
@@ -1469,7 +1548,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Chase.md&amp;value=---%0Auid%3A%20Global.Burd2.Chase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L318">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L320">View Source</a>
   </span>
   <a id="Global_Burd2_Chase_" data-uid="Global.Burd2.Chase*"></a>
   <h4 id="Global_Burd2_Chase" data-uid="Global.Burd2.Chase">Chase()</h4>
@@ -1484,7 +1563,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Cooldown.md&amp;value=---%0Auid%3A%20Global.Burd2.Cooldown%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L400">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L402">View Source</a>
   </span>
   <a id="Global_Burd2_Cooldown_" data-uid="Global.Burd2.Cooldown*"></a>
   <h4 id="Global_Burd2_Cooldown" data-uid="Global.Burd2.Cooldown">Cooldown()</h4>
@@ -1499,7 +1578,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_GetBestAvailableCorner_UnityEngine_Vector2Int_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20Global.Burd2.GetBestAvailableCorner(UnityEngine.Vector2Int%2CUnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L117">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L119">View Source</a>
   </span>
   <a id="Global_Burd2_GetBestAvailableCorner_" data-uid="Global.Burd2.GetBestAvailableCorner*"></a>
   <h4 id="Global_Burd2_GetBestAvailableCorner_UnityEngine_Vector2Int_UnityEngine_Vector2Int_" data-uid="Global.Burd2.GetBestAvailableCorner(UnityEngine.Vector2Int,UnityEngine.Vector2Int)">GetBestAvailableCorner(Vector2Int, Vector2Int)</h4>
@@ -1551,7 +1630,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_GetVelocityNoise.md&amp;value=---%0Auid%3A%20Global.Burd2.GetVelocityNoise%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L160">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L162">View Source</a>
   </span>
   <a id="Global_Burd2_GetVelocityNoise_" data-uid="Global.Burd2.GetVelocityNoise*"></a>
   <h4 id="Global_Burd2_GetVelocityNoise" data-uid="Global.Burd2.GetVelocityNoise">GetVelocityNoise()</h4>
@@ -1581,7 +1660,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Idle.md&amp;value=---%0Auid%3A%20Global.Burd2.Idle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L300">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L302">View Source</a>
   </span>
   <a id="Global_Burd2_Idle_" data-uid="Global.Burd2.Idle*"></a>
   <h4 id="Global_Burd2_Idle" data-uid="Global.Burd2.Idle">Idle()</h4>
@@ -1596,7 +1675,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Initialize.md&amp;value=---%0Auid%3A%20Global.Burd2.Initialize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L180">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L182">View Source</a>
   </span>
   <a id="Global_Burd2_Initialize_" data-uid="Global.Burd2.Initialize*"></a>
   <h4 id="Global_Burd2_Initialize" data-uid="Global.Burd2.Initialize">Initialize()</h4>
@@ -1613,7 +1692,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_OnCollideTrigger_IntTrigger_.md&amp;value=---%0Auid%3A%20Global.Burd2.OnCollideTrigger(IntTrigger)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L428">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L430">View Source</a>
   </span>
   <a id="Global_Burd2_OnCollideTrigger_" data-uid="Global.Burd2.OnCollideTrigger*"></a>
   <h4 id="Global_Burd2_OnCollideTrigger_IntTrigger_" data-uid="Global.Burd2.OnCollideTrigger(IntTrigger)">OnCollideTrigger(IntTrigger)</h4>
@@ -1645,7 +1724,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_OnCollideX_IntSolid_.md&amp;value=---%0Auid%3A%20Global.Burd2.OnCollideX(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L430">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L432">View Source</a>
   </span>
   <a id="Global_Burd2_OnCollideX_" data-uid="Global.Burd2.OnCollideX*"></a>
   <h4 id="Global_Burd2_OnCollideX_IntSolid_" data-uid="Global.Burd2.OnCollideX(IntSolid)">OnCollideX(IntSolid)</h4>
@@ -1677,7 +1756,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_OnCollideY_IntSolid_.md&amp;value=---%0Auid%3A%20Global.Burd2.OnCollideY(IntSolid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L435">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L437">View Source</a>
   </span>
   <a id="Global_Burd2_OnCollideY_" data-uid="Global.Burd2.OnCollideY*"></a>
   <h4 id="Global_Burd2_OnCollideY_IntSolid_" data-uid="Global.Burd2.OnCollideY(IntSolid)">OnCollideY(IntSolid)</h4>
@@ -1706,27 +1785,27 @@ public float WarmupTime</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_OnDrawDebugAuras.md&amp;value=---%0Auid%3A%20Global.Burd2.OnDrawDebugAuras%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_OnDrawDebugGizmos.md&amp;value=---%0Auid%3A%20Global.Burd2.OnDrawDebugGizmos%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L174">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L176">View Source</a>
   </span>
-  <a id="Global_Burd2_OnDrawDebugAuras_" data-uid="Global.Burd2.OnDrawDebugAuras*"></a>
-  <h4 id="Global_Burd2_OnDrawDebugAuras" data-uid="Global.Burd2.OnDrawDebugAuras">OnDrawDebugAuras()</h4>
+  <a id="Global_Burd2_OnDrawDebugGizmos_" data-uid="Global.Burd2.OnDrawDebugGizmos*"></a>
+  <h4 id="Global_Burd2_OnDrawDebugGizmos" data-uid="Global.Burd2.OnDrawDebugGizmos">OnDrawDebugGizmos()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnDrawDebugAuras()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnDrawDebugGizmos()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawDebugAuras">IntEnemy.OnDrawDebugAuras()</a></div>
+  <div><a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawDebugGizmos">IntEnemy.OnDrawDebugGizmos()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_PostInputUpdate.md&amp;value=---%0Auid%3A%20Global.Burd2.PostInputUpdate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L242">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L244">View Source</a>
   </span>
   <a id="Global_Burd2_PostInputUpdate_" data-uid="Global.Burd2.PostInputUpdate*"></a>
   <h4 id="Global_Burd2_PostInputUpdate" data-uid="Global.Burd2.PostInputUpdate">PostInputUpdate()</h4>
@@ -1743,7 +1822,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_PreInputUpdate.md&amp;value=---%0Auid%3A%20Global.Burd2.PreInputUpdate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L229">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L231">View Source</a>
   </span>
   <a id="Global_Burd2_PreInputUpdate_" data-uid="Global.Burd2.PreInputUpdate*"></a>
   <h4 id="Global_Burd2_PreInputUpdate" data-uid="Global.Burd2.PreInputUpdate">PreInputUpdate()</h4>
@@ -1760,7 +1839,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_ResetObject.md&amp;value=---%0Auid%3A%20Global.Burd2.ResetObject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L414">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L416">View Source</a>
   </span>
   <a id="Global_Burd2_ResetObject_" data-uid="Global.Burd2.ResetObject*"></a>
   <h4 id="Global_Burd2_ResetObject" data-uid="Global.Burd2.ResetObject">ResetObject()</h4>
@@ -1777,7 +1856,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_SetState_Burd2_Burd2State_.md&amp;value=---%0Auid%3A%20Global.Burd2.SetState(Burd2.Burd2State)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L102">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L104">View Source</a>
   </span>
   <a id="Global_Burd2_SetState_" data-uid="Global.Burd2.SetState*"></a>
   <h4 id="Global_Burd2_SetState_Burd2_Burd2State_" data-uid="Global.Burd2.SetState(Burd2.Burd2State)">SetState(Burd2State)</h4>
@@ -1809,7 +1888,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_SetupFSM.md&amp;value=---%0Auid%3A%20Global.Burd2.SetupFSM%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L91">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L92">View Source</a>
   </span>
   <a id="Global_Burd2_SetupFSM_" data-uid="Global.Burd2.SetupFSM*"></a>
   <h4 id="Global_Burd2_SetupFSM" data-uid="Global.Burd2.SetupFSM">SetupFSM()</h4>
@@ -1824,7 +1903,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_SpawnAura.md&amp;value=---%0Auid%3A%20Global.Burd2.SpawnAura%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L198">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L200">View Source</a>
   </span>
   <a id="Global_Burd2_SpawnAura_" data-uid="Global.Burd2.SpawnAura*"></a>
   <h4 id="Global_Burd2_SpawnAura" data-uid="Global.Burd2.SpawnAura">SpawnAura()</h4>
@@ -1856,7 +1935,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Start.md&amp;value=---%0Auid%3A%20Global.Burd2.Start%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L85">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L86">View Source</a>
   </span>
   <a id="Global_Burd2_Start_" data-uid="Global.Burd2.Start*"></a>
   <h4 id="Global_Burd2_Start" data-uid="Global.Burd2.Start">Start()</h4>
@@ -1871,7 +1950,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_UpdateInput.md&amp;value=---%0Auid%3A%20Global.Burd2.UpdateInput%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L237">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L239">View Source</a>
   </span>
   <a id="Global_Burd2_UpdateInput_" data-uid="Global.Burd2.UpdateInput*"></a>
   <h4 id="Global_Burd2_UpdateInput" data-uid="Global.Burd2.UpdateInput">UpdateInput()</h4>
@@ -1889,7 +1968,7 @@ public float WarmupTime</code></pre>
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2_Warmup.md&amp;value=---%0Auid%3A%20Global.Burd2.Warmup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L377">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L379">View Source</a>
   </span>
   <a id="Global_Burd2_Warmup_" data-uid="Global.Burd2.Warmup*"></a>
   <h4 id="Global_Burd2_Warmup" data-uid="Global.Burd2.Warmup">Warmup()</h4>
@@ -1909,6 +1988,9 @@ public float WarmupTime</code></pre>
   <div>
       <a class="xref" href="Global.ICollectableInterface.html">ICollectableInterface</a>
   </div>
+  <div>
+      <a class="xref" href="Global.ISpawnable.html">ISpawnable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Global.ReflectionExtensions.html#Global_ReflectionExtensions_ToStringWithQuotes_System_Object_">ReflectionExtensions.ToStringWithQuotes(object)</a>
@@ -1924,7 +2006,7 @@ public float WarmupTime</code></pre>
                     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Burd2.md&amp;value=---%0Auid%3A%20Global.Burd2%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Enemies/Burd/Burd2/Burd2.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

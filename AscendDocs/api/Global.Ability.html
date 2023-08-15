@@ -88,7 +88,10 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Ability</span></div>
-      <div class="level2"><a class="xref" href="Global.CastAuraAbility.html">CastAuraAbility</a></div>
+      <div class="level2"><a class="xref" href="Global.CastCircleOnNearestAbility.html">CastCircleOnNearestAbility</a></div>
+      <div class="level2"><a class="xref" href="Global.CastCircleOnPlayerAbility.html">CastCircleOnPlayerAbility</a></div>
+      <div class="level2"><a class="xref" href="Global.CastVerticalAbility.html">CastVerticalAbility</a></div>
+      <div class="level2"><a class="xref" href="Global.NoAbility.html">NoAbility</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Global.html">Global</a></h6>
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
@@ -103,7 +106,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability__ctor_IntBasePlatformer_.md&amp;value=---%0Auid%3A%20Global.Ability.%23ctor(IntBasePlatformer)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L14">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L17">View Source</a>
   </span>
   <a id="Global_Ability__ctor_" data-uid="Global.Ability.#ctor*"></a>
   <h4 id="Global_Ability__ctor_IntBasePlatformer_" data-uid="Global.Ability.#ctor(IntBasePlatformer)">Ability(IntBasePlatformer)</h4>
@@ -137,7 +140,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_Active.md&amp;value=---%0Auid%3A%20Global.Ability.Active%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L10">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L13">View Source</a>
   </span>
   <h4 id="Global_Ability_Active" data-uid="Global.Ability.Active">Active</h4>
   <div class="markdown level1 summary"></div>
@@ -156,7 +159,36 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_CooldownSeconds.md&amp;value=---%0Auid%3A%20Global.Ability.CooldownSeconds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L11">View Source</a>
+  </span>
+  <h4 id="Global_Ability_CooldownSeconds" data-uid="Global.Ability.CooldownSeconds">CooldownSeconds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float CooldownSeconds = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -166,7 +198,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_Finished.md&amp;value=---%0Auid%3A%20Global.Ability.Finished%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L11">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L14">View Source</a>
   </span>
   <h4 id="Global_Ability_Finished" data-uid="Global.Ability.Finished">Finished</h4>
   <div class="markdown level1 summary"></div>
@@ -185,7 +217,36 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_StaminaCost.md&amp;value=---%0Auid%3A%20Global.Ability.StaminaCost%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L10">View Source</a>
+  </span>
+  <h4 id="Global_Ability_StaminaCost" data-uid="Global.Ability.StaminaCost">StaminaCost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StaminaCost</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -195,7 +256,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_Weilder.md&amp;value=---%0Auid%3A%20Global.Ability.Weilder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L12">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L15">View Source</a>
   </span>
   <h4 id="Global_Ability_Weilder" data-uid="Global.Ability.Weilder">Weilder</h4>
   <div class="markdown level1 summary"></div>
@@ -226,7 +287,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_Cancel.md&amp;value=---%0Auid%3A%20Global.Ability.Cancel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L33">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L41">View Source</a>
   </span>
   <a id="Global_Ability_Cancel_" data-uid="Global.Ability.Cancel*"></a>
   <h4 id="Global_Ability_Cancel" data-uid="Global.Ability.Cancel">Cancel()</h4>
@@ -241,7 +302,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_CastAbility_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Global.Ability.CastAbility(UnityEngine.Vector2)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L20">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L23">View Source</a>
   </span>
   <a id="Global_Ability_CastAbility_" data-uid="Global.Ability.CastAbility*"></a>
   <h4 id="Global_Ability_CastAbility_UnityEngine_Vector2_" data-uid="Global.Ability.CastAbility(UnityEngine.Vector2)">CastAbility(Vector2)</h4>
@@ -273,7 +334,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_CastAbilityInternal_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Global.Ability.CastAbilityInternal(UnityEngine.Vector2)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L27">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L33">View Source</a>
   </span>
   <a id="Global_Ability_CastAbilityInternal_" data-uid="Global.Ability.CastAbilityInternal*"></a>
   <h4 id="Global_Ability_CastAbilityInternal_UnityEngine_Vector2_" data-uid="Global.Ability.CastAbilityInternal(UnityEngine.Vector2)">CastAbilityInternal(Vector2)</h4>
@@ -305,7 +366,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_Finish.md&amp;value=---%0Auid%3A%20Global.Ability.Finish%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L43">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L51">View Source</a>
   </span>
   <a id="Global_Ability_Finish_" data-uid="Global.Ability.Finish*"></a>
   <h4 id="Global_Ability_Finish" data-uid="Global.Ability.Finish">Finish()</h4>
@@ -317,18 +378,48 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_GetManaCost.md&amp;value=---%0Auid%3A%20Global.Ability.GetManaCost%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_GetCooldownDuration.md&amp;value=---%0Auid%3A%20Global.Ability.GetCooldownDuration%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L29">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L37">View Source</a>
   </span>
-  <a id="Global_Ability_GetManaCost_" data-uid="Global.Ability.GetManaCost*"></a>
-  <h4 id="Global_Ability_GetManaCost" data-uid="Global.Ability.GetManaCost">GetManaCost()</h4>
+  <a id="Global_Ability_GetCooldownDuration_" data-uid="Global.Ability.GetCooldownDuration*"></a>
+  <h4 id="Global_Ability_GetCooldownDuration" data-uid="Global.Ability.GetCooldownDuration">GetCooldownDuration()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract int GetManaCost()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual float GetCooldownDuration()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_GetStaminaCost.md&amp;value=---%0Auid%3A%20Global.Ability.GetStaminaCost%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L35">View Source</a>
+  </span>
+  <a id="Global_Ability_GetStaminaCost_" data-uid="Global.Ability.GetStaminaCost*"></a>
+  <h4 id="Global_Ability_GetStaminaCost" data-uid="Global.Ability.GetStaminaCost">GetStaminaCost()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetStaminaCost()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -350,7 +441,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_IsActive.md&amp;value=---%0Auid%3A%20Global.Ability.IsActive%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L38">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L46">View Source</a>
   </span>
   <a id="Global_Ability_IsActive_" data-uid="Global.Ability.IsActive*"></a>
   <h4 id="Global_Ability_IsActive" data-uid="Global.Ability.IsActive">IsActive()</h4>
@@ -370,7 +461,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -380,7 +471,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_IsFinished.md&amp;value=---%0Auid%3A%20Global.Ability.IsFinished%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L41">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L49">View Source</a>
   </span>
   <a id="Global_Ability_IsFinished_" data-uid="Global.Ability.IsFinished*"></a>
   <h4 id="Global_Ability_IsFinished" data-uid="Global.Ability.IsFinished">IsFinished()</h4>
@@ -400,7 +491,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -410,7 +501,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_OnFinish.md&amp;value=---%0Auid%3A%20Global.Ability.OnFinish%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L31">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L39">View Source</a>
   </span>
   <a id="Global_Ability_OnFinish_" data-uid="Global.Ability.OnFinish*"></a>
   <h4 id="Global_Ability_OnFinish" data-uid="Global.Ability.OnFinish">OnFinish()</h4>
@@ -425,7 +516,7 @@
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_Update.md&amp;value=---%0Auid%3A%20Global.Ability.Update%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L36">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L44">View Source</a>
   </span>
   <a id="Global_Ability_Update_" data-uid="Global.Ability.Update*"></a>
   <h4 id="Global_Ability_Update" data-uid="Global.Ability.Update">Update()</h4>
@@ -435,6 +526,70 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract void Update()</code></pre>
   </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_UpdateAuraLifetime_System_Single_.md&amp;value=---%0Auid%3A%20Global.Ability.UpdateAuraLifetime(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L31">View Source</a>
+  </span>
+  <a id="Global_Ability_UpdateAuraLifetime_" data-uid="Global.Ability.UpdateAuraLifetime*"></a>
+  <h4 id="Global_Ability_UpdateAuraLifetime_System_Single_" data-uid="Global.Ability.UpdateAuraLifetime(System.Single)">UpdateAuraLifetime(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void UpdateAuraLifetime(float new_aura_lifetime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">new_aura_lifetime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_Ability_UpdateMaxAuraCount_System_Int32_.md&amp;value=---%0Auid%3A%20Global.Ability.UpdateMaxAuraCount(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/Entities/Player/Abilities/Ability.cs/#L30">View Source</a>
+  </span>
+  <a id="Global_Ability_UpdateMaxAuraCount_" data-uid="Global.Ability.UpdateMaxAuraCount*"></a>
+  <h4 id="Global_Ability_UpdateMaxAuraCount_System_Int32_" data-uid="Global.Ability.UpdateMaxAuraCount(System.Int32)">UpdateMaxAuraCount(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void UpdateMaxAuraCount(int new_max_count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">new_max_count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Global.ReflectionExtensions.html#Global_ReflectionExtensions_ToStringWithQuotes_System_Object_">ReflectionExtensions.ToStringWithQuotes(object)</a>

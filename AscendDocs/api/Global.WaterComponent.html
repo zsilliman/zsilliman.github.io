@@ -177,6 +177,9 @@
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SaveObject">IntObject.SaveObject</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsInSetPiece">IntObject.IsInSetPiece</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_Awake">IntObject.Awake()</a>
     </div>
     <div>
@@ -199,6 +202,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_UnregisterKilledCallback_IntObject_Action_">IntObject.UnregisterKilledCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsContainedInRect_UnityEngine_Rect_">IntObject.IsContainedInRect(Rect)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_Update">IntObject.Update()</a>
@@ -226,6 +232,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SleepObject">IntObject.SleepObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_OptimizeSleepObject">IntObject.OptimizeSleepObject()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_WakeObject">IntObject.WakeObject()</a>
@@ -363,7 +372,7 @@ public class WaterComponent : IntTrigger, ISavableObject&lt;IntObjectSaveData&gt
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -658,6 +667,38 @@ public class WaterComponent : IntTrigger, ISavableObject&lt;IntObjectSaveData&gt
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WaterComponent_AABBCollider.md&amp;value=---%0Auid%3A%20Global.WaterComponent.AABBCollider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/World/Weather/Water/WaterComponent.cs/#L35">View Source</a>
+  </span>
+  <a id="Global_WaterComponent_AABBCollider_" data-uid="Global.WaterComponent.AABBCollider*"></a>
+  <h4 id="Global_WaterComponent_AABBCollider" data-uid="Global.WaterComponent.AABBCollider">AABBCollider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBIntCollider AABBCollider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.AABBIntCollider.html">AABBIntCollider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -665,7 +706,7 @@ public class WaterComponent : IntTrigger, ISavableObject&lt;IntObjectSaveData&gt
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WaterComponent_OnTriggerEnd_IntActor_.md&amp;value=---%0Auid%3A%20Global.WaterComponent.OnTriggerEnd(IntActor)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/World/Weather/Water/WaterComponent.cs/#L203">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/World/Weather/Water/WaterComponent.cs/#L202">View Source</a>
   </span>
   <a id="Global_WaterComponent_OnTriggerEnd_" data-uid="Global.WaterComponent.OnTriggerEnd*"></a>
   <h4 id="Global_WaterComponent_OnTriggerEnd_IntActor_" data-uid="Global.WaterComponent.OnTriggerEnd(IntActor)">OnTriggerEnd(IntActor)</h4>
@@ -699,7 +740,7 @@ public class WaterComponent : IntTrigger, ISavableObject&lt;IntObjectSaveData&gt
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WaterComponent_OnTriggerStart_IntActor_.md&amp;value=---%0Auid%3A%20Global.WaterComponent.OnTriggerStart(IntActor)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/World/Weather/Water/WaterComponent.cs/#L186">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/World/Weather/Water/WaterComponent.cs/#L188">View Source</a>
   </span>
   <a id="Global_WaterComponent_OnTriggerStart_" data-uid="Global.WaterComponent.OnTriggerStart*"></a>
   <h4 id="Global_WaterComponent_OnTriggerStart_IntActor_" data-uid="Global.WaterComponent.OnTriggerStart(IntActor)">OnTriggerStart(IntActor)</h4>
@@ -733,7 +774,7 @@ public class WaterComponent : IntTrigger, ISavableObject&lt;IntObjectSaveData&gt
     <a href="https://github.com/zsilliman/Ascend/new/master/apiSpec/new?filename=Global_WaterComponent_Start.md&amp;value=---%0Auid%3A%20Global.WaterComponent.Start%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/World/Weather/Water/WaterComponent.cs/#L36">View Source</a>
+    <a href="https://github.com/zsilliman/Ascend/blob/master/Assets/Objects &amp; Components/World/Weather/Water/WaterComponent.cs/#L38">View Source</a>
   </span>
   <a id="Global_WaterComponent_Start_" data-uid="Global.WaterComponent.Start*"></a>
   <h4 id="Global_WaterComponent_Start" data-uid="Global.WaterComponent.Start">Start()</h4>

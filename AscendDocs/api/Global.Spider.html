@@ -101,11 +101,15 @@
     <div><a class="xref" href="Global.ISavableObject-1.html">ISavableObject</a>&lt;<a class="xref" href="Global.IntObjectSaveData.html">IntObjectSaveData</a>&gt;</div>
     <div><a class="xref" href="Global.IEntity.html">IEntity</a></div>
     <div><a class="xref" href="Global.ICollectableInterface.html">ICollectableInterface</a></div>
+    <div><a class="xref" href="Global.ISpawnable.html">ISpawnable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_AlwaysDrawGizmos">IntEnemy.AlwaysDrawGizmos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_EnemyUIEnabled">IntEnemy.EnemyUIEnabled</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_MaxDropTileDistance">IntEnemy.MaxDropTileDistance</a>
@@ -132,6 +136,12 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_MaxFallSpeed">IntEnemy.MaxFallSpeed</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_POISON_DISPEL_TIMER">IntEnemy.POISON_DISPEL_TIMER</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_POISON_PROC_TIMER">IntEnemy.POISON_PROC_TIMER</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_tilemap">IntEnemy.tilemap</a>
     </div>
     <div>
@@ -144,6 +154,9 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_IsAlive">IntEnemy.IsAlive</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SpawnProperties">IntEnemy.SpawnProperties</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_CanRepelEnemy">IntEnemy.CanRepelEnemy()</a>
     </div>
     <div>
@@ -153,10 +166,19 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpInitialVelocity_System_Single_System_Single_">IntEnemy.ComputeJumpInitialVelocity(float, float)</a>
     </div>
     <div>
-      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_TakeDamage_System_Int32_System_Boolean_System_Boolean_">IntEnemy.TakeDamage(int, bool, bool)</a>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpHangTimeFromVelocity_System_Single_System_Single_">IntEnemy.ComputeJumpHangTimeFromVelocity(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ComputeJumpHangTimeFromHeight_System_Single_System_Single_">IntEnemy.ComputeJumpHangTimeFromHeight(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_TakeDamage_System_Int32_System_Boolean_System_Boolean_DamageType_">IntEnemy.TakeDamage(int, bool, bool, DamageType)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SetCurrentShieldHealth_System_Int32_">IntEnemy.SetCurrentShieldHealth(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_SetPoisoned_System_Int32_">IntEnemy.SetPoisoned(int)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSightRayOrigin">IntEnemy.GetSightRayOrigin()</a>
@@ -169,6 +191,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_IsCollected">IntEnemy.IsCollected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_StaticMoveUpdate">IntEnemy.StaticMoveUpdate()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpriteFlip_System_Boolean_System_Boolean_">IntEnemy.GetSpriteFlip(bool, bool)</a>
@@ -216,7 +241,7 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnSpike_IntSolid_">IntEnemy.OnSpike(IntSolid)</a>
     </div>
     <div>
-      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawDebugAuras">IntEnemy.OnDrawDebugAuras()</a>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawDebugGizmos">IntEnemy.OnDrawDebugGizmos()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_DebugDrawTileVision">IntEnemy.DebugDrawTileVision()</a>
@@ -225,7 +250,22 @@
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GizmosDrawTileVision">IntEnemy.GizmosDrawTileVision()</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GizmosDrawRequiredSpace">IntEnemy.GizmosDrawRequiredSpace()</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnDrawGizmos">IntEnemy.OnDrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpawnProperties">IntEnemy.GetSpawnProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_OnLocalSpaceSpawnBoundsSet_UnityEngine_Vector2Int_UnityEngine_Vector2Int_">IntEnemy.OnLocalSpaceSpawnBoundsSet(Vector2Int, Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_ResolveSpawnLocation">IntEnemy.ResolveSpawnLocation()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntEnemy.html#Global_IntEnemy_GetSpawnLocationFromBounds_UnityEngine_Vector3_UnityEngine_Vector3_">IntEnemy.GetSpawnLocationFromBounds(Vector3, Vector3)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_HurtBySpike">IntActor.HurtBySpike</a>
@@ -252,6 +292,9 @@
       <a class="xref" href="Global.IntActor.html#Global_IntActor_WindInfluence">IntActor.WindInfluence</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTakeDamageCallback">IntActor.OnTakeDamageCallback</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_RidingSolid">IntActor.RidingSolid</a>
     </div>
     <div>
@@ -270,6 +313,9 @@
       <a class="xref" href="Global.IntActor.html#Global_IntActor_GetAABBIntCollider">IntActor.GetAABBIntCollider()</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_EnsureAABBIntColliderSet">IntActor.EnsureAABBIntColliderSet()</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_IsRiding_IntSolid_">IntActor.IsRiding(IntSolid)</a>
     </div>
     <div>
@@ -283,6 +329,12 @@
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_SolidContainsPoint_UnityEngine_Vector2Int_">IntActor.SolidContainsPoint(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_RegisterOnTakeDamageCallback_IntObject_Action_">IntActor.RegisterOnTakeDamageCallback(IntObject.Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_UnregisterOnTakeDamageCallback_IntObject_Action_">IntActor.UnregisterOnTakeDamageCallback(IntObject.Action)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_OnTakeDamage_System_Int32_">IntActor.OnTakeDamage(int)</a>
@@ -328,6 +380,24 @@
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_DropDownOneWay">IntActor.DropDownOneWay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_activeWater">IntActor.activeWater</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetSubmergedPercentage">IntActor.GetSubmergedPercentage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_GetSubmergedPercentage_UnityEngine_Vector2Int_">IntActor.GetSubmergedPercentage(Vector2Int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_IsInWater">IntActor.IsInWater</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnEnterWater_WaterComponent_System_Single_">IntActor.OnEnterWater(WaterComponent, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntActor.html#Global_IntActor_OnExitWater_WaterComponent_">IntActor.OnExitWater(WaterComponent)</a>
     </div>
     <div>
       <a class="xref" href="Global.IntActor.html#Global_IntActor_ApplyWind_UnityEngine_Vector2_">IntActor.ApplyWind(Vector2)</a>
@@ -426,6 +496,9 @@
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SaveObject">IntObject.SaveObject</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsInSetPiece">IntObject.IsInSetPiece</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_Init">IntObject.Init()</a>
     </div>
     <div>
@@ -447,6 +520,9 @@
       <a class="xref" href="Global.IntObject.html#Global_IntObject_UnregisterKilledCallback_IntObject_Action_">IntObject.UnregisterKilledCallback(IntObject.Action)</a>
     </div>
     <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_IsContainedInRect_UnityEngine_Rect_">IntObject.IsContainedInRect(Rect)</a>
+    </div>
+    <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SetStatus_ObjectStatus_">IntObject.SetStatus(ObjectStatus)</a>
     </div>
     <div>
@@ -466,6 +542,9 @@
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_SleepObject">IntObject.SleepObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.IntObject.html#Global_IntObject_OptimizeSleepObject">IntObject.OptimizeSleepObject()</a>
     </div>
     <div>
       <a class="xref" href="Global.IntObject.html#Global_IntObject_WakeObject">IntObject.WakeObject()</a>
@@ -538,7 +617,7 @@
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
   <h5 id="Global_Spider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Spider : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity, ICollectableInterface</code></pre>
+    <pre><code class="lang-csharp hljs">public class Spider : IntEnemy, ISavableObject&lt;IntObjectSaveData&gt;, IEntity, ICollectableInterface, ISpawnable</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -772,7 +851,7 @@ public bool EaseFromCeiling</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -830,7 +909,7 @@ public bool EaseFromCeiling</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1300,7 +1379,7 @@ public float SpringRate</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1478,7 +1557,7 @@ public float SpringRate</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">isAnimated</span></td>
         <td></td>
       </tr>
@@ -1610,6 +1689,9 @@ public float SpringRate</code></pre>
   </div>
   <div>
       <a class="xref" href="Global.ICollectableInterface.html">ICollectableInterface</a>
+  </div>
+  <div>
+      <a class="xref" href="Global.ISpawnable.html">ISpawnable</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
