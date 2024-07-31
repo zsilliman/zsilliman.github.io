@@ -1,0 +1,50 @@
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+
+blockquote {
+    background: #E6F2E6;
+    border-left: 3px solid #408040;
+    font-style: italic;
+    padding-left: 5px;
+    margin-left: 2px;
+}
+
+pre {
+    background: #2F3132;
+    border-left: 5px solid #345678;
+    padding: 5px;
+    margin-left: 2px;
+}
+pre:hover {
+    border-left: 5px solid #55AAFF;
+}
+
+code {
+    background: #2F3132;
+    font-family: JetBrains Mono NL, Courier New, Monospaced;
+    font-size: 0.9em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table {
+    border-spacing: 0px;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+th, td {
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+th {
+    background: #D4D4D4;
+    font-weight: 600;
+}
