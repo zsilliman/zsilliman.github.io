@@ -5,7 +5,8 @@
  * page.author: author of the page
  * page.date: date of the page
  -->
- <html>
+ <!DOCTYPE html>
+ <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
@@ -202,9 +203,9 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
     });
 </script>
 		<div class="z-10 flex flex-col overflow-x-hidden scrollbar-hide w-screen h-auto">
-			<div class="z-10 w-screen h-80 bg-cover bg-island-backdrop flex justify-center items-center">
-				<div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-10 bg-blend-overlay shadow-lg bg-opacity-5 bg-black text-gray-950">
-					<h1 class="text-4xl mt-0 pt-0"><b>Projects</b></h1>
+			<div class="z-10 w-screen h-80 bg-cover flex justify-center items-center bg-center" style="background-image: url('/assets/images/islands/Island Backdrop.png');">
+				<div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-10 ">
+					<h1 class="text-6xl mt-0 pt-0"><b>Projects</b></h1>
 					
 					<p>By Zachary Silliman <span class="text-gray-600 italic"></span></p>
 					
@@ -214,7 +215,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 				
 
     <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/app-games.png"/>
+    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/apps-games.png"/>
     <div class="pl-6 flex flex-col">
         <h1 class="text-4xl mb-1">Apps & Games</h1>
         
@@ -256,7 +257,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 
 
     <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/bassbot.png"/>
+    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/bassbot icon.png"/>
     <div class="pl-6 flex flex-col">
         <h1 class="text-4xl mb-1">Academic Projects</h1>
         
@@ -314,8 +315,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 </div>
 <!-- Footer end -->
 	</body>
-	</html>
-	
 	<!--
  * id: id of the component to add this renderer to
  * background_color: color of the background (0x000000)
@@ -348,7 +347,8 @@ function OnMouseMoved(event) {
 
 // spawn a new cube given the x,y,z coordinate
 function CreateCube(x, y, z, color) {
-    const geometry = new THREE.BoxGeometry(.5, .5, .3);
+    const geometry = new THREE.BoxGeometry(1, 1, .6);
+    //const geometry = new THREE.SphereGeometry(.5, 8, 6)
 
     const material = new THREE.MeshPhongMaterial({color: color});
 
@@ -416,3 +416,5 @@ function init(canvas_id, clear_color, cube_color) {
 
 init("post_backdrop", 4872025, 11584689);
 </script>
+	</html>
+	

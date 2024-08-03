@@ -5,7 +5,8 @@
  * page.author: author of the page
  * page.date: date of the page
  -->
-<html>
+ <!DOCTYPE html>
+ <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title></title>
@@ -202,13 +203,13 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
     });
 </script>
 	<div class="z-10 flex flex-col overflow-x-hidden scrollbar-hide w-screen h-auto">
-        <div class="z-10 w-screen h-80 bg-cover bg-island-backdrop flex justify-center items-center">
-            <div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-10 bg-blend-overlay shadow-lg bg-opacity-5 bg-black text-gray-950">
-                <h1 class="text-4xl mt-0 pt-0"><b>404</b></h1>
-                
+        <div class="z-10 w-screen h-80 bg-cover flex justify-center items-center bg-center" style="background-image: url('/assets/images/islands/Island Backdrop.png');">
+            <div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-10 ">
+                <h1 class="text-6xl mt-0 pt-0"><b>404</b></h1>
             </div>
         </div>
-        <div class="font-mono mx-auto my-0 w-[60%] h-auto bg-dark-gray drop-shadow-2xl py-16 px-10 shadow-lg text-gray-50">
+        <div class="font-mono mx-auto my-0 w-3/4 h-auto bg-dark-gray drop-shadow-2xl py-24 px-24 shadow-lg text-gray-50">
+            
             <div class="text-center font-mono">
   <h1 class="text-5xl">404</h1>
 
@@ -216,6 +217,10 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
   <p>The requested page could not be found.</p>
 </div>
 
+            <a class="absolute top-4 left-4 transition-opacity duration-500 ease-in-out hover:scale-125" href="/DevLog">
+                <svg class="w-8 h-8 stroke-gray-400 hover:stroke-gray-100 stroke-2 rotate-90" viewBox="0 0 30 30"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
+            </a>
+            <p class="absolute top-4 right-24 italic text-gray-400"> posted by <span class=""></span> on <span class=""></span></p>
         </div>
 	</div>
     <!-- Footer start -->
@@ -262,7 +267,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 </div>
 <!-- Footer end -->
 </body>
-</html>
 
 <!--
  * id: id of the component to add this renderer to
@@ -296,7 +300,8 @@ function OnMouseMoved(event) {
 
 // spawn a new cube given the x,y,z coordinate
 function CreateCube(x, y, z, color) {
-    const geometry = new THREE.BoxGeometry(.5, .5, .3);
+    const geometry = new THREE.BoxGeometry(1, 1, .6);
+    //const geometry = new THREE.SphereGeometry(.5, 8, 6)
 
     const material = new THREE.MeshPhongMaterial({color: color});
 
@@ -364,3 +369,4 @@ function init(canvas_id, clear_color, cube_color) {
 
 init("post_backdrop", 4872025, 11584689);
 </script>
+</html>
