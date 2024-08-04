@@ -20,11 +20,18 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 -->
 
 <style>
+    ul {
+        margin-left: 0px;
+        padding-left: 0px;
+        list-style-type: none;
+    }
+
     ul.breadcrumb li+li::before {
         content: "\276F";
         padding-left: 8px;
         padding-right: 4px;
         color: inherit;
+        list-style-type: circle;
     }
 
     ul.breadcrumb li span {
@@ -74,49 +81,49 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                 </h3>
                 <ul class="mb-8 text-xl font-mono">
                     <li>
-                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/">
                             <span class="select-none">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/DevLog">
                             <span class="select-none">DevLog</span>
                         </a>
                     </li>
                     <li>
-                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/WorkExperience">
                             <span class="select-none">Work Experience</span>
                         </a>
                     </li>
                     <li>
-                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/Projects">
                             <span class="select-none">Projects</span>
                         </a>
                         <ul class="ml-4 mb-8 text-sm">
                             <li>
-                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/AppsGames">
                                     <span class="select-none">Apps & Games</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/GraphicsProjects">
                                     <span class="select-none">Graphics Projects</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/PersonalProjects">
                                     <span class="select-none">Personal Projects</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/AcademicProjects">
                                     <span class="select-none">Academic Projects</span>
                                 </a>
@@ -224,7 +231,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         <p class="text-md text-gray-400">As part of my advanced game development course, I, alongside six others, built a mobile game called dive.  In this game the user manipulates the world around the diver, trying to safely escort him to the sea floor.</p>
     </div>
     
-    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="">read more</a>
+    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="/Dive">read more</a>
     
 </div>
 
@@ -240,7 +247,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         <p class="text-md text-gray-400">As a final project in my embedded operating systems course, myself and two others developed a robot that could play bass guitar. It was programmed in Python and interfaced with hardware using GPIO pins on a Raspberry Pi.</p>
     </div>
     
-    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="">read more</a>
+    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="https://courses.ece.cornell.edu/ece5990/ECE5725_Spring2019_Projects/bassbotwebsite/index.html">read more</a>
     
 </div>
 
@@ -256,7 +263,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         <p class="text-md text-gray-400">I took a computer graphics course in which I studied the mathematics behind rendering scenes. It included topics like ray tracing, rasterization, lighting, shaders, textures, and animation.</p>
     </div>
     
-    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="">read more</a>
+    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="/AcademicGraphicsProjects">read more</a>
     
 </div>
 
@@ -272,8 +279,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         <p class="text-md text-gray-400">As a final project in our machine learning class, I implemented a classifier that could determine whether Donald Trump's tweets were written himself or by his cabinet. Written in Python.</p>
     </div>
     
-    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="">read more</a>
-    
 </div>
 
 
@@ -288,8 +293,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         <p class="text-md text-gray-400">As part of a semester-long project course, I was asked to design and implement an operating system that supported multiple processes as well as disk and network input/output. Written in C.</p>
     </div>
     
-    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="">read more</a>
-    
 </div>
 
 
@@ -303,8 +306,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         
         <p class="text-md text-gray-400">Over the course of the semester I designed and implemented a 32-bit pipelined MIPS processor using a logic simulation tool called logisim.</p>
     </div>
-    
-    <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="">read more</a>
     
 </div>
 

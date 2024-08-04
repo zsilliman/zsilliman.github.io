@@ -20,11 +20,18 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 -->
 
 <style>
+    ul {
+        margin-left: 0px;
+        padding-left: 0px;
+        list-style-type: none;
+    }
+
     ul.breadcrumb li+li::before {
         content: "\276F";
         padding-left: 8px;
         padding-right: 4px;
         color: inherit;
+        list-style-type: circle;
     }
 
     ul.breadcrumb li span {
@@ -74,49 +81,49 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                 </h3>
                 <ul class="mb-8 text-xl font-mono">
                     <li>
-                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/">
                             <span class="select-none">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/DevLog">
                             <span class="select-none">DevLog</span>
                         </a>
                     </li>
                     <li>
-                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/WorkExperience">
                             <span class="select-none">Work Experience</span>
                         </a>
                     </li>
                     <li>
-                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/Projects">
                             <span class="select-none">Projects</span>
                         </a>
                         <ul class="ml-4 mb-8 text-sm">
                             <li>
-                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/AppsGames">
                                     <span class="select-none">Apps & Games</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/GraphicsProjects">
                                     <span class="select-none">Graphics Projects</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/PersonalProjects">
                                     <span class="select-none">Personal Projects</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/AcademicProjects">
                                     <span class="select-none">Academic Projects</span>
                                 </a>
@@ -209,7 +216,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             </div>
         </div>
         <div class="font-mono mx-auto my-0 w-3/4 h-auto bg-dark-gray drop-shadow-2xl py-24 px-24 shadow-lg text-gray-50">
-            
             <div class="text-center font-mono">
   <h1 class="text-5xl">404</h1>
 
@@ -217,10 +223,10 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
   <p>The requested page could not be found.</p>
 </div>
 
-            <a class="absolute top-4 left-4 transition-opacity duration-500 ease-in-out hover:scale-125" href="/DevLog">
+            <div class="absolute top-4 left-4 transition-opacity duration-500 ease-in-out hover:scale-125" onclick="history.back()">
                 <svg class="w-8 h-8 stroke-gray-400 hover:stroke-gray-100 stroke-2 rotate-90" viewBox="0 0 30 30"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
-            </a>
-            <p class="absolute top-4 right-24 italic text-gray-400"> posted by <span class=""></span> on <span class=""></span></p>
+            </div>
+            <p class="absolute top-4 right-24 italic text-gray-400">  </p>
         </div>
 	</div>
     <!-- Footer start -->
@@ -265,7 +271,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         </p>
     </div>
 </div>
-<!-- Footer end -->
+<!-- Footer end --> 
 </body>
 
 <!--

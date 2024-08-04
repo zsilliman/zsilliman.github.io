@@ -1,0 +1,389 @@
+<!--
+ * page.banner: url to pass as background image
+ * page.color: configured color in tailwindcss config file
+ * page.title: title of the page (displayed in the banner)
+ * page.author: author of the page
+ * page.date: date of the page
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/markdown.css">
+</head>
+<body>
+    <div id="post_backdrop" class="fixed top-0 left-0 w-screen h-screen z-[-10]"></div>
+    <!--
+Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide any of your page content!
+-->
+
+<style>
+    ul {
+        margin-left: 0px;
+        padding-left: 0px;
+        list-style-type: none;
+    }
+
+    ul.breadcrumb li+li::before {
+        content: "\276F";
+        padding-left: 8px;
+        padding-right: 4px;
+        color: inherit;
+        list-style-type: circle;
+    }
+
+    ul.breadcrumb li span {
+        opacity: 60%;
+    }
+
+    #sidebar {
+        -webkit-transition: all 300ms cubic-bezier(0, 0.77, 0.58, 1);
+        transition: all 300ms cubic-bezier(0, 0.77, 0.58, 1);
+    }
+
+    #sidebar.show {
+        transform: translateX(0);
+    }
+
+    #sidebar ul li a.active {
+        background: #1f2937;
+        background-color: #1f2937;
+    }
+</style>
+
+<!-- Navbar start -->
+<nav id="navbar" class="fixed top-0 z-50 px-4 sm:justify-between">
+    <button id="btnSidebarToggler" type="button" class="py-4 text-2xl text-white hover:text-gray-200 bg-transparent">
+        <svg id="navClosed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-8 w-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg id="navOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="hidden h-8 w-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+</nav>
+<!-- Navbar end -->
+
+<!-- Sidebar start-->
+<div id="containerSidebar" class="fixed top-0 z-40">
+    <div class="navbar-menu fixed top-0 z-40">
+        <nav id="sidebar"
+            class="fixed top-0 left-0 bottom-0 flex w-3/4 -translate-x-full flex-col overflow-y-auto bg-gray-700 pt-0 pb-8 sm:max-w-xs lg:w-80">
+            
+            <!-- one category / navigation group -->
+            <div class="px-4 pb-6 pt-12">
+                <h3 class="mb-2 text-lg font-mono uppercase text-gray-500">
+                    Main
+                </h3>
+                <ul class="mb-8 text-xl font-mono">
+                    <li>
+                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
+                            href="/">
+                            <span class="select-none">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
+                            href="/DevLog">
+                            <span class="select-none">DevLog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
+                            href="/WorkExperience">
+                            <span class="select-none">Work Experience</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
+                            href="/Projects">
+                            <span class="select-none">Projects</span>
+                        </a>
+                        <ul class="ml-4 mb-8 text-sm">
+                            <li>
+                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
+                                    href="/AppsGames">
+                                    <span class="select-none">Apps & Games</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
+                                    href="/GraphicsProjects">
+                                    <span class="select-none">Graphics Projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
+                                    href="/PersonalProjects">
+                                    <span class="select-none">Personal Projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
+                                    href="/AcademicProjects">
+                                    <span class="select-none">Academic Projects</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- navigation group end-->
+
+            <div class="absolute bottom-0 pl-8 ml-10 pb-4 mb-0 flex flex-col justify-center items-center">
+                
+                <a href="https://github.com/zsilliman" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
+                        <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                        </svg>
+                        Github
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
+                        <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                            <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>
+                        </svg>
+                        LinkedIn
+                    </div>
+                </a>
+                <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Download Resume
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="mx-auto lg:ml-80"></div>
+</div>
+<!-- Sidebar end -->
+
+<main>
+    <!-- your content goes here -->
+</main>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        const navbar = document.getElementById("navbar");
+        const sidebar = document.getElementById("sidebar");
+        const btnSidebarToggler = document.getElementById("btnSidebarToggler");
+        const navClosed = document.getElementById("navClosed");
+        const navOpen = document.getElementById("navOpen");
+
+        const pathname = document.location.pathname.toLowerCase();
+        if (pathname === "/" || pathname.includes("index")) {
+            document.getElementById("home").classList.add("active");
+        } else if (pathname.includes("dev")) {
+            document.getElementById("devlog").classList.add("active");
+        } else if (pathname.includes("work")) {
+            document.getElementById("work").classList.add("active");
+        } else if (pathname.includes("games")) {
+            document.getElementById("games").classList.add("active");
+        } else if (pathname.includes("graphics")) {
+            document.getElementById("graphics").classList.add("active");
+        } else if (pathname.includes("personal")) {
+            document.getElementById("personal").classList.add("active");
+        } else if (pathname.includes("academic")) {
+            document.getElementById("academic").classList.add("active");
+        } else if (pathname.includes("projects")) {
+            document.getElementById("projects").classList.add("active");
+        } 
+
+        sidebar.addEventListener("mouseleave", (e) => {
+            sidebar.classList.toggle("show");
+            navClosed.classList.toggle("hidden");
+            navOpen.classList.toggle("hidden");
+        });
+
+        btnSidebarToggler.addEventListener("click", (e) => {
+            e.preventDefault();
+            sidebar.classList.toggle("show");
+            navClosed.classList.toggle("hidden");
+            navOpen.classList.toggle("hidden");
+        });
+    });
+</script>
+	<div class="z-10 flex flex-col overflow-x-hidden scrollbar-hide w-screen h-auto">
+        <div class="z-10 w-screen h-80 bg-cover flex justify-center items-center bg-center" style="background-image: url('/assets/pages/cracked-ice/cracked-ice-banner.png');">
+            <div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-10 text-gray-700">
+                <h1 class="text-6xl mt-0 pt-0"><b>Cracked Ice</b></h1>
+            </div>
+        </div>
+        <div class="font-mono mx-auto my-0 w-3/4 h-auto bg-dark-gray drop-shadow-2xl py-24 px-24 shadow-lg text-gray-50">
+            <p>I stumbled across a reddit post about a 3D Cracked Ice Effect and I was curious to see if I could reverse engineer the effect myself. Without looking at a tutorial, this is my interpretation of the effect. Here is the link to the reddit post.</p>
+
+<div class="w-full h-auto flex justify-center items-center my-6 mx-0">
+    <video class="w-3/4 aspect-auto" src="/assets/pages/cracked-ice/cracked-ice-terrain.webm" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+</div>
+
+<p><b>3/13/2021 Update:</b> I decided to take the effect a step further with the following upgrades:</p>
+
+<p>The initial implementation always oriented the cracks vertically. Now cracks appear aligned to a triangle’s vertex normal attributes.</p>
+
+<p>I added refraction based on Snell’s law. I used an index of refraction of 1.00029 for the air, and an index of refraction of 1.31 for the ice.</p>
+
+<p>Lastly, the shader now works on Unity’s terrain object. This shader can be painted onto a terrain object with a maximum of 3 additional textures. Each of these textures can blend together smoothly. The video at the top demonstrates using a second texture for snow.</p>
+
+<div class="w-full h-auto flex justify-center items-center my-6 mx-0">
+    <video class="w-3/4 aspect-auto" src="/assets/pages/cracked-ice/cracked-ice.webm" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+</div>
+
+            <div class="absolute top-4 left-4 transition-opacity duration-500 ease-in-out hover:scale-125" onclick="history.back()">
+                <svg class="w-8 h-8 stroke-gray-400 hover:stroke-gray-100 stroke-2 rotate-90" viewBox="0 0 30 30"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
+            </div>
+            <p class="absolute top-4 right-24 italic text-gray-400">  posted by <span class="text-gray-700">Zachary Silliman</span> </p>
+        </div>
+	</div>
+    <!-- Footer start -->
+<div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-32 font-mono flex flex-col items-center justify-center bg-gray-200">
+    <div class="flex flex-row items-center justify-center pb-0 mb-0 mt-4">
+        <div class="mr-10 pb-0 mb-0">
+            <p>
+                <b>Contact me at:</b>
+                <br>
+                zacharysilliman@gmail.com
+                <br>
+                607-379-8344
+            </p>
+        </div>
+        <div class="z-45 ml-10 pb-0 mb-0 flex flex-row">
+            <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                Download Resume
+                </span>
+            </a>
+            <a href="https://github.com/zsilliman" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
+                    <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                    </svg>
+                    Github
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
+                    <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                        <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>
+                    </svg>
+                    LinkedIn
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="justify-center mb-2 mt-2">
+        <p>
+            © 2024 by Zachary Silliman
+        </p>
+    </div>
+</div>
+<!-- Footer end --> 
+</body>
+
+<!--
+ * id: id of the component to add this renderer to
+ * background_color: color of the background (0x000000)
+ * cube_color: color of the cubes (0x000000)
+-->
+
+<script type="module">
+import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+
+var canvas, camera, renderer, scene;
+
+// adjust canvas and camera when window is resized
+function onWindowResize() {
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+
+  renderer.setSize( window.innerWidth, window.innerHeight );
+}
+
+// move camera around based on cube positions
+function OnMouseMoved(event) {
+  var rel_pos_x = event.clientX - window.innerWidth/2;
+  var rel_pos_y = event.clientY - window.innerHeight/2;
+  camera.position.x = rel_pos_x * 0.0005;
+  camera.position.y = -rel_pos_y * 0.0005;
+}
+
+// spawn a new cube given the x,y,z coordinate
+function CreateCube(x, y, z, color) {
+    const geometry = new THREE.BoxGeometry(1, 1, .6);
+    //const geometry = new THREE.SphereGeometry(.5, 8, 6)
+
+    const material = new THREE.MeshPhongMaterial({color: color});
+
+    const cube = new THREE.Mesh(geometry, material);
+    cube.position.set(x, y, z);
+    scene.add(cube);
+}
+
+// render frame and request next frame
+function render(time) {
+  time *= 0.001;  // convert time to seconds
+  renderer.render(scene, camera);
+  requestAnimationFrame(render);
+}
+
+function init(canvas_id, clear_color, cube_color) {
+    //Setup Scene
+    canvas = document.getElementById(canvas_id);
+    console.log(`canvasid=${canvas_id}  clear_color=${clear_color}  cube_color=${cube_color}`);
+
+
+    renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setClearColor(clear_color);
+
+    const fov = 75;
+    const aspect = 2;  // the canvas default
+    const near = 0.1;
+    const far = 100;
+    camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+    camera.position.z = 5;
+
+    scene = new THREE.Scene();
+
+    {
+        const color = 0xFFFFFF;
+        const intensity = 1;
+        const light0 = new THREE.DirectionalLight(color, intensity);
+        light0.position.set(-1, 2, 4);
+        scene.add(light0);
+    }
+    {
+        const color = 0xFFFFFF;
+        const intensity = 1;
+        const light1 = new THREE.DirectionalLight(color, intensity);
+        light1.position.set(1, -2, -4);
+        scene.add(light1);
+    }
+
+    var x, y;
+    for (x=-10; x<=10; x++) {
+        for (y=-10; y<=10; y++) {
+            if ((x+y)%2 == 0)
+                CreateCube(x, y, 0, cube_color);
+        }
+    }
+
+    canvas.appendChild(renderer.domElement);
+    
+    window.addEventListener( 'resize', onWindowResize, false );
+    window.addEventListener('mousemove', OnMouseMoved, false );
+
+    onWindowResize();
+    requestAnimationFrame(render);
+}
+
+init("post_backdrop", 4872025, 11584689);
+</script>
+</html>

@@ -25,11 +25,18 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 -->
 
 <style>
+    ul {
+        margin-left: 0px;
+        padding-left: 0px;
+        list-style-type: none;
+    }
+
     ul.breadcrumb li+li::before {
         content: "\276F";
         padding-left: 8px;
         padding-right: 4px;
         color: inherit;
+        list-style-type: circle;
     }
 
     ul.breadcrumb li span {
@@ -79,49 +86,49 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                 </h3>
                 <ul class="mb-8 text-xl font-mono">
                     <li>
-                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/">
                             <span class="select-none">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/DevLog">
                             <span class="select-none">DevLog</span>
                         </a>
                     </li>
                     <li>
-                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/WorkExperience">
                             <span class="select-none">Work Experience</span>
                         </a>
                     </li>
                     <li>
-                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                             href="/Projects">
                             <span class="select-none">Projects</span>
                         </a>
                         <ul class="ml-4 mb-8 text-sm">
                             <li>
-                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/AppsGames">
                                     <span class="select-none">Apps & Games</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/GraphicsProjects">
                                     <span class="select-none">Graphics Projects</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/PersonalProjects">
                                     <span class="select-none">Personal Projects</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600"
+                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/AcademicProjects">
                                     <span class="select-none">Academic Projects</span>
                                 </a>
@@ -365,7 +372,7 @@ name_typewriter
     <div id="clouds" class="absolute top-0 w-screen h-screen z-10 text-gray-100"></div>
     
     <!-- Island 1: DevLog -->
-    <a href="/DevLog" id="devlog_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale hover:grayscale-0"">
+    <a href="/DevLog" id="devlog_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale-0 hover:grayscale"">
         <div class="absolute top-4 left-20">
             <h1 class="absolute top-0 left-0 font-mono text-center text-4xl font-bold text-black z-40">DevLog</h1>
             <h1 class="absolute top-1 left-1 font-mono text-center text-4xl font-bold z-40" href="">DevLog</h1>
@@ -374,7 +381,7 @@ name_typewriter
     </a>
 
     <!-- Island 2: Experience -->
-    <a href="/WorkExperience" id="experience_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale hover:grayscale-0"">
+    <a href="/WorkExperience" id="experience_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale-0 hover:grayscale"">
         <div class="absolute top-16 left-16 text-left">
             <h1 class="absolute top-0 left-0 font-mono text-4xl font-bold text-black z-40">Work<br>Experience</h1>
             <h1 class="absolute top-1 left-1 font-mono text-4xl font-bold z-40" href="">Work<br>Experience</h1>
@@ -383,7 +390,7 @@ name_typewriter
     </a>
 
     <!-- Island 2: Projects -->
-    <a href="/Projects" id="projects_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale hover:grayscale-0"">
+    <a href="/Projects" id="projects_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale-0 hover:grayscale"">
         <div class="absolute top-8 left-4">
             <h1 class="absolute top-0 left-0 font-mono text-center text-4xl font-bold text-black z-40">Projects</h1>
             <h1 class="absolute top-1 left-1 font-mono text-center text-4xl font-bold z-40" href="">Projects</h1>
@@ -392,7 +399,7 @@ name_typewriter
     </a>
 
     <!-- Cloud 1: GitHub -->
-    <a href="https://github.com/zsilliman" target="_blank" id="github_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale hover:grayscale-0"">
+    <a href="https://github.com/zsilliman" target="_blank" id="github_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale-0 hover:grayscale"">
         <div class="absolute top-0 left-0">
             <h1 class="absolute top-0 left-0 font-mono text-center text-4xl font-bold text-black z-40">GitHub</h1>
             <h1 class="absolute top-1 left-1 font-mono text-center text-4xl font-bold z-40" href="">GitHub</h1>
@@ -401,7 +408,7 @@ name_typewriter
     </a>
 
     <!-- Cloud 2: Resume -->
-    <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" id="resume_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale hover:grayscale-0"">
+    <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" id="resume_island" class="z-20 absolute flex flex-col justify-center hover:scale-125  text-gray-400 hover:text-gray-100 transition-all duration-700 cursor-pointer filter grayscale-0 hover:grayscale"">
         <div class="absolute top-0 left-0">
             <h1 class="absolute top-0 left-0 font-mono text-center text-4xl font-bold text-black z-40">Resume</h1>
             <h1 class="absolute top-1 left-1 font-mono text-center text-4xl font-bold z-40" href="">Resume</h1>
@@ -428,7 +435,8 @@ var resumeCloud = {x:0.23, y:0.8};
 
 var cached_mouse_pos = {x:0, y:0};
 
-window.requestAnimationFrame(Animate);
+Animate();
+document.addEventListener("DOMContentLoaded", ()=>{Animate();});
 
 window.onresize = ()=> {
     Animate();
@@ -473,18 +481,17 @@ function Animate(timestamp) {
     //Clouds
     UpdatePosition('github_island', git);
     UpdatePosition('resume_island', resume);
-
-    window.requestAnimationFrame(Animate);
 }
 
 function UpdatePosition(id, percentXY) {
     var x = window.innerWidth * percentXY.x;
     var y = window.innerHeight * percentXY.y;
-    var elm = document.getElementById(id);
-    var offsetx = elm.clientWidth / 2;
-    var offsety = elm.clientHeight / 2;
-    elm.style.left = x - offsetx;
-    elm.style.top = y - offsety;
+    var island_elm = document.getElementById(id);
+    var offsetx = island_elm.clientWidth / 2;
+    var offsety = island_elm.clientHeight / 2;
+    island_elm.style.left = x - offsetx + "px";
+    island_elm.style.top = y - offsety + "px";
+    console.log(`id=${id} elm=${island_elm}  x=${x - offsetx}  y=${y - offsety}`);
 }
 </script>
 
