@@ -8,7 +8,7 @@
  <!DOCTYPE html>
  <html lang="en">
 	<head>
-		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1" charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="/assets/css/main.css">
 		<link rel="stylesheet" href="/assets/css/markdown.css">
@@ -53,6 +53,11 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
     }
 </style>
 
+<!-- Close Navbar -->
+<div class="absolute w-screen h-screen" id="navExit">
+    <!-- your content goes here -->
+</div>
+
 <!-- Navbar start -->
 <nav id="navbar" class="fixed top-0 z-50 px-4 sm:justify-between">
     <button id="btnSidebarToggler" type="button" class="py-4 text-2xl text-white hover:text-gray-200 bg-transparent">
@@ -75,10 +80,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             class="fixed top-0 left-0 bottom-0 flex w-3/4 -translate-x-full flex-col overflow-y-auto bg-gray-700 pt-0 pb-8 sm:max-w-xs lg:w-80">
             
             <!-- one category / navigation group -->
-            <div class="px-4 pb-6 pt-12">
-                <h3 class="mb-2 text-lg font-mono uppercase text-gray-500">
-                    Main
-                </h3>
+            <div class="px-4 pb-6 pt-14">
                 <ul class="mb-8 text-xl font-mono">
                     <li>
                         <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
@@ -164,10 +166,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 </div>
 <!-- Sidebar end -->
 
-<main>
-    <!-- your content goes here -->
-</main>
-
 <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
         const navbar = document.getElementById("navbar");
@@ -175,6 +173,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         const btnSidebarToggler = document.getElementById("btnSidebarToggler");
         const navClosed = document.getElementById("navClosed");
         const navOpen = document.getElementById("navOpen");
+        const navExit = document.getElementById("navExit");
 
         const pathname = document.location.pathname.toLowerCase();
         if (pathname === "/" || pathname.includes("index")) {
@@ -199,6 +198,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             sidebar.classList.toggle("show");
             navClosed.classList.toggle("hidden");
             navOpen.classList.toggle("hidden");
+            navExit.classList.toggle("z-40");
         });
 
         btnSidebarToggler.addEventListener("click", (e) => {
@@ -206,6 +206,18 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             sidebar.classList.toggle("show");
             navClosed.classList.toggle("hidden");
             navOpen.classList.toggle("hidden");
+            navExit.classList.toggle("z-40");
+        });
+
+        navExit.addEventListener("click", (e) => {
+            if (sidebar.classList.contains("show")) {
+                sidebar.classList.remove("show");
+                navOpen.classList.remove("hidden");
+                navOpen.classList.add("hidden");
+                navClosed.classList.remove("hidden");
+                navExit.classList.remove("z-40");
+            }
+            
         });
     });
 </script>
@@ -218,17 +230,17 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 					
 				</div>
 			</div>
-			<div class="font-mono mx-auto my-0 w-[60%] h-auto pt-6 text-gray-50">
+			<div class="font-mono mx-0 md:mx-auto my-0 w-screen md:w-[60%] h-auto pt-6 text-gray-50">
 				
 
-    <div class="flex-row h-64 bg-dark-gray pl-0 pt-0 pb-0 pr-10 drop-shadow-2xl shadow-lg mb-6">
-    <div class="absolute w-64 h-64 left-0 top-0 bg-cover bg-center" style="background-image: url('/assets/icons/halfway-logo.png');"></div>
-    <div class="ml-64 pl-6 flex-col h-64 overflow-hidden">
+    <div class="flex flex-col md:flx-row h-auto w-screen md:w-auto md:h-64 bg-dark-gray pt-0 pb-0 md:pr-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="md:absolute w-full md:w-64 h-64 md:left-0 md:top-0 bg-cover bg-center" style="background-image: url('/assets/icons/halfway-logo.png');"></div>
+    <div class="px-4 mb-10 md:mb-0 md:ml-64 flex-col h-64 overflow-hidden">
         <h1 class="text-4xl mb-1">Ascend Progress Update</h1>
         
         <p class="text-sm font-extralight text-gray-500">posted by <span class="text-red-900 font-bold">Zachary Silliman</span> on <span class="text-red-900 font-bold">July 25, 2024</span></p>
         
-        <p class="text-md text-gray-300">Throughout development Ascend has taken a number of twists and turns. We’ve navigated a complex tree of branching ideas. We’ve gone deep down paths only to find ourselves at a dead-end. Here is a quick status update video showcasing where we are currently with our game.</p>
+        <p class="text-sm md:text-md text-gray-300">Throughout development Ascend has taken a number of twists and turns. We’ve navigated a complex tree of branching ideas. We’ve gone deep down paths only to find ourselves at a dead-end. Here is a quick status update video showcasing where we are currently with our game.</p>
     </div>
     
     <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="/2024/07/25/AscendProgressUpdate.html">read more</a>
@@ -237,14 +249,14 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 
 
 
-    <div class="flex-row h-64 bg-dark-gray pl-0 pt-0 pb-0 pr-10 drop-shadow-2xl shadow-lg mb-6">
-    <div class="absolute w-64 h-64 left-0 top-0 bg-cover bg-center" style="background-image: url('/assets/posts/sprite-socket-editor-tool/editor-labelled.png');"></div>
-    <div class="ml-64 pl-6 flex-col h-64 overflow-hidden">
+    <div class="flex flex-col md:flx-row h-auto w-screen md:w-auto md:h-64 bg-dark-gray pt-0 pb-0 md:pr-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="md:absolute w-full md:w-64 h-64 md:left-0 md:top-0 bg-cover bg-center" style="background-image: url('/assets/posts/sprite-socket-editor-tool/editor-labelled.png');"></div>
+    <div class="px-4 mb-10 md:mb-0 md:ml-64 flex-col h-64 overflow-hidden">
         <h1 class="text-4xl mb-1">Sprite Socket Editor Tool</h1>
         
         <p class="text-sm font-extralight text-gray-500">posted by <span class="text-red-900 font-bold">Zachary Silliman</span> on <span class="text-red-900 font-bold">July 24, 2024</span></p>
         
-        <p class="text-md text-gray-300">    Throughout the process of making a game, the need to create custom tools to solve problems is constantly arising. In this post I talk about solving the problem of attaching equipment to spritesheet-based characters. Unlike armature-based/rigged characters, spritesheets do not have well-defined transformable sockets. To attach objects to a character, I created this Sprite Socket Editor tool....</p>
+        <p class="text-sm md:text-md text-gray-300">    Throughout the process of making a game, the need to create custom tools to solve problems is constantly arising. In this post I talk about solving the problem of attaching equipment to spritesheet-based characters. Unlike armature-based/rigged characters, spritesheets do not have well-defined transformable sockets. To attach objects to a character, I created this Sprite Socket Editor tool....</p>
     </div>
     
     <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="/2024/07/24/SpriteSocketEditorTool.html">read more</a>
@@ -253,14 +265,14 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 
 
 
-    <div class="flex-row h-64 bg-dark-gray pl-0 pt-0 pb-0 pr-10 drop-shadow-2xl shadow-lg mb-6">
-    <div class="absolute w-64 h-64 left-0 top-0 bg-cover bg-center" style="background-image: url('/assets/posts/ascend-dialogue/dialogue-preview.png');"></div>
-    <div class="ml-64 pl-6 flex-col h-64 overflow-hidden">
+    <div class="flex flex-col md:flx-row h-auto w-screen md:w-auto md:h-64 bg-dark-gray pt-0 pb-0 md:pr-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="md:absolute w-full md:w-64 h-64 md:left-0 md:top-0 bg-cover bg-center" style="background-image: url('/assets/posts/ascend-dialogue/dialogue-preview.png');"></div>
+    <div class="px-4 mb-10 md:mb-0 md:ml-64 flex-col h-64 overflow-hidden">
         <h1 class="text-4xl mb-1">Ascend Dialogue System</h1>
         
         <p class="text-sm font-extralight text-gray-500">posted by <span class="text-red-900 font-bold">Zachary Silliman</span> on <span class="text-red-900 font-bold">February 1, 2023</span></p>
         
-        <p class="text-md text-gray-300">Ascend is a largely narrative driven game and to properly convey the story to the player, dialogue needs to be aesthetic, simple and dynamic. Different NPCs will have different dialogue depending on various in-game states. For example, an NPC might say two different things before and after the player defeats a boss. Additionally, many NPCs will have a fallback dialogue that repeats itself when ...</p>
+        <p class="text-sm md:text-md text-gray-300">Ascend is a largely narrative driven game and to properly convey the story to the player, dialogue needs to be aesthetic, simple and dynamic. Different NPCs will have different dialogue depending on various in-game states. For example, an NPC might say two different things before and after the player defeats a boss. Additionally, many NPCs will have a fallback dialogue that repeats itself when ...</p>
     </div>
     
     <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="/2023/02/01/AscendDialogueSystem.html">read more</a>
@@ -269,14 +281,14 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 
 
 
-    <div class="flex-row h-64 bg-dark-gray pl-0 pt-0 pb-0 pr-10 drop-shadow-2xl shadow-lg mb-6">
-    <div class="absolute w-64 h-64 left-0 top-0 bg-cover bg-center" style="background-image: url('/assets/posts/ascend-level-editor/multi-levels-example.png');"></div>
-    <div class="ml-64 pl-6 flex-col h-64 overflow-hidden">
+    <div class="flex flex-col md:flx-row h-auto w-screen md:w-auto md:h-64 bg-dark-gray pt-0 pb-0 md:pr-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="md:absolute w-full md:w-64 h-64 md:left-0 md:top-0 bg-cover bg-center" style="background-image: url('/assets/posts/ascend-level-editor/multi-levels-example.png');"></div>
+    <div class="px-4 mb-10 md:mb-0 md:ml-64 flex-col h-64 overflow-hidden">
         <h1 class="text-4xl mb-1">Ascend Level Editor</h1>
         
         <p class="text-sm font-extralight text-gray-500">posted by <span class="text-red-900 font-bold">Zachary Silliman</span> on <span class="text-red-900 font-bold">January 30, 2023</span></p>
         
-        <p class="text-md text-gray-300">In order to streamline level design and creation, I implemented an easy-to-use level editing tool. Ascend is subdivided into 6 worlds: the pit, the crossroads, the forest, the village, the lake and the ascent. Each world is composed of a variety of interconnected levels. As part of gameplay, the player needs to be able to seamlessly travel between levels and worlds. The custom level editor is d...</p>
+        <p class="text-sm md:text-md text-gray-300">In order to streamline level design and creation, I implemented an easy-to-use level editing tool. Ascend is subdivided into 6 worlds: the pit, the crossroads, the forest, the village, the lake and the ascent. Each world is composed of a variety of interconnected levels. As part of gameplay, the player needs to be able to seamlessly travel between levels and worlds. The custom level editor is d...</p>
     </div>
     
     <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="/2023/01/30/AscendLevelEditor.html">read more</a>
@@ -285,14 +297,14 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 
 
 
-    <div class="flex-row h-64 bg-dark-gray pl-0 pt-0 pb-0 pr-10 drop-shadow-2xl shadow-lg mb-6">
-    <div class="absolute w-64 h-64 left-0 top-0 bg-cover bg-center" style="background-image: url('/assets/posts/ascend-overview/ascend-overview-preview.png');"></div>
-    <div class="ml-64 pl-6 flex-col h-64 overflow-hidden">
+    <div class="flex flex-col md:flx-row h-auto w-screen md:w-auto md:h-64 bg-dark-gray pt-0 pb-0 md:pr-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="md:absolute w-full md:w-64 h-64 md:left-0 md:top-0 bg-cover bg-center" style="background-image: url('/assets/posts/ascend-overview/ascend-overview-preview.png');"></div>
+    <div class="px-4 mb-10 md:mb-0 md:ml-64 flex-col h-64 overflow-hidden">
         <h1 class="text-4xl mb-1">Ascend Project Overview</h1>
         
         <p class="text-sm font-extralight text-gray-500">posted by <span class="text-red-900 font-bold">Zachary Silliman</span> on <span class="text-red-900 font-bold">March 24, 2021</span></p>
         
-        <p class="text-md text-gray-300">In May 2020, a friend from Cornell and I started to develop a game we are currently calling Ascend. We had first worked together on the project Dive during my last semester at Cornell. Ascend is a metroidvania 2D platformer with a strong emphasis on the narrative. If I were to define it as the offspring of two games, its parents would be Hollow Knight and Celeste. The project is being developed...</p>
+        <p class="text-sm md:text-md text-gray-300">In May 2020, a friend from Cornell and I started to develop a game we are currently calling Ascend. We had first worked together on the project Dive during my last semester at Cornell. Ascend is a metroidvania 2D platformer with a strong emphasis on the narrative. If I were to define it as the offspring of two games, its parents would be Hollow Knight and Celeste. The project is being developed...</p>
     </div>
     
     <a target="" class="absolute bottom-4 right-6 hover:text-blue-500" href="/2021/03/24/AscendProjectOverview.html">read more</a>
@@ -303,8 +315,8 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 			</div>
 		</div>
 		<!-- Footer start -->
-<div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-32 font-mono flex flex-col items-center justify-center bg-gray-200">
-    <div class="flex flex-row items-center justify-center pb-0 mb-0 mt-4">
+<div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-fit md:h-32 font-mono flex flex-col items-center justify-center bg-gray-200 overflow-hidden">
+    <div class="flex flex-col md:flex-row items-center justify-center pb-0 mb-0 mt-4">
         <div class="mr-10 pb-0 mb-0">
             <p>
                 <b>Contact me at:</b>
@@ -314,13 +326,16 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                 607-379-8344
             </p>
         </div>
-        <div class="z-45 ml-10 pb-0 mb-0 flex flex-row">
-            <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Download Resume
-                </span>
+        <div class="z-45 ml-10 pb-0 mb-0 mt-3 md:mt-0 flex flex-col md:flex-row">
+            <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row">
+                    <svg class="w-4 h-4 me-2 mt-[2px]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="8 8 40 40">
+                        <path fill="#90CAF9" d="M40 45L8 45 8 3 30 3 40 13z"></path><path fill="#E1F5FE" d="M38.5 14L29 14 29 4.5z"></path><path fill="#1976D2" d="M16 21H33V23H16zM16 25H29V27H16zM16 29H33V31H16zM16 33H29V35H16z"></path>
+                    </svg>
+                    Resume
+                </div>
             </a>
-            <a href="https://github.com/zsilliman" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+            <a href="https://github.com/zsilliman" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                 <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
                     <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
@@ -328,7 +343,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                     Github
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+            <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative  flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                 <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
                     <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
                         <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>

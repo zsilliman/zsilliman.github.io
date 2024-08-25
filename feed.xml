@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-04T16:51:54-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Ascend Progress Update</title><link href="http://localhost:4000/2024/07/25/AscendProgressUpdate.html" rel="alternate" type="text/html" title="Ascend Progress Update" /><published>2024-07-25T00:00:00-04:00</published><updated>2024-07-25T00:00:00-04:00</updated><id>http://localhost:4000/2024/07/25/AscendProgressUpdate</id><content type="html" xml:base="http://localhost:4000/2024/07/25/AscendProgressUpdate.html"><![CDATA[<p>Throughout development Ascend has taken a number of twists and turns. We’ve navigated a complex tree of branching ideas. We’ve gone deep down paths only to find ourselves at a dead-end. Here is a quick status update video showcasing where we are currently with our game.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-25T16:20:33-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Ascend Progress Update</title><link href="http://localhost:4000/2024/07/25/AscendProgressUpdate.html" rel="alternate" type="text/html" title="Ascend Progress Update" /><published>2024-07-25T00:00:00-04:00</published><updated>2024-07-25T00:00:00-04:00</updated><id>http://localhost:4000/2024/07/25/AscendProgressUpdate</id><content type="html" xml:base="http://localhost:4000/2024/07/25/AscendProgressUpdate.html"><![CDATA[<p>Throughout development Ascend has taken a number of twists and turns. We’ve navigated a complex tree of branching ideas. We’ve gone deep down paths only to find ourselves at a dead-end. Here is a quick status update video showcasing where we are currently with our game.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-progress/ascend-update-july.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-progress/ascend-update-july.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>]]></content><author><name>Zachary Silliman</name></author><summary type="html"><![CDATA[Throughout development Ascend has taken a number of twists and turns. We’ve navigated a complex tree of branching ideas. We’ve gone deep down paths only to find ourselves at a dead-end. Here is a quick status update video showcasing where we are currently with our game.]]></summary></entry><entry><title type="html">Sprite Socket Editor Tool</title><link href="http://localhost:4000/2024/07/24/SpriteSocketEditorTool.html" rel="alternate" type="text/html" title="Sprite Socket Editor Tool" /><published>2024-07-24T00:00:00-04:00</published><updated>2024-07-24T00:00:00-04:00</updated><id>http://localhost:4000/2024/07/24/SpriteSocketEditorTool</id><content type="html" xml:base="http://localhost:4000/2024/07/24/SpriteSocketEditorTool.html"><![CDATA[<div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/sprite-socket-editor-tool/animated-sprite-preview.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/sprite-socket-editor-tool/animated-sprite-preview.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <p>Throughout the process of making a game, the need to create custom tools to solve problems is constantly arising. In this post I talk about solving the problem of attaching equipment to spritesheet-based characters. Unlike armature-based/rigged characters, spritesheets do not have well-defined transformable sockets. To attach objects to a character, I created this Sprite Socket Editor tool. This allows a creative to set positions, rotations and sorting offsets for sockets on a per-frame basis.</p>
@@ -27,7 +27,7 @@ With #4, the user can easily copy and paste between frames for a much faster wor
 Here is a short video demonstrating basic usage:</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/sprite-socket-editor-tool/editor-use-demo.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/sprite-socket-editor-tool/editor-use-demo.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <p>The interactions with the editor are meant to be easy to visualize and intuitive to edit. The user can simply drag socket handles to where they belong on the character’s sprite. They can then orient the handle to align with the character’s body part.</p>
@@ -65,7 +65,7 @@ Here is a short video demonstrating basic usage:</p>
 <p>As can be seen clearly in the screenshot, the way the character’s hand interacts/overlaps with the equipped object can be a little awkward. Currently this system does not support more complex overlap types. Using some sort of custom depth buffer could be a potential solution to this problem, but would likely require significant effort from an animator to implement. In our case, since the character is fairly small, these details are not too important.</p>]]></content><author><name>Zachary Silliman</name></author><summary type="html"><![CDATA[Throughout the process of making a game, the need to create custom tools to solve problems is constantly arising. In this post I talk about solving the problem of attaching equipment to spritesheet-based characters. Unlike armature-based/rigged characters, spritesheets do not have well-defined transformable sockets. To attach objects to a character, I created this Sprite Socket Editor tool. This allows a creative to set positions, rotations and sorting offsets for sockets on a per-frame basis.]]></summary></entry><entry><title type="html">Ascend Dialogue System</title><link href="http://localhost:4000/2023/02/01/AscendDialogueSystem.html" rel="alternate" type="text/html" title="Ascend Dialogue System" /><published>2023-02-01T00:00:00-05:00</published><updated>2023-02-01T00:00:00-05:00</updated><id>http://localhost:4000/2023/02/01/AscendDialogueSystem</id><content type="html" xml:base="http://localhost:4000/2023/02/01/AscendDialogueSystem.html"><![CDATA[<p>Ascend is a largely narrative driven game and to properly convey the story to the player, dialogue needs to be aesthetic, simple and dynamic. Different NPCs will have different dialogue depending on various in-game states. For example, an NPC might say two different things before and after the player defeats a boss. Additionally, many NPCs will have a fallback dialogue that repeats itself when there is no new information to share with the player. The following dialogue system supports these requirements while also simplifying the task for a level designer.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-dialogue/dialogue-demo.webm" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-dialogue/dialogue-demo.webm" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <h2 id="custom-dialogue-asset">Custom Dialogue Asset</h2>
@@ -97,7 +97,7 @@ In the above screenshot, the dialogue named “Default” is configured as the d
 <p>Within each world there are a variety of levels, represented by the yellow boxes in the above screenshot. Each level can be assigned a name to easily identify it in the viewport as well as in unity’s scene hierarchy window. The level editing toolkit contains a custom inspector used to easily add levels and place them in the specified location. This allows for simple and rapid level layouts (note that ctrl+z works too!). Since each level is its own isolated module, the level designer can easily reorder levels without significant refactoring. This also comes with the added optimization bonus of being able to disable all inactive levels while in-game.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-level-editor/layout-system.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-level-editor/layout-system.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <h2 id="inter-level-camera--door-system">Inter-Level Camera &amp; Door System</h2>
@@ -109,7 +109,7 @@ In the above screenshot, the dialogue named “Default” is configured as the d
 <p>While the player is within a particular level, the camera will automatically be bounded by the yellow rectangle seen in the viewport. The player can walk between levels at points where two sections intersect. When a player crosses into a new level, the camera will seamlessly transition. This functions much like the level layout of Celeste.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-level-editor/doors-demo.webm" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-level-editor/doors-demo.webm" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <p>To further augment this system, this level editing tool can autogenerate doors at intersections between levels that can open/close based on configurable conditions. Currently the following conditions are allowed: when all collectables are collected, all enemies are killed, or when a particular gamestate event is triggered. The above example shows the player collecting all collectables and landing safely on the ground before the doors open.</p>
@@ -117,7 +117,7 @@ In the above screenshot, the dialogue named “Default” is configured as the d
 <h2 id="parallax-system">Parallax System</h2>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-level-editor/parallax-demo.webm" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-level-editor/parallax-demo.webm" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <p>Part of the editor toolkit includes an easily configurable and preview-able parallax system. An artist can easily set up a background for a level and configure dimensions, fit, and wrap settings. Each parallax layer is a quad with a shader that will fit, wrap, and offset a texture based on the viewing camera. This allows the parallax layers to be viewed both in-game and in-editor. As an added bonus, since each layer is a quad sized to exactly to the dimensions of a level, there is no overflow outside the bounds of the level like most implementations of parallax.</p>
@@ -138,7 +138,7 @@ In the above screenshot, the dialogue named “Default” is configured as the d
 <p>In Ascend, we give the player the following verbs: walk, jump, double-jump, and dash. Using these verbs, the game features many standard platforming challenges such as precision platforming, spikes, and basic enemies. Although this formula is fun in many other games, we wanted to make the game feel unique so we created the concept of an aura. An aura can provide the player with some ability when the player passes through it while dashing. The ability is determined by the “item” the player is currently holding. The following abilities are currently implemented: dash reset, melee attack, ranged attack and temporary invisibility. If the player collides with an aura while walking or jumping, they die. If the player collides with an aura while dashing, they pass through the aura safely and use their active ability (only one ability is active at a time). Below is a video that demonstrates the melee item/ability.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-overview/ascend-overview-0.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-overview/ascend-overview-0.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <h2 id="what-is-the-story">What is the Story?</h2>
@@ -156,13 +156,13 @@ In the above screenshot, the dialogue named “Default” is configured as the d
 <p>​See a detailed breakdown of the Player’s physics here.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-overview/ascend-overview-1.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-overview/ascend-overview-1.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <p>Above is footage of the game showing the dash reset mechanic. Each enemy produces a new aura each time one of its herd is killed.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-overview/ascend-overview-2.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop=""></video>
+    <video class="w-3/4 aspect-auto" src="/assets/posts/ascend-overview/ascend-overview-2.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <p>Above is footage of a new enemy type we are working on. A hive of bees try to protect the queen bee inside their maze-like hive. If the player kills a worker bee, the queen gets angry and emits an aura. You must use her aura to defeat her. The worker bees use A* search to locate flowers in the hive and chase the player throughout the maze.</p>]]></content><author><name>Zachary Silliman</name></author><summary type="html"><![CDATA[In May 2020, a friend from Cornell and I started to develop a game we are currently calling Ascend. We had first worked together on the project Dive during my last semester at Cornell. Ascend is a metroidvania 2D platformer with a strong emphasis on the narrative. If I were to define it as the offspring of two games, its parents would be Hollow Knight and Celeste. The project is being developed in Unity.]]></summary></entry></feed>

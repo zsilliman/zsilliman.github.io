@@ -8,7 +8,7 @@
  <!DOCTYPE html>
  <html lang="en">
 	<head>
-		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1" charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="/assets/css/main.css">
 		<link rel="stylesheet" href="/assets/css/markdown.css">
@@ -53,6 +53,11 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
     }
 </style>
 
+<!-- Close Navbar -->
+<div class="absolute w-screen h-screen" id="navExit">
+    <!-- your content goes here -->
+</div>
+
 <!-- Navbar start -->
 <nav id="navbar" class="fixed top-0 z-50 px-4 sm:justify-between">
     <button id="btnSidebarToggler" type="button" class="py-4 text-2xl text-white hover:text-gray-200 bg-transparent">
@@ -75,10 +80,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             class="fixed top-0 left-0 bottom-0 flex w-3/4 -translate-x-full flex-col overflow-y-auto bg-gray-700 pt-0 pb-8 sm:max-w-xs lg:w-80">
             
             <!-- one category / navigation group -->
-            <div class="px-4 pb-6 pt-12">
-                <h3 class="mb-2 text-lg font-mono uppercase text-gray-500">
-                    Main
-                </h3>
+            <div class="px-4 pb-6 pt-14">
                 <ul class="mb-8 text-xl font-mono">
                     <li>
                         <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
@@ -164,10 +166,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 </div>
 <!-- Sidebar end -->
 
-<main>
-    <!-- your content goes here -->
-</main>
-
 <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
         const navbar = document.getElementById("navbar");
@@ -175,6 +173,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         const btnSidebarToggler = document.getElementById("btnSidebarToggler");
         const navClosed = document.getElementById("navClosed");
         const navOpen = document.getElementById("navOpen");
+        const navExit = document.getElementById("navExit");
 
         const pathname = document.location.pathname.toLowerCase();
         if (pathname === "/" || pathname.includes("index")) {
@@ -199,6 +198,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             sidebar.classList.toggle("show");
             navClosed.classList.toggle("hidden");
             navOpen.classList.toggle("hidden");
+            navExit.classList.toggle("z-40");
         });
 
         btnSidebarToggler.addEventListener("click", (e) => {
@@ -206,6 +206,18 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             sidebar.classList.toggle("show");
             navClosed.classList.toggle("hidden");
             navOpen.classList.toggle("hidden");
+            navExit.classList.toggle("z-40");
+        });
+
+        navExit.addEventListener("click", (e) => {
+            if (sidebar.classList.contains("show")) {
+                sidebar.classList.remove("show");
+                navOpen.classList.remove("hidden");
+                navOpen.classList.add("hidden");
+                navClosed.classList.remove("hidden");
+                navExit.classList.remove("z-40");
+            }
+            
         });
     });
 </script>
@@ -218,101 +230,115 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 					
 				</div>
 			</div>
-			<div class="font-mono mx-auto my-0 w-[60%] h-auto pt-6 text-gray-50">
+			<div class="font-mono mx-0 md:mx-auto my-0 w-screen md:w-[60%] h-auto pt-6 text-gray-50">
 				
 
-    <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/framestore_icon.png"/>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-4xl mb-1">Framestore Immersive Developer</h1>
+    <div class="flex flex-col md:flex-row bg-dark-gray py-6 px-3 md:px-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="flex items-center justify-center flex-none">
+        <img class="rounded-full w-52 h-52 flex-none" src="/assets/images/page_previews/framestore_icon.png"/>
+    </div>
+    <div class="pl-6 flex flex-col mb-4">
+        <h1 class="text-2xl md:text-4xl mb-1">Framestore Immersive Developer</h1>
         
-        <p class="text-xl text-red-900"><b>Spring 2021 - Present</b></p>
+        <p class="text-lg md:text-xl text-red-900"><b>Spring 2021 - Present</b></p>
         
-        <p class="text-md text-gray-400">I am currently a developer on a small team working on a breadth of Immersive projects. We use UE4/5 and a number of supporting tools to create projects like One Vanderbilt's <a class='underline' target='_blank' href='https://www.framestore.com/work/unity-and-transcendence?language=en'>Unity and Transcendence</a> experiences, Cadillac's <a class='underline' target='_blank' href='https://www.framestore.com/work/art-you?language=en'>Art of You</a> experience (Pixel streamed and in-person), and a number of other internal projects. Languages used include C++, Javascript (Node.js & Photoshop automation), Powershell, Batch, and Python.</p>
+        <p class="text-sm md:text-md text-gray-400">I am currently a developer on a small team working on a breadth of Immersive projects. We use UE4/5 and a number of supporting tools to create projects like One Vanderbilt's <a class='underline' target='_blank' href='https://www.framestore.com/work/unity-and-transcendence?language=en'>Unity and Transcendence</a> experiences, Cadillac's <a class='underline' target='_blank' href='https://www.framestore.com/work/art-you?language=en'>Art of You</a> experience (Pixel streamed and in-person), and a number of other internal projects. Languages used include C++, Javascript (Node.js & Photoshop automation), Powershell, Batch, and Python.</p>
     </div>
     
 </div>
 
 
 
-    <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/JRIA.png"/>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-4xl mb-1">JRI-A Information Security Practitioner</h1>
+    <div class="flex flex-col md:flex-row bg-dark-gray py-6 px-3 md:px-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="flex items-center justify-center flex-none">
+        <img class="rounded-full w-52 h-52 flex-none" src="/assets/images/page_previews/JRIA.png"/>
+    </div>
+    <div class="pl-6 flex flex-col mb-4">
+        <h1 class="text-2xl md:text-4xl mb-1">JRI-A Information Security Practitioner</h1>
         
-        <p class="text-xl text-red-900"><b>Summer 2019 - Spring 2021</b></p>
+        <p class="text-lg md:text-xl text-red-900"><b>Summer 2019 - Spring 2021</b></p>
         
-        <p class="text-md text-gray-400">I worked as an information security practitioner at JRI-A. JRI-A is a subsidiary of SMBC, a Japanese bank. Through this job I received SANS training in incident response, network monitoring and enterprise exploitation techniques.</p>
+        <p class="text-sm md:text-md text-gray-400">I worked as an information security practitioner at JRI-A. JRI-A is a subsidiary of SMBC, a Japanese bank. Through this job I received SANS training in incident response, network monitoring and enterprise exploitation techniques.</p>
     </div>
     
 </div>
 
 
 
-    <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/plate.png"/>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-4xl mb-1">Cornell Dining Employee</h1>
+    <div class="flex flex-col md:flex-row bg-dark-gray py-6 px-3 md:px-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="flex items-center justify-center flex-none">
+        <img class="rounded-full w-52 h-52 flex-none" src="/assets/images/page_previews/plate.png"/>
+    </div>
+    <div class="pl-6 flex flex-col mb-4">
+        <h1 class="text-2xl md:text-4xl mb-1">Cornell Dining Employee</h1>
         
-        <p class="text-xl text-red-900"><b>Spring 2018</b></p>
+        <p class="text-lg md:text-xl text-red-900"><b>Spring 2018</b></p>
         
-        <p class="text-md text-gray-400">During the spring semester of 2018, I worked as a student worker in a dining hall.  I helped prepare food, manage stations, and maintain dining hall sanitation policies.  I used this job to help fund my exploration of music and the bass guitar.</p>
+        <p class="text-sm md:text-md text-gray-400">During the spring semester of 2018, I worked as a student worker in a dining hall.  I helped prepare food, manage stations, and maintain dining hall sanitation policies.  I used this job to help fund my exploration of music and the bass guitar.</p>
     </div>
     
 </div>
 
 
 
-    <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/phone.png"/>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-4xl mb-1">Android App Developer for Religio</h1>
+    <div class="flex flex-col md:flex-row bg-dark-gray py-6 px-3 md:px-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="flex items-center justify-center flex-none">
+        <img class="rounded-full w-52 h-52 flex-none" src="/assets/images/page_previews/phone.png"/>
+    </div>
+    <div class="pl-6 flex flex-col mb-4">
+        <h1 class="text-2xl md:text-4xl mb-1">Android App Developer for Religio</h1>
         
-        <p class="text-xl text-red-900"><b>Summer 2017</b></p>
+        <p class="text-lg md:text-xl text-red-900"><b>Summer 2017</b></p>
         
-        <p class="text-md text-gray-400">I developed an app that connects the catholic community through social media. The platform encouraged communal event planning, fund raising and club group chats. I built the android app, using websockets and third-party networking libraries to connect the UI to the backend.</p>
+        <p class="text-sm md:text-md text-gray-400">I developed an app that connects the catholic community through social media. The platform encouraged communal event planning, fund raising and club group chats. I built the android app, using websockets and third-party networking libraries to connect the UI to the backend.</p>
     </div>
     
 </div>
 
 
 
-    <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/embassy_IT.png"/>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-4xl mb-1">Summer Hire, Information Systems Center</h1>
+    <div class="flex flex-col md:flex-row bg-dark-gray py-6 px-3 md:px-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="flex items-center justify-center flex-none">
+        <img class="rounded-full w-52 h-52 flex-none" src="/assets/images/page_previews/embassy_IT.png"/>
+    </div>
+    <div class="pl-6 flex flex-col mb-4">
+        <h1 class="text-2xl md:text-4xl mb-1">Summer Hire, Information Systems Center</h1>
         
-        <p class="text-xl text-red-900"><b>Summer 2016</b></p>
+        <p class="text-lg md:text-xl text-red-900"><b>Summer 2016</b></p>
         
-        <p class="text-md text-gray-400">For the second time, I was employed as a summer hire at the US Embassy in Kuwait, this time in the Information Systems Center (ISC).  I assisted the system administrator with maintenance tasks such as setting up printers, connecting computers to the domain, installing patches, crimping cat6 network cables and cloning hard drives.</p>
+        <p class="text-sm md:text-md text-gray-400">For the second time, I was employed as a summer hire at the US Embassy in Kuwait, this time in the Information Systems Center (ISC).  I assisted the system administrator with maintenance tasks such as setting up printers, connecting computers to the domain, installing patches, crimping cat6 network cables and cloning hard drives.</p>
     </div>
     
 </div>
 
 
 
-    <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/embassy_Q8.png"/>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-4xl mb-1">Summer Hire, General Services Office</h1>
+    <div class="flex flex-col md:flex-row bg-dark-gray py-6 px-3 md:px-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="flex items-center justify-center flex-none">
+        <img class="rounded-full w-52 h-52 flex-none" src="/assets/images/page_previews/embassy_Q8.png"/>
+    </div>
+    <div class="pl-6 flex flex-col mb-4">
+        <h1 class="text-2xl md:text-4xl mb-1">Summer Hire, General Services Office</h1>
         
-        <p class="text-xl text-red-900"><b>Summer 2015</b></p>
+        <p class="text-lg md:text-xl text-red-900"><b>Summer 2015</b></p>
         
-        <p class="text-md text-gray-400">I was employed as a summer hire at the US Embassy in Kuwait in the General Services Office (GSO). I organized file systems and prepared housing photos for new residents in the housing department. Additionally, I prepared for local events and delivered shipments with the Embassy warehouse.</p>
+        <p class="text-sm md:text-md text-gray-400">I was employed as a summer hire at the US Embassy in Kuwait in the General Services Office (GSO). I organized file systems and prepared housing photos for new residents in the housing department. Additionally, I prepared for local events and delivered shipments with the Embassy warehouse.</p>
     </div>
     
 </div>
 
 
 
-    <div class="flex flex-row bg-dark-gray p-10 drop-shadow-2xl py-6 px-10 shadow-lg mb-6">
-    <img class="rounded-full w-52 h-52" src="/assets/images/page_previews/tent.png"/>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-4xl mb-1">Camp Counselor, Camp Greenbrier for Boys</h1>
+    <div class="flex flex-col md:flex-row bg-dark-gray py-6 px-3 md:px-10 drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
+    <div class="flex items-center justify-center flex-none">
+        <img class="rounded-full w-52 h-52 flex-none" src="/assets/images/page_previews/tent.png"/>
+    </div>
+    <div class="pl-6 flex flex-col mb-4">
+        <h1 class="text-2xl md:text-4xl mb-1">Camp Counselor, Camp Greenbrier for Boys</h1>
         
-        <p class="text-xl text-red-900"><b>Summer 2014</b></p>
+        <p class="text-lg md:text-xl text-red-900"><b>Summer 2014</b></p>
         
-        <p class="text-md text-gray-400">After having been a camper for five years at Greenbrier, I decided to become a counselor. I took care of young campers for 7 weeks at a sleepaway camp during the summer of 2014. I managed Craft Hall activities, organizing Popsicle stick boat races as well as gimp and string workshops.</p>
+        <p class="text-sm md:text-md text-gray-400">After having been a camper for five years at Greenbrier, I decided to become a counselor. I took care of young campers for 7 weeks at a sleepaway camp during the summer of 2014. I managed Craft Hall activities, organizing Popsicle stick boat races as well as gimp and string workshops.</p>
     </div>
     
 </div>
@@ -321,8 +347,8 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 			</div>
 		</div>
 		<!-- Footer start -->
-<div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-32 font-mono flex flex-col items-center justify-center bg-gray-200">
-    <div class="flex flex-row items-center justify-center pb-0 mb-0 mt-4">
+<div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-fit md:h-32 font-mono flex flex-col items-center justify-center bg-gray-200 overflow-hidden">
+    <div class="flex flex-col md:flex-row items-center justify-center pb-0 mb-0 mt-4">
         <div class="mr-10 pb-0 mb-0">
             <p>
                 <b>Contact me at:</b>
@@ -332,13 +358,16 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                 607-379-8344
             </p>
         </div>
-        <div class="z-45 ml-10 pb-0 mb-0 flex flex-row">
-            <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Download Resume
-                </span>
+        <div class="z-45 ml-10 pb-0 mb-0 mt-3 md:mt-0 flex flex-col md:flex-row">
+            <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row">
+                    <svg class="w-4 h-4 me-2 mt-[2px]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="8 8 40 40">
+                        <path fill="#90CAF9" d="M40 45L8 45 8 3 30 3 40 13z"></path><path fill="#E1F5FE" d="M38.5 14L29 14 29 4.5z"></path><path fill="#1976D2" d="M16 21H33V23H16zM16 25H29V27H16zM16 29H33V31H16zM16 33H29V35H16z"></path>
+                    </svg>
+                    Resume
+                </div>
             </a>
-            <a href="https://github.com/zsilliman" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+            <a href="https://github.com/zsilliman" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                 <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
                     <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
@@ -346,7 +375,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                     Github
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+            <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative  flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                 <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
                     <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
                         <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>
