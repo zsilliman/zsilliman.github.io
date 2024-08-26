@@ -519,7 +519,7 @@ th {
 
 .bottom-4 {bottom:1rem;}
 
-.bottom-40 {bottom:10rem;}
+.bottom-\[19rem\] {bottom:19rem;}
 
 .left-0 {left:0px;}
 
@@ -978,6 +978,8 @@ th {
 .md\:visible {visibility:visible;}
 
 .md\:absolute {position:absolute;}
+
+.md\:bottom-40 {bottom:10rem;}
 
 .md\:left-0 {left:0px;}
 
