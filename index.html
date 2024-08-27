@@ -255,7 +255,8 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 		container = document.getElementById('three-container');
 
 		// Setup camera
-		camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000);
+		//camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000);
+		camera = new THREE.OrthographicCamera( width / - 2, width / 2, height / 2, height / - 2, 1, 1000 )
 		camera.position.y = 150;
 		camera.position.z = 500;
 
@@ -278,8 +279,8 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 		plane = new THREE.Mesh(new THREE.PlaneGeometry(2000, 400), new THREE.MeshBasicMaterial({
 			color: 0xe0e0e0
 		}));
-		plane.position.y = -125;
-		plane.rotation.x = -Math.PI / 2;
+		plane.position.y = -250;
+		plane.rotation.x = -Math.PI / 6;
 		scene.add(plane);
 
 		// Setup renderer
@@ -309,7 +310,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 						child.material = mat; //.color.setHex( 0xffffff );
 					}
 				} );
-				object.scale.setScalar(420);
+				object.scale.setScalar(500);
 				scene.add( object );
 				renderer.setAnimationLoop( animate );
 			},
@@ -331,12 +332,13 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 		effect.setSize(window.innerWidth, window.innerHeight);
 	}
 	//
+	var dir = -1;
 	function animate() {
 		if (sphere) {
 			var timer = Date.now() - start;
-			sphere.position.y = Math.abs( Math.sin( timer * 0.002 ) ) * 150 + 75;
-			sphere.rotation.x = timer * 0.0003;
-			sphere.rotation.z = timer * 0.0002;
+			sphere.position.y = Math.abs( Math.sin( timer * 0.002 ) ) * 175 + 25;
+			sphere.rotation.y = timer * 0.0001;
+			sphere.rotation.x = timer * 0.0004;
 		}
 		effect.render(scene, camera);
 	}
@@ -401,7 +403,7 @@ name_typewriter
     subtext_typewriter = new Typewriter(null, {
     loop: true,
     delay: 75,
-    strings: ["Unreal Developer.", "Unity Developer.", "Tools Programmer.", "Indie Game Developer", "Security Practitioner.", "AI Engineer.", "Cool Guy B)"],
+    strings: ["Unreal Developer.", "Unity Developer.", "Tools Programmer.", "Indie Game Developer", "Security Practitioner.", "AI Engineer."],
     autoStart: true,
     onCreateTextNode: customNodeCreatorFunctor('subtext'),
     onRemoveNode: onRemoveNodeFunctor('subtext'),
@@ -690,9 +692,6 @@ function UpdatePosition(id, percentXY) {
     </div>
 </div>
 </div>
-
-
-  <div class="absolute w-screen text-center top-4 text-4xl font-mono text-gray-100 underline">Site Under Construction</div>
 
   <!-- Footer start -->
 <div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-fit md:h-32 font-mono flex flex-col items-center justify-center bg-gray-200 overflow-hidden">
