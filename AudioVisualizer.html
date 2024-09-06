@@ -54,12 +54,10 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 </style>
 
 <!-- Close Navbar -->
-<div class="absolute w-screen h-[100svh]" id="navExit">
-    <!-- your content goes here -->
-</div>
+<div class="fixed w-screen h-[100svh]" id="navExit"></div>
 
 <!-- Navbar start -->
-<nav id="navbar" class="fixed top-0 z-50 px-4 sm:justify-between">
+<nav id="navbar" class="fixed top-0 z-[60] px-4 sm:justify-between">
     <button id="btnSidebarToggler" type="button" class="py-4 text-2xl text-white hover:text-gray-200 bg-transparent">
         <svg id="navClosed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="h-8 w-8">
@@ -74,7 +72,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 <!-- Navbar end -->
 
 <!-- Sidebar start-->
-<div id="containerSidebar" class="fixed top-0 z-40">
+<div id="containerSidebar" class="fixed top-0 z-[55]">
     <div class="navbar-menu fixed top-0 z-40">
         <nav id="sidebar"
             class="fixed top-0 left-0 bottom-0 flex w-3/4 -translate-x-full flex-col overflow-y-auto bg-gray-700 pt-0 pb-8 sm:max-w-xs lg:w-80">
@@ -136,29 +134,35 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             </div>
             <!-- navigation group end-->
 
-            <div class="absolute bottom-0 pl-8 ml-10 pb-4 mb-0 flex flex-col justify-center items-center">
+            <div class="absolute bottom-0 px-6 mx-auto pb-4 mb-0 flex flex-col">
                 
-                <a href="https://github.com/zsilliman" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                    <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
-                        <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                        </svg>
-                        Github
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                    <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
-                        <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
-                            <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>
-                        </svg>
-                        LinkedIn
-                    </div>
-                </a>
-                <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Download Resume
-                    </span>
-                </a>
+                <div class="z-45 mx-auto pb-0 mb-0 mt-3 md:mt-0 flex flex-col">
+                    <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row">
+                            <svg class="w-4 h-4 me-2 mt-[2px]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="8 8 40 40">
+                                <path fill="#90CAF9" d="M40 45L8 45 8 3 30 3 40 13z"></path><path fill="#E1F5FE" d="M38.5 14L29 14 29 4.5z"></path><path fill="#1976D2" d="M16 21H33V23H16zM16 25H29V27H16zM16 29H33V31H16zM16 33H29V35H16z"></path>
+                            </svg>
+                            Resume
+                        </div>
+                    </a>
+                    <a href="https://github.com/zsilliman" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
+                            <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                            </svg>
+                            Github
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative  flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
+                            <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                                <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>
+                            </svg>
+                            LinkedIn
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </nav>
     </div>
@@ -234,7 +238,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 <p>Using Unreal Engine I created a live audio visualizer particle effect. It can listen to any audio being produced from UE4 and respond to the beat of the music. I isolated the lower portion of the audio spectrum using the Sound Visualizations Plugin. Using the lower frequencies, I was able to better capture the beat of the music. The song playing in the above video is The Mother We Share by Chvrches.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/pages/audio-visualizer/desktop-visualizer.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
+    <video class="w-full md:w-3/4 aspect-auto" src="/assets/pages/audio-visualizer/desktop-visualizer.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
 <h2 id="vr-audio-visualizer">VR Audio Visualizer</h2>
@@ -242,7 +246,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 <p>Using Unreal Engine and python I created an audio visualizer that could respond to pre-processed audio. I generated a data table of frequencies that represented the spectrogram of the music over time using a python script. I ingested this data into Unreal and used it to visualize the audio in a VR headset.</p>
 
 <div class="w-full h-auto flex justify-center items-center my-6 mx-0">
-    <video class="w-3/4 aspect-auto" src="/assets/pages/audio-visualizer/vr-visualizer.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
+    <video class="w-full md:w-3/4 aspect-auto" src="/assets/pages/audio-visualizer/vr-visualizer.mp4" frameborder="0" allowfullscreen="" controls="" autoplay="" loop="" muted=""></video>
 </div>
 
             <div class="absolute top-4 left-4 transition-opacity duration-500 ease-in-out hover:scale-125 z-30" onclick="history.back()">
