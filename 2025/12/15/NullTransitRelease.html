@@ -4,20 +4,18 @@
  * page.title: title of the page (displayed in the banner)
  * page.author: author of the page
  * page.date: date of the page
- * page.links: page links
- * page.link_icons: link to icons
  -->
  <!DOCTYPE html>
  <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1" charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" href="/assets/css/main.css">
-		<link rel="stylesheet" href="/assets/css/markdown.css">
-	</head>
-	<body>
-		<div id="post_backdrop" class="fixed top-0 left-0 w-screen h-[100svh] z-[-10] blur-[2px]"></div>
-		<!--
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1" charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/markdown.css">
+</head>
+<body>
+    <div id="post_backdrop" class="fixed top-0 left-0 w-screen h-[100svh] z-[-10] blur-sm"></div>
+    <!--
 Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide any of your page content!
 -->
 
@@ -221,133 +219,26 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         });
     });
 </script>
-		<div class="z-10 flex flex-col overflow-x-hidden scrollbar-hide w-screen h-auto drop-shadow-md">
-			<div class="relative z-10 w-screen h-80 bg-cover flex justify-center items-center bg-center" style="background-image: url('/assets/images/page_banners/WorkBanner.png');">
-				<div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-10 text-gray-100">
-					<h1 class="text-6xl mt-0 pt-0 tracking-wide"><b>Work Experience</b></h1>
-					
-					<p>By Zachary Silliman <span class="text-gray-600 italic"></span></p>
-					
-				</div>
-				
-			</div>
-			<div class="font-mono mx-0 md:mx-auto my-0 w-screen md:w-[60%] h-auto pt-6 text-gray-50">
-				
+	<div class="z-10 flex flex-col overflow-x-hidden scrollbar-hide w-screen h-auto">
+        <div class="z-10 w-screen h-80 bg-cover flex justify-center items-center bg-center" style="background-image: url('/assets/posts/null-transit-release/null-transit-steam-banner.png');">
+            <div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-10 text-gray-100">
+                <h1 class="text-6xl mt-0 pt-0 tracking-wide"><b>Released on Steam!</b></h1>
+            </div>
+        </div>
+        <div class="font-mono mx-auto my-0 w-screen md:w-3/4 h-auto py-8 md:py-24 px-4 md:px-24 bg-dark-gray drop-shadow-2xl shadow-lg text-gray-50">
+            <p class="my-4 md:my-0 mr-4 md:mr-0 md:absolute md:top-4 md:right-8 italic text-gray-400">  posted by <span class="text-gray-100">Zachary Silliman</span>  on <span class="text-gray-100">December 15, 2025</span></p>
+            <p>It has been a long time coming, but we finally released Null Transit on Steam! Here’s a <a href="https://store.steampowered.com/app/3299100/Null_Transit/">Link</a>!</p>
 
-    <div class="rounded-l-full flex flex-col md:flex-row bg-dark-gray drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
-    <div class="flex items-center justify-center flex-none">
-        <img class="rounded-full w-64 h-64 flex-none" src="/assets/images/page_previews/framestore_icon.png"/>
-    </div>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-2xl md:text-4xl mb-1">Framestore Immersive Developer</h1>
-        
-        <p class="text-lg md:text-xl text-red-900"><b>Spring 2021 - Present</b></p>
-        
-        <p class="text-sm md:text-md text-gray-400">I am currently a developer on a small team working on a breadth of Immersive projects. We use UE4/5 and a number of supporting tools to create projects like One Vanderbilt's <a class='underline' target='_blank' href='https://www.framestore.com/work/unity-and-transcendence?language=en'>Unity and Transcendence</a> experiences, Cadillac's <a class='underline' target='_blank' href='https://www.framestore.com/work/art-you?language=en'>Art of You</a> experience (Pixel streamed and in-person), and a number of other internal projects. Languages used include C++, Javascript (Node.js & Photoshop automation), Powershell, Batch, and Python.</p>
-    </div>
-    
+<div class="w-full h-auto flex justify-center items-center my-6 mx-0">
+    <img class="w-full  md:w-3/4 aspect-auto" src="/assets/posts/null-transit-release/null-transit-steam-page.png" />
 </div>
 
-
-
-    <div class="rounded-l-full flex flex-col md:flex-row bg-dark-gray drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
-    <div class="flex items-center justify-center flex-none">
-        <img class="rounded-full w-64 h-64 flex-none" src="/assets/images/page_previews/JRIA.png"/>
-    </div>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-2xl md:text-4xl mb-1">JRI-A Information Security Practitioner</h1>
-        
-        <p class="text-lg md:text-xl text-red-900"><b>Summer 2019 - Spring 2021</b></p>
-        
-        <p class="text-sm md:text-md text-gray-400">I worked as an information security practitioner at JRI-A. JRI-A is a subsidiary of SMBC, a Japanese bank. Through this job I received SANS training in incident response, network monitoring and enterprise exploitation techniques.</p>
-    </div>
-    
-</div>
-
-
-
-    <div class="rounded-l-full flex flex-col md:flex-row bg-dark-gray drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
-    <div class="flex items-center justify-center flex-none">
-        <img class="rounded-full w-64 h-64 flex-none" src="/assets/images/page_previews/plate.png"/>
-    </div>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-2xl md:text-4xl mb-1">Cornell Dining Employee</h1>
-        
-        <p class="text-lg md:text-xl text-red-900"><b>Spring 2018</b></p>
-        
-        <p class="text-sm md:text-md text-gray-400">During the spring semester of 2018, I worked as a student worker in a dining hall.  I helped prepare food, manage stations, and maintain dining hall sanitation policies.  I used this job to help fund my exploration of music and the bass guitar.</p>
-    </div>
-    
-</div>
-
-
-
-    <div class="rounded-l-full flex flex-col md:flex-row bg-dark-gray drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
-    <div class="flex items-center justify-center flex-none">
-        <img class="rounded-full w-64 h-64 flex-none" src="/assets/images/page_previews/phone.png"/>
-    </div>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-2xl md:text-4xl mb-1">Android App Developer for Religio</h1>
-        
-        <p class="text-lg md:text-xl text-red-900"><b>Summer 2017</b></p>
-        
-        <p class="text-sm md:text-md text-gray-400">I developed an app that connects the catholic community through social media. The platform encouraged communal event planning, fund raising and club group chats. I built the android app, using websockets and third-party networking libraries to connect the UI to the backend.</p>
-    </div>
-    
-</div>
-
-
-
-    <div class="rounded-l-full flex flex-col md:flex-row bg-dark-gray drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
-    <div class="flex items-center justify-center flex-none">
-        <img class="rounded-full w-64 h-64 flex-none" src="/assets/images/page_previews/embassy_IT.png"/>
-    </div>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-2xl md:text-4xl mb-1">Summer Hire, Information Systems Center</h1>
-        
-        <p class="text-lg md:text-xl text-red-900"><b>Summer 2016</b></p>
-        
-        <p class="text-sm md:text-md text-gray-400">For the second time, I was employed as a summer hire at the US Embassy in Kuwait, this time in the Information Systems Center (ISC).  I assisted the system administrator with maintenance tasks such as setting up printers, connecting computers to the domain, installing patches, crimping cat6 network cables and cloning hard drives.</p>
-    </div>
-    
-</div>
-
-
-
-    <div class="rounded-l-full flex flex-col md:flex-row bg-dark-gray drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
-    <div class="flex items-center justify-center flex-none">
-        <img class="rounded-full w-64 h-64 flex-none" src="/assets/images/page_previews/embassy_Q8.png"/>
-    </div>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-2xl md:text-4xl mb-1">Summer Hire, General Services Office</h1>
-        
-        <p class="text-lg md:text-xl text-red-900"><b>Summer 2015</b></p>
-        
-        <p class="text-sm md:text-md text-gray-400">I was employed as a summer hire at the US Embassy in Kuwait in the General Services Office (GSO). I organized file systems and prepared housing photos for new residents in the housing department. Additionally, I prepared for local events and delivered shipments with the Embassy warehouse.</p>
-    </div>
-    
-</div>
-
-
-
-    <div class="rounded-l-full flex flex-col md:flex-row bg-dark-gray drop-shadow-2xl shadow-lg mb-6 bg-opacity-90">
-    <div class="flex items-center justify-center flex-none">
-        <img class="rounded-full w-64 h-64 flex-none" src="/assets/images/page_previews/tent.png"/>
-    </div>
-    <div class="pl-6 flex flex-col">
-        <h1 class="text-2xl md:text-4xl mb-1">Camp Counselor, Camp Greenbrier for Boys</h1>
-        
-        <p class="text-lg md:text-xl text-red-900"><b>Summer 2014</b></p>
-        
-        <p class="text-sm md:text-md text-gray-400">After having been a camper for five years at Greenbrier, I decided to become a counselor. I took care of young campers for 7 weeks at a sleepaway camp during the summer of 2014. I managed Craft Hall activities, organizing Popsicle stick boat races as well as gimp and string workshops.</p>
-    </div>
-    
-</div>
-
-
-			</div>
-		</div>
-		<!-- Footer start -->
+            <div class="absolute top-4 left-4 transition-opacity duration-500 ease-in-out hover:scale-125 z-30" onclick="history.back()">
+                <svg class="w-8 h-8 stroke-gray-400 hover:stroke-gray-100 stroke-2 rotate-90" viewBox="0 0 30 30"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
+            </div>
+        </div>
+	</div>
+    <!-- Footer start -->
 <div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-fit md:h-32 font-mono flex flex-col items-center justify-center bg-gray-200 overflow-hidden">
     <div class="flex flex-col md:flex-row items-center justify-center pb-0 mb-0 mt-4">
         <div class="mr-10 pb-0 mb-0">
@@ -392,9 +283,10 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         </p>
     </div>
 </div>
-<!-- Footer end -->
-	</body>
-	<!--
+<!-- Footer end --> 
+</body>
+
+<!--
  * id: id of the component to add this renderer to
  * background_color: color of the background (0x000000)
  * cube_color: color of the cubes (0x000000)
@@ -521,6 +413,6 @@ function init(canvas_id, clear_color, cube_color) {
     requestAnimationFrame(render);
 }
 
-init("post_backdrop", 4872025, 12174534);
+init("post_backdrop", 4872025, 11584689);
 </script>
-	</html>
+</html>

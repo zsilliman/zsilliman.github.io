@@ -122,12 +122,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                                 </a>
                             </li>
                             <li>
-                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                                    href="/PersonalProjects">
-                                    <span class="select-none">Personal Projects</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
                                     href="/AcademicProjects">
                                     <span class="select-none">Academic Projects</span>
@@ -425,12 +419,12 @@ name_typewriter
             <div class="flex flex-col md:flex-row justify-center">
                 <div class="md:mr-10 md:w-1/3">
                     <p class="text-2xl visible md:hidden">About Me</p>
-                    <p>My name is Zachary Silliman. I graduated from Cornell University with a degree in computer science and a specialization in mathematics. I am currently employed at Framestore as an Immersive developer where I use Unreal Engine alongside a number of supporting tools to create big-screen, VR, AR, and pixel-streamed experiences. Two projects I have released with Framestore are One Vanderbilt&#39;s <a class="underline" target="_blank" href="https://www.framestore.com/work/unity-and-transcendence?language=en">Unity/Transcenedence</a>, as well as Cadillac&#39;s <a class="underline" target="_blank" href="https://www.framestore.com/work/art-you?language=en">Art of You.</a></p>
+                    <p>My name is Zachary Silliman. I graduated from Cornell University with a degree in computer science and a specialization in mathematics. I am currently employed at Framestore as an Immersive developer where I use Unreal Engine alongside a number of supporting tools to create big-screen, VR, AR, and pixel-streamed experiences. Two projects I have released with Framestore are One Vanderbilt&#39;s <a class="underline" target="_blank" href="https://www.framestore.com/work/unity-and-transcendence?language=en">Unity/Transcenedence</a>, as well as Cadillac&#39;s <a class="underline" target="_blank" href="https://www.framestore.com/work/art-you?language=en">Art of You.</a> I also do a lot of character animation work, including the Geico Gecko.</p>
                     <br>
                     <p>Through these and other projects I found an appreciation for bridging the worlds of the designer, artist and developer. Not to be confused with being at the intersection, as may be seen in a technical artist, building this bridge involves wielding technical knowledge to design and create tools that abstract away clunky details to accommodate designers&#39; and artists&#39; creative vision.</p>
                 </div>
                 <div class="md:w-1/3">
-                    <p>This construction project also manifests itself in my passion for game development and my current project: Ascend. This project has helped me define the intricate relationships between the designer, artist and developer. With just two of us working on the game, my role morphs between the software architect, gameplay programmer, tools programmer, level designer and game designer. I&#39;ve come to understand and enjoy the intricacies in working alongside my friend who morphs himself similarly. To add more nuance, I live in the US and my friend lives in Taiwan (12 or 13 hours apart). We named ourselves Halfway Studios as an homage to the fact that we sit halfway across the world from one another.</p>
+                    <p>This construction project also manifests itself in my passion for game development and my latest project: Null Transit. This project has helped me define the intricate relationships between the designer, artist and developer. With just two of us working on the game, my role morphs between the software architect, gameplay programmer, tools programmer, level designer and game designer. I&#39;ve come to understand and enjoy the intricacies in working alongside my friend who morphs himself similarly. To add more nuance, I live in the US and my friend lives in Taiwan (12 or 13 hours apart). We named ourselves Halfway Studios as an homage to the fact that we sit halfway across the world from one another. As of December 15, 2025, Null Transit was released on Steam! Here&#39;s a <a class="underline" href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank">link</a>.</p>
                     <br>
                     <p>To find out more about me, click <a class="underline" target="_blank" href="/assets/docs/SillimanZachary_Resume.pdf">here</a> to download my resume or feel free to contact me at zacharysilliman@gmail.com.</p>
                 </div>
@@ -448,47 +442,770 @@ name_typewriter
 </div>
 
 </div> 
-  <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-deep-purple" id="home_2">
+  <!--<div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-deep-purple" id="home_2">
     
-<div class="items-center z-10 font-mono">
-    <h1 class="text-6xl font-mono text-gray-100 text-center mb-16">SKILLS</h1>
+</div>-->
+<div class="relative w-screen h-[100svh] overflow-hidden flex flex-col items-center justify-center bg-deep-purple" id="home_2">
+    <div class="h-auto overflow-y-scroll pb-16 w-full flex flex-col items-center">
+        <div class="items-center font-mono">
+            <h1 class="text-6xl font-mono text-gray-100 text-center mt-20 mb-8">SKILLS</h1>
+        </div>
 
-    <div class="w-screen overflow-x-scroll md:flex md:justify-center md:items-center">
-        <div class="flex flex-row w-fit">
-            <!-- Programming -->
-            <div class="w-72 h-72 m-4 ml-8 flex flex-col shadow-2xl p-8 hover:shadow-inner bg-pastel-blue flex-none">
-                <h1 class="text-3xl mb-2">Programming</h1>
-                <div class="flex justify-center items-center">
-                    <p>Fluent in C/C++, C#, Python, Javascript, Powershell, Batch Scripting, OCaml, and Java programming languages</p>
-                </div>
-            </div>
-            <!-- Tools -->
-            <div class="w-72 h-72 m-4 flex flex-col shadow-2xl p-8 hover:shadow-inner bg-pastel-green flex-none">
-                <h1 class="text-3xl mb-2">Tools</h1>
-                <div class="flex justify-center items-center">
-                    <p>UE4/5: [Editor plugins, nDisplay, VR, AR, Desktop, multiplayer], Unity, Node.js, Photoshop Automation, Jenkins with Unreal and Perforce</p>
-                </div>
-            </div>
-            <!-- Certifications -->
-            <div class="w-72 h-72 m-4 flex flex-col shadow-2xl p-8 hover:shadow-inner bg-pastel-red flex-none">
-                <h1 class="text-3xl mb-2">Certifications</h1>
-                <div class="flex flex-col justify-center items-center">
-                    <p>Fundamentals of Deep learning from Nvidia</p>
-                    <br>
-                    <p>GIAC Certified Forensic Analyst from SANS Institute</p>
-                </div>
-            </div>
-            <!-- Hobbies -->
-            <div class="w-72 h-72 m-4 mr-8 flex flex-col shadow-2xl p-8 hover:shadow-inner bg-pastel-gray flex-none">
-                <h1 class="text-3xl mb-2">Hobbies</h1>
-                <div class="flex justify-center items-center">
-                    <p>Game Development, Reading Philosophy, Skiing, Soccer, Bass Guitar, Rock Climbing and hiking</p>
-                </div>
-            </div>
-        </div> 
+        <div class="w-3/4">
+            <p class="text-center text-gray-300 text-md mb-4">This is a fairly subjective proficiency meter. A full bar means it is my strongest skill. An empty bar means no experience.</p>
+            
+
+                <div class="rounded-full flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-3 bg-opacity-90 bg-slate-900">
+    <div class="px-8 h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-3xl align-middle mt-1 text-gray-100">Game Development</p>
     </div>
 </div>
+<div class="pl-8 mb-3">
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/unreal-icon.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Unreal Engine</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Unreal Engine')" onmouseleave="hidePopup('popover-skill-Unreal Engine')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Unreal Engine" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Unreal Engine</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I have used Unreal Engine professionally since 2021. I primarily develop tools for character animation such as: lipsync animation, conversation hand and head motion, motions capture and prop management utilities. Much of my character work has centered around the Geico Gecko. I have also worked on very different projects such as volumetric cloud rendering and flocking/fluid-sim particle effects.<br><br>Take a look at my Work Experience page for more details and links.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+            </div>
+        </div>
+        
+    </div>
 </div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/unity-icon.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Unity</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Unity')" onmouseleave="hidePopup('popover-skill-Unity')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Unity" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Unity</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I have used Unity for many years, primarily for personal game development projects. I have extensive experience with C# scripting, shader development, and custom editor tooling. I work both in 2D and 3D, having designed, developed and released Null Transit using Unity.<br><br>Take a look at my DevLog or Projects page for more details and links.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-full flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-3 bg-opacity-90 bg-slate-900">
+    <div class="px-8 h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-3xl align-middle mt-1 text-gray-100">AI Development</p>
+    </div>
+</div>
+<div class="pl-8 mb-3">
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/pytorch-icon.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">PyTorch</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-PyTorch')" onmouseleave="hidePopup('popover-skill-PyTorch')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-PyTorch" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">PyTorch</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I created an AI model to generate conversational head movement for a character based on realtime audio input.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-full flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-3 bg-opacity-90 bg-slate-900">
+    <div class="px-8 h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-3xl align-middle mt-1 text-gray-100">Web Development</p>
+    </div>
+</div>
+<div class="pl-8 mb-3">
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/nodejs-icon.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Node.js</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Node.js')" onmouseleave="hidePopup('popover-skill-Node.js')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Node.js" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Node.js</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I have written a number of backend servers using Node.js, primarily to support live experiences. I wrote the backend for asset pre-processing and user queueing for the One Vanderbilt Summit immersive experience. I have also written monitoring software to keep track of PC and process health during live events and immersive experiences.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 50%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">React</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-React')" onmouseleave="hidePopup('popover-skill-React')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-React" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">React</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I have worked on frontend web apps that wrap a Pixelstreamed viewport. They include complex features like timeline scrubbing and keying.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://images.icon-icons.com/2107/PNG/512/file_type_jekyll_icon_130516.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Jekyll</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Jekyll')" onmouseleave="hidePopup('popover-skill-Jekyll')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Jekyll" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Jekyll</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>This website was made using Jekyll and is hosted using GitHub Pages.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-full flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-3 bg-opacity-90 bg-slate-900">
+    <div class="px-8 h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-3xl align-middle mt-1 text-gray-100">Automation</p>
+    </div>
+</div>
+<div class="pl-8 mb-3">
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://www.jenkins.io/images/logos/jenkins/jenkins.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Jenkins</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Jenkins')" onmouseleave="hidePopup('popover-skill-Jenkins')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Jenkins" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Jenkins</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I have used Jenkins for continuous integration, unit testing, deployment, and rendering. I have primarily used Jenkins with Unreal Engine and Perforce.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/TeamCity_Icon.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">TeamCity</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-TeamCity')" onmouseleave="hidePopup('popover-skill-TeamCity')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-TeamCity" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">TeamCity</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>We use TeamCity for continuous integration and unit testing at Framestore. I do not manage the DevOps side of TeamCity, but I understand how it works.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Powershell</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Powershell')" onmouseleave="hidePopup('popover-skill-Powershell')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Powershell" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Powershell</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I have written many Batch and PowerShell scripts to automate tasks such as project deployment, dev environment setup, and rendering out of Unreal.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-full flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-3 bg-opacity-90 bg-slate-900">
+    <div class="px-8 h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-3xl align-middle mt-1 text-gray-100">SCM</p>
+    </div>
+</div>
+<div class="pl-8 mb-3">
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logo-perforce-icon-reg.svg/960px-Logo-perforce-icon-reg.svg.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Perforce</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Perforce')" onmouseleave="hidePopup('popover-skill-Perforce')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Perforce" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Perforce</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>Professionally, I primarily use Perforce. Additionally, we use Swarm for code reviews. I am very comfortable working with task, development, and release streams.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Git</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Git')" onmouseleave="hidePopup('popover-skill-Git')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Git" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Git</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I primarily use Git for personal projects and game development. Null Transit was developed with Git and hosted on GitHub. This website is also developed with Git and hosted on GitHub Pages. I am very comfortable working with branches and pull requests.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+        <div class="w-5/6 h-full pr-4 flex items-center">
+            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
+                <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-full flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-3 bg-opacity-90 bg-slate-900">
+    <div class="px-8 h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-3xl align-middle mt-1 text-gray-100">Certifications</p>
+    </div>
+</div>
+<div class="pl-8 mb-3">
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/gcfa-icon.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">GCFA (expired)</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-GCFA (expired)')" onmouseleave="hidePopup('popover-skill-GCFA (expired)')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-GCFA (expired)" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">GCFA (expired)</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I used to work in cybersecurity and recieved the GIAC Certified Forensic Analyst certification.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+
+        <div class="rounded-full flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
+    <div class="w-12 h-12 px-1 py-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/nvidia-icon.png');"></div>
+    </div>
+    <div class="h-12 flex flex-row w-full items-center">
+        <p class="text-2xl align-middle text-gray-400 overflow-hidden w-1/6 text-right mr-2">Deep Learning</p>
+        <button class="w-auto h-auto mr-2" type="button" onmouseover="showPopup('popover-skill-Deep Learning')" onmouseleave="hidePopup('popover-skill-Deep Learning')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
+        </button>
+        
+        <div id="popover-skill-Deep Learning" class="invisible absolute inline-block w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 bottom-10">
+            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
+                <h3 class="font-medium text-heading text-gray-50">Deep Learning</h3>
+            </div>
+            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
+                <p>I took the course 'Fundamentals of Deep Learning' with Nvidia where I learned the basics of AI engineering with pytorch.</p>
+            </div>
+            <div class="invisible h-15">
+            </div>
+            <div data-popper-arrow></div>
+        </div>
+
+        
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('invisible');
+        popup.classList.remove('opacity-0');
+        popup.classList.add('opacity-100');
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(id);
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+        popup.classList.add('invisible');
+    }
+</script>
+
+
+
+
+    
+</div>
+
+
+            
+        </div>
+    </div>
+</div> 
 
   <!-- Footer start -->
 <div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-fit md:h-32 font-mono flex flex-col items-center justify-center bg-gray-200 overflow-hidden">
@@ -569,7 +1286,7 @@ window.onscrollend = (e)=> {
 function ComputeNearestScrollIndex() {
   var sh = window.innerHeight;
   var index = Math.round(window.scrollY / sh);
-  if (window.scrollY > sh * (n-2)) {
+  if (window.scrollY > sh * (n-2) + GetFooterHeight() * 0.5) {
     index = n-1;
   }
   if (index != scroll_index) {
@@ -581,6 +1298,11 @@ function GetFullPageHeight() {
   var body = document.body, html = document.documentElement;
   var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
   return height;
+}
+
+function GetFooterHeight()
+{
+  return document.getElementById('footer').clientHeight;
 }
 
 function GetIdFromIndex(index)
