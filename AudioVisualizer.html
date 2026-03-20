@@ -81,10 +81,30 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             <div class="px-4 pb-6 pt-14">
                 <ul class="mb-8 text-xl">
                     <li>
-                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                            href="/">
+                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline cursor-pointer"
+                            href="/" onclick="navigateHome(event, 0, '/')">
                             <span class="select-none">Home</span>
                         </a>
+                        <ul class="ml-4 text-sm">
+                            <li>
+                                <a id="about" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline cursor-pointer"
+                                    href="#" onclick="navigateHome(event, 1, 'home_1')">
+                                    <span class="select-none">About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="skills" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline cursor-pointer"
+                                    href="#" onclick="navigateHome(event, 2, 'home_2')">
+                                    <span class="select-none">Skills</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="contact" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline cursor-pointer"
+                                    href="#" onclick="navigateHome(event, 3, 'footer')">
+                                    <span class="select-none">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
@@ -190,7 +210,21 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             document.getElementById("academic").classList.add("active");
         } else if (pathname.includes("projects")) {
             document.getElementById("projects").classList.add("active");
-        } 
+        }
+
+        // On the home page, wrap SetScrollIndex to keep sub-nav in sync
+        if (typeof SetScrollIndex === "function") {
+            const subNavMap = { 1: "about", 2: "skills", 3: "contact" };
+            const _orig = SetScrollIndex;
+            window.SetScrollIndex = function(index, scroll, behavior) {
+                _orig(index, scroll, behavior);
+                ["about", "skills", "contact"].forEach(function(id) {
+                    document.getElementById(id).classList.remove("active");
+                });
+                const subId = subNavMap[((index % 4) + 4) % 4];
+                if (subId) document.getElementById(subId).classList.add("active");
+            };
+        }
 
         sidebar.addEventListener("mouseleave", (e) => {
             sidebar.classList.toggle("show");
@@ -207,6 +241,16 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             navExit.classList.toggle("z-40");
         });
 
+        window.navigateHome = function(e, index, fallbackId) {
+            e.preventDefault();
+            // Scroll if on home page, otherwise navigate there
+            if (typeof SetScrollIndex === "function") {
+                SetScrollIndex(index);
+            } else {
+                window.location.href = fallbackId.startsWith("/") ? fallbackId : "/#" + fallbackId;
+            }
+        };
+
         navExit.addEventListener("click", (e) => {
             if (sidebar.classList.contains("show")) {
                 sidebar.classList.remove("show");
@@ -221,11 +265,11 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 </script>
 	<div class="z-10 flex flex-col overflow-x-hidden scrollbar-hide w-screen h-auto">
         <div class="z-10 w-screen h-80 bg-cover flex justify-center items-center bg-center" style="background-image: url('/assets/pages/audio-visualizer/visualizer-banner.png');">
-            <div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-10 text-gray-100">
-                <h1 class="text-6xl mt-0 pt-0 tracking-wide"><b>Audio Visualizer</b></h1>
+            <div class="w-auto h-auto font-mono flex flex-col justify-center items-center p-4 md:p-10 text-gray-100">
+                <h1 class="text-3xl md:text-6xl mt-0 pt-0 tracking-wide text-center"><b>Audio Visualizer</b></h1>
             </div>
         </div>
-        <div class="font-mono mx-auto my-0 w-screen md:w-3/4 h-auto py-8 md:py-24 px-4 md:px-24 bg-dark-gray drop-shadow-2xl shadow-lg text-gray-50">
+        <div class="relative font-mono mx-auto my-0 w-screen md:w-3/4 h-auto py-8 md:py-24 px-4 md:px-24 bg-dark-gray drop-shadow-2xl shadow-lg text-gray-50">
             <p class="my-4 md:my-0 mr-4 md:mr-0 md:absolute md:top-4 md:right-8 italic text-gray-400">  posted by <span class="text-gray-100">Zachary Silliman</span> </p>
             <h2 id="live-audio-visualizer">Live Audio Visualizer</h2>
 
