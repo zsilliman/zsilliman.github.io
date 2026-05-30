@@ -52,9 +52,13 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         transform: translateX(0);
     }
 
-    #sidebar ul li a.active {
-        background: #1f2937;
-        background-color: #1f2937;
+    #sidebar a.active .metro-node,
+    #sidebar a.active .metro-node-sm {
+        border-color: #22d3ee;
+        background-color: #22d3ee;
+    }
+    #sidebar a.active span {
+        color: #22d3ee;
     }
 </style>
 
@@ -82,106 +86,138 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         <nav id="sidebar"
             class="fixed top-0 left-0 bottom-0 flex w-3/4 -translate-x-full flex-col overflow-y-auto bg-dark-gray pt-0 pb-8 sm:max-w-xs lg:w-80">
             
-            <!-- one category / navigation group -->
-            <div class="px-4 pb-6 pt-14">
-                <ul class="mb-8 text-xl">
-                    <li>
-                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline cursor-pointer"
-                            href="/" onclick="navigateHome(event, 0, '/')">
-                            <span class="select-none">Home</span>
-                        </a>
-                        <ul class="ml-4 text-sm">
-                            <li>
-                                <a id="about" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline cursor-pointer"
-                                    href="#" onclick="navigateHome(event, 1, 'home_1')">
-                                    <span class="select-none">About</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="skills" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline cursor-pointer"
-                                    href="#" onclick="navigateHome(event, 2, 'home_2')">
-                                    <span class="select-none">Skills</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="contact" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline cursor-pointer"
-                                    href="#" onclick="navigateHome(event, 3, 'footer')">
-                                    <span class="select-none">Contact</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                            href="/DevLog">
-                            <span class="select-none">DevLog</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                            href="/WorkExperience">
-                            <span class="select-none">Work Experience</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                            href="/Projects">
-                            <span class="select-none">Projects</span>
-                        </a>
-                        <ul class="ml-4 mb-8 text-sm">
-                            <li>
-                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                                    href="/AppsGames">
-                                    <span class="select-none">Apps & Games</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                                    href="/GraphicsProjects">
-                                    <span class="select-none">Graphics Projects</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                                    href="/AcademicProjects">
-                                    <span class="select-none">Academic Projects</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- navigation group end-->
+            <!-- Metro navigation -->
+            <div class="px-5 pt-14 pb-4 flex-1">
+                <div class="relative">
+                    <!-- Vertical track -->
+                    <div class="absolute left-[9px] top-0 bottom-0 w-px bg-gray-600 z-0"></div>
 
-            <div class="absolute bottom-0 px-6 mx-auto pb-4 mb-0 flex flex-col">
-                
-                <div class="z-45 mx-auto pb-0 mb-0 mt-3 md:mt-0 flex flex-col">
-                    <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row">
-                            <svg class="w-4 h-4 me-2 mt-[2px]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="8 8 40 40">
-                                <path fill="#90CAF9" d="M40 45L8 45 8 3 30 3 40 13z"></path><path fill="#E1F5FE" d="M38.5 14L29 14 29 4.5z"></path><path fill="#1976D2" d="M16 21H33V23H16zM16 25H29V27H16zM16 29H33V31H16zM16 33H29V35H16z"></path>
-                            </svg>
-                            Resume
+                    <!-- Home -->
+                    <a id="home" href="/" onclick="navigateHome(event, 0, '/')"
+                       class="flex items-center py-2.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
                         </div>
+                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Home</span>
                     </a>
-                    <a href="https://github.com/zsilliman" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
-                            <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                            </svg>
-                            Github
+                    <a id="about" href="#" onclick="navigateHome(event, 1, 'home_1')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
                         </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">About</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative  flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
-                            <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
-                                <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>
-                            </svg>
-                            LinkedIn
+                    <a id="skills" href="#" onclick="navigateHome(event, 2, 'home_2')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
                         </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Skills</span>
+                    </a>
+                    <a id="contact" href="#" onclick="navigateHome(event, 3, 'footer')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Contact</span>
+                    </a>
+
+                    <!-- DevLog -->
+                    <a id="devlog" href="/DevLog"
+                       class="flex items-center py-2.5 no-underline group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">DevLog</span>
+                    </a>
+
+                    <!-- Work Experience -->
+                    <a id="work" href="/WorkExperience"
+                       class="flex items-center py-2.5 no-underline group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Work Experience</span>
+                    </a>
+
+                    <!-- Projects -->
+                    <a id="projects" href="/Projects"
+                       class="flex items-center py-2.5 no-underline group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Projects</span>
+                    </a>
+                    <a id="games" href="/AppsGames"
+                       class="flex items-center py-1.5 no-underline group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Apps & Games</span>
+                    </a>
+                    <a id="graphics" href="/GraphicsProjects"
+                       class="flex items-center py-1.5 no-underline group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Graphics Projects</span>
+                    </a>
+                    <a id="academic" href="/AcademicProjects"
+                       class="flex items-center py-1.5 no-underline group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Academic Projects</span>
                     </a>
                 </div>
+            </div>
 
+            <!-- Bottom links -->
+            <div class="px-5 pb-6">
+                <div class="border-t border-gray-700 pt-4 flex flex-col gap-3">
+                    <!-- Social links -->
+                    <div class="flex flex-row justify-center gap-6">
+                        <a href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank" title="Steam"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <img src="/assets/icons/steam-icon.png" alt="Steam" class="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity duration-150">
+                            <span class="text-xs">Steam</span>
+                        </a>
+                        <a href="https://www.youtube.com/@ZachSilliman/shorts" target="_blank" title="YouTube"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <img src="/assets/icons/youtube-icon.png" alt="YouTube" class="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity duration-150">
+                            <span class="text-xs">YouTube</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@zach.silliman" target="_blank" title="TikTok"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <img src="/assets/icons/tiktok-icon.png" alt="TikTok" class="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity duration-150">
+                            <span class="text-xs">TikTok</span>
+                        </a>
+                    </div>
+                    <!-- Professional links -->
+                    <div class="flex flex-row justify-center gap-6">
+                        <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" title="Resume"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="8 8 40 40">
+                                <path fill="#90CAF9" d="M40 45L8 45 8 3 30 3 40 13z"></path><path fill="#E1F5FE" d="M38.5 14L29 14 29 4.5z"></path><path fill="#1976D2" d="M16 21H33V23H16zM16 25H29V27H16zM16 29H33V31H16zM16 33H29V35H16z"></path>
+                            </svg>
+                            <span class="text-xs">Resume</span>
+                        </a>
+                        <a href="https://github.com/zsilliman" target="_blank" title="GitHub"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-xs">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" title="LinkedIn"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-cyan-400 transition-colors duration-150 no-underline">
+                            <svg class="w-6 h-6" viewBox="0 0 72 72">
+                                <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>
+                            </svg>
+                            <span class="text-xs">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>
@@ -276,6 +312,10 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 <div class="flex flex-col items-center z-10">
     <div class="flex flex-row"><h1 class="text-6xl font-mono text-gray-100 text-center"><span id="name"></span><span id="cursorA" class="text-6xl font-mono text-gray-100">|</span></h1></div>
     <div class="flex flex-row"><h3 class="text-2xl font-mono text-gray-400 text-center"><span id="subtext"></span><span id="cursorB" class="text-2xl font-mono text-gray-400" style="visibility:hidden;">|</span></h3></div>
+    <div class="flex flex-col md:flex-row gap-4 mt-10">
+        <a href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank" class="font-mono text-sm border-2 border-cyan-600 text-cyan-400 px-6 py-2 hover:bg-cyan-950 transition-colors duration-200 tracking-widest no-underline text-center">[ NULL TRANSIT ]</a>
+        <a href="/DevLog" class="font-mono text-sm border-2 border-gray-500 text-gray-400 px-6 py-2 hover:bg-gray-800 transition-colors duration-200 tracking-widest no-underline text-center">[ DEV LOG ]</a>
+    </div>
 </div>
 
 </div>
@@ -513,226 +553,264 @@ name_typewriter
 <div class="pl-2 md:pl-8 mb-3">
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/unreal-icon.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Unreal Engine</p>
-        <button id="btn-popover-skill-Unreal Engine" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Unreal Engine" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Unreal Engine</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I have used Unreal Engine professionally since 2021. I primarily develop tools for character animation such as: lipsync animation, conversation hand and head motion, motions capture and prop management utilities. Much of my character work has centered around the Geico Gecko. I have also worked on very different projects such as <a href="https://www.framestore.com/work/unity-and-transcendence?language=en" target="_blank">volumetric cloud rendering</a> and <a href="https://www.framestore.com/work/art-you?language=en" target="_blank">flocking/fluid-sim particle effects</a>.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Unreal Engine</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have used Unreal Engine professionally since 2021. I primarily develop tools for character animation such as: lipsync animation, conversation hand and head motion, motions capture and prop management utilities. Much of my character work has centered around the Geico Gecko. I have also worked on very different projects such as <a href="https://www.framestore.com/work/unity-and-transcendence?language=en" target="_blank">volumetric cloud rendering</a> and <a href="https://www.framestore.com/work/art-you?language=en" target="_blank">flocking/fluid-sim particle effects</a>.</p>
         </div>
         
     </div>
 </div>
 
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
 
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
+<div class="pl-12 mb-3">
+    
 
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Unreal Engine';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-slate-500">
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">AnimBP</p>
+        
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have done a lot of character animation work in Unreal. This include:
+- Custom lipsync animation nodes
+- Conversational hand and head motion driven by AI
+- Motion capture retargeting and cleanup
+- Prop management utilities</p>
+        </div>
+        
+    </div>
+</div>
 
 
 
 
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
-        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/unity-icon.png');"></div>
-    </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Unity</p>
-        <button id="btn-popover-skill-Unity" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Unity" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Unity</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I have used Unity for many years, primarily for personal game development projects. I have extensive experience with C# scripting, shader development, and custom editor tooling. I work both in 2D and 3D, having designed, developed and released Null Transit using Unity.<br><br>Take a look at my DevLog or Projects page for more details and links.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-slate-500">
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">C++</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I am very comfortable with C++ in Unreal Engine.</p>
         </div>
         
     </div>
 </div>
 
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
 
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
 
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
 
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
+    
 
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-slate-500">
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Custom Editor Tools</p>
+        
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have created custom assets, custom asset editors, editor blueprint utilities, editor subsystems and much more written in both C++ and Blueprints.</p>
+        </div>
+        
+    </div>
+</div>
 
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
 
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
 
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Unity';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
 
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-slate-500">
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Control Rig</p>
+        
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have created a number of control rigs for characters and props.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/unity-icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Unity</p>
+        
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have used Unity for many years, primarily for personal game development projects. I have extensive experience with C# scripting, shader development, and custom editor tooling. I work both in 2D and 3D, having designed, developed and released <a href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank">Null Transit</a> using Unity.<br><br>Take a look at my <a href="/DevLog">DevLog</a> or <a href="/Projects">Projects</a> page for more details and links.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/blender-logo.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Blender</p>
+        
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have been using blender for to model and animate characters and assets for use in personal projects in Unity.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-900">
+    <div class="px-4 md:px-8 h-9 md:h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-xl md:text-3xl align-middle mt-1 text-gray-100">Motion Capture</p>
+    </div>
+</div>
+<div class="pl-2 md:pl-8 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/xsens-logo.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">XSens</p>
+        
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I used XSens motion capture systems professionally for character animation.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/faceware-logo.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Faceware</p>
+        
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">In conjunction with XSens, I have used Faceware for facial motion capture for character animation.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/manus-logo.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Manus</p>
+        
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">In conjunction with XSens, I have used Manus motion capture gloves professionally for character hand animation.</p>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -751,113 +829,26 @@ name_typewriter
 <div class="pl-2 md:pl-8 mb-3">
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/pytorch-icon.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">PyTorch</p>
-        <button id="btn-popover-skill-PyTorch" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-PyTorch" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">PyTorch</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I created an AI model to generate conversational head movement for a character based on realtime audio input.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">PyTorch</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I created an AI model to generate conversational head movement for a character based on realtime audio input.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-PyTorch';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
@@ -876,339 +867,78 @@ name_typewriter
 <div class="pl-2 md:pl-8 mb-3">
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/nodejs-icon.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Node.js</p>
-        <button id="btn-popover-skill-Node.js" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Node.js" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Node.js</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I have written a number of backend servers using Node.js, primarily to support live experiences. I wrote the backend for asset pre-processing and user queueing for the One Vanderbilt Summit immersive experience. I have also written monitoring software to keep track of PC and process health during live events and immersive experiences.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Node.js</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 50%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 50%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have written a number of backend servers using Node.js, primarily to support live experiences. I wrote the backend for asset pre-processing and user queueing for the One Vanderbilt Summit immersive experience. I have also written monitoring software to keep track of PC and process health during live events and immersive experiences.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Node.js';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
 
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">React</p>
-        <button id="btn-popover-skill-React" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-React" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">React</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I have worked on frontend web apps that wrap a Pixelstreamed viewport. They include complex features like timeline scrubbing and keying.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">React</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have worked on frontend web apps that wrap a Pixelstreamed viewport. They include complex features like timeline scrubbing and keying.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-React';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
 
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://images.icon-icons.com/2107/PNG/512/file_type_jekyll_icon_130516.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Jekyll</p>
-        <button id="btn-popover-skill-Jekyll" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Jekyll" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Jekyll</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>This website was made using Jekyll and is hosted using GitHub Pages.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Jekyll</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">This website was made using Jekyll and is hosted using GitHub Pages.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Jekyll';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
@@ -1227,339 +957,78 @@ name_typewriter
 <div class="pl-2 md:pl-8 mb-3">
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://www.jenkins.io/images/logos/jenkins/jenkins.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Jenkins</p>
-        <button id="btn-popover-skill-Jenkins" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Jenkins" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Jenkins</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I have used Jenkins for continuous integration, unit testing, deployment, and rendering. I have primarily used Jenkins with Unreal Engine and Perforce.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Jenkins</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have used Jenkins for continuous integration, unit testing, deployment, and rendering. I have primarily used Jenkins with Unreal Engine and Perforce.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Jenkins';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
 
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/TeamCity_Icon.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">TeamCity</p>
-        <button id="btn-popover-skill-TeamCity" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-TeamCity" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">TeamCity</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>We use TeamCity for continuous integration and unit testing at Framestore. I do not manage the DevOps side of TeamCity, but I understand how it works.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">TeamCity</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">We use TeamCity for continuous integration and unit testing at Framestore. I do not manage the DevOps side of TeamCity, but I understand how it works.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-TeamCity';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
 
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Powershell</p>
-        <button id="btn-popover-skill-Powershell" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Powershell" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Powershell</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I have written many Batch and PowerShell scripts to automate tasks such as project deployment, dev environment setup, and rendering out of Unreal.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Powershell</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have written many Batch and PowerShell scripts to automate tasks such as project deployment, dev environment setup, and rendering out of Unreal.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Powershell';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
@@ -1578,226 +1047,52 @@ name_typewriter
 <div class="pl-2 md:pl-8 mb-3">
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logo-perforce-icon-reg.svg/960px-Logo-perforce-icon-reg.svg.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Perforce</p>
-        <button id="btn-popover-skill-Perforce" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Perforce" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Perforce</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>Professionally, I primarily use Perforce. Additionally, we use Swarm for code reviews. I am very comfortable working with task, development, and release streams.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Perforce</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">Professionally, I primarily use Perforce. Additionally, we use Swarm for code reviews. I am very comfortable working with task, development, and release streams.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Perforce';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
 
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Git</p>
-        <button id="btn-popover-skill-Git" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Git" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Git</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I primarily use Git for personal projects and game development. Null Transit was developed with Git and hosted on GitHub. This website is also developed with Git and hosted on GitHub Pages. I am very comfortable working with branches and pull requests.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
-        </div>
-
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Git</p>
         
-        <div class="flex-1 md:w-5/6 h-full pr-4 flex items-center">
-            <div class="w-full bg-neutral-quaternary rounded-full h-2 bg-gray-500">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
-            </div>
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+        </div>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I primarily use Git for personal projects and game development. Null Transit was developed with Git and hosted on GitHub. This website is also developed with Git and hosted on GitHub Pages. I am very comfortable working with branches and pull requests.</p>
         </div>
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Git';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
@@ -1816,214 +1111,44 @@ name_typewriter
 <div class="pl-2 md:pl-8 mb-3">
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/gcfa-icon.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">GCFA (expired)</p>
-        <button id="btn-popover-skill-GCFA (expired)" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-GCFA (expired)" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">GCFA (expired)</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I used to work in cybersecurity and recieved the GIAC Certified Forensic Analyst certification.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">GCFA (expired)</p>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I used to work in cybersecurity and recieved the GIAC Certified Forensic Analyst certification.</p>
         </div>
-
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-GCFA (expired)';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
 
     
 
-        <div class="relative rounded-xl flex flx-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800">
-    <div class="w-12 h-12 px-1 py-1">
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
         <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/nvidia-icon.png');"></div>
     </div>
-    <div class="h-12 flex flex-row w-full items-center">
-        <p class="text-sm md:text-2xl align-middle text-gray-400 overflow-hidden whitespace-nowrap w-auto md:w-1/6 text-right mr-2">Deep Learning</p>
-        <button id="btn-popover-skill-Deep Learning" class="w-auto h-auto mr-2 shrink-0" type="button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Info-Icon%289%29.svg/960px-Info-Icon%289%29.svg.png" alt="Info Icon" class="w-5 h-5 cursor-pointer">
-        </button>
-
-        <div id="popover-skill-Deep Learning" class="invisible absolute inline-block w-64 md:w-96 text-sm text-body transition-opacity duration-300 shadow-xs opacity-0 left-0 z-50">
-            <div class="px-3 bg-neutral-tertiary border-b border-default rounded-t-xl bg-slate-900 border border-default">
-                <h3 class="font-medium text-heading text-gray-50">Deep Learning</h3>
-            </div>
-            <div class="px-3 py-2 text-gray-300 bg-slate-800 rounded-b-xl border border-default border-t-0">
-                <p>I took the course 'Fundamentals of Deep Learning' with Nvidia where I learned the basics of AI engineering with pytorch.</p>
-            </div>
-            <div class="invisible h-15">
-            </div>
-            <div data-popper-arrow></div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Deep Learning</p>
+        
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I took the course 'Fundamentals of Deep Learning' with Nvidia where I learned the basics of AI engineering with pytorch.</p>
         </div>
-
         
     </div>
 </div>
-
-<script>
-    function showPopup(id) {
-        const popup = document.getElementById(id);
-        const btn = document.getElementById('btn-' + id);
-
-        // Measure popup height while invisible to determine direction
-        popup.classList.remove('invisible');
-        const popupHeight = popup.offsetHeight;
-        popup.classList.add('invisible');
-
-        // Flip below if there isn't enough room above
-        const row = popup.closest('.relative');
-        const spaceAbove = btn.getBoundingClientRect().top;
-        if (spaceAbove >= popupHeight + 40) {
-            popup.classList.add('bottom-10');
-            popup.classList.remove('top-10');
-            if (row) row.classList.remove('z-10');
-        } else {
-            popup.classList.add('top-10');
-            popup.classList.remove('bottom-10');
-            // Elevate the row so the popup renders above sibling rows
-            if (row) row.classList.add('z-10');
-        }
-
-        popup.classList.remove('invisible', 'opacity-0');
-        popup.classList.add('opacity-100');
-    }
-
-    function hidePopup(id) {
-        const popup = document.getElementById(id);
-        const row = popup.closest('.relative');
-        if (row) row.classList.remove('z-10');
-        popup.classList.remove('opacity-100');
-        popup.classList.add('opacity-0', 'invisible');
-    }
-
-    function togglePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup.classList.contains('invisible')) {
-            showPopup(id);
-        } else {
-            hidePopup(id);
-        }
-    }
-
-    // Global tap-away handler — added only once
-    if (!window._skillPopoverReady) {
-        window._skillPopoverReady = true;
-        document.addEventListener('click', function() {
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                el.classList.add('invisible', 'opacity-0');
-                el.classList.remove('opacity-100');
-            });
-        });
-    }
-
-    // Per-entry: wire up hover (desktop) or click (mobile)
-    (function() {
-        const popupId = 'popover-skill-Deep Learning';
-        const btn = document.getElementById('btn-' + popupId);
-        if (!btn) return;
-
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            // Close all other popups before toggling this one
-            document.querySelectorAll('[id^="popover-skill-"]').forEach(function(el) {
-                if (el.id !== popupId) {
-                    el.classList.add('invisible', 'opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-            togglePopup(popupId);
-        });
-    })();
-</script>
 
 
 
