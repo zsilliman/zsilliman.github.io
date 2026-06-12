@@ -309,131 +309,22 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
   <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-gray-900" id="home_0">
     
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<div id="three-container" class="absolute top-0 w-screen h-[100svh] z-0 text-gray-100 overflow-hidden"></div>
-<div class="flex flex-col items-center z-10">
-    <div class="flex flex-row"><h1 class="text-6xl font-mono text-gray-100 text-center"><span id="name"></span><span id="cursorA" class="text-6xl font-mono text-gray-100">|</span></h1></div>
-    <div class="flex flex-row"><h3 class="text-2xl font-mono text-gray-400 text-center"><span id="subtext"></span><span id="cursorB" class="text-2xl font-mono text-gray-400" style="visibility:hidden;">|</span></h3></div>
-    <div class="flex flex-col md:flex-row gap-4 mt-10">
-        <a href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank" class="font-mono text-sm border-2 border-cyan-600 text-cyan-400 px-6 py-2 hover:bg-cyan-950 transition-colors duration-200 tracking-widest no-underline text-center">[ NULL TRANSIT ]</a>
-        <a href="/DevLog" class="font-mono text-sm border-2 border-gray-500 text-gray-400 px-6 py-2 hover:bg-gray-800 transition-colors duration-200 tracking-widest no-underline text-center">[ DEV LOG ]</a>
+<video id="background-video" class="absolute top-0 left-0 w-screen h-[100svh] z-0 object-cover object-center" autoplay muted loop>
+    <source src="/assets/videos/PortfolioReel.webm" type="video/webm">
+</video>
+<div class="w-screen bg-black/50 z-10 flex justify-center py-12">
+    <div class="flex flex-col items-center">
+        <div class="flex flex-row"><h1 class="text-6xl font-mono text-gray-100 text-center"><span id="name"></span><span id="cursorA" class="text-6xl font-mono text-gray-100">|</span></h1></div>
+        <div class="flex flex-row"><h3 class="text-2xl font-mono text-gray-400 text-center"><span id="subtext"></span><span id="cursorB" class="text-2xl font-mono text-gray-400" style="visibility:hidden;">|</span></h3></div>
+        <div class="flex flex-col md:flex-row gap-4 mt-10">
+            <a href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank" class="font-mono text-sm border-2 border-cyan-600 text-cyan-400 px-6 py-2 hover:bg-cyan-950 transition-colors duration-200 tracking-widest no-underline text-center">[ NULL TRANSIT ]</a>
+            <a href="/DevLog" class="font-mono text-sm border-2 border-gray-500 text-gray-400 px-6 py-2 hover:bg-gray-800 transition-colors duration-200 tracking-widest no-underline text-center">[ DEV LOG ]</a>
+        </div>
     </div>
 </div>
 
 </div>
 
-<script type="module">
-    import * as THREE from 'three';
-	import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-	import { AsciiEffect } from 'three/addons/effects/AsciiEffect.js';
-
-    var container;
-	var camera, scene, renderer, effect;
-	var sphere, plane;
-	var start = Date.now();
-	init();
-
-	function init() {
-		var width = window.innerWidth;
-		var height = window.innerHeight;
-		container = document.getElementById('three-container');
-
-		// Setup camera
-		//camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000);
-		camera = new THREE.OrthographicCamera( width / - 2, width / 2, height / 2, height / - 2, 1, 1000 )
-		camera.position.x = 30;
-		camera.position.y = 0;
-		camera.position.z = 500;
-
-		// Create scene
-		scene = new THREE.Scene();
-
-		// Create first light
-		var light0 = new THREE.PointLight(0xffffff, 1, 0, 0);
-		light0.position.set(500, 500, 500);
-		scene.add(light0);
-
-		// Create seconds light
-		var light1 = new THREE.PointLight(0xffffff, .25, 0, 0);
-		light1.position.set(-500, -500, -500);
-		scene.add(light1);
-
-		// Create sphere & plane
-		//sphere = new THREE.Mesh(new THREE.SphereGeometry( 200, 20, 10 ), new THREE.MeshPhongMaterial( { color: 0xffffff, flatShading: true } ) );
-		//scene.add(sphere);
-		plane = new THREE.Mesh(new THREE.PlaneGeometry(2000, 400), new THREE.MeshBasicMaterial({
-			color: 0xe0e0e0
-		}));
-		plane.position.y = -250;
-		plane.rotation.x = -Math.PI / 6;
-		//scene.add(plane);
-
-		// Setup renderer
-		renderer = new THREE.WebGLRenderer();
-		renderer.setClearColor(0xf0f0f0);
-		renderer.setSize(width, height);
-		
-		// Setup ASCII Effect
-		effect = new AsciiEffect( renderer, ' .:-=+*#%@', { invert: false } );
-		effect.setSize( width, height );
-		effect.domElement.children[0].style.color = "#134B70";//.classList.add("text-orange-500");
-		container.appendChild(effect.domElement);
-		window.addEventListener('resize', onWindowResize, false);
-
-		// instantiate an obj loader
-		const loader = new OBJLoader();
-		// load ZS Model
-		loader.load(
-			// resource URL
-			'assets/models/ZS.obj',
-			// called when resource is loaded
-			function ( object ) {
-				sphere = object;
-				var mat = new THREE.MeshPhongMaterial( { color: 0xffffff, flatShading: true } );
-				object.traverse( function( child ) {
-					if ( child instanceof THREE.Mesh ) {
-						child.material = mat; //.color.setHex( 0xffffff );
-					}
-				} );
-				object.scale.setScalar(550);
-				scene.add( object );
-				renderer.setAnimationLoop( animate );
-			},
-			// called when loading is in progresses
-			function ( xhr ) {
-				console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded obj' );
-			},
-			// called when loading has errors
-			function ( error ) {
-				console.log( 'Error loading obj file' );
-			}
-		);
-	}
-
-	function onWindowResize() {
-		var width = window.innerWidth;
-		var height = window.innerHeight;
-		camera.left   = width / -2;
-		camera.right  = width /  2;
-		camera.top    = height /  2;
-		camera.bottom = height / -2;
-		camera.updateProjectionMatrix();
-		renderer.setSize(width, height);
-		effect.setSize(width, height);
-	}
-	//
-	var dir = -1;
-	function animate() {
-		if (sphere) {
-			var timer = Date.now() - start;
-			var rotation_rate = 0.00008;
-			sphere.position.y = 0; //Math.abs( Math.sin( timer * 0.002 ) ) * 175 + 25;
-			sphere.rotation.y = timer * rotation_rate;
-			sphere.rotation.x = timer * rotation_rate * 4;
-		}
-		effect.render(scene, camera);
-	}
-
-</script>
 
 <script>
 
