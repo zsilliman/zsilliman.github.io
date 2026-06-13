@@ -96,21 +96,28 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                         </div>
                         <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Home</span>
                     </a>
-                    <a id="about" href="#" onclick="navigateHome(event, 1, 'home_1')"
+                    <a id="projects" href="#" onclick="navigateHome(event, 1, 'home_1')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Projects</span>
+                    </a>
+                    <a id="about" href="#" onclick="navigateHome(event, 2, 'home_2')"
                        class="flex items-center py-1.5 no-underline cursor-pointer group">
                         <div class="w-[19px] flex justify-center shrink-0 z-10">
                             <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
                         </div>
                         <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">About</span>
                     </a>
-                    <a id="skills" href="#" onclick="navigateHome(event, 2, 'home_2')"
+                    <a id="skills" href="#" onclick="navigateHome(event, 3, 'home_3')"
                        class="flex items-center py-1.5 no-underline cursor-pointer group">
                         <div class="w-[19px] flex justify-center shrink-0 z-10">
                             <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
                         </div>
                         <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Skills</span>
                     </a>
-                    <a id="contact" href="#" onclick="navigateHome(event, 3, 'footer')"
+                    <a id="contact" href="#" onclick="navigateHome(event, 4, 'footer')"
                        class="flex items-center py-1.5 no-underline cursor-pointer group">
                         <div class="w-[19px] flex justify-center shrink-0 z-10">
                             <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
@@ -118,53 +125,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                         <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Contact</span>
                     </a>
 
-                    <!-- DevLog -->
-                    <a id="devlog" href="/DevLog"
-                       class="flex items-center py-2.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">DevLog</span>
-                    </a>
-
-                    <!-- Work Experience -->
-                    <a id="work" href="/WorkExperience"
-                       class="flex items-center py-2.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Work Experience</span>
-                    </a>
-
-                    <!-- Projects -->
-                    <a id="projects" href="/Projects"
-                       class="flex items-center py-2.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Projects</span>
-                    </a>
-                    <a id="games" href="/AppsGames"
-                       class="flex items-center py-1.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Apps & Games</span>
-                    </a>
-                    <a id="graphics" href="/GraphicsProjects"
-                       class="flex items-center py-1.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Graphics Projects</span>
-                    </a>
-                    <a id="academic" href="/AcademicProjects"
-                       class="flex items-center py-1.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Academic Projects</span>
-                    </a>
                 </div>
             </div>
 
@@ -251,14 +211,14 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 
         // On the home page, wrap SetScrollIndex to keep sub-nav in sync
         if (typeof SetScrollIndex === "function") {
-            const subNavMap = { 1: "about", 2: "skills", 3: "contact" };
+            const subNavMap = { 1: "projects", 2: "about", 3: "skills", 4: "contact" };
             const _orig = SetScrollIndex;
             window.SetScrollIndex = function(index, scroll, behavior) {
                 _orig(index, scroll, behavior);
-                ["about", "skills", "contact"].forEach(function(id) {
+                ["projects", "about", "skills", "contact"].forEach(function(id) {
                     document.getElementById(id).classList.remove("active");
                 });
-                const subId = subNavMap[((index % 4) + 4) % 4];
+                const subId = subNavMap[index];
                 if (subId) document.getElementById(subId).classList.add("active");
             };
         }

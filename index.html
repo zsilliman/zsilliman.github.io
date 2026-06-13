@@ -101,21 +101,28 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                         </div>
                         <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Home</span>
                     </a>
-                    <a id="about" href="#" onclick="navigateHome(event, 1, 'home_1')"
+                    <a id="projects" href="#" onclick="navigateHome(event, 1, 'home_1')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Projects</span>
+                    </a>
+                    <a id="about" href="#" onclick="navigateHome(event, 2, 'home_2')"
                        class="flex items-center py-1.5 no-underline cursor-pointer group">
                         <div class="w-[19px] flex justify-center shrink-0 z-10">
                             <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
                         </div>
                         <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">About</span>
                     </a>
-                    <a id="skills" href="#" onclick="navigateHome(event, 2, 'home_2')"
+                    <a id="skills" href="#" onclick="navigateHome(event, 3, 'home_3')"
                        class="flex items-center py-1.5 no-underline cursor-pointer group">
                         <div class="w-[19px] flex justify-center shrink-0 z-10">
                             <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
                         </div>
                         <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Skills</span>
                     </a>
-                    <a id="contact" href="#" onclick="navigateHome(event, 3, 'footer')"
+                    <a id="contact" href="#" onclick="navigateHome(event, 4, 'footer')"
                        class="flex items-center py-1.5 no-underline cursor-pointer group">
                         <div class="w-[19px] flex justify-center shrink-0 z-10">
                             <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
@@ -123,53 +130,6 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
                         <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Contact</span>
                     </a>
 
-                    <!-- DevLog -->
-                    <a id="devlog" href="/DevLog"
-                       class="flex items-center py-2.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">DevLog</span>
-                    </a>
-
-                    <!-- Work Experience -->
-                    <a id="work" href="/WorkExperience"
-                       class="flex items-center py-2.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Work Experience</span>
-                    </a>
-
-                    <!-- Projects -->
-                    <a id="projects" href="/Projects"
-                       class="flex items-center py-2.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Projects</span>
-                    </a>
-                    <a id="games" href="/AppsGames"
-                       class="flex items-center py-1.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Apps & Games</span>
-                    </a>
-                    <a id="graphics" href="/GraphicsProjects"
-                       class="flex items-center py-1.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Graphics Projects</span>
-                    </a>
-                    <a id="academic" href="/AcademicProjects"
-                       class="flex items-center py-1.5 no-underline group">
-                        <div class="w-[19px] flex justify-center shrink-0 z-10">
-                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
-                        </div>
-                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Academic Projects</span>
-                    </a>
                 </div>
             </div>
 
@@ -256,14 +216,14 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
 
         // On the home page, wrap SetScrollIndex to keep sub-nav in sync
         if (typeof SetScrollIndex === "function") {
-            const subNavMap = { 1: "about", 2: "skills", 3: "contact" };
+            const subNavMap = { 1: "projects", 2: "about", 3: "skills", 4: "contact" };
             const _orig = SetScrollIndex;
             window.SetScrollIndex = function(index, scroll, behavior) {
                 _orig(index, scroll, behavior);
-                ["about", "skills", "contact"].forEach(function(id) {
+                ["projects", "about", "skills", "contact"].forEach(function(id) {
                     document.getElementById(id).classList.remove("active");
                 });
-                const subId = subNavMap[((index % 4) + 4) % 4];
+                const subId = subNavMap[index];
                 if (subId) document.getElementById(subId).classList.add("active");
             };
         }
@@ -309,7 +269,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
   <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-gray-900" id="home_0">
     
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<video id="background-video" class="absolute top-0 left-0 w-screen h-[100svh] z-0 object-cover object-center" autoplay muted loop>
+<video id="background-video" class="absolute top-0 left-0 w-screen h-[100svh] z-0 object-cover object-center" autoplay muted loop playsinline>
     <source src="/assets/videos/PortfolioReel.webm" type="video/webm">
 </video>
 <div class="w-screen bg-black/50 z-10 flex justify-center py-12">
@@ -391,8 +351,205 @@ name_typewriter
     });
   }, 3500)
 </script>
+  <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-gray-900" id="home_1">
+    <div class="w-full h-full flex flex-col items-center justify-center overflow-y-auto md:overflow-y-hidden">
+        <h1 class="text-3xl md:text-4xl font-mono font-bold text-gray-100 mb-8 md:mb-12 flex-shrink-0">Projects</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full h-auto">
+            
+                <div class="h-64 md:h-80">
+                    <a href="/DevLog" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/images/islands/Devlog Island.png" data-thumbnail="/assets/images/islands/Devlog Island.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/images/islands/Devlog Island.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Dev Log
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                Follow my development journey for Null Transit with detailed posts covering gameplay mechanics, art direction, character animation, and technical challenges.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/InlineSkateSim.gif" data-thumbnail="/assets/gifs/projects/InlineSkateSim.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/InlineSkateSim.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Inline Skate Sim (ongoing)
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                An inline skating simulator that I'm developing alongside my own exploration of my rollerblading hobby.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="https://store.steampowered.com/app/3299100/Null_Transit/" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/NullTransit.gif" data-thumbnail="/assets/gifs/projects/NullTransit.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/NullTransit.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Null Transit
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                Null Transit is a high-stakes action-platformer. Command the captain and crew of a failing ship, master a unique dash-attack combat system, and fight to survive the unforgiving depths of deep space. Released on Steam December 2025.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="https://www.framestore.com/work/art-you" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/ArtOfYou.gif" data-thumbnail="/assets/gifs/projects/ArtOfYou.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/ArtOfYou.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Art Of You
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                A Cadillac experience designed for the release of their new vehicle the Celestiq. This is a professional project I worked on at Framestore that showcases houdini-generated fluid sims rendered in Unreal Engine.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="https://www.framestore.com/work/unity-and-transcendence" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/1V.gif" data-thumbnail="/assets/gifs/projects/1V.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/1V.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                One Vanderbilt
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                At the heart of New York City in One Vanderbilt tower is a summit experience. Scan your face and have it rendered in the clouds as you overlook central park.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="/Projects" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/Misc.gif" data-thumbnail="/assets/gifs/projects/Misc.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/Misc.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Miscellaneous
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                A collection of projects exploring game mechanics, shader development, audio visualization and much more.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.project-button');
+
+        buttons.forEach(button => {
+            const gifUrl = button.getAttribute('data-gif');
+            const thumbnailUrl = button.getAttribute('data-thumbnail');
+            const bgDiv = button.querySelector('.project-bg');
+            const href = button.getAttribute('href');
+
+            // Check if link is external
+            if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+                button.setAttribute('target', '_blank');
+            }
+
+            button.addEventListener('mouseenter', function() {
+                bgDiv.style.backgroundImage = `url('${gifUrl}')`;
+            });
+
+            button.addEventListener('mouseleave', function() {
+                bgDiv.style.backgroundImage = `url('${thumbnailUrl}')`;
+            });
+        });
+    });
+</script>
+
   <!-- Removed Islands :( -->
-  <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-yellow-200" id="home_1">
+  <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-yellow-200" id="home_2">
     
 <div class="relative w-screen h-[100svh] overflow-hidden p-0 m-0 z-10">
     <div class="absolute text-center flex justify-center items-center overflow-y-scroll" style="width: 100%; height:70%; background-color: #fefce8; bottom:0px;">
@@ -424,10 +581,10 @@ name_typewriter
 </div>
 
 </div> 
-  <!--<div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-deep-purple" id="home_2">
+  <!--<div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-deep-purple" id="home_3">
     
 </div>-->
-<div class="relative w-screen h-[100svh] overflow-hidden flex flex-col items-center justify-center bg-deep-purple" id="home_2">
+<div class="relative w-screen h-[100svh] overflow-hidden flex flex-col items-center justify-center bg-deep-purple" id="home_3">
     <div class="h-auto overflow-y-scroll pb-16 w-full flex flex-col items-center">
         <div class="items-center font-mono">
             <h1 class="text-6xl font-mono text-gray-100 text-center mt-20 mb-8">SKILLS</h1>
@@ -1141,8 +1298,7 @@ name_typewriter
 <!-- Scroll Handling -->
 <script>
 let scroll_index = 0;
-const n = 4;
-
+const n = 5;
 
 document.addEventListener("DOMContentLoaded", ComputeNearestScrollIndex);
 
