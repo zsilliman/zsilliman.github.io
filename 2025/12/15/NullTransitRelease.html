@@ -193,21 +193,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         const pathname = document.location.pathname.toLowerCase();
         if (pathname === "/" || pathname.includes("index")) {
             document.getElementById("home").classList.add("active");
-        } else if (pathname.includes("dev")) {
-            document.getElementById("devlog").classList.add("active");
-        } else if (pathname.includes("work")) {
-            document.getElementById("work").classList.add("active");
-        } else if (pathname.includes("games")) {
-            document.getElementById("games").classList.add("active");
-        } else if (pathname.includes("graphics")) {
-            document.getElementById("graphics").classList.add("active");
-        } else if (pathname.includes("personal")) {
-            document.getElementById("personal").classList.add("active");
-        } else if (pathname.includes("academic")) {
-            document.getElementById("academic").classList.add("active");
-        } else if (pathname.includes("projects")) {
-            document.getElementById("projects").classList.add("active");
-        }
+        } 
 
         // On the home page, wrap SetScrollIndex to keep sub-nav in sync
         if (typeof SetScrollIndex === "function") {
