@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1" charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="icon" href="/assets/icons/favicon.png">
 </head>
 <body>
 	<!DOCTYPE html>
@@ -52,9 +53,13 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         transform: translateX(0);
     }
 
-    #sidebar ul li a.active {
-        background: #1f2937;
-        background-color: #1f2937;
+    #sidebar a.active .metro-node,
+    #sidebar a.active .metro-node-sm {
+        border-color: #22d3ee;
+        background-color: #22d3ee;
+    }
+    #sidebar a.active span {
+        color: #22d3ee;
     }
 </style>
 
@@ -82,92 +87,98 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         <nav id="sidebar"
             class="fixed top-0 left-0 bottom-0 flex w-3/4 -translate-x-full flex-col overflow-y-auto bg-dark-gray pt-0 pb-8 sm:max-w-xs lg:w-80">
             
-            <!-- one category / navigation group -->
-            <div class="px-4 pb-6 pt-14">
-                <ul class="mb-8 text-xl">
-                    <li>
-                        <a id="home" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                            href="/">
-                            <span class="select-none">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="devlog" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                            href="/DevLog">
-                            <span class="select-none">DevLog</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="work" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                            href="/WorkExperience">
-                            <span class="select-none">Work Experience</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="projects" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                            href="/Projects">
-                            <span class="select-none">Projects</span>
-                        </a>
-                        <ul class="ml-4 mb-8 text-sm">
-                            <li>
-                                <a id="games" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                                    href="/AppsGames">
-                                    <span class="select-none">Apps & Games</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="graphics" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                                    href="/GraphicsProjects">
-                                    <span class="select-none">Graphics Projects</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="personal" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                                    href="/PersonalProjects">
-                                    <span class="select-none">Personal Projects</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="academic" class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-gray-600 no-underline"
-                                    href="/AcademicProjects">
-                                    <span class="select-none">Academic Projects</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- navigation group end-->
+            <!-- Metro navigation -->
+            <div class="px-5 pt-14 pb-4 flex-1">
+                <div class="relative">
+                    <!-- Vertical track -->
+                    <div class="absolute left-[9px] top-0 bottom-0 w-px bg-gray-600 z-0"></div>
 
-            <div class="absolute bottom-0 px-6 mx-auto pb-4 mb-0 flex flex-col">
-                
-                <div class="z-45 mx-auto pb-0 mb-0 mt-3 md:mt-0 flex flex-col">
-                    <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row">
-                            <svg class="w-4 h-4 me-2 mt-[2px]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="8 8 40 40">
+                    <!-- Home -->
+                    <a id="home" href="/" onclick="navigateHome(event, 0, '/')"
+                       class="flex items-center py-2.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node w-4 h-4 rounded-full border-2 border-gray-500 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-3 text-base text-gray-200 select-none group-hover:text-white transition-colors duration-150">Home</span>
+                    </a>
+                    <a id="projects" href="#" onclick="navigateHome(event, 1, 'home_1')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Projects</span>
+                    </a>
+                    <a id="about" href="#" onclick="navigateHome(event, 2, 'home_2')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">About</span>
+                    </a>
+                    <a id="skills" href="#" onclick="navigateHome(event, 3, 'home_3')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Skills</span>
+                    </a>
+                    <a id="contact" href="#" onclick="navigateHome(event, 4, 'footer')"
+                       class="flex items-center py-1.5 no-underline cursor-pointer group">
+                        <div class="w-[19px] flex justify-center shrink-0 z-10">
+                            <div class="metro-node-sm w-2.5 h-2.5 rounded-full border border-gray-600 bg-dark-gray group-hover:border-cyan-400 transition-colors duration-150"></div>
+                        </div>
+                        <span class="ml-5 text-sm text-gray-400 select-none group-hover:text-gray-200 transition-colors duration-150">Contact</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Bottom links -->
+            <div class="px-5 pb-6">
+                <div class="border-t border-gray-700 pt-4 flex flex-col gap-3">
+                    <!-- Social links -->
+                    <div class="flex flex-row justify-center gap-6">
+                        <a href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank" title="Steam"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <img src="/assets/icons/steam-icon.png" alt="Steam" class="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity duration-150">
+                            <span class="text-xs">Steam</span>
+                        </a>
+                        <a href="https://www.youtube.com/@ZachSilliman/shorts" target="_blank" title="YouTube"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <img src="/assets/icons/youtube-icon.png" alt="YouTube" class="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity duration-150">
+                            <span class="text-xs">YouTube</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@zach.silliman" target="_blank" title="TikTok"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <img src="/assets/icons/tiktok-icon.png" alt="TikTok" class="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity duration-150">
+                            <span class="text-xs">TikTok</span>
+                        </a>
+                    </div>
+                    <!-- Professional links -->
+                    <div class="flex flex-row justify-center gap-6">
+                        <a href="/assets/docs/SillimanZachary_Resume.pdf" target="_blank" title="Resume"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="8 8 40 40">
                                 <path fill="#90CAF9" d="M40 45L8 45 8 3 30 3 40 13z"></path><path fill="#E1F5FE" d="M38.5 14L29 14 29 4.5z"></path><path fill="#1976D2" d="M16 21H33V23H16zM16 25H29V27H16zM16 29H33V31H16zM16 33H29V35H16z"></path>
                             </svg>
-                            Resume
-                        </div>
-                    </a>
-                    <a href="https://github.com/zsilliman" target="_blank" class="relative flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
-                            <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <span class="text-xs">Resume</span>
+                        </a>
+                        <a href="https://github.com/zsilliman" target="_blank" title="GitHub"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors duration-150 no-underline">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
                             </svg>
-                            Github
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" class="relative  flex-none items-center justify-center p-0.5 mb-2 me-2 mr-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                        <div class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex flex-row"></span>
-                            <svg class="w-4 h-4 me-2 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                            <span class="text-xs">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zach-silliman-9655b624a/" target="_blank" title="LinkedIn"
+                           class="flex flex-col items-center gap-1 text-gray-400 hover:text-cyan-400 transition-colors duration-150 no-underline">
+                            <svg class="w-6 h-6" viewBox="0 0 72 72">
                                 <g fill="none" fill-rule="evenodd"><path fill="#007EBB" d="M8 72h56a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8Z"/><path fill="#FFF" d="M62 62H51.316V43.802c0-4.99-1.896-7.777-5.845-7.777-4.296 0-6.54 2.901-6.54 7.777V62H28.632V27.333H38.93v4.67s3.096-5.729 10.453-5.729c7.353 0 12.617 4.49 12.617 13.777V62ZM16.35 22.794c-3.508 0-6.35-2.864-6.35-6.397C10 12.864 12.842 10 16.35 10c3.507 0 6.347 2.864 6.347 6.397 0 3.533-2.84 6.397-6.348 6.397ZM11.032 62h10.736V27.333H11.033V62Z"/></g>
                             </svg>
-                            LinkedIn
-                        </div>
-                    </a>
+                            <span class="text-xs">LinkedIn</span>
+                        </a>
+                    </div>
                 </div>
-
             </div>
         </nav>
     </div>
@@ -187,21 +198,21 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         const pathname = document.location.pathname.toLowerCase();
         if (pathname === "/" || pathname.includes("index")) {
             document.getElementById("home").classList.add("active");
-        } else if (pathname.includes("dev")) {
-            document.getElementById("devlog").classList.add("active");
-        } else if (pathname.includes("work")) {
-            document.getElementById("work").classList.add("active");
-        } else if (pathname.includes("games")) {
-            document.getElementById("games").classList.add("active");
-        } else if (pathname.includes("graphics")) {
-            document.getElementById("graphics").classList.add("active");
-        } else if (pathname.includes("personal")) {
-            document.getElementById("personal").classList.add("active");
-        } else if (pathname.includes("academic")) {
-            document.getElementById("academic").classList.add("active");
-        } else if (pathname.includes("projects")) {
-            document.getElementById("projects").classList.add("active");
         } 
+
+        // On the home page, wrap SetScrollIndex to keep sub-nav in sync
+        if (typeof SetScrollIndex === "function") {
+            const subNavMap = { 1: "projects", 2: "about", 3: "skills", 4: "contact" };
+            const _orig = SetScrollIndex;
+            window.SetScrollIndex = function(index, scroll, behavior) {
+                _orig(index, scroll, behavior);
+                ["projects", "about", "skills", "contact"].forEach(function(id) {
+                    document.getElementById(id).classList.remove("active");
+                });
+                const subId = subNavMap[index];
+                if (subId) document.getElementById(subId).classList.add("active");
+            };
+        }
 
         sidebar.addEventListener("mouseleave", (e) => {
             sidebar.classList.toggle("show");
@@ -217,6 +228,16 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             navOpen.classList.toggle("hidden");
             navExit.classList.toggle("z-40");
         });
+
+        window.navigateHome = function(e, index, fallbackId) {
+            e.preventDefault();
+            // Scroll if on home page, otherwise navigate there
+            if (typeof SetScrollIndex === "function") {
+                SetScrollIndex(index);
+            } else {
+                window.location.href = fallbackId.startsWith("/") ? fallbackId : "/#" + fallbackId;
+            }
+        };
 
         navExit.addEventListener("click", (e) => {
             if (sidebar.classList.contains("show")) {
@@ -234,121 +255,22 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
   <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-gray-900" id="home_0">
     
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<div id="three-container" class="absolute top-0 w-screen h-[100svh] z-0 text-gray-100 overflow-hidden"></div>
-<div class="flex flex-col items-center z-10">
-    <div class="flex flex-row"><h1 class="text-6xl font-mono text-gray-100 text-center"><span id="name"></span><span id="cursorA" class="text-6xl font-mono text-gray-100">|</span></h1></div>
-    <div class="flex flex-row"><h3 class="text-2xl font-mono text-gray-400 text-center"><span id="subtext"></span><span id="cursorB" class="text-2xl font-mono text-gray-400" style="visibility:hidden;">|</span></h3></div>
+<video id="background-video" class="absolute top-0 left-0 w-screen h-[100svh] z-0 object-cover object-center" autoplay muted loop playsinline>
+    <source src="/assets/videos/PortfolioReel.webm" type="video/webm">
+</video>
+<div class="w-screen bg-black/50 z-10 flex justify-center py-12">
+    <div class="flex flex-col items-center">
+        <div class="flex flex-row"><h1 class="text-6xl font-mono text-gray-100 text-center"><span id="name"></span><span id="cursorA" class="text-6xl font-mono text-gray-100">|</span></h1></div>
+        <div class="flex flex-row"><h3 class="text-2xl font-mono text-gray-400 text-center"><span id="subtext"></span><span id="cursorB" class="text-2xl font-mono text-gray-400" style="visibility:hidden;">|</span></h3></div>
+        <div class="flex flex-col md:flex-row gap-4 mt-10">
+            <a href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank" class="font-mono text-sm border-2 border-cyan-600 text-cyan-400 px-6 py-2 hover:bg-cyan-950 transition-colors duration-200 tracking-widest no-underline text-center">[ NULL TRANSIT ]</a>
+            <a href="/DevLog" class="font-mono text-sm border-2 border-gray-500 text-gray-400 px-6 py-2 hover:bg-gray-800 transition-colors duration-200 tracking-widest no-underline text-center">[ DEV LOG ]</a>
+        </div>
+    </div>
 </div>
 
 </div>
 
-<script type="module">
-    import * as THREE from 'three';
-	import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-	import { AsciiEffect } from 'three/addons/effects/AsciiEffect.js';
-
-    var container;
-	var camera, scene, renderer, effect;
-	var sphere, plane;
-	var start = Date.now();
-	init();
-
-	function init() {
-		var width = window.innerWidth;
-		var height = window.innerHeight;
-		container = document.getElementById('three-container');
-
-		// Setup camera
-		//camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000);
-		camera = new THREE.OrthographicCamera( width / - 2, width / 2, height / 2, height / - 2, 1, 1000 )
-		camera.position.x = 30;
-		camera.position.y = 0;
-		camera.position.z = 500;
-
-		// Create scene
-		scene = new THREE.Scene();
-
-		// Create first light
-		var light0 = new THREE.PointLight(0xffffff, 1, 0, 0);
-		light0.position.set(500, 500, 500);
-		scene.add(light0);
-
-		// Create seconds light
-		var light1 = new THREE.PointLight(0xffffff, .25, 0, 0);
-		light1.position.set(-500, -500, -500);
-		scene.add(light1);
-
-		// Create sphere & plane
-		//sphere = new THREE.Mesh(new THREE.SphereGeometry( 200, 20, 10 ), new THREE.MeshPhongMaterial( { color: 0xffffff, flatShading: true } ) );
-		//scene.add(sphere);
-		plane = new THREE.Mesh(new THREE.PlaneGeometry(2000, 400), new THREE.MeshBasicMaterial({
-			color: 0xe0e0e0
-		}));
-		plane.position.y = -250;
-		plane.rotation.x = -Math.PI / 6;
-		//scene.add(plane);
-
-		// Setup renderer
-		renderer = new THREE.WebGLRenderer();
-		renderer.setClearColor(0xf0f0f0);
-		renderer.setSize(width, height);
-		
-		// Setup ASCII Effect
-		effect = new AsciiEffect( renderer, ' .:-=+*#%@', { invert: false } );
-		effect.setSize( width, height );
-		effect.domElement.children[0].style.color = "#134B70";//.classList.add("text-orange-500");
-		container.appendChild(effect.domElement);
-		window.addEventListener('resize', onWindowResize, false);
-
-		// instantiate an obj loader
-		const loader = new OBJLoader();
-		// load ZS Model
-		loader.load(
-			// resource URL
-			'assets/models/ZS.obj',
-			// called when resource is loaded
-			function ( object ) {
-				sphere = object;
-				var mat = new THREE.MeshPhongMaterial( { color: 0xffffff, flatShading: true } );
-				object.traverse( function( child ) {
-					if ( child instanceof THREE.Mesh ) {
-						child.material = mat; //.color.setHex( 0xffffff );
-					}
-				} );
-				object.scale.setScalar(550);
-				scene.add( object );
-				renderer.setAnimationLoop( animate );
-			},
-			// called when loading is in progresses
-			function ( xhr ) {
-				console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded obj' );
-			},
-			// called when loading has errors
-			function ( error ) {
-				console.log( 'Error loading obj file' );
-			}
-		);
-	}
-
-	function onWindowResize() {
-		camera.aspect = window.innerWidth / window.innerHeight;
-		camera.updateProjectionMatrix();
-		renderer.setSize(window.innerWidth, window.innerHeight);
-		effect.setSize(window.innerWidth, window.innerHeight);
-	}
-	//
-	var dir = -1;
-	function animate() {
-		if (sphere) {
-			var timer = Date.now() - start;
-			sphere.position.y = 0; //Math.abs( Math.sin( timer * 0.002 ) ) * 175 + 25;
-			sphere.rotation.y = timer * 0.00008;
-			sphere.rotation.x = timer * 0.00032;
-		}
-		effect.render(scene, camera);
-	}
-
-</script>
 
 <script>
 
@@ -415,8 +337,205 @@ name_typewriter
     });
   }, 3500)
 </script>
+  <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-gray-900" id="home_1">
+    <div class="w-full h-full flex flex-col items-center justify-center overflow-y-auto md:overflow-y-hidden">
+        <h1 class="text-3xl md:text-4xl font-mono font-bold text-gray-100 mb-8 md:mb-12 flex-shrink-0">Projects</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full h-auto">
+            
+                <div class="h-64 md:h-80">
+                    <a href="/DevLog" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/images/islands/Devlog Island.png" data-thumbnail="/assets/images/islands/Devlog Island.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/images/islands/Devlog Island.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Dev Log
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                Follow my development journey for Null Transit with detailed posts covering gameplay mechanics, art direction, character animation, and technical challenges.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/InlineSkateSim.gif" data-thumbnail="/assets/gifs/projects/InlineSkateSim.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/InlineSkateSim.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Inline Skate Sim (ongoing)
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                An inline skating simulator that I'm developing alongside my own exploration of my rollerblading hobby.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="https://store.steampowered.com/app/3299100/Null_Transit/" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/NullTransit.gif" data-thumbnail="/assets/gifs/projects/NullTransit.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/NullTransit.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Null Transit
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                Null Transit is a high-stakes action-platformer. Command the captain and crew of a failing ship, master a unique dash-attack combat system, and fight to survive the unforgiving depths of deep space. Released on Steam December 2025.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="https://www.framestore.com/work/art-you" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/ArtOfYou.gif" data-thumbnail="/assets/gifs/projects/ArtOfYou.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/ArtOfYou.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Art Of You
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                A Cadillac experience designed for the release of their new vehicle the Celestiq. This is a professional project I worked on at Framestore that showcases houdini-generated fluid sims rendered in Unreal Engine.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="https://www.framestore.com/work/unity-and-transcendence" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/1V.gif" data-thumbnail="/assets/gifs/projects/1V.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/1V.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                One Vanderbilt
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                At the heart of New York City in One Vanderbilt tower is a summit experience. Scan your face and have it rendered in the clouds as you overlook central park.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+                <div class="h-64 md:h-80">
+                    <a href="/Projects" class="relative h-full w-full overflow-hidden group flex items-center justify-center no-underline project-button" data-gif="/assets/gifs/projects/Misc.gif" data-thumbnail="/assets/gifs/projects/Misc.png">
+    <!-- Background image with zoom effect -->
+    <div class="project-bg absolute inset-0 bg-cover bg-center group-hover:scale-110 group-active:scale-110 transition-transform duration-300" style="background-image: url('/assets/gifs/projects/Misc.png');"></div>
+
+    <!-- Dark overlay that disappears on hover -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 group-active:bg-black/0 transition-colors duration-300"></div>
+
+    <!-- Content (title and description) -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-6 text-center">
+        <!-- Background rectangle for text -->
+        <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
+            <!-- Title -->
+            <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
+                Miscellaneous
+            </h2>
+
+            <!-- Description (hidden by default, shown on hover) -->
+            <p class="text-sm font-mono text-gray-200 mt-4 max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 group-active:max-h-96 group-active:opacity-100 transition-all duration-500">
+                A collection of projects exploring game mechanics, shader development, audio visualization and much more.
+            </p>
+        </div>
+    </div>
+</a>
+
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.project-button');
+
+        buttons.forEach(button => {
+            const gifUrl = button.getAttribute('data-gif');
+            const thumbnailUrl = button.getAttribute('data-thumbnail');
+            const bgDiv = button.querySelector('.project-bg');
+            const href = button.getAttribute('href');
+
+            // Check if link is external
+            if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+                button.setAttribute('target', '_blank');
+            }
+
+            button.addEventListener('mouseenter', function() {
+                bgDiv.style.backgroundImage = `url('${gifUrl}')`;
+            });
+
+            button.addEventListener('mouseleave', function() {
+                bgDiv.style.backgroundImage = `url('${thumbnailUrl}')`;
+            });
+        });
+    });
+</script>
+
   <!-- Removed Islands :( -->
-  <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-yellow-200" id="home_1">
+  <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-yellow-200" id="home_2">
     
 <div class="relative w-screen h-[100svh] overflow-hidden p-0 m-0 z-10">
     <div class="absolute text-center flex justify-center items-center overflow-y-scroll" style="width: 100%; height:70%; background-color: #fefce8; bottom:0px;">
@@ -425,12 +544,12 @@ name_typewriter
             <div class="flex flex-col md:flex-row justify-center">
                 <div class="md:mr-10 md:w-1/3">
                     <p class="text-2xl visible md:hidden">About Me</p>
-                    <p>My name is Zachary Silliman. I graduated from Cornell University with a degree in computer science and a specialization in mathematics. I am currently employed at Framestore as an Immersive developer where I use Unreal Engine alongside a number of supporting tools to create big-screen, VR, AR, and pixel-streamed experiences. Two projects I have released with Framestore are One Vanderbilt&#39;s <a class="underline" target="_blank" href="https://www.framestore.com/work/unity-and-transcendence?language=en">Unity/Transcenedence</a>, as well as Cadillac&#39;s <a class="underline" target="_blank" href="https://www.framestore.com/work/art-you?language=en">Art of You.</a></p>
+                    <p>My name is Zachary Silliman. I graduated from Cornell University with a degree in computer science and a specialization in mathematics. I am currently employed at Framestore as an Immersive developer where I use Unreal Engine alongside a number of supporting tools to create big-screen, VR, AR, and pixel-streamed experiences. Two projects I have released with Framestore are One Vanderbilt&#39;s <a class="underline" target="_blank" href="https://www.framestore.com/work/unity-and-transcendence?language=en">Unity/Transcenedence</a>, as well as Cadillac&#39;s <a class="underline" target="_blank" href="https://www.framestore.com/work/art-you?language=en">Art of You.</a> I also do a lot of character animation work, including the Geico Gecko.</p>
                     <br>
                     <p>Through these and other projects I found an appreciation for bridging the worlds of the designer, artist and developer. Not to be confused with being at the intersection, as may be seen in a technical artist, building this bridge involves wielding technical knowledge to design and create tools that abstract away clunky details to accommodate designers&#39; and artists&#39; creative vision.</p>
                 </div>
                 <div class="md:w-1/3">
-                    <p>This construction project also manifests itself in my passion for game development and my current project: Ascend. This project has helped me define the intricate relationships between the designer, artist and developer. With just two of us working on the game, my role morphs between the software architect, gameplay programmer, tools programmer, level designer and game designer. I&#39;ve come to understand and enjoy the intricacies in working alongside my friend who morphs himself similarly. To add more nuance, I live in the US and my friend lives in Taiwan (12 or 13 hours apart). We named ourselves Halfway Studios as an homage to the fact that we sit halfway across the world from one another.</p>
+                    <p>This construction project also manifests itself in my passion for game development and my latest project: Null Transit. This project has helped me define the intricate relationships between the designer, artist and developer. With just two of us working on the game, my role morphs between the software architect, gameplay programmer, tools programmer, level designer and game designer. I&#39;ve come to understand and enjoy the intricacies in working alongside my friend who morphs himself similarly. To add more nuance, I live in the US and my friend lives in Taiwan (12 or 13 hours apart). We named ourselves Halfway Studios as an homage to the fact that we sit halfway across the world from one another. As of December 15, 2025, Null Transit was released on Steam! Here&#39;s a <a class="underline" href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank">link</a>.</p>
                     <br>
                     <p>To find out more about me, click <a class="underline" target="_blank" href="/assets/docs/SillimanZachary_Resume.pdf">here</a> to download my resume or feel free to contact me at zacharysilliman@gmail.com.</p>
                 </div>
@@ -448,47 +567,660 @@ name_typewriter
 </div>
 
 </div> 
-  <div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-deep-purple" id="home_2">
+  <!--<div class="w-screen h-[100svh] flex flex-col items-center justify-center bg-deep-purple" id="home_3">
     
-<div class="items-center z-10 font-mono">
-    <h1 class="text-6xl font-mono text-gray-100 text-center mb-16">SKILLS</h1>
+</div>-->
+<div class="relative w-screen h-[100svh] overflow-hidden flex flex-col items-center justify-center bg-deep-purple" id="home_3">
+    <div class="h-auto overflow-y-scroll pb-16 w-full flex flex-col items-center">
+        <div class="items-center font-mono">
+            <h1 class="text-6xl font-mono text-gray-100 text-center mt-20 mb-8">SKILLS</h1>
+        </div>
 
-    <div class="w-screen overflow-x-scroll md:flex md:justify-center md:items-center">
-        <div class="flex flex-row w-fit">
-            <!-- Programming -->
-            <div class="w-72 h-72 m-4 ml-8 flex flex-col shadow-2xl p-8 hover:shadow-inner bg-pastel-blue flex-none">
-                <h1 class="text-3xl mb-2">Programming</h1>
-                <div class="flex justify-center items-center">
-                    <p>Fluent in C/C++, C#, Python, Javascript, Powershell, Batch Scripting, OCaml, and Java programming languages</p>
-                </div>
-            </div>
-            <!-- Tools -->
-            <div class="w-72 h-72 m-4 flex flex-col shadow-2xl p-8 hover:shadow-inner bg-pastel-green flex-none">
-                <h1 class="text-3xl mb-2">Tools</h1>
-                <div class="flex justify-center items-center">
-                    <p>UE4/5: [Editor plugins, nDisplay, VR, AR, Desktop, multiplayer], Unity, Node.js, Photoshop Automation, Jenkins with Unreal and Perforce</p>
-                </div>
-            </div>
-            <!-- Certifications -->
-            <div class="w-72 h-72 m-4 flex flex-col shadow-2xl p-8 hover:shadow-inner bg-pastel-red flex-none">
-                <h1 class="text-3xl mb-2">Certifications</h1>
-                <div class="flex flex-col justify-center items-center">
-                    <p>Fundamentals of Deep learning from Nvidia</p>
-                    <br>
-                    <p>GIAC Certified Forensic Analyst from SANS Institute</p>
-                </div>
-            </div>
-            <!-- Hobbies -->
-            <div class="w-72 h-72 m-4 mr-8 flex flex-col shadow-2xl p-8 hover:shadow-inner bg-pastel-gray flex-none">
-                <h1 class="text-3xl mb-2">Hobbies</h1>
-                <div class="flex justify-center items-center">
-                    <p>Game Development, Reading Philosophy, Skiing, Soccer, Bass Guitar, Rock Climbing and hiking</p>
-                </div>
-            </div>
-        </div> 
+        <div class="w-full px-4 md:px-0 md:w-3/4">
+            
+
+                <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-900">
+    <div class="px-4 md:px-8 h-9 md:h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-xl md:text-3xl align-middle mt-1 text-gray-100">Game Development</p>
     </div>
 </div>
+<div class="pl-2 md:pl-8 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/unreal-icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Unreal Engine</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have used Unreal Engine professionally since 2021. I primarily develop tools for character animation such as: lipsync animation, conversation hand and head motion, motions capture and prop management utilities. Much of my character work has centered around the Geico Gecko. I have also worked on very different projects such as <a href="https://www.framestore.com/work/unity-and-transcendence?language=en" target="_blank">volumetric cloud rendering</a> and <a href="https://www.framestore.com/work/art-you?language=en" target="_blank">flocking/fluid-sim particle effects</a>.</p>
+        </div>
+        
+    </div>
 </div>
+
+
+<div class="pl-12 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-slate-500">
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">AnimBP</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have done a lot of character animation work in Unreal. This include:
+- Custom lipsync animation nodes
+- Conversational hand and head motion driven by AI
+- Motion capture retargeting and cleanup
+- Prop management utilities</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-slate-500">
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">C++</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I am very comfortable with C++ in Unreal Engine.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-slate-500">
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Custom Editor Tools</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have created custom assets, custom asset editors, editor blueprint utilities, editor subsystems and much more written in both C++ and Blueprints.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-slate-500">
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Control Rig</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have created a number of control rigs for characters and props.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/unity-icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Unity</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have used Unity for many years, primarily for personal game development projects. I have extensive experience with C# scripting, shader development, and custom editor tooling. I work both in 2D and 3D, having designed, developed and released <a href="https://store.steampowered.com/app/3299100/Null_Transit/" target="_blank">Null Transit</a> using Unity.<br><br>Take a look at my <a href="/DevLog">DevLog</a> or <a href="/Projects">Projects</a> page for more details and links.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/blender-logo.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Blender</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have been using blender for to model and animate characters and assets for use in personal projects in Unity.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-900">
+    <div class="px-4 md:px-8 h-9 md:h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-xl md:text-3xl align-middle mt-1 text-gray-100">Motion Capture</p>
+    </div>
+</div>
+<div class="pl-2 md:pl-8 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/xsens-logo.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">XSens</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I used XSens motion capture systems professionally for character animation.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/faceware-logo.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Faceware</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">In conjunction with XSens, I have used Faceware for facial motion capture for character animation.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/manus-logo.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Manus</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">In conjunction with XSens, I have used Manus motion capture gloves professionally for character hand animation.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-900">
+    <div class="px-4 md:px-8 h-9 md:h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-xl md:text-3xl align-middle mt-1 text-gray-100">AI Development</p>
+    </div>
+</div>
+<div class="pl-2 md:pl-8 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/pytorch-icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">PyTorch</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I created an AI model to generate conversational head movement for a character based on realtime audio input.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-900">
+    <div class="px-4 md:px-8 h-9 md:h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-xl md:text-3xl align-middle mt-1 text-gray-100">Web Development</p>
+    </div>
+</div>
+<div class="pl-2 md:pl-8 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/nodejs-icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Node.js</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 50%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have written a number of backend servers using Node.js, primarily to support live experiences. I wrote the backend for asset pre-processing and user queueing for the One Vanderbilt Summit immersive experience. I have also written monitoring software to keep track of PC and process health during live events and immersive experiences.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">React</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have worked on frontend web apps that wrap a Pixelstreamed viewport. They include complex features like timeline scrubbing and keying.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://images.icon-icons.com/2107/PNG/512/file_type_jekyll_icon_130516.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Jekyll</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">This website was made using Jekyll and is hosted using GitHub Pages.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/django.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Django</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have worked on django web apps professionally.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-900">
+    <div class="px-4 md:px-8 h-9 md:h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-xl md:text-3xl align-middle mt-1 text-gray-100">Automation</p>
+    </div>
+</div>
+<div class="pl-2 md:pl-8 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://www.jenkins.io/images/logos/jenkins/jenkins.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Jenkins</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have used Jenkins for continuous integration, unit testing, deployment, and rendering. I have primarily used Jenkins with Unreal Engine and Perforce.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/TeamCity_Icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">TeamCity</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">We use TeamCity for continuous integration and unit testing at Framestore. I do not manage the DevOps side of TeamCity, but I understand how it works.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Powershell</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I have written many Batch and PowerShell scripts to automate tasks such as project deployment, dev environment setup, and rendering out of Unreal.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-900">
+    <div class="px-4 md:px-8 h-9 md:h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-xl md:text-3xl align-middle mt-1 text-gray-100">SCM</p>
+    </div>
+</div>
+<div class="pl-2 md:pl-8 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logo-perforce-icon-reg.svg/960px-Logo-perforce-icon-reg.svg.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Perforce</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">Professionally, I primarily use Perforce. Additionally, we use Swarm for code reviews. I am very comfortable working with task, development, and release streams.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Git</p>
+        <!--
+        <div class="w-full bg-gray-500 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+        </div>
+        -->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I primarily use Git for personal projects and game development. Null Transit was developed with Git and hosted on GitHub. This website is also developed with Git and hosted on GitHub Pages. I am very comfortable working with branches and pull requests.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+            
+
+                <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-900">
+    <div class="px-4 md:px-8 h-9 md:h-12 flex-col overflow-hidden bg-tran">
+        <p class="text-xl md:text-3xl align-middle mt-1 text-gray-100">Certifications</p>
+    </div>
+</div>
+<div class="pl-2 md:pl-8 mb-3">
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/gcfa-icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">GCFA (expired)</p>
+        <!---->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I used to work in cybersecurity and recieved the GIAC Certified Forensic Analyst certification.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+        <div class="rounded-xl flex flex-row h-auto w-full pt-0 pb-0 pl-2 drop-shadow-2xl shadow-lg mb-1 bg-opacity-90 bg-slate-800 border-l-4 border-blue-400">
+    
+    <div class="w-12 shrink-0 px-1 py-1 self-start mt-1">
+        <div class="w-10 h-10 bg-contain bg-center bg-no-repeat" style="background-image: url('/assets/icons/nvidia-icon.png');"></div>
+    </div>
+    
+    <div class="flex flex-col w-full py-2 pl-3 pr-4">
+        <p class="text-sm md:text-xl text-gray-300 font-medium mb-1">Deep Learning</p>
+        <!---->
+        
+        <div class="border-t border-slate-600 pt-2 mt-1">
+            <p class="text-xs md:text-sm text-gray-400 max-w-prose">I took the course 'Fundamentals of Deep Learning' with Nvidia where I learned the basics of AI engineering with pytorch.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+            
+        </div>
+    </div>
+</div> 
 
   <!-- Footer start -->
 <div id="footer" class="w-screen bottom-0 z-30 px-4 sm:justify-between h-fit md:h-32 font-mono flex flex-col items-center justify-center bg-gray-200 overflow-hidden">
@@ -552,8 +1284,7 @@ name_typewriter
 <!-- Scroll Handling -->
 <script>
 let scroll_index = 0;
-const n = 4;
-
+const n = 5;
 
 document.addEventListener("DOMContentLoaded", ComputeNearestScrollIndex);
 
@@ -569,7 +1300,7 @@ window.onscrollend = (e)=> {
 function ComputeNearestScrollIndex() {
   var sh = window.innerHeight;
   var index = Math.round(window.scrollY / sh);
-  if (window.scrollY > sh * (n-2)) {
+  if (window.scrollY > sh * (n-2) + GetFooterHeight() * 0.5) {
     index = n-1;
   }
   if (index != scroll_index) {
@@ -581,6 +1312,11 @@ function GetFullPageHeight() {
   var body = document.body, html = document.documentElement;
   var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
   return height;
+}
+
+function GetFooterHeight()
+{
+  return document.getElementById('footer').clientHeight;
 }
 
 function GetIdFromIndex(index)
