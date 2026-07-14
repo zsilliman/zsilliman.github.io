@@ -283,6 +283,25 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
         </div>
     </div>
 </div>
+<style>
+  @keyframes pulse-opacity {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+</style>
+
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center cursor-pointer" onclick="IncrementScroll()">
+    <div class="animate-bounce drop-shadow-lg">
+        <svg class="w-6 h-6 stroke-white hover:stroke-gray-200 transition-colors duration-200" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+    <span class="text-white text-sm font-mono mb-2 drop-shadow-lg" style="animation: pulse-opacity 1s cubic-bezier(0.45, 0, 0.55, 1) infinite;">SCROLL</span>
+</div>
 
 </div>
 
@@ -345,7 +364,7 @@ name_typewriter
     subtext_typewriter = new Typewriter(null, {
     loop: true,
     delay: 75,
-    strings: ["Unreal Developer.", "Unity Developer.", "Tools Programmer.", "Indie Game Developer.", "Applied AI Engineer."],
+    strings: ["UNREAL DEVELOPER.", "UNITY DEVELOPER.", "TOOLS PROGRAMMER.", "INDIE GAME DEVELOPER.", "APPLIED AI ENGINEER."],
     autoStart: true,
     onCreateTextNode: customNodeCreatorFunctor('subtext'),
     onRemoveNode: onRemoveNodeFunctor('subtext'),
@@ -353,7 +372,7 @@ name_typewriter
   }, 3500)
 </script>
       <div class="scene-fade absolute inset-0 w-full h-full bg-gray-900" id="home_1" data-scene-index="1">
-    <h1 class="absolute top-6 md:top-8 left-1/2 -translate-x-1/2 z-20 text-3xl md:text-4xl font-mono font-bold text-gray-100 pointer-events-none drop-shadow-lg">Projects</h1>
+    <h1 class="absolute top-6 md:top-8 left-1/2 -translate-x-1/2 z-20 text-3xl md:text-4xl font-mono font-bold text-gray-100 pointer-events-none drop-shadow-lg">PROJECTS</h1>
     <div class="w-full h-full overflow-y-auto md:overflow-y-hidden">
         <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 w-full h-full">
             
@@ -371,7 +390,7 @@ name_typewriter
         <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
             <!-- Title -->
             <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
-                Dev Log
+                DEV LOG
             </h2>
 
             <!-- Description (hidden by default, shown on hover) -->
@@ -398,7 +417,7 @@ name_typewriter
         <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
             <!-- Title -->
             <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
-                Inline Skate Sim (ongoing)
+                INLINE SKATE SIM (ongoing)
             </h2>
 
             <!-- Description (hidden by default, shown on hover) -->
@@ -425,7 +444,7 @@ name_typewriter
         <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
             <!-- Title -->
             <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
-                Null Transit
+                NULL TRANSIT
             </h2>
 
             <!-- Description (hidden by default, shown on hover) -->
@@ -452,7 +471,7 @@ name_typewriter
         <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
             <!-- Title -->
             <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
-                Art Of You
+                ART OF YOU
             </h2>
 
             <!-- Description (hidden by default, shown on hover) -->
@@ -479,7 +498,7 @@ name_typewriter
         <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
             <!-- Title -->
             <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
-                One Vanderbilt
+                ONE VANDERBILT
             </h2>
 
             <!-- Description (hidden by default, shown on hover) -->
@@ -506,7 +525,7 @@ name_typewriter
         <div class="absolute bg-black/50 rounded-lg px-8 py-6 max-w-sm">
             <!-- Title -->
             <h2 class="text-3xl font-mono font-bold text-white transition-transform duration-500">
-                Miscellaneous
+                MISCELLANEOUS
             </h2>
 
             <!-- Description (hidden by default, shown on hover) -->
@@ -583,11 +602,8 @@ name_typewriter
     
 </div>-->
 <div class="scene-fade absolute inset-0 w-full h-full overflow-hidden flex flex-col items-center justify-center bg-deep-purple" id="home_3" data-scene-index="3">
-    <div class="h-auto overflow-y-auto scrollbar-hide pb-16 w-full flex flex-col items-center">
-        <div class="items-center font-mono">
-            <h1 class="text-6xl font-mono text-gray-100 text-center mt-20 mb-8">SKILLS</h1>
-        </div>
-
+    <h1 class="absolute top-6 md:top-8 left-1/2 -translate-x-1/2 z-20 text-3xl md:text-4xl font-mono font-bold text-gray-100 pointer-events-none drop-shadow-lg">SKILLS</h1>
+    <div class="h-auto overflow-y-auto scrollbar-hide pb-16 w-full flex flex-col items-center mt-24">
         <div class="w-full px-4 md:px-0 md:w-3/4">
             
 
@@ -1311,14 +1327,8 @@ name_typewriter
 
 </div>
 
-<div id="prev" class="fixed w-fit mx-auto inset-x-0 top-3 flex items-center justify-center z-50 transition-opacity duration-500 ease-in-out opacity-0" onclick="DecrementScroll()">
-  <svg class="w-10 h-10 stroke-red-400 hover:stroke-red-200 hover:scale-110 stroke-2 rotate-180" viewBox="0 0 30 30"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>  
-</div>
-<div id="next" class="fixed w-fit mx-auto inset-x-0 bottom-3 flex items-center justify-center z-50 transition-opacity duration-500 ease-in-out" onclick="IncrementScroll()">
-    <svg class="w-10 h-10 stroke-red-400 hover:stroke-red-200 hover:scale-110 stroke-2" viewBox="0 0 30 30"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
-</div>
-<div id="top" class="fixed w-fit mx-auto inset-x-0 bottom-[19rem] md:bottom-40 flex items-center justify-center z-50 transition-opacity duration-500 ease-in-out opacity-0" onclick="SetScrollIndex(0)">
-  <svg class="w-10 h-10 stroke-red-400 hover:stroke-red-200 hover:scale-110 stroke-2 rotate-180" viewBox="0 0 30 30"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
+<div id="top" class="fixed w-fit mx-auto inset-x-0 bottom-[19rem] md:bottom-40 flex items-center justify-center z-50 transition-opacity duration-500 ease-in-out opacity-0 animate-bounce drop-shadow-lg cursor-pointer" onclick="SetScrollIndex(0)">
+  <svg class="w-6 h-6 stroke-white hover:stroke-gray-200 transition-colors duration-200" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="transform: rotate(180deg);"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
 </div>
 
 <!-- Scroll Handling -->
@@ -1421,9 +1431,7 @@ function SetVisibilityByOpacityOnId(id, visibility) {
 function SetScrollIndex(index, scroll=true, behavior="smooth") {
   scroll_index = ((index % n) + n) % n;
 
-  // Set visibility of up/down arrows
-  SetVisibilityByOpacityOnId('prev', scroll_index > 0);
-  SetVisibilityByOpacityOnId('next', scroll_index < n-1);
+  // Set visibility of top arrow
   SetVisibilityByOpacityOnId('top', scroll_index === n-1);
 
   // Perform auto-scroll
